@@ -1,0 +1,44 @@
+{
+  "cname": "图片",
+  "styleId": "e_image",
+  "styleClass": "",
+  "tmpl": "{{#if prop.href}}\n    <a href=\"{{prop.href}}\" target=\"{{prop.target}}\">\n{{/if}}\n<img class=\"e_image s_image\" src=\"{{prop.src}}\" title=\"{{prop.title}}\" alt=\"{{prop.alt}}\" />\n{{#if prop.href}}\n    </a>\n{{/if}}",
+  "css": [
+    {
+      "media": "",
+      "cssText": "#e_image{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "src": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+    "title": "图片标题",
+    "alt": "图片占位",
+    "href": "http://www.baidu.com",
+    "target": "_blank"
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "container": false,
+  "scope": false,
+  "dataFields": {
+    "src": "src",
+    "title": "title",
+    "alt": "alt",
+    "href": "href",
+    "target": "target"
+  }
+}

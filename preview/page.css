@@ -1,0 +1,24 @@
+html, body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, textarea, p, blockquote {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+* {
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    background: #fff;
+    font-family: "Arial", "Microsoft yahei", sans-serif;
+    text-decoration: none;
+}
+
+.e_container .p_item{
+    border: 1px dashed #ccc;
+    min-height: 200px;
+}
+
+.e_container .p_item::after{
+    content: "容器";
+    color:#ccc
+}

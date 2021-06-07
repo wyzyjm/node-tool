@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+logs
+dist
+
+package-lock.json
+placeFile.json
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

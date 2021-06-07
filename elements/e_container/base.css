@@ -1,0 +1,6 @@
+.e_container{
+    display: flex;
+}
+.e_container .p_item{
+    flex: 1;
+}

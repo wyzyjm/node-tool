@@ -1,0 +1,26 @@
+{
+  "name": "compmaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "maker.js",
+  "scripts": {
+    "build": "node maker",
+    "buildAll": "node maker --comp=all",
+    "dev": "node dev-preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-translate-api-cn": "^1.0.2",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^6.3.0",
+    "minimist": "^1.2.5",
+    "mockjs": "^1.1.0"
+  },
+  "devDependencies": {
+    "koa-bodyparser": "^4.3.0",
+    "silly-datetime": "^0.1.2"
+  }
+}
