@@ -1,0 +1,40 @@
+{
+  "cname": "循环体容器",
+  "styleId": "e_loop",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${dataList}}}\n    <div class=\"cbox-${id} p_item\"></div>\n    {{^}}\n    {{{noDataPrompt}}}\n    {{/${dataList}}}\n</div>\n",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_loop{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-around;\n}\n.e_loop .p_item{\n    width: calc(33.3% - 30px);\n    margin: 15px;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {},
+      {},
+      {}
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "dataList": "dataList"
+  },
+  "scope": true,
+  "container": true
+}

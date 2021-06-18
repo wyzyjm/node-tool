@@ -1,0 +1,16 @@
+{
+  "prop": {
+      "label":"单选项",
+      "name":"radio",
+      "options":[
+          {
+              "label":"男",
+              "value":"m"
+          },{
+            "label":"女",
+            "value":"f"
+        }
+      ]
+  },
+  "i18n": {}
+}

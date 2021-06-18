@@ -1,0 +1,9 @@
+<fieldset class="form-group e_radio">
+    <legend class="col-form-label p_label">{{prop.label}}</legend>
+        {{#prop.options}}
+        <div class="form-check form-check-inline p_radioItem">
+            <input class="form-check-input p_radioInput" type="radio" name="{{../prop.name}}" id="{{../prop.name}}{{@index}}" value="{{value}}" {{#eq @index 0}} checked {{/eq}}>
+            <label class="form-check-label p_radioLabel" for="{{../prop.name}}{{@index}}">{{label}}</label>
+        </div>
+        {{/prop.options}}
+</fieldset>

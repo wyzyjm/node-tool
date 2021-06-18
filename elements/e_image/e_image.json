@@ -2,11 +2,11 @@
   "cname": "图片",
   "styleId": "e_image",
   "styleClass": "",
-  "tmpl": "{{#if prop.href}}\n    <a href=\"{{prop.href}}\" target=\"{{prop.target}}\">\n{{/if}}\n<img class=\"e_image s_image\" src=\"{{prop.src}}\" title=\"{{prop.title}}\" alt=\"{{prop.alt}}\" />\n{{#if prop.href}}\n    </a>\n{{/if}}",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}}}\n        <a href=\"{{${href}}}\" target=\"{{${target}}}\">\n    {{/if}}\n    {{{lazyImage ${src} \"title='{{${title}}}' alt='{{${alt}}}'\" \"true\"}}}\n    {{#if ${href}}}\n        </a>\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": "#e_image{\n\n}\n"
+      "cssText": ".e_image img{\n    width: 100%;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -32,8 +32,6 @@
     "zh_CN": {}
   },
   "datasource": "prop",
-  "container": false,
-  "scope": false,
   "dataFields": {
     "src": "src",
     "title": "title",

@@ -1,0 +1,38 @@
+{
+  "cname": "按钮",
+  "styleId": "e_button",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}}}\n        <a href=\"{{${href}}}\" target=\"{{${target}}}\">\n    {{/if}}\n    <button class=\"btn btn-primary\">{{${text}}}</button>\n    {{#if ${href}}}\n        </a>\n    {{/if}}\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_button{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "text": "按钮",
+    "href": "",
+    "target": ""
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "text": "text",
+    "href": "href",
+    "target": "target"
+  }
+}

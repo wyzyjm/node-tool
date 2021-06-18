@@ -1,0 +1,36 @@
+{
+  "cname": "单行文本输入框",
+  "styleId": "e_input",
+  "styleClass": "",
+  "tmpl": "<div class=\"form-group ${elemId} ${styleClass}\">\n    <label class=\"p_label\">{{${label}}}</label>\n    <input type=\"text\" class=\"form-control p_input\" placeholder=\"{{${placeholder}}}\">\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_input{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "label": "单行文本",
+    "placeholder": "请输入..."
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "label": "label",
+    "placeholder": "placeholder"
+  }
+}

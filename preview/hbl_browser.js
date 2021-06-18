@@ -166,16 +166,9 @@ helpers.dateFormat = function (date, options) {
     return util.formatDate(new Date(Number(date)), 'yyyy-MM-dd');
 }
 helpers.lazyImage = function (url,attr,isLazy) {
-    let resultStr='';
-    if (isLazy) {
-        resultStr= `
-            <img src="/public/img/s.png" lazy="${url}" ${attr} />
-        `
-    } else {
-        resultStr= `
+    let resultStr=`
             <img src="${url}" ${attr} />
         `
-    }
     return new Handlebars.SafeString(Handlebars.compile(resultStr)(this))
 };
 helpers.lazySource = function (url,attr,isLazy) {

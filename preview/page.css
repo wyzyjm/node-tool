@@ -12,13 +12,16 @@ html,body {
     font-family: "Arial", "Microsoft yahei", sans-serif;
     text-decoration: none;
 }
+body{
+    padding: 20px;
+}
 
-.e_container .p_item{
+.e_container .p_item,.e_loop .p_item{
     border: 1px dashed #ccc;
     min-height: 200px;
 }
 
-.e_container .p_item::after{
+.e_container .p_item::after,.e_loop .p_item::after{
     content: "容器";
     color:#ccc
 }

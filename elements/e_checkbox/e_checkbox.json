@@ -1,0 +1,61 @@
+{
+  "cname": "多选项",
+  "styleId": "e_checkbox",
+  "styleClass": "",
+  "tmpl": "<fieldset class=\"form-group ${elemId} ${styleClass}\">\n    <legend class=\"col-form-label p_label\">\n        {{${label}}}\n        <span class=\"text-danger p_required\">*</span>\n    </legend>\n    {{#${options}}}\n    <div class=\"form-check form-check-inline p_item\">\n        <input class=\"form-check-input p_input\" type=\"checkbox\" name=\"{{../${name}}}\" id=\"{{../${name}}}{{@index}}\" value=\"{{${options$value}}}\">\n        <label class=\"form-check-label p_label\" for=\"{{../${name}}}{{@index}}\">{{${options$label}}}</label>\n    </div>\n    {{/${options}}}\n</fieldset>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_checkbox{\n\n}\n.e_checkbox .p_required{\n    vertical-align: middle;\n    font-size: 1.4em;\n    line-height: 100%;\n    position: relative;\n    font-weight: bold;\n    top: 0.15em;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "label": "多选项",
+    "name": "checkbox",
+    "options": [
+      {
+        "label": "读书",
+        "value": "ds"
+      },
+      {
+        "label": "旅游",
+        "value": "ly"
+      },
+      {
+        "label": "游泳",
+        "value": "yy"
+      },
+      {
+        "label": "爬山",
+        "value": "ps"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "label": "label",
+    "name": "name",
+    "options": "options",
+    "options$label": "label",
+    "options$value": "value",
+    "options1": "options1",
+    "options1$label": "label",
+    "options1$value": "value"
+  },
+  "scope": true
+}

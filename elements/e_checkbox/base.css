@@ -1,0 +1,11 @@
+.e_checkbox{
+
+}
+.e_checkbox .p_required{
+    vertical-align: middle;
+    font-size: 1.4em;
+    line-height: 100%;
+    position: relative;
+    font-weight: bold;
+    top: 0.15em;
+}

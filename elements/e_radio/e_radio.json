@@ -1,0 +1,50 @@
+{
+  "cname": "单选项",
+  "styleId": "e_radio",
+  "styleClass": "",
+  "tmpl": "<fieldset class=\"form-group ${elemId} ${styleClass}\">\n    <legend class=\"col-form-label p_label\">{{${label}}}</legend>\n        {{#${options}}}\n        <div class=\"form-check form-check-inline p_radioItem\">\n            <input class=\"form-check-input p_radioInput\" type=\"radio\" name=\"{{../${name}}}\" id=\"{{../${name}}}{{@index}}\" value=\"{{${options$value}}}\" {{#eq @index 0}} checked {{/eq}}>\n            <label class=\"form-check-label p_radioLabel\" for=\"{{../${name}}}{{@index}}\">{{label}}</label>\n        </div>\n        {{/${options}}}\n</fieldset>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_radio{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "scope": true,
+  "prop": {
+    "label": "单选项",
+    "name": "radio",
+    "options": [
+      {
+        "label": "男",
+        "value": "m"
+      },
+      {
+        "label": "女",
+        "value": "f"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "label": "label",
+    "name": "name",
+    "options": "options",
+    "options$label": "label",
+    "options$value": "value"
+  }
+}

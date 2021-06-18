@@ -71,11 +71,13 @@ async function addElement(obj){
 
     if(result.success){
         layer.msg('添加成功', {offset: '100px'});
-        $('#iptCompId').val('');
+        $('#eleName').val('');
         $('#eleId').val('');
         $("input[name='isContainer']").val('false')
-        initElements()
+        $("input[name='isScope']:checked").val('false')
+        $("input[name='bindData']:checked").val('false')
         $('#newElement').modal('hide')
+        initElements()
     }else{
         layer.msg(result.error, {offset: '100px'});
     }

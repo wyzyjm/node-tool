@@ -2,7 +2,7 @@
   "cname": "容器",
   "styleId": "e_container",
   "styleClass": "",
-  "tmpl": "<div class=\".${elemId} .${styleClass}\">\n    {{#prop.layout}}\n    <div class=\"p_item cbox_${id}-{{@index}}\"></div>\n    {{/prop.layout}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${layout}}}\n    <div class=\"p_item cbox-${id}-{{@index}}\"></div>\n    {{/${layout}}}\n</div>",
   "css": [
     {
       "media": "",
@@ -22,21 +22,8 @@
     }
   ],
   "container": true,
-  "scope": true,
   "prop": {
     "layout": [
-      {
-        "flex": 1
-      },
-      {
-        "flex": 1
-      },
-      {
-        "flex": 4
-      },
-      {
-        "flex": 1
-      },
       {
         "flex": 1
       }

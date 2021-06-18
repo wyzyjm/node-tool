@@ -1,0 +1,37 @@
+{
+  "cname": "日期",
+  "styleId": "e_date",
+  "styleClass": "",
+  "tmpl": "<div class=\"form-group ${elemId} ${styleClass}\">\n    <label class=\"p_label\">{{${label}}}</label>\n    <input type=\"text\" class=\"form-control p_input\" disabled placeholder=\"{{${placeholder}}}\">\n    <div class=\"invalid-feedback\"></div>\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_date{\n\n}\n.e_date .p_input{\n    position: relative;\n    padding-right: 30px;\n}\n.e_date .p_input{\n    background-image: url(\"/public/img/date.svg\");\n    background-repeat: no-repeat;\n    background-position: right calc(.375em + .1875rem) center;\n    background-size: calc(.75em + .375rem) calc(.75em + .375rem);\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "label": "日期",
+    "placeholder": "请选择日期"
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "label": "label",
+    "placeholder": "placeholder"
+  },
+  "scope": true
+}

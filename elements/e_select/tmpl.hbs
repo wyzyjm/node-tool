@@ -1,0 +1,9 @@
+<div class="form-group e_select">
+    <label>{{prop.label}}</label>
+    <select class="custom-select">
+        {{#prop.options}}
+        <option value="{{value}}">{{text}}</option>
+        {{/prop.options}}
+    </select>
+    <div class="invalid-feedback">{{prop.error}}</div>
+</div>

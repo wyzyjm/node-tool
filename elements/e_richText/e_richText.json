@@ -1,0 +1,35 @@
+{
+  "cname": "富文本",
+  "styleId": "e_richText",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{{${richtext}}}}\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_richText{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "richtext": "<h4>富文本标题</h4><p>富文本段落占位</p><p>富文本段落占位</p><p>富文本段落占位</p><p>富文本段落占位</p>"
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "scope": true,
+  "dataFields": {
+    "richtext": "richtext"
+  }
+}

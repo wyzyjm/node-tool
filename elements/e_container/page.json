@@ -1,0 +1,179 @@
+{
+    "data": {
+        "pageJson": {
+            "comps": [
+                {
+                    "template": "{{#with c_grid-11623291898816}}\r\n    <div class=\"p_gridbox e_comp {{#lonely prop.percent}}signal{{/lonely}} {{#if prop.isTmpl}}e_tmpl{{/if}}\">\r\n        {{#each prop.cellNums}}\r\n            <div id=\"content_box-{{../prop.__instanceId}}-{{@index}}\" class=\"d_gridCell_{{@index}} p_gridCell\"></div>\r\n        {{/each}}\r\n    </div>\r\n{{/with}}\r\n",
+                    "css": [
+                        {
+                            "cssText": "#c_grid-11623291898816 {\n\tmargin-left: auto;\n\tmargin-right: auto;\n\twidth: 100%;\n\tmax-width: 1200px;\n\tmin-width: 0px;\n\theight: auto;\n\tmax-height: none;\n\tmin-height: 192px;\n\tmargin-top: 0px;\n\tmargin-bottom: 0px;\n\tpadding-top: 0px;\n\tpadding-right: 0px;\n\tpadding-bottom: 0px;\n\tpadding-left: 0px;\n\ttop: auto;\n\tbottom: auto;\n\tleft: auto;\n\tright: auto;\n\tz-index: auto;\n}\n#c_grid-11623291898816 .p_gridbox::after {\n\tcontent: '';\n\tclear: left;\n\tdisplay: block;\n}\n#c_grid-11623291898816 > div > .p_gridbox {\n\twidth: 100%;\n\toverflow: hidden;\n\tposition: static;\n}\n#c_grid-11623291898816 > div > .p_gridCell {\n\tfloat: left;\n\tposition: static;\n}\n#c_grid-11623291898816 > .p_gridbox.signal {\n\tmin-height: inherit;\n}\n#c_grid-11623291898816 > .p_gridbox.signal > .p_gridCell {\n\tmin-height: inherit !important;\n}",
+                            "media": ""
+                        },
+                        {
+                            "cssText": "#c_grid-11623291898816 > .p_gridbox > .p_gridCell:nth-child(1n + 1) {\r\n    width: 99%;\r\n    margin-left: 0.5%;\r\n    margin-right: 0.5%;\r\n    margin-top: 0.5rem;\r\n    margin-bottom: 0.5rem;\r\n    clear: left;\r\n}\r\n",
+                            "media": "screen and (max-width:768px)"
+                        },
+                        {
+                            "cssText": "#c_grid-11623291898816 > .p_gridbox > .p_gridCell:nth-child(1n + 1) {\r\n    width: 99%;\r\n    margin-left: 0.5%;\r\n    margin-right: 0.5%;\r\n    margin-top: 0.5rem;\r\n    margin-bottom: 0.5rem;\r\n    clear: left;\r\n}\r\n",
+                            "media": "screen and (min-width: 769px)"
+                        },
+                        {
+                            "cssText": "",
+                            "media": "screen and (max-width: 1024px) and (min-width: 769px)"
+                        }
+                    ],
+                    "dataApi": "",
+                    "data": {},
+                    "compId": "c_grid-11623291898816",
+                    "styleId": "c_grid-1",
+                    "prop": {
+                        "1": {
+                            "innerHeight": 0.5,
+                            "contentMargin": 0.5,
+                            "selectedColumnNums": 0,
+                            "columnNums": 1,
+                            "percent": [
+                                {
+                                    "percent": 100
+                                }
+                            ],
+                            "leftRightMargin": true
+                        },
+                        "2": {
+                            "innerHeight": 0.5,
+                            "contentMargin": 0.5,
+                            "selectedColumnNums": 0,
+                            "columnNums": 1,
+                            "percent": [
+                                {
+                                    "percent": 100
+                                }
+                            ],
+                            "leftRightMargin": true
+                        },
+                        "3": {
+                            "innerHeight": 0.5,
+                            "contentMargin": 0.5,
+                            "selectedColumnNums": 0,
+                            "columnNums": 1,
+                            "percent": [
+                                {
+                                    "percent": 100
+                                }
+                            ],
+                            "leftRightMargin": true
+                        },
+                        "animationDuration": "",
+                        "animationName": "",
+                        "cellNums": 1,
+                        "animationDelay": "",
+                        "__instanceId": "11623291898816"
+                    },
+                    "styleNodes": [
+                        {
+                            "name": "网格容器",
+                            "selector": ">.p_gridbox"
+                        },
+                        {
+                            "name": "网格",
+                            "selector": ">.p_gridbox>.p_gridCell"
+                        }
+                    ],
+                    "parentNode": ".main",
+                    "i18n": {}
+                },
+                {
+                    "template": "{{#with c_text_list_001-21623291951570}}\n<div class=\"e_comp comp_contaner\">\n    {{#if data.category.summary}}\n    <div class=\"border p-3 p_description\" data-ename=\"分类摘要\">\n        <h6 class=\"e_subtitle p_description_title\" data-ename=\"摘要标题\">{{i18n.desTitle}}</h6>\n        <p class=\"text-secondary e_subtitle p_description_con\" data-ename=\"摘要内容\">{{data.category.summary}}</p>\n    </div>\n    {{/if}}\n    <div class=\"e_list p_data_list clearfix\" data-ename=\"循环体容器\">\n        {{#data.list}}\n        <div class=\"e_item p_data_item\" data-ename=\"循环体外框\">\n            <div class=\"border p_data_item_item\" data-ename=\"循环体元素\">\n                <span class=\"p_item_img\" data-ename=\"图片容器\">\n                    <a bind=\"href-href\" href=\"{{href}}\">\n                        {{{lazyImage coverImage 'class=\"p_img\" data-ename=\"图片\" title=\"{{title}}\" alt=\"{{title}}\" bind=\"src-coverImage|title-title|alt-title\"' 'true'}}}\n                    </a>\n                </span>\n                <div class=\"p_item_info\" data-ename=\"数据信息容器\">\n                    <p>\n                        <span class=\"text-secondary p_item_time\" data-ename=\"更新时间\" bind=\"data-updateDate\">{{#dateFormat updateDate}}{{/dateFormat}}</span>\n                    </p>\n                    <h6 class=\"e_subtitle p_title\" data-ename=\"数据标题\">\n                        <a bind=\"href-href\" href=\"{{href}}\" class=\"text-body e_link p_item_title\" data-ename=\"数据标题链接\">\n                            <span bind=\"data-title\">{{title}}</span>\n                        </a>\n                    </h6>\n                    <p class=\"e_summary p_item_description\" data-ename=\"数据描述\" bind=\"data-summary\">{{summary}}</p>\n                </div>\n            </div>\n        </div>\n        {{^}}\n        {{{noDataPrompt}}}\n        {{/data.list}}\n    </div>\n    {{#if data.list}}\n    <div class=\"p_pagenation text-center\" data-ename=\"分页容器\">\n        {{{paging data.page prop.pageType ../view ../pagingData}}}\n    </div>\n    {{/if}}\n</div>\n<script>\n    $comp({\n        id: 'c_text_list_001-21623291951570',\n        lib: ['c_text_list_001_2.js'],\n        pageParams:{\n            url:\"{{{dataApi}}}\",\n            page:{\n                \"pageSize\":\"{{data.page.pageSize}}\",\n                \"currentPage\":\"{{data.page.currentPage}}\",\n                \"totalPage\":\"{{data.page.totalPage}}\",\n                \"totalCount\":\"{{data.page.totalCount}}\"\n            }\n        },\n        propJson: {{{propJson}}},\n        i18nJson: {{{i18nJson}}}\n    })\n</script>\n{{/with}}",
+                    "css": [
+                        {
+                            "cssText": "#c_text_list_001-21623291951570 .p_description{\n    margin-bottom: 20px;\n}\n#c_text_list_001-21623291951570 .p_pagenation{\n    padding:20px 0\n}\n#c_text_list_001-21623291951570 .p_data_list{\n    flex-wrap: wrap;\n}\n#c_text_list_001-21623291951570 .p_data_item{\n    display: block;\n    width: 25%;\n    margin-bottom:20px;\n    padding:0 10px;\n    float: left;\n}\n#c_text_list_001-21623291951570 .p_data_item .p_item_img{\n    width: 100%;\n    height: 180px;\n    display: block;\n}\n#c_text_list_001-21623291951570 .p_data_item .p_item_img img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n#c_text_list_001-21623291951570 .p_item_info{\n    padding:10px;\n}\n#c_text_list_001-21623291951570 .p_item_title{\n    line-height: 2;\n    overflow : hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    display: block;\n}\n#c_text_list_001-21623291951570 .p_item_description{\n    overflow : hidden;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-line-clamp: 2;\n    -webkit-box-orient: vertical;\n    min-height: 3.4em;\n}\n",
+                            "media": ""
+                        },
+                        {
+                            "cssText": "#c_text_list_001-21623291951570 .p_data_item {\n\twidth: calc(100%/1 );\n}\n#c_text_list_001-21623291951570 .p_data_item .p_item_img img {\n\twidth: 100%;\n\theight: 100%;\n\tobject-fit: cover;\n}",
+                            "media": "screen and (max-width:768px)"
+                        },
+                        {
+                            "cssText": "#c_text_list_001-21623291951570 .p_data_item {\n\twidth: calc(100%/3 );\n}",
+                            "media": "screen and (min-width: 769px)"
+                        },
+                        {
+                            "cssText": "",
+                            "media": "screen and (max-width: 1024px) and (min-width: 769px)"
+                        }
+                    ],
+                    "dataApi": "/fwebapi/cms/api/image-and-text/findList?pageSize=3&parentColumnId=10049&columnId=-1",
+                    "data": {},
+                    "compId": "c_text_list_001-21623291951570",
+                    "styleId": "c_text_list_001-2",
+                    "prop": {
+                        "showJump": true,
+                        "pannelParentColumnId": 10049,
+                        "marqueeNavigation": true,
+                        "pageSize": 3,
+                        "rollingNavigation": true,
+                        "rollingAutoScroll": true,
+                        "rollingScrollType": "horizontal",
+                        "moColumn": 1,
+                        "pageType": "hidden",
+                        "marqueeTime": 4,
+                        "rollingPagenation": true,
+                        "rollingTime": 4,
+                        "pannelColumnId": -1,
+                        "pcColumn": 3,
+                        "loopItem": ".p_data_item"
+                    },
+                    "parentNode": "#content_box-11623291898816-0",
+                    "i18n": {
+                        "zh_CN": {
+                            "pageWhole": "共",
+                            "loadNow": "加载中",
+                            "noMore": "没有更多了",
+                            "loadMore": "点击加载更多",
+                            "pageItem": "条",
+                            "pageJump": "前往",
+                            "pageUnit": "页",
+                            "noData": "暂无数据",
+                            "desTitle": "分类描述：",
+                            "showDetail": "查看详情"
+                        }
+                    }
+                }
+            ],
+            "pageCss": {
+                "cssText": ""
+            },
+            "pageId": "18874a7f-5afe-4972-95ce-e1a372f046b0",
+            "tmpls": []
+        },
+        "page": {
+            "appId": "",
+            "bindId": "",
+            "children": null,
+            "contentType": "",
+            "del": 0,
+            "filename": "newjson",
+            "imageUrl": "",
+            "instanceId": "new2020122909251547016",
+            "isDeafault": null,
+            "isErrorPage": 0,
+            "isFlowpage": null,
+            "isHomePage": 0,
+            "isLoginCheck": null,
+            "isLoginPage": null,
+            "isShopPage": null,
+            "isSpecialPage": null,
+            "name": "测试新json",
+            "operStatus": "MAKE",
+            "pageAddress": "",
+            "pageId": "18874a7f-5afe-4972-95ce-e1a372f046b0",
+            "pageMotherSetIdList": null,
+            "pageMotherSetList": null,
+            "pageType": "1",
+            "parentId": "0",
+            "previewImg": "",
+            "showOrder": 27,
+            "viewType": ""
+        }
+    }
+}

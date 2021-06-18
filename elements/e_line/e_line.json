@@ -1,0 +1,29 @@
+{
+  "cname": "线条",
+  "styleId": "e_line",
+  "styleClass": "",
+  "tmpl": "<hr class=\"${elemId} ${styleClass}\" />",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_line{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {},
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}
