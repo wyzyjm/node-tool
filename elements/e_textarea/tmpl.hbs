@@ -1,4 +1,5 @@
-<div class="form-group">
-    <label>{{prop.label}}</label>
+<div class="form-group e_textarea">
+    <label>{{prop.label}}<span class="text-danger p_required">*</span></label>
     <textarea class="form-control" rows="3" placeholder="{{prop.placeholder}}"></textarea>
+    <div class="invalid-feedback">{{prop.error}}</div>
 </div>

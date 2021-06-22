@@ -17,7 +17,8 @@ $(function(){
             eleId:eleId,
             container:$("input[name='isContainer']:checked").val(),
             scope:$("input[name='isScope']:checked").val(),
-            bindData:$("input[name='bindData']:checked").val()
+            bindData:$("input[name='bindData']:checked").val(),
+            adminData:$("input[name='adminData']:checked").val()
         }
         addElement(obj)
     })
@@ -112,6 +113,13 @@ function renderEelement(compId){
             compDiv.id=compId;
             fbody.appendChild(compDiv);
             $(compDiv).html(tmpl(compData));
+            // let compDiv=fdoc.createElement('div');
+            // compDiv.id='c_prudtct_001-111111122334';
+            // let childDiv=fdoc.createElement('div');
+            // childDiv.setAttribute("needjs","true")
+            // compDiv.appendChild(childDiv);
+            // fbody.appendChild(compDiv);
+            // $(childDiv).html(tmpl(compData));
         }catch(e){
             layer.msg('模板错误：'+e.toString(), {offset: '100px'});
         }

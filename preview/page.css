@@ -25,3 +25,11 @@ body{
     content: "容器";
     color:#ccc
 }
+.e_hidden{
+    border: 1px dashed #ccc;
+    height: 40px;
+}
+.e_hidden::after{
+    content: "隐藏表单项";
+    color:#ccc
+}

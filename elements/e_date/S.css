@@ -1,0 +1,9 @@
+.c-datepicker-date-picker.has-sidebar{
+    width: inherit!important;
+}
+.c-datepicker-picker__sidebar{
+    display: none;
+}
+.c-datepicker-picker[slot=sidebar]+.c-datepicker-picker__body,.c-datepicker-picker__sidebar+.c-datepicker-picker__body {
+    margin-left:0px!important
+}

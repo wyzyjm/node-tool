@@ -36,5 +36,6 @@
     "dataList": "dataList"
   },
   "scope": true,
-  "container": true
+  "container": true,
+  "dataManage": true
 }

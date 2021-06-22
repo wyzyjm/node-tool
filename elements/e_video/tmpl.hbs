@@ -1,4 +1,4 @@
-<span class="e_video" needjs="true">
+<div class="video s_cideo e_video p_video" needjs="true">
     <span class="cover">
         <img class="playBtn" src="/public/img/playVideo.png" alt="">
         {{#if prop.coverImage}}
@@ -6,43 +6,5 @@
         {{/if}}
     </span>
     <video class="video" src="{{prop.video}}" muted></video>
-</span>
-<script>
-    var propJson={{{propJson}}}
-    var video = $(".video")
-    initVideo(video)
-    //暂停视频
-    function stopVideo(video){
-        var v = video.get(0)
-        var p = $('.cover')
-        v.pause()
-        p.show()
-    }
-    //播放视频
-    function playVideo(video){
-        var v = video.get(0)
-        var p = $('.cover')
-        v.play();
-        p.find(".coverImage").hide()
-        p.hide();
-    }
-    //初始化视频
-    function initVideo(video){
-        var v = video.get(0)
-        var p = $('.cover')
-        if(propJson.autoPlay){
-            playVideo(video)
-        }
-        v.onended = function() {
-            p.show();
-        };
-        p.find(".playBtn").click(function(){
-            playVideo(video)
-            v.muted = false;
-        })
-        video.click(function(){
-            stopVideo(video)
-            v.muted = false;
-        })
-    }
-</script>
+    <input type="hidden" value='{{{propJson}}}' name="propJson" />
+</div>

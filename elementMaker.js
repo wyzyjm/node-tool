@@ -77,6 +77,9 @@ async function addElement(body){
     if(obj.bindData=='true'){
         defaultJson.dataFields={}
     }
+    if(obj.adminData=='true'){
+        defaultJson.dataManage={}
+    }
     //   await writeFile(compPanelFilePath,JSON.stringify(panelJson,null,2),'utf8');
     await writeFile(compJsonFilePath,JSON.stringify(defaultJson,null,2),'utf8');
     await writeFile(mockFilePath,JSON.stringify(mockData,null,2),'utf8');

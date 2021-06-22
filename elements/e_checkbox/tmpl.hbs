@@ -1,12 +1,10 @@
 <fieldset class="form-group e_checkbox">
-    <legend class="col-form-label p_label">
-        {{prop.label}}
-        <span class="text-danger p_required">*</span>
-    </legend>
+    <legend class="col-form-label p_label">{{prop.label}}<span class="text-danger p_required">*</span></legend>
     {{#prop.options}}
     <div class="form-check form-check-inline p_item">
         <input class="form-check-input p_input" type="checkbox" name="{{../prop.name}}" id="{{../prop.name}}{{@index}}" value="{{value}}">
         <label class="form-check-label p_label" for="{{../prop.name}}{{@index}}">{{label}}</label>
     </div>
     {{/prop.options}}
+    <div class="invalid-feedback"></div>
 </fieldset>

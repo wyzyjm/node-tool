@@ -11,3 +11,15 @@
     background-position: right calc(.375em + .1875rem) center;
     background-size: calc(.75em + .375rem) calc(.75em + .375rem);
 }
+.c-datepicker-date-table{
+    text-align: center;
+}
+.e_date  .p_required{
+    vertical-align: middle;
+    font-size: 1.4em;
+    line-height: 100%;
+    position: relative;
+    font-weight: bold;
+    top: 0.15em;
+    padding-left: 5px;
+}
