@@ -1,0 +1,9 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-dataList",
+            "title": "循环体数据",
+            "bind-value": "prop.dataList"
+        }
+    ]
+}

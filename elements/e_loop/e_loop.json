@@ -1,7 +1,7 @@
 {
   "cname": "循环体容器",
   "styleId": "e_loop",
-  "styleClass": "",
+  "styleClass": "s_list",
   "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${dataList}}}\n    <div class=\"cbox-${id} p_item\"></div>\n    {{^}}\n    {{{noDataPrompt}}}\n    {{/${dataList}}}\n</div>\n",
   "css": [
     {

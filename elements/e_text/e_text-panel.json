@@ -1,0 +1,9 @@
+{
+    "panelConfig": [
+        {
+        "compName": "setting-input",
+        "bind-text": "prop.text",
+        "title": "文字"
+        }
+    ]
+}

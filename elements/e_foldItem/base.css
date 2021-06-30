@@ -1,0 +1,67 @@
+.e_foldItem{
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.e_foldItem .p_ask,
+.e_foldItem .p_answer{
+    line-height: 26px;
+    min-height: 42px;
+    padding: 8px 20px;
+    position: relative;
+    padding-left: 60px;
+    text-align: justify;
+}
+.e_foldItem .p_ask{
+    padding-right: 150px;
+}
+.e_foldItem .p_arrow{
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-right-color: #ccc;
+    position: absolute;
+    content: "";
+    right:20px;
+    top:15px;
+    z-index: 8;
+    cursor: pointer;
+}
+.e_foldItem .p_asktitle{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.e_foldItem .p_time{
+    position: absolute;
+    top:8px;
+    right: 40px;
+}
+.e_foldItem .p_answer{
+    display: none;
+}
+.e_foldItem .p_icon,
+.e_foldItem .p_answer_icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+    line-height: 24px;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    left: 20px;
+    top:9px;
+    border-radius: 2px;
+}
+.e_foldItem.showDetail .p_answer{
+    display: block;
+}
+.e_foldItem.showDetail .p_asktitle{
+    white-space: normal;
+}
+.e_foldItem.showDetail .p_arrow{
+    transform: rotate(-90deg);
+    right: 16px;
+    top: 18px;
+}

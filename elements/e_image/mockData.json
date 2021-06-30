@@ -3,8 +3,13 @@
       "src":"https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
       "title":"图片标题",
       "alt":"图片占位",
-      "href":"http://www.baidu.com",
-      "target":"_blank"
+     
+    "href":{
+        "type":"",
+        "value":""
+    },
+    "target":""
+        
   },
   "i18n": {}
 }

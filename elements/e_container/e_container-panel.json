@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-container",
+            "title":"容器",
+            "bind-value":"prop.layout"
+        }
+    ]
+}
+  

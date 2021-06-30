@@ -1,7 +1,7 @@
 {
   "cname": "h4",
   "styleId": "e_h4",
-  "styleClass": "",
+  "styleClass": "s_link",
   "tmpl": "<h4 class=\"${elemId} ${styleClass}\">{{${h4}}}</h4>",
   "css": [
     {

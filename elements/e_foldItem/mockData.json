@@ -1,0 +1,13 @@
+{
+  "prop": {
+        "title":"@cparagraph",
+        "href":"",
+        "target":"",
+        "answer":"<p>ssssssss</p>",
+        "updateDate":"@date"
+  },
+  "i18n": {
+        "ask":"问",
+        "answer":"答"
+  }
+}

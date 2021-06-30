@@ -1,7 +1,7 @@
 {
   "cname": "容器",
   "styleId": "e_container",
-  "styleClass": "",
+  "styleClass": "s_list",
   "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${layout}}}\n    <div class=\"p_item cbox-${id}-{{@index}}\"></div>\n    {{/${layout}}}\n</div>",
   "css": [
     {
@@ -24,9 +24,7 @@
   "container": true,
   "prop": {
     "layout": [
-      {
-        "flex": 1
-      }
+      {}
     ]
   },
   "i18n": {

@@ -1,0 +1,14 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-video",
+            "title": "视频",
+            "bind-coverImage": "prop.coverImage",
+            "bind-video": "prop.video",
+            "bind-autoPlay": "prop.autoPlay",
+            "bind-loop": "prop.loop",
+            "bind-mouted": "prop.mouted",
+            "bind-controlor": "prop.controlor"
+            }
+    ]
+}

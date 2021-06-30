@@ -1,7 +1,7 @@
 {
   "cname": "h3",
   "styleId": "e_h3",
-  "styleClass": "",
+  "styleClass": "s_summary",
   "tmpl": "<h3 class=\"${elemId} ${styleClass}\">{{${h3}}}</h3>",
   "css": [
     {

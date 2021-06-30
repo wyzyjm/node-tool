@@ -1,0 +1,18 @@
+<div class="border e_foldItem" needjs="true">
+    <div class="bg-light p_ask">
+        <i class="bg-primary text-white p_icon">{{i18n.ask}}</i>
+        {{#if prop.href}}
+        <a href="{{prop.href}}" class="text-body">
+        {{/if}}
+            <span class="p_asktitle">{{prop.title}}</span>
+        {{#if prop.href}}
+        </a>
+        {{/if}}
+        <span class="text-secondary p_time">{{prop.updateDate}}</span>
+        <i class="p_arrow"></i>
+    </div>
+    <div class="border-top p_answer">
+        <i class="border border-primary text-primary p_answer_icon">{{i18n.answer}}</i>
+        <div class="text-body p_answerCon">{{{prop.answer}}}</div>
+    </div>
+</div>

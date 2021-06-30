@@ -1,7 +1,7 @@
 {
   "cname": "图片",
   "styleId": "e_image",
-  "styleClass": "",
+  "styleClass": "s_img",
   "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}}}\n        <a href=\"{{${href}}}\" target=\"{{${target}}}\">\n    {{/if}}\n    {{{lazyImage ${src} \"title='{{${title}}}' alt='{{${alt}}}'\" \"true\"}}}\n    {{#if ${href}}}\n        </a>\n    {{/if}}\n</div>",
   "css": [
     {
@@ -26,7 +26,8 @@
     "title": "图片标题",
     "alt": "图片占位",
     "href": "http://www.baidu.com",
-    "target": "_blank"
+    "target": "_blank",
+    "fit":""
   },
   "i18n": {
     "zh_CN": {}
@@ -36,7 +37,8 @@
     "src": "src",
     "title": "title",
     "alt": "alt",
-    "href": "href",
-    "target": "target"
+    "href": "",
+    "target": "",
+    "fit":""
   }
 }

@@ -1,0 +1,9 @@
+{
+  "prop": {
+      "number":360,
+      "unit":"+",
+      "time":1,
+      "scroll":true
+  },
+  "i18n": {}
+}

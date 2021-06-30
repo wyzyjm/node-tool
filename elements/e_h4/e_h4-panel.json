@@ -1,0 +1,9 @@
+{
+    "panelConfig": [
+        {
+        "compName": "setting-input",
+        "bind-text": "prop.h4",
+        "title": "H4"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-icon",
+            "title":"图标",
+            "bind-value":"prop.icon"
+        }
+    ]
+}
+  

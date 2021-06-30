@@ -1,0 +1,14 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-image",
+            "title":"图像",
+            "bind-src":"prop.src",
+            "bind-title": "prop.title",
+            "bind-href": "prop.href",
+            "bind-target": "prop.target",
+            "bind-fit":"prop.fit"
+        }
+    ]
+}
+  

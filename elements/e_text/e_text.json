@@ -1,7 +1,7 @@
 {
   "cname": "文字",
   "styleId": "e_text",
-  "styleClass": "",
+  "styleClass": "s_title",
   "tmpl": "<p class=\"${elemId} ${styleClass}\">\n    {{${text}}}\n</p>",
   "css": [
     {

@@ -1,8 +1,8 @@
 {
   "cname": "图标",
   "styleId": "e_icon",
-  "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{{${icon}}}}}\n</div>",
+  "styleClass": "s_img",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{{${icon}}}}\n</div>",
   "css": [
     {
       "media": "",

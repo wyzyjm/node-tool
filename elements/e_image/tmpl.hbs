@@ -1,6 +1,6 @@
 <div class="e_image">
-    {{#if prop.href}}
-        <a href="{{prop.href}}" target="{{prop.target}}">
+    {{#if $jumpLik(prop.href)}}
+        <a href="{{$jumpLik(prop.href)}}" target="{{prop.link.target}}">
     {{/if}}
     {{{lazyImage prop.src "title='{{prop.title}}' alt='{{prop.alt}}'" "true"}}}
     {{#if prop.href}}
