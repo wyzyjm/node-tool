@@ -1,7 +1,7 @@
 {
   "cname": "按钮",
   "styleId": "e_button",
-  "styleClass": "s_button1",
+  "styleClass": "",
   "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}}}\n        <a href=\"{{${href}}}\" target=\"{{${target}}}\">\n    {{/if}}\n    <button class=\"btn btn-primary\">{{${text}}}</button>\n    {{#if ${href}}}\n        </a>\n    {{/if}}\n</div>",
   "css": [
     {
@@ -24,8 +24,7 @@
   "prop": {
     "text": "按钮",
     "href": "",
-    "target": "",
-    "linkType":"5"
+    "target": ""
   },
   "i18n": {
     "zh_CN": {}

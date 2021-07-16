@@ -11,6 +11,7 @@ const {exec} = require("child_process");
 const COMP_PATH=path.join(__dirname, './components/');
 const ELE_PATH=path.join(__dirname, './elements/');
 const placeFilePath=path.join(__dirname, './placeFile.json');
+const allElePath=path.join(__dirname, './allEle.json');
 const bodyparser = require('koa-bodyparser');
 //静态资源路由
 app.use(static(path.join( __dirname,  './preview')))
@@ -172,23 +173,24 @@ app.use(async function (ctx,next) {
         let api=match[1];
         let result='';
         if(api=='elementlist'){//获取元素列表
-            let comps = await readdir(ELE_PATH);
-            let elementList=[],nameObj={}
-            await Promise.all(comps.map(async (comp)=>{
-                let dirpath=ELE_PATH+comp;
-                let stats=await stat(dirpath);
-                if(stats.isDirectory()){
-                    let jsonPpath=dirpath+"/"+comp+".json",compJson;
-                    try{
-                        compJson=JSON.parse(await readFile(jsonPpath));
-                    }catch(e){
-                        compJson={}
-                    }
-                    elementList.push(comp);
-                    nameObj[comp]=compJson.cname
-                }
-            }));
-            result=JSON.stringify({elementList:elementList,nameObj:nameObj});
+            let eleJson=JSON.parse(await readFile(allElePath));
+            // let comps = await readdir(ELE_PATH);
+            // let elementList=[],nameObj={}
+            // await Promise.all(comps.map(async (comp)=>{
+            //     let dirpath=ELE_PATH+comp;
+            //     let stats=await stat(dirpath);
+            //     if(stats.isDirectory()){
+            //         let jsonPpath=dirpath+"/"+comp+".json",compJson;
+            //         try{
+            //             compJson=JSON.parse(await readFile(jsonPpath));
+            //         }catch(e){
+            //             compJson={}
+            //         }
+            //         elementList.push(comp);
+            //         nameObj[comp]=compJson.cname
+            //     }
+            // }));
+            result=JSON.stringify(eleJson);
         }else if(api=='addElement'){//添加元素
             try{
                 elementMaker.addElement(ctx.request.body);

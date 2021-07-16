@@ -2,8 +2,9 @@ $(function(){
     initElements()
     //添加元素
     $(".confirmnewElement").click(function(){
-        let cname=$("#eleName").val()
+        let cname=$("#eleName").val();
         let eleId=$('#eleId').val();
+        let eleCate=$('#eleCate').val();
         if(cname.trim() == ''){
             layer.msg('元素名称必填', {offset: '100px'});
             return
@@ -12,50 +13,94 @@ $(function(){
             layer.msg('元素ID不符合规范', {offset: '100px'});
             return
         }
+        if(eleCate.trim() == ''){
+            layer.msg('请选择元素分类', {offset: '100px'});
+            return
+        }
         let obj = {
             cname:cname,
             eleId:eleId,
             container:$("input[name='isContainer']:checked").val(),
             scope:$("input[name='isScope']:checked").val(),
             bindData:$("input[name='bindData']:checked").val(),
-            adminData:$("input[name='adminData']:checked").val()
+            adminData:$("input[name='adminData']:checked").val(),
+            eleCate:eleCate
         }
         addElement(obj)
     })
     //点击元素
-    $('#elementList').on('click','.p_name',function(){
+    $('.elementlist').on('click','.p_name',function(){
         var _t=$(this).parents('.list-group-item')
         var comp=_t.attr('name')
         renderEelement(comp)
         _t.addClass('active').siblings().removeClass('active')
     })
     //补全
-    $('#elementList').on('click','.bq',function(e){
+    $('.elementlist').on('click','.bq',function(e){
         e.stopPropagation();
         var _t=$(this)
         var comp=_t.parents('.list-group-item').attr('name')
         bq(comp)
     })
+    $('.eleCateCon button').click(function(){
+        if($(this).hasClass('active')){
+            return
+        }
+        $('.elementlist .list-group').eq($(this).index()).addClass('show').siblings().removeClass('show')
+        $(this).addClass('active').siblings().removeClass('active')
+    })
 })
 //初始化元素列表
 async function initElements() {
     let result=await (await fetch('/element/elementlist')).json();
-    let elementList=result.elementList
-    let nameObj=result.nameObj
-    elementList.sort();
-    $('#elementList').empty()
-    elementList.forEach(ele => {
+    console.log(result)
+    let base = result.base
+    let complex = result.complex
+    let form = result.form
+    // let elementList=result.elementList
+    // let nameObj=result.nameObj
+    // elementList.sort();
+    $('#baseList').empty()
+    base.forEach(ele => {
         let li=`
-        <li class="list-group-item p_item" name="${ele}">
+        <li class="list-group-item p_item" name="${ele.code}">
             <div class="p_compItem">
-                <div class="p_name">${nameObj[ele]}(${ele})</div>
+                <div class="p_name">${ele.name}(${ele.code})</div>
                 <div class="p_oper">
                     <button type="button" class="btn btn-success btn-sm bq">补全</button>
                 </div>
             </div>
         </li>
         `;
-        $('#elementList').append(li)
+        $('#baseList').append(li)
+    });  
+    $('#complexList').empty()
+    complex.forEach(ele => {
+        let li=`
+        <li class="list-group-item p_item" name="${ele.code}">
+            <div class="p_compItem">
+                <div class="p_name">${ele.name}(${ele.code})</div>
+                <div class="p_oper">
+                    <button type="button" class="btn btn-success btn-sm bq">补全</button>
+                </div>
+            </div>
+        </li>
+        `;
+        $('#complexList').append(li)
+    });  
+    $('#formList').empty()
+    form.forEach(ele => {
+        let li=`
+        <li class="list-group-item p_item" name="${ele.code}">
+            <div class="p_compItem">
+                <div class="p_name">${ele.name}(${ele.code})</div>
+                <div class="p_oper">
+                    <button type="button" class="btn btn-success btn-sm bq">补全</button>
+                </div>
+            </div>
+        </li>
+        `;
+        $('#formList').append(li)
     });  
 }
 //添加元素
@@ -74,6 +119,7 @@ async function addElement(obj){
         layer.msg('添加成功', {offset: '100px'});
         $('#eleName').val('');
         $('#eleId').val('');
+        $('#eleCate').val('');
         $("input[name='isContainer']").val('false')
         $("input[name='isScope']:checked").val('false')
         $("input[name='bindData']:checked").val('false')
