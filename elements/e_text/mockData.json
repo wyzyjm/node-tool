@@ -1,6 +1,11 @@
 {
   "prop": {
-      "text":"这里是占位文字"
+      "text":"这里是占位文字",
+      "href":{
+        "type":"none",
+        "value":"",
+        "target":""
+      }
   },
   "i18n": {}
 }

@@ -1,8 +1,8 @@
 {
   "cname": "文字",
   "styleId": "e_text",
-  "styleClass": "s_title",
-  "tmpl": "<p class=\"${elemId} ${styleClass}\">\n    {{${text}}}\n</p>",
+  "styleClass": "",
+  "tmpl": "<p class=\"${elemId} ${styleClass}\">\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href}}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    {{${text}}}\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</p>",
   "css": [
     {
       "media": "",
@@ -22,13 +22,19 @@
     }
   ],
   "prop": {
-    "text": "这里是占位文字"
+    "text": "这里是占位文字",
+    "href": {
+      "type": "none",
+      "value": "",
+      "target": ""
+    }
   },
   "i18n": {
     "zh_CN": {}
   },
   "datasource": "prop",
   "dataFields": {
-    "text": "text"
+    "text": "text",
+    "href": "href"
   }
 }

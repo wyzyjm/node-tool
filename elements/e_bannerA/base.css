@@ -1,0 +1,72 @@
+.e_bannerA .swiper-slide{
+    height: 600px;
+}
+.e_bannerA .p_img{
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.e_bannerA .p_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.e_bannerA .custom-bullet{
+    background:#ccc;
+}
+.e_bannerA .p_info{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    z-index: 9;
+    display: flex;
+    transform: translateX(50%);
+    align-items: center;
+    text-align: center;
+}
+.e_bannerA .p_info div{
+    width: 100%;
+}
+.e_bannerA .p_subtitle{
+    line-height: 2;
+    padding: 5px 0;
+}
+.e_bannerA .swiper-container-vertical{
+    height:400px;
+}
+.e_bannerA .p_video{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+}
+.e_bannerA .p_video video{
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+.e_bannerA .p_videoPoster{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+}
+.e_bannerA .p_videoPoster::before{
+    content:" ";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: url('/public/img/playVideo.png') no-repeat center center;
+}
+.e_bannerA .p_videoPoster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

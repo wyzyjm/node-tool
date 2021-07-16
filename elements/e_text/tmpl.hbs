@@ -1,3 +1,9 @@
 <p class="e_text">
+    {{#if prop.href.value}}
+        <a href="{{$transferLink prop.href}}" target="{{prop.href.target}}">
+    {{/if}}
     {{prop.text}}
+    {{#if prop.href.value}}
+        </a>
+    {{/if}}
 </p>

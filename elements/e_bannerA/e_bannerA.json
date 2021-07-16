@@ -1,0 +1,29 @@
+{
+  "cname": "轮播图",
+  "styleId": "e_bannerA",
+  "styleClass": "",
+  "tmpl": "",
+  "css": [
+    {
+      "media": "",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {},
+  "i18n": {},
+  "datasource": "prop",
+  "dataFields": {},
+  "scope": true
+}

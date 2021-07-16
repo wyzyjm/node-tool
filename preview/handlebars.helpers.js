@@ -93,3 +93,27 @@ Handlebars.registerHelper('lonely', function(context, options) {
 Handlebars.registerHelper('$jumpLink', function() {
     return "javascript: void(0)";
 });
+
+Handlebars.registerHelper('$transferLink', function(linkOption) {
+    if (!linkOption) {
+        return
+    }
+    let { type = '', value = '', params = '' } = linkOption;
+    let link = value;
+    switch (type) {
+        case 'none': break;
+        case 'page': break;
+        case 'link':
+            break;
+        case 'email':
+            link = 'mailto:' + value;
+            break;
+        case 'tel':
+            link = 'tel:' + value;
+            break;
+        case 'file': break;
+        case 'field': break;
+        default: break;
+    }
+    return link;
+});

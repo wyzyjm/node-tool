@@ -135,30 +135,12 @@ function handleStr(str,dataFields,compId){
     let matchArr = str.match(dataReg)
     if(matchArr){
         matchArr.forEach(e=>{
-            // let tmpStr = e.replace("{{","").replace("}}","")
-            // let lkh = "{{",rkh="}}",tj=""
-
-            // if(tmpStr.includes("{")){
-            //     tmpStr = tmpStr.replace("{","").replace("}","")
-            //     lkh = "{{{",rkh="}}}"
-            // }
-
             tmpStr = e.trim()
-
-            // if(tmpStr.includes(' ')){
-            //     let kgArr = tmpStr.split(/\s+/)
-            //     if(kgArr.length>2){
-            //         return false
-            //     }else{
-            //         tj = kgArr[0]+ " ";
-            //         tmpStr = kgArr[1]
-            //     }
-            // }
-
+         
             let k = tmpStr.split(".")
             // if(dataFields[k[1]]!=undefined){
-                let f="${"+k[1]+"}"
-                str=str.replace(e,f)
+            let f="${"+k[1]+"}"
+            str=str.replace(e,f)
             // }
         })
     }
