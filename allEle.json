@@ -105,6 +105,18 @@
     {
       "name": "滚动数字",
       "code": "e_scrollNumber"
+    },
+    {
+        "name": "导航-三级",
+        "code": "e_navigationA"
+    },
+    {
+        "name": "导航-二级带图片",
+        "code": "e_navigationB"
+    },
+    {
+        "name": "导航-二级组合",
+        "code": "e_navigationC"
     }
   ],
   "form": [
