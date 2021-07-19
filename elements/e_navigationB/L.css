@@ -1,0 +1,45 @@
+.e_navigationB .p_iconBox{
+    display: none;
+}
+.e_navigationB .p_navBox1{
+    position: relative;
+}
+.e_navigationB .p_navBox1, .e_navigationB .p_navBox2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.e_navigationB .p_navBox2{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.e_navigationB .p_navItem1{ 
+    border: none;
+}
+.e_navigationB .p_navItem1:hover>p span{ 
+    color: #409eff;
+}
+.e_navigationB .p_navItem2{
+    width: 200px;
+    margin: 16px 0;
+}
+.e_navigationB p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.e_navigationB span{
+    text-align: center;
+}
+.e_navigationB .p_img{
+    width: 100px;
+    height: 120px;
+    margin-bottom: 16px;
+}
+.e_navigationB .p_jtIcon{
+    display: none;
+}

@@ -1,0 +1,95 @@
+{
+  "cname": "导航三级",
+  "styleId": "e_navigationA",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <ul class=\"bg-white p_level1Box\">\r\n        {{#${dataList}}}\r\n        <li class=\"border-bottom p_level1Item\">\r\n            <p>{{${dataList$name}}}</p>\r\n            <ul class=\"bg-white p_level2Box\">\r\n                {{#children}}\r\n                <li class=\"p_level2Item\">\r\n                    <p>{{${dataList$name}}}</p>\r\n                    <li class=\"bg-white p_level3Box\">\r\n                        {{#children}}\r\n                        <p class=\"p_level3Item\">{{${dataList$name}}}</p>\r\n                        {{/children}}\r\n                    </li>\r\n                </li>\r\n                {{/children}}\r\n            </ul>\r\n        </li>\r\n        {{^}}\r\n        {{{noDataPrompt}}}\r\n        {{/${dataList}}}\r\n    </ul>\r\n</div>\r\n\r\n",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_navigationA .p_level2Box, .e_navigationA .p_level3Box{\n    display: none;\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": "\r\n.e_navigationA .p_level1Box, .e_navigationA .p_level2Box, .e_navigationA .p_level3Box{\r\n    padding: 0 20px;\r\n}"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ".e_navigationA .p_level1Box{\r\n    display: flex;\r\n    justify-content: space-around;\r\n}\r\n.e_navigationA .p_level1Item{\r\n    position: relative;\r\n    border: none;\r\n}\r\n.e_navigationA .p_level2Box{\r\n    position: absolute;\r\n    left: 0;\r\n    top: 30px;\r\n}\r\n.e_navigationA .p_level2Item{\r\n    position: relative;\r\n}\r\n.e_navigationA .p_level3Box{\r\n    width: 100px;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 96px;\r\n    z-index: 9;\r\n}"
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {
+        "name": "网站首页",
+        "children": []
+      },
+      {
+        "name": "列表数据",
+        "children": [
+          {
+            "name": "新闻资讯",
+            "children": [
+              {
+                "name": "百度新闻"
+              },
+              {
+                "name": "腾讯新闻"
+              },
+              {
+                "name": "头条新闻"
+              },
+              {
+                "name": "网易新闻"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "行业资讯",
+        "children": [
+          {
+            "name": "职位招聘",
+            "children": [
+              {
+                "name": "web前端"
+              },
+              {
+                "name": "架构师"
+              },
+              {
+                "name": "实习生"
+              },
+              {
+                "name": "管理岗"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "产品展示",
+        "children": [
+          {
+            "name": "产品类型",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "dataList": "dataList",
+    "dataList$name": "name",
+    "dataList$children": "children"
+  },
+  "dataManage": {}
+}

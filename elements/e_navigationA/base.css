@@ -1,0 +1,16 @@
+.e_navigationA .p_level2Box, .e_navigationA .p_level3Box{
+    display: none;
+    height: auto;
+}
+.e_navigationA p{
+    height: 50px;
+    line-height: 50px;
+}
+.e_navigationA .p_iconBox{
+    height: 57px;
+    padding: 10px;
+}
+.e_navigationA .p_openIcon, .e_navigationA .p_closeIcon{
+    width: 36px;
+    height: 36px;
+}

@@ -1,0 +1,73 @@
+.e_navigationC .p_navBox1{
+    position: relative;
+}
+.e_navigationC .p_navBox1, .e_navigationC .p_navBox2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.e_navigationC .p_navBox2{
+    position: absolute;
+    top: 52px;
+    left: 0;
+    padding: 20px;
+}
+.e_navigationC .p_navBox2 ul{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.e_navigationC .p_imgBox{
+    width: 450px;
+    height: 280px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.e_navigationC .p_imgBox img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.e_navigationC .p_navItem1{ 
+    border: none;
+}
+.e_navigationC .p_navItem1:hover>p span{ 
+    color: #409eff;
+    border-bottom: 2px solid #409eff;
+    box-sizing: border-box;
+}
+.e_navigationC .p_navItem2{
+    height: 50px;
+    width: 380px;
+    margin: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.e_navigationC .p_navItem2:hover{ 
+    border-color: #409eff;
+}
+.e_navigationC p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.e_navigationC span{
+    text-align: center;
+}
+.e_navigationC .p_img{
+    width: 100px;
+    height: 120px;
+    margin-bottom: 16px;
+}
+.e_navigationC .p_jtIcon{
+    display: none;
+}
+.e_navigationC .p_iconBox{
+    display: none;
+}

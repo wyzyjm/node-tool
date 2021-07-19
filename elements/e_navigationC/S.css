@@ -1,0 +1,41 @@
+html, body{
+    padding: 0;
+}
+.e_navigationC .p_navBox1{
+    display: none;
+    height: calc(100vh - 57px);
+}
+.e_navigationC .p_navBox2{ 
+   display: none;
+   border: none;
+   padding-left: 20px;
+}
+.e_navigationC .p_navItem1{ 
+    padding: 0;
+    margin: 0 20px;
+ }
+.e_navigationC .p_navItem2{ 
+    border: none;
+}
+.e_navigationC .p_img{ 
+    display: none;
+}
+.e_navigationC .p_jtIcon{ 
+    float: right;
+    transition: 0.5s;
+    margin: 15px 0;
+}
+#e_navigationC .p_jtHover {
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+.e_navigationC .p_closeIcon{ 
+    display: none;
+    float: right;
+}
+.e_navigationC .p_closeIcon, .e_navigationC .p_openIcon{ 
+    cursor: pointer;
+}
+.e_navigationC .p_imgBox{
+    display: none;
+}

@@ -1,0 +1,12 @@
+.e_navigationC .p_navItem1{
+    padding: 0 20px;
+    line-height: 50px;
+}
+.e_navigationC .p_iconBox{
+    height: 57px;
+    padding: 10px;
+}
+.e_navigationC .p_openIcon, .e_navigationC .p_closeIcon{
+    width: 36px;
+    height: 36px;
+}
