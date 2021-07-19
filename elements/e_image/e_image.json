@@ -1,8 +1,8 @@
 {
   "cname": "图片",
   "styleId": "e_image",
-  "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}}}\n        <a href=\"{{${href}}}\" target=\"{{${target}}}\">\n    {{/if}}\n    {{{lazyImage ${src} \"title='{{${title}}}' alt='{{${alt}}}'\" \"true\"}}}\n    {{#if ${href}}}\n        </a>\n    {{/if}}\n</div>",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href}}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    {{{lazyImage ${src} \"alt='{{${title}}}'\" \"true\"}}}\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
@@ -24,10 +24,11 @@
   "prop": {
     "src": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
     "title": "图片标题",
-    "alt": "图片占位",
-    "href": "http://www.baidu.com",
-    "target": "_blank",
-    "fit":""
+    "href": {
+      "type": "",
+      "value": "",
+      "target": ""
+    }
   },
   "i18n": {
     "zh_CN": {}
@@ -36,9 +37,6 @@
   "dataFields": {
     "src": "src",
     "title": "title",
-    "alt": "alt",
-    "href": "",
-    "target": "",
-    "fit":""
+    "href": "href"
   }
 }

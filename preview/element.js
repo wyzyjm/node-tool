@@ -31,9 +31,11 @@ $(function(){
     //点击元素
     $('.elementlist').on('click','.p_name',function(){
         var _t=$(this).parents('.list-group-item')
+        var _u=_t.parent()
         var comp=_t.attr('name')
         renderEelement(comp)
         _t.addClass('active').siblings().removeClass('active')
+        _u.siblings().find('.list-group-item').removeClass('active')
     })
     //补全
     $('.elementlist').on('click','.bq',function(e){

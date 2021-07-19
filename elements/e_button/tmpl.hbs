@@ -1,9 +1,9 @@
 <div class="e_button">
-    {{#if prop.href}}
-        <a href="{{prop.href}}" target="{{prop.target}}">
+    {{#if prop.href.value}}
+        <a href="{{$transferLink prop.href}}" target="{{prop.href.target}}">
     {{/if}}
     <button class="btn btn-primary">{{prop.text}}</button>
-    {{#if prop.href}}
+    {{#if prop.href.value}}
         </a>
     {{/if}}
 </div>
