@@ -79,13 +79,13 @@ window.onload=async function(){
         console.log(index,arr[index])
     })
 
-    $('.tabswitch button').click(function(){
-        if($(this).hasClass('active')){
-            return
-        }
-        $('.tabcontent .tabitem').eq($(this).index()).addClass('show').siblings().removeClass('show')
-        $(this).addClass('active').siblings().removeClass('active')
-    })
+    // $('.tabswitch button').click(function(){
+    //     if($(this).hasClass('active')){
+    //         return
+    //     }
+    //     $('.tabcontent .tabitem').eq($(this).index()).addClass('show').siblings().removeClass('show')
+    //     $(this).addClass('active').siblings().removeClass('active')
+    // })
 }
 //补全json
 async function bq(comp){

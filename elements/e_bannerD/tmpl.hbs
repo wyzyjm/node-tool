@@ -1,0 +1,22 @@
+<div class="bannerPc banner-osSlider e_bannerD" needjs="true">
+    {{#if prop.bannerLists}}
+    <ul>
+        {{#prop.bannerLists}}
+        <li>
+            {{#eq type 1}}
+                {{#if href}}
+                <a href="{{href}}" target="{{target}}">
+                {{/if}}
+                    {{{lazyImage imgUrl "title='{{title}}' alt='{{title}}'" 'true'}}}
+                {{#if href}}
+                </a>
+                {{/if}}
+            {{/eq}}
+        </li>
+        {{/prop.bannerLists}}
+    </ul>
+    {{^}}
+    {{{noDataPrompt}}}
+    {{/if}}
+    <input type="hidden" name="propJson" value='{{{propJson}}}' />
+</div>

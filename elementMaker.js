@@ -87,6 +87,22 @@ async function addElement(body){
     emptyFilePath.forEach(async (path,i)=>{
         await writeFile(path,i==0?`.${compId}{\n\n}\n`:'','utf8');
     })
+    
+    let allElePath=path.join(__dirname, './allEle.json');
+    let allEleJson=JSON.parse(await readFile(allElePath));
+    let ele={
+        name:obj.cname,
+        code:obj.eleId
+    }
+    if(obj.eleCate=='1'){
+        allEleJson.base.push(ele)
+    }else if(obj.eleCate=='2'){
+        allEleJson.complex.push(ele)
+    }else if(obj.eleCate=='3'){
+        allEleJson.form.push(ele)
+    }
+    await writeFile(allElePath,JSON.stringify(allEleJson,null,2),'utf8');
+
     logger.info(`Component "${compId}" initialization is complete`)
 }
 
@@ -135,30 +151,12 @@ function handleStr(str,dataFields,compId){
     let matchArr = str.match(dataReg)
     if(matchArr){
         matchArr.forEach(e=>{
-            // let tmpStr = e.replace("{{","").replace("}}","")
-            // let lkh = "{{",rkh="}}",tj=""
-
-            // if(tmpStr.includes("{")){
-            //     tmpStr = tmpStr.replace("{","").replace("}","")
-            //     lkh = "{{{",rkh="}}}"
-            // }
-
             tmpStr = e.trim()
-
-            // if(tmpStr.includes(' ')){
-            //     let kgArr = tmpStr.split(/\s+/)
-            //     if(kgArr.length>2){
-            //         return false
-            //     }else{
-            //         tj = kgArr[0]+ " ";
-            //         tmpStr = kgArr[1]
-            //     }
-            // }
-
+         
             let k = tmpStr.split(".")
             // if(dataFields[k[1]]!=undefined){
-                let f="${"+k[1]+"}"
-                str=str.replace(e,f)
+            let f="${"+k[1]+"}"
+            str=str.replace(e,f)
             // }
         })
     }

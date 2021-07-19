@@ -1,8 +1,8 @@
 {
   "cname": "按钮",
   "styleId": "e_button",
-  "styleClass": "s_button1",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}}}\n        <a href=\"{{${href}}}\" target=\"{{${target}}}\">\n    {{/if}}\n    <button class=\"btn btn-primary\">{{${text}}}</button>\n    {{#if ${href}}}\n        </a>\n    {{/if}}\n</div>",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href}}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    <button class=\"btn btn-primary\">{{${text}}}</button>\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
@@ -23,9 +23,11 @@
   ],
   "prop": {
     "text": "按钮",
-    "href": "",
-    "target": "",
-    "linkType":"5"
+    "href": {
+      "type": "none",
+      "value": "",
+      "target": ""
+    }
   },
   "i18n": {
     "zh_CN": {}
@@ -33,7 +35,6 @@
   "datasource": "prop",
   "dataFields": {
     "text": "text",
-    "href": "href",
-    "target": "target"
+    "href": "href"
   }
 }

@@ -35,10 +35,6 @@
   "datasource": "prop",
   "dataFields": {
     "coverImage": "coverImage",
-    "video": "video",
-    "autoPlay": "autoPlay",
-    "loop": "loop",
-    "mouted": "mouted",
-    "controlor": "controlor"
+    "video": "video"
   }
 }

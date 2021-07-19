@@ -1,0 +1,14 @@
+{   
+    "apiType":"object",
+    "dataFields":[
+        {
+            "name":"coverImage",
+            "cname":"封面图",
+            "type":"string"
+        },{
+            "name":"video",
+            "cname":"视频地址",
+            "type":"string"
+        }
+    ]
+}

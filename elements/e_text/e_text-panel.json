@@ -1,9 +1,10 @@
 {
     "panelConfig": [
         {
-        "compName": "setting-input",
-        "bind-text": "prop.text",
-        "title": "文字"
+            "compName": "setting-input",
+            "bind-text": "prop.text",
+            "bind-href": "prop.href",
+            "title": "文字"
         }
     ]
 }

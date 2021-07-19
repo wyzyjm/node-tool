@@ -1,0 +1,148 @@
+{
+  "base": [
+    {
+      "name": "按钮",
+      "code": "e_button"
+    },
+    {
+      "name": "容器",
+      "code": "e_container"
+    },
+    {
+      "name": "H1",
+      "code": "e_h1"
+    },
+    {
+      "name": "H2",
+      "code": "e_h2"
+    },
+    {
+      "name": "H3",
+      "code": "e_h3"
+    },
+    {
+      "name": "H4",
+      "code": "e_h4"
+    },
+    {
+      "name": "H5",
+      "code": "e_h5"
+    },
+    {
+      "name": "H6",
+      "code": "e_h6"
+    },
+    {
+      "name": "图标",
+      "code": "e_icon"
+    },
+    {
+      "name": "图片",
+      "code": "e_image"
+    },
+    {
+      "name": "线条",
+      "code": "e_line"
+    },
+    {
+      "name": "循环体容器",
+      "code": "e_loop"
+    },
+    {
+      "name": "循环体元素",
+      "code": "e_loopElement"
+    },
+    {
+      "name": "富文本",
+      "code": "e_richText"
+    },
+    {
+      "name": "文字",
+      "code": "e_text"
+    },
+    {
+      "name": "视频",
+      "code": "e_video"
+    }
+  ],
+  "complex": [
+    {
+      "name": "轮播图-基础",
+      "code": "e_bannerA"
+    },
+    {
+      "name": "轮播图-旋转木马",
+      "code": "e_bannerB"
+    },
+    {
+      "name": "轮播图-缩略图",
+      "code": "e_bannerC"
+    },
+    {
+      "name": "轮播图-百叶窗",
+      "code": "e_bannerD"
+    },
+    {
+      "name": "分类树-滑出",
+      "code": "e_categoryA"
+    },
+    {
+      "name": "分类树-下拉",
+      "code": "e_categoryB"
+    },
+    {
+      "name": "分类树-横向",
+      "code": "e_categoryC"
+    },
+    {
+      "name": "折叠元素",
+      "code": "e_folditem"
+    },
+    {
+      "name": "回到顶部",
+      "code": "e_top"
+    },
+    {
+      "name": "滚动数字",
+      "code": "e_scrollNumber"
+    }
+  ],
+  "form": [
+    {
+      "name": "多选项",
+      "code": "e_checkbox"
+    },
+    {
+      "name": "日期",
+      "code": "e_date"
+    },
+    {
+      "name": "隐藏表单项",
+      "code": "e_hidden"
+    },
+    {
+      "name": "单行文本输入框",
+      "code": "e_input"
+    },
+    {
+      "name": "数字输入框",
+      "code": "e_number"
+    },
+    {
+      "name": "单选项",
+      "code": "e_radio"
+    },
+    {
+      "name": "下拉选择",
+      "code": "e_select"
+    },
+    {
+      "name": "多行输入框",
+      "code": "e_textarea"
+    },
+    {
+      "name": "时间",
+      "code": "e_time"
+    }
+  ]
+}

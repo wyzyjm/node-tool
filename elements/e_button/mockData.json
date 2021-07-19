@@ -1,8 +1,11 @@
 {
   "prop": {
       "text":"按钮",
-      "href":"",
-      "target":""
+      "href":{
+        "type":"none",
+        "value":"",
+        "target":""
+      }
   },
   "i18n": {}
 }

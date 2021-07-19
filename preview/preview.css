@@ -75,9 +75,10 @@ textarea.upMessage{
     height: 500px;
 }
 .p_name{
-    padding: 0 10px 0 15px;
+    padding: 0 10px;
     position: relative;
     cursor: pointer;
+    text-align: left;
 }
 .p_mark{
     text-align: right;
@@ -87,18 +88,31 @@ textarea.upMessage{
 }
 .p_oper{
     position: absolute;
-    width: 100%;
-    right:calc(100% - 5px);
+    /* width: 100%; */
+    /* right:calc(100% - 10px); */
+    right: 0;
     top: 0;
     transition: all 0.2s;
     padding: 0 10px;
-    background: #D8E9FF;
-    border-right: 5px solid #007bff;
+    /* background: #D8E9FF; */
+    /* border-right: 5px solid #fb0; */
     text-align: center;
 }
-.p_oper:hover{
+/* .p_oper::after{
+    content: " ";
+    position: absolute;
     right: 0;
-}
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #007bff;
+    border-bottom: 5px solid transparent;
+    
+} */
+/* .p_oper:hover{
+    right: 0;
+} */
 .p_logo,.p_header{
     padding:15px 20px;
     height: 60px;
@@ -141,6 +155,7 @@ textarea.upMessage{
 
 .tabswitch{
     text-align: center;
+    margin-bottom: 10px;
 }
 .tabswitch .list-group-item.active{
     /* color: #004085;
@@ -161,10 +176,16 @@ textarea.upMessage{
     position: relative;
 }
 .elementlist{
-    height: calc(100% - 00px);
+    height: calc(100% - 60px);
     overflow-y: auto;
     text-align: center;
     /* padding: 20px; */
+}
+.elementlist .list-group{
+    display: none;
+}
+.elementlist .list-group.show{
+    display: block;
 }
 .newElement{
     /* position: absolute;
@@ -172,12 +193,11 @@ textarea.upMessage{
     left: 0; */
     width: 100%;
     height: 40px;
+    margin-bottom: 10px;
 }
 .newElementModal .col-form-label{
     text-align: right;
     padding: 0;
     line-height: 30px;
 }
-
-
 
