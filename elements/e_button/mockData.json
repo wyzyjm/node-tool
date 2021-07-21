@@ -2,9 +2,9 @@
   "prop": {
       "text":"按钮",
       "href":{
-        "type":"none",
-        "value":"",
-        "target":""
+        "type":"link",
+        "value":"http://www.baidu.com",
+        "target":"_blank"
       }
   },
   "i18n": {}

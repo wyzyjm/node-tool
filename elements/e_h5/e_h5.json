@@ -1,7 +1,7 @@
 {
   "cname": "h5",
   "styleId": "e_h5",
-  "styleClass": "",
+  "styleClass": "s_body",
   "tmpl": "<h5 class=\"${elemId} ${styleClass}\">{{${h5}}}</h5>",
   "css": [
     {

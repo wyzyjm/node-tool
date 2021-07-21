@@ -160,13 +160,7 @@ function handleStr(str,dataFields,compId){
             // }
         })
     }
-    
-    // for(var i in dataFields){
-    //     if(i.includes("$")){
-    //         str=str.replace("{{"+dataFields[i]+"}}","{{${"+i+"}}}")
-    //         str=str.replace("{{{"+dataFields[i]+"}}}","{{{${"+i+"}}}}")
-    //     }
-    // }
+ 
     let dataReg2 = /(\{\{#[\w\W]*?\}\}[\w\W]*?{{\/[\w\W]*?\}\})/g
     let matchArr2 = str.match(dataReg2)
     if(matchArr2){
@@ -198,7 +192,7 @@ function handleStr(str,dataFields,compId){
     let styleClass = "";
     if(classStr){
         let handleStr = classStr.replace(/\/\"/,"").replace(/\"/,"").trim()
-        
+
         if(handleStr){
             let classArr = handleStr.split(/\s+/),nClassArr=[]
             classArr.forEach(e=>{

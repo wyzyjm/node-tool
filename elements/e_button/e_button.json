@@ -1,12 +1,12 @@
 {
   "cname": "按钮",
   "styleId": "e_button",
-  "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href}}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    <button class=\"btn btn-primary\">{{${text}}}</button>\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
+  "styleClass": "s_button1",
+  "tmpl": "<div>\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href}}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    <button class=\"${elemId} ${styleClass} btn btn-primary\">{{${text}}}</button>\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_button{\n\n}\n"
+      "cssText": ".e_button{\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -24,9 +24,9 @@
   "prop": {
     "text": "按钮",
     "href": {
-      "type": "none",
-      "value": "",
-      "target": ""
+      "type": "link",
+      "value": "http://www.baidu.com",
+      "target": "_blank"
     }
   },
   "i18n": {

@@ -1,7 +1,7 @@
 {
   "cname": "文字",
   "styleId": "e_text",
-  "styleClass": "",
+  "styleClass": "s_title",
   "tmpl": "<p class=\"${elemId} ${styleClass}\">\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href}}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    {{${text}}}\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</p>",
   "css": [
     {

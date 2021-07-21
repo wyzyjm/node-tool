@@ -2,7 +2,7 @@
   "cname": "视频",
   "styleId": "e_video",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"video ${elemId} ${styleClass} p_video\" needjs=\"true\">\n    <span class=\"cover\">\n        <img class=\"playBtn\" src=\"/public/img/playVideo.png\" alt=\"\">\n        {{#if ${coverImage}}}\n            <img class=\"coverImage\" src=\"{{${coverImage}}}\" alt=\"\">\n        {{/if}}\n    </span>\n    <video class=\"video\" src=\"{{${video}}}\" muted></video>\n    <input type=\"hidden\" value='{{{propJson}}}' name=\"propJson\" />\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} p_video\" needjs=\"true\">\n    <span class=\"cover\">\n        <img class=\"playBtn\" src=\"/public/img/playVideo.png\" alt=\"\">\n        {{#if ${coverImage}}}\n            <img class=\"coverImage\" src=\"{{${coverImage}}}\" alt=\"\">\n        {{/if}}\n    </span>\n    <video class=\"video\" src=\"{{${video}}}\" muted></video>\n    <input type=\"hidden\" value='{{{propJson}}}' name=\"propJson\" />\n</div>",
   "css": [
     {
       "media": "",
@@ -35,6 +35,10 @@
   "datasource": "prop",
   "dataFields": {
     "coverImage": "coverImage",
-    "video": "video"
+    "video": "video",
+    "autoPlay": "autoPlay",
+    "loop": "loop",
+    "mouted": "mouted",
+    "controlor": "controlor"
   }
 }
