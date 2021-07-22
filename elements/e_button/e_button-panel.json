@@ -4,9 +4,7 @@
             "compName": "setting-button",
             "title": "按钮",
             "bind-text": "prop.text",
-            "bind-href": "prop.href",
-            "bind-target": "prop.target",
-            "bind-linkType": "prop.linkType"
+            "bind-href": "prop.href"
         }
     ]
 }

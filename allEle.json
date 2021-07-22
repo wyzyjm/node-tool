@@ -9,6 +9,22 @@
       "code": "e_container"
     },
     {
+        "name": "文字",
+        "code": "e_text"
+    },
+    {
+      "name": "图标",
+      "code": "e_icon"
+    },
+    {
+      "name": "图片",
+      "code": "e_image"
+    },
+    {
+      "name": "线条",
+      "code": "e_line"
+    },
+    {
       "name": "H1",
       "code": "e_h1"
     },
@@ -33,18 +49,6 @@
       "code": "e_h6"
     },
     {
-      "name": "图标",
-      "code": "e_icon"
-    },
-    {
-      "name": "图片",
-      "code": "e_image"
-    },
-    {
-      "name": "线条",
-      "code": "e_line"
-    },
-    {
       "name": "循环体容器",
       "code": "e_loop"
     },
@@ -57,12 +61,12 @@
       "code": "e_richText"
     },
     {
-      "name": "文字",
-      "code": "e_text"
-    },
-    {
       "name": "视频",
       "code": "e_video"
+    },
+    {
+      "name": "iframe",
+      "code": "e_iframe"
     }
   ],
   "complex": [
@@ -107,19 +111,31 @@
       "code": "e_scrollNumber"
     },
     {
-        "name": "导航-三级",
-        "code": "e_navigationA"
+      "name": "导航-三级",
+      "code": "e_navigationA"
     },
     {
-        "name": "导航-二级带图片",
-        "code": "e_navigationB"
+      "name": "导航-二级带图片",
+      "code": "e_navigationB"
     },
     {
-        "name": "导航-二级组合",
-        "code": "e_navigationC"
+      "name": "导航-二级组合",
+      "code": "e_navigationC"
+    },
+    {
+      "name": "登录",
+      "code": "e_login"
+    },
+    {
+      "name": "注册",
+      "code": "e_register"
     }
   ],
   "form": [
+    {
+      "name": "单选项",
+      "code": "e_radio"
+    },
     {
       "name": "多选项",
       "code": "e_checkbox"
@@ -129,32 +145,28 @@
       "code": "e_date"
     },
     {
+      "name": "时间",
+      "code": "e_time"
+    },
+    {
       "name": "隐藏表单项",
       "code": "e_hidden"
     },
     {
-      "name": "单行文本输入框",
+      "name": "单行输入框",
       "code": "e_input"
-    },
-    {
-      "name": "数字输入框",
-      "code": "e_number"
-    },
-    {
-      "name": "单选项",
-      "code": "e_radio"
-    },
-    {
-      "name": "下拉选择",
-      "code": "e_select"
     },
     {
       "name": "多行输入框",
       "code": "e_textarea"
     },
     {
-      "name": "时间",
-      "code": "e_time"
+      "name": "数字输入框",
+      "code": "e_number"
+    },
+    {
+      "name": "下拉选择",
+      "code": "e_select"
     }
   ]
 }
