@@ -1,4 +1,4 @@
-.e_loop{
+.e_loop .p_list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -6,4 +6,7 @@
 .e_loop .p_item{
     width: calc(33.3% - 30px);
     margin: 15px;
+}
+.e_loop .p_page{
+    text-align: center;
 }
