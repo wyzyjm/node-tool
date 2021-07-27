@@ -1,0 +1,95 @@
+.e_multipleSelect{
+
+}
+.e_multipleSelect  .p_required{
+    vertical-align: middle;
+    font-size: 1.4em;
+    line-height: 100%;
+    position: relative;
+    font-weight: bold;
+    top: 0.15em;
+    padding-left: 5px;
+}
+
+.e_multipleSelect .multSelect{
+    font-size:14px;
+    position: relative;
+}
+.e_multipleSelect .multSelect .inputWrap{
+    width:100%;
+    min-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+.e_multipleSelect .multSelect.is-invalid .inputWrap{
+    border-color:#dc3545
+}
+.e_multipleSelect .multSelect ul{
+    padding:0 5px ;
+    margin: 0;
+    padding-right: 35px;
+}
+.e_multipleSelect .multSelect ul,li{
+    list-style: none;
+}
+.e_multipleSelect .multSelect li{
+    display: inline-block;
+    background: #edf0f3;
+    color:#92969c;
+    padding:3px 5px;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+}
+.e_multipleSelect .multSelect .multSelect-option{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top:0;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    height: 0;
+    opacity: 0;
+    z-index: 9;
+    background: #fff;
+}
+.e_multipleSelect .multSelect .multSelect-option>div{
+    line-height:40px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.e_multipleSelect .multSelect .multSelect-option>div.selected{
+    color: #409eff;
+}
+.e_multipleSelect .multSelect .multSelect-option>div:hover{
+    color: #409eff;
+    background:#f3f6f9
+}
+.e_multipleSelect .multSelect .fa-close{
+    font-style:normal;
+    font-size:12px;
+    padding:0 5px 0 7px;
+}
+.e_multipleSelect .multSelect .inputWrap>.fa svg{
+    fill:#666;
+    width:16px;
+    height:16px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 8px);
+}
+.e_multipleSelect .multSelect .inputWrap>.fa-down svg{
+    transform:rotate(-90deg)
+}
+.e_multipleSelect .multSelect .inputWrap>.fa-up svg{
+    transform:rotate(90deg)
+}
+.e_multipleSelect .multSelect .placeholder{
+    line-height: 40px;
+    padding-left: 10px;
+    color: #aaa;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

@@ -1,11 +1,11 @@
-<div class="e_textarea form-group" needjs="true">
+<div class="e_multipleSelect form-group" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
         {{prop.label}}
         {{#if prop.required}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
-    <textarea class="form-control p_input" rows="3" {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}}></textarea>
+    <div class="multSelect p_input"></div>
     <div class="invalid-feedback"></div>
     <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

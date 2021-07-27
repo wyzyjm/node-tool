@@ -1,5 +1,5 @@
 {
-  "cname": "下拉选择",
+  "cname": "下拉选项",
   "styleId": "e_select",
   "styleClass": "",
   "tmpl": "<div class=\"form-group ${elemId} ${styleClass}\">\n    <label>{{${label}}}</label>\n    <select class=\"custom-select\">\n        {{#${options}}}\n        <option value=\"{{${options$value}}}\">{{${options$text}}}</option>\n        {{/${options}}}\n    </select>\n    <div class=\"invalid-feedback\">{{${error}}}</div>\n</div>",

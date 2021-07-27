@@ -55,7 +55,6 @@ $(function(){
 //初始化元素列表
 async function initElements() {
     let result=await (await fetch('/element/elementlist')).json();
-    console.log(result)
     let base = result.base
     let complex = result.complex
     let form = result.form

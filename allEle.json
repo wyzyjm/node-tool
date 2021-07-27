@@ -9,8 +9,8 @@
       "code": "e_container"
     },
     {
-        "name": "文字",
-        "code": "e_text"
+      "name": "文字",
+      "code": "e_text"
     },
     {
       "name": "图标",
@@ -133,24 +133,8 @@
   ],
   "form": [
     {
-      "name": "单选项",
-      "code": "e_radio"
-    },
-    {
-      "name": "多选项",
-      "code": "e_checkbox"
-    },
-    {
-      "name": "日期",
-      "code": "e_date"
-    },
-    {
-      "name": "时间",
-      "code": "e_time"
-    },
-    {
-      "name": "隐藏表单项",
-      "code": "e_hidden"
+      "name": "表单容器",
+      "code": "e_form"
     },
     {
       "name": "单行输入框",
@@ -161,12 +145,32 @@
       "code": "e_textarea"
     },
     {
-      "name": "数字输入框",
-      "code": "e_number"
+      "name": "下拉单选",
+      "code": "e_select"
     },
     {
-      "name": "下拉选择",
-      "code": "e_select"
+      "name": "下拉多选",
+      "code": "e_multipleSelect"
+    },
+    {
+      "name": "单选项",
+      "code": "e_radio"
+    },
+    {
+      "name": "多选项",
+      "code": "e_checkbox"
+    },
+    {
+      "name": "日期型",
+      "code": "e_date"
+    },
+    {
+      "name": "时间型",
+      "code": "e_time"
+    },
+    {
+      "name": "隐藏表单项",
+      "code": "e_hidden"
     }
   ]
 }

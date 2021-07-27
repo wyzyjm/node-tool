@@ -1,7 +1,11 @@
 {
   "prop": {
-      "label":"多行输入框",
-      "placeholder":"请输入..."
+      "showLabel":true,
+      "label":"多行文本",
+      "showPlaceholder":true,
+      "placeholder":"请输入...",
+      "length":5000,
+      "required":true
   },
   "i18n": {}
 }

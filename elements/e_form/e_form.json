@@ -1,6 +1,6 @@
 {
-  "cname": "多行文本",
-  "styleId": "e_textarea",
+  "cname": "表单容器",
+  "styleId": "e_form",
   "styleClass": "",
   "tmpl": "",
   "css": [
@@ -24,5 +24,7 @@
   "prop": {},
   "i18n": {},
   "datasource": "prop",
+  "container": true,
+  "scope": true,
   "dataFields": {}
 }
