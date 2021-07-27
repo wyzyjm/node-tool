@@ -129,6 +129,10 @@
     {
       "name": "注册",
       "code": "e_register"
+    },
+    {
+      "name": "轮播图-产品详情",
+      "code": "e_magnifier"
     }
   ],
   "form": [
