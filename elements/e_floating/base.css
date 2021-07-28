@@ -1,0 +1,106 @@
+.e_floating{
+
+}
+#c_portal_productFloating_001-1>div{
+
+}
+
+.p_obscuration{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.p_obscuration.show{
+    display: block;
+}
+.p_title{
+    display: flex;
+    justify-content: space-between;
+}
+.p_contrast{
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    z-index: 1;
+}
+.p_contrast_text{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p_contrast_num{
+    position: absolute;
+    right: 0px;
+    top: -5px;
+}
+.p_data_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.p_item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right-style: dashed;
+}
+.p_item_delete{
+    cursor: pointer;
+    display: none;
+}
+.p_compare_amount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.p_comparedata{
+    flex: 1;
+}
+.p_item:last-child{
+    width: 230px;
+}
+.p_item_img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p_item_imgsrc{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.p_compare_title{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.p_last_item{
+    display: flex;
+    width: 230px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.p_contrast,
+.p_contrast_hidden{
+    display: none;
+    opacity: 0;
+
+}
+.p_danger.hide{
+    display: none;
+}
+.p_item:hover .p_item_delete{
+    display: block;
+    transition: 1s height, 1s width;
+}

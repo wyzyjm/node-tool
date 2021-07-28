@@ -1,0 +1,13 @@
+{
+  "prop": {},
+  "data": {},
+  "i18n": {
+    "contrast":"对比",
+    "compareTheBar":"对比栏",
+    "clear":"清空对比栏",
+    "hidden":"隐藏",
+    "delete":"删除",
+    "noncontrastingDescription":"您还可以继续添加",
+    "tip":"对比栏已满，您可以删除不需要的栏内商品再继续添加哦！"
+  }
+}

@@ -133,6 +133,14 @@
     {
       "name": "轮播图-产品详情",
       "code": "e_magnifier"
+    },
+    {
+      "name": "对比-详情",
+      "code": "e_contrast"
+    },
+    {
+      "name": "对比-浮动窗",
+      "code": "e_floating"
     }
   ],
   "form": [
