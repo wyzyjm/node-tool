@@ -1,6 +1,6 @@
 {
-  "cname": "多行文本",
-  "styleId": "e_textarea",
+  "cname": "对比-浮动窗",
+  "styleId": "e_floating",
   "styleClass": "",
   "tmpl": "",
   "css": [

@@ -1,7 +1,18 @@
 {
   "prop": {
+      "showLabel":true,
       "label":"单行文本",
-      "placeholder":"请输入..."
+      "showPlaceholder":true,
+      "placeholder":"请输入...",
+      "type":"number",
+      "length":10,
+      "numberLimit":{
+          "showMin":true,
+          "min":0,
+          "showMax":true,
+          "max":10
+      },
+      "required":true
   },
   "i18n": {}
 }

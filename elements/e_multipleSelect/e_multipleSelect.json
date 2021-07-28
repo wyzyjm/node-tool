@@ -1,6 +1,6 @@
 {
-  "cname": "多行文本",
-  "styleId": "e_textarea",
+  "cname": "下拉多选",
+  "styleId": "e_multipleSelect",
   "styleClass": "",
   "tmpl": "",
   "css": [
@@ -23,6 +23,5 @@
   ],
   "prop": {},
   "i18n": {},
-  "datasource": "prop",
-  "dataFields": {}
+  "datasource": "prop"
 }

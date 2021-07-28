@@ -1,25 +1,26 @@
 {
     "prop": {
+        "showLabel":true,
         "label":"下拉选择",
+        "showPlaceholder":true,
+        "placeholder":"请选择",
         "options":[
             {
-                "text":"请选择",
-                "value":""
-            },{
-                "text":"选项1",
+                "label":"选项1",
                 "value":"1"
             },{
-                "text":"选项2",
+                "select":true,
+                "label":"选项2",
                 "value":"2"
             },{
-                "text":"选项3",
+                "label":"选项3",
                 "value":"3"
             },{
-                "text":"选项4",
+                "label":"选项4",
                 "value":"4"
             }
         ],
-        "error":"请选择"
+        "required":true
     },
     "i18n": {}
 }

@@ -1,5 +1,5 @@
 {
-  "cname": "单行文本输入框",
+  "cname": "单行文本",
   "styleId": "e_input",
   "styleClass": "",
   "tmpl": "<div class=\"form-group ${elemId} ${styleClass}\">\n    <label class=\"p_label\">{{${label}}}</label>\n    <input type=\"text\" class=\"form-control p_input\" placeholder=\"{{${placeholder}}}\">\n</div>",

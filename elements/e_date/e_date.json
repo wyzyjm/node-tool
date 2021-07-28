@@ -1,5 +1,5 @@
 {
-  "cname": "日期",
+  "cname": "日期型",
   "styleId": "e_date",
   "styleClass": "",
   "tmpl": "<div class=\"form-group ${elemId} ${styleClass}\">\n    <label class=\"p_label\">{{${label}}}</label>\n    <input type=\"text\" class=\"form-control p_input\" disabled placeholder=\"{{${placeholder}}}\">\n    <div class=\"invalid-feedback\"></div>\n</div>",
