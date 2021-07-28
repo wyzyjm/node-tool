@@ -1,0 +1,18 @@
+{
+  "prop": {
+    "markList":[
+      {
+        "id ": 1, 
+        "markName": "热", 
+        "markIUrl": "@image('55x55')"
+    }, 
+    {
+        "id ": 2, 
+        "markName": "热w", 
+        "markIUrl": "@image('55x55')"
+    }
+    ]
+  },
+ 
+  "i18n": {}
+}

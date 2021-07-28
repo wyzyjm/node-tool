@@ -1,0 +1,11 @@
+{
+  "prop": {},
+  "i18n": {
+    "zSort":"综合排序",
+		"upTime":"发布时间",
+		"product":"产品名称",
+    "price":"价格",
+		"sale":"销量",
+    "productNum":"产品列表"
+  }
+}
