@@ -133,6 +133,41 @@
     {
       "name": "轮播图-产品详情",
       "code": "e_magnifier"
+    },
+    {
+      "name": "对比-详情",
+      "code": "e_contrast"
+    },
+    {
+      "name": "对比-浮动窗",
+      "code": "e_floating"
+    },
+    
+    {
+     
+      "name": "筛选排序",
+      "code": "e_filterSort"
+    },
+    {
+      "name": "标记图标",
+      "code": "e_flagIcon"
+    },
+    {
+      "name": "标记图片",
+      "code": "e_flagImg"
+    },
+    {
+      "name": "预览商品",
+      "code": "e_preView"
+    },
+    {
+      "name": "收藏",
+      "code": "e_collect"
+    },
+    {
+      "name": "按钮组",
+      "code": "e_groupBtn"
+
     }
   ],
   "form": [

@@ -1,0 +1,19 @@
+.e_flagIcon{
+
+}
+.p_flog{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.p_flog_c{
+    width: 25%;
+    float:right;
+    padding-left: 3px;
+}
+.p_flog_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

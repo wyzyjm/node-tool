@@ -1,0 +1,22 @@
+<div class="comp_container p_container" needjs='true'>
+    <div class="e_comp p_comp" data-ename="组件容器">
+        <div class="badge-primary p-1 p_contrast" data-ename="对比按钮（mo）">
+            <span class="p_contrast_text">{{i18n.contrast}}</span>
+            <span class="p_contrast_num" data-ename="对比数量">4</span>
+        </div>
+        <div class="p_obscuration" data-ename="蒙层">
+            <div class="bg-white p_contrast_list" data-ename="对比列表">
+                <div class="alert alert-danger p_danger hide" data-ename="提示语">
+                    {{i18n.tip}}
+                </div>
+                <p class="text-primary border-bottom p_title" data-ename="副标题">
+                    <span class="border-bottom border-primary px-3 py-2 p_title_compareTheBar">{{i18n.compareTheBar}}</span>
+                    <span class="px-3 py-2 p_title_hidden" data-ename="副标题隐藏">{{i18n.hidden}}</span>
+                </p>
+                <ul class="e_list px-sm-2 py-md-2 p_data_list" data-ename="循环体容器">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{{!-- <input type="hidden" name="i18nJson" value='{{{i18nJson}}}' /> --}}
