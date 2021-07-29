@@ -165,12 +165,36 @@
       "code": "e_checkbox"
     },
     {
+      "name": "标签型",
+      "code": "e_label"
+    },
+    {
       "name": "日期型",
       "code": "e_date"
     },
     {
-      "name": "时间型",
-      "code": "e_time"
+      "name": "区间日期型",
+      "code": "e_rangeDate"
+    },
+    {
+      "name": "评分、评价",
+      "code": "e_score"
+    },
+    {
+      "name": "按钮",
+      "code": "e_formBtn"
+    },
+    {
+      "name": "地址型",
+      "code": "e_address"
+    },
+    {
+      "name": "图片型",
+      "code": "e_uploadImg"
+    },
+    {
+      "name": "文件型",
+      "code": "e_uploadFile"
     },
     {
       "name": "隐藏表单项",

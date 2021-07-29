@@ -1,7 +1,9 @@
 {
   "prop": {
     "showLabel":true,
-    "label":"多选项",
+    "label":"标签型",
+    "type":2,
+    "limit":3,
     "options":[
         {
             "label":"选项1",
@@ -16,6 +18,12 @@
         },{
             "label":"选项4",
             "value":"4"
+        },{
+            "label":"选项5",
+            "value":"5"
+        },{
+            "label":"选项6",
+            "value":"6"
         }
     ],
     "required":true

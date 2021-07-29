@@ -4,8 +4,6 @@
 .e_date .p_input{
     position: relative;
     padding-right: 30px;
-}
-.e_date .p_input{
     background-image: url("/public/img/date.svg");
     background-repeat: no-repeat;
     background-position: right calc(.375em + .1875rem) center;

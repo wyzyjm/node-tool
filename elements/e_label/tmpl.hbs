@@ -1,4 +1,4 @@
-<fieldset class="e_checkbox form-group" needjs="true">
+<fieldset class="e_label form-group" needjs="true">
     {{#if prop.showLabel}}
     <legend class="col-form-label p_label">
         {{prop.label}}
@@ -7,7 +7,7 @@
     {{/if}}
     <div class="p_input">
         {{#prop.options}}
-        <div class="form-check form-check-inline p_radioItem">
+        <div class="form-check form-check-inline p_labelItem">
             <input class="form-check-input" type="checkbox" name="e_checkbox" id="e_checkbox-${id}-{{@index}}" value="{{value}}" {{#if select}}checked{{/if}}>
             <label class="form-check-label" for="e_checkbox-${id}-{{@index}}">{{label}}</label>
         </div>

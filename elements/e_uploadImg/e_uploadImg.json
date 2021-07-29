@@ -1,6 +1,6 @@
 {
-  "cname": "时间型",
-  "styleId": "e_time",
+  "cname": "图片型",
+  "styleId": "e_uploadImg",
   "styleClass": "",
   "tmpl": "",
   "css": [
@@ -23,6 +23,5 @@
   ],
   "prop": {},
   "i18n": {},
-  "datasource": "prop",
-  "dataFields": {}
+  "datasource": "prop"
 }

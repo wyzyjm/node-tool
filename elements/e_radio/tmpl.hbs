@@ -1,10 +1,18 @@
-<fieldset class="form-group e_radio">
-    <legend class="col-form-label p_label">{{prop.label}}<span class="text-danger p_required">*</span></legend>
-        {{#prop.options}}
-        <div class="form-check form-check-inline p_radioItem">
-            <input class="form-check-input p_radioInput" type="radio" name="{{../prop.name}}" id="{{../prop.name}}{{@index}}" value="{{value}}" {{#eq @index 0}} checked {{/eq}}>
-            <label class="form-check-label p_radioLabel" for="{{../prop.name}}{{@index}}">{{label}}</label>
-        </div>
-        {{/prop.options}}
-        <div class="invalid-feedback"></div>
+<fieldset class="e_radio form-group" needjs="true">
+    {{#if prop.showLabel}}
+    <legend class="col-form-label p_label">
+        {{prop.label}}
+        {{#if prop.required}}<span class="text-danger p_required">*</span>{{/if}}
+    </legend>
+    {{/if}}
+    <div class="p_input">
+    {{#prop.options}}
+    <div class="form-check form-check-inline p_radioItem">
+        <input class="form-check-input" type="radio" name="e_radio" id="e_radio-${id}-{{@index}}" value="{{value}}" {{#if select}}checked{{/if}}>
+        <label class="form-check-label" for="e_radio-${id}-{{@index}}">{{label}}</label>
+    </div>
+    {{/prop.options}}
+    </div>
+    <div class="invalid-feedback"></div>
+    <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </fieldset>

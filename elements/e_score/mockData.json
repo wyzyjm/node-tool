@@ -1,0 +1,34 @@
+{
+  "prop": {
+    "showLabel":true,
+    "label":"评分评价",
+    "placeholder":"请选择评分",
+    "number":5,
+    "score":0,
+    "half":true,
+    "prompt":[
+        {
+            "from":1,
+            "to":2,
+            "label":"不满意"
+        },
+        {
+            "from":3,
+            "to":6,
+            "label":"满意"
+        },
+        {
+            "from":7,
+            "to":"",
+            "label":"非常满意"
+        },
+        {
+            "from":8,
+            "to":10,
+            "label":"666"
+        }
+    ],
+    "required":true
+  },
+  "i18n": {}
+}
