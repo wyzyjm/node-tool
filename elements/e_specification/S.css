@@ -1,0 +1,7 @@
+.e_specification .p_specName {
+    display: block;
+    float: none
+ }
+ .e_specification .p_valueUl {
+    margin-left: 0;
+}
