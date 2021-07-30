@@ -121,7 +121,7 @@ async function compJsonBuilder(compId) {
   compJson.prop=mockJson.prop;
   if(compJson.dataFields){
     for(var i in compJson.prop){
-        compJson.dataFields[i]=i
+        // compJson.dataFields[i]=i
         if(Array.isArray(compJson.prop[i])){
             for(var j in compJson.prop[i][0]){
                 let tk=i+"$"+j

@@ -230,10 +230,6 @@
     {
       "name": "文件型",
       "code": "e_uploadFile"
-    },
-    {
-      "name": "隐藏表单项",
-      "code": "e_hidden"
     }
   ]
 }

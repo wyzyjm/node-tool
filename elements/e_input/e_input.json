@@ -2,11 +2,11 @@
   "cname": "单行文本",
   "styleId": "e_input",
   "styleClass": "",
-  "tmpl": "<div class=\"form-group ${elemId} ${styleClass}\">\n    <label class=\"p_label\">{{${label}}}</label>\n    <input type=\"text\" class=\"form-control p_input\" placeholder=\"{{${placeholder}}}\">\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${required}}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <input type=\"text\" class=\"form-control p_input\" {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}}>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_input{\n\n}\n"
+      "cssText": ".e_input{\n\n}\n.e_input  .p_required{\n    vertical-align: middle;\n    font-size: 1.4em;\n    line-height: 100%;\n    position: relative;\n    font-weight: bold;\n    top: 0.15em;\n    padding-left: 5px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,15 +22,22 @@
     }
   ],
   "prop": {
+    "showLabel": true,
     "label": "单行文本",
-    "placeholder": "请输入..."
+    "showPlaceholder": true,
+    "placeholder": "请输入...",
+    "type": "number",
+    "length": 10,
+    "numberLimit": {
+      "showMin": true,
+      "min": 0,
+      "showMax": true,
+      "max": 10
+    },
+    "required": true
   },
   "i18n": {
     "zh_CN": {}
   },
-  "datasource": "prop",
-  "dataFields": {
-    "label": "label",
-    "placeholder": "placeholder"
-  }
+  "datasource": "prop"
 }

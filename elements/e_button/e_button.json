@@ -2,7 +2,7 @@
   "cname": "按钮",
   "styleId": "e_button",
   "styleClass": "s_button1",
-  "tmpl": "<div>\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href}}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    <button class=\"${elemId} ${styleClass} btn btn-primary\">{{${text}}}</button>\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
+  "tmpl": "<div>\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    <button class=\"${elemId} ${styleClass} btn btn-primary\">{{${text}}}</button>\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
