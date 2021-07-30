@@ -169,6 +169,10 @@
     {
       "name": "产品规格",
       "code": "e_specification"
+    },
+    {
+      "name": "tab栏产品详情",
+      "code": "e_productTabList"
     }
   ],
   "form": [
