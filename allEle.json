@@ -142,9 +142,7 @@
       "name": "对比-浮动窗",
       "code": "e_floating"
     },
-    
     {
-     
       "name": "筛选排序",
       "code": "e_filterSort"
     },
@@ -167,7 +165,10 @@
     {
       "name": "按钮组",
       "code": "e_groupBtn"
-
+    },
+    {
+      "name": "产品规格",
+      "code": "e_specification"
     }
   ],
   "form": [

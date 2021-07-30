@@ -1,0 +1,24 @@
+<ul class="e_specification">
+    {{#prop.specList}}
+        <li class="p_item">
+            <!--规格名称-->
+            <span class="p_specName"> {{specName}} </span>
+            <!--规格值-->
+            <ul class="p_valueUl">
+                {{#productSpecValues}}
+                <li class="itemValue"> 
+                    {{#if ../imageFlag}}
+                        <!--图片类型-->
+                        {{{lazyImage imgPath "class='specValueI' title='{{name}}' alt='{{name}}' " 'true'}}}
+                    {{^}}
+                        <!--文字类型-->
+                        <span class="specValueT">{{name}}</span>
+                    {{/if}}
+                </li>
+                {{/productSpecValues}}
+            </ul>
+        </li>
+    {{/prop.specList}}
+    <!--js传值-->
+    <input type="hidden" name="propJson" value="{{{propJson}}}">
+</ul>

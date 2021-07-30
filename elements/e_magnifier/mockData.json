@@ -1,4 +1,55 @@
 {
-  "prop": {},
+  "prop": {
+    "dataList":[
+        {
+          "id": 123213,
+          "title": "视频标题",
+          "type": "video",
+          "summary": "视频简介",
+          "thumbnailUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.jpg",
+          "url": "https://pre-omo-oss-vedio.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
+          "duration": 4,
+          "size": 3214
+      },
+      {
+          "id": 12345,
+          "title": "360图片标题",
+          "type": "360",
+          "imgUrlList": ["http://1809290214.pool3-site.make.yun300.cn/repository/image/d2fb07cc-81a8-4278-be17-5a38c6c89e54.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/209085eb-6f73-47a4-95cb-b68859ed4963.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/46834dba-a048-4c75-98a5-db18537e76b3.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/21701b86-d642-4aa5-89a3-61d7c64c2ce2.png"
+          ]
+      },
+      {
+          "id": 1231312,
+          "title": "图片标题",
+          "type": "img",
+          "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
+          "iscover": true
+      },
+      {
+          "id": 1231312,
+          "title": "图片标题",
+          "type": "img",
+          "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
+          "iscover": false
+      },
+      {
+          "id": 1231312,
+          "title": "图片标题",
+          "type": "img",
+          "imgUrl": "http://pic1.win4000.com/wallpaper/2020-04-14/5e95539eb9456.jpg",
+          "iscover": false
+      },
+      {
+          "id": 1231312,
+          "title": "图片标题",
+          "type": "img",
+          "imgUrl": "http://1809290214.pool3-site.make.yun300.cn/repository/image/175d9609-db6b-4c5e-bb3e-6b39cc8bfb9d.jpg",
+          "iscover": false
+      }
+    ]
+  },
   "i18n": {}
 }
