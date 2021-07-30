@@ -1,8 +1,8 @@
 window.onload=async function(){
     //初始化组件列表
-    initCompList()
+    // initCompList()
     //初始化归档组件列表
-    placeFileList()
+    // placeFileList()
     //添加组件
     $('#add').click(function(){
         let compId=$('#iptCompId').val();

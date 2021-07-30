@@ -1,7 +1,7 @@
 {
     "panelConfig": [
         {
-        "compName": "setting-input",
+        "compName": "setting-text",
         "bind-text": "prop.h3",
         "title": "H3"
         }
