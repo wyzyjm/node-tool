@@ -150,10 +150,7 @@
       "name": "标记图标",
       "code": "e_flagIcon"
     },
-    {
-      "name": "标记图片",
-      "code": "e_flagImg"
-    },
+   
     {
       "name": "预览商品",
       "code": "e_preView"
