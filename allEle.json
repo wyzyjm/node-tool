@@ -173,6 +173,10 @@
     {
       "name": "tab栏产品详情",
       "code": "e_productTabList"
+    },
+    {
+      "name": "产品详情数量",
+      "code": "e_productNumber"
     }
   ],
   "form": [

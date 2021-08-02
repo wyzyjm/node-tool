@@ -1,0 +1,44 @@
+.e_productNumber{
+    display: flex;
+    align-items: center;
+}
+.e_productNumber :focus {
+    outline: 0;
+}
+.e_productNumber .p_label {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.e_productNumber .p_box {
+    display: flex;
+    float: left;
+}
+
+.e_productNumber .p_reduce{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-right: none;
+    cursor: pointer;
+}
+.e_productNumber .p_input{
+    width: 40px;
+    height: 28px;
+    text-align: center;
+}
+.e_productNumber .p_increase{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-left: none;
+    cursor: pointer;
+}

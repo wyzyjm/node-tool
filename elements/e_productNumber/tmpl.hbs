@@ -1,0 +1,14 @@
+<div class="e_productNumber" needjs="true">
+    <!-- lable -->
+    <div class="p_label">{{i18n.count}}</div>
+    <div class="p_box">
+        <!-- 减少 -->
+        <div class="border rounded-left p_reduce">-</div>
+        <!-- input -->
+        <input type="text" class="border p_input" value="{{prop.moq}}">
+        <!-- 增加 -->
+        <div class="border rounded-right p_increase">+</div>
+    </div>
+    <!-- 传值 -->
+    <input type="hidden" name="propJson" value='{{{propJson}}}' />
+</div>
