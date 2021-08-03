@@ -6,9 +6,9 @@
     </label>
     {{/if}}
     {{#eq prop.state 'readOnly'}}
-    <p>{{prop.value}}</p>
-    {{^}}
-    <div class="{{#eq prop.type 'number'}}p_number{{/eq}}">
+    <p class="p_formValue">{{prop.value}}</p>
+    {{/eq}}
+    <div class="{{#eq prop.type 'number'}}p_number{{/eq}} {{#eq prop.state 'readOnly'}}hide{{/eq}}">
         <input type="text" class="form-control p_input" name="${elemId}" 
             {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} 
             {{#if prop.value}}value="{{prop.value}}"{{/if}} 
@@ -17,6 +17,6 @@
         {{#eq prop.type 'number'}}{{prop.unit}}{{/eq}}
         <div class="invalid-feedback"></div>
     </div>
-    {{/eq}}
+    
     <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

@@ -4,24 +4,31 @@
     "label":"下拉多选",
     "showPlaceholder":true,
     "placeholder":"请选择",
+    "state":"normal",
     "options":[
         {
-            "select":true,
-            "label":"选项1",
+            "label":"读书",
             "value":"1"
         },{
-            "label":"选项2",
+            "select":true,
+            "label":"旅游",
             "value":"2"
         },{
-            "label":"选项3",
+            "select":true,
+            "label":"音乐",
             "value":"3"
         },{
-            "select":true,
-            "label":"选项4",
+            "label":"篮球",
             "value":"4"
         }
     ],
-    "required":true
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
   },
   "i18n": {}
 }

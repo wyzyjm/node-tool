@@ -6,7 +6,7 @@
     "placeholder":"请输入...",
     "type":"text",
     "value":"",
-    "state":"normal",
+    "state":"disabled",
     "decimal":2,
     "unit":"千克",
     "validate":{

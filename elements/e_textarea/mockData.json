@@ -1,11 +1,33 @@
 {
   "prop": {
-      "showLabel":true,
-      "label":"多行文本",
-      "showPlaceholder":true,
-      "placeholder":"请输入...",
-      "length":5000,
-      "required":true
+        "showLabel":true,
+        "label":"多行文本",
+        "showPlaceholder":true,
+        "placeholder":"请输入...",
+        "value":"",
+        "state":"normal",
+        "validate":{
+            "required":{
+                "state":true,
+                "value":true,
+                "msg":"内容不能为空"
+            },
+            "minLength":{
+                "state":false,
+                "value":5,
+                "msg":"您输入的内容不能少于%len个字符"
+            },
+            "maxLength":{
+                "state":false,
+                "value":128,
+                "msg":"您输入的内容不能多于%len个字符"
+            },
+            "custom":{
+                "state":false,
+                "reg":"",
+                "msg":""
+            }
+        }
   },
   "i18n": {}
 }

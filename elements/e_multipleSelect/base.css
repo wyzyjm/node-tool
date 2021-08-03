@@ -93,3 +93,8 @@
     left: 0;
     top: 0;
 }
+.e_multipleSelect .multSelect .disabled{
+    background-color: #e9ecef;
+    opacity: 1;
+    cursor: not-allowed;
+}
