@@ -2,15 +2,15 @@
   "cname": "tab栏产品详情",
   "styleId": "e_productTabList",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <!-- 标题 -->\r\n     <ul class=\"p_tabName\">\r\n         {{#${productTabList}}}\r\n         <li class=\"js_nameItem p_nameItem {{#eq @index 0}} active{{/eq}} \"> {{name}} </li>\r\n         {{/${productTabList}}}\r\n     </ul>\r\n    <!-- 内容 -->\r\n     <ul class=\"p_tabContent\">\r\n         {{#${productTabList}}}\r\n            {{#eq type \"base\"}}\r\n                <!-- 产品描述 -->\r\n                <li class=\"p_contentItem  {{#eq @index 0}} active{{/eq}}\">\r\n                    <!-- 属性区 -->\r\n                    <ul class=\"p_infoItem\">\r\n                        <!-- 品牌 -->\r\n                        <li class=\"p_attrItem\"> \r\n                            <span class=\"s_summary p_attrName\">品牌: </span>\r\n                            <span class=\"p_attrValue\"> {{brand}} </span>\r\n                        </li>\r\n                        <!-- 名称 -->\r\n                        <li class=\"p_attrItem\">\r\n                            <span class=\"s_summary p_attrName\">商品名称: </span>\r\n                            <span class=\"p_attrValue\"> {{title}} </span>\r\n                        </li>\r\n                        <!-- 编号 -->\r\n                        <li class=\"p_attrItem\">\r\n                            <span class=\"s_summary p_attrName\">商品编号: </span>\r\n                            <span class=\"p_attrValue\"> {{code}} </span>\r\n                        </li>\r\n                        <!-- 自定义属性 -->\r\n                        {{#attributeList}}\r\n                        <li class=\"p_attrItem\">\r\n                            <span class=\"s_summary p_attrName\"> {{${attributeList$attribute}}}: </span>\r\n                            <span class=\"p_attrValue\"> {{${attributeList$value}}} </span>\r\n                        </li>\r\n                        {{/attributeList}}\r\n\r\n                    </ul>\r\n                    <!-- 概要 -->\r\n                    <div class=\"p_infoItem\"> \r\n                        <p class=\"border-top border-bottom text-secondary  p_summary\">{{summary}}</p>\r\n                    </div>\r\n                    <!-- 描述 -->\r\n                    <div class=\"p_infoItem\"> {{content}} </div>\r\n                    <!-- 关键词 -->\r\n                    <div class=\"p_infoItem\">\r\n                        <span class=\"s_summary p_keywordLabel\">{{../i18n.keyword}}</span>\r\n                        <ul class=\"p_keywordValue\">\r\n                            {{#keywords}}\r\n                            <li class=\"border text-secondary p_keywordItem\">{{${keywords$itemName}}}</li>\r\n                            {{/keywords}}\r\n                        </ul>\r\n                    </div>\r\n                </li>\r\n            {{/eq}}\r\n            {{#eq type \"parameter\"}}\r\n                <!-- 参数 -->\r\n                <li class=\"p_contentItem \">\r\n                    <ul class=\"border border-bottom-0  p_paramsBorder\">\r\n                         <!-- 参数组 -->\r\n                        {{#productParamGroupList}}\r\n                        <li class=\"border-bottom p_paramsGroup\">\r\n                            <p class=\"bg-light p_groupName\"> {{${eq type \"parameter\"$parameterGroupName}}} </p>\r\n                            <ul>\r\n                                <!-- 参数项 -->\r\n                                {{#paramList}}\r\n                                <li class=\"border-top p_params\">\r\n                                    <span class=\"border-right p_paramsName\"> {{${eq type \"parameter\"$parameterName}}} </span>\r\n                                    <span class=\"p_paramsValue\"> {{${eq type \"parameter\"$parameterValue}}} </span>\r\n                                </li>\r\n                                {{/paramList}}\r\n                            </ul>\r\n                        </li>\r\n                        {{/productParamGroupList}}\r\n                    </ul>\r\n                </li>\r\n            {{/eq}}\r\n            {{#eq type \"custom\"}}\r\n                <!-- 自定义 -->\r\n                <li class=\"p_contentItem\">\r\n                    {{${eq type \"custom\"$content}}}\r\n                </li>\r\n            {{/eq}}\r\n         {{/${productTabList}}}\r\n     </ul>\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_productTabList ::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n.e_productTabList .p_tabName {\r\n    overflow-x: auto;\r\n    overflow-y: hidden;\r\n    white-space: nowrap;\r\n}\r\n.e_productTabList .p_nameItem {\r\n    display: inline-block;\r\n    width: auto;\r\n    min-width: 98px;\r\n    padding: 0 5px;\r\n    height: 46px;\r\n    line-height: 46px;\r\n    text-align: center;\r\n    border-bottom: 1px solid transparent;\r\n}\r\n.e_productTabList .p_nameItem.active {\r\n    color: var(--primary);\r\n    border-bottom: 1px solid var(--primary);\r\n}\r\n.e_productTabList .p_tabContent{\r\n    padding: 25px 0;\r\n}\r\n.e_productTabList .p_contentItem{\r\n    display: none;\r\n}\r\n.e_productTabList .p_contentItem.active{\r\n    display: block;\r\n}\r\n\r\n/* 产品描述 */\r\n.e_productTabList .p_infoItem{\r\n    overflow: hidden;\r\n    margin-bottom: 25px;\r\n}\r\n.e_productTabList .p_attrItem{\r\n    width: 25%;\r\n    float: left;\r\n    overflow: hidden;\r\n    white-space: nowrap;\r\n    text-overflow: ellipsis;\r\n    padding-right: 15px;\r\n}\r\n.e_productTabList .p_summary{\r\n    padding: 10px 0;\r\n}\r\n.e_productTabList .p_keywordLabel{\r\n    float: left;\r\n    display: block;    \r\n    height: 28px;\r\n    line-height: 28px;\r\n}\r\n.e_productTabList .p_keywordValue{\r\n   float: left;\r\n   overflow: hidden;\r\n}\r\n.e_productTabList .p_keywordItem{\r\n   padding: 0 15px;\r\n   border-radius: 5px;\r\n   float: left;\r\n   height: 28px;\r\n   line-height: 28px;\r\n   margin-left: 15px;\r\n}\r\n\r\n/* 参数 */\r\n\r\n.e_productTabList .p_groupName{\r\n    padding-left: 45px;\r\n    height: 35px;\r\n    line-height: 35px;\r\n }\r\n.e_productTabList .p_params{\r\n    display: flex;\r\n    line-height: 35px;\r\n }\r\n.e_productTabList .p_paramsName{\r\n    display: flex;\r\n    justify-content: flex-end;\r\n    flex-grow: 0;\r\n    flex-shrink: 0;\r\n    width: 20%;\r\n    padding:0 15px;\r\n    white-space: normal;\r\n    overflow: hidden;\r\n}\r\n.e_productTabList .p_paramsValue {\r\n    padding:0 15px;\r\n }\r\n\r\n "
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ""
+      "cssText": ".e_productTabList .p_attrItem {\r\n    width: 100%;\r\n}\r\n.e_productTabList .p_groupName{\r\n    padding-left: 15px;\r\n    height: 30px;\r\n    line-height: 30px;\r\n }\r\n .e_productTabList .p_paramsName{\r\n    width: 30%;\r\n    padding:0 10px;\r\n}\r\n.e_productTabList .p_params{\r\n    line-height: 30px;\r\n }"
     },
     {
       "media": "screen and (min-width: 769px)",
@@ -21,8 +21,164 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "productTabList": [
+      {
+        "id": 2345,
+        "name": "产品描述",
+        "type": "base",
+        "title": "【搭载HarmonyOS 2】HUAWEI P50 Pro 4G全网通 原色双影像单元 麒麟9000芯片 万象双环设计 8GB+256GB曜金黑手机",
+        "brand": "HUAWEI P50 Pro",
+        "code": "产品编号",
+        "summary": "京东价：京东价为商品的销售价，是您最终决定是否购买商品的依据。   ",
+        "content": "京东价：京东价为商品的销售价，是您最终决定是否购买商品的依据。     划线价：商品展示的划横线价格为参考价，并非原价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或其他真实有依据的价格；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。折扣：如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。 异常问题：商品促销信息以商品详情页“促销”栏中的信息为准；商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询",
+        "keywords": [
+          {
+            "itemName": "关键词1"
+          },
+          {
+            "itemName": "关键词2"
+          }
+        ],
+        "attributeList": [
+          {
+            "attributeId": 1324,
+            "attribute": "上市月份",
+            "value": "官网信息为主"
+          },
+          {
+            "attributeId": 1324,
+            "attribute": "商品毛重",
+            "value": "350.00g"
+          },
+          {
+            "attributeId": 1324,
+            "attribute": "商品产地",
+            "value": "中国大陆"
+          },
+          {
+            "attributeId": 1324,
+            "attribute": "系统",
+            "value": "HarmonyOS 2"
+          },
+          {
+            "attributeId": 1324,
+            "attribute": "支持IPv6",
+            "value": "支持IPv6"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "tabName (参数)",
+        "type": "parameter",
+        "productParamGroupList": [
+          {
+            "id": 1,
+            "parameterGroupName": "主体",
+            "paramList": [
+              {
+                "id": 13,
+                "parameterName": "上市月份",
+                "parameterValue": "以官网信息为准"
+              },
+              {
+                "id": 13,
+                "parameterName": "上市年份",
+                "parameterValue": "2021年"
+              },
+              {
+                "id": 13,
+                "parameterName": "首销日期",
+                "parameterValue": "以官网信息为准"
+              },
+              {
+                "id": 13,
+                "parameterName": "入网型号",
+                "parameterValue": "JAD-AL50"
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "parameterGroupName": "基本信息",
+            "paramList": [
+              {
+                "id": 13,
+                "parameterName": "机身宽度（mm）",
+                "parameterValue": "72.8"
+              },
+              {
+                "id": 13,
+                "parameterName": "机身厚度（mm）",
+                "parameterValue": "8.5"
+              },
+              {
+                "id": 13,
+                "parameterName": "机身材质分类",
+                "parameterValue": "玻璃后盖；金属边框"
+              },
+              {
+                "id": 13,
+                "parameterName": "机身长度（mm）",
+                "parameterValue": "158.8"
+              }
+            ]
+          },
+          {
+            "id": 123,
+            "parameterGroupName": "数据接口",
+            "paramList": [
+              {
+                "id": 13,
+                "parameterName": "数据传输接口",
+                "parameterValue": "WiFi热点；WIFI；NFC；蓝牙；WiFi Direct；OTG接口；红外"
+              },
+              {
+                "id": 13,
+                "parameterName": "NFC/NFC模式",
+                "parameterValue": "支持卡模拟；支持（卡模式）；支持（读卡器模式）；支持（点对点模式）"
+              },
+              {
+                "id": 13,
+                "parameterName": "充电接口类型",
+                "parameterValue": "Type-C"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 23323,
+        "name": "自定义tab1",
+        "type": "custom",
+        "content": "本商品质保周期为1年质保，在此时间范围内可提交维修申请，具体请以厂家准。 如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7日内退货1日内换货，15日以上在质保期内享受免费保修等三包服务！(注:如厂家在商品介绍中有售后保障的说明"
+      },
+      {
+        "id": 435424,
+        "name": "自定义tab2",
+        "type": "custom",
+        "content": "本商品质保周期为1年质保，在此时间范围内可提交维修申请，具体请以厂家准。 如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7日内退货1日内换货，15日以上在质保期内享受免费保修等三包服务！(注:如厂家在商品介绍中有售后保障的说明,则此商品按照厂家说明执行售后保障服务。) 您可以查询本品牌在各地售后服务中心的联系方式，请点击这儿查询...... 品牌官方http://www.huawei.com/cn/售后服务电话：950800"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {
+      "keyword": "关键词 : "
+    }
+  },
   "datasource": "prop",
-  "dataFields": {}
+  "dataFields": {
+    "productTabList": "productTabList",
+    "productTabList$id": "id",
+    "productTabList$name": "name",
+    "productTabList$type": "type",
+    "productTabList$title": "title",
+    "productTabList$brand": "brand",
+    "productTabList$code": "code",
+    "productTabList$summary": "summary",
+    "productTabList$content": "content",
+    "productTabList$keywords": "keywords",
+    "productTabList$attributeList": "attributeList"
+  }
 }
