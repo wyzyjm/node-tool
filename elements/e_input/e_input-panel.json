@@ -4,7 +4,16 @@
             "compName":"setting-input",
             "name":"单行文本",
             "staticBind": true,
-            "bind-prop":"prop"
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "showPlaceholder":"prop.showPlaceholder",
+            "placeholder":"prop.placeholder",
+            "type":"prop.type",
+            "value":"prop.value",
+            "state":"prop.state",
+            "decimal":"prop.decimal",
+            "unit":"prop.unit",
+            "validate":"prop.validate"
         }
     ]
 }
