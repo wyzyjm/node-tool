@@ -1,10 +1,6 @@
 .e_floating{
 
 }
-#c_portal_productFloating_001-1>div{
-
-}
-
 .p_obscuration{
     width: 100%;
     position: fixed;
@@ -37,6 +33,19 @@
     position: absolute;
     right: 0px;
     top: -5px;
+}
+.p_tab{
+    height: 100%;
+    margin-top: 13px;
+}
+.p_title_compareTheBar{
+    margin: 0 1px;
+}
+.p_title_compareTheBar.active{
+    background: #fff;
+    border: 1px solid #007bff;
+    border-bottom: #fff;
+    margin: 0
 }
 .p_data_list{
     display: flex;

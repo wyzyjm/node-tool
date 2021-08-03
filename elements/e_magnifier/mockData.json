@@ -18,35 +18,36 @@
           "imgUrlList": ["http://1809290214.pool3-site.make.yun300.cn/repository/image/d2fb07cc-81a8-4278-be17-5a38c6c89e54.png",
             "http://1809290214.pool3-site.make.yun300.cn/repository/image/209085eb-6f73-47a4-95cb-b68859ed4963.png",
             "http://1809290214.pool3-site.make.yun300.cn/repository/image/46834dba-a048-4c75-98a5-db18537e76b3.png",
-            "http://1809290214.pool3-site.make.yun300.cn/repository/image/21701b86-d642-4aa5-89a3-61d7c64c2ce2.png"
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/21701b86-d642-4aa5-89a3-61d7c64c2ce2.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/99e41df9-ae40-4c99-8415-ca007cf867cb.png"
           ]
       },
       {
           "id": 1231312,
           "title": "图片标题",
           "type": "img",
-          "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
+          "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
           "iscover": true
       },
       {
           "id": 1231312,
           "title": "图片标题",
           "type": "img",
-          "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
+          "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
           "iscover": false
       },
       {
           "id": 1231312,
           "title": "图片标题",
           "type": "img",
-          "imgUrl": "http://pic1.win4000.com/wallpaper/2020-04-14/5e95539eb9456.jpg",
+          "url": "http://1809290214.pool3-site.make.yun300.cn/repository/image/edb454bd-7c4e-40dd-aaa4-71e58ea98952.jpg",
           "iscover": false
       },
       {
           "id": 1231312,
           "title": "图片标题",
           "type": "img",
-          "imgUrl": "http://1809290214.pool3-site.make.yun300.cn/repository/image/175d9609-db6b-4c5e-bb3e-6b39cc8bfb9d.jpg",
+          "url": "http://1809290214.pool3-site.make.yun300.cn/repository/image/7314d825-4d83-478e-ab00-f5c9a46e2831.jpg",
           "iscover": false
       }
     ]

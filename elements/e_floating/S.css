@@ -29,6 +29,7 @@
 }
 .p_data_list{
     flex-direction: column;
+    border: none;
 }
 .p_item{
     border-right: none;
