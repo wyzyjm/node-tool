@@ -1,11 +1,22 @@
-<div class="e_input form-group" needjs="true">
+<div class="e_input form-group {{#eq prop.state 'hidden'}}hide{{/eq}}" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
         {{prop.label}}
-        {{#if prop.required}}<span class="text-danger p_required">*</span>{{/if}}
+        {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
-    <input type="text" class="form-control p_input" {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}}>
-    <div class="invalid-feedback"></div>
+    {{#eq prop.state 'readOnly'}}
+    <p>{{prop.value}}</p>
+    {{^}}
+    <div class="{{#eq prop.type 'number'}}p_number{{/eq}}">
+        <input type="text" class="form-control p_input" name="${elemId}" 
+            {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} 
+            {{#if prop.value}}value="{{prop.value}}"{{/if}} 
+            {{#eq prop.state 'disabled'}}disabled{{/eq}}
+        >
+        {{#eq prop.type 'number'}}{{prop.unit}}{{/eq}}
+        <div class="invalid-feedback"></div>
+    </div>
+    {{/eq}}
     <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

@@ -80,13 +80,7 @@ async function addElement(body){
     if(obj.adminData=='true'){
         defaultJson.dataManage={}
     }
-    //   await writeFile(compPanelFilePath,JSON.stringify(panelJson,null,2),'utf8');
-    await writeFile(compJsonFilePath,JSON.stringify(defaultJson,null,2),'utf8');
-    await writeFile(mockFilePath,JSON.stringify(mockData,null,2),'utf8');
-    await writeFile(tmplPath,``,'utf8');
-    emptyFilePath.forEach(async (path,i)=>{
-        await writeFile(path,i==0?`.${compId}{\n\n}\n`:'','utf8');
-    })
+    
     
     let allElePath=path.join(__dirname, './allEle.json');
     let allEleJson=JSON.parse(await readFile(allElePath));
@@ -100,8 +94,18 @@ async function addElement(body){
         allEleJson.complex.push(ele)
     }else if(obj.eleCate=='3'){
         allEleJson.form.push(ele)
+        defaultJson.type="form"
     }
     await writeFile(allElePath,JSON.stringify(allEleJson,null,2),'utf8');
+
+    //   await writeFile(compPanelFilePath,JSON.stringify(panelJson,null,2),'utf8');
+    await writeFile(compJsonFilePath,JSON.stringify(defaultJson,null,2),'utf8');
+    await writeFile(mockFilePath,JSON.stringify(mockData,null,2),'utf8');
+    await writeFile(tmplPath,``,'utf8');
+    emptyFilePath.forEach(async (path,i)=>{
+        await writeFile(path,i==0?`.${compId}{\n\n}\n`:'','utf8');
+    })
+
 
     logger.info(`Component "${compId}" initialization is complete`)
 }

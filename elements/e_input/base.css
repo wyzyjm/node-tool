@@ -1,12 +1,7 @@
 .e_input{
 
 }
-.e_input  .p_required{
-    vertical-align: middle;
-    font-size: 1.4em;
-    line-height: 100%;
-    position: relative;
-    font-weight: bold;
-    top: 0.15em;
-    padding-left: 5px;
+.e_input .p_number .p_input{
+    display: inline-block;
+    width: 80%;
 }
