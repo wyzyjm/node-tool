@@ -11,8 +11,8 @@
                 {{#images}}
                
                 {{#eq  @index  0}}
-                <li class="p_scroll_item" >
-                    <a href="JavaScript:;" class="p_scroll_item_a curr" >
+                <li class="p_scroll_item curr" >
+                    <a href="JavaScript:;" class="p_scroll_item_a " >
                         <img src="{{url}}" alt="{{title}}" class="p_scroll_item_img" bind="src-url|alt-title" >
                     </a>
                 </li>
@@ -28,4 +28,5 @@
         </div>
         {{/if}}
     {{/prop.list}}
+    
 </div>

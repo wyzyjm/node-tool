@@ -150,10 +150,7 @@
       "name": "标记图标",
       "code": "e_flagIcon"
     },
-    {
-      "name": "标记图片",
-      "code": "e_flagImg"
-    },
+   
     {
       "name": "预览商品",
       "code": "e_preView"
@@ -169,6 +166,14 @@
     {
       "name": "产品规格",
       "code": "e_specification"
+    },
+    {
+      "name": "tab栏产品详情",
+      "code": "e_productTabList"
+    },
+    {
+      "name": "产品详情数量",
+      "code": "e_productNumber"
     }
   ],
   "form": [

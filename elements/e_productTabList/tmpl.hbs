@@ -1,0 +1,87 @@
+<div class="e_productTabList" needjs="true">
+    <!-- 标题 -->
+     <ul class="p_tabName">
+         {{#prop.productTabList}}
+         <li class="js_nameItem p_nameItem {{#eq @index 0}} active{{/eq}} "> {{name}} </li>
+         {{/prop.productTabList}}
+     </ul>
+    <!-- 内容 -->
+     <ul class="p_tabContent">
+         {{#prop.productTabList}}
+            {{#eq type "base"}}
+                <!-- 产品描述 -->
+                <li class="p_contentItem  {{#eq @index 0}} active{{/eq}}">
+                    <!-- 属性区 -->
+                    <ul class="p_infoItem">
+                        <!-- 品牌 -->
+                        <li class="p_attrItem"> 
+                            <span class="s_summary p_attrName">品牌: </span>
+                            <span class="p_attrValue"> {{brand}} </span>
+                        </li>
+                        <!-- 名称 -->
+                        <li class="p_attrItem">
+                            <span class="s_summary p_attrName">商品名称: </span>
+                            <span class="p_attrValue"> {{title}} </span>
+                        </li>
+                        <!-- 编号 -->
+                        <li class="p_attrItem">
+                            <span class="s_summary p_attrName">商品编号: </span>
+                            <span class="p_attrValue"> {{code}} </span>
+                        </li>
+                        <!-- 自定义属性 -->
+                        {{#attributeList}}
+                        <li class="p_attrItem">
+                            <span class="s_summary p_attrName"> {{attribute}}: </span>
+                            <span class="p_attrValue"> {{value}} </span>
+                        </li>
+                        {{/attributeList}}
+
+                    </ul>
+                    <!-- 概要 -->
+                    <div class="p_infoItem"> 
+                        <p class="border-top border-bottom text-secondary  p_summary">{{summary}}</p>
+                    </div>
+                    <!-- 描述 -->
+                    <div class="p_infoItem"> {{content}} </div>
+                    <!-- 关键词 -->
+                    <div class="p_infoItem">
+                        <span class="s_summary p_keywordLabel">{{../i18n.keyword}}</span>
+                        <ul class="p_keywordValue">
+                            {{#keywords}}
+                            <li class="border text-secondary p_keywordItem">{{itemName}}</li>
+                            {{/keywords}}
+                        </ul>
+                    </div>
+                </li>
+            {{/eq}}
+            {{#eq type "parameter"}}
+                <!-- 参数 -->
+                <li class="p_contentItem ">
+                    <ul class="border border-bottom-0  p_paramsBorder">
+                         <!-- 参数组 -->
+                        {{#productParamGroupList}}
+                        <li class="border-bottom p_paramsGroup">
+                            <p class="bg-light p_groupName"> {{parameterGroupName}} </p>
+                            <ul>
+                                <!-- 参数项 -->
+                                {{#paramList}}
+                                <li class="border-top p_params">
+                                    <span class="border-right p_paramsName"> {{parameterName}} </span>
+                                    <span class="p_paramsValue"> {{parameterValue}} </span>
+                                </li>
+                                {{/paramList}}
+                            </ul>
+                        </li>
+                        {{/productParamGroupList}}
+                    </ul>
+                </li>
+            {{/eq}}
+            {{#eq type "custom"}}
+                <!-- 自定义 -->
+                <li class="p_contentItem">
+                    {{content}}
+                </li>
+            {{/eq}}
+         {{/prop.productTabList}}
+     </ul>
+</div>

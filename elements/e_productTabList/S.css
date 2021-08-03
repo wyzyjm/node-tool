@@ -1,0 +1,15 @@
+.e_productTabList .p_attrItem {
+    width: 100%;
+}
+.e_productTabList .p_groupName{
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+ }
+ .e_productTabList .p_paramsName{
+    width: 30%;
+    padding:0 10px;
+}
+.e_productTabList .p_params{
+    line-height: 30px;
+ }
