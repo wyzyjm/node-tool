@@ -2,15 +2,15 @@
   "cname": "产品规格",
   "styleId": "e_specification",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<ul class=\"${elemId} ${styleClass}\">\r\n    {{#${specList}}}\r\n        <li class=\"p_item\">\r\n            <!--规格名称-->\r\n            <span class=\"p_specName\"> {{${specList$specName}}} </span>\r\n            <!--规格值-->\r\n            <ul class=\"p_valueUl\">\r\n                {{#productSpecValues}}\r\n                <li class=\"itemValue\"> \r\n                    {{#if ../imageFlag}}\r\n                        <!--图片类型-->\r\n                        {{{lazyImage img \"class='specValueI' title='{{${specList$name}}}' alt='{{${specList$name}}}' \" 'true'}}}\r\n                    {{^}}\r\n                        <!--文字类型-->\r\n                        <span class=\"specValueT\">{{${specList$name}}}</span>\r\n                    {{/if}}\r\n                </li>\r\n                {{/productSpecValues}}\r\n            </ul>\r\n        </li>\r\n    {{/${specList}}}\r\n    <!--js传值-->\r\n    <input type=\"hidden\" name=\"propJson\" value=\"{{{propJson}}}\">\r\n</ul>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_specification{\r\n\r\n}\r\n.e_specification img{\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: cover;\r\n}\r\n.e_specification .p_item{\r\n    padding-bottom: 10px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .p_specName {\r\n   float: left;\r\n   height: 30px;\r\n   line-height: 30px;\r\n}\r\n.e_specification .p_valueUl {\r\n    margin-left: 40px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .itemValue {\r\n    float: left;\r\n    margin-right: 5px;\r\n    margin-right: 5px;\r\n    margin-bottom: 5px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .specValueT {\r\n    display: block;\r\n    padding: 3px 16px;\r\n    text-align: center;\r\n    border: 1px solid #ccc;\r\n}\r\n.e_specification .specValueI {\r\n    width: 46px;\r\n    height: 46px;\r\n}"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ""
+      "cssText": ".e_specification .p_specName {\r\n    display: block;\r\n    float: none\r\n }\r\n .e_specification .p_valueUl {\r\n    margin-left: 0;\r\n}"
     },
     {
       "media": "screen and (min-width: 769px)",
@@ -21,8 +21,86 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "specList": [
+      {
+        "id": 1231,
+        "templateId": 2345,
+        "specName": "尺码",
+        "imageFlag": 0,
+        "productSpecValues": [
+          {
+            "specId": 1231,
+            "name": "S",
+            "img": ""
+          },
+          {
+            "specId": 1231,
+            "name": "M",
+            "img": ""
+          },
+          {
+            "specId": 1231,
+            "name": "XL",
+            "img": ""
+          },
+          {
+            "specId": 1231,
+            "name": "M",
+            "img": ""
+          },
+          {
+            "specId": 1231,
+            "name": "XL",
+            "img": ""
+          },
+          {
+            "specId": 1231,
+            "name": "XXL",
+            "img": ""
+          }
+        ]
+      },
+      {
+        "id": 1231,
+        "templateId": 2345,
+        "specName": "颜色",
+        "imageFlag": 1,
+        "productSpecValues": [
+          {
+            "specId": 1231,
+            "name": "红",
+            "img": "https://img11.360buyimg.com/n9/s60x76_jfs/t1/192436/1/11736/154990/60e547edE485e6cd3/86482dd29bd2224d.jpg!cc_60x76.jpg"
+          },
+          {
+            "specId": 1231,
+            "name": "粉",
+            "img": "https://img13.360buyimg.com/n9/s60x76_jfs/t1/171931/16/18722/128367/60e54800E1ba2cb79/1e05c7084897e0a3.jpg!cc_60x76.jpg"
+          },
+          {
+            "specId": 1231,
+            "name": "蓝",
+            "img": "https://img14.360buyimg.com/n9/s60x76_jfs/t1/35240/39/15274/119256/60e547f9Edf1c8e52/7e473069ba1c1404.jpg!cc_60x76.jpg"
+          },
+          {
+            "specId": 1231,
+            "name": "黑",
+            "img": "https://img12.360buyimg.com/n9/s60x76_jfs/t1/193831/14/12097/100870/60e547f1E7ff195b4/509be41568751514.jpg!cc_60x76.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
   "datasource": "prop",
-  "dataFields": {}
+  "dataFields": {
+    "specList": "specList",
+    "specList$id": "id",
+    "specList$templateId": "templateId",
+    "specList$specName": "specName",
+    "specList$imageFlag": "imageFlag",
+    "specList$productSpecValues": "productSpecValues"
+  }
 }
