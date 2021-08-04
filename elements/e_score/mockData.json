@@ -2,9 +2,11 @@
   "prop": {
     "showLabel":true,
     "label":"评分评价",
+    "showPlaceholder":true,
     "placeholder":"请选择评分",
-    "number":5,
-    "score":0,
+    "type":0,
+    "number":10,
+    "score":3,
     "half":true,
     "prompt":[
         {
@@ -19,7 +21,7 @@
         },
         {
             "from":7,
-            "to":"",
+            "to":7,
             "label":"非常满意"
         },
         {
@@ -28,7 +30,13 @@
             "label":"666"
         }
     ],
-    "required":true
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
   },
   "i18n": {}
 }

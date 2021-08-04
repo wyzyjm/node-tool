@@ -16,3 +16,6 @@
     float: left;
     color: #bbb;
 }
+.e_date .is-invalid .p_input{
+    border-color: #dc3545;
+}

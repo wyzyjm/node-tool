@@ -1,12 +1,19 @@
 {
   "prop": {
     "showLabel":true,
-    "label":"日期",
-    "showPlaceholder":2,
+    "label":"日期时间",
+    "type":"date",
+    "showPlaceholder":"word",
     "placeholder":"请选择日期",
-    "required":true,
-    "type":3,
-    "format":"YYYY/MM/DD"
+    "format":"YYYY/MM/DD",
+    "state":"normal",
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
   },
   "i18n": {}
 }

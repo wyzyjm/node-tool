@@ -2,6 +2,7 @@
   "cname": "区间日期型",
   "styleId": "e_rangeDate",
   "styleClass": "",
+  "type":"form",
   "tmpl": "",
   "css": [
     {

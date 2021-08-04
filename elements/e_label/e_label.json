@@ -2,6 +2,7 @@
   "cname": "标签型",
   "styleId": "e_label",
   "styleClass": "",
+  "type":"from",
   "tmpl": "",
   "css": [
     {

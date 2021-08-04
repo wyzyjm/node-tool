@@ -2,8 +2,7 @@
   "prop": {
     "showLabel":true,
     "label":"标签型",
-    "type":2,
-    "limit":3,
+    "limit":1,
     "options":[
         {
             "label":"选项1",
@@ -26,7 +25,13 @@
             "value":"6"
         }
     ],
-    "required":true
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
   },
   "i18n": {}
 }

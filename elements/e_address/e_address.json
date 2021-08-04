@@ -2,6 +2,7 @@
   "cname": "地址型",
   "styleId": "e_address",
   "styleClass": "",
+  "type":"form",
   "tmpl": "",
   "css": [
     {

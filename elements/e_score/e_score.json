@@ -2,6 +2,7 @@
   "cname": "评分、评价",
   "styleId": "e_score",
   "styleClass": "",
+  "type":"form",
   "tmpl": "",
   "css": [
     {

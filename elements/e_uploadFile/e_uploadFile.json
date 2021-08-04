@@ -2,6 +2,7 @@
   "cname": "文件型",
   "styleId": "e_uploadFile",
   "styleClass": "",
+  "type":"form",
   "tmpl": "",
   "css": [
     {

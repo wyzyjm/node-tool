@@ -1,24 +1,31 @@
 {
-  "prop": {
-    "showLabel":true,
-    "label":"多选项",
-    "options":[
-        {
-            "label":"选项1",
-            "value":"1"
-        },{
-            "select":true,
-            "label":"选项2",
-            "value":"2"
-        },{
-            "label":"选项3",
-            "value":"3"
-        },{
-            "label":"选项4",
-            "value":"4"
+    "prop": {
+        "showLabel":true,
+        "label":"多选项",
+        "state":"normal",
+        "options":[
+            {
+                "label":"读书",
+                "value":"1"
+            },{
+                "select":true,
+                "label":"旅游",
+                "value":"2"
+            },{
+                "label":"音乐",
+                "value":"3"
+            },{
+                "label":"篮球",
+                "value":"4"
+            }
+        ],
+        "validate":{
+            "required":{
+                "state":true,
+                "value":true,
+                "msg":"选项不能为空"
+            }
         }
-    ],
-    "required":true
-  },
-  "i18n": {}
+    },
+    "i18n": {}
 }

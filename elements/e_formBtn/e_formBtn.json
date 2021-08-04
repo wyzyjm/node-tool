@@ -3,6 +3,7 @@
   "styleId": "e_formBtn",
   "styleClass": "",
   "tmpl": "",
+  "type":"form",
   "css": [
     {
       "media": "",

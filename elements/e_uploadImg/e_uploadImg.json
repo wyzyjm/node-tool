@@ -2,6 +2,7 @@
   "cname": "图片型",
   "styleId": "e_uploadImg",
   "styleClass": "",
+  "type":"form",
   "tmpl": "",
   "css": [
     {

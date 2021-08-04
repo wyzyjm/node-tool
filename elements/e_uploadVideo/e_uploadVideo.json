@@ -2,6 +2,7 @@
   "cname": "视频型",
   "styleId": "e_uploadVideo",
   "styleClass": "",
+  "type":"form",
   "tmpl": "",
   "css": [
     {
@@ -23,6 +24,5 @@
   ],
   "prop": {},
   "i18n": {},
-  "datasource": "prop",
-  "type": "form"
+  "datasource": "prop"
 }
