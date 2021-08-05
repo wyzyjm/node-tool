@@ -1,3 +1,12 @@
-.e_emailCode{
-
+.e_emailCode .p_Code{
+    width: 150px;
+    display: inline-block;
+}
+.e_emailCode .p_Number{
+    margin-bottom: 10px;
+}
+.e_emailCode .p_sendBtn{
+    height: 35px;
+    padding: 0 15px;
+    margin-left: 5px;
 }

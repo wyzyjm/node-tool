@@ -1,4 +1,8 @@
 {
-  "prop": {},
+  "prop": {
+    "showLabel":true,
+    "label":"安全验证",
+    "type":1
+  },
   "i18n": {}
 }

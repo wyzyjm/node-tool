@@ -2,12 +2,12 @@
   "cname": "区间日期型",
   "styleId": "e_rangeDate",
   "styleClass": "",
-  "type":"form",
-  "tmpl": "",
+  "type": "form",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div class=\"j_date form-control clearfix p_range\">\n        <input type=\"text\" name=\"${elemId}-start\" {{#eq ${showPlaceholder} 'word'}}placeholder=\"{{${startPlaceholder}}}\"{{/eq}} class=\"p_start\">\n        <span class=\"p_fenge\">—</span>\n        <input type=\"text\" name=\"${elemId}-end\" {{#eq ${showPlaceholder} 'word'}}placeholder=\"{{${endPlaceholder}}}\"{{/eq}} class=\"p_end\">\n    </div>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_rangeDate{\n\n}\n.e_rangeDate .p_start,.e_rangeDate .p_end{\n    width: calc(50% - 10px);\n    float: left;\n    border: none;\n    outline: none;\n    line-height: 20px;\n    text-align: center;\n}\n.e_rangeDate .p_fenge{\n    display: block;\n    width: 20px;\n    text-align: center;\n    float: left;\n    color: #bbb;\n}\n.e_rangeDate .e_date .is-invalid .p_input{\n    border-color: #dc3545;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,7 +22,23 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "showLabel": true,
+    "label": "区间时间",
+    "showPlaceholder": "word",
+    "startPlaceholder": "开始时间",
+    "endPlaceholder": "结束时间",
+    "type": "rangeTime",
+    "validate": {
+      "required": {
+        "state": true,
+        "value": true,
+        "msg": "内容不能为空"
+      }
+    }
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
   "datasource": "prop"
 }

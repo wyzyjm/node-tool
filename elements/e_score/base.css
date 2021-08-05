@@ -1,11 +1,11 @@
 .e_score{
 
 }
-.p_score{
+.e_score .p_score{
     float: left;
     margin-right: 10px;
 }
-.p_hint{
+.e_score .p_hint{
     float: left;
     line-height: 24px;
 }

@@ -2,12 +2,12 @@
   "cname": "评分、评价",
   "styleId": "e_score",
   "styleClass": "",
-  "type":"form",
-  "tmpl": "",
+  "type": "form",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div class=\"clearfix\">\n        <div class=\"p_score\"></div>\n        <div class=\"p_hint\"></div>\n        <input type=\"hidden\" name=\"${elemId}\" value=\"{{score}}\">\n    </div>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>\n",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_score{\n\n}\n.e_score .p_score{\n    float: left;\n    margin-right: 10px;\n}\n.e_score .p_hint{\n    float: left;\n    line-height: 24px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,7 +22,47 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "showLabel": true,
+    "label": "评分评价",
+    "showPlaceholder": true,
+    "placeholder": "请选择评分",
+    "type": 0,
+    "number": 10,
+    "score": 3,
+    "half": true,
+    "prompt": [
+      {
+        "from": 1,
+        "to": 2,
+        "label": "不满意"
+      },
+      {
+        "from": 3,
+        "to": 6,
+        "label": "满意"
+      },
+      {
+        "from": 7,
+        "to": 7,
+        "label": "非常满意"
+      },
+      {
+        "from": 8,
+        "to": 10,
+        "label": "666"
+      }
+    ],
+    "validate": {
+      "required": {
+        "state": true,
+        "value": true,
+        "msg": "内容不能为空"
+      }
+    }
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
   "datasource": "prop"
 }

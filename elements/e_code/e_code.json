@@ -2,11 +2,11 @@
   "cname": "安全验证",
   "styleId": "e_code",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        <span class=\"text-danger p_required\">*</span>\n    </label>\n    {{/if}}\n    <div>\n        安全验证\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_code{\n\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,8 +21,14 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "showLabel": true,
+    "label": "安全验证",
+    "type": 1
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
   "datasource": "prop",
   "type": "form"
 }

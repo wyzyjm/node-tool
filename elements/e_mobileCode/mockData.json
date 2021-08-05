@@ -1,4 +1,11 @@
 {
-  "prop": {},
+  "prop": {
+    "showLabel":true,
+    "label":"手机号验证",
+    "placeholder1":"请输入手机号码",
+    "placeholder2":"短信验证码",
+    "codeNeed":true,
+    "focus":true
+  },
   "i18n": {}
 }

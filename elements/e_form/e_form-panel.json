@@ -1,9 +1,14 @@
 {
     "panelConfig": [
         {
-            "compName":"setting-input",
-            "name":"标题",
-            "bind-value":"prop.title"
+            "compName":"setting-form",
+            "name":"表单容器",
+            "staticBind": true,
+            "bind-basic":"prop.basic",
+            "bind-rule":"prop.rule",
+            "bind-submit":"prop.submit",
+            "bind-async":"prop.async",
+            "bind-notice":"prop.notice"
         }
     ]
 }

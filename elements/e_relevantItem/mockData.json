@@ -1,4 +1,29 @@
 {
-  "prop": {},
+  "prop": {
+      "type":1,
+      "btnText":"添加内容",
+      "datasource":"",
+      "previewList":[
+          {
+              "label":"内容名称",
+              "key":"name"
+          },
+          {
+              "label":"缩略图",
+              "key":"img"
+          }
+      ],
+      "searchList":[
+        {
+            "label":"内容名称",
+            "key":"name"
+        },
+        {
+            "label":"缩略图",
+            "key":"img"
+        }
+    ],
+    "isHide":true
+  },
   "i18n": {}
 }

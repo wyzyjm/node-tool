@@ -7,7 +7,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_input{\n\n}\n.e_input .p_number .p_input{\n    display: inline-block;\n    width: 80%;\n}"
+      "cssText": ".e_input .p_number .p_input{\n    display: inline-block;\n    width: 80%;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -29,7 +29,7 @@
     "placeholder": "请输入...",
     "type": "text",
     "value": "",
-    "state": "disabled",
+    "state": "normal",
     "decimal": 2,
     "unit": "千克",
     "validate": {

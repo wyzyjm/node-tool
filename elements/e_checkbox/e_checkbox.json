@@ -2,8 +2,8 @@
   "cname": "多选项",
   "styleId": "e_checkbox",
   "styleClass": "",
-  "type":"form",
-  "tmpl": "<fieldset class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}hide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </legend>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"p_input\">\n            {{#${options}}}\n            <div class=\"form-check form-check-inline p_radioItem\">\n                <input class=\"form-check-input\" type=\"checkbox\" name=\"e_checkbox\" id=\"e_checkbox-${id}-{{@index}}\" value=\"{{${options$value}}}\" {{#if select}}checked{{/if}} {{#eq ../${state} 'disabled'}}disabled{{/eq}}>\n                <label class=\"form-check-label\" for=\"e_checkbox-${id}-{{@index}}\">{{label}}</label>\n            </div>\n            {{/${options}}}\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</fieldset>",
+  "type": "form",
+  "tmpl": "<fieldset class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}hide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </legend>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"p_input\">\n            {{#${options}}}\n            <div class=\"form-check form-check-inline p_radioItem\">\n                <input class=\"form-check-input\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" value=\"{{${options$value}}}\" {{#if select}}checked{{/if}} {{#eq ../${state} 'disabled'}}disabled{{/eq}}>\n                <label class=\"form-check-label\" for=\"${elemId}-{{@index}}\">{{label}}</label>\n            </div>\n            {{/${options}}}\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</fieldset>",
   "css": [
     {
       "media": "",
@@ -25,7 +25,7 @@
   "prop": {
     "showLabel": true,
     "label": "多选项",
-    "state": "readOnly",
+    "state": "normal",
     "options": [
       {
         "label": "读书",
@@ -37,7 +37,6 @@
         "value": "2"
       },
       {
-        "select": true,
         "label": "音乐",
         "value": "3"
       },

@@ -2,11 +2,11 @@
   "cname": "子表单",
   "styleId": "e_subForm",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${showLabel}}}\n    <div class=\"p_title\">{{${label}}}</div>\n    {{/if}}\n    <div class=\"p_thead\">\n        {{#${content}}}\n        <div class=\"p_th\"></div>\n        {{/${content}}}\n    </div>\n    <div class=\"p_tbody\">\n        <div class=\"p_tr\">\n        {{#${content}}}\n        <div class=\"p_td cbox-${id}-{{@index}}\"></div>\n        {{/${content}}}\n        </div>\n    </div>\n    {{#if ${showBtn}}}\n    <div>\n        <button class=\"e_button btn btn-primary btn-sm s_button1\">{{${btnText}}}</button>\n    </div>\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_subForm{\n\n}\n.e_subForm .p_title{\n    line-height: 40px;\n}\n.e_subForm .p_thead{\n    background-color: #f0f0f0;\n    height: 36px;\n    line-height: 36px;\n}\n.e_subForm .p_tbody{\n    margin-bottom: 20px;\n    min-height: 36px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,8 +21,23 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "showLabel": true,
+    "label": "子表单",
+    "showBtn": true,
+    "btnText": "添加一行",
+    "content": [
+      {
+        "width": "50%"
+      },
+      {
+        "width": "50%"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
   "datasource": "prop",
   "type": "form"
 }

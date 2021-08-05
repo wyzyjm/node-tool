@@ -1,3 +1,15 @@
 .e_subForm{
 
 }
+.e_subForm .p_title{
+    line-height: 40px;
+}
+.e_subForm .p_thead{
+    background-color: #f0f0f0;
+    height: 36px;
+    line-height: 36px;
+}
+.e_subForm .p_tbody{
+    margin-bottom: 20px;
+    min-height: 36px;
+}

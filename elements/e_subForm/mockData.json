@@ -1,4 +1,17 @@
 {
-  "prop": {},
-  "i18n": {}
+    "prop": {
+        "showLabel":true,
+        "label":"子表单",
+        "showBtn":true,
+        "btnText":"添加一行",
+        "content":[
+            {
+                "width":"50%"
+            },
+            {
+                "width":"50%"
+            }
+        ]
+    },
+    "i18n": {}
 }
