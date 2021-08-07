@@ -1,0 +1,14 @@
+{   
+    "apiType":"object",
+    "dataFields":[
+        {
+            "name":"text",
+            "cname":"按钮文字",
+            "type":"string"
+        },{
+            "name":"href",
+            "cname":"按钮链接",
+            "type":"link"
+        }
+    ]
+}

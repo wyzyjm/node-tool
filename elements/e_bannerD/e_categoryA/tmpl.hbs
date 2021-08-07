@@ -14,6 +14,7 @@
                     {{name}}
                     {{#if href}}</a>{{/if}}
                 </span>
+                {{#if children}}
                 <ul class="p_c_content">
                     {{#children}}
                     <li class="p_c_item">
@@ -23,6 +24,7 @@
                             {{name}}
                             {{#if href}}</a>{{/if}}
                         </span>
+                        {{#if this.children}}
                         <ul class="p_c_content">
                             {{#this.children}}
                             <li class="p_c_item">
@@ -32,6 +34,7 @@
                                     {{name}}
                                     {{#if href}}</a>{{/if}}
                                 </span>
+                                {{#if this.children}}
                                 <ul class="p_c_content">
                                     {{#this.children}}
                                     <li class="p_c_item">
@@ -44,12 +47,15 @@
                                     </li>
                                     {{/this.children}}
                                 </ul>
+                                {{/if}}
                             </li>
                             {{/this.children}}
                         </ul>
+                        {{/if}}
                     </li>
                     {{/children}}
                 </ul>
+                {{/if}}
             </li>
             {{/prop.cate}}
         </ul>
