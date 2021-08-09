@@ -1,0 +1,121 @@
+.e_productScreen{
+    overflow: hidden;
+}
+.e_productScreen .p_container{
+    border-bottom: none;
+}
+.e_productScreen .p_categoryName{
+    padding: 0 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.e_productScreen .p_valBox{
+    max-width: 982px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.e_productScreen .p_imgItem{
+    float: left;
+    width: 100px;
+    height: 35px;
+    padding: 2px;
+    position: relative;
+    margin-bottom: 7px;
+    margin-right: -1px;
+    text-align: center;
+}
+.e_productScreen .p_imgItem:hover{
+    cursor: pointer;
+    border: 1px solid #007BFF;
+    z-index: 4;
+}
+.e_productScreen .p_checkIcon{
+    display: none;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    bottom: -8px;
+    right: -11px;
+    z-index: 5;
+    color: #007BFF;
+} 
+.e_productScreen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.e_productScreen .p_valItem{
+    margin-right: 36px;
+    cursor: pointer;
+}
+.e_productScreen .p_qb{
+    width: 40px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.e_productScreen .p_single{
+    display: block;
+    line-height: 30px;
+}
+.e_productScreen .p_RButton{
+    width: 314px;
+    /* text-align: right; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+}
+.e_productScreen label{
+    margin: 0 2px;
+}
+.e_productScreen .p_checkedBox{
+    display: none;
+    width: 100%;
+    margin-top: 5px;
+}
+.e_productScreen .p_BButton{
+    display: none;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+.e_productScreen .p_checkedItem{
+    display: inline-block;
+    padding: 3px 4px;
+    margin-right: 6px;
+}
+.e_productScreen button{
+    padding: 4px 6px;
+    margin-left: 3px;
+    outline: none;
+}
+.e_productScreen button:hover{
+    color: #007BFF;
+    border-color: #007BFF;
+}
+.e_productScreen button:hover .p_icon{
+    color: #007BFF;
+}
+.e_productScreen .p_icon{
+    color: #707070;
+    margin-left: -3px;
+    margin-right: -3px;
+}
+.e_productScreen .p_DelIcon{
+    color: #8a8a8a;
+}
+.e_productScreen .p_DelIcon:hover{
+    color: #007BFF;
+    cursor: pointer;
+}
+
+
+
+.e_productScreen .p_checkbox,
+/* .e_productScreen .foldBtn,  */
+.e_productScreen .moreBtn,
+.e_productScreen .p_label{
+    display: none;
+}
+
+    

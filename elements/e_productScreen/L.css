@@ -1,0 +1,85 @@
+.e_productScreen{
+    background-color: white;
+}
+.e_productScreen .p_container{
+    background: none;
+    height: auto;
+}
+.e_productScreen .p_moCheckBox,
+.e_productScreen .p_moSwitch,
+.e_productScreen .p_iconUp,
+.e_productScreen .p_iconDown,
+.e_productScreen .p_moBBtn,
+.e_productScreen .p_moInputBox{
+    display: none;
+}
+.e_productScreen .p_screenLine, .e_productScreen .p_brandLine, .e_productScreen .p_checkedLine{
+    display: flex;
+}
+.e_productScreen .p_lBox{
+    width: 120px;
+    min-height: 40px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.e_productScreen .p_rBox{
+    /* height: 50px; */
+    flex-grow: 1;
+    padding: 10px 20px;
+    padding-right: 10px;
+    min-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.e_productScreen .p_screenLine .p_rBox{
+    height: 51px;
+}
+.e_productScreen .p_imgBox{
+    max-width: 914px;
+    max-height: 126px;
+    /* overflow-y: scroll; */
+}
+.e_productScreen .p_imgBox::-webkit-scrollbar {
+    width: 3px;
+  }
+.e_productScreen .p_imgBox::-webkit-scrollbar-track {
+    background-color: #dee2e6;
+  }
+.e_productScreen .p_imgBox::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+  }
+/* .e_productScreen .p_valBox{
+    height: 30px;
+    overflow: hidden;
+} */
+.e_productScreen .p_brandLine .p_rBox{
+    height: 50px;
+}
+.e_productScreen .p_checkedLine:last-of-type .p_valBox{
+    height: 31px;
+}
+.e_productScreen .p_valItem{
+    background: none;
+    line-height: 30px;
+}
+.e_productScreen .p_input{
+    width: 55px;
+    height: 27.72px;
+    padding: 0 4px;
+    outline: none;
+}
+.e_productScreen .p_dataInput{
+    width:140px;
+    height: 27.72px;
+    outline: none;
+}
+.e_productScreen .p_setDown{
+    height: auto !important;
+}
+.e_productScreen .showScroll{
+    overflow-y: scroll;
+}

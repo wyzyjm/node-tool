@@ -1,0 +1,175 @@
+body{
+    padding: 0;
+}
+.e_productScreen{
+    height: 100vh;
+}
+.e_productScreen .p_moSwitch{
+    line-height: 30px;
+    text-align: center;
+}
+.e_productScreen .p_moSwitch{
+    /* display: none; */
+    line-height: 28px;
+    text-align: center;
+}
+.e_productScreen .p_iconUp{
+    display: none;
+}
+.e_productScreen .p_container{
+    width: 90%;
+    height: 100vh;
+    padding-bottom: 60px;
+    overflow: scroll;
+    border-bottom-left-radius: 14px;
+    border-top-left-radius: 14px;
+    position: fixed;
+    top: 0;
+    right: -90%;
+    border: none;
+    transition: 0.5s;
+}
+
+.e_productScreen .p_container::-webkit-scrollbar {
+    width: 3px;
+}
+.e_productScreen .p_container::-webkit-scrollbar-track {
+    background-color: #f8f9fa;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+.e_productScreen .p_container::-webkit-scrollbar-thumb {
+    background-color: #dddfe0;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+.e_productScreen .p_moWarp{
+    margin-bottom: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.e_productScreen .p_screenLine, .e_productScreen .p_brandLine{
+    display: block;
+    padding: 8px 10px 10px 10px;
+}
+.e_productScreen .p_brandLine{
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+.e_productScreen .p_lBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    color: black;
+    margin-bottom: 8px;
+    background: none;
+}
+.e_productScreen .p_moCheckBox{
+    text-align: right;
+    width: 68%;
+    position: relative;
+    padding-right: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.e_productScreen .p_iconUp, .e_productScreen .p_iconDown{
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.e_productScreen .p_rBox{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.e_productScreen .p_screenLine .p_valBox{
+    height: 0;
+    overflow: hidden;
+}
+.e_productScreen .p_brandLine .p_valBox{
+    max-height: 124px;
+    overflow: hidden;
+}
+.e_productScreen .p_imgItem{
+    width: 31%;
+    margin-left: 2.3%;
+    border: none;
+    overflow: hidden;
+    margin-right: 0;
+    border-radius: 20px;
+}
+.e_productScreen .p_valItem{
+    float: left;
+    display: block;
+    min-width: 31%;
+    /* max-width: 47.3%; */
+    line-height: 35px;
+    text-align: center;
+    padding: 0 8px;
+    margin-right: 2.3%;
+    margin-bottom: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.e_productScreen .p_single{
+    min-width: 80px;
+}
+.e_productScreen .p_moInput{
+    width: 45%;
+    height: 30px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.e_productScreen .p_moBBtn{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: -90%;
+    bottom: 0;
+}
+.e_productScreen .p_moResat,.e_productScreen .p_moConfirm{
+    width: 42%;
+    height: 30px;
+    outline: none;
+    border-radius: 20px;
+}
+.e_productScreen .setUpHeight{
+    height: auto !important;
+    max-height: 1000px !important;
+}
+.e_productScreen .checkItem{
+    border: 1px solid #007BFF;
+    background: #ecf5ff;
+    color: #007BFF;
+}
+
+.e_productScreen .p_moContainer{
+    transition: 0.5s;
+    right: 0;
+}
+.e_productScreen .p_categoryBox{
+    margin: 12px 0;
+}
+
+.e_productScreen .p_qb,
+.e_productScreen .p_RButton,
+.e_productScreen .p_checkedBox,
+.e_productScreen .p_BButton,
+.e_productScreen .p_bLine,
+.e_productScreen .p_checkbox{
+    display: none;
+}
