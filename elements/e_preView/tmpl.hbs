@@ -6,24 +6,24 @@
             </a>
         </div>
         {{#if ../prop.showImages }}
-        <div class="p_scroll"    panel="checkbox-showImages">
-            <ul class="p_scroll_main" bind="arr-images" >
+        <div class="p_scroll" >
+            <ul class="p_scroll_main">
                 {{#images}}
                
-                {{#eq  @index  0}}
-                <li class="p_scroll_item curr" >
-                    <a href="JavaScript:;" class="p_scroll_item_a " >
-                        <img src="{{url}}" alt="{{title}}" class="p_scroll_item_img" bind="src-url|alt-title" >
-                    </a>
-                </li>
-                {{/eq}}
-                {{#gt @index  0}}
-                <li class="p_scroll_item" >
-                    <a href="JavaScript:;" class="p_scroll_item_a" >
-                        <img src="{{url}}" alt="{{title}}" class="p_scroll_item_img" bind="src-url|alt-title" >
-                    </a>
-                </li>
-                {{/gt}}
+                    {{#eq  @index  0}}
+                    <li class="p_scroll_item curr" >
+                        <a href="JavaScript:;" class="p_scroll_item_a " >
+                            <img src="{{url}}" alt="{{title}}" class="p_scroll_item_img"  >
+                        </a>
+                    </li>
+                    {{/eq}}
+                    {{#gt @index  0}}
+                    <li class="p_scroll_item" >
+                        <a href="JavaScript:;" class="p_scroll_item_a" >
+                            <img src="{{url}}" alt="{{title}}" class="p_scroll_item_img" >
+                        </a>
+                    </li>
+                    {{/gt}}
                 {{/images}}
         </div>
         {{/if}}
