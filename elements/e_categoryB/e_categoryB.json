@@ -110,7 +110,7 @@
   },
   "datasource": "prop",
   "dataFields": {
-      "cate":"cate",
+    "cate": "cate",
     "cate$name": "name",
     "cate$imgUrl": "imgUrl",
     "cate$href": "href",

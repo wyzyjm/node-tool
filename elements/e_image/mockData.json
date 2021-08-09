@@ -6,7 +6,8 @@
             "type":"",
             "value":"",
             "target":""
-        }
+        },
+        "isLazy":true
    
         
   },

@@ -177,9 +177,15 @@ function handleStr(str,dataFields,compId){
             let tkA=e.match(/{{[a-zA-Z0-9]*?}}/g)
             if(tkA){
                 tkA.forEach(el=>{
-                    let noArr = ["noDataPrompt","this"]
+                    let noArr = ["noDataPrompt","this","if","children","eq "]
                     let teo = el.replace(/{/g,'').replace(/}/g,'')
-                    if(!noArr.includes(teo)){
+                    let flag = true
+                    noArr.forEach(e=>{
+                        if(teo.includes(e) || tp.includes(e)){
+                            flag = false
+                        }
+                    })
+                    if(flag){
                         let nel = el.replace(teo,"${"+tp+"$"+teo+"}")
                         te = te.replace(el,nel)
                     }
