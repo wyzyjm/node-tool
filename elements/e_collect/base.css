@@ -1,0 +1,14 @@
+.e_collect .p_sale{
+    display: inline-block;
+    text-align: center;
+}
+.e_collect .p_sale.curr{
+    color: red;
+
+}
+.e_collect .p_infoActive{
+    color: red;
+}
+.e_collect .hid{
+    display: none;
+}

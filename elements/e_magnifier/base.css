@@ -1,0 +1,179 @@
+.e_magnifier {
+	min-height: 400px;
+}
+.e_magnifier .magnifier{
+	width: 450px;
+	position: relative;
+}
+.e_magnifier .magnifier-container{
+	width: 450px;
+	/* height: 500px; */
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #ddd;
+}
+.e_magnifier .move-view{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	/* background-image: url('images/move-box.png'); */
+}
+.e_magnifier .images-cover{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.e_magnifier .images-cover img{
+	position: absolute;
+}
+.e_magnifier .magnifier-assembly{
+	height: 92px;
+	overflow: hidden;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.e_magnifier .magnifier-btn{
+	position: absolute;
+	font-family: "宋体";
+	width: 100%;
+	top: 50%;
+	left: 0;
+	margin-top: -40px;
+}
+.e_magnifier .magnifier-btn span{
+	line-height: 80px;
+	height: 80px;
+	width: 20px;
+	color: #fff;
+	display: block;
+	z-index: 8;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.e_magnifier .magnifier-btn .magnifier-btn-left{
+	float: left;
+}
+.e_magnifier .magnifier-btn .magnifier-btn-right{
+	float: right;
+}
+.e_magnifier .magnifier-line{
+	position: relative;
+	overflow: hidden;
+  	height: 80px;
+  	padding-top: 10px;
+}
+.e_magnifier .magnifier-line ul{
+	display: block;
+	font-size: 0;
+	width: 10000%;
+	position: absolute;
+	left: 0;
+	z-index: 7;
+}
+.e_magnifier .magnifier-line li{
+	float: left;
+	cursor: pointer;
+}
+.e_magnifier .magnifier-line ul > .active .small-img{
+	border-color: red;
+}
+.e_magnifier .small-img{
+	position: relative;
+  	height: 60px;
+  	width: 60px;
+	padding: 0px;
+	margin-right: 10px;
+	overflow: hidden;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+.e_magnifier .small-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.e_magnifier .magnifier-view{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: -105%;
+	top: 0;
+	z-index: 9;
+	background-color: #fff;
+	display: none;
+	overflow: hidden;
+}
+.e_magnifier .magnifier-view img{
+	display: block;
+}
+.e_magnifier .animation03{
+	transition: all 0.3s ease-in 0.1s;
+	-ms-transition: all 0.3s ease-in 0.1s;
+	-moz-transition: all 0.3s ease-in 0.1s;
+	-webkit-transition: all 0.3s ease-in 0.1s;
+	-o-transition: all 0.3s ease-in 0.1s;
+}
+.e_magnifier .image-icons{
+	position: absolute;
+	right: 0;
+	top: 0px;
+	z-index: 9;
+}
+.e_magnifier .image-bigger{
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+	z-index: 9;
+}
+.e_magnifier .image-big-video{
+	width: 80px;
+	height: 80px;;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.e_magnifier  .closeBtn{
+    width: 35px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 35px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.container-fluid{
+	position: absolute;
+	  background: black;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  margin: auto;
+	  z-index: 999;
+	  display: flex;
+      align-items: center;
+}
+.container-fluid .closeBtn{
+	width: 35px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	height: 35px;
+	display: block;
+	z-index: 999;
+	cursor: pointer;
+}
+.container-fluid .closeBtn img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}   

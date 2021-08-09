@@ -1,25 +1,30 @@
 {
     "prop": {
+        "showLabel":true,
         "label":"下拉选择",
+        "showPlaceholder":true,
+        "placeholder":"请选择",
+        "state":"normal",
         "options":[
             {
-                "text":"请选择",
-                "value":""
-            },{
-                "text":"选项1",
+                "label":"已婚",
                 "value":"1"
             },{
-                "text":"选项2",
+                "select":true,
+                "label":"未婚",
                 "value":"2"
             },{
-                "text":"选项3",
+                "label":"未知",
                 "value":"3"
-            },{
-                "text":"选项4",
-                "value":"4"
             }
         ],
-        "error":"请选择"
+        "validate":{
+            "required":{
+                "state":true,
+                "value":true,
+                "msg":"内容不能为空"
+            }
+        }
     },
     "i18n": {}
 }

@@ -1,0 +1,17 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-multipleSelect",
+            "name":"下拉多选",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "showPlaceholder":"prop.showPlaceholder",
+            "placeholder":"prop.placeholder",
+            "state":"prop.state",
+            "options":"prop.options",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

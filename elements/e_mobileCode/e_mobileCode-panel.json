@@ -1,0 +1,16 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-mobileCode",
+            "name":"手机验证码",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "placeholder1":"prop.placeholder1",
+            "placeholder2":"prop.placeholder2",
+            "codeNeed":"prop.codeNeed",
+            "focus":"prop.focus"
+        }
+    ]
+}
+  

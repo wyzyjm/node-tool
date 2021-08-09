@@ -1,7 +1,19 @@
 {
   "prop": {
-    "label":"日期",
-    "placeholder":"请选择日期"
+    "showLabel":true,
+    "label":"日期时间",
+    "type":"date",
+    "showPlaceholder":"word",
+    "placeholder":"请选择日期",
+    "format":"YYYY/MM/DD",
+    "state":"normal",
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
   },
   "i18n": {}
 }

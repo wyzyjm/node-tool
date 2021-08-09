@@ -1,0 +1,12 @@
+<div class="e_code form-group">
+    {{#if prop.showLabel}}
+    <label class="p_label">
+        {{prop.label}}
+        <span class="text-danger p_required">*</span>
+    </label>
+    {{/if}}
+    <div>
+        安全验证
+    </div>
+    <input type="hidden" name="propJson" value='{{{propJson}}}'>
+</div>

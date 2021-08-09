@@ -259,6 +259,83 @@ helpers.paging = function (context,pageType) {
   return new Handlebars.SafeString(Handlebars.compile(resultStr)(this));
 };
 
+helpers.nPaging = function (page,pageConfig) {
+    let { from, size, totalCount } = page;
+    let currentPage = Math.ceil(from/size)+1;
+    let pageSize = size;
+    let pageNums = Math.ceil(totalCount / pageSize);
+    let resultStr = '';
+    if ('turnPage' == pageConfig.pageType) {
+        let strArr = [],page
+            prevDisabled = currentPage == 1 ? 'disabled' : '',
+            nextDisabled = currentPage == pageNums ? 'disabled' : '',
+            pageUrl = '';
+            
+        if (pageNums < 8) {
+            for (let i = 1; i <= pageNums; i++) {
+                if (i == currentPage) {
+                    strArr.push(`<a class="page_a page_num current" href="javascript:;">${currentPage}</a>`);
+                } else {
+                    strArr.push(`<a class="page_a page_num" href="${pageUrl}-${i}.html">${i}</a>`);
+                }
+            }
+        } else {
+            if (currentPage <= 3) {
+                for (let i = 1; i <= 4; i++) {
+                    if (i == currentPage) {
+                        strArr.push(`<a class="page_a page_num current" href="javascript:;">${currentPage}</a>`);
+                    } else {
+                        strArr.push(`<a class="page_a page_num" href="${pageUrl}-${i}.html">${i}</a>`);
+                    }
+                }
+                strArr.push('<span class="page_a page_ellipsis">...</span>');
+                strArr.push(`<a class="page_a page_num" href="${pageUrl}-${pageNums}.html">${pageNums}</a>`);
+            } else if (currentPage >= (pageNums - 2)) {
+                strArr.push(`<a class="page_a page_num" href="${pageUrl}-1.html">1</a >`);
+                strArr.push('<span class="page_a page_ellipsis">...</span>');
+                for (let i = (pageNums - 3); i <= pageNums; i++) {
+                    if (i == currentPage) {
+                        strArr.push(`<a class="page_a page_num current" href="javascript:;">${currentPage}</a >`);
+                    } else {
+                        strArr.push(`<a class="page_a page_num" href="${pageUrl}-${i}.html">${i}</a >`);
+                    }
+                }
+            } else {
+                strArr.push(`<a class="page_a page_num" href="${pageUrl}-1.html">1</a >`);
+                strArr.push('<span class="page_a page_ellipsis">...</span>');
+                strArr.push(`<a class="page_a page_num" href="${pageUrl}-${currentPage - 1}.html">${currentPage - 1}</a >`);
+                strArr.push(`<a class="page_a page_num current" href="javascript:;">${currentPage}</a >`);
+                strArr.push(`<a class="page_a page_num" href="${pageUrl}-${currentPage + 1}.html">${currentPage + 1}</a >`);
+                strArr.push('<span class="page_a page_ellipsis">...</span>');
+                strArr.push(`<a class="page_a page_num" href="${pageUrl}-${pageNums}.html">${pageNums}</a >`);
+            }
+        }
+        resultStr = `
+        <div class="page_con">
+            <a href="${pageUrl}-${currentPage > 1 ? (currentPage - 1) : 1}.html" class="page_a page_prev ${prevDisabled}">&lt;</a >
+            ${strArr.join('')}
+            <a href="${pageUrl}-${currentPage < pageNums ? (currentPage + 1) : pageNums}.html" class="page_a page_next ${nextDisabled}">&gt;</a >
+            {{#if prop.pageConfig.showJump}}
+            <span class="page_jump">
+                {{i18n.pageJump}} <input type="text" class="page_input" > {{i18n.pageUnit}}
+            </span>
+            {{/if}}
+        </div>
+        `
+    } else if ('click' == pageConfig.pageType) {
+        resultStr = `
+            <div class="page_con">
+                <button class="btn btn-primary btn-sm e_button page_clickLoad">{{i18n.loadMore}}</button>
+            </div>
+        `
+    } else {
+        resultStr = `
+            <div class="page_con"></div>
+        `
+    }
+  return new Handlebars.SafeString(Handlebars.compile(resultStr)(this));
+};
+
 helpers.noDataPrompt = function (prompt) {
     let resultStr= `
         <div class="pl_empty">
@@ -274,6 +351,7 @@ helpers.noDataPrompt = function (prompt) {
 //Handlebars  browser
 Handlebars.registerHelper("noDataPrompt", helpers.noDataPrompt);
 Handlebars.registerHelper("paging", helpers.paging);
+Handlebars.registerHelper("nPaging", helpers.nPaging);
 Handlebars.registerHelper("lazyImage", helpers.lazyImage);
 Handlebars.registerHelper("lazySource", helpers.lazySource);
 Handlebars.registerHelper("compare", helpers.compare);

@@ -1,0 +1,42 @@
+{
+  "prop": {
+    "showLabel":true,
+    "label":"评分评价",
+    "showPlaceholder":true,
+    "placeholder":"请选择评分",
+    "type":0,
+    "number":10,
+    "score":3,
+    "half":true,
+    "prompt":[
+        {
+            "from":1,
+            "to":2,
+            "label":"不满意"
+        },
+        {
+            "from":3,
+            "to":6,
+            "label":"满意"
+        },
+        {
+            "from":7,
+            "to":7,
+            "label":"非常满意"
+        },
+        {
+            "from":8,
+            "to":10,
+            "label":"666"
+        }
+    ],
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
+  },
+  "i18n": {}
+}

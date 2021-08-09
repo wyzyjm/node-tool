@@ -2,7 +2,7 @@
   "cname": "h2",
   "styleId": "e_h2",
   "styleClass": "s_body",
-  "tmpl": "<h2 class=\"${elemId} ${styleClass}\">{{${h2}}}</h2>",
+  "tmpl": "<h2 class=\"${elemId} ${styleClass}\">\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    {{${h2}}}\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</h2>",
   "css": [
     {
       "media": "",
@@ -22,13 +22,19 @@
     }
   ],
   "prop": {
-    "h2": "这里是标题二h2占位文字"
+    "h2": "这里是标题二h2占位文字",
+    "href": {
+      "type": "none",
+      "value": "",
+      "target": ""
+    }
   },
   "i18n": {
     "zh_CN": {}
   },
   "datasource": "prop",
   "dataFields": {
-    "h2": "h2"
+    "h2": "h2",
+    "href": "href"
   }
 }

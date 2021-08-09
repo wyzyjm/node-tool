@@ -1,7 +1,46 @@
 {
-  "prop": {
-      "label":"单行文本",
-      "placeholder":"请输入..."
-  },
+  "prop": {  
+    "showLabel":true,
+    "label":"单行文本",
+    "showPlaceholder":true,
+    "placeholder":"请输入...",
+    "type":"text",
+    "value":"",
+    "state":"normal",
+    "decimal":2,
+    "unit":"千克",
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        },
+        "minLength":{
+            "state":true,
+            "value":5,
+            "msg":"您输入的内容不能少于%len个字符"
+        },
+        "maxLength":{
+            "state":true,
+            "value":128,
+            "msg":"您输入的内容不能多于%len个字符"
+        },
+        "min":{
+            "state":true,
+            "value":10,
+            "msg":"您输入的内容最小值为%len"
+        },
+        "max":{
+            "state":true,
+            "value":100,
+            "msg":"您输入的内容最大值为%len"
+        },
+        "custom":{
+            "state":false,
+            "reg":"",
+            "msg":""
+        }
+    }
+},
   "i18n": {}
 }

@@ -80,13 +80,7 @@ async function addElement(body){
     if(obj.adminData=='true'){
         defaultJson.dataManage={}
     }
-    //   await writeFile(compPanelFilePath,JSON.stringify(panelJson,null,2),'utf8');
-    await writeFile(compJsonFilePath,JSON.stringify(defaultJson,null,2),'utf8');
-    await writeFile(mockFilePath,JSON.stringify(mockData,null,2),'utf8');
-    await writeFile(tmplPath,``,'utf8');
-    emptyFilePath.forEach(async (path,i)=>{
-        await writeFile(path,i==0?`.${compId}{\n\n}\n`:'','utf8');
-    })
+    
     
     let allElePath=path.join(__dirname, './allEle.json');
     let allEleJson=JSON.parse(await readFile(allElePath));
@@ -100,8 +94,18 @@ async function addElement(body){
         allEleJson.complex.push(ele)
     }else if(obj.eleCate=='3'){
         allEleJson.form.push(ele)
+        defaultJson.type="form"
     }
     await writeFile(allElePath,JSON.stringify(allEleJson,null,2),'utf8');
+
+    //   await writeFile(compPanelFilePath,JSON.stringify(panelJson,null,2),'utf8');
+    await writeFile(compJsonFilePath,JSON.stringify(defaultJson,null,2),'utf8');
+    await writeFile(mockFilePath,JSON.stringify(mockData,null,2),'utf8');
+    await writeFile(tmplPath,``,'utf8');
+    emptyFilePath.forEach(async (path,i)=>{
+        await writeFile(path,i==0?`.${compId}{\n\n}\n`:'','utf8');
+    })
+
 
     logger.info(`Component "${compId}" initialization is complete`)
 }
@@ -121,7 +125,7 @@ async function compJsonBuilder(compId) {
   compJson.prop=mockJson.prop;
   if(compJson.dataFields){
     for(var i in compJson.prop){
-        compJson.dataFields[i]=i
+        // compJson.dataFields[i]=i
         if(Array.isArray(compJson.prop[i])){
             for(var j in compJson.prop[i][0]){
                 let tk=i+"$"+j
@@ -160,13 +164,8 @@ function handleStr(str,dataFields,compId){
             // }
         })
     }
-    
-    // for(var i in dataFields){
-    //     if(i.includes("$")){
-    //         str=str.replace("{{"+dataFields[i]+"}}","{{${"+i+"}}}")
-    //         str=str.replace("{{{"+dataFields[i]+"}}}","{{{${"+i+"}}}}")
-    //     }
-    // }
+ 
+    //数据替换
     let dataReg2 = /(\{\{#[\w\W]*?\}\}[\w\W]*?{{\/[\w\W]*?\}\})/g
     let matchArr2 = str.match(dataReg2)
     if(matchArr2){
@@ -179,9 +178,15 @@ function handleStr(str,dataFields,compId){
             let tkA=e.match(/{{[a-zA-Z0-9]*?}}/g)
             if(tkA){
                 tkA.forEach(el=>{
-                    let noArr = ["noDataPrompt","this"]
+                    let noArr = ["noDataPrompt","this","if","children","eq "]
                     let teo = el.replace(/{/g,'').replace(/}/g,'')
-                    if(!noArr.includes(teo)){
+                    let flag = true
+                    noArr.forEach(e=>{
+                        if(teo.includes(e) || tp.includes(e)){
+                            flag = false
+                        }
+                    })
+                    if(flag){
                         let nel = el.replace(teo,"${"+tp+"$"+teo+"}")
                         te = te.replace(el,nel)
                     }
@@ -191,14 +196,23 @@ function handleStr(str,dataFields,compId){
         })
     }
 
-    
+    //词条替换
+    let i18nReg = /{{i18n\..*?}}/g
+    let i18nMatch = str.match(i18nReg)
+    if(i18nMatch){
+        i18nMatch.forEach(e=>{
+            let ne = e.replace(/{/g,'').replace(/}/g,'')
+            str=str.replace(ne,'${'+ne+'}')
+        })
+    }    
 
+    //样式替换
     let classReg = new RegExp(compId+'.*?\\"');
     let classStr = str.match(classReg)[0];
     let styleClass = "";
     if(classStr){
         let handleStr = classStr.replace(/\/\"/,"").replace(/\"/,"").trim()
-        
+
         if(handleStr){
             let classArr = handleStr.split(/\s+/),nClassArr=[]
             classArr.forEach(e=>{

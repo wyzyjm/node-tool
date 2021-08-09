@@ -1,16 +1,28 @@
 {
   "prop": {
-      "label":"单选项",
-      "name":"radio",
-      "options":[
-          {
-              "label":"男",
-              "value":"m"
-          },{
-            "label":"女",
-            "value":"f"
+        "showLabel":true,
+        "label":"单选项",
+        "state":"normal",
+        "options":[
+            {
+                "label":"已婚",
+                "value":"1"
+            },{
+                "select":true,
+                "label":"未婚",
+                "value":"2"
+            },{
+                "label":"未知",
+                "value":"3"
+            }
+        ],
+        "validate":{
+            "required":{
+                "state":true,
+                "value":true,
+                "msg":"内容不能为空"
+            }
         }
-      ]
   },
   "i18n": {}
 }

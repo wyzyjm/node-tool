@@ -1,0 +1,32 @@
+<div class="e_preView" needjs="true">
+    {{#prop.list}}
+        <div class="p_img_div" >
+            <a href="{{href}}" target="{{target}}" class="p_img_a" bind="href-id" >
+                <img src="{{coverImage}}" alt="" class="p_img" bind="src-coverImage" >
+            </a>
+        </div>
+        {{#if ../prop.showImages }}
+        <div class="p_scroll"    panel="checkbox-showImages">
+            <ul class="p_scroll_main" bind="arr-images" >
+                {{#images}}
+               
+                {{#eq  @index  0}}
+                <li class="p_scroll_item curr" >
+                    <a href="JavaScript:;" class="p_scroll_item_a " >
+                        <img src="{{url}}" alt="{{title}}" class="p_scroll_item_img" bind="src-url|alt-title" >
+                    </a>
+                </li>
+                {{/eq}}
+                {{#gt @index  0}}
+                <li class="p_scroll_item" >
+                    <a href="JavaScript:;" class="p_scroll_item_a" >
+                        <img src="{{url}}" alt="{{title}}" class="p_scroll_item_img" bind="src-url|alt-title" >
+                    </a>
+                </li>
+                {{/gt}}
+                {{/images}}
+        </div>
+        {{/if}}
+    {{/prop.list}}
+    
+</div>

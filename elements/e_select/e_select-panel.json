@@ -1,0 +1,17 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-select",
+            "name":"下拉单选",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "showPlaceholder":"prop.showPlaceholder",
+            "placeholder":"prop.placeholder",
+            "state":"prop.state",
+            "options":"prop.options",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

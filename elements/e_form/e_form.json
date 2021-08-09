@@ -1,0 +1,132 @@
+{
+  "cname": "表单容器",
+  "styleId": "e_form",
+  "styleClass": "",
+  "type": "form",
+  "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"cbox-${id}\">\n        \n    </div>\n</form>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_form{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "basic": {
+      "formInfo": {
+        "title": "留言表单",
+        "name": "launchbook",
+        "app": ""
+      },
+      "submitLimit": {
+        "peopleLimit": 1,
+        "limitRull": 1,
+        "count": 1,
+        "interval": 1,
+        "unit": 1
+      },
+      "submitTime": {
+        "limit": 1,
+        "startTime": "2020-05-21 17:00",
+        "endTime": "2021-05-21 17:00",
+        "prompt": "对不起，提交表单时间不在允许提交范围内！"
+      },
+      "advanced": {
+        "customState": [
+          {
+            "label": "待审核",
+            "value": 1,
+            "select": true
+          }
+        ],
+        "message": 1
+      }
+    },
+    "rule": [
+      {
+        "if": {
+          "item": "",
+          "equal": 1,
+          "and": ""
+        },
+        "then": {
+          "item": "",
+          "equal": 1
+        },
+        "status": 1
+      }
+    ],
+    "submit": {
+      "type": 1,
+      "obj1": {
+        "prompt": "",
+        "formula": "",
+        "afterSubmit": 1,
+        "pageUrl": "",
+        "fileUrl": ""
+      },
+      "obj2": {
+        "pageUrl": "",
+        "params": [
+          {
+            "label": "服务编号",
+            "key": "id",
+            "value": "$产品编号"
+          }
+        ]
+      },
+      "obj3": {
+        "business": "",
+        "params": [
+          {
+            "label": "服务编号",
+            "key": "id",
+            "value": "$产品编号"
+          }
+        ]
+      }
+    },
+    "async": {
+      "status": 1,
+      "target": "",
+      "relation": [
+        {
+          "from": "",
+          "to": ""
+        }
+      ]
+    },
+    "notice": {
+      "status": 1,
+      "rules": [
+        {
+          "title": "事件名称",
+          "code": 1,
+          "user": 1
+        }
+      ]
+    }
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "container": true,
+  "scope": true,
+  "dataFields": {
+    "rule$if": "if",
+    "rule$then": "then",
+    "rule$status": "status"
+  }
+}

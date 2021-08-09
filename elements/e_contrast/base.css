@@ -1,0 +1,237 @@
+.e_contrast{
+
+}
+*{
+  box-sizing: border-box;
+}
+.p_compare{
+  background: #fff;
+  margin-left: 180px;
+}
+.p_left{
+  float: left;
+  width: 180px;
+  background:#f3f3f3
+}
+.p_right{
+  float: left;
+  width: calc(100% - 180px);
+  overflow-x: auto;
+}
+.p_rcontent{
+  min-width: 900px;
+}
+/*属性值行*/
+.p_row{
+  border-bottom: 1px solid #ccc;
+}
+.p_left .p_row{
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+/*第一行*/
+.p_rowt{
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+/*参数组标题行*/
+.p_rowgt{
+  background: #f3f3f3;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+.p_left .p_rowgt{
+  border-right: none;
+}
+/*参数单元格*/
+.p_ceil{
+  padding: 10px 10px;
+  text-align: center;
+  position: relative;
+  height: 110px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p_right .p_ceil{
+  float: left;
+  width: 25%;
+  border-right: 1px solid #ccc;
+}
+.p_right .p_row{
+  background: #fff;
+}
+.p_row.light{
+  background:#e1f6ff
+}
+.p_rowgt .p_ceil{
+  float: none;
+  width: 100%;
+  padding: 10px;
+  line-height: 40px;
+  height: 60px;
+  background: #f3f3f3;
+}
+.p_rowt .p_ceil{
+  height: 135px;
+  padding:10px 10px;
+}
+
+.p_product{
+  align-items:flex-start;
+  justify-content: flex-start;
+}
+.p_product_info{
+  padding: 0 10px 0 100px;
+  line-height: 26px;
+  text-align: left;
+}
+.p_product_title{
+  max-height: 52px;
+  overflow: hidden;
+  text-align: justify;
+}
+.p_product_img{
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  background: #f9f9f9;
+}
+.p_product_img img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.p_arrow{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  border-radius: 2px;
+  position: relative;
+}
+.p_arrow::after{
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  left: 0;
+  top: 0;
+  line-height: 12px;
+  color: #666;
+  content: "-";
+}
+.p_arrow.zd::after{
+  content: "+";
+}
+.fixedtop{
+  padding-top: 140px;
+}
+.fixedtop .fixeddiv,.fixedtop .p_lop{
+  overflow-x: auto;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  width: inherit;
+  background:inherit;
+  box-shadow: 5px 5px 5px #ccc;
+
+}
+
+.p_menu{
+  position: fixed;
+  left: 0;
+  top: 30px;
+  width:180px;
+  z-index: 9;
+}
+.p_pcm{
+  padding:30px 40px 30px 10px;
+  position: relative;
+}
+.p_pcm::after{
+  content: " ";
+  position: absolute;
+  height: 100%;
+  border-right: 1px solid #666;
+  right: 20px;
+  top: 0;
+  z-index: 4;
+}
+.p_pcl{
+  line-height: 20px;
+  padding: 10px 0;
+  text-align: right;
+  position: relative;
+}
+.p_pcl::after{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #666;
+  right: -23px;
+  top: 16px;
+  z-index: 5;
+}
+.p_pcl.active{
+  color: #007bff;
+}
+.p_pcl.active::after{
+  background: #007bff;
+}
+.p_mmenu{
+  display: none;
+}
+
+
+.hideSame {
+  display: none;
+}
+.hideSame + label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0px 20px;
+  box-sizing: border-box;
+}
+.hideSame + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.hideSame:checked + label {
+  background: #52b1ff;    
+}
+.hideSame:checked + label:after {
+  background: #fff;
+}
+.hideSame:checked + label:after {
+  left: calc(100% - 20px);
+}
+.hideSame + label {
+  background: #ddd;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px #aaa;
+}
+.hideSame + label:after {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px #aaa;
+}

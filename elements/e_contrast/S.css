@@ -1,0 +1,43 @@
+.p_left{
+  float: left;
+  width: 140px;
+  background:#f3f3f3
+}
+.p_right{
+  float: left;
+  width: calc(100% - 140px);
+  overflow-x: auto;
+}
+.p_compare {
+  margin-left: 0px;
+} 
+.p_menu{
+  display: none;
+}
+.p_mmenu{
+  width: 100%;
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  background: #f3f3f3;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  text-align: center;
+}
+.fixedtop{
+  padding-top: 180px;
+}
+.p_marrow{
+  width:0;
+height:0;
+border-right:10px solid transparent;
+border-left:10px solid transparent;
+border-top:10px solid #ccc;
+}
+.p_product_info{
+  padding-left: 80px;
+}
+.p_product_img{
+  width: 70px;
+  height: 70px;
+}

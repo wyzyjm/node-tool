@@ -1,0 +1,17 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-rangeDate",
+            "name":"区间时间",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "showPlaceholder":"prop.showPlaceholder",
+            "startPlaceholder":"prop.startPlaceholder",
+            "endPlaceholder":"prop.endPlaceholder",
+            "type":"prop.type",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

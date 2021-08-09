@@ -1,0 +1,20 @@
+{
+  "prop": {
+    "showLabel":true,
+    "label":"文件型",
+    "showPlaceholder":true,
+    "placeholder":"请上传2M以内的ISO格式图片",
+    "limit":1,
+    "size":5,
+    "unit":"kb",
+    "accept":[".iso",".rar",".zip"],
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
+  },
+  "i18n": {}
+}

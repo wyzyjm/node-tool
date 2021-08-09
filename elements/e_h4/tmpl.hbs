@@ -1,1 +1,9 @@
-<h4 class="e_h4">{{prop.h4}}</h4>
+<h4 class="e_h4 s_link">
+    {{#if prop.href.value}}
+        <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}">
+    {{/if}}
+    {{prop.h4}}
+    {{#if prop.href.value}}
+        </a>
+    {{/if}}
+</h4>

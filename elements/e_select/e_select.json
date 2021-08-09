@@ -1,12 +1,13 @@
 {
-  "cname": "下拉选择",
+  "cname": "下拉选项",
   "styleId": "e_select",
   "styleClass": "",
-  "tmpl": "<div class=\"form-group ${elemId} ${styleClass}\">\n    <label>{{${label}}}</label>\n    <select class=\"custom-select\">\n        {{#${options}}}\n        <option value=\"{{${options$value}}}\">{{${options$text}}}</option>\n        {{/${options}}}\n    </select>\n    <div class=\"invalid-feedback\">{{${error}}}</div>\n</div>",
+  "type": "form",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}hide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <select class=\"form-control p_input\" name=\"${elemId}\" {{#eq ${state} 'disabled'}}disabled{{/eq}} >\n            {{#if ${showPlaceholder}}}\n            <option value=\"\">{{${placeholder}}}</option>\n            {{/if}}\n            {{#${options}}}\n            <option value=\"{{${options$value}}}\">{{${options$label}}}</option>\n            {{/${options}}}\n        </select>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>\n",
   "css": [
     {
       "media": "",
-      "cssText": ".e_select{\n\n}\n"
+      "cssText": ".e_select{\n\n}\n.e_select  .p_required{\n    vertical-align: middle;\n    font-size: 1.4em;\n    line-height: 100%;\n    position: relative;\n    font-weight: bold;\n    top: 0.15em;\n    padding-left: 5px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,40 +23,40 @@
     }
   ],
   "prop": {
+    "showLabel": true,
     "label": "下拉选择",
+    "showPlaceholder": true,
+    "placeholder": "请选择",
+    "state": "normal",
     "options": [
       {
-        "text": "请选择",
-        "value": ""
-      },
-      {
-        "text": "选项1",
+        "label": "已婚",
         "value": "1"
       },
       {
-        "text": "选项2",
+        "select": true,
+        "label": "未婚",
         "value": "2"
       },
       {
-        "text": "选项3",
+        "label": "未知",
         "value": "3"
-      },
-      {
-        "text": "选项4",
-        "value": "4"
       }
     ],
-    "error": "请选择"
+    "validate": {
+      "required": {
+        "state": true,
+        "value": true,
+        "msg": "内容不能为空"
+      }
+    }
   },
   "i18n": {
     "zh_CN": {}
   },
   "datasource": "prop",
   "dataFields": {
-    "label": "label",
-    "options": "options",
-    "error": "error",
-    "options$text": "text",
+    "options$label": "label",
     "options$value": "value"
   },
   "scope": true

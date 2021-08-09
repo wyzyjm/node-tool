@@ -5,7 +5,8 @@
     width: 160px;
     padding: 0 6px;
 }
-.e_navigationA .p_level2Item, .e_navigationA .p_level3Item{
+.e_navigationA .p_level2Item, 
+.e_navigationA .p_level3Item{
     width: 200px;
     padding: 0 6px;
 }
@@ -34,17 +35,17 @@
 .e_navigationA p:hover{
     color: #409EFF;
 }
-#e_navigationA .p_jtIcon{
+.e_navigationA .p_jtIcon{
     /* transition: 0.5s; */
     transform: rotate(180deg);
     color: #cdcdcd;
 }
-#e_navigationA .p_level1Item:hover .p_jtIcon {
+.e_navigationA .p_level1Item:hover .p_jtIcon {
     transition: 0.5s;
     color: #409eff !important;
     /* transform: rotate(180deg); */
 }
-#e_navigationA .p_level2Item .p_jtIcon{
+.e_navigationA .p_level2Item .p_jtIcon{
     display: none;
 }
 

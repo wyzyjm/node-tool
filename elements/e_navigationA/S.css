@@ -1,13 +1,10 @@
-
-html, body{
-    padding: 0;
-}
 .e_navigationA .p_level1Box{
     padding: 0 20px;
     display: none;
     height: calc(100vh - 57px);
 }
-.e_navigationA .p_level2Box, .e_navigationA .p_level3Box{
+.e_navigationA .p_level2Box, 
+.e_navigationA .p_level3Box{
     padding-left: 20px;
 }
 .e_navigationA .p_iconBox{
@@ -17,14 +14,14 @@ html, body{
     float: right;
     display: none;
 }
-#e_navigationA .p_jtIcon{
+.e_navigationA .p_jtIcon{
     float: right;
     margin: 15px 0;
     transition: 0.5s;
     color: #cdcdcd;
     transform: rotate(90deg);
 }
-#e_navigationA .p_jtHover {
+.e_navigationA .p_jtHover {
     transition: 0.5s;
     transform: rotate(180deg);
 }

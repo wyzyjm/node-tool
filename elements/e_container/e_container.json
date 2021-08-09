@@ -24,7 +24,9 @@
   "container": true,
   "prop": {
     "layout": [
-      {}
+      {
+        "flex": 1
+      }
     ]
   },
   "i18n": {

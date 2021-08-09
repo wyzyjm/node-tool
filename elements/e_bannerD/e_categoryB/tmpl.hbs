@@ -1,0 +1,66 @@
+<div class="e_categoryB" needjs="true">
+    <button class="btn btn-primary p_c_mbtn">{{i18n.moCategoryTitle}}</button>
+    <div class="p_c_tree">
+        <div class="p_c_mput">
+            <svg t="1604645690044" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9896" width="200" height="200"><path d="M725.333333 127.146667a53.333333 53.333333 0 0 0-75.52 0L295.253333 482.133333a42.496 42.496 0 0 0 0 60.16l354.56 354.56c20.906667 20.906667 54.613333 20.906667 75.52 0s20.906667-54.613333 0-75.52L416.426667 512l309.333333-309.333333c20.48-20.906667 20.48-55.04-0.426667-75.52z" p-id="9897"></path></svg>
+        </div>
+        {{#if prop.cate}}
+        <ul class="p_c_content">
+            {{#prop.cate}}
+            <li class="p_c_item">
+                <span class="p_c_title">
+                    {{#if href}}<a href="{{href}}" target="{{target}}">{{/if}}
+                    {{#if imgUrl}} {{{lazyImage imgUrl "class='p_img'" "true"}}} {{/if}}
+                    {{name}}
+                    {{#if href}}</a>{{/if}}
+                </span>
+                {{#if children}}
+                <ul class="p_c_content">
+                    {{#children}}
+                    <li class="p_c_item">
+                        <span class="p_c_title">
+                            {{#if href}}<a href="{{href}}" target="{{target}}">{{/if}}
+                            {{#if imgUrl}} {{{lazyImage imgUrl "class='p_img'" "true"}}} {{/if}}
+                            {{name}}
+                            {{#if href}}</a>{{/if}}
+                        </span>
+                        {{#if this.children}}
+                        <ul class="p_c_content">
+                            {{#this.children}}
+                            <li class="p_c_item">
+                                <span class="p_c_title">
+                                    {{#if href}}<a href="{{href}}" target="{{target}}">{{/if}}
+                                    {{#if imgUrl}} {{{lazyImage imgUrl "class='p_img'" "true"}}} {{/if}}
+                                    {{name}}
+                                    {{#if href}}</a>{{/if}}
+                                </span>
+                                {{#if this.children}}
+                                <ul class="p_c_content">
+                                    {{#this.children}}
+                                    <li class="p_c_item">
+                                        <span class="p_c_title">
+                                            {{#if href}}<a href="{{href}}" target="{{target}}">{{/if}}
+                                            {{#if imgUrl}} {{{lazyImage imgUrl "class='p_img'" "true"}}} {{/if}}
+                                            {{name}}
+                                            {{#if href}}</a>{{/if}}
+                                        </span>
+                                    </li>
+                                    {{/this.children}}
+                                </ul>
+                                {{/if}}
+                            </li>
+                            {{/this.children}}
+                        </ul>
+                        {{/if}}
+                    </li>
+                    {{/children}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/prop.cate}}
+        </ul>
+        {{^}}
+        {{noDataPrompt}}
+        {{/if}}
+    </div>
+</div>

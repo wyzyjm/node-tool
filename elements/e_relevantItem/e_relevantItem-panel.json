@@ -1,0 +1,16 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-relevantItem",
+            "name":"相关项",
+            "staticBind": true,
+            "type":"prop.type",
+            "btnText":"prop.btnText",
+            "datasource":"prop.datasource",
+            "previewList":"prop.previewList",
+            "searchList":"prop.searchList",
+            "isHide":"prop.isHide"
+        }
+    ]
+}
+  

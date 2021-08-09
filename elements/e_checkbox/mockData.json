@@ -1,22 +1,31 @@
 {
-  "prop": {
-    "label":"多选项",
-    "name":"checkbox",
-    "options":[
-        {
-            "label":"读书",
-            "value":"ds"
-        },{
-          "label":"旅游",
-          "value":"ly"
-        },{
-            "label":"游泳",
-            "value":"yy"
-          },{
-            "label":"爬山",
-            "value":"ps"
-          }
-    ]
-  },
-  "i18n": {}
+    "prop": {
+        "showLabel":true,
+        "label":"多选项",
+        "state":"normal",
+        "options":[
+            {
+                "label":"读书",
+                "value":"1"
+            },{
+                "select":true,
+                "label":"旅游",
+                "value":"2"
+            },{
+                "label":"音乐",
+                "value":"3"
+            },{
+                "label":"篮球",
+                "value":"4"
+            }
+        ],
+        "validate":{
+            "required":{
+                "state":true,
+                "value":true,
+                "msg":"选项不能为空"
+            }
+        }
+    },
+    "i18n": {}
 }

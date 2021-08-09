@@ -1,7 +1,14 @@
-<div class="e_loop">
-    {{#prop.dataList}}
-    <div class="cbox-${id} p_item"></div>
+<div class="e_loop s_list">
+    {{#if prop.dataList}}
+        <div class="p_list">
+        {{#prop.dataList}}
+            <div class="cbox-${id} p_item"></div>
+        {{/prop.dataList}}
+        </div>
+        <div class="p_page">
+            {{{nPaging prop.page prop.pageConfig}}}
+        </div>
     {{^}}
     {{{noDataPrompt}}}
-    {{/prop.dataList}}
+    {{/if}}
 </div>

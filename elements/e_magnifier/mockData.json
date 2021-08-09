@@ -1,0 +1,67 @@
+{
+  "prop": {
+    "dataList":[
+        {
+          "id": 123213,
+          "title": "视频标题",
+          "type": "video",
+          "summary": "视频简介",
+          "thumbnailUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.jpg",
+          "url": "https://pre-omo-oss-vedio.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
+          "duration": 4,
+          "size": 3214
+      },
+      {
+          "id": 12345,
+          "title": "360图片标题",
+          "type": "360",
+          "imgUrlList": [
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/d2fb07cc-81a8-4278-be17-5a38c6c89e54.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/209085eb-6f73-47a4-95cb-b68859ed4963.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/46834dba-a048-4c75-98a5-db18537e76b3.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/21701b86-d642-4aa5-89a3-61d7c64c2ce2.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/99e41df9-ae40-4c99-8415-ca007cf867cb.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/4e1e6ae7-d6ee-45ea-9a7a-e11fc2f8480b.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/34e01e2c-4185-40ca-b1d7-feaae63d7617.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/72e2a370-4825-4b19-8e18-452005390f0c.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/6c905d59-e6e5-4b78-a331-506986dcee9b.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/9e43449d-e4ac-4a1a-9046-8c871a338fdc.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/a4e3bbdd-85ec-4311-8982-191f9ac79642.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/4a653d73-098b-4345-8aae-40e6e19e938d.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/475aef34-7c33-48d4-bf2e-ec18fa992ff3.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/03cf611e-45cd-4338-b066-f4d0c392c9e9.png",
+            "http://1809290214.pool3-site.make.yun300.cn/repository/image/ed29e801-cc22-437a-b193-ff1e040f86e7.png"
+          ]
+      },
+      {
+          "id": 1231312,
+          "title": "图片标题",
+          "type": "img",
+          "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
+          "iscover": true
+      },
+      {
+          "id": 1231312,
+          "title": "图片标题",
+          "type": "img",
+          "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
+          "iscover": false
+      },
+      {
+          "id": 1231312,
+          "title": "图片标题",
+          "type": "img",
+          "url": "http://1809290214.pool3-site.make.yun300.cn/repository/image/edb454bd-7c4e-40dd-aaa4-71e58ea98952.jpg",
+          "iscover": false
+      },
+      {
+          "id": 1231312,
+          "title": "图片标题",
+          "type": "img",
+          "url": "http://1809290214.pool3-site.make.yun300.cn/repository/image/7314d825-4d83-478e-ab00-f5c9a46e2831.jpg",
+          "iscover": false
+      }
+    ]
+  },
+  "i18n": {}
+}

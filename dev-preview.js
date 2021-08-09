@@ -234,8 +234,8 @@ app.use(async function (ctx,next) {
         await next();
     }
 });
-app.listen(8888);
-openUrl('http://127.0.0.1:8888/index.html');
+app.listen(8800);
+openUrl('http://127.0.0.1:8800/index.html');
 //浏览器打开
 function openUrl(url) {
     // 拿到当前系统的参数

@@ -9,6 +9,22 @@
       "code": "e_container"
     },
     {
+      "name": "文字",
+      "code": "e_text"
+    },
+    {
+      "name": "图标",
+      "code": "e_icon"
+    },
+    {
+      "name": "图片",
+      "code": "e_image"
+    },
+    {
+      "name": "线条",
+      "code": "e_line"
+    },
+    {
       "name": "H1",
       "code": "e_h1"
     },
@@ -33,18 +49,6 @@
       "code": "e_h6"
     },
     {
-      "name": "图标",
-      "code": "e_icon"
-    },
-    {
-      "name": "图片",
-      "code": "e_image"
-    },
-    {
-      "name": "线条",
-      "code": "e_line"
-    },
-    {
       "name": "循环体容器",
       "code": "e_loop"
     },
@@ -57,12 +61,12 @@
       "code": "e_richText"
     },
     {
-      "name": "文字",
-      "code": "e_text"
-    },
-    {
       "name": "视频",
       "code": "e_video"
+    },
+    {
+      "name": "iframe",
+      "code": "e_iframe"
     }
   ],
   "complex": [
@@ -107,54 +111,158 @@
       "code": "e_scrollNumber"
     },
     {
-        "name": "导航-三级",
-        "code": "e_navigationA"
+      "name": "导航-三级",
+      "code": "e_navigationA"
     },
     {
-        "name": "导航-二级带图片",
-        "code": "e_navigationB"
+      "name": "导航-二级带图片",
+      "code": "e_navigationB"
     },
     {
-        "name": "导航-二级组合",
-        "code": "e_navigationC"
+      "name": "导航-二级组合",
+      "code": "e_navigationC"
+    },
+    {
+      "name": "登录",
+      "code": "e_login"
+    },
+    {
+      "name": "注册",
+      "code": "e_register"
+    },
+    {
+      "name": "轮播图-产品详情",
+      "code": "e_magnifier"
+    },
+    {
+      "name": "对比-详情",
+      "code": "e_contrast"
+    },
+    {
+      "name": "对比-浮动窗",
+      "code": "e_floating"
+    },
+    {
+      "name": "筛选排序",
+      "code": "e_filterSort"
+    },
+    {
+      "name": "标记图标",
+      "code": "e_flagIcon"
+    },
+    {
+      "name": "预览商品",
+      "code": "e_preView"
+    },
+    {
+      "name": "收藏",
+      "code": "e_collect"
+    },
+    {
+      "name": "按钮组",
+      "code": "e_groupBtn"
+    },
+    {
+      "name": "产品规格",
+      "code": "e_specification"
+    },
+    {
+      "name": "tab栏产品详情",
+      "code": "e_productTabList"
+    },
+    {
+      "name": "产品详情数量",
+      "code": "e_productNumber"
     }
   ],
   "form": [
     {
-      "name": "多选项",
-      "code": "e_checkbox"
+      "name": "表单容器",
+      "code": "e_form"
     },
     {
-      "name": "日期",
-      "code": "e_date"
-    },
-    {
-      "name": "隐藏表单项",
-      "code": "e_hidden"
-    },
-    {
-      "name": "单行文本输入框",
+      "name": "单行输入框",
       "code": "e_input"
-    },
-    {
-      "name": "数字输入框",
-      "code": "e_number"
-    },
-    {
-      "name": "单选项",
-      "code": "e_radio"
-    },
-    {
-      "name": "下拉选择",
-      "code": "e_select"
     },
     {
       "name": "多行输入框",
       "code": "e_textarea"
     },
     {
-      "name": "时间",
-      "code": "e_time"
+      "name": "下拉单选",
+      "code": "e_select"
+    },
+    {
+      "name": "下拉多选",
+      "code": "e_multipleSelect"
+    },
+    {
+      "name": "单选项",
+      "code": "e_radio"
+    },
+    {
+      "name": "多选项",
+      "code": "e_checkbox"
+    },
+    {
+      "name": "标签型",
+      "code": "e_label"
+    },
+    {
+      "name": "日期型",
+      "code": "e_date"
+    },
+    {
+      "name": "区间日期型",
+      "code": "e_rangeDate"
+    },
+    {
+      "name": "评分、评价",
+      "code": "e_score"
+    },
+    {
+      "name": "按钮",
+      "code": "e_formBtn"
+    },
+    {
+      "name": "地址型",
+      "code": "e_address"
+    },
+    {
+      "name": "图片型",
+      "code": "e_uploadImg"
+    },
+    {
+      "name": "文件型",
+      "code": "e_uploadFile"
+    },
+    {
+      "name": "视频型",
+      "code": "e_uploadVideo"
+    },
+    {
+      "name": "子表单",
+      "code": "e_subForm"
+    },
+    {
+      "name": "相关项",
+      "code": "e_relevantItem"
+    },
+    {
+      "name": "条款条件",
+      "code": "e_agreement"
+    },
+    {
+      "name": "安全验证",
+      "code": "e_code"
+    },
+    {
+      "name": "手机号验证",
+      "code": "e_mobileCode"
+    },
+    {
+      "name": "邮箱验证",
+      "code": "e_emailCode"
     }
   ]
 }

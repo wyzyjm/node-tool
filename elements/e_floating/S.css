@@ -1,0 +1,49 @@
+.e_floating .p_contrast,
+.e_floating .p_contrast_hidden{
+    display: block;
+    opacity: 1;
+}
+.e_floating .p_obscuration{
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    display: none;
+}
+.e_floating .p_contrast_list{
+    width: 100%;
+    position: absolute;
+    bottom: -100%;
+    transition:all 1s;
+}
+.e_floating .p_obscuration.show .p_contrast_list{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition:all 1s;
+}
+.e_floating .p_tab{
+    display: none;
+}
+.e_floating .p_form-control{
+    display: block;
+}
+.e_floating .p_data_list{
+    flex-direction: column;
+    border: none;
+}
+.e_floating .p_item{
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+}
+.e_floating .p_last_item{
+    width: 100%;
+    border-right: none;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.e_floating .p_item_delete{
+    display: block;
+}

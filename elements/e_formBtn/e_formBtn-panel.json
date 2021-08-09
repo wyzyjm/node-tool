@@ -1,0 +1,16 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-formBtn",
+            "name":"按钮",
+            "staticBind": true,
+            "text":"prop.text",
+            "type":"prop.type",
+            "action":"prop.action",
+            "logic":"prop.logic",
+            "prompt":"prop.prompt",
+            "output":"prop.output"
+        }
+    ]
+}
+  

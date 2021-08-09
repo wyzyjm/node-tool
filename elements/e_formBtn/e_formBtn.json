@@ -1,0 +1,37 @@
+{
+  "cname": "按钮",
+  "styleId": "e_formBtn",
+  "styleClass": "s_button1",
+  "tmpl": "<div>\n    <button class=\"${elemId} ${styleClass} btn btn-primary\">{{${text}}}</button>\n</div>",
+  "type": "form",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_formBtn{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "text": "确认",
+    "type": 1,
+    "action": 1,
+    "logic": "",
+    "prompt": "依据您填写的信息，计算预计费用为${logic}元。详情结果，获取方案请至电 18311121907",
+    "output": ""
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}

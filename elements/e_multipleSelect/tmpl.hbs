@@ -1,0 +1,17 @@
+<div class="e_multipleSelect form-group {{#eq prop.state 'hidden'}}hide{{/eq}}" needjs="true">
+    {{#if prop.showLabel}}
+    <label class="p_label">
+        {{prop.label}}
+        {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
+    </label>
+    {{/if}}
+    {{#eq prop.state 'readOnly'}}
+    <p class="p_formValue"></p>
+    {{/eq}}
+    <div class="{{#eq prop.state 'readOnly'}}hide{{/eq}}">
+        <div class="multSelect p_input"></div>
+        <div class="invalid-feedback"></div>
+        <input type="hidden" name="${elemId}">
+    </div>
+    <input type="hidden" name="propJson" value='{{{propJson}}}'>
+</div>

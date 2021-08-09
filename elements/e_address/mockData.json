@@ -1,0 +1,18 @@
+{
+  "prop": {
+    "showLabel":true,
+    "label":"地址型",
+    "showPlaceholder":true,
+    "placeholder":"请选择地址",
+    "state":"normal",
+    "range":1,
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
+  },
+  "i18n": {}
+}
