@@ -1,3 +1,24 @@
 .e_uploadFile{
 
 }
+.e_uploadFile .p_upload{
+    line-height: 30px;
+    background-color: #f0f0f0;
+}
+.e_uploadFile .p_uploadBtn{
+    width: 80px;
+    margin-right: 20px;
+}
+.e_uploadFile .p_fileItem{
+    margin: 10px 0 20px;
+    overflow: hidden;
+}
+.e_uploadFile .p_op{
+    float: right;
+}
+.e_uploadFile .p_size{
+    margin-right: 10px;
+}
+.e_uploadFile .p_del{
+    cursor: pointer;
+}

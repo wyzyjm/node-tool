@@ -1,0 +1,19 @@
+{
+  "prop": {
+    "showLabel":true,
+    "label":"文件型",
+    "showPlaceholder":true,
+    "placeholder":"请上传100m以内mp4(h264)编码格式视频文件",
+    "limit":1,
+    "size":5,
+    "unit":"kb",
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
+  },
+  "i18n": {}
+}

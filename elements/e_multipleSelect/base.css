@@ -1,6 +1,3 @@
-.e_multipleSelect{
-
-}
 .e_multipleSelect  .p_required{
     vertical-align: middle;
     font-size: 1.4em;
@@ -92,4 +89,9 @@
     position: absolute;
     left: 0;
     top: 0;
+}
+.e_multipleSelect .multSelect .disabled{
+    background-color: #e9ecef;
+    opacity: 1;
+    cursor: not-allowed;
 }

@@ -2,11 +2,12 @@
   "cname": "多选项",
   "styleId": "e_checkbox",
   "styleClass": "",
-  "tmpl": "<fieldset class=\"form-group ${elemId} ${styleClass}\">\n    <legend class=\"col-form-label p_label\">\n        {{${label}}}\n        <span class=\"text-danger p_required\">*</span>\n    </legend>\n    {{#${options}}}\n    <div class=\"form-check form-check-inline p_item\">\n        <input class=\"form-check-input p_input\" type=\"checkbox\" name=\"{{../${name}}}\" id=\"{{../${name}}}{{@index}}\" value=\"{{${options$value}}}\">\n        <label class=\"form-check-label p_label\" for=\"{{../${name}}}{{@index}}\">{{${options$label}}}</label>\n    </div>\n    {{/${options}}}\n</fieldset>",
+  "type": "form",
+  "tmpl": "<fieldset class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}hide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </legend>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"p_input\">\n            {{#${options}}}\n            <div class=\"form-check form-check-inline p_radioItem\">\n                <input class=\"form-check-input\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" value=\"{{${options$value}}}\" {{#if select}}checked{{/if}} {{#eq ../${state} 'disabled'}}disabled{{/eq}}>\n                <label class=\"form-check-label\" for=\"${elemId}-{{@index}}\">{{label}}</label>\n            </div>\n            {{/${options}}}\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</fieldset>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_checkbox{\n\n}\n.e_checkbox .p_required{\n    vertical-align: middle;\n    font-size: 1.4em;\n    line-height: 100%;\n    position: relative;\n    font-weight: bold;\n    top: 0.15em;\n}"
+      "cssText": ".e_checkbox{\n\n}\n.e_checkbox .p_required{\n    vertical-align: middle;\n    font-size: 1.4em;\n    line-height: 100%;\n    position: relative;\n    font-weight: bold;\n    top: 0.15em;\n    padding-left: 5px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,26 +23,35 @@
     }
   ],
   "prop": {
+    "showLabel": true,
     "label": "多选项",
-    "name": "checkbox",
+    "state": "normal",
     "options": [
       {
         "label": "读书",
-        "value": "ds"
+        "value": "1"
       },
       {
+        "select": true,
         "label": "旅游",
-        "value": "ly"
+        "value": "2"
       },
       {
-        "label": "游泳",
-        "value": "yy"
+        "label": "音乐",
+        "value": "3"
       },
       {
-        "label": "爬山",
-        "value": "ps"
+        "label": "篮球",
+        "value": "4"
       }
-    ]
+    ],
+    "validate": {
+      "required": {
+        "state": true,
+        "value": true,
+        "msg": "选项不能为空"
+      }
+    }
   },
   "i18n": {
     "zh_CN": {}

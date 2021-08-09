@@ -1,0 +1,15 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-label",
+            "name":"标签型",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "limit":"prop.limit",
+            "options":"prop.options",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

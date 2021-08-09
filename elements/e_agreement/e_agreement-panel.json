@@ -1,0 +1,17 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-agreement",
+            "name":"条款条件",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "linkText":"prop.linkText",
+            "placeholder":"prop.placeholder",
+            "content":"prop.content",
+            "select":"prop.select",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

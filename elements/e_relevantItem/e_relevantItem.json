@@ -1,0 +1,28 @@
+{
+  "cname": "相关项",
+  "styleId": "e_relevantItem",
+  "styleClass": "",
+  "tmpl": "",
+  "css": [
+    {
+      "media": "",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {},
+  "i18n": {},
+  "datasource": "prop",
+  "type": "form"
+}

@@ -150,7 +150,6 @@
       "name": "标记图标",
       "code": "e_flagIcon"
     },
-   
     {
       "name": "预览商品",
       "code": "e_preView"
@@ -236,6 +235,34 @@
     {
       "name": "文件型",
       "code": "e_uploadFile"
+    },
+    {
+      "name": "视频型",
+      "code": "e_uploadVideo"
+    },
+    {
+      "name": "子表单",
+      "code": "e_subForm"
+    },
+    {
+      "name": "相关项",
+      "code": "e_relevantItem"
+    },
+    {
+      "name": "条款条件",
+      "code": "e_agreement"
+    },
+    {
+      "name": "安全验证",
+      "code": "e_code"
+    },
+    {
+      "name": "手机号验证",
+      "code": "e_mobileCode"
+    },
+    {
+      "name": "邮箱验证",
+      "code": "e_emailCode"
     }
   ]
 }

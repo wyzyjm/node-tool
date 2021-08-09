@@ -3,6 +3,7 @@
         {
         "compName": "setting-text",
         "bind-text": "prop.h5",
+        "bind-href": "prop.href",
         "title": "H5"
         }
     ]

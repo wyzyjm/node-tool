@@ -1,0 +1,17 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-address",
+            "name":"地址型",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "showPlaceholder":"prop.showPlaceholder",
+            "placeholder":"prop.placeholder",
+            "state":"prop.state",
+            "range":"prop.range",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

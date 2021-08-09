@@ -2,7 +2,7 @@
   "cname": "图片",
   "styleId": "e_image",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    {{{lazyImage ${src} \"alt='{{${title}}}'\" \"true\"}}}\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    {{{lazyImage ${src} \"alt='{{${title}}}'\" \"{{${isLazy}}}\"}}}\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
@@ -28,7 +28,8 @@
       "type": "",
       "value": "",
       "target": ""
-    }
+    },
+    "isLazy": true
   },
   "i18n": {
     "zh_CN": {}

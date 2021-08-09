@@ -1,7 +1,7 @@
 .e_rangeDate{
 
 }
-.p_start,.p_end{
+.e_rangeDate .p_start,.e_rangeDate .p_end{
     width: calc(50% - 10px);
     float: left;
     border: none;
@@ -9,10 +9,13 @@
     line-height: 20px;
     text-align: center;
 }
-.p_fenge{
+.e_rangeDate .p_fenge{
     display: block;
     width: 20px;
     text-align: center;
     float: left;
     color: #bbb;
+}
+.e_rangeDate .e_date .is-invalid .p_input{
+    border-color: #dc3545;
 }

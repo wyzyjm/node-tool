@@ -2,12 +2,13 @@
     {{#if prop.showLabel}}
     <label class="p_label">
         {{prop.label}}
-        {{#if prop.required}}<span class="text-danger p_required">*</span>{{/if}}
+        {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
     <div class="clearfix">
         <div class="p_score"></div>
         <div class="p_hint"></div>
+        <input type="hidden" name="${elemId}" value="{{score}}">
     </div>
     <div class="invalid-feedback"></div>
     <input type="hidden" name="propJson" value='{{{propJson}}}'>

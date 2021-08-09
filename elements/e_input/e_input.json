@@ -2,11 +2,12 @@
   "cname": "单行文本",
   "styleId": "e_input",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${required}}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <input type=\"text\" class=\"form-control p_input\" {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}}>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "type": "form",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}hide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"{{#eq ${type} 'number'}}p_number{{/eq}} {{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <input type=\"text\" class=\"form-control p_input\" name=\"${elemId}\" \n            {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n            {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n            {{#eq ${state} 'disabled'}}disabled{{/eq}}\n        >\n        {{#eq ${type} 'number'}}{{${unit}}}{{/eq}}\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    \n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_input{\n\n}\n.e_input  .p_required{\n    vertical-align: middle;\n    font-size: 1.4em;\n    line-height: 100%;\n    position: relative;\n    font-weight: bold;\n    top: 0.15em;\n    padding-left: 5px;\n}"
+      "cssText": ".e_input .p_number .p_input{\n    display: inline-block;\n    width: 80%;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -26,15 +27,43 @@
     "label": "单行文本",
     "showPlaceholder": true,
     "placeholder": "请输入...",
-    "type": "number",
-    "length": 10,
-    "numberLimit": {
-      "showMin": true,
-      "min": 0,
-      "showMax": true,
-      "max": 10
-    },
-    "required": true
+    "type": "text",
+    "value": "",
+    "state": "normal",
+    "decimal": 2,
+    "unit": "千克",
+    "validate": {
+      "required": {
+        "state": true,
+        "value": true,
+        "msg": "内容不能为空"
+      },
+      "minLength": {
+        "state": true,
+        "value": 5,
+        "msg": "您输入的内容不能少于%len个字符"
+      },
+      "maxLength": {
+        "state": true,
+        "value": 128,
+        "msg": "您输入的内容不能多于%len个字符"
+      },
+      "min": {
+        "state": true,
+        "value": 10,
+        "msg": "您输入的内容最小值为%len"
+      },
+      "max": {
+        "state": true,
+        "value": 100,
+        "msg": "您输入的内容最大值为%len"
+      },
+      "custom": {
+        "state": false,
+        "reg": "",
+        "msg": ""
+      }
+    }
   },
   "i18n": {
     "zh_CN": {}

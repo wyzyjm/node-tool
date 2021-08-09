@@ -2,11 +2,11 @@
   "cname": "循环体容器",
   "styleId": "e_loop",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${dataList}}}\n    <div class=\"cbox-${id} p_item\"></div>\n    {{^}}\n    {{{noDataPrompt}}}\n    {{/${dataList}}}\n</div>\n",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${dataList}}}\n        <div class=\"p_list\">\n        {{#${dataList}}}\n            <div class=\"cbox-${id} p_item\"></div>\n        {{/${dataList}}}\n        </div>\n        <div class=\"p_page\">\n            {{{nPaging ${page} ${pageConfig}}}}\n        </div>\n    {{^}}\n    {{{noDataPrompt}}}\n    {{/if}}\n</div>\n",
   "css": [
     {
       "media": "",
-      "cssText": ".e_loop{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-around;\n}\n.e_loop .p_item{\n    width: calc(33.3% - 30px);\n    margin: 15px;\n}"
+      "cssText": ".e_loop .p_list{\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_loop .p_item{\n    width: 33.3%;\n}\n.e_loop .p_page{\n    text-align: center;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -25,11 +25,47 @@
     "dataList": [
       {},
       {},
+      {},
+      {},
+      {},
       {}
-    ]
+    ],
+    "page": {
+      "from": 0,
+      "size": 6,
+      "totalCount": 100
+    },
+    "pageConfig": {
+      "showJump": true,
+      "pcRow": 2,
+      "pcColumn": 3,
+      "moColumn": 1,
+      "pageType": "hidden",
+      "rolling": {
+        "navigation": true,
+        "pagenation": true,
+        "autoScroll": true,
+        "scrollTime": 4,
+        "scrollType": "horizontal"
+      },
+      "marquee": {
+        "navigation": true,
+        "marqueeTime": 4
+      },
+      "loopItem": ".p_item"
+    }
   },
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "pageWhole": "共",
+      "pageItem": "条",
+      "pageJump": "前往",
+      "pageUnit": "页",
+      "loadMore": "点击加载更多",
+      "loadNow": "加载中",
+      "noMore": "没有更多了",
+      "noData": "暂无数据"
+    }
   },
   "datasource": "prop",
   "dataFields": {

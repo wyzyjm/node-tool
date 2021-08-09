@@ -1,0 +1,18 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-date",
+            "name":"日期时间",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "type":"prop.type",
+            "showPlaceholder":"prop.showPlaceholder",
+            "placeholder":"prop.placeholder",
+            "format":"prop.format",
+            "state":"prop.state",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

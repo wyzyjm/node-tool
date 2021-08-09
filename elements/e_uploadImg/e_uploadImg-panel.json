@@ -1,0 +1,19 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-uploadImg",
+            "name":"图片型",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "showPlaceholder":"prop.showPlaceholder",
+            "placeholder":"prop.placeholder",
+            "limit":"prop.limit",
+            "size":"prop.size",
+            "unit":"prop.unit",
+            "accept":"prop.accept",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

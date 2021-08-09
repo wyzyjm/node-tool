@@ -1,12 +1,18 @@
 {
   "prop": {
     "showLabel":true,
-    "label":"日期区间",
-    "showPlaceholder":true,
+    "label":"区间时间",
+    "showPlaceholder":"word",
     "startPlaceholder":"开始时间",
     "endPlaceholder":"结束时间",
-    "required":true,
-    "type":3
+    "type":"rangeTime",
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
   },
   "i18n": {}
 }

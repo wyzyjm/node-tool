@@ -1,0 +1,17 @@
+.e_bannerB .swiper-slide{
+    height: 400px;
+}
+.e_bannerB .p_info{
+    width: 100%;
+    z-index: 9;
+    text-align: center;
+}
+.e_bannerB .p_subtitle{
+    display: none;
+}
+.e_bannerB .p_summary{
+    display: none;
+}
+.e_bannerB .p_videoInfo{
+    display: none;
+}

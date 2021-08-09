@@ -1,0 +1,9 @@
+<div>
+    {{#if prop.href.value}}
+        <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}">
+    {{/if}}
+    <button class="e_button btn btn-primary s_button1">{{prop.text}}</button>
+    {{#if prop.href.value}}
+        </a>
+    {{/if}}
+</div>

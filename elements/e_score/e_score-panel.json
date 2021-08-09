@@ -1,0 +1,20 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-score",
+            "name":"评分评价",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "showPlaceholder":"prop.showPlaceholder",
+            "placeholder":"prop.placeholder",
+            "type":"prop.type",
+            "number":"prop.number",
+            "score":"prop.score",
+            "half":"prop.half",
+            "prompt":"prop.prompt",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

@@ -1,0 +1,37 @@
+{
+  "cname": "邮箱验证",
+  "styleId": "e_emailCode",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        <span class=\"text-danger p_required\">*</span>\n    </label>\n    {{/if}}\n    <div class=\"p_input\">\n        <input type=\"text\" class=\"form-control p_Number\" name=\"${elemId}-Number\" placeholder=\"{{${placeholder1}}}\">\n        <input type=\"text\" class=\"form-control p_Code\" name=\"${elemId}-Code\" placeholder=\"{{${placeholder2}}}\">\n        <button class=\"e_button btn btn-primary btn-sm s_button1 p_sendBtn\">发送邮件验证码</button>\n    </div>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_emailCode .p_Code{\n    width: 150px;\n    display: inline-block;\n}\n.e_emailCode .p_Number{\n    margin-bottom: 10px;\n}\n.e_emailCode .p_sendBtn{\n    height: 35px;\n    padding: 0 15px;\n    margin-left: 5px;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "showLabel": true,
+    "label": "邮件验证码",
+    "placeholder1": "请输入邮箱",
+    "placeholder2": "邮箱验证码",
+    "codeNeed": true,
+    "focus": true
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "type": "form"
+}

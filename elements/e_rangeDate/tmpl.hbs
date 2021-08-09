@@ -2,13 +2,13 @@
     {{#if prop.showLabel}}
     <label class="p_label">
         {{prop.label}}
-        {{#if prop.required}}<span class="text-danger p_required">*</span>{{/if}}
+        {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
     <div class="j_date form-control clearfix p_range">
-        <input type="text" {{#if prop.showPlaceholder}}placeholder="{{prop.startPlaceholder}}"{{/if}} class="p_start" value="" >
+        <input type="text" name="${elemId}-start" {{#eq prop.showPlaceholder 'word'}}placeholder="{{prop.startPlaceholder}}"{{/eq}} class="p_start">
         <span class="p_fenge">—</span>
-        <input type="text" {{#if prop.showPlaceholder}}placeholder="{{prop.endPlaceholder}}"{{/if}} class="p_end" value="" >
+        <input type="text" name="${elemId}-end" {{#eq prop.showPlaceholder 'word'}}placeholder="{{prop.endPlaceholder}}"{{/eq}} class="p_end">
     </div>
     <div class="invalid-feedback"></div>
     <input type="hidden" name="propJson" value='{{{propJson}}}'>

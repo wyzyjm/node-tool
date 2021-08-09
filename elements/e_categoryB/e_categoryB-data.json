@@ -1,0 +1,10 @@
+{   
+    "apiType":"list",
+    "dataFields":[
+        {
+            "name":"cate",
+            "cname":"分类树",
+            "type":"list"
+        }
+    ]
+}

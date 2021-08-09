@@ -1,0 +1,22 @@
+<div class="e_subForm">
+    {{#if prop.showLabel}}
+    <div class="p_title">{{prop.label}}</div>
+    {{/if}}
+    <div class="p_thead">
+        {{#prop.content}}
+        <div class="p_th"></div>
+        {{/prop.content}}
+    </div>
+    <div class="p_tbody">
+        <div class="p_tr">
+        {{#prop.content}}
+        <div class="p_td cbox-${id}-{{@index}}"></div>
+        {{/prop.content}}
+        </div>
+    </div>
+    {{#if prop.showBtn}}
+    <div>
+        <button class="e_button btn btn-primary btn-sm s_button1">{{prop.btnText}}</button>
+    </div>
+    {{/if}}
+</div>

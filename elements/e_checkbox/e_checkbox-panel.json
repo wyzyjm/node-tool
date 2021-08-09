@@ -1,0 +1,15 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-checkbox",
+            "name":"多选项",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "state":"prop.state",
+            "options":"prop.options",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

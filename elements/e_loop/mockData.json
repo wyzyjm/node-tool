@@ -1,17 +1,17 @@
 {
     "prop": {
         "dataList":[
-            {},{},{}
+            {},{},{},{},{},{}
         ],
         "page":{
             "from":0,
-            "size":8,
+            "size":6,
             "totalCount":100
         },
         "pageConfig":{
             "showJump": true,
-            "pageSize": 8,
-            "pcColumn": 2,
+            "pcRow": 2,
+            "pcColumn": 3,
             "moColumn": 1,
             "pageType": "hidden",
             "rolling":{

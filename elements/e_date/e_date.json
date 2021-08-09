@@ -2,15 +2,16 @@
   "cname": "日期型",
   "styleId": "e_date",
   "styleClass": "",
-  "tmpl": "<div class=\"form-group ${elemId} ${styleClass}\">\n    <label class=\"p_label\">{{${label}}}</label>\n    <input type=\"text\" class=\"form-control p_input\" disabled placeholder=\"{{${placeholder}}}\">\n    <div class=\"invalid-feedback\"></div>\n</div>",
+  "type": "form",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}hide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"j_date\">\n            <input type=\"text\" name=\"${elemId}\" class=\"form-control p_input\" \n            {{#eq ${showPlaceholder} 'word'}}placeholder=\"{{${placeholder}}}\"{{/eq}} \n            {{#eq ${state} 'disabled'}}disabled{{/eq}} >\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_date{\n\n}\n.e_date .p_input{\n    position: relative;\n    padding-right: 30px;\n}\n.e_date .p_input{\n    background-image: url(\"/public/img/date.svg\");\n    background-repeat: no-repeat;\n    background-position: right calc(.375em + .1875rem) center;\n    background-size: calc(.75em + .375rem) calc(.75em + .375rem);\n}"
+      "cssText": ".e_date{\n\n}\n.e_date .p_input{\n    position: relative;\n    padding-right: 30px;\n    background-image: url(\"/public/img/date.svg\");\n    background-repeat: no-repeat;\n    background-position: right calc(.375em + .1875rem) center;\n    background-size: calc(.75em + .375rem) calc(.75em + .375rem);\n}\n.c-datepicker-date-table{\n    text-align: center;\n}\n.e_date  .p_required{\n    vertical-align: middle;\n    font-size: 1.4em;\n    line-height: 100%;\n    position: relative;\n    font-weight: bold;\n    top: 0.15em;\n    padding-left: 5px;\n}\n.e_date .is-invalid .p_input{\n    border-color: #dc3545;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ""
+      "cssText": ".c-datepicker-date-picker.has-sidebar{\n    width: inherit!important;\n}\n.c-datepicker-picker__sidebar{\n    display: none;\n}\n.c-datepicker-picker[slot=sidebar]+.c-datepicker-picker__body,.c-datepicker-picker__sidebar+.c-datepicker-picker__body {\n    margin-left:0px!important\n}"
     },
     {
       "media": "screen and (min-width: 769px)",
@@ -22,8 +23,20 @@
     }
   ],
   "prop": {
-    "label": "日期",
-    "placeholder": "请选择日期"
+    "showLabel": true,
+    "label": "日期时间",
+    "type": "date",
+    "showPlaceholder": "word",
+    "placeholder": "请选择日期",
+    "format": "YYYY/MM/DD",
+    "state": "normal",
+    "validate": {
+      "required": {
+        "state": true,
+        "value": true,
+        "msg": "内容不能为空"
+      }
+    }
   },
   "i18n": {
     "zh_CN": {}
