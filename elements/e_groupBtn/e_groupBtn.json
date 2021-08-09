@@ -2,11 +2,11 @@
   "cname": "按钮组",
   "styleId": "e_groupBtn",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n       <div class=\"p_btn\"    bind=\"source-data-templateId|source-data-productId|source-data-coverImage|source-data-retailPrice|source-data-price|source-data-title|source-data-href\" data-source=\"list\"  data-templateId=\"{{templateId}}\" data-productId=\"{{productId}}\" data-coverImage=\"{{coverImage}}\" data-retailPrice=\"{{retailPrice}}\" data-price=\"{{price}}\" data-title=\"{{title}}\" data-href=\"{{href}}\"> \r\n            {{#if ${showaddCart} }}\r\n                <a href=\"JavaScript:;\"  class=\"s_button btn  btn-primary btn-sm p_btn_set\"   >{{i18n.addCart}}</a>\r\n        {{/if}}\r\n            {{#if ${showsoGo} }}\r\n                <a href=\"JavaScript:;\"  class=\"s_button btn  btn-primary btn-sm p_btn_set\"  >{{i18n.soGo}}</a>\r\n        {{/if}}\r\n        {{#if ${showcomparison} }}\r\n                <a href=\"JavaScript:;\"  class=\"s_button btn  btn-primary btn-sm p_btn_set\" data-compar='com'   onclick=\"comparepop(this)\"  >{{i18n.comparison}}</a>\r\n        {{/if}}\r\n        <div class=\"p_a_btn\"  panel=\"dataList-dataList\" data-ename=\"循环按钮集\">\r\n                {{#${dataList}}}\r\n                <span class=\"p_datalistspan p_btn_set\" data-ename=\"循环按钮item\">\r\n                    \r\n                    <a href=\"{{$jumpLink linkType linkUrl}}\" target=\"{{${dataList$linkTarget}}}\" class=\"s_button btn  btn-primary btn-sm p_btn p_btn_set\"  panelItem =\"link-link\">\r\n                    {{${dataList$buttonName}}}\r\n                    </a>\r\n                </span>\r\n            {{/${dataList}}}\r\n        \r\n        </div>\r\n        <div class=\"p_listbtn\" bind=\"arr-productButtonList\" data-ename=\"自定义按钮\">\r\n        {{#productButtonList}}\r\n        <span class=\"p_abtn p_btn_set\" data-ename=\"按钮元素\">\r\n            <a href=\"{{${productButtonList$buttonUrl}}}\"  class=\"s_button btn  btn-primary btn-sm p_btn\" bind=\"href-buttonUrl|data-buttonName\" >{{${productButtonList$buttonName}}}</a>\r\n        </span>\r\n            \r\n        {{/productButtonList}}\r\n        </div>\r\n        \r\n    </div>\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": "\n.e_groupBtn .p_a_btn{\n    display: inline-block;\n}\n.e_groupBtn .p_btn_set{\n    display: inline-block;\n    margin-top: 5px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,9 +21,63 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "showImages": true,
+    "showaddCart": true,
+    "showsoGo": true,
+    "showcomparison": true,
+    "dataList": [
+      {
+        "linkUrl": "#",
+        "linkType": "5",
+        "linkTarget": "",
+        "buttonName": "预约申请"
+      },
+      {
+        "linkUrl": "#",
+        "linkType": "5",
+        "linkTarget": "",
+        "buttonName": "样品申请"
+      },
+      {
+        "linkUrl": "#",
+        "linkType": "5",
+        "linkTarget": "",
+        "buttonName": "询价"
+      },
+      {
+        "linkUrl": "#",
+        "linkType": "5",
+        "linkTarget": "",
+        "buttonName": "在线预订"
+      },
+      {
+        "linkUrl": "#",
+        "linkType": "5",
+        "linkTarget": "",
+        "buttonName": "获取报价"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {
+      "products": "商品",
+      "addCart": "加入购物车",
+      "soGo": "立即购买",
+      "comparison": "对比"
+    }
+  },
   "datasource": "prop",
-  "dataFields": {},
+  "dataFields": {
+    "showImages": "showImages",
+    "showaddCart": "showaddCart",
+    "showsoGo": "showsoGo",
+    "showcomparison": "showcomparison",
+    "dataList": "dataList",
+    "dataList$linkUrl": "linkUrl",
+    "dataList$linkType": "linkType",
+    "dataList$linkTarget": "linkTarget",
+    "dataList$buttonName": "buttonName"
+  },
   "dataManage": {}
 }
