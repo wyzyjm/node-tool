@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_loop .p_list{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-around;\n}\n.e_loop .p_item{\n    width: 33.3%;\n}\n.e_loop .p_page{\n    text-align: center;\n}"
+      "cssText": ".e_loop .p_list{\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_loop .p_item{\n    width: 33.3%;\n}\n.e_loop .p_page{\n    text-align: center;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
