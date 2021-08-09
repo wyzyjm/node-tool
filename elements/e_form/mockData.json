@@ -8,7 +8,7 @@
             },
             "submitLimit":{ 
                 "peopleLimit":1,  
-                "limitRull":1, 
+                "limitRule":1, 
                 "count":1, 
                 "interval":1, 
                 "unit":1  
