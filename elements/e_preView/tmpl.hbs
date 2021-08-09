@@ -11,22 +11,15 @@
             <ul class="p_scroll_main">
                 {{#images}}
                
-                    {{#eq  @index  0}}
-                    <li class="p_scroll_item curr" >
+                    <li class="p_scroll_item  {{#eq  @index  0}} curr" {{/eq}}>
                         <a href="JavaScript:;" class="p_scroll_item_a " >
                              {{{lazyImage url 'class="p_scroll_item_img"  title="{{title}}" alt="{{title}}"' 'true'}}}
                         </a>
                     </li>
-                    {{/eq}}
-                    {{#gt @index  0}}
-                    <li class="p_scroll_item" >
-                        <a href="JavaScript:;" class="p_scroll_item_a" >
-                             {{{lazyImage url 'class="p_scroll_item_img"  title="{{title}}" alt="{{title}}"' 'true'}}}
-
-                        </a>
-                    </li>
-                    {{/gt}}
+                  
+                    
                 {{/images}}
+            </ul>
         </div>
         {{/if}}
     {{/prop.list}}
