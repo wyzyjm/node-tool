@@ -4,3 +4,6 @@
 .e_magnifier .magnifier{
 	width: 100%;
 }
+.e_magnifier .image-bigger {
+	display: none;
+}
