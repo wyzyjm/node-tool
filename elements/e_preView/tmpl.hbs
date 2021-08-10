@@ -3,21 +3,17 @@
         <div class="p_img_div" >
             <a href="{{href}}" target="{{target}}" class="p_img_a" bind="href-id" >
                 {{{lazyImage coverImage 'class="p_img"  title="{{title}}" alt="{{title}}"' 'true'}}}
-                
             </a>
         </div>
         {{#if ../prop.showImages }}
         <div class="p_scroll" >
             <ul class="p_scroll_main">
                 {{#images}}
-               
-                    <li class="p_scroll_item  {{#eq  @index  0}} curr" {{/eq}}>
+                    <li class="p_scroll_item  {{#eq @index 0}}curr{{/eq}}" >
                         <a href="JavaScript:;" class="p_scroll_item_a " >
                              {{{lazyImage url 'class="p_scroll_item_img"  title="{{title}}" alt="{{title}}"' 'true'}}}
                         </a>
                     </li>
-                  
-                    
                 {{/images}}
             </ul>
         </div>
