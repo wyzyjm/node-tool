@@ -2,7 +2,7 @@
   "cname": "邮箱验证",
   "styleId": "e_emailCode",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        <span class=\"text-danger p_required\">*</span>\n    </label>\n    {{/if}}\n    <div class=\"p_input\">\n        <input type=\"text\" class=\"form-control p_Number\" name=\"${elemId}-Number\" placeholder=\"{{${placeholder1}}}\">\n        <input type=\"text\" class=\"form-control p_Code\" name=\"${elemId}-Code\" placeholder=\"{{${placeholder2}}}\">\n        <button class=\"e_button btn btn-primary btn-sm s_button1 p_sendBtn\">发送邮件验证码</button>\n    </div>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        <span class=\"text-danger p_required\">*</span>\n    </label>\n    {{/if}}\n    <div class=\"p_input\">\n        <input type=\"text\" class=\"form-control p_Number\" name=\"${elemId}-Number\" placeholder=\"{{${placeholder1}}}\">\n        <input type=\"text\" class=\"form-control p_Code\" name=\"${elemId}-Code\" placeholder=\"{{${placeholder2}}}\">\n        <button class=\"btn btn-primary btn-sm s_button1 p_sendBtn\">发送邮件验证码</button>\n    </div>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",

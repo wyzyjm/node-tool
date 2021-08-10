@@ -2,11 +2,11 @@
   "cname": "相关项",
   "styleId": "e_relevantItem",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    <div class=\"thead\">\n        {{#${previewList}}}\n        <div class=\"p_th\">{{${previewList$label}}}</div>\n        {{/${previewList}}}\n    </div>\n    <div class=\"tbody\">\n        <div class=\"p_tr\">\n\n        </div>\n    </div>\n    <div>\n        <button class=\"btn btn-primary btn-sm s_button1\">{{${btnText}}}</button>\n    </div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_relevantItem{\n\n}\n.e_relevantItem .thead{\n    height: 36px;\n    line-height: 36px;\n    display: flex;\n    background-color: #f0f0f0;\n}\n.e_relevantItem .tbody{\n    min-height: 36px;\n    margin-bottom: 20px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,8 +21,35 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "type": 1,
+    "btnText": "添加内容",
+    "datasource": "",
+    "previewList": [
+      {
+        "label": "内容名称",
+        "key": "name"
+      },
+      {
+        "label": "缩略图",
+        "key": "img"
+      }
+    ],
+    "searchList": [
+      {
+        "label": "内容名称",
+        "key": "name"
+      },
+      {
+        "label": "缩略图",
+        "key": "img"
+      }
+    ],
+    "isHide": true
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
   "datasource": "prop",
   "type": "form"
 }

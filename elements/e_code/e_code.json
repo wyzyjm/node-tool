@@ -2,7 +2,7 @@
   "cname": "安全验证",
   "styleId": "e_code",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        <span class=\"text-danger p_required\">*</span>\n    </label>\n    {{/if}}\n    <div>\n        安全验证\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group formHide\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        <span class=\"text-danger p_required\">*</span>\n    </label>\n    {{/if}}\n    <div>\n        安全验证\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
