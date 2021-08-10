@@ -28,29 +28,34 @@
     "showPlaceholder": true,
     "placeholder": "请选择评分",
     "type": 0,
-    "number": 10,
+    "number": 5,
     "score": 3,
     "half": true,
     "prompt": [
       {
         "from": 1,
+        "to": 1,
+        "label": "非常不满意"
+      },
+      {
+        "from": 2,
         "to": 2,
         "label": "不满意"
       },
       {
         "from": 3,
-        "to": 6,
+        "to": 3,
+        "label": "一般"
+      },
+      {
+        "from": 4,
+        "to": 4,
         "label": "满意"
       },
       {
-        "from": 7,
-        "to": 7,
+        "from": 5,
+        "to": 5,
         "label": "非常满意"
-      },
-      {
-        "from": 8,
-        "to": 10,
-        "label": "666"
       }
     ],
     "validate": {

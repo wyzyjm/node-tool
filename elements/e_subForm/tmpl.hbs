@@ -10,13 +10,13 @@
     <div class="p_tbody">
         <div class="p_tr">
         {{#prop.content}}
-        <div class="p_td cbox-${id}-{{@index}}"></div>
+        <div class="cbox-${id}-{{@index}} p_td"></div>
         {{/prop.content}}
         </div>
     </div>
     {{#if prop.showBtn}}
     <div>
-        <button class="e_button btn btn-primary btn-sm s_button1">{{prop.btnText}}</button>
+        <button class="btn btn-primary btn-sm s_button1">{{prop.btnText}}</button>
     </div>
     {{/if}}
 </div>

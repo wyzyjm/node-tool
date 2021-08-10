@@ -25,8 +25,8 @@
   "prop": {
     "basic": {
       "formInfo": {
-        "title": "留言表单",
-        "name": "launchbook",
+        "title": "",
+        "name": "",
         "app": ""
       },
       "submitLimit": {
@@ -38,9 +38,9 @@
       },
       "submitTime": {
         "limit": 1,
-        "startTime": "2020-05-21 17:00",
-        "endTime": "2021-05-21 17:00",
-        "prompt": "对不起，提交表单时间不在允许提交范围内！"
+        "startTime": "",
+        "endTime": "",
+        "prompt": ""
       },
       "advanced": {
         "customState": [

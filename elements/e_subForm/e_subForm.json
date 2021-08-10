@@ -2,11 +2,11 @@
   "cname": "子表单",
   "styleId": "e_subForm",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${showLabel}}}\n    <div class=\"p_title\">{{${label}}}</div>\n    {{/if}}\n    <div class=\"p_thead\">\n        {{#${content}}}\n        <div class=\"p_th\"></div>\n        {{/${content}}}\n    </div>\n    <div class=\"p_tbody\">\n        <div class=\"p_tr\">\n        {{#${content}}}\n        <div class=\"p_td cbox-${id}-{{@index}}\"></div>\n        {{/${content}}}\n        </div>\n    </div>\n    {{#if ${showBtn}}}\n    <div>\n        <button class=\"e_button btn btn-primary btn-sm s_button1\">{{${btnText}}}</button>\n    </div>\n    {{/if}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${showLabel}}}\n    <div class=\"p_title\">{{${label}}}</div>\n    {{/if}}\n    <div class=\"p_thead\">\n        {{#${content}}}\n        <div class=\"p_th\"></div>\n        {{/${content}}}\n    </div>\n    <div class=\"p_tbody\">\n        <div class=\"p_tr\">\n        {{#${content}}}\n        <div class=\"cbox-${id}-{{@index}} p_td\"></div>\n        {{/${content}}}\n        </div>\n    </div>\n    {{#if ${showBtn}}}\n    <div>\n        <button class=\"btn btn-primary btn-sm s_button1\">{{${btnText}}}</button>\n    </div>\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_subForm{\n\n}\n.e_subForm .p_title{\n    line-height: 40px;\n}\n.e_subForm .p_thead{\n    background-color: #f0f0f0;\n    height: 36px;\n    line-height: 36px;\n}\n.e_subForm .p_tbody{\n    margin-bottom: 20px;\n    min-height: 36px;\n}"
+      "cssText": ".e_subForm{\n\n}\n.e_subForm .p_title{\n    line-height: 40px;\n}\n.e_subForm .p_thead{\n    background-color: #f0f0f0;\n    height: 36px;\n    line-height: 36px;\n}\n.e_subForm .p_tbody{\n    margin-bottom: 20px;\n    min-height: 36px;\n}\n.e_subForm .p_tr{\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_subForm .p_td{\n    flex: 1;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -27,12 +27,8 @@
     "showBtn": true,
     "btnText": "添加一行",
     "content": [
-      {
-        "width": "50%"
-      },
-      {
-        "width": "50%"
-      }
+      {},
+      {}
     ]
   },
   "i18n": {

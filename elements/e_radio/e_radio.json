@@ -3,7 +3,7 @@
   "styleId": "e_radio",
   "styleClass": "",
   "type": "form",
-  "tmpl": "<fieldset class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}hide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </legend>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"p_input\">\n            {{#${options}}}\n            <div class=\"form-check form-check-inline p_radioItem\">\n                <input class=\"form-check-input\" type=\"radio\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" value=\"{{${options$value}}}\" {{#if select}}checked{{/if}} {{#eq ../${state} 'disabled'}}disabled{{/eq}}>\n                <label class=\"form-check-label\" for=\"${elemId}-{{@index}}\">{{label}}</label>\n            </div>\n            {{/${options}}}\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</fieldset>",
+  "tmpl": "<fieldset class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}hide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </legend>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"p_input\">\n            {{#${options}}}\n            <div class=\"form-check form-check-inline p_radioItem\">\n                <input class=\"form-check-input\" type=\"radio\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" value=\"{{value}}\" {{#if select}}checked{{/if}} {{#eq ../${state} 'disabled'}}disabled{{/eq}}>\n                <label class=\"form-check-label\" for=\"${elemId}-{{@index}}\">{{label}}</label>\n            </div>\n            {{/${options}}}\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</fieldset>",
   "css": [
     {
       "media": "",
@@ -53,12 +53,5 @@
   "i18n": {
     "zh_CN": {}
   },
-  "datasource": "prop",
-  "dataFields": {
-    "label": "label",
-    "name": "name",
-    "options": "options",
-    "options$label": "label",
-    "options$value": "value"
-  }
+  "datasource": "prop"
 }
