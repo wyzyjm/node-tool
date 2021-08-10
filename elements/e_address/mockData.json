@@ -4,7 +4,6 @@
     "label":"地址型",
     "showPlaceholder":true,
     "placeholder":"请选择地址",
-    "state":"normal",
     "range":1,
     "validate":{
         "required":{

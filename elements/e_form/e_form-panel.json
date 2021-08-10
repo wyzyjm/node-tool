@@ -8,7 +8,8 @@
             "bind-rule":"prop.rule",
             "bind-submit":"prop.submit",
             "bind-async":"prop.async",
-            "bind-notice":"prop.notice"
+            "bind-notice":"prop.notice",
+            "bind-formId":"prop.formId"
         }
     ]
 }
