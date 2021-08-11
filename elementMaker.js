@@ -197,11 +197,11 @@ function handleStr(str,dataFields,compId){
     }
 
     //词条替换
-    let i18nReg = /{{i18n\..*?}}/g
+    let i18nReg = /i18n\..*?}}/g
     let i18nMatch = str.match(i18nReg)
     if(i18nMatch){
         i18nMatch.forEach(e=>{
-            let ne = e.replace(/{/g,'').replace(/}/g,'')
+            let ne = e.replace(/}/g,'')
             str=str.replace(ne,'${'+ne+'}')
         })
     }    
