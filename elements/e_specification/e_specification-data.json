@@ -1,0 +1,10 @@
+{   
+    "apiType":"list",
+    "dataFields":[
+        {
+            "name":"specList",
+            "cname":"产品规格",
+            "type":"array[specList]"
+        }
+    ]
+}
