@@ -131,6 +131,10 @@
       "code": "e_register"
     },
     {
+      "name": "产品筛选",
+      "code": "e_productScreen"
+    },
+    {
       "name": "轮播图-产品详情",
       "code": "e_magnifier"
     },

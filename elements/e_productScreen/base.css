@@ -108,11 +108,14 @@
     color: #007BFF;
     cursor: pointer;
 }
+.e_productScreen .p_hide{
+    display: none;
+}
 
 
 
 .e_productScreen .p_checkbox,
-/* .e_productScreen .foldBtn,  */
+.e_productScreen .foldBtn, 
 .e_productScreen .moreBtn,
 .e_productScreen .p_label{
     display: none;
