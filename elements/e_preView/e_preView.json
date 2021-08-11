@@ -2,7 +2,7 @@
   "cname": "预览商品",
   "styleId": "e_preView",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#${list}}}\r\n        <div class=\"p_img_div\" >\r\n            <a href=\"{{${list$href}}}\" target=\"{{${list$target}}}\" class=\"p_img_a\" bind=\"href-id\" >\r\n                <img src=\"{{${list$coverImage}}}\" alt=\"\" class=\"p_img\" bind=\"src-coverImage\" >\r\n            </a>\r\n        </div>\r\n        {{#if ../${showImages} }}\r\n        <div class=\"p_scroll\"    panel=\"checkbox-showImages\">\r\n            <ul class=\"p_scroll_main\" bind=\"arr-images\" >\r\n                {{#images}}\r\n               \r\n                {{#eq  @index  0}}\r\n                <li class=\"p_scroll_item curr\" >\r\n                    <a href=\"JavaScript:;\" class=\"p_scroll_item_a \" >\r\n                        <img src=\"{{${list$url}}}\" alt=\"{{${list$title}}}\" class=\"p_scroll_item_img\" bind=\"src-url|alt-title\" >\r\n                    </a>\r\n                </li>\r\n                {{/eq}}\r\n                {{#gt @index  0}}\r\n                <li class=\"p_scroll_item\" >\r\n                    <a href=\"JavaScript:;\" class=\"p_scroll_item_a\" >\r\n                        <img src=\"{{${gt @index  0$url}}}\" alt=\"{{${gt @index  0$title}}}\" class=\"p_scroll_item_img\" bind=\"src-url|alt-title\" >\r\n                    </a>\r\n                </li>\r\n                {{/gt}}\r\n                {{/images}}\r\n        </div>\r\n        {{/if}}\r\n    {{/${list}}}\r\n    \r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#${list}}}\r\n        <div class=\"p_img_div\" >\r\n            <a href=\"{{href}}\" target=\"{{target}}\" class=\"p_img_a\" bind=\"href-id\" >\r\n                {{{lazyImage coverImage 'class=\"p_img\"  title=\"{{title}}\" alt=\"{{title}}\"' 'true'}}}\r\n            </a>\r\n        </div>\r\n        {{#if ../${showImages} }}\r\n        <div class=\"p_scroll\" >\r\n            <ul class=\"p_scroll_main\">\r\n                {{#images}}\r\n                    <li class=\"p_scroll_item  {{#eq @index 0}}curr{{/eq}}\" >\r\n                        <a href=\"JavaScript:;\" class=\"p_scroll_item_a \" >\r\n                             {{{lazyImage url 'class=\"p_scroll_item_img\"  title=\"{{title}}\" alt=\"{{title}}\"' 'true'}}}\r\n                        </a>\r\n                    </li>\r\n                {{/images}}\r\n            </ul>\r\n        </div>\r\n        {{/if}}\r\n    {{/${list}}}\r\n    \r\n</div>",
   "css": [
     {
       "media": "",
@@ -31,13 +31,13 @@
         "productId": "012",
         "title": "@cparagraph",
         "summary": "@cparagraph",
-        "keywords|6": [
+        "keywords": [
           {
             "itemName": "@cname"
           }
         ],
         "coverImage": "https://img13.360buyimg.com/n7/jfs/t1/123066/16/14793/87243/5f843aafE96049e8c/2559285b2e40e600.jpg",
-        "images|2": [
+        "images": [
           {
             "id": 134,
             "title ": "@cparagraph",
@@ -67,9 +67,9 @@
     "list$productId": "productId",
     "list$title": "title",
     "list$summary": "summary",
-    "list$keywords|6": "keywords|6",
     "list$coverImage": "coverImage",
-    "list$images|2": "images|2"
+    "list$keywords": "keywords",
+    "list$images": "images"
   },
   "dataManage": {}
 }

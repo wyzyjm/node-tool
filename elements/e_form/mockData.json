@@ -2,8 +2,8 @@
     "prop": {
         "basic":{  
             "formInfo":{  
-                "title":"留言表单", 
-                "name":"launchbook",  
+                "title":"", 
+                "name":"",  
                 "app":""   
             },
             "submitLimit":{ 

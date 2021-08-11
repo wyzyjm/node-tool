@@ -2,12 +2,12 @@
   "cname": "地址型",
   "styleId": "e_address",
   "styleClass": "",
-  "type":"form",
-  "tmpl": "",
+  "type": "form",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <input type=\"text\" class=\"form-control p_input\" name=\"${elemId}\" {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} >\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_address{\n\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,7 +22,22 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "showLabel": true,
+    "label": "地址型",
+    "showPlaceholder": true,
+    "placeholder": "请选择地址",
+    "range": 1,
+    "validate": {
+      "required": {
+        "state": true,
+        "value": true,
+        "msg": "内容不能为空"
+      }
+    }
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
   "datasource": "prop"
 }

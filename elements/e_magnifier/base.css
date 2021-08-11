@@ -12,12 +12,16 @@
 	position: relative;
 	border: 1px solid #ddd;
 }
+
+/* 放大镜 图片上的块 开始 */
 .e_magnifier .move-view{
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	/* background-image: url('images/move-box.png'); */
+	background-color:rgba(204,204,204,.5);
 }
+/* 放大镜 图片上的块 结束 */
+
 .e_magnifier .images-cover{
 	height: 100%;
 	width: 100%;
@@ -33,6 +37,7 @@
 	padding-left: 30px;
 	padding-right: 30px;
 }
+
 .e_magnifier .magnifier-btn{
 	position: absolute;
 	font-family: "宋体";
@@ -53,12 +58,8 @@
 	cursor: pointer;
 	border-radius: 3px;
 }
-.e_magnifier .magnifier-btn .magnifier-btn-left{
-	float: left;
-}
-.e_magnifier .magnifier-btn .magnifier-btn-right{
-	float: right;
-}
+
+
 .e_magnifier .magnifier-line{
 	position: relative;
 	overflow: hidden;
@@ -95,11 +96,12 @@
 	height: 100%;
 	object-fit: cover;
 }
+/* 放大镜 显示 开始 */
 .e_magnifier .magnifier-view{
 	width: 100%;
-	height: 100%;
+	height: 110%;
 	position: absolute;
-	right: -105%;
+	right: -100%;
 	top: 0;
 	z-index: 9;
 	background-color: #fff;
@@ -109,6 +111,8 @@
 .e_magnifier .magnifier-view img{
 	display: block;
 }
+/* 放大镜 显示 开始 */
+
 .e_magnifier .animation03{
 	transition: all 0.3s ease-in 0.1s;
 	-ms-transition: all 0.3s ease-in 0.1s;
@@ -122,22 +126,7 @@
 	top: 0px;
 	z-index: 9;
 }
-.e_magnifier .image-bigger{
-	position: absolute;
-	right: 0;
-	bottom: 0px;
-	z-index: 9;
-}
-.e_magnifier .image-big-video{
-	width: 80px;
-	height: 80px;;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-}
+
 
 .e_magnifier  .closeBtn{
     width: 35px;
@@ -177,3 +166,164 @@
 	height: 100%;
 	object-fit: contain;
 }   
+
+/* 大图视频图标 开始 */
+.e_magnifier .image-big-video{
+	width: 80px;
+	height: 80px;;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border: 5px solid #fff;
+	border-radius: 50%;
+}
+.e_magnifier .image-big-video::before{
+	content:"";
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 20px solid #fff;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-40%,-50%);
+}
+/* 大图视频图标 结束 */
+
+/* 右下角放大 + 开始 */
+.e_magnifier .image-bigger{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color: #ccc;
+}
+.e_magnifier .add-icon{
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	z-index: 9;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+.e_magnifier .add-icon::before{
+	content: "";
+	position: absolute;
+	right: -2px;
+	bottom: -2px;
+	display: block;
+	width: 5px;
+	height: 2px;
+	transform: rotateZ(45deg);
+	background-color: #fff;
+}
+
+/* 右下角放大 + 结束 */
+
+
+/* 缩略图按钮 开始 */
+.e_magnifier .magnifier-btn .magnifier-btn-left{
+	float: left;
+}
+.e_magnifier .magnifier-btn .magnifier-btn-right{
+	float: right;
+}
+.e_magnifier  .magnifier-btn-left::before{
+	content: "<";
+	color: #000;
+	font-weight: bolder;
+}
+.e_magnifier  .magnifier-btn-right::before{
+	content: ">";
+	color: #000;
+	font-weight: bolder;
+}
+/* 缩略图按钮 结束 */
+
+
+/* 缩略图 视频图标 开始 */
+.e_magnifier .video-icon::before {
+	content: "";
+	display: block;
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+.e_magnifier .video-icon::after {
+	content:"";
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 10px solid #fff;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-40%,-50%);
+}
+/* 缩略图 视频图标 结束 */
+
+
+/* 360图标 开始 */
+.rotate-icon::before{
+	content: "";
+	display: block;
+	width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	transform: rotateX(70deg);
+}
+.rotate-icon::after{
+	content: "360°";
+	display: block;
+	width: 30px;
+    height: 30px;
+	text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: transparent;
+}
+/* 360图标 结束 */

@@ -1,0 +1,10 @@
+{   
+    "apiType":"list",
+    "dataFields":[
+        {
+            "name":"dataList",
+            "cname":"产品图集",
+            "type":"array[product-images] "
+        }
+    ]
+}

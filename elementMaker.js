@@ -178,7 +178,7 @@ function handleStr(str,dataFields,compId){
             let tkA=e.match(/{{[a-zA-Z0-9]*?}}/g)
             if(tkA){
                 tkA.forEach(el=>{
-                    let noArr = ["noDataPrompt","this","if","children","eq "]
+                    let noArr = ["noDataPrompt","this","if","children","eq ","options","dataList","attributeList","keywords","specList","list","gt"]
                     let teo = el.replace(/{/g,'').replace(/}/g,'')
                     let flag = true
                     noArr.forEach(e=>{
@@ -197,11 +197,11 @@ function handleStr(str,dataFields,compId){
     }
 
     //词条替换
-    let i18nReg = /{{i18n\..*?}}/g
+    let i18nReg = /i18n\..*?}}/g
     let i18nMatch = str.match(i18nReg)
     if(i18nMatch){
         i18nMatch.forEach(e=>{
-            let ne = e.replace(/{/g,'').replace(/}/g,'')
+            let ne = e.replace(/}/g,'')
             str=str.replace(ne,'${'+ne+'}')
         })
     }    

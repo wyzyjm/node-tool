@@ -13,3 +13,10 @@
     margin-bottom: 20px;
     min-height: 36px;
 }
+.e_subForm .p_tr{
+    display: flex;
+    flex-wrap: wrap;
+}
+.e_subForm .p_td{
+    flex: 1;
+}
