@@ -1,0 +1,15 @@
+{   
+    "apiType":"object",
+    "dataFields":[
+        {
+            "name":"stock",
+            "cname":"库存",
+            "type":"string"
+        },
+        {
+            "name":"moq",
+            "cname":"最低起订量",
+            "type":"string"
+        }
+    ]
+}
