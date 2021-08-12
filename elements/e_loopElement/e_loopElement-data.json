@@ -2,9 +2,9 @@
     "apiType":"object",
     "dataFields":[
         {
-            "name":"h6",
-            "cname":"标题六",
-            "type":"string"
+            "name":"options",
+            "cname":"循环体元素",
+            "type":"array[markList]"
         }
     ]
 }
