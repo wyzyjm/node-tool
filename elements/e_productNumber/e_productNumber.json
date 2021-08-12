@@ -27,7 +27,7 @@
   },
   "i18n": {
     "zh_CN": {
-      "count": "数量 : "
+      "count": "数量"
     }
   },
   "datasource": "prop",
