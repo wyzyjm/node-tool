@@ -4,13 +4,13 @@
     {{/if}}
     <div class="p_thead">
         {{#prop.content}}
-        <div class="p_th"></div>
+            <div class="p_th">{{#eq @last true}}操作{{/eq}}</div>
         {{/prop.content}}
     </div>
     <div class="p_tbody">
         <div class="p_tr">
         {{#prop.content}}
-        <div class="cbox-${id}-{{@index}} p_td"></div>
+            <div class="cbox-${id}-{{@index}} p_td">{{#eq @last true}}<a class="text-primary p_remove" href="javascript:;">移除</a>{{/eq}}</div>
         {{/prop.content}}
         </div>
     </div>
