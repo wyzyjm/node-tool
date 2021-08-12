@@ -5,8 +5,10 @@
     "placeholder":"我已阅读并接受条款及条件",
     "linkText":"查看使用条款",
     "content":"<p>这里是条款内容，字数不限</p>",
-    "select":true,
     "validate":{
+        "select":{
+            "value":true
+        },
         "required":{
             "state":true,
             "value":true,

@@ -2,7 +2,7 @@
   "cname": "条款条件",
   "styleId": "e_agreement",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div>\n        <div class=\"form-check form-check-inline p_input\">\n            <input class=\"form-check-input\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" {{#if ${select}}}checked{{/if}}>\n            <label class=\"form-check-label\" for=\"${elemId}-{{@index}}\">{{${placeholder}}}</label>\n            <a href=\"javascript:;\" class=\"text-primary p_showAgreement\">{{${linkText}}}</a>\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div>\n        <div class=\"form-check form-check-inline p_input\">\n            <input class=\"form-check-input\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" {{#if ${validate}.select.value}}checked{{/if}}>\n            <label class=\"form-check-label\" for=\"${elemId}-{{@index}}\">{{${placeholder}}}</label>\n            <a href=\"javascript:;\" class=\"text-primary p_showAgreement\">{{${linkText}}}</a>\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
@@ -27,8 +27,10 @@
     "placeholder": "我已阅读并接受条款及条件",
     "linkText": "查看使用条款",
     "content": "<p>这里是条款内容，字数不限</p>",
-    "select": true,
     "validate": {
+      "select": {
+        "value": true
+      },
       "required": {
         "state": true,
         "value": true,
