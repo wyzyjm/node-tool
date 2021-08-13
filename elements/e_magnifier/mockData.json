@@ -1,7 +1,7 @@
 {
   "prop": {
     "dataList":[
-        {
+      {
           "id": 123213,
           "title": "视频标题",
           "type": "video",
@@ -36,28 +36,28 @@
       {
           "id": 1231312,
           "title": "图片标题",
-          "type": "img",
+          "type": "image",
           "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
           "iscover": true
       },
       {
           "id": 1231312,
           "title": "图片标题",
-          "type": "img",
+          "type": "image",
           "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
           "iscover": false
       },
       {
           "id": 1231312,
           "title": "图片标题",
-          "type": "img",
+          "type": "image",
           "url": "http://1809290214.pool3-site.make.yun300.cn/repository/image/edb454bd-7c4e-40dd-aaa4-71e58ea98952.jpg",
           "iscover": false
       },
       {
           "id": 1231312,
           "title": "图片标题",
-          "type": "img",
+          "type": "image",
           "url": "http://1809290214.pool3-site.make.yun300.cn/repository/image/7314d825-4d83-478e-ab00-f5c9a46e2831.jpg",
           "iscover": false
       }

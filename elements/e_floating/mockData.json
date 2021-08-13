@@ -3,11 +3,11 @@
     "floatList": [
       {
           "tabTitle": "对比",
-          "productList": [{
-              "id": "523",
-              "productId": 1,
+          "productList|5": [{
+              "id": "@id",
+              "productId": "@id",
               "code": 123456678,
-              "title": "对比产品名称1",
+              "title": "对比产品名称@id",
               "href": "/product/144. html",
               "target": "_blank",
               "moHref": "/product/144. html",
@@ -103,5 +103,7 @@
     "delete":"删除",
     "noncontrastingDescription":"您还可以继续添加",
     "tip":"对比栏已满，您可以删除不需要的栏内商品再继续添加哦！"
-  }
+  },
+  "container": true,
+  "scope": true
 }

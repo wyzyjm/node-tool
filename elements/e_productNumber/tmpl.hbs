@@ -5,7 +5,7 @@
         <!-- 减少 -->
         <div class="border rounded-left p_reduce">-</div>
         <!-- input -->
-        <input type="text" class="border p_input" value="{{prop.moq}}">
+        <input type="text" class="border p_input" value="{{#if prop.moq}} {{prop.moq}} {{^}} 1 {{/if}}">
         <!-- 增加 -->
         <div class="border rounded-right p_increase">+</div>
     </div>
