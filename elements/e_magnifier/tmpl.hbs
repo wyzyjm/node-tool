@@ -7,8 +7,10 @@
             <div class="image-bigger">
                 <div class="add-icon">+</div>
             </div>
+            {{#eq prop.dataList.0.type 'video' }}
             <!--视频按钮-->
             <div class="image-big-video"></div>
+            {{/eq}}
             <!--跟随鼠标移动的盒子-->
             <div class="move-view"></div>
         </div>
@@ -33,7 +35,7 @@
 
                         {{#eq type "360"}}
                         <!--360-->
-                        <li class="fullview-img">
+                        <li class="fullview-img" data-imglist="{{imgUrlList}}">
                             <div class="small-img rotate-icon">
                                  <!-- 360显示第一张 -->
                                  {{{lazyImage imgUrlList.[0] "title='{{title}}' alt='{{title}}'" 'true'}}}
@@ -45,7 +47,7 @@
                         <!--静态图片-->
                         <li class="static-img">
                             <div class="small-img">
-                                {{{lazyImage url "title='{{title}}' alt='{{title}}' data-url='{{imgUrl}}' " "true"}}}
+                                {{{lazyImage url "title='{{title}}' alt='{{title}}' data-url='{{url}}' " "true"}}}
                             </div>
                         </li>
                         {{/eq}}
@@ -56,5 +58,5 @@
         <!--经过放大的图片显示容器-->
         <div class="magnifier-view"></div>
     </div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}' />
+  
 </div>
