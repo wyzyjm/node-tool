@@ -92,5 +92,7 @@
   },
   "i18n": {
       "symbol": "¥"
-  }
+  },
+  "container": true,
+  "scope": true
 }
