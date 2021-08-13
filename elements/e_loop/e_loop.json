@@ -71,7 +71,7 @@
   "dataFields": {
     "dataList": "dataList"
   },
-  "scope": true,
+  "scope": false,
   "container": true,
   "dataManage": true
 }
