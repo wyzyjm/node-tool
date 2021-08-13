@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_specification{\r\n\r\n}\r\n.e_specification img{\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: cover;\r\n}\r\n.e_specification .p_item{\r\n    padding-bottom: 10px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .p_specName {\r\n   float: left;\r\n   height: 30px;\r\n   line-height: 30px;\r\n}\r\n.e_specification .p_valueUl {\r\n    margin-left: 40px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .itemValue {\r\n    float: left;\r\n    margin-right: 5px;\r\n    margin-right: 5px;\r\n    margin-bottom: 5px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .specValueT {\r\n    display: block;\r\n    padding: 3px 16px;\r\n    text-align: center;\r\n    border: 1px solid #ccc;\r\n}\r\n.e_specification .specValueI {\r\n    width: 46px;\r\n    height: 46px;\r\n}"
+      "cssText": ".e_specification{\r\n\r\n}\r\n.e_specification img{\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: cover;\r\n}\r\n.e_specification .p_item{\r\n    padding-bottom: 10px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .p_specName {\r\n   float: left;\r\n   height: 30px;\r\n   line-height: 30px;\r\n   margin-right: 10px;\r\n}\r\n.e_specification .p_valueUl {\r\n    margin-left: 40px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .itemValue {\r\n    float: left;\r\n    margin-right: 5px;\r\n    margin-right: 5px;\r\n    margin-bottom: 5px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .specValueT {\r\n    display: block;\r\n    padding: 3px 16px;\r\n    text-align: center;\r\n    border: 1px solid #ccc;\r\n}\r\n.e_specification .specValueI {\r\n    width: 46px;\r\n    height: 46px;\r\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -64,7 +64,7 @@
       {
         "id": 1231,
         "templateId": 2345,
-        "specName": "颜色",
+        "specName": "颜色较长",
         "imageFlag": 1,
         "productSpecValues": [
           {

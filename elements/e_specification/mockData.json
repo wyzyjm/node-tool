@@ -40,7 +40,7 @@
     {
       "id" : 1231, 
       "templateId" : 2345, 
-      "specName" : "颜色",
+      "specName" : "颜色较长",
       "imageFlag" : 1, 
       "productSpecValues" : [
         {

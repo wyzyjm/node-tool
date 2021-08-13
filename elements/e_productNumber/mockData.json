@@ -1,9 +1,9 @@
 {
   "prop": {
     "stock" : 20,
-    "moq" : 2
+    "moq" : 0
   },
   "i18n": {
-    "count" : "数量 : "
+    "count" : "数量"
   }
 }

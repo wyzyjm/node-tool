@@ -13,45 +13,57 @@
                 <li class="p_contentItem  {{#eq @index 0}} active{{/eq}}">
                     <!-- 属性区 -->
                     <ul class="p_infoItem">
-                        <!-- 品牌 -->
-                        <li class="p_attrItem"> 
-                            <span class="s_summary p_attrName">品牌: </span>
-                            <span class="p_attrValue"> {{brand}} </span>
-                        </li>
-                        <!-- 名称 -->
-                        <li class="p_attrItem">
-                            <span class="s_summary p_attrName">商品名称: </span>
-                            <span class="p_attrValue"> {{title}} </span>
-                        </li>
-                        <!-- 编号 -->
-                        <li class="p_attrItem">
-                            <span class="s_summary p_attrName">商品编号: </span>
-                            <span class="p_attrValue"> {{code}} </span>
-                        </li>
+                        {{#if brand}}
+                            <!-- 品牌 -->
+                            <li class="p_attrItem"> 
+                                <span class="s_summary p_attrName">品牌: </span>
+                                <span class="p_attrValue"> {{brand}} </span>
+                            </li>
+                        {{/if}}
+                        {{#if title}}
+                            <!-- 名称 -->
+                            <li class="p_attrItem">
+                                <span class="s_summary p_attrName">商品名称: </span>
+                                <span class="p_attrValue"> {{title}} </span>
+                            </li>
+                        {{/if}}
+                        {{#if code}}
+                            <!-- 编号 -->
+                            <li class="p_attrItem">
+                                <span class="s_summary p_attrName">商品编号: </span>
+                                <span class="p_attrValue"> {{code}} </span>
+                            </li>
+                        {{/if}}
                         <!-- 自定义属性 -->
                         {{#attributeList}}
-                        <li class="p_attrItem">
-                            <span class="s_summary p_attrName"> {{attribute}}: </span>
-                            <span class="p_attrValue"> {{value}} </span>
-                        </li>
+                            <li class="p_attrItem">
+                                <span class="s_summary p_attrName"> {{attribute}}: </span>
+                                <span class="p_attrValue"> {{value}} </span>
+                            </li>
                         {{/attributeList}}
 
                     </ul>
-                    <!-- 概要 -->
-                    <div class="p_infoItem"> 
-                        <p class="border-top border-bottom text-secondary  p_summary">{{summary}}</p>
-                    </div>
-                    <!-- 描述 -->
-                    <div class="p_infoItem"> {{content}} </div>
-                    <!-- 关键词 -->
-                    <div class="p_infoItem">
-                        <span class="s_summary p_keywordLabel">{{i18n.keyword}}</span>
-                        <ul class="p_keywordValue">
-                            {{#keywords}}
-                            <li class="border text-secondary p_keywordItem">{{itemName}}</li>
-                            {{/keywords}}
-                        </ul>
-                    </div>
+                    {{#if summary}}
+                        <!-- 概要 -->
+                        <div class="p_infoItem"> 
+                            <p class="border-top border-bottom text-secondary  p_summary">{{summary}}</p>
+                        </div>
+                    {{/if}}
+                    {{#if content}}
+                        <!-- 描述 -->
+                        <div class="p_infoItem"> {{{content}}} </div>
+                    {{/if}}
+                    {{#if keywords}}
+                        <!-- 关键词 -->
+                        <div class="p_infoItem">
+                            <span class="s_summary p_keywordLabel">{{i18n.keyword}}</span>
+                            <ul class="p_keywordValue">
+                                {{#keywords}}
+                                <li class="border text-secondary p_keywordItem">{{itemName}}</li>
+                                {{/keywords}}
+                            </ul>
+                        </div>
+                    {{/if}}
                 </li>
             {{/eq}}
             {{#eq type "parameter"}}
@@ -79,7 +91,7 @@
             {{#eq type "custom"}}
                 <!-- 自定义 -->
                 <li class="p_contentItem">
-                    {{content}}
+                    {{{content}}}
                 </li>
             {{/eq}}
          {{/prop.productTabList}}
