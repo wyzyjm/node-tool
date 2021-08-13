@@ -4,47 +4,47 @@
 *{
   box-sizing: border-box;
 }
-.p_compare{
+.e_contrast .p_compare{
   background: #fff;
   margin-left: 180px;
 }
-.p_left{
+.e_contrast .p_left{
   float: left;
   width: 180px;
   background:#f3f3f3
 }
-.p_right{
+.e_contrast .p_right{
   float: left;
   width: calc(100% - 180px);
   overflow-x: auto;
 }
-.p_rcontent{
+.e_contrast .p_rcontent{
   min-width: 900px;
 }
 /*属性值行*/
-.p_row{
+.e_contrast .p_row{
   border-bottom: 1px solid #ccc;
 }
-.p_left .p_row{
+.e_contrast .p_left .p_row{
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
 }
 /*第一行*/
-.p_rowt{
+.e_contrast .p_rowt{
   border-top: 1px solid #ccc;
   width: 100%;
 }
 /*参数组标题行*/
-.p_rowgt{
+.e_contrast .p_rowgt{
   background: #f3f3f3;
   padding: 0;
   border-bottom: 1px solid #ccc;
 }
-.p_left .p_rowgt{
+.e_contrast .p_left .p_rowgt{
   border-right: none;
 }
 /*参数单元格*/
-.p_ceil{
+.e_contrast .p_ceil{
   padding: 10px 10px;
   text-align: center;
   position: relative;
@@ -54,18 +54,18 @@
   align-items: center;
   justify-content: center;
 }
-.p_right .p_ceil{
+.e_contrast .p_right .p_ceil{
   float: left;
   width: 25%;
   border-right: 1px solid #ccc;
 }
-.p_right .p_row{
+.e_contrast .p_right .p_row{
   background: #fff;
 }
-.p_row.light{
+.e_contrast .p_row.light{
   background:#e1f6ff
 }
-.p_rowgt .p_ceil{
+.e_contrast .p_rowgt .p_ceil{
   float: none;
   width: 100%;
   padding: 10px;
@@ -73,26 +73,44 @@
   height: 60px;
   background: #f3f3f3;
 }
-.p_rowt .p_ceil{
+.e_contrast .p_rowt .p_ceil{
   height: 135px;
   padding:10px 10px;
 }
 
-.p_product{
+.e_contrast .p_product{
   align-items:flex-start;
   justify-content: flex-start;
 }
-.p_product_info{
+.e_contrast .p_product_info{
   padding: 0 10px 0 100px;
   line-height: 26px;
   text-align: left;
 }
-.p_product_title{
-  max-height: 52px;
-  overflow: hidden;
-  text-align: justify;
+.e_contrast .p_delete{
+  display: none;
 }
-.p_product_img{
+.e_contrast .p_product:hover .p_delete{
+  display: block;
+  display: inline-block;
+}
+.e_contrast .p_product_title{
+  max-height: 52px;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.e_contrast .p_priduct_price{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.e_contrast .p_product_img{
   width: 90px;
   height: 90px;
   position: absolute;
@@ -100,13 +118,13 @@
   top: 15px;
   background: #f9f9f9;
 }
-.p_product_img img{
+.e_contrast .p_product_img img{
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.p_arrow{
+.e_contrast .p_arrow{
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
@@ -116,7 +134,7 @@
   border-radius: 2px;
   position: relative;
 }
-.p_arrow::after{
+.e_contrast .p_arrow::after{
   position: absolute;
   width: 13px;
   height: 12px;
@@ -126,13 +144,13 @@
   color: #666;
   content: "-";
 }
-.p_arrow.zd::after{
+.e_contrast .p_arrow.zd::after{
   content: "+";
 }
-.fixedtop{
+.e_contrast .fixedtop{
   padding-top: 140px;
 }
-.fixedtop .fixeddiv,.fixedtop .p_lop{
+.e_contrast .fixedtop .fixeddiv,.e_contrast .fixedtop .p_lop{
   overflow-x: auto;
   z-index: 9;
   position: fixed;
@@ -143,18 +161,21 @@
 
 }
 
-.p_menu{
-  position: fixed;
+.e_contrast .p_menu{
+  position: absolute;
   left: 0;
   top: 30px;
   width:180px;
   z-index: 9;
 }
-.p_pcm{
+.e_contrast .p_menu.fixedleft{
+  position: fixed;
+}
+.e_contrast .p_pcm{
   padding:30px 40px 30px 10px;
   position: relative;
 }
-.p_pcm::after{
+.e_contrast .p_pcm::after{
   content: " ";
   position: absolute;
   height: 100%;
@@ -163,35 +184,36 @@
   top: 0;
   z-index: 4;
 }
-.p_pcl{
+.e_contrast .p_pcl{
   line-height: 20px;
   padding: 10px 0;
   text-align: right;
   position: relative;
 }
-.p_pcl::after{
+.e_contrast .p_pcl::after{
   content: "";
   position: absolute;
   width: 8px;
-  height: 8px;
+  height: 0px;
   border-radius: 4px;
   background: #666;
   right: -23px;
   top: 16px;
   z-index: 5;
 }
-.p_pcl.active{
+.e_contrast .p_pcl.active{
   color: #007bff;
 }
-.p_pcl.active::after{
+.e_contrast .p_pcl.active::after{
   background: #007bff;
+  height: 8px;
 }
-.p_mmenu{
+.e_contrast .p_mmenu{
   display: none;
 }
 
 
-.hideSame {
+.e_contrast .hideSame {
   display: none;
 }
 .hideSame + label {
