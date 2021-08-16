@@ -1,10 +1,10 @@
 {   
-  "apiType":"list",
+  "apiType":"object",
   "dataFields":[
       {
-          "name":"list",
+          "name":"markList",
           "cname":"标记图标",
-          "type":"array[object]"
+          "type":"array[markList]"
       }
   ]
 }
