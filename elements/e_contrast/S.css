@@ -1,20 +1,20 @@
-.p_left{
+.e_contrast .p_left{
   float: left;
   width: 140px;
   background:#f3f3f3
 }
-.p_right{
+.e_contrast .p_right{
   float: left;
   width: calc(100% - 140px);
   overflow-x: auto;
 }
-.p_compare {
+.e_contrast .p_compare {
   margin-left: 0px;
 } 
-.p_menu{
+.e_contrast .p_menu{
   display: none;
 }
-.p_mmenu{
+.e_contrast .p_mmenu{
   width: 100%;
   display: block;
   line-height: 40px;
@@ -24,20 +24,20 @@
   position: relative;
   text-align: center;
 }
-.fixedtop{
+.e_contrast .fixedtop{
   padding-top: 180px;
 }
-.p_marrow{
+.e_contrast .p_marrow{
   width:0;
 height:0;
 border-right:10px solid transparent;
 border-left:10px solid transparent;
 border-top:10px solid #ccc;
 }
-.p_product_info{
+.e_contrast .p_product_info{
   padding-left: 80px;
 }
-.p_product_img{
+.e_contrast .p_product_img{
   width: 70px;
   height: 70px;
 }

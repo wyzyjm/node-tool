@@ -2,7 +2,7 @@
   "cname": "循环体容器",
   "styleId": "e_loop",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${dataList}}}\n        <div class=\"p_list\">\n        {{#${dataList}}}\n            <div class=\"cbox-${id} p_item\"></div>\n        {{/${dataList}}}\n        </div>\n        <div class=\"p_page\">\n            {{{nPaging ${page} ${pageConfig}}}}\n        </div>\n    {{^}}\n    {{{noDataPrompt}}}\n    {{/if}}\n</div>\n",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${dataList}}}\n        <div class=\"p_list\">\n        {{#${dataList}}}\n            <div class=\"cbox-${id} p_item\"></div>\n        {{/${dataList}}}\n        </div>\n        <div class=\"p_page\">\n            {{{nPaging ${page} ${pageConfig}}}}\n        </div>\n    {{^}}\n    {{{nNoDataPrompt}}}\n    {{/if}}\n</div>\n",
   "css": [
     {
       "media": "",
@@ -71,7 +71,7 @@
   "dataFields": {
     "dataList": "dataList"
   },
-  "scope": true,
+  "scope": false,
   "container": true,
   "dataManage": true
 }

@@ -35,5 +35,6 @@
     "zh_CN": {}
   },
   "datasource": "prop",
+  "container": true,
   "type": "form"
 }
