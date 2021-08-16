@@ -1,0 +1,10 @@
+{   
+  "apiType":"list",
+  "dataFields":[
+      {
+          "name":"list",
+          "cname":"标记图标",
+          "type":"array[object]"
+      }
+  ]
+}
