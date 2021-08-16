@@ -54,8 +54,8 @@
                 </a>
         </div>
         <div class="p_nav_page" data-ename="页码">
-            <span class="p_page_tall" data-ename="页数">{{i18n.pageWhole}} <em class="p_style_normal">72</em>  {{i18n.unit}}{{i18n.products}}</span>
-            <span class="p_page_text" data-ename="页码数内容"><em class="text-danger p_style_normal">1</em>/ <em class="p_style_normal">70</em></span>
+            <span class="p_page_tall" data-ename="页数">{{i18n.pageWhole}} <em class="p_style_normal">{{prop.page.totalCount}}</em>  {{i18n.unit}}{{i18n.products}}</span>
+            <span class="p_page_text" data-ename="页码数内容"><em class="text-danger p_style_normal">{{prop.page.from}}</em>/ <em class="p_style_normal">{{prop.page.size}}</em></span>
             <a href="#" class="p_page_prev p_disabled" data-ename="上一页"><</a>
             <a href="#" class="p_page_next" data-ename="下一页">></a>
         </div>

@@ -4,7 +4,7 @@
         {
             "name":"options",
             "cname":"循环体元素",
-            "type":"array[markList]"
+            "type":"array[keywords]"
         }
     ]
 }

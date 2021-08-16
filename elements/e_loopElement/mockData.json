@@ -2,13 +2,13 @@
   "prop": {
       "options":[
           {
-              "title":"数据1"
+              "itemName":"数据1"
           },{
-            "title":"数据2"
+            "itemName":"数据2"
         },{
-            "title":"数据3"
+            "itemName":"数据3"
         },{
-            "title":"数据4"
+            "itemName":"数据4"
         }
       ]
   },
