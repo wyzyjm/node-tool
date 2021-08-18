@@ -2,4 +2,7 @@
     <div class="cbox-${id}">
         
     </div>
+    {{#eq prop.submit.type 2}}
+    <a class="p_submitPage hide" href="{{$transferLink prop.submit.obj2 compId}}" target="{{prop.submit.obj2.target}}"></a>
+    {{/eq}}
 </form>

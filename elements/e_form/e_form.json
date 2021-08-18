@@ -3,7 +3,7 @@
   "styleId": "e_form",
   "styleClass": "",
   "type": "form",
-  "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"cbox-${id}\">\n        \n    </div>\n</form>",
+  "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"cbox-${id}\">\n        \n    </div>\n    {{#eq ${submit}.type 2}}\n    <a class=\"p_submitPage hide\" href=\"{{$transferLink ${submit}.obj2 compId}}\" target=\"{{${submit}.obj2.target}}\"></a>\n    {{/eq}}\n</form>",
   "css": [
     {
       "media": "",
@@ -31,7 +31,7 @@
       },
       "submitLimit": {
         "peopleLimit": 1,
-        "limitRull": 1,
+        "limitRule": 1,
         "count": 1,
         "interval": 1,
         "unit": 1
@@ -43,79 +43,33 @@
         "prompt": ""
       },
       "advanced": {
-        "customState": [
-          {
-            "label": "待审核",
-            "value": 1,
-            "select": true
-          }
-        ],
+        "customState": [],
         "message": 1
       }
     },
-    "rule": [
-      {
-        "if": {
-          "item": "",
-          "equal": 1,
-          "and": ""
-        },
-        "then": {
-          "item": "",
-          "equal": 1
-        },
-        "status": 1
-      }
-    ],
+    "rule": [],
     "submit": {
       "type": 1,
       "obj1": {
         "prompt": "",
-        "formula": "",
-        "afterSubmit": 1,
-        "pageUrl": "",
-        "fileUrl": ""
+        "request": [],
+        "result": 1
       },
       "obj2": {
-        "pageUrl": "",
-        "params": [
-          {
-            "label": "服务编号",
-            "key": "id",
-            "value": "$产品编号"
-          }
-        ]
+        "type": "customPage",
+        "value": "",
+        "target": "_self"
       },
-      "obj3": {
-        "business": "",
-        "params": [
-          {
-            "label": "服务编号",
-            "key": "id",
-            "value": "$产品编号"
-          }
-        ]
-      }
+      "obj3": {}
     },
     "async": {
       "status": 1,
       "target": "",
-      "relation": [
-        {
-          "from": "",
-          "to": ""
-        }
-      ]
+      "relation": []
     },
     "notice": {
       "status": 1,
-      "rules": [
-        {
-          "title": "事件名称",
-          "code": 1,
-          "user": 1
-        }
-      ]
+      "rules": []
     }
   },
   "i18n": {
@@ -127,6 +81,8 @@
   "dataFields": {
     "rule$if": "if",
     "rule$then": "then",
-    "rule$status": "status"
+    "rule$status": "status",
+    "rule$logic": "logic",
+    "rule$state": "state"
   }
 }

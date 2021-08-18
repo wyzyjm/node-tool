@@ -2,7 +2,7 @@
   "cname": "按钮",
   "styleId": "e_formBtn",
   "styleClass": "s_button1",
-  "tmpl": "<div>\n    <button class=\"${elemId} ${styleClass} btn btn-primary\">{{${text}}}</button>\n</div>",
+  "tmpl": "<div>\n    <a class=\"${elemId} ${styleClass} btn btn-primary\" href=\"javascript:;\" needjs=\"true\">{{${text}}}</a>\n</div>",
   "type": "form",
   "css": [
     {
