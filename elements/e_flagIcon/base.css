@@ -1,15 +1,13 @@
 
+.e_flagIcon{
+    text-align: right;
+}
 .e_flagIcon .p_flog{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-}
-.e_flagIcon .p_flog_c{
+    display: inline-block;
     width: 25%;
-    float:right;
-    padding-left: 3px;
+    max-width: 200px;
 }
+
 .e_flagIcon .p_flog_img{
     width: 100%;
     height: 100%;

@@ -1,0 +1,31 @@
+{
+  "apiType": "object",
+  "dataFields": [
+    
+    {
+      "name": "href",
+      "cname": "图片链接",
+      "type": "number"
+    },
+    {
+      "name": "target",
+      "cname": "打开方式",
+      "type": "number"
+    },
+    {
+      "name": "coverImage",
+      "cname": "封面图  路径",
+      "type": "number"
+    },
+    {
+      "name": "title",
+      "cname": "商品名称",
+      "type": "string"
+    },
+    {
+      "name": "images",
+      "cname": "预览商品",
+      "type": "array[images]"
+    }
+  ]
+}

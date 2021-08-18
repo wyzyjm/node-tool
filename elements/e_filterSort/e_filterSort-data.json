@@ -1,0 +1,11 @@
+{   
+  "apiType":"list",
+  "dataFields":[
+      {
+          "name":"page",
+          "cname":"筛选排序",
+          "type":"object[page]"
+      }
+      
+  ]
+}

@@ -28,7 +28,7 @@
                         <!--视频-->
                         <li class="video-img">
                             <div class="small-img video-icon">
-                                 {{{lazyImage thumbnailUrl "title='{{title}}' alt='{{title}}' data-url='{{url}}' " 'true'}}}
+                                 {{{lazyImage thumbnailUrl "title='{{title}}' alt='{{title}}' data-url='{{thumbnailUrl}}' data-video='{{url}}'" "true"}}}
                             </div>
                         </li>
                         {{/eq}}
@@ -38,7 +38,7 @@
                         <li class="fullview-img" data-imglist="{{imgUrlList}}">
                             <div class="small-img rotate-icon">
                                  <!-- 360显示第一张 -->
-                                 {{{lazyImage imgUrlList.[0] "title='{{title}}' alt='{{title}}'" 'true'}}}
+                                 {{{lazyImage imgUrlList.[0] "title='{{title}}' alt='{{title}}' data-url='{{imgUrlList.[0]}}'" "true"}}}
                             </div>
                         </li>
                         {{/eq}}
