@@ -1,27 +1,28 @@
 {
   "prop": {  
     "showLabel":true,
-    "label":"单行文本",
+    "label":"数字输入框",
     "showPlaceholder":true,
     "placeholder":"请输入...",
-    "type":"text",
     "value":"",
     "state":"normal",
+    "decimal":2,
+    "unit":"千克",
     "validate":{
         "required":{
             "state":true,
             "value":true,
             "msg":"内容不能为空"
         },
-        "minLength":{
+        "min":{
             "state":true,
-            "value":5,
-            "msg":"您输入的内容不能少于%len个字符"
+            "value":10,
+            "msg":"您输入的内容最小值为%len"
         },
-        "maxLength":{
+        "max":{
             "state":true,
-            "value":128,
-            "msg":"您输入的内容不能多于%len个字符"
+            "value":100,
+            "msg":"您输入的内容最大值为%len"
         },
         "custom":{
             "state":false,

@@ -185,6 +185,10 @@
       "code": "e_input"
     },
     {
+        "name": "数字输入框",
+        "code": "e_number"
+      },
+    {
       "name": "多行输入框",
       "code": "e_textarea"
     },

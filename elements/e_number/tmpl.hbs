@@ -1,4 +1,4 @@
-<div class="e_input form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
+<div class="e_number form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
         {{prop.label}}
@@ -8,12 +8,13 @@
     {{#eq prop.state 'readOnly'}}
     <p class="p_formValue">{{prop.value}}</p>
     {{/eq}}
-    <div class="{{#eq prop.state 'readOnly'}}hide{{/eq}}">
-        <input type="text" class="form-control p_input" name="${elemId}" 
+    <div class="p_number {{#eq prop.state 'readOnly'}}hide{{/eq}}">
+        <input type="number" class="form-control p_input" name="${elemId}" 
             {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} 
             {{#if prop.value}}value="{{prop.value}}"{{/if}} 
             {{#eq prop.state 'disabled'}}disabled{{/eq}}
         >
+        {{prop.unit}}
         <div class="invalid-feedback"></div>
     </div>
     <input type="hidden" name="propJson" value='{{{propJson}}}'>

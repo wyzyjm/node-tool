@@ -5,10 +5,10 @@
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
-    <div class="clearfix">
+    <div class="clearfix p_input">
         <div class="p_score"></div>
         <div class="p_hint"></div>
-        <input type="hidden" name="${elemId}" value="{{score}}/{{number}}">
+        <input type="hidden" name="${elemId}" value="{{#if score}}{{score}}/{{number}}{{/if}}">
     </div>
     <div class="invalid-feedback"></div>
     <input type="hidden" name="propJson" value='{{{propJson}}}'>
