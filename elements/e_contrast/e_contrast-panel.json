@@ -1,8 +1,10 @@
 {
   "panelConfig": [
       {
-          "compName":"setting-animate",
-          "name":"对比-详情"
+          "compName": "setting-text",
+          "bind-text": "prop.text",
+          "bind-href": "prop.href",
+          "title": "文字"
       }
   ]
 }

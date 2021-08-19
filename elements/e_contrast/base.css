@@ -87,15 +87,25 @@
   line-height: 26px;
   text-align: left;
 }
+.e_contrast .p_priduct_btn{
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
 .e_contrast .p_delete{
   display: none;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
 }
 .e_contrast .p_product:hover .p_delete{
   display: block;
   display: inline-block;
 }
 .e_contrast .p_product_title{
-  max-height: 52px;
+  height: 52px;
   text-align: justify;
   overflow: hidden;
   text-overflow: ellipsis;
