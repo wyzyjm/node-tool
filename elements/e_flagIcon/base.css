@@ -4,8 +4,8 @@
 }
 .e_flagIcon .p_flog{
     display: inline-block;
-    width: 25%;
-    max-width: 200px;
+    width: 50px;
+    height: 30px;
 }
 
 .e_flagIcon .p_flog_img{

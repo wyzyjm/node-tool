@@ -1,12 +1,12 @@
 <div class="e_filterSort" needjs="true">
     <div class="s_body p_nav">
         <div class="p_nav_list">
-                <a href="#" class="s_body p_nav_a" >{{i18n.zSort}}
+                <a href="#" class="s_body p_nav_a"  data-field="sort">{{i18n.zSort}}
                     <span class="p_down_san">
                         {{{prop.downSan}}}
                     </span>
                 </a>
-                <a href="#" class="s_body p_nav_a" data-sort='2' >{{i18n.upTime}}
+                <a href="#" class="s_body p_nav_a" data-sort='2' data-field='createDate'>{{i18n.upTime}}
                     <span class="p_opear" >
                         <i class=" p_up" data-ename="增">
                             {{{prop.opUp}}}
@@ -17,7 +17,7 @@
                     </span>
                    
                 </a>
-                <a href="#" class="s_body p_nav_a" data-sort='2'>{{i18n.product}}
+                <a href="#" class="s_body p_nav_a" data-sort='2' data-field='title'>{{i18n.product}}
                      <span class="p_opear" >
                          <i class="p_up"  data-ename="增">
                              {{{prop.opUp}}}
@@ -27,7 +27,7 @@
                         </i>
                     </span>
                 </a>
-                <a href="#" class="s_body p_nav_a" data-sort='2'>{{i18n.productNum}}
+                <a href="#" class="s_body p_nav_a" data-sort='2'  data-field='title'>{{i18n.productNum}}
                      <span class="p_opear" >
                         <i class="p_up" data-ename="增">
                             {{{prop.opUp}}}
@@ -37,7 +37,7 @@
                         </i>
                     </span>
                 </a>
-                <a href="#" class="e_body p_nav_a" data-sort='2'>{{i18n.price}}
+                <a href="#" class="e_body p_nav_a" data-sort='2' data-field='price'>{{i18n.price}}
                      <span class="p_opear" >
                         <i class="p_up" data-ename="增">
                             {{{prop.opUp}}}
@@ -47,13 +47,13 @@
                         </i>
                     </span>
                 </a>
-                <a href="#" class="e_body p_nav_a" >{{i18n.sale}}
+                <a href="#" class="e_body p_nav_a" data-field='sale'>{{i18n.sale}}
                       <span class="p_down_san" data-ename="排序icon">
                           {{{prop.downSan}}}
                     </span> 
                 </a>
         </div>
-        <div class="p_nav_page" data-ename="页码">
+        <div class="p_nav_page" data-ename="页码" data-from="{{prop.page.from}}" data-size={{prop.page.size}}>
             <span class="p_page_tall" data-ename="页数">{{i18n.pageWhole}} <em class="p_style_normal">{{prop.page.totalCount}}</em>  {{i18n.unit}}{{i18n.products}}</span>
             <span class="p_page_text" data-ename="页码数内容"><em class="text-danger p_style_normal">{{prop.page.from}}</em>/ <em class="p_style_normal">{{prop.page.size}}</em></span>
             <a href="#" class="p_page_prev p_disabled" data-ename="上一页"><</a>
