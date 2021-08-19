@@ -17,7 +17,7 @@
 		"product":"产品名称",
     "price":"价格",
 		"sale":"销量",
-    "productNum":"产品列表",
+    "productNum":"产品编号",
     "unit":"件",
     "pageWhole": "共", 
     "pageItem": "条"

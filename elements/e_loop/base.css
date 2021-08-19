@@ -4,6 +4,7 @@
 }
 .e_loop .p_item{
     flex:0 0 33.3%;
+    position: relative;
 }
 .e_loop .p_page{
     text-align: center;

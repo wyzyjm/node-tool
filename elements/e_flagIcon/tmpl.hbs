@@ -1,10 +1,9 @@
 <div class="e_flagIcon">
-    
          {{#prop.markList}}
-            <div class="p_flog"   >
-                <div class="p_flog_c"> <img src="{{markUrl}}" alt="{{markName}}" class="p_flog_img" ></div>
+            <div class="p_flog">
+                <div class="p_flog_c">
+                    {{{lazyImage markUrl 'class="p_flog_img"  title="{{markName}}" alt="{{markName}}"' 'true'}}}     
+                </div>
             </div>
         {{/prop.markList}}
-     
-    
 </div>
