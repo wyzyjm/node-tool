@@ -1,4 +1,4 @@
-.e_input .p_number .p_input{
-    display: inline-block;
-    width: 80%;
+.e_input .p_phoneCode{
+    width: 90px;
+    margin-right: 10px;
 }

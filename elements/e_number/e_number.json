@@ -3,11 +3,11 @@
   "styleId": "e_number",
   "styleClass": "",
   "type": "form",
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"p_number {{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <input type=\"number\" class=\"form-control p_input\" name=\"${elemId}\" \n            {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n            {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n            {{#eq ${state} 'disabled'}}disabled{{/eq}}\n        >\n        {{${unit}}}\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"p_number {{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"input-group\">\n            <input type=\"number\" class=\"form-control p_input\" name=\"${elemId}\" \n                {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n                {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n                {{#eq ${state} 'disabled'}}disabled{{/eq}}\n            >\n            <div class=\"input-group-append\">\n                <span class=\"p_unit\">\n                {{${unit}}}\n                </span>\n            </div>\n            <div class=\"invalid-feedback\"></div>\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_number .p_number .p_input{\n    display: inline-block;\n    width: 80%;\n}"
+      "cssText": ".e_number .p_unit{\n    line-height: 36px;\n    padding:0 10px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",

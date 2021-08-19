@@ -67,6 +67,10 @@
     {
       "name": "iframe",
       "code": "e_iframe"
+    },
+    {
+      "name": "隐藏域",
+      "code": "e_inputHidden"
     }
   ],
   "complex": [
@@ -185,9 +189,9 @@
       "code": "e_input"
     },
     {
-        "name": "数字输入框",
-        "code": "e_number"
-      },
+      "name": "数字输入框",
+      "code": "e_number"
+    },
     {
       "name": "多行输入框",
       "code": "e_textarea"

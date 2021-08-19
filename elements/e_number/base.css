@@ -1,4 +1,4 @@
-.e_number .p_number .p_input{
-    display: inline-block;
-    width: 80%;
+.e_number .p_unit{
+    line-height: 36px;
+    padding:0 10px;
 }
