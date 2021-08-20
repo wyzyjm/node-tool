@@ -2,6 +2,7 @@
 .e_preView .p_scroll_main{
     display: flex;
     flex-wrap: wrap;
+    height: 44px;
 }
 .e_preView .p_scroll_item{
     width: 20%;

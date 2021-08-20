@@ -1,10 +1,6 @@
 <div class="e_preView" needjs="true">
     
-        <div class="p_img_div" data-summary='{{prop.summary}}' data-title ='{{prop.title}}' data-price='{{prop.price}}' 
-         data-retailPrice='{{prop.retailPrice}}' data-productId='{{prop.productId}}' 
-         data-href='{{prop.href}}'data-code='{{prop.code}}' data-target="{{prop.target}}" data-coverImage="{{prop.coverImage}}" 
-        >
-         {{!-- <div class="p_img_div" > --}}
+        <div class="p_img_div" >
             <a href="{{prop.href}}" target="{{prop.target}}" class="p_img_a"  >
                 {{{lazyImage prop.coverImage 'class="p_img"  title="{{prop.title}}" alt="{{prop.title}}"' 'true'}}}
             </a>
