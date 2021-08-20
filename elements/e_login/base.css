@@ -1,3 +1,126 @@
 .e_login{
 
 }
+.p_p_tip {
+    height: 18px;
+    color: #fa7679;
+    line-height: 18px;
+    font-size: 12px;
+    visibility: hidden;
+}
+.p_lable_text{
+  display: flex;
+  justify-content: space-between;
+  color: #007bff;
+
+}
+.p_lable_text span{
+    cursor: pointer;
+}
+.p_but{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.p_error{
+    background-color: #fff2f0;
+    border: solid #ffccc8 1px;
+    border-radius: 4px;
+    color: #fa7679;
+    font-size: 12px;
+    margin-bottom: 8px;
+    text-indent: 12px;
+    display: none;
+}
+.p_input_div{
+    position: relative;
+}
+.p_input_div div{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 100px;
+    height: 100%;
+    line-height: 34px;
+    text-align: right;
+    padding-right: 12px;
+}
+.p_select{
+    position: relative;
+}
+.p_select select{
+    position: absolute;
+    left: 1px;
+    top: 6px;
+    width: 60px;
+    color: #666;
+    border: 0;
+}
+.p_indent{
+    text-indent: 60px;
+}
+.p_pe_box{
+    display: none;
+}
+.p_label span{
+ cursor: pointer;
+ color: #666; 
+}
+.p_login_box{
+    display: none;
+}
+.p_time-2{
+    display: none;
+}
+.p_popup_box{
+    position:fixed;left:0px;top:0px;
+    background:rgba(0, 0, 0, 0.4);
+    width:100%;  
+    height:100%;
+    filter:alpha(opacity=60);  
+    opacity:0.6; 
+    display:none; 
+    z-Index:999;  
+
+}
+.p_popup_password{
+    position:absolute;
+    width:340px;
+    height:280px;
+    top:50%;
+    left:50%;
+    background-color:#fff;
+    display:none;
+    cursor:pointer;
+    z-Index:9999;  
+    margin-left: -170px;
+    margin-top: -140px;
+    border-radius: 5px;
+}
+.p_popup_password p{
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    padding: 20px 0px;
+
+}
+.p_popup_password div{
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+
+}
+.p_popup_password li{
+    width: 196px;
+    height: 38px;
+    border: solid #007bff 1px;
+    background:#ecf5fe;
+    text-align: center;
+    line-height: 38px;
+    color: #007bff;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
