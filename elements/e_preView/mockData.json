@@ -1,36 +1,40 @@
 {
   "prop": {
-    "showImages":1,
-      "list":[
-        {
-          "id ": 0, 
+    "showImages":true, 
           "templateId":"132",
-                  "skuId": 0, 
-                  "productId": "012", 
-                  "title": "@cparagraph", 
-                  "summary": "@cparagraph", 
-                  "keywords": [
-                      {
-                          "itemName": "@cname"
-                      }
-                  ], 
-                  "coverImage": "https://img13.360buyimg.com/n7/jfs/t1/123066/16/14793/87243/5f843aafE96049e8c/2559285b2e40e600.jpg", 
-                  "images": [
-                    {
-                        "id": 134, 
-                        "title ": "@cparagraph", 
-                        "url": "https://img14.360buyimg.com/n7/jfs/t1/134740/26/11967/92060/5f843e70E8005bcb6/bb4d854e230a6b2c.jpg", 
-                        "iscover": 0
-                    }, 
-                    {
-                        "id": 135, 
-                        "title ": "@cparagraph", 
-                        "url": "https://img10.360buyimg.com/n7/jfs/t1/137150/16/2795/236117/5ef094c2E18b7dff2/76c0ec42b95fb155.jpg", 
-                        "iscover": 0
-                    }
-                ]
-        }
-      ]
+          "skuId": 0, 
+          "productId": "012", 
+          "title": "@cparagraph", 
+          "summary": "@cparagraph", 
+          "retailPrice":22,
+          "price":28,
+          "href":"",
+          "code":"",
+          "target":"",
+          "weightunit":"weightunit",
+          "weight":"weight",
+          "unit":"unit",
+          "keywords": [
+                  {
+                      "itemName": "@cname"
+                  }
+              ], 
+              "coverImage": "https://img13.360buyimg.com/n7/jfs/t1/123066/16/14793/87243/5f843aafE96049e8c/2559285b2e40e600.jpg", 
+              "images": [
+                {
+                    "id": 134, 
+                    "title ": "@cparagraph", 
+                    "url": "https://img14.360buyimg.com/n7/jfs/t1/134740/26/11967/92060/5f843e70E8005bcb6/bb4d854e230a6b2c.jpg", 
+                    "iscover": 0
+                }, 
+                {
+                    "id": 135, 
+                    "title ": "@cparagraph", 
+                    "url": "https://img10.360buyimg.com/n7/jfs/t1/137150/16/2795/236117/5ef094c2E18b7dff2/76c0ec42b95fb155.jpg", 
+                    "iscover": 0
+                }
+            ]
+       
     
   },
   "i18n": {}

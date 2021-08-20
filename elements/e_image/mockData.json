@@ -1,15 +1,14 @@
 {
-  "prop": {
-      "src":"https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-      "title":"图片标题",
+    "prop": {
+        "src":"https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "title":"图片标题",
         "href":{
             "type":"",
             "value":"",
             "target":""
         },
-        "isLazy":true
-   
-        
-  },
-  "i18n": {}
+        "isLazy":true,
+        "fit":"contain"
+    },
+    "i18n": {}
 }

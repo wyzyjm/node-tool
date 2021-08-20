@@ -1,4 +1,4 @@
-<ul class="e_specification">
+<ul class="e_specification" needjs="true">
     {{#prop.specList}}
         <li class="p_item">
             <!--规格名称-->
@@ -6,19 +6,17 @@
             <!--规格值-->
             <ul class="p_valueUl">
                 {{#productSpecValues}}
-                <li class="itemValue"> 
+                <li class="itemValue " data-id="{{specId}}"> 
                     {{#if ../imageFlag}}
                         <!--图片类型-->
-                        {{{lazyImage img "class='specValueI' title='{{name}}' alt='{{name}}' " 'true'}}}
+                        {{{lazyImage img "class='specValueI p_size' title='{{name}}' alt='{{name}}' " 'true'}}}
                     {{^}}
                         <!--文字类型-->
-                        <span class="specValueT">{{name}}</span>
+                        <span class="specValueT p_size">{{name}}</span>
                     {{/if}}
                 </li>
                 {{/productSpecValues}}
             </ul>
         </li>
     {{/prop.specList}}
-    <!--js传值-->
-    <input type="hidden" name="propJson" value="{{{propJson}}}">
 </ul>

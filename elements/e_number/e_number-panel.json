@@ -1,0 +1,19 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-number",
+            "name":"数字输入框",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "showPlaceholder":"prop.showPlaceholder",
+            "placeholder":"prop.placeholder",
+            "value":"prop.value",
+            "state":"prop.state",
+            "decimal":"prop.decimal",
+            "unit":"prop.unit",
+            "validate":"prop.validate"
+        }
+    ]
+}
+  

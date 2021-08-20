@@ -1,0 +1,56 @@
+{
+  "apiType": "object",
+  "dataFields": [
+    
+    {
+      "name": "href",
+      "cname": "图片链接",
+      "type": "number"
+    },
+    {
+      "name": "target",
+      "cname": "打开方式",
+      "type": "number"
+    },
+    {
+      "name": "coverImage",
+      "cname": "封面图路径",
+      "type": "number"
+    },
+    {
+      "name": "skuId",
+      "cname": "默认货品id",
+      "type": "number"
+    },
+    {
+      "name": "productId",
+      "cname": "产品ID",
+      "type": "number"
+    },
+    {
+      "name": "summary",
+      "cname": "描述",
+      "type": "string"
+    },
+    {
+      "name": "price",
+      "cname": "市场价",
+      "type": "number"
+    },
+    {
+      "name": "retailPrice",
+      "cname": "零售价",
+      "type": "number"
+    },
+    {
+      "name": "title",
+      "cname": "商品名称",
+      "type": "string"
+    },
+    {
+      "name": "images",
+      "cname": "预览商品",
+      "type": "array[images]"
+    }
+  ]
+}

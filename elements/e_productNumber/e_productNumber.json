@@ -2,7 +2,7 @@
   "cname": "产品详情数量",
   "styleId": "e_productNumber",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <!-- lable -->\r\n    <div class=\"p_label\">{{${i18n.count}}}</div>\r\n    <div class=\"p_box\">\r\n        <!-- 减少 -->\r\n        <div class=\"border rounded-left p_reduce\">-</div>\r\n        <!-- input -->\r\n        <input type=\"text\" class=\"border p_input\" value=\"{{${moq}}}\">\r\n        <!-- 增加 -->\r\n        <div class=\"border rounded-right p_increase\">+</div>\r\n    </div>\r\n    <!-- 传值 -->\r\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}' />\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <!-- lable -->\r\n    <div class=\"p_label\">{{${i18n.count}}}</div>\r\n    <div class=\"p_box\">\r\n        <!-- 减少 -->\r\n        <div class=\"border rounded-left p_reduce\" data-moq=\"{{${moq}}}\">-</div>\r\n        <!-- input -->\r\n        <input type=\"text\" class=\"border p_input\" value=\"{{#if ${moq}}} {{${moq}}} {{^}} 1 {{/if}}\">\r\n        <!-- 增加 -->\r\n        <div class=\"border rounded-right p_increase\" data-stock=\"{{${stock}}}\">+</div>\r\n    </div>\r\n</div>",
   "css": [
     {
       "media": "",
@@ -23,11 +23,11 @@
   ],
   "prop": {
     "stock": 20,
-    "moq": 2
+    "moq": 0
   },
   "i18n": {
     "zh_CN": {
-      "count": "数量 : "
+      "count": "数量"
     }
   },
   "datasource": "prop",

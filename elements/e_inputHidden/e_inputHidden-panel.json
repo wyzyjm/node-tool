@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-inputHidden",
+            "bind-name": "prop.name",
+            "bind-value": "prop.value",
+            "title": "隐藏域"
+        }
+    ]
+}

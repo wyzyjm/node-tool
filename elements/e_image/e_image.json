@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_image img{\n    width: 100%;\n}\n"
+      "cssText": ".e_image img{\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -29,7 +29,8 @@
       "value": "",
       "target": ""
     },
-    "isLazy": true
+    "isLazy": true,
+    "fit": "contain"
   },
   "i18n": {
     "zh_CN": {}

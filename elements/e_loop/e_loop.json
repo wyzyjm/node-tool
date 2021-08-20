@@ -2,11 +2,11 @@
   "cname": "循环体容器",
   "styleId": "e_loop",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${dataList}}}\n        <div class=\"p_list\">\n        {{#${dataList}}}\n            <div class=\"cbox-${id} p_item\"></div>\n        {{/${dataList}}}\n        </div>\n        <div class=\"p_page\">\n            {{{nPaging ${page} ${pageConfig}}}}\n        </div>\n    {{^}}\n    {{{noDataPrompt}}}\n    {{/if}}\n</div>\n",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#if ${dataList}}}\r\n        <div class=\"p_list\">\r\n        {{#${dataList}}}\r\n            <div class=\"cbox-${id} p_item\"></div>\r\n        {{/${dataList}}}\r\n        </div>\r\n        <div class=\"p_page\">\r\n            {{{nPaging ${page} ${pageConfig}}}}\r\n        </div>\r\n    {{^}}\r\n    {{{nNoDataPrompt}}}\r\n    {{/if}}\r\n</div>\r\n",
   "css": [
     {
       "media": "",
-      "cssText": ".e_loop .p_list{\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_loop .p_item{\n    width: 33.3%;\n}\n.e_loop .p_page{\n    text-align: center;\n}"
+      "cssText": ".e_loop .p_list{\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n}\r\n.e_loop .p_item{\r\n    flex:0 0 33.3%;\r\n    position: relative;\r\n}\r\n.e_loop .p_page{\r\n    text-align: center;\r\n}"
     },
     {
       "media": "screen and (max-width:768px)",

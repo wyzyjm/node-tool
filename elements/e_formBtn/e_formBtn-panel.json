@@ -7,9 +7,8 @@
             "text":"prop.text",
             "type":"prop.type",
             "action":"prop.action",
-            "logic":"prop.logic",
-            "prompt":"prop.prompt",
-            "output":"prop.output"
+            "business":"prop.business",
+            "prompt":"prop.prompt"
         }
     ]
 }

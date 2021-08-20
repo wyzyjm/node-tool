@@ -7,8 +7,6 @@
     "type":"text",
     "value":"",
     "state":"normal",
-    "decimal":2,
-    "unit":"千克",
     "validate":{
         "required":{
             "state":true,
@@ -24,16 +22,6 @@
             "state":true,
             "value":128,
             "msg":"您输入的内容不能多于%len个字符"
-        },
-        "min":{
-            "state":true,
-            "value":10,
-            "msg":"您输入的内容最小值为%len"
-        },
-        "max":{
-            "state":true,
-            "value":100,
-            "msg":"您输入的内容最大值为%len"
         },
         "custom":{
             "state":false,

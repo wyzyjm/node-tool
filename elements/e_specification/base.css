@@ -14,6 +14,7 @@
    float: left;
    height: 30px;
    line-height: 30px;
+   margin-right: 10px;
 }
 .e_specification .p_valueUl {
     margin-left: 40px;
@@ -22,15 +23,17 @@
 .e_specification .itemValue {
     float: left;
     margin-right: 5px;
-    margin-right: 5px;
     margin-bottom: 5px;
     overflow: hidden;
+    border: 1px solid #ccc;
+}
+.e_specification .p_active  {
+    border-color: var(--primary);
 }
 .e_specification .specValueT {
     display: block;
     padding: 3px 16px;
     text-align: center;
-    border: 1px solid #ccc;
 }
 .e_specification .specValueI {
     width: 46px;

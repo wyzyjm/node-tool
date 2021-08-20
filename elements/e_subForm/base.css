@@ -8,6 +8,7 @@
     background-color: #f0f0f0;
     height: 36px;
     line-height: 36px;
+    display: flex;
 }
 .e_subForm .p_tbody{
     margin-bottom: 20px;
@@ -17,6 +18,20 @@
     display: flex;
     flex-wrap: wrap;
 }
+.e_subForm .p_th{
+    flex: 1;
+}
+.e_subForm .p_th:last-child{
+    text-align: center;
+}
 .e_subForm .p_td{
     flex: 1;
+}
+.e_subForm .p_td:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.e_subForm .p_remove{
+
 }

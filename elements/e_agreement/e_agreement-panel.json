@@ -9,7 +9,6 @@
             "linkText":"prop.linkText",
             "placeholder":"prop.placeholder",
             "content":"prop.content",
-            "select":"prop.select",
             "validate":"prop.validate"
         }
     ]

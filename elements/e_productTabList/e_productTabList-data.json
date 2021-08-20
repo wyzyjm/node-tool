@@ -1,10 +1,10 @@
 {   
-    "apiType":"list",
+    "apiType":"object",
     "dataFields":[
         {
             "name":"productTabList",
             "cname":"产品参数列表",
-            "type":"array[productParamGroupList] "
+            "type":"array[productParamGroupList]"
         }
     ]
 }

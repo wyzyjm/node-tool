@@ -347,9 +347,21 @@ helpers.noDataPrompt = function (prompt) {
     `
     return new Handlebars.SafeString(Handlebars.compile(resultStr)(this))
 };
+helpers.nNoDataPrompt = function (prompt) {
+    let resultStr= `
+        <div class="pl_empty">
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA8CAYAAADxJz2MAAABQmlDQ1BJQ0MgUHJvZmlsZQAAKJFjYGASSCwoyGFhYGDIzSspCnJ3UoiIjFJgf8LAxSDAwMnAxsCcmFxc4BgQ4ANUwgCjUcG3awyMIPqyLsisDwt+Tc/Paps5Y+PTC6JmkwIw1aMArpTU4mQg/QeIk5ILikoYGBgTgGzl8pICELsFyBYpAjoKyJ4BYqdD2GtA7CQI+wBYTUiQM5B9BcgWSM5ITAGynwDZOklI4ulIbKi9IMARaGRiaRBuSMCppIOS1IoSEO2cX1BZlJmeUaLgCAyhVAXPvGQ9HQUjAyMDBgZQeENUf74BDkdGMQ6EWFYMA4OZJgMDkypCLC2CgWFfEdDLuggxNSUGBu5UBoY9twsSixLhDmD8xlKcZmwEYXNvZ2Bgnfb//+dwBgZ2oJl/r////3v7//9/lzEwMN9iYDjwDQCGJ141dN9+JQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAUKADAAQAAAABAAAAPAAAAABO6vQ5AAAECElEQVR4Ae2aW0/rMAyAMxiwcduQEAhWHnjh//8eXngAAUMINjHul3P4IuWomkqSzk7HdGKpalljx/7iJqlL68+3mCwzE1iaWTMrWgIZoDARMsAMUEhAqJ4zMAMUEhCq5wzMAIUEhOo5AzNAIQGhes7ADFBIQKjeFurXVh+NRubt7a22XozC2tqa6fV6MU3V2rSarMZcXl6a9/d3s7GxoRZA2dDj46NZWVkxh4eH5Z+TXjcG8Pb21jw9PZmjoyPTarWSBEVl7vz83Kyvr5vd3d0kfUwbbWQRub+/Nzy6BwcHyeARGANDH/TF0YQkB/jw8GCGw6EpisI+XqmD4hEuBoW5vr429J1akgJ8fn42FxcXFl6n00kdyz/7nW7H9knf+JBSkgFksSAAHqnNzc2UMVTapk/6xgd8SSVJAH59fVnHd3Z2TL/fT+V70C594wMQU336SQIQh5tcCX0kWY3xhdU5hagDZK+3vLxs9vf3U/g7k018wSd80xZVgDc3N3a+GQwG2n6K7eETcyE+aooawLu7u+9tw8SufpoOatpiK8XWBl+1RAXgeDw2vGkUxcA+KlrOadvhMQYivuKzhqi8yp2enlpflpbC4/H5+WlXZu05ks06bx9ACgm7BOTk5CTUNHhfpRrz8fER/Y7LPDSZTMzV1ZXdpwU9jGiALXzY29uLettx26wI08EmKgDphVeomAxcXV013W7XnJ2d2YBjMsYXBRlN5h0fH0f1jy2XgT67sffCz1yspRrtAA04jaoMNrAVM3g1XIxuOheAeEfGUt6SCjawNS9Re4TrBrC1tWX3ZDxOsxYaXl5e7Iq6vb1dt3u19nMDSNDAY/WUCCX8/xIg0HjZn2exQTJwTnduc6BzYNHPKgA1VtOmQWr5nAEKR04FoNCHhVbPAIXDlwFmgEICQnVRBrIRTvnFSxhbUB3fpYWF2m8idEjpiCoIB5Lqi1eQgLDB6+urtUAxgqPdbtcuSkQDBBbgOBYV2E+8XTKQkUDkAGiMRAHEMP+S5gPnuxfjSJNt8LXKX34jVpKEumVMlSc4BzI6GK3q0AVNR7RZFMFXHxwH0k1RvriCADHmg4dxKsxaH2l8zmrdG43G1mefvZi40Y/6qMRkG8owylKMKpXhWet7voA07lE/dHN56KMWsfAfryGJAli18lYZ5psr84d0a1BlW+M3BpcFgmLuT1J3RY4C6Dojrd1KHDM/OL1FOLttDIDrVGpqAXQgAEmWcQDSXbv7i3AmGzkA567rgHMxzgTQKZfPDuL0udxmXtcO0PRZwx81gFXOuJXMd0aP++Xz9DV/l7PDXZfPXPsObKSQpABTOPzbbAb3gb/N4d/mTwYoHJEMMAMUEhCq5wzMAIUEhOp/AaxH8Lm1PiS6AAAAAElFTkSuQmCC" alt="{{i18n.noData}}">
+                <p>{{i18n.noData}}</p>
+            </div>
+        </div>
+    `
+    return new Handlebars.SafeString(Handlebars.compile(resultStr)(this))
+};
 
 //Handlebars  browser
 Handlebars.registerHelper("noDataPrompt", helpers.noDataPrompt);
+Handlebars.registerHelper("nNoDataPrompt", helpers.nNoDataPrompt);
 Handlebars.registerHelper("paging", helpers.paging);
 Handlebars.registerHelper("nPaging", helpers.nPaging);
 Handlebars.registerHelper("lazyImage", helpers.lazyImage);

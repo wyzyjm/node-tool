@@ -2,11 +2,11 @@
   "cname": "标记图标",
   "styleId": "e_flagIcon",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#if ${markList}}}\r\n     <div class=\"p_flog\"   >\r\n        {{#${markList}}}\r\n        <div class=\"p_flog_c\"> <img src=\"{{markIUrl}}\" alt=\"{{markName}}\" class=\"p_flog_img\" ></div>\r\n        {{/${markList}}}\r\n    </div>\r\n    {{/if}}\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n         {{#${markList}}}\r\n            <div class=\"p_flog\">\r\n                <div class=\"p_flog_c\">\r\n                    {{{lazyImage markUrl 'class=\"p_flog_img\"  title=\"{{${markList$markName}}}\" alt=\"{{${markList$markName}}}\"' 'true'}}}     \r\n                </div>\r\n            </div>\r\n        {{/${markList}}}\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": "\n.e_flagIcon .p_flog{\n    position: absolute;\n    right: 0;\n    top: 0;\n    width: 100%;\n}\n.e_flagIcon .p_flog_c{\n    width: 25%;\n    float:right;\n    padding-left: 3px;\n}\n.e_flagIcon .p_flog_img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}"
+      "cssText": "\n.e_flagIcon{\n    text-align: right;\n}\n.e_flagIcon .p_flog{\n    display: inline-block;\n    width: 50px;\n    height: 30px;\n}\n\n.e_flagIcon .p_flog_img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -26,12 +26,12 @@
       {
         "id ": 1,
         "markName": "热",
-        "markIUrl": "https://img13.360buyimg.com/jdcms/s150x150_jfs/t1/185564/24/165/107421/607fba6aEb1c04f1d/0df0a956cb070a2f.jpg.webp"
+        "markUrl": "https://img13.360buyimg.com/jdcms/s150x150_jfs/t1/185564/24/165/107421/607fba6aEb1c04f1d/0df0a956cb070a2f.jpg.webp"
       },
       {
         "id ": 2,
         "markName": "热w",
-        "markIUrl": "https://img11.360buyimg.com/babel/s320x320_jfs/t1/174247/1/12368/65785/60b470d2E54c1c8de/c18289db69462165.jpg!cc_320x320.webp"
+        "markUrl": "https://img11.360buyimg.com/babel/s320x320_jfs/t1/174247/1/12368/65785/60b470d2E54c1c8de/c18289db69462165.jpg!cc_320x320.webp"
       }
     ]
   },
@@ -40,9 +40,9 @@
   },
   "datasource": "prop",
   "dataFields": {
-    "markList": "markList",
-    "markList$id ": "id ",
+    "list$markList": "markList",
     "markList$markName": "markName",
-    "markList$markIUrl": "markIUrl"
+    "markList$markUrl": "markUrl",
+    "markList$id ": "id "
   }
 }

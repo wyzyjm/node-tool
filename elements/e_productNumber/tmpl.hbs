@@ -3,12 +3,10 @@
     <div class="p_label">{{i18n.count}}</div>
     <div class="p_box">
         <!-- 减少 -->
-        <div class="border rounded-left p_reduce">-</div>
+        <div class="border rounded-left p_reduce" data-moq="{{prop.moq}}">-</div>
         <!-- input -->
-        <input type="text" class="border p_input" value="{{prop.moq}}">
+        <input type="text" class="border p_input" value="{{#if prop.moq}} {{prop.moq}} {{^}} 1 {{/if}}">
         <!-- 增加 -->
-        <div class="border rounded-right p_increase">+</div>
+        <div class="border rounded-right p_increase" data-stock="{{prop.stock}}">+</div>
     </div>
-    <!-- 传值 -->
-    <input type="hidden" name="propJson" value='{{{propJson}}}' />
 </div>

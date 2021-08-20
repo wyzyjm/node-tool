@@ -1,5 +1,5 @@
 {   
-    "apiType":"list",
+    "apiType":"object",
     "dataFields":[
         {
             "name":"specList",

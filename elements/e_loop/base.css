@@ -3,7 +3,8 @@
     flex-wrap: wrap;
 }
 .e_loop .p_item{
-    width: 33.3%;
+    flex:0 0 33.3%;
+    position: relative;
 }
 .e_loop .p_page{
     text-align: center;
