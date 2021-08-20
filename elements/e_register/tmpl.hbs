@@ -1,0 +1,136 @@
+<div class="e_register p_container" needjs="true">
+    <h4 class="border-bottom">欢迎注册</h4>
+    <div class="p_wrapper">
+        {{#prop.registerList1}}
+        <div class="p_line">
+            <label class="p_label">
+                {{#if required}}<span class="text-danger p_required">*</span>{{/if}}
+                {{name}}
+            </label>
+
+            {{#eq type 'rangeDate'}}
+            <div class="form-control clearfix p_range rangeDate">
+                <input type="text" name="{{type}}" {{#eq showPlaceholder 'word'}}placeholder="{{startPlaceholder}}"{{/eq}} class="p_start">
+                <span class="p_fenge">—</span>
+                <input type="text" name="{{type}}" {{#eq showPlaceholder 'word'}}placeholder="{{endPlaceholder}}"{{/eq}} class="p_end">
+            </div>
+            {{/eq}}
+
+            {{#eq dataType 'date'}}
+            <div class="j_date form-control clearfix p_range ">
+                <input type="text" name="" class="dateInput" placeholder="{{tooltip}}">
+            </div>
+            {{/eq}}
+
+            {{#eq dataSubType 'singleText'}}
+            <div class="form-control clearfix p_range ">
+                <input type="text" name="" placeholder="{{tooltip}}" class="p_input">
+            </div>
+            {{/eq}}
+
+            {{#eq dataSubType 'multiText'}}
+            <div class="form-control clearfix p_range ">
+                <textarea rows="3" name="" placeholder="{{tooltip}}" class="p_input"></textarea>
+            </div>
+            {{/eq}}
+
+            {{#eq dataSubType 'selSigle'}}
+            <div class="form-control clearfix p_range ">
+                <select class="p_input" name="" >
+                    <option value="">{{tooltip}}</option>
+                    {{#dataItem}}
+                    <option value="{{value}}">{{label}}</option>
+                    {{/dataItem}}
+                </select>
+            </div>
+            {{/eq}}
+
+            {{#eq dataSubType 'selMulti'}}
+            <div class="form-control clearfix p_input p_range multSelect ">
+                <input type="hidden" class="multSelectInput" name="">
+            </div>
+            {{/eq}}
+                
+            {{#eq dataType 'radio'}}
+            <div class="form-control clearfix p_range no_border">
+                {{#dataItem}}
+                <input class="p_radio" type="radio" name="" id="${elemId}-{{@index}}" value="{{value}}" >
+                <label class="p_radioLabel" for="${elemId}-{{@index}}">{{label}}</label>
+                {{/dataItem}}
+            </div>
+            {{/eq}}
+                
+            {{#eq dataType 'checkbox'}}
+            <div class="form-control clearfix p_range no_border">
+                {{#dataItem}}
+                <div class="form-check form-check-inline p_radioItem">
+                    <input class="form-check-input" type="checkbox" name="" id="${elemId}-{{@index}}" value="{{value}}" >
+                    <label class="form-check-label" for="${elemId}-{{@index}}">{{label}}</label>
+                </div>
+                {{/dataItem}}
+            </div>
+            {{/eq}}
+            
+            <div class="invalid-feedback"></div>
+        </div>
+        {{/prop.registerList1}}
+        <div class="p_line codeLine" >
+            <label class="p_label">验证码</label>
+            <div class="form-control clearfix p_range">
+                <input type="text" name="code" placeholder="短信验证码" class="p_codeInput">
+                <button class="p_codeBtn">获取验证码</button>
+            </div>
+        </div>
+        <div class="p_line">
+            <label class="p_label"></label>
+            <div class="form-control clearfix p_range no_border">
+                <p>
+                    <input type="checkbox" name="agreement"  />
+                    <label>已阅读并同意<span class="text-danger openAgreement">《用户注册协议》</span></label>
+                </p>
+                <button class="bg-primary text-white p_registerBtn">立即注册</button>
+            </div>
+            <div class="invalid-feedback"></div>
+        </div>
+        <div class="p_mark">
+            <div class="bg-white p_agreementWrapper">
+                <h6>
+                    用户注册协议
+                    <svg t="1629190318737" class="icon closeAgreement" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1523" width="200" height="200"><path d="M787.8125 296.1875L296.28125 787.8125c-16.40625 16.40625-43.125 16.40625-59.625 0-16.40625-16.40625-16.40625-43.125 0-59.625l491.53125-491.53125c16.40625-16.40625 43.125-16.40625 59.625 0s16.5 43.125 0 59.53125z" p-id="1524" fill="#cdcdcd"></path><path d="M787.8125 787.8125c-16.40625 16.40625-43.125 16.40625-59.625 0L236.65625 296.1875c-16.40625-16.40625-16.40625-43.125 0-59.625s43.125-16.40625 59.625 0l491.53125 491.53125c16.5 16.59375 16.5 43.21875 0 59.71875z" p-id="1525" fill="#cdcdcd"></path></svg>
+                </h6>
+                <div class="p_text">    本协议是您与网站（简称;本站;，网址：xxxxxx）所有者（以下简称为;;）之间就网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议，您点击;同意并继续;按钮后，本协议即构成对双方有约束力的法律档。
+                    第1条 本站服务条款的确认和接纳
+                    1.1本站的各项电子服务的所有权和运作权归所有。用户同意所有注册协议条款并完成注册程序，才能成为本站的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。
+                    1.2用户点击同意本协议的，即视为用户确认自己具有享受本站服务、下单购物等相应的权利能力和行为能力，能够独立承担法律责任。
+                    1.3如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。
+                    1.4保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。
+                    第2条 本站服务
+                    2.1通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。
+                    1.4保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。
+                    2.1通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。
+                    第1条 本站服务条款的确认和接纳
+                    1.1本站的各项电子服务的所有权和运作权归所有。用户同意所有注册协议条款并完成注册程序，才能成为本站的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。
+                    1.2用户点击同意本协议的，即视为用户确认自己具有享受本站服务、下单购物等相应的权利能力和行为能力，能够独立承担法律责任。
+                    1.3如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。
+                    1.4保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。
+                    第2条 本站服务
+                    2.1通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。
+                    1.4保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。
+                    2.1通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。
+                    第1条 本站服务条款的确认和接纳
+                    1.1本站的各项电子服务的所有权和运作权归所有。用户同意所有注册协议条款并完成注册程序，才能成为本站的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。
+                    1.2用户点击同意本协议的，即视为用户确认自己具有享受本站服务、下单购物等相应的权利能力和行为能力，能够独立承担法律责任。
+                    1.3如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。
+                    1.4保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。
+                    第2条 本站服务
+                    2.1通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。
+                    1.4保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。
+                    2.1通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。
+                </div>
+                <button class="bg-primary text-white p_agreementBtn">同意并继续</button>
+            </div>
+            
+        </div>
+    </div>
+    <input type="hidden" name="propJson" value='{{{propJson}}}'>
+</div>

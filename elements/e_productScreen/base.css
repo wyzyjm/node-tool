@@ -11,7 +11,7 @@
     text-overflow: ellipsis;
 }
 .e_productScreen .p_valBox{
-    max-width: 982px;
+    max-width: 782px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,6 +20,7 @@
     width: 100px;
     height: 35px;
     padding: 2px;
+    overflow: hidden;
     position: relative;
     margin-bottom: 7px;
     margin-right: -1px;
@@ -81,8 +82,13 @@
 }
 .e_productScreen .p_checkedItem{
     display: inline-block;
+    font-style: normal;
     padding: 3px 4px;
     margin-right: 6px;
+    margin-bottom: 6px;
+}
+.e_productScreen .p_checkedItem i{
+    font-style: normal;
 }
 .e_productScreen button{
     padding: 4px 6px;

@@ -17,7 +17,7 @@
     display: flex;
 }
 .e_productScreen .p_lBox{
-    width: 120px;
+    width: 100px;
     min-height: 40px;
     display: flex;
     flex-shrink: 0;
@@ -35,11 +35,14 @@
     overflow: hidden;
     justify-content: space-between;
 }
+.e_productScreen .p_bLine .p_rBox{
+    padding-bottom: 4px;
+}
 .e_productScreen .p_screenLine .p_rBox{
     height: 51px;
 }
 .e_productScreen .p_imgBox{
-    max-width: 914px;
+    max-width: 714px;
     max-height: 126px;
     /* overflow-y: scroll; */
 }
@@ -72,10 +75,34 @@
     padding: 0 4px;
     outline: none;
 }
-.e_productScreen .p_dataInput{
+/* .e_productScreen .p_dataInput{
     width:140px;
     height: 27.72px;
     outline: none;
+} */
+.e_productScreen .p_range{
+    width:205px;
+    height: 27.72px;
+    padding-left: 10px;
+}
+.e_productScreen .p_start, .e_productScreen .p_end{
+    width: 85px;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.e_productScreen .p_start::placeholder, .e_productScreen .p_end::placeholder {
+    text-align: center;
+    font-size: 12px;
+}
+
+.e_register .p_fenge{
+    display: block;
+    width: 20px;
+    text-align: center;
+    float: left;
+    color: #bbb;
 }
 .e_productScreen .p_setDown{
     height: auto !important;
