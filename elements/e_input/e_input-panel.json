@@ -11,8 +11,6 @@
             "type":"prop.type",
             "value":"prop.value",
             "state":"prop.state",
-            "decimal":"prop.decimal",
-            "unit":"prop.unit",
             "validate":"prop.validate"
         }
     ]

@@ -1,0 +1,10 @@
+{   
+    "apiType":"object",
+    "dataFields":[
+        {
+            "name":"value",
+            "cname":"值",
+            "type":"string"
+        }
+    ]
+}

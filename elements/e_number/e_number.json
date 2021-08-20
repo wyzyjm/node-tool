@@ -1,0 +1,61 @@
+{
+  "cname": "数字输入框",
+  "styleId": "e_number",
+  "styleClass": "",
+  "type": "form",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"p_number {{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"input-group\">\n            <input type=\"number\" class=\"form-control p_input\" name=\"${elemId}\" \n                {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n                {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n                {{#eq ${state} 'disabled'}}disabled{{/eq}}\n            >\n            <div class=\"input-group-append\">\n                <span class=\"p_unit\">\n                {{${unit}}}\n                </span>\n            </div>\n            <div class=\"invalid-feedback\"></div>\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_number .p_unit{\n    line-height: 36px;\n    padding:0 10px;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "showLabel": true,
+    "label": "数字输入框",
+    "showPlaceholder": true,
+    "placeholder": "请输入...",
+    "value": "",
+    "state": "normal",
+    "decimal": 2,
+    "unit": "千克",
+    "validate": {
+      "required": {
+        "state": true,
+        "value": true,
+        "msg": "内容不能为空"
+      },
+      "min": {
+        "state": true,
+        "value": 10,
+        "msg": "您输入的内容最小值为%len"
+      },
+      "max": {
+        "state": true,
+        "value": 100,
+        "msg": "您输入的内容最大值为%len"
+      },
+      "custom": {
+        "state": false,
+        "reg": "",
+        "msg": ""
+      }
+    }
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}

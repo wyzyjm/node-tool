@@ -22,7 +22,7 @@
             </div>
             <!--缩略图-->
             <div class="magnifier-line js-magnifier-line">
-                <ul class="clearfix animation03 p_thumbnail_box">
+                <ul class="clearfix animation03 p_thumbnail_box" data-imglist="[{{#prop.dataList}} {{#eq type "image"}} {url:{{url}},name:{{title}} }  {{/eq}} {{/prop.dataList}}]">
                     {{#prop.dataList}}
                         {{#eq type "video"}}
                         <!--视频-->

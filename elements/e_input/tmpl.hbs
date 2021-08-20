@@ -8,15 +8,28 @@
     {{#eq prop.state 'readOnly'}}
     <p class="p_formValue">{{prop.value}}</p>
     {{/eq}}
-    <div class="{{#eq prop.type 'number'}}p_number{{/eq}} {{#eq prop.state 'readOnly'}}hide{{/eq}}">
-        <input type="text" class="form-control p_input" name="${elemId}" 
-            {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} 
-            {{#if prop.value}}value="{{prop.value}}"{{/if}} 
-            {{#eq prop.state 'disabled'}}disabled{{/eq}}
-        >
-        {{#eq prop.type 'number'}}{{prop.unit}}{{/eq}}
-        <div class="invalid-feedback"></div>
+    <div class="{{#eq prop.state 'readOnly'}}hide{{/eq}}">
+        <div class="input-group">
+            {{#eq prop.type 'countryMobile'}}
+            <div class="input-group-prepend">
+                <select class="form-control p_phoneCode" name="phoneDail"></select>
+                <input type="hidden" name="phoneIso" />
+            </div>
+            {{/eq}}
+            {{#eq prop.type 'countryTel'}}
+            <div class="input-group-prepend">
+                <select class="form-control p_phoneCode" name="phoneDail"></select>
+                <input type="hidden" name="phoneIso" />
+            </div>
+            {{/eq}}
+            <input type="text" class="form-control p_input" name="${elemId}" 
+                {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} 
+                {{#if prop.value}}value="{{prop.value}}"{{/if}} 
+                {{#eq prop.state 'disabled'}}disabled{{/eq}}
+            >
+            <div class="invalid-feedback"></div>
+        </div>
+        
     </div>
-    
     <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

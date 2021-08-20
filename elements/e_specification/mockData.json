@@ -6,32 +6,22 @@
       "specName" : "尺码",
       "imageFlag" : 0, 
       "productSpecValues" : [{
-          "specId": 1231, 
+          "specId": "877549833190694912", 
           "name" : "S",
           "img" : ""
       },
       {
-        "specId": 1231, 
+        "specId": "877549833190694913", 
         "name" : "M",
         "img" : ""
       },
       {
-        "specId": 1231, 
+        "specId": "877549833190694914", 
         "name" : "XL",
         "img" : ""
       },
       {
-        "specId": 1231, 
-        "name" : "M",
-        "img" : ""
-      },
-      {
-        "specId": 1231, 
-        "name" : "XL",
-        "img" : ""
-      },
-      {
-        "specId": 1231, 
+        "specId": "877593912750432258", 
         "name" : "XXL",
         "img" : ""
       }
@@ -44,22 +34,22 @@
       "imageFlag" : 1, 
       "productSpecValues" : [
         {
-          "specId": 1231, 
+          "specId": "877549007093161984", 
           "name" : "红",
           "img" : "https://img11.360buyimg.com/n9/s60x76_jfs/t1/192436/1/11736/154990/60e547edE485e6cd3/86482dd29bd2224d.jpg!cc_60x76.jpg"
         },
         {
-          "specId": 1231, 
+          "specId": "877549007093161985", 
           "name" : "粉",
           "img" : "https://img13.360buyimg.com/n9/s60x76_jfs/t1/171931/16/18722/128367/60e54800E1ba2cb79/1e05c7084897e0a3.jpg!cc_60x76.jpg"
         },
         {
-          "specId": 1231, 
+          "specId": "877593912750432256", 
           "name" : "蓝",
           "img" : "https://img14.360buyimg.com/n9/s60x76_jfs/t1/35240/39/15274/119256/60e547f9Edf1c8e52/7e473069ba1c1404.jpg!cc_60x76.jpg"
         },
         {
-          "specId": 1231, 
+          "specId": "877593912750432257", 
           "name" : "黑",
           "img" : "https://img12.360buyimg.com/n9/s60x76_jfs/t1/193831/14/12097/100870/60e547f1E7ff195b4/509be41568751514.jpg!cc_60x76.jpg"
         }

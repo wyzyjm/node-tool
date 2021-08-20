@@ -2,11 +2,11 @@
   "cname": "对比-浮动窗",
   "styleId": "e_floating",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs='true'>\r\n    <div class=\"p_comp\" data-ename=\"组件容器\">\r\n        <div class=\"badge-primary p-1 p_contrast\" data-ename=\"对比按钮（mo）\">\r\n            <span class=\"p_contrast_text\">{{${i18n.contrast}}}</span>\r\n            <span class=\"p_contrast_num\" data-ename=\"对比数量\">4</span>\r\n        </div>\r\n        <div class=\"p_obscuration\" data-ename=\"蒙层\">\r\n            <div class=\"bg-white p_contrast_list\" data-ename=\"对比列表\">\r\n                <div class=\"alert alert-danger p_danger hide\" data-ename=\"提示语\">\r\n                    {{${i18n.tip}}}\r\n                </div>\r\n                <div class=\"text-primary p_title\" data-ename=\"副标题\">\r\n                    <div class=\"j_tab p_tab\">\r\n                    </div>\r\n                    <select class=\"mx-3 my-2 form-control j_mo_tab p_form-control\">\r\n                    </select>\r\n                    <span class=\"px-3 py-2 p_title_hidden\" data-ename=\"副标题隐藏\">{{${i18n.hidden}}}</span>\r\n                </div>\r\n                <ul class=\"j_switch_list\">\r\n                    <li>\r\n                        <ul class=\"border border-primary px-sm-2 py-md-2 p_data_list\" data-ename=\"循环体容器\">\r\n                        </ul>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}' />\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{{i18nJson}}}' />\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div class=\"p_comp\" data-ename=\"组件容器\">\r\n        <div class=\"badge-primary p-1 p_contrast\" data-ename=\"对比按钮（mo）\">\r\n            <span class=\"p_contrast_text\">{{${i18n.contrast}}}</span>\r\n            <span class=\"p_contrast_num\" data-ename=\"对比数量\"></span>\r\n        </div>\r\n        <div class=\"p_obscuration\" data-ename=\"蒙层\">\r\n            <div class=\"bg-white p_contrast_list\" data-ename=\"对比列表\">\r\n                <div class=\"alert alert-danger p_danger hide\" data-ename=\"提示语\">\r\n                    <span class=\"j_column\"></span>{{${i18n.tip}}}\r\n                </div>\r\n                <div class=\"text-primary p_title\" data-ename=\"副标题\">\r\n                    <div class=\"j_tab p_tab\">\r\n                    </div>\r\n                    <select class=\"mx-3 my-2 form-control j_mo_tab p_form-control\">\r\n                    </select>\r\n                    <span class=\"px-3 py-2 p_title_hidden\" data-ename=\"副标题隐藏\">{{${i18n.hidden}}}</span>\r\n                </div>\r\n                <ul class=\"j_switch_list\">\r\n                    <li>\r\n                        <ul class=\"border border-primary px-sm-2 py-md-2 p_data_list\" data-ename=\"循环体容器\">\r\n                        </ul>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}' />\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{{i18nJson}}}' />\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_floating .p_obscuration{\n    width: 100%;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    display: none;\n}\n.e_floating .p_obscuration.show{\n    display: block;\n}\n.e_floating .p_title{\n    display: flex;\n    justify-content: space-between;\n}\n.e_floating .p_form-control{\n    width: 7rem;\n    display: none;\n}\n.e_floating .p_contrast{\n    border-radius: 25px;\n    position: fixed;\n    bottom: 10%;\n    right: 0;\n    z-index: 1;\n}\n.e_floating .p_contrast_text{\n    min-width: 80px;\n    height: 28px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.e_floating .p_contrast_num{\n    position: absolute;\n    right: 0px;\n    top: -5px;\n}\n.e_floating .p_tab{\n    height: 100%;\n    margin-top: 13px;\n}\n.e_floating .p_title_compareTheBar{\n    margin: 0 1px;\n}\n.e_floating .p_title_compareTheBar.active{\n    background: #fff;\n    border: 1px solid #007bff;\n    border-bottom: #fff;\n    margin: 0\n}\n.e_floating .p_data_list{\n    display: flex;\n    flex-wrap: nowrap;\n    justify-content: space-between;\n}\n.e_floating .p_item{\n    flex: 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-right-style: dashed;\n}\n.e_floating .p_item_delete{\n    cursor: pointer;\n    display: none;\n}\n.e_floating .p_compare_amount{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between;\n}\n.e_floating .p_comparedata{\n    flex: 1;\n}\n.e_floating .p_item:last-child{\n    width: 230px;\n}\n.e_floating .p_item_img{\n    width: 60px;\n    height: 60px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.e_floating .p_item_imgsrc{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_floating .p_compare_title{\n    overflow : hidden;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-line-clamp: 2;\n    -webkit-box-orient: vertical;\n    word-break: break-all;\n}\n.e_floating .p_last_item{\n    display: flex;\n    width: 230px;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n.e_floating .p_contrast,\n.e_floating .p_contrast_hidden{\n    display: none;\n    opacity: 0;\n\n}\n.e_floating .p_danger.hide, .e_floating .hidden{\n    display: none;\n}\n.e_floating .p_item:hover .p_item_delete{\n    display: block;\n    transition: 1s height, 1s width;\n}\n.e_floating .hidden.showList{\n    display: block;\n}\n.e_floating .p_contrast_btn{\n    width: 200px;\n}\n"
+      "cssText": ".e_floating .p_obscuration{\n    width: 100%;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    display: none;\n    z-index: 20;\n}\n.e_floating .p_obscuration.show{\n    display: block;\n}\n.e_floating .p_title{\n    display: flex;\n    justify-content: space-between;\n}\n.e_floating .p_form-control{\n    width: 7rem;\n    display: none;\n}\n.e_floating .p_contrast{\n    border-radius: 25px;\n    position: fixed;\n    bottom: 10%;\n    right: 0;\n    z-index: 20;\n}\n.e_floating .p_contrast_text{\n    min-width: 80px;\n    height: 28px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.e_floating .p_contrast_num{\n    position: absolute;\n    right: 0px;\n    top: -5px;\n}\n.e_floating .p_tab{\n    height: 100%;\n    margin-top: 11px;\n}\n.e_floating .p_title_compareTheBar{\n    margin: 0 1px;\n}\n.e_floating .p_title_compareTheBar.active{\n    background: #fff;\n    border: 1px solid #007bff;\n    border-bottom: #fff;\n    margin: 0\n}\n.e_floating .p_data_list{\n    display: flex;\n    flex-wrap: nowrap;\n    justify-content: space-between;\n}\n.e_floating .p_item{\n    flex: 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-right-style: dashed;\n}\n.e_floating .p_item_delete{\n    cursor: pointer;\n    display: none;\n}\n.e_floating .p_compare_amount{\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between;\n}\n.e_floating .p_comparedata{\n    flex: 1;\n}\n.e_floating .p_item:last-child{\n    width: 230px;\n}\n.e_floating .p_item_img{\n    width: 60px;\n    height: 60px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.e_floating .p_item_imgsrc{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_floating .p_compare_title{\n    overflow : hidden;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-line-clamp: 2;\n    -webkit-box-orient: vertical;\n    word-break: break-all;\n}\n.e_floating .p_last_item{\n    display: flex;\n    width: 230px;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n.e_floating .p_contrast,\n.e_floating .p_contrast_hidden{\n    display: none;\n    opacity: 0;\n\n}\n.e_floating .p_danger.hide, .e_floating .hidden{\n    display: none;\n}\n.e_floating .p_item:hover .p_item_delete{\n    display: block;\n    transition: 1s height, 1s width;\n}\n.e_floating .hidden.showList{\n    display: block;\n}\n.e_floating .p_contrast_btn{\n    width: 200px;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,113 +22,37 @@
     }
   ],
   "prop": {
-    "floatList": [
-      {
-        "tabTitle": "对比",
-        "productList|5": [
-          {
-            "id": "@id",
-            "productId": "@id",
-            "code": 123456678,
-            "title": "对比产品名称@id",
-            "href": "/product/144. html",
-            "target": "_blank",
-            "moHref": "/product/144. html",
-            "moTarget": "_blank",
-            "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-            "price": 2000,
-            "unit": "计量单位件1",
-            "retailPrice": 1500,
-            "weight": 200,
-            "weightUnit": "kg"
-          }
-        ]
-      },
-      {
-        "tabTitle": "在线预约",
-        "productList": [
-          {
-            "id": "523",
-            "productId": 1,
-            "code": 123456678,
-            "title": "在线预约",
-            "href": "/product/144. html",
-            "target": "_blank",
-            "moHref": "/product/144. html",
-            "moTarget": "_blank",
-            "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-            "price": 2000,
-            "unit": "计量单位件1",
-            "retailPrice": 1500,
-            "weight": 200,
-            "weightUnit": "kg"
-          }
-        ]
-      },
-      {
-        "tabTitle": "预约申请",
-        "productList": [
-          {
-            "id": "523",
-            "productId": 1,
-            "code": 123456678,
-            "title": "预约申请",
-            "href": "/product/144. html",
-            "target": "_blank",
-            "moHref": "/product/144. html",
-            "moTarget": "_blank",
-            "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-            "price": 2000,
-            "unit": "计量单位件1",
-            "retailPrice": 1500,
-            "weight": 200,
-            "weightUnit": "kg"
-          }
-        ]
-      },
-      {
-        "tabTitle": "样品申请",
-        "productList": [
-          {
-            "id": "523",
-            "productId": 1,
-            "code": 123456678,
-            "title": "样品申请",
-            "href": "/product/144. html",
-            "target": "_blank",
-            "moHref": "/product/144. html",
-            "moTarget": "_blank",
-            "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-            "price": 2000,
-            "unit": "计量单位件1",
-            "retailPrice": 1500,
-            "weight": 200,
-            "weightUnit": "kg"
-          }
-        ]
-      },
-      {
-        "tabTitle": "在线询价",
-        "productList": [
-          {
-            "id": "523",
-            "productId": 1,
-            "code": 123456678,
-            "title": "在线询价",
-            "href": "/product/144. html",
-            "target": "_blank",
-            "moHref": "/product/144. html",
-            "moTarget": "_blank",
-            "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-            "price": 2000,
-            "unit": "计量单位件1",
-            "retailPrice": 1500,
-            "weight": 200,
-            "weightUnit": "kg"
-          }
-        ]
-      }
-    ]
+    "floatList": [],
+    "text1": "对比",
+    "href1": {
+      "type": "link",
+      "value": "",
+      "target": "_blank"
+    },
+    "text2": "在线预约",
+    "href2": {
+      "type": "link",
+      "value": "",
+      "target": "_blank"
+    },
+    "text3": "预约申请",
+    "href3": {
+      "type": "link",
+      "value": "",
+      "target": "_blank"
+    },
+    "text4": "样品申请",
+    "href4": {
+      "type": "link",
+      "value": "",
+      "target": "_blank"
+    },
+    "text5": "在线询价",
+    "href5": {
+      "type": "link",
+      "value": "",
+      "target": "_blank"
+    }
   },
   "i18n": {
     "zh_CN": {
@@ -138,10 +62,7 @@
       "hidden": "隐藏",
       "delete": "删除",
       "noncontrastingDescription": "您还可以继续添加",
-      "tip": "对比栏已满，您可以删除不需要的栏内商品再继续添加哦！"
+      "tip": "栏已满，您可以删除不需要的栏内商品再继续添加哦！"
     }
-  },
-  "datasource": "prop",
-  "container": true,
-  "scope": true
+  }
 }

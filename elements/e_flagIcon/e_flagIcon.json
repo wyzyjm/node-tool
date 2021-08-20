@@ -2,11 +2,11 @@
   "cname": "标记图标",
   "styleId": "e_flagIcon",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    \r\n         {{#${markList}}}\r\n            <div class=\"p_flog\"   >\r\n                <div class=\"p_flog_c\"> <img src=\"{{${markList$markUrl}}}\" alt=\"{{${markList$markName}}}\" class=\"p_flog_img\" ></div>\r\n            </div>\r\n        {{/${markList}}}\r\n     \r\n    \r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n         {{#${markList}}}\r\n            <div class=\"p_flog\">\r\n                <div class=\"p_flog_c\">\r\n                    {{{lazyImage markUrl 'class=\"p_flog_img\"  title=\"{{${markList$markName}}}\" alt=\"{{${markList$markName}}}\"' 'true'}}}     \r\n                </div>\r\n            </div>\r\n        {{/${markList}}}\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": "\n.e_flagIcon{\n    text-align: right;\n}\n.e_flagIcon .p_flog{\n    display: inline-block;\n    width: 25%;\n    max-width: 200px;\n}\n\n.e_flagIcon .p_flog_img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}"
+      "cssText": "\n.e_flagIcon{\n    text-align: right;\n}\n.e_flagIcon .p_flog{\n    display: inline-block;\n    width: 50px;\n    height: 30px;\n}\n\n.e_flagIcon .p_flog_img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -41,9 +41,8 @@
   "datasource": "prop",
   "dataFields": {
     "list$markList": "markList",
-    "markList$id ": "id ",
     "markList$markName": "markName",
-    "markList$markIUrl": "markIUrl",
-    "markList$markUrl": "markUrl"
+    "markList$markUrl": "markUrl",
+    "markList$id ": "id "
   }
 }

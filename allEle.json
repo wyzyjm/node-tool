@@ -67,6 +67,10 @@
     {
       "name": "iframe",
       "code": "e_iframe"
+    },
+    {
+      "name": "隐藏域",
+      "code": "e_inputHidden"
     }
   ],
   "complex": [
@@ -143,6 +147,10 @@
       "code": "e_floating"
     },
     {
+      "name": "对比-浮动窗A",
+      "code": "e_floatingA"
+    },
+    {
       "name": "筛选排序",
       "code": "e_filterSort"
     },
@@ -183,6 +191,10 @@
     {
       "name": "单行输入框",
       "code": "e_input"
+    },
+    {
+      "name": "数字输入框",
+      "code": "e_number"
     },
     {
       "name": "多行输入框",

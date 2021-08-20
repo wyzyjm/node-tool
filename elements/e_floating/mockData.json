@@ -1,100 +1,37 @@
 {
   "prop": {
-    "floatList": [
-      {
-          "tabTitle": "对比",
-          "productList|5": [{
-              "id": "@id",
-              "productId": "@id",
-              "code": 123456678,
-              "title": "对比产品名称@id",
-              "href": "/product/144. html",
-              "target": "_blank",
-              "moHref": "/product/144. html",
-              "moTarget": "_blank",
-              "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-              "price": 2000,
-              "unit": "计量单位件1",
-              "retailPrice": 1500,
-              "weight": 200,
-              "weightUnit": "kg"
-          }]
-      },{
-          "tabTitle": "在线预约",
-          "productList": [{
-              "id": "523",
-              "productId": 1,
-              "code": 123456678,
-              "title": "在线预约",
-              "href": "/product/144. html",
-              "target": "_blank",
-              "moHref": "/product/144. html",
-              "moTarget": "_blank",
-              "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-              "price": 2000,
-              "unit": "计量单位件1",
-              "retailPrice": 1500,
-              "weight": 200,
-              "weightUnit": "kg"
-          }]
-      },{
-          "tabTitle": "预约申请",
-          "productList": [{
-              "id": "523",
-              "productId": 1,
-              "code": 123456678,
-              "title": "预约申请",
-              "href": "/product/144. html",
-              "target": "_blank",
-              "moHref": "/product/144. html",
-              "moTarget": "_blank",
-              "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-              "price": 2000,
-              "unit": "计量单位件1",
-              "retailPrice": 1500,
-              "weight": 200,
-              "weightUnit": "kg"
-          }]
-      },{
-          "tabTitle": "样品申请",
-          "productList": [{
-              "id": "523",
-              "productId": 1,
-              "code": 123456678,
-              "title": "样品申请",
-              "href": "/product/144. html",
-              "target": "_blank",
-              "moHref": "/product/144. html",
-              "moTarget": "_blank",
-              "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-              "price": 2000,
-              "unit": "计量单位件1",
-              "retailPrice": 1500,
-              "weight": 200,
-              "weightUnit": "kg"
-          }]
-      },{
-          "tabTitle": "在线询价",
-          "productList": [{
-              "id": "523",
-              "productId": 1,
-              "code": 123456678,
-              "title": "在线询价",
-              "href": "/product/144. html",
-              "target": "_blank",
-              "moHref": "/product/144. html",
-              "moTarget": "_blank",
-              "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-              "price": 2000,
-              "unit": "计量单位件1",
-              "retailPrice": 1500,
-              "weight": 200,
-              "weightUnit": "kg"
-          }]
-      }
-    ]
+    "floatList": [],
+    "text1":"对比",
+    "href1":{
+      "type":"link",
+      "value":"",
+      "target":"_blank"
+    },
+    "text2":"在线预约",
+    "href2":{
+      "type":"link",
+      "value":"",
+      "target":"_blank"
+    },
+    "text3":"预约申请",
+    "href3":{
+      "type":"link",
+      "value":"",
+      "target":"_blank"
+    },
+    "text4":"样品申请",
+    "href4":{
+      "type":"link",
+      "value":"",
+      "target":"_blank"
+    },
+    "text5":"在线询价",
+    "href5":{
+      "type":"link",
+      "value":"",
+      "target":"_blank"
+    }
   },
-  "data": {},
   "i18n": {
     "contrast":"对比",
     "compareTheBar":"对比栏",
@@ -102,8 +39,6 @@
     "hidden":"隐藏",
     "delete":"删除",
     "noncontrastingDescription":"您还可以继续添加",
-    "tip":"对比栏已满，您可以删除不需要的栏内商品再继续添加哦！"
-  },
-  "container": true,
-  "scope": true
+    "tip":"栏已满，您可以删除不需要的栏内商品再继续添加哦！"
+  }
 }

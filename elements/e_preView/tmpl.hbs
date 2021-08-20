@@ -1,22 +1,26 @@
 <div class="e_preView" needjs="true">
-    {{#prop.list}}
-        <div class="p_img_div" >
-            <a href="{{href}}" target="{{target}}" class="p_img_a"  >
-                {{{lazyImage coverImage 'class="p_img"  title="{{title}}" alt="{{title}}"' 'true'}}}
+    
+        <div class="p_img_div" data-summary='{{prop.summary}}' data-title ='{{prop.title}}' data-price='{{prop.price}}' 
+         data-retailPrice='{{prop.retailPrice}}' data-productId='{{prop.productId}}' 
+         data-href='{{prop.href}}'data-code='{{prop.code}}' data-target="{{prop.target}}" data-coverImage="{{prop.coverImage}}" 
+        >
+         {{!-- <div class="p_img_div" > --}}
+            <a href="{{prop.href}}" target="{{prop.target}}" class="p_img_a"  >
+                {{{lazyImage prop.coverImage 'class="p_img"  title="{{prop.title}}" alt="{{prop.title}}"' 'true'}}}
             </a>
         </div>
         <div class="p_scroll" >
             <ul class="p_scroll_main">
-                {{#images}}
+                {{#prop.images}}
                     <li class="p_scroll_item  {{#eq @index 0}}curr{{/eq}}" >
                         <a href="JavaScript:;" class="p_scroll_item_a " >
                              {{{lazyImage url 'class="p_scroll_item_img"  title="{{title}}" alt="{{title}}"' 'true'}}}
                         </a>
                     </li>
-                {{/images}}
+                {{/prop.images}}
             </ul>
         </div>
         
-    {{/prop.list}}
+    
     
 </div>
