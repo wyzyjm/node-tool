@@ -1,0 +1,59 @@
+<div class="e_floatingA">
+    <div class="p_comp" data-ename="组件容器">
+        <div class="badge-primary p-1 p_contrast" data-ename="对比按钮（mo）">
+            <span class="p_contrast_text">{{i18n.contrast}}</span>
+            <span class="p_contrast_num" data-ename="对比数量"></span>
+        </div>
+        <div class="p_obscuration" data-ename="蒙层">
+            <div class="bg-white p_contrast_list" data-ename="对比列表">
+                <div class="alert alert-danger p_danger hide" data-ename="提示语">
+                    {{i18n.tip}}
+                </div>
+                <div class="text-primary p_title" data-ename="副标题">
+                    <div class="j_tab p_tab">
+                      <span class="px-3 py-2 p_title_compareTheBar">测试</span>
+                    </div>
+                    <select class="mx-3 my-2 form-control j_mo_tab p_form-control">
+                      <option value="0">对比</option>
+                    </select>
+                    <span class="px-3 py-2 p_title_hidden" data-ename="副标题隐藏">{{i18n.hidden}}</span>
+                </div>
+                <ul class="j_switch_list">
+                    <li class="hidden showList">
+                        <ul class="border border-primary px-sm-2 py-md-2 p_data_list" data-ename="循环体容器">
+                        </ul>
+                    </li>
+                    <li class="hidden">
+                        <ul class="border border-primary px-sm-2 py-md-2 p_data_list" data-ename="循环体容器">
+                            <li class="border-right border-secondary p-4 p_item" data-ename="循环体元素">
+                              <a href="href" class="text-secondary bg-light mr-3 p_item_img" data-ename="图片容器">
+                                  imgdom
+                              </a>
+                              <div class="p_comparedata" data-ename="对比信息">
+                                  <p class="p_compare_title" data-ename="对比名称">title</p>
+                                  <p class="p_compare_amount" data-ename="对比金额">
+                                      <span class="text-danger font-weight-bold">¥retailPrice</span>
+                                      <span class="text-primary p_item_delete" data-type="${itemIndex}" data-id="${item.productId}">{{i18n.delete}}</span>
+                                  </p>
+                              </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item" data-ename="循环体元素">
+                              <a href="" class="text-secondary bg-light mr-3 p_item_img" data-ename="图片容器">1
+                              </a>
+                              <div class="p_nocomparedata" data-ename="暂无对比信息">
+                              {{i18n.noncontrastingDescription}}
+                              </div>
+                            </li>
+                            <li class="text-primary py-sm-3 p_last_item" data-ename="循环体元素">
+                                <a type="type" href="" target="" class="btn btn-primary p_contrast_btn">title</a>
+                                <p class="py-2 p_contrast_clear">{{i18n.clear}}</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="propJson" value='{{{propJson}}}' />
+    <input type="hidden" name="i18nJson" value='{{{i18nJson}}}' />
+</div>

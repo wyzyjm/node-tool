@@ -2,7 +2,7 @@
   "cname": "对比-浮动窗",
   "styleId": "e_floating",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div class=\"p_comp\" data-ename=\"组件容器\">\r\n        <div class=\"badge-primary p-1 p_contrast\" data-ename=\"对比按钮（mo）\">\r\n            <span class=\"p_contrast_text\">{{${i18n.contrast}}}</span>\r\n            <span class=\"p_contrast_num\" data-ename=\"对比数量\"></span>\r\n        </div>\r\n        <div class=\"p_obscuration\" data-ename=\"蒙层\">\r\n            <div class=\"bg-white p_contrast_list\" data-ename=\"对比列表\">\r\n                <div class=\"alert alert-danger p_danger hide\" data-ename=\"提示语\">\r\n                    {{${i18n.tip}}}\r\n                </div>\r\n                <div class=\"text-primary p_title\" data-ename=\"副标题\">\r\n                    <div class=\"j_tab p_tab\">\r\n                    </div>\r\n                    <select class=\"mx-3 my-2 form-control j_mo_tab p_form-control\">\r\n                    </select>\r\n                    <span class=\"px-3 py-2 p_title_hidden\" data-ename=\"副标题隐藏\">{{${i18n.hidden}}}</span>\r\n                </div>\r\n                <ul class=\"j_switch_list\">\r\n                    <li>\r\n                        <ul class=\"border border-primary px-sm-2 py-md-2 p_data_list\" data-ename=\"循环体容器\">\r\n                        </ul>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}' />\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{{i18nJson}}}' />\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div class=\"p_comp\" data-ename=\"组件容器\">\r\n        <div class=\"badge-primary p-1 p_contrast\" data-ename=\"对比按钮（mo）\">\r\n            <span class=\"p_contrast_text\">{{${i18n.contrast}}}</span>\r\n            <span class=\"p_contrast_num\" data-ename=\"对比数量\"></span>\r\n        </div>\r\n        <div class=\"p_obscuration\" data-ename=\"蒙层\">\r\n            <div class=\"bg-white p_contrast_list\" data-ename=\"对比列表\">\r\n                <div class=\"alert alert-danger p_danger hide\" data-ename=\"提示语\">\r\n                    <span class=\"j_column\"></span>{{${i18n.tip}}}\r\n                </div>\r\n                <div class=\"text-primary p_title\" data-ename=\"副标题\">\r\n                    <div class=\"j_tab p_tab\">\r\n                    </div>\r\n                    <select class=\"mx-3 my-2 form-control j_mo_tab p_form-control\">\r\n                    </select>\r\n                    <span class=\"px-3 py-2 p_title_hidden\" data-ename=\"副标题隐藏\">{{${i18n.hidden}}}</span>\r\n                </div>\r\n                <ul class=\"j_switch_list\">\r\n                    <li>\r\n                        <ul class=\"border border-primary px-sm-2 py-md-2 p_data_list\" data-ename=\"循环体容器\">\r\n                        </ul>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}' />\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{{i18nJson}}}' />\r\n</div>",
   "css": [
     {
       "media": "",
@@ -62,7 +62,7 @@
       "hidden": "隐藏",
       "delete": "删除",
       "noncontrastingDescription": "您还可以继续添加",
-      "tip": "对比栏已满，您可以删除不需要的栏内商品再继续添加哦！"
+      "tip": "栏已满，您可以删除不需要的栏内商品再继续添加哦！"
     }
   }
 }
