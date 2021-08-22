@@ -1,6 +1,23 @@
 {
   "prop": {
-    "floatList": [],
+    "floatList": [
+      {
+        "id": "523",
+        "productId": 1,
+        "code": 123456678,
+        "title": "在线预约",
+        "href": "/product/144. html",
+        "target": "_blank",
+        "moHref": "/product/144. html",
+        "moTarget": "_blank",
+        "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
+        "price": 2000,
+        "unit": "计量单位件1",
+        "retailPrice": 1500,
+        "weight": 200,
+        "weightUnit": "kg"
+      }
+    ],
     "text1":"对比",
     "href1":{
       "type":"link",

@@ -151,6 +151,10 @@
       "code": "e_floating"
     },
     {
+      "name": "对比-浮动窗A",
+      "code": "e_floatingA"
+    },
+    {
       "name": "筛选排序",
       "code": "e_filterSort"
     },
