@@ -2,15 +2,15 @@
   "cname": "对比-浮动窗A",
   "styleId": "e_floatingA",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <!-- 对比按钮（mo） -->\r\n    {{#${tabTitle}}}\r\n    <div class=\"badge-primary p-1 p_contrast\">\r\n        <span class=\"p_contrast_text\">{{${tabTitle}[0].name}}</span>\r\n        <span class=\"p_contrast_num\">0</span>\r\n    </div>\r\n    {{/${tabTitle}}}\r\n    <!-- 蒙层 -->\r\n    <div class=\"p_obscuration show\">\r\n        <!-- 对比列表 -->\r\n        <div class=\"bg-white p_contrast_list\">\r\n            <!-- 提示语 -->\r\n            <div class=\"alert alert-danger p_danger hide\">\r\n                <span class=\"j_column\"></span>{{${i18n.tip}}}\r\n            </div>\r\n            <!-- tab切换 -->\r\n            <div class=\"text-primary p_title\">\r\n                <div class=\"j_tab p_tab\">\r\n                    <span class=\"px-3 py-2 p_title_compareTheBar active\">对比</span>\r\n                    <span class=\"px-3 py-2 p_title_compareTheBar \">在线预约</span>\r\n                    <span class=\"px-3 py-2 p_title_compareTheBar \">预约申请</span>\r\n                    <span class=\"px-3 py-2 p_title_compareTheBar \">样品申请</span>\r\n                    <span class=\"px-3 py-2 p_title_compareTheBar \">询价</span>\r\n                </div>\r\n                <select class=\"mx-3 my-2 form-control j_mo_tab p_form-control\">\r\n                    <option value=\"0\">对比</option>\r\n                    <option value=\"1\">在线预约</option>\r\n                    <option value=\"2\">预约申请</option>\r\n                    <option value=\"3\">样品申请</option>\r\n                    <option value=\"4\">询价</option>\r\n                </select>\r\n                <span class=\"px-3 py-2 p_title_hidden\">隐藏</span>\r\n            </div>\r\n            <!-- 切换列表 -->\r\n            <ul class=\"j_switch_list\">\r\n                <li class=\"hidden showList\">\r\n                    <ul class=\"border border-primary px-sm-2 py-md-2 p_data_list\">\r\n\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"/listzh/875437238447038464.html\" class=\"text-secondary bg-light mr-3 p_item_img\">\r\n                                <img src=\"https://test-dcloud-img02.yun300.cn/shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/6dd1aeec-5f75-4dba-a0d8-b39be6208aa2.webp\"\r\n                                    class=\"p_item_imgsrc\" alt=\"\">\r\n                            </a>\r\n                            <div class=\"p_comparedata\">\r\n                                <p class=\"p_compare_title\">\r\n                                    荣耀50 1亿像素超清影像 5G 6.57英寸超曲屏 66W超级快充3200万像素高清自拍\r\n                                </p>\r\n                                <p class=\"p_compare_amount\">\r\n                                    <span class=\"text-danger font-weight-bold\">¥23</span>\r\n                                    <span class=\"text-primary p_item_delete\" data-type=\"0\"\r\n                                        data-id=\"875437238447038464\">删除</span>\r\n                                </p>\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"/listzh/877549524208902144.html\" class=\"text-secondary bg-light mr-3 p_item_img\">\r\n                                <img src=\"https://test-dcloud-img03.yun300.cn/shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/58f0d0d8-6edb-463c-9acd-585780b0c288.jpg\"\r\n                                    class=\"p_item_imgsrc\" alt=\"\">\r\n                            </a>\r\n                            <div class=\"p_comparedata\">\r\n                                <p class=\"p_compare_title\">\r\n                                    人之初，性本善；贝儿健，保康健。宝宝聪明又健康，贝儿健帮您忙\r\n                                </p>\r\n                                <p class=\"p_compare_amount\">\r\n                                    <span class=\"text-danger font-weight-bold\">¥555</span>\r\n                                    <span class=\"text-primary p_item_delete\" data-type=\"0\"\r\n                                        data-id=\"877549524208902144\">删除</span>\r\n                                </p>\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">3 </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">4\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"text-primary py-sm-3 p_last_item\">\r\n                            <button class=\"btn btn-primary p_contrast_btn\">对比</button>\r\n                            <p class=\"py-2 p_contrast_clear\">清空全部内容</p>\r\n                        </li>\r\n                    </ul>\r\n                </li>\r\n\r\n                <li class=\"hidden \">\r\n                    <ul class=\"border border-primary px-sm-2 py-md-2 p_data_list\">\r\n\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">1\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">2\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">3\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">4\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"text-primary py-sm-3 p_last_item\">\r\n                            <button class=\"btn btn-primary p_contrast_btn\">在线预约</button>\r\n                            <p class=\"py-2 p_contrast_clear\">清空全部内容</p>\r\n                        </li>\r\n                    </ul>\r\n                </li>\r\n\r\n                <li class=\"hidden \">\r\n                    <ul class=\"border border-primary px-sm-2 py-md-2 p_data_list\">\r\n\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">1\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">2\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">3\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">4\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"text-primary py-sm-3 p_last_item\">\r\n                            <button class=\"btn btn-primary p_contrast_btn\">预约申请</button>\r\n                            <p class=\"py-2 p_contrast_clear\">清空全部内容</p>\r\n                        </li>\r\n                    </ul>\r\n                </li>\r\n\r\n                <li class=\"hidden \">\r\n                    <ul class=\"border border-primary px-sm-2 py-md-2 p_data_list\">\r\n\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">1\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">2\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">3\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">4\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"text-primary py-sm-3 p_last_item\">\r\n                            <button class=\"btn btn-primary p_contrast_btn\">样品申请</button>\r\n                            <p class=\"py-2 p_contrast_clear\">清空全部内容</p>\r\n                        </li>\r\n                    </ul>\r\n                </li>\r\n\r\n                <li class=\"hidden \">\r\n                    <ul class=\"border border-primary px-sm-2 py-md-2 p_data_list\">\r\n\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">1\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">2\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">3\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"border-right border-secondary p-4 p_item\">\r\n                            <a href=\"\" class=\"text-secondary bg-light mr-3 p_item_img\">4\r\n                            </a>\r\n                            <div class=\"p_nocomparedata\">\r\n                                您还可以继续添加\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"text-primary py-sm-3 p_last_item\">\r\n                            <button class=\"btn btn-primary p_contrast_btn\">询价</button>\r\n                            <p class=\"py-2 p_contrast_clear\">清空全部内容</p>\r\n                        </li>\r\n                    </ul>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}' />\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{{i18nJson}}}' />\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_floatingA .p_obscuration{\n  width: 100%;\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  /* display: none; */\n  z-index: 20;\n}\n.e_floatingA .p_obscuration.show{\n  display: block;\n}\n.e_floatingA .p_title{\n  display: flex;\n  justify-content: space-between;\n}\n.e_floatingA .p_form-control{\n  width: 7rem;\n  display: none;\n}\n.e_floatingA .p_contrast{\n  border-radius: 25px;\n  position: fixed;\n  bottom: 10%;\n  right: 0;\n  z-index: 20;\n}\n.e_floatingA .p_contrast_text{\n  min-width: 80px;\n  height: 28px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.e_floatingA .p_contrast_num{\n  position: absolute;\n  right: 0px;\n  top: -5px;\n}\n.e_floatingA .p_tab{\n  height: 100%;\n  margin-top: 11px;\n}\n.e_floatingA .p_title_compareTheBar{\n  margin: 0 1px;\n}\n.e_floatingA .p_title_compareTheBar.active{\n  background: #fff;\n  border: 1px solid #007bff;\n  border-bottom: #fff;\n  margin: 0\n}\n.e_floatingA .p_data_list{\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: space-between;\n}\n.e_floatingA .p_item{\n  flex: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border-right-style: dashed;\n}\n.e_floatingA .p_item_delete{\n  cursor: pointer;\n  display: none;\n}\n.e_floatingA .p_compare_amount{\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n}\n.e_floatingA .p_comparedata{\n  flex: 1;\n}\n.e_floatingA .p_item:last-child{\n  width: 230px;\n}\n.e_floatingA .p_item_img{\n  width: 60px;\n  height: 60px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.e_floatingA .p_item_imgsrc{\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.e_floatingA .p_compare_title{\n  overflow : hidden;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  word-break: break-all;\n}\n.e_floatingA .p_last_item{\n  display: flex;\n  width: 230px;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n.e_floatingA .p_contrast,\n.e_floatingA .p_contrast_hidden{\n  display: none;\n  opacity: 0;\n\n}\n.e_floatingA .p_danger.hide, .e_floatingA .hidden{\n  display: none;\n}\n.e_floatingA .p_item:hover .p_item_delete{\n  display: block;\n  transition: 1s height, 1s width;\n}\n.e_floatingA .hidden.showList{\n  display: block;\n}\n.e_floatingA .p_contrast_btn{\n  width: 200px;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ""
+      "cssText": ".e_floatingA .p_contrast,\r\n.e_floatingA .p_contrast_hidden{\r\n    display: block;\r\n    opacity: 1;\r\n}\r\n.e_floatingA .p_obscuration{\r\n    height: 100%;\r\n    top: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n    left: 0;\r\n    background: rgba(0, 0, 0, .6);\r\n    display: none;\r\n}\r\n.e_floatingA .p_contrast_list{\r\n    width: 100%;\r\n    position: absolute;\r\n    bottom: -100%;\r\n    transition:all 1s;\r\n}\r\n.e_floatingA .p_obscuration.show .p_contrast_list{\r\n    width: 100%;\r\n    position: absolute;\r\n    bottom: 0;\r\n    transition:all 1s;\r\n}\r\n.e_floatingA .p_tab{\r\n    display: none;\r\n}\r\n.e_floatingA .p_form-control{\r\n    display: block;\r\n}\r\n.e_floatingA .p_data_list{\r\n    flex-direction: column;\r\n    border: none;\r\n}\r\n.e_floatingA .p_item{\r\n    border-right: none;\r\n    border-bottom: 1px solid #ddd;\r\n}\r\n.e_floatingA .p_last_item{\r\n    width: 100%;\r\n    border-right: none;\r\n    flex-direction: row-reverse;\r\n    justify-content: space-between;\r\n}\r\n.e_floatingA .p_item_delete{\r\n    display: block;\r\n}"
     },
     {
       "media": "screen and (min-width: 769px)",
@@ -21,8 +21,206 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "tabTitle": [
+      {
+        "type": "db",
+        "name": "对比"
+      },
+      {
+        "type": "zxyy",
+        "name": "在线预约"
+      },
+      {
+        "type": "yysq",
+        "name": "预约申请"
+      },
+      {
+        "type": "ypsq",
+        "name": "样品申请"
+      },
+      {
+        "type": "xj",
+        "name": "询价"
+      }
+    ],
+    "productList": [
+      {
+        "tabTitle": "db",
+        "productId": "875437238447038464",
+        "title": "荣耀50 1亿像素超清影像 5G 6.57英寸超曲屏 66W超级快充 3200万像素高清自拍",
+        "code": "100011920595",
+        "summary": "包裹刚收到，里面有手机、赠送的5G电话卡、橡胶手机壳、新人福利卡、取卡器和充电线充电头，东西不多，外形很漂亮",
+        "id": "",
+        "href": "/listzh/875437238447038464.html",
+        "target": "",
+        "coverImage": "shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/6dd1aeec-5f75-4dba-a0d8-b39be6208aa2.webp",
+        "price": "19",
+        "retailPrice1": "",
+        "unit": "23",
+        "retailPrice": "23",
+        "weight": "10",
+        "weightUnit": "",
+        "skuId": "875437239067795456"
+      },
+      {
+        "tabTitle": "db",
+        "productId": "877549524208902144",
+        "title": "人之初，性本善；贝儿健，保康健。宝宝聪明又健康，贝儿健帮您忙",
+        "code": "12334567789",
+        "summary": "黄门北寺狱氢氧化亚铁所罗门群岛官场现形记断送老头皮地方性植物非再生资源密歇根大学酸性氧化物碱式碳酸铜",
+        "id": "",
+        "href": "/listzh/877549524208902144.html",
+        "target": "",
+        "coverImage": "shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/58f0d0d8-6edb-463c-9acd-585780b0c288.jpg",
+        "price": "555",
+        "retailPrice1": "",
+        "unit": "555",
+        "retailPrice": "555",
+        "weight": "2134567",
+        "weightUnit": "",
+        "skuId": "877594638482464768"
+      },
+      {
+        "tabTitle": "zxyy",
+        "productId": "877549524208902144",
+        "title": "人之初，性本善；贝儿健，保康健。宝宝聪明又健康，贝儿健帮您忙",
+        "code": "12334567789",
+        "summary": "黄门北寺狱氢氧化亚铁所罗门群岛官场现形记断送老头皮地方性植物非再生资源密歇根大学酸性氧化物碱式碳酸铜",
+        "id": "",
+        "href": "/listzh/877549524208902144.html",
+        "target": "",
+        "coverImage": "shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/58f0d0d8-6edb-463c-9acd-585780b0c288.jpg",
+        "price": "555",
+        "retailPrice1": "",
+        "unit": "555",
+        "retailPrice": "555",
+        "weight": "2134567",
+        "weightUnit": "",
+        "skuId": "877594638482464768"
+      },
+      {
+        "tabTitle": "zxyy",
+        "productId": "876885007086968832",
+        "title": "一饮三百杯吉尔吉斯人百科全书派没巧不成话电气化铁路常绿阔叶林梅杜萨之筏三头不辨两一个人",
+        "code": "scdn",
+        "summary": "吐鲁番盆地日出处天子骑鹤上维扬中国式摔跤稼轩长短句多米诺理论比葫芦画瓢没丝也有寸国际单位制天公不作美清明上河图中国画颜料",
+        "id": "",
+        "href": "/listzh/876885007086968832.html",
+        "target": "",
+        "coverImage": "shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/6ea02fbb-36b4-411b-a91d-1ca80e9b8d9d.jpg",
+        "price": "1500",
+        "retailPrice1": "",
+        "unit": "1750",
+        "retailPrice": "1750",
+        "weight": "12",
+        "weightUnit": "",
+        "skuId": "876885007086968832"
+      },
+      {
+        "tabTitle": "yysq",
+        "productId": "876885007086968832",
+        "title": "一饮三百杯吉尔吉斯人百科全书派没巧不成话电气化铁路常绿阔叶林梅杜萨之筏三头不辨两一个人",
+        "code": "scdn",
+        "summary": "吐鲁番盆地日出处天子骑鹤上维扬中国式摔跤稼轩长短句多米诺理论比葫芦画瓢没丝也有寸国际单位制天公不作美清明上河图中国画颜料",
+        "id": "",
+        "href": "/listzh/876885007086968832.html",
+        "target": "",
+        "coverImage": "shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/6ea02fbb-36b4-411b-a91d-1ca80e9b8d9d.jpg",
+        "price": "1500",
+        "retailPrice1": "",
+        "unit": "1750",
+        "retailPrice": "1750",
+        "weight": "12",
+        "weightUnit": "",
+        "skuId": "876885007086968832"
+      },
+      {
+        "tabTitle": "ypsq",
+        "productId": "876837382132625408",
+        "title": "海上钓鳌客电压互感器学习心理学钝刀子割肉中国共产党调和平均数太平军北伐中国远",
+        "code": "lj22001",
+        "summary": "吃人家嘴软柯尔克孜族差半车麦秸帕斯卡定理海军航空兵一目尽天涯水平地带性萍浏醴起义平阳府君阙波利尼西亚猕猴骑土牛",
+        "id": "",
+        "href": "",
+        "target": "",
+        "coverImage": "",
+        "price": "",
+        "retailPrice1": "",
+        "unit": "",
+        "retailPrice": "",
+        "weight": "",
+        "weightUnit": "",
+        "skuId": ""
+      },
+      {
+        "tabTitle": "ypsq",
+        "productId": "876885007086968832",
+        "title": "一饮三百杯吉尔吉斯人百科全书派没巧不成话电气化铁路常绿阔叶林梅杜萨之筏三头不辨两一个人",
+        "code": "scdn",
+        "summary": "吐鲁番盆地日出处天子骑鹤上维扬中国式摔跤稼轩长短句多米诺理论比葫芦画瓢没丝也有寸国际单位制天公不作美清明上河图中国画颜料",
+        "id": "",
+        "href": "/listzh/876885007086968832.html",
+        "target": "",
+        "coverImage": "shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/6ea02fbb-36b4-411b-a91d-1ca80e9b8d9d.jpg",
+        "price": "1500",
+        "retailPrice1": "",
+        "unit": "1750",
+        "retailPrice": "1750",
+        "weight": "12",
+        "weightUnit": "",
+        "skuId": "876885007086968832"
+      },
+      {
+        "tabTitle": "xj",
+        "productId": "876885007086968832",
+        "title": "一饮三百杯吉尔吉斯人百科全书派没巧不成话电气化铁路常绿阔叶林梅杜萨之筏三头不辨两一个人",
+        "code": "scdn",
+        "summary": "吐鲁番盆地日出处天子骑鹤上维扬中国式摔跤稼轩长短句多米诺理论比葫芦画瓢没丝也有寸国际单位制天公不作美清明上河图中国画颜料",
+        "id": "",
+        "href": "/listzh/876885007086968832.html",
+        "target": "",
+        "coverImage": "shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/6ea02fbb-36b4-411b-a91d-1ca80e9b8d9d.jpg",
+        "price": "1500",
+        "retailPrice1": "",
+        "unit": "1750",
+        "retailPrice": "1750",
+        "weight": "12",
+        "weightUnit": "",
+        "skuId": "876885007086968832"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {
+      "contrast": "对比",
+      "compareTheBar": "对比栏",
+      "clear": "清空全部内容",
+      "hidden": "隐藏",
+      "delete": "删除",
+      "noncontrastingDescription": "您还可以继续添加",
+      "tip": "栏已满，您可以删除不需要的栏内商品再继续添加哦！"
+    }
+  },
   "datasource": "prop",
-  "dataFields": {}
+  "dataFields": {
+    "tabTitle$type": "type",
+    "tabTitle$name": "name",
+    "productList$tabTitle": "tabTitle",
+    "productList$productId": "productId",
+    "productList$title": "title",
+    "productList$code": "code",
+    "productList$summary": "summary",
+    "productList$id": "id",
+    "productList$href": "href",
+    "productList$target": "target",
+    "productList$coverImage": "coverImage",
+    "productList$price": "price",
+    "productList$retailPrice1": "retailPrice1",
+    "productList$unit": "unit",
+    "productList$retailPrice": "retailPrice",
+    "productList$weight": "weight",
+    "productList$weightUnit": "weightUnit",
+    "productList$skuId": "skuId"
+  }
 }
