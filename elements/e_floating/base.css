@@ -60,6 +60,7 @@
     align-items: center;
     justify-content: center;
     border-right-style: dashed;
+    min-height: 120px;
 }
 .e_floating .p_item_delete{
     cursor: pointer;

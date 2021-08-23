@@ -141,7 +141,7 @@
 }
 
 .container-fluid{
-	position: absolute;
+	  position: fixed;
 	  background: black;
 	  top: 0;
 	  right: 0;

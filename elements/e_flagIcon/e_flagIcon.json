@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": "\n.e_flagIcon{\n    text-align: right;\n}\n.e_flagIcon .p_flog{\n    display: inline-block;\n    width: 50px;\n    height: 30px;\n}\n\n.e_flagIcon .p_flog_img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}"
+      "cssText": "\n.e_flagIcon{\n    text-align: right;\n}\n.e_flagIcon .p_flog{\n    display: inline-block;\n    width: 50px;\n    height: 30px;\n    overflow: hidden;\n}\n.p_flog_c{\n    width: 100%;\n    height: 100%;\n}\n.e_flagIcon .p_flog_img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
