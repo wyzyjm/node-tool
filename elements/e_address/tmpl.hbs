@@ -5,7 +5,8 @@
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
-    <input type="text" class="form-control p_input" name="${elemId}" {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} >
+    <input type="text" class="form-control p_input" {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} >
+    <input type="hidden" name="${elemId}" >
     <div class="invalid-feedback"></div>
     <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

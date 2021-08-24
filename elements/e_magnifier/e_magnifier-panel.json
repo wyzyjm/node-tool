@@ -1,7 +1,10 @@
 {
     "panelConfig": [
         {
-           
+            "compName": "setting-text",
+            "bind-text": "prop.text",
+            "bind-href": "prop.href",
+            "title": "文字"
         }
     ]
-  }
+}
