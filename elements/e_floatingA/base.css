@@ -3,11 +3,14 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  display: none;
+  /* display: none; */
   z-index: 20;
 }
 .e_floatingA .p_obscuration.show{
   display: block;
+}
+.e_floatingA .p_flex{
+  display: flex;
 }
 .e_floatingA .p_title{
   display: flex;
