@@ -155,6 +155,10 @@
       "code": "e_floatingA"
     },
     {
+      "name": "浮动购物车",
+      "code": "e_floatingShoppingCart"
+    },
+    {
       "name": "筛选排序",
       "code": "e_filterSort"
     },
