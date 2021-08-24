@@ -2,6 +2,9 @@
     margin: 0 auto;
     margin-top: 40px;
 }
+.e_register .p_title{
+    padding-bottom: 10px;
+}
 .e_register .p_line{
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +30,17 @@
     width: 450px;
     height: auto;
     margin-left: 20px;
+}
+.e_register .telBox{
+    display: flex;
+    height: 35px;
+    padding: 0 .75rem;
+}
+.e_register .telInput{
+    width: 58px;
+    height: 100%;
+    margin-right: 10px;
+    /* border-right: 1px solid #ced4da; */
 }
 .e_register .p_fenge{
     display: block;
@@ -54,10 +68,20 @@
     outline: none;
     background: none;
 }
+.e_register .p_bLine{
+    padding-left: 280px;
+}
+.e_register .p_loginBtn{
+    width: 400px;
+    text-align: center;
+}
+.e_register .p_loginBtn{
+    cursor: pointer;
+}
 
 /* 单选多选 */
 .e_register .p_radioLabel{
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 /* 日期 */
@@ -156,7 +180,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 120px;
+    padding-top: 80px;
     background: rgba(000, 000, 000, 0.4);
 }
 .e_register .p_agreementWrapper{
@@ -167,7 +191,7 @@
 }
 .e_register .p_text{
     padding: 0 10px;
-    max-height: 600px;
+    max-height: 420px;
     overflow: auto;
     margin-top: 30px;
 }
@@ -184,7 +208,7 @@
     border-radius: 6px;
 }
 .e_register .p_registerBtn{
-    margin-top: 10px ;
+    margin: 10px 0;
 }
 
 
@@ -195,4 +219,8 @@
     outline: none;
     line-height: 20px;
     text-align: center;
+}
+/* 去除校验失败的警告icon */
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    background-image: none;
 }
