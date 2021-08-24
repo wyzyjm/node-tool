@@ -1,6 +1,3 @@
-.e_uploadVideo{
-
-}
 .e_uploadVideo .p_imgItem{
     width: 190px;
     height: 130px;
@@ -9,6 +6,22 @@
     float: left;
     text-align: center;
     position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+.e_uploadVideo .p_imgItem .p_cover{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.e_uploadVideo .p_imgItem .p_coverIcon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    transform: translateX(-50%) translateY(-50%);
 }
 .e_uploadVideo .p_uploadBtn{
     background-color: #f0f0f0;
@@ -17,7 +30,51 @@
     justify-content: center;
     cursor: pointer;
 }
+.e_uploadVideo .p_uploadBtn input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
 .e_uploadVideo  .p_placeholder{
     color: #999;
     margin: 0;
+}
+.e_uploadVideo .p_imgOp,.e_uploadVideo .p_imgStatus{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 3;
+}
+.e_uploadVideo .p_imgItem.onLoad .p_imgStatus{
+    display: flex;
+}
+.e_uploadVideo .p_imgItem:hover .p_imgOp{
+    display: flex;
+}
+.e_uploadVideo .icon{
+    width: 30px;
+    height: 30px;
+}
+.e_uploadVideo .p_imgItem.onLoad:hover .p_imgOp{
+    display: none;
+}
+.e_uploadVideo .p_imgName{
+    word-break: break-all;
+    line-height: 20px;
+    padding: 0 5px;
+    max-height: 60px;
+    overflow: hidden;
 }

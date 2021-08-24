@@ -4,9 +4,9 @@
     "label":"文件型",
     "showPlaceholder":true,
     "placeholder":"请上传2M以内的ISO格式图片",
-    "limit":1,
+    "limit":4,
     "size":5,
-    "unit":"kb",
+    "unit":"m",
     "accept":[".iso",".rar",".zip"],
     "validate":{
         "required":{
