@@ -4,6 +4,9 @@
   position: relative;
   z-index: 20;
 }
+.e_floatingShoppingCart i{
+  font-style: normal;
+}
 .e_floatingShoppingCart .p_cardnum{
   min-width: 14px;
   border-radius: 1rem;
@@ -62,7 +65,7 @@
   padding-right: 10px;
 }
 .e_floatingShoppingCart .p_list_item{
-  padding: 1rem 0;
+  padding: .5rem 0;
   border: none;
   border-bottom: 1px solid #dee2e6;
 }

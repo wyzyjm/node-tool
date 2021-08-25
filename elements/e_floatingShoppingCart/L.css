@@ -1,5 +1,5 @@
 .e_floatingShoppingCart .p_content{
-  /* display: none; */
+  display: none;
 }
 .e_floatingShoppingCart .p_content.show{
   display: block;
