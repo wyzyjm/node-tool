@@ -1,4 +1,4 @@
-<div class="e_subForm">
+<div class="e_subForm" needjs="true">
     {{#if prop.showLabel}}
     <div class="p_title">{{prop.label}}</div>
     {{/if}}
@@ -16,7 +16,7 @@
     </div>
     {{#if prop.showBtn}}
     <div>
-        <button class="btn btn-primary btn-sm s_button1">{{prop.btnText}}</button>
+        <a href="javascript:;" class="btn btn-primary btn-sm p_addRow">{{prop.btnText}}</a>
     </div>
     {{/if}}
 </div>

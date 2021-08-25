@@ -3,7 +3,8 @@
   "styleId": "e_address",
   "styleClass": "",
   "type": "form",
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <input type=\"text\" class=\"form-control p_input\" {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} >\n    <input type=\"hidden\" name=\"${elemId}\" >\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "putSubForm": true,
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span>{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <input type=\"text\" class=\"form-control p_input\" {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} >\n    <input type=\"hidden\" name=\"${elemId}\" >\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
