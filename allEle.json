@@ -135,6 +135,10 @@
       "code": "e_register"
     },
     {
+      "name": "产品筛选",
+      "code": "e_productScreen"
+    },
+    {
       "name": "轮播图-产品详情",
       "code": "e_magnifier"
     },
@@ -149,6 +153,10 @@
     {
       "name": "对比-浮动窗A",
       "code": "e_floatingA"
+    },
+    {
+      "name": "浮动购物车",
+      "code": "e_floatingShoppingCart"
     },
     {
       "name": "筛选排序",

@@ -1,0 +1,56 @@
+.e_floatingShoppingCart .p_mini_cart{
+  text-align: auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: fixed;
+  right: 20px;
+  top: 40%;
+  z-index: 10;
+}
+.e_floatingShoppingCart .p_price{
+  text-align: right;
+  width: calc(20% - 0px);
+}
+.e_floatingShoppingCart .p_commodity{
+  width: calc(80% - 0px);
+}
+.e_floatingShoppingCart .p_closeCart {
+  display:block;
+}
+.e_floatingShoppingCart .p_show_l{
+  display: none;
+}
+.e_floatingShoppingCart .p_show_s{
+  display: block;
+  background:none;
+  border:none;
+  outline: none;
+}
+.e_floatingShoppingCart .p_show_s .icon{
+  width: 40px;
+  height: 40px;
+}
+.e_floatingShoppingCart .p_show_s .p_cardnum{
+position: absolute;
+left: 25px;
+top: 0;
+z-index: 9;
+}
+.e_floatingShoppingCart .p_content{
+  top: 10%;
+  display: none;
+  width: 90%;
+  position: fixed;
+  z-index: 10;
+  left: 5%;
+  top: calc(31%);
+  margin: 0;
+  right: 5%;
+}
+.e_floatingShoppingCart .p_content.show_s{
+  display: block;
+}
+.e_floatingShoppingCart .p_arrow{
+  display: none;
+}

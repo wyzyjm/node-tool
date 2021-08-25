@@ -2,31 +2,79 @@
   "prop": {
     "list": [
       {
-        "type": "db",
+        "tabTitle": "db",
         "name": "对比",
-        "productList": []
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
       },
       {
-        "type": "zxyy",
+        "tabTitle": "zxyy",
         "name": "在线预约",
-        "productList": []
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
       },
       {
-        "type": "yysq",
+        "tabTitle": "yysq",
         "name": "预约申请",
-        "productList": []
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
       },
       {
-        "type": "ypsq",
+        "tabTitle": "ypsq",
         "name": "样品申请",
-        "productList": []
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
       },
       {
-        "type": "xj",
+        "tabTitle": "xj",
         "name": "询价",
-        "productList": []
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
       }
-    ]
+    ],
+    "initData": {
+      "tabTitle": "zxyy",
+      "productId": "875437238447038466",
+      "title": "荣耀50 1亿像素超清影像 5G 6.57英寸超曲屏 66W超级快充 3200万像素高清自拍",
+      "code": "100011920595",
+      "summary": "包裹刚收到，里面有手机、赠送的5G电话卡、橡胶手机壳、新人福利卡、取卡器和充电线充电头，东西不多，外形很漂亮",
+      "id": "",
+      "href": "/listzh/875437238447038464.html",
+      "target": "",
+      "coverImage": "shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/6dd1aeec-5f75-4dba-a0d8-b39be6208aa2.webp",
+      "price": "19",
+      "retailPrice1": "",
+      "unit": "23",
+      "retailPrice": "23",
+      "weight": "10",
+      "weightUnit": "",
+      "skuId": "875437239067795456"
+    }
   },
   "i18n": {
     "contrast":"对比",

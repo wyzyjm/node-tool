@@ -35,9 +35,44 @@
                 {{#prop.list}}
                 <li class="hidden {{#eq @index 0}} showList{{/eq}}">
                     <ul class="border border-primary px-sm-2 py-md-2 p_data_list">
-                        
+                        <li class="border-right border-secondary p-4 p_item">
+                            <a href="" class="text-secondary bg-light mr-3 p_item_img">1
+                            </a>
+                            <div class="p_nocomparedata">
+                                您还可以继续添加
+                            </div>
+                        </li>
+                        <li class="border-right border-secondary p-4 p_item">
+                            <a href="" class="text-secondary bg-light mr-3 p_item_img">2
+                            </a>
+                            <div class="p_nocomparedata">
+                                您还可以继续添加
+                            </div>
+                        </li>
+                        <li class="border-right border-secondary p-4 p_item">
+                            <a href="" class="text-secondary bg-light mr-3 p_item_img">3
+                            </a>
+                            <div class="p_nocomparedata">
+                                您还可以继续添加
+                            </div>
+                        </li>
+                        <li class="border-right border-secondary p-4 p_item">
+                            <a href="" class="text-secondary bg-light mr-3 p_item_img">4
+                            </a>
+                            <div class="p_nocomparedata">
+                                您还可以继续添加
+                            </div>
+                        </li>
                         <li class="text-primary py-sm-3 p_last_item">
-                            <button class="btn btn-primary p_contrast_btn">{{name}}</button>
+                            
+                            {{#if href.value}}
+                                <a href="{{$transferLink href compId}}" target="{{href.target}}">
+                            {{/if}}
+                            <button class="btn btn-primary s_button1 p_contrast_btn">{{name}}</button>
+                            {{!-- <button class="btn btn-primary s_button1">{{text}}</button> --}}
+                            {{#if href.value}}
+                                </a>
+                            {{/if}}
                             <p class="py-2 p_contrast_clear">清空全部内容</p>
                         </li>
                     </ul>
