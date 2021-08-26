@@ -22,7 +22,7 @@
     }
   ],
   "prop": {
-    "placeholder": "用户名/手机/邮箱",
+    "placeholder": "用户名",
     "placeholderPassword": "密码",
     "placeholderPhone": "请输入手机号",
     "placeholderCode": "短信验证码",
