@@ -14,7 +14,7 @@
                 "unit":1  
             },
             "submitTime":{ 
-                "limit":1, 
+                "limit":2, 
                 "startTime":"", 
                 "endTime":"",  
                 "prompt":"" 
@@ -40,12 +40,12 @@
             "obj3":{}
         },
         "async":{  
-            "status":1,  
+            "status":2,  
             "target":"", 
             "relation":[]
         },
         "notice":{ 
-            "status":1,  
+            "status":2,  
             "rules":[]
         }
     },

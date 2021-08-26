@@ -1,52 +1,79 @@
 {
   "prop": {
-    "floatList": [
+    "list": [
       {
-        "id": "523",
-        "productId": 1,
-        "code": 123456678,
-        "title": "在线预约",
-        "href": "/product/144. html",
-        "target": "_blank",
-        "moHref": "/product/144. html",
-        "moTarget": "_blank",
-        "coverImage": "http://1901045023.pool4-site.make.yun300.cn/repository/image/4cac0ede-4e73-4942-92cc-92f6a97ad77e.jpg",
-        "price": 2000,
-        "unit": "计量单位件1",
-        "retailPrice": 1500,
-        "weight": 200,
-        "weightUnit": "kg"
+        "tabTitle": "db",
+        "name": "对比",
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
+      },
+      {
+        "tabTitle": "zxyy",
+        "name": "在线预约",
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
+      },
+      {
+        "tabTitle": "yysq",
+        "name": "预约申请",
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
+      },
+      {
+        "tabTitle": "ypsq",
+        "name": "样品申请",
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
+      },
+      {
+        "tabTitle": "xj",
+        "name": "询价",
+        "productList": [],
+        "text":"按钮",
+        "href":{
+          "type":"link",
+          "value":"http://www.baidu.com",
+          "target":"_blank"
+        }
       }
     ],
-    "text1":"对比",
-    "href1":{
-      "type":"link",
-      "value":"",
-      "target":"_blank"
-    },
-    "text2":"在线预约",
-    "href2":{
-      "type":"link",
-      "value":"",
-      "target":"_blank"
-    },
-    "text3":"预约申请",
-    "href3":{
-      "type":"link",
-      "value":"",
-      "target":"_blank"
-    },
-    "text4":"样品申请",
-    "href4":{
-      "type":"link",
-      "value":"",
-      "target":"_blank"
-    },
-    "text5":"在线询价",
-    "href5":{
-      "type":"link",
-      "value":"",
-      "target":"_blank"
+    "initData": {
+      "tabTitle": "zxyy",
+      "productId": "875437238447038466",
+      "title": "荣耀50 1亿像素超清影像 5G 6.57英寸超曲屏 66W超级快充 3200万像素高清自拍",
+      "code": "100011920595",
+      "summary": "包裹刚收到，里面有手机、赠送的5G电话卡、橡胶手机壳、新人福利卡、取卡器和充电线充电头，东西不多，外形很漂亮",
+      "id": "",
+      "href": "/listzh/875437238447038464.html",
+      "target": "",
+      "coverImage": "shop/SHEN8_c63078d7d785480988948f7a9cb8330f/cms/image/6dd1aeec-5f75-4dba-a0d8-b39be6208aa2.webp",
+      "price": "19",
+      "retailPrice1": "",
+      "unit": "23",
+      "retailPrice": "23",
+      "weight": "10",
+      "weightUnit": "",
+      "skuId": "875437239067795456"
     }
   },
   "i18n": {

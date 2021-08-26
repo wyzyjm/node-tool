@@ -3,7 +3,8 @@
   "styleId": "e_score",
   "styleClass": "",
   "type": "form",
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        {{${label}}}\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div class=\"clearfix p_input\">\n        <div class=\"p_score\"></div>\n        <div class=\"p_hint\"></div>\n        <input type=\"hidden\" name=\"${elemId}\" value=\"{{#if score}}{{score}}/{{number}}{{/if}}\">\n    </div>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>\n",
+  "putSubForm": true,
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span>{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div class=\"clearfix p_input\">\n        <div class=\"p_score\"></div>\n        <div class=\"p_hint\"></div>\n        <input type=\"hidden\" name=\"${elemId}\" value=\"{{#if score}}{{score}}/{{number}}{{/if}}\">\n    </div>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>\n",
   "css": [
     {
       "media": "",

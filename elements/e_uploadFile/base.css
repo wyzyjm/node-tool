@@ -1,17 +1,39 @@
-.e_uploadFile{
-
-}
 .e_uploadFile .p_upload{
     line-height: 30px;
     background-color: #f0f0f0;
 }
 .e_uploadFile .p_uploadBtn{
+    display: inline-block;
     width: 80px;
     margin-right: 20px;
+    position: relative;
+}
+.e_uploadFile .p_uploadBtn button{
+    width: 100%;
+    height: 100%;
+}
+.e_uploadFile .p_uploadBtn input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 .e_uploadFile .p_fileItem{
-    margin: 10px 0 20px;
+    margin-bottom: 10px;
     overflow: hidden;
+}
+.e_uploadFile .p_fileItem .p_uploading{
+    display: none;
+}
+.e_uploadFile .p_fileItem.onLoad .p_del{
+    display: none;
+}
+.e_uploadFile .p_fileItem.onLoad .p_uploading{
+    display: inline;
 }
 .e_uploadFile .p_op{
     float: right;

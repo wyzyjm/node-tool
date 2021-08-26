@@ -2,6 +2,7 @@
   "cname": "相关项",
   "styleId": "e_relevantItem",
   "styleClass": "",
+  "putSubForm":true,
   "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    <div class=\"thead\">\n        {{#${previewList}}}\n        <div class=\"p_th\">{{label}}</div>\n        {{/${previewList}}}\n    </div>\n    <div class=\"tbody\">\n        <div class=\"p_tr\">\n\n        </div>\n    </div>\n    <div>\n        <button class=\"btn btn-primary btn-sm s_button1\">{{${btnText}}}</button>\n    </div>\n</div>",
   "css": [
     {

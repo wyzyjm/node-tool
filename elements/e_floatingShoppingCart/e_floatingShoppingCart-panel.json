@@ -1,0 +1,10 @@
+{
+  "panelConfig": [
+      {
+          "compName": "setting-button",
+          "title": "按钮-去购物车",
+          "bind-text": "prop.text",
+          "bind-href": "prop.href"
+      }
+  ]
+}

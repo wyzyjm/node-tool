@@ -1,0 +1,29 @@
+.e_register .p_label, .e_register .telInput{
+    display: none;
+}
+.e_register .p_title, .e_register .no_border{
+    border: none;
+}
+.e_register .p_range{
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ced4da;
+}
+.e_register .invalid-feedback{
+    padding: 0;
+}
+.e_register .form-control.is-invalid, .was-validated .form-control:invalid{
+    border-bottom-color: #dc3545;
+}
+.e_register .p_bLine{
+    padding: 0;
+}
+.e_register .p_registerBtn{
+    width: 100%;
+    border-radius: 30px;
+}
+.e_register .p_loginBtn{
+    width: 100%;
+    text-align: center;
+}

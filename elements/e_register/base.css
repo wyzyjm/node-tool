@@ -1,3 +1,226 @@
-.e_register{
+.e_register .p_wrapper{
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.e_register .p_title{
+    padding-bottom: 10px;
+}
+.e_register .p_line{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.e_register .no_border{
+    border: none;
+}
+.e_register .p_label{
+    width: 260px;
+    text-align: right;
+    margin-bottom: 0;
+}
+.e_register .p_input{
+    width: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    line-height: 20px;
+}
+.e_register .p_range{
+    width: 450px;
+    height: auto;
+    margin-left: 20px;
+}
+.e_register .telBox{
+    display: flex;
+    height: 35px;
+    padding: 0 .75rem;
+}
+.e_register .telInput{
+    width: 58px;
+    height: 100%;
+    margin-right: 10px;
+    /* border-right: 1px solid #ced4da; */
+}
+.e_register .p_fenge{
+    display: block;
+    width: 20px;
+    text-align: center;
+    float: left;
+    color: #bbb;
+}
+.e_register .e_date .is-invalid .p_input{
+    border-color: #dc3545;
+}
+.e_register .invalid-feedback{
+    padding-left: 282px;
+}
+.e_register .p_codeInput{
+    width: 60%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.e_register .p_codeBtn{
+    height: 20px;
+    float: right;
+    border: none;
+    outline: none;
+    background: none;
+}
+.e_register .p_bLine{
+    padding-left: 280px;
+}
+.e_register .p_loginBtn{
+    width: 400px;
+    text-align: center;
+}
+.e_register .p_loginBtn{
+    cursor: pointer;
+}
 
+/* 单选多选 */
+.e_register .p_radioLabel{
+    margin-right: 40px;
+}
+
+/* 日期 */
+.e_register .dateInput{
+    border: none;
+    outline: none;
+}
+
+/* 下拉多选 */
+.e_register .multSelect{
+    font-size:14px;
+    position: relative;
+}
+.e_register .multSelect .inputWrap{
+    width:100%;
+    min-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+.e_register .multSelect.is-invalid .inputWrap{
+    border-color:#dc3545
+}
+.e_register .multSelect ul{
+    padding:0 5px ;
+    margin: 0;
+    padding-right: 35px;
+}
+.e_register .multSelect ul,li{
+    list-style: none;
+}
+.e_register .multSelect li{
+    display: inline-block;
+    background: #edf0f3;
+    color:#92969c;
+    padding:3px 5px;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+}
+.e_register .multSelect .multSelect-option{
+    width: 405px;
+    border: 1px solid #ccc;
+    border-top:0;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    height: 0;
+    opacity: 0;
+    z-index: 9;
+    background: #fff;
+}
+.e_register .multSelect .multSelect-option>div{
+    line-height:40px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.e_register .multSelect .multSelect-option>div.selected{
+    color: #409eff;
+}
+.e_register .multSelect .multSelect-option>div:hover{
+    color: #409eff;
+    background:#f3f6f9
+}
+.e_register .multSelect .fa-close{
+    font-style:normal;
+    font-size:12px;
+    padding:0 5px 0 7px;
+}
+.e_register .multSelect .inputWrap>.fa svg{
+    fill:#666;
+    width:16px;
+    height:16px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 8px);
+}
+.e_register .multSelect .inputWrap>.fa-down svg{
+    transform:rotate(-90deg)
+}
+.e_register .multSelect .inputWrap>.fa-up svg{
+    transform:rotate(90deg)
+}
+.e_register .multSelect .placeholder{
+    line-height: 40px;
+    padding-left: 10px;
+    color: #aaa;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.e_register .p_mark{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+    background: rgba(000, 000, 000, 0.4);
+}
+.e_register .p_agreementWrapper{
+    width: 700px;
+    padding: 20px 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.e_register .p_text{
+    padding: 0 10px;
+    max-height: 420px;
+    overflow: auto;
+    margin-top: 30px;
+}
+.e_register .closeAgreement{
+    float: right;
+    cursor: pointer;
+}
+.e_register .p_agreementBtn,.e_register .p_registerBtn{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+.e_register .p_registerBtn{
+    margin: 10px 0;
+}
+
+
+.e_register .p_start,.e_register .p_end{
+    width: calc(50% - 10px);
+    float: left;
+    border: none;
+    outline: none;
+    line-height: 20px;
+    text-align: center;
+}
+/* 去除校验失败的警告icon */
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    background-image: none;
 }

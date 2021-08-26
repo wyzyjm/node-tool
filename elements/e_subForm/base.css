@@ -1,5 +1,5 @@
-.e_subForm{
-
+.e_subForm .form-group{
+    margin-bottom: 0;
 }
 .e_subForm .p_title{
     line-height: 40px;
@@ -17,15 +17,21 @@
 .e_subForm .p_tr{
     display: flex;
     flex-wrap: wrap;
+    padding: 10px 0;
 }
 .e_subForm .p_th{
     flex: 1;
+    padding: 0 5px;
 }
 .e_subForm .p_th:last-child{
     text-align: center;
 }
 .e_subForm .p_td{
     flex: 1;
+    padding: 0 5px;
+}
+.e_subForm .p_td .p_label{
+    display: none;
 }
 .e_subForm .p_td:last-child{
     display: flex;

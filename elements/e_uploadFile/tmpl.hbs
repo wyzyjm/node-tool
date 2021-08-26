@@ -1,25 +1,19 @@
-<div class="e_uploadFile">
+<div class="e_uploadFile" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
-        {{prop.label}}
+        <span>{{prop.label}}</span>
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
-    <div class="p_fileList clearfix">
-        <div class="p_fileItem">
-            <span class="text-primary">xxxxx.mp4</span>
-            <span class="p_op">
-                <span class="text-warning p_size">458.3MB</span>
-                <span class="text-danger p_del">
-                    <svg t="1628068788639" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8175" width="100" height="100"><path d="M746.23228413 310.58739301h-52.07424984V209.87430018H329.8419657v100.71309284H225.75457011v50.34975706H277.76771587v402.83200332c0 27.83630043 20.9722761 50.35654641 46.84645683 50.35654642h374.7716546c25.87418073 0 46.84645683-22.54740335 46.84645683-50.35654641V360.93715008h52.04709247v-50.34975706zM433.92257196 713.41939633h-52.03351379v-302.12569982H433.92257196z m104.08739559 0h-52.03351379v-302.12569982h52.04030313z m104.08739559 0H590.07742804v-302.12569982h52.04709248z m0-402.83200331H381.88905817v-50.34975708h260.22188366z" p-id="8176"></path></svg>
-                </span>
-            </span>
-        </div>
-    </div>
+    <div class="p_fileList clearfix"></div>
     <div class="p_upload">
-        <button class="btn btn-primary btn-sm s_button1 p_uploadBtn">上传</button>
+        <div class="p_uploadBtn">
+            <input type="file" name="file" class="uploadInput" multiple>
+            <button class="btn btn-primary btn-sm">上传</button>
+        </div>
         <span>{{prop.placeholder}}</span>
     </div>
+    <input type="hidden" name="${elemId}" class="p_input">
     <div class="invalid-feedback"></div>
     <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>
