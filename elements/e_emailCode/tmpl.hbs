@@ -1,4 +1,4 @@
-<div class="e_emailCode form-group">
+<div class="e_emailCode form-group" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
         <span>{{prop.label}}</span>
@@ -8,7 +8,7 @@
     <div class="p_input">
         <input type="text" class="form-control p_Number" name="${elemId}-Number" placeholder="{{prop.placeholder1}}">
         <input type="text" class="form-control p_Code" name="${elemId}-Code" placeholder="{{prop.placeholder2}}">
-        <button class="btn btn-primary btn-sm s_button1 p_sendBtn">发送邮件验证码</button>
+        <a href="javascript:;" class="btn btn-primary p_sendBtn">发送邮件验证码</a>
     </div>
     <div class="invalid-feedback"></div>
     <input type="hidden" name="propJson" value='{{{propJson}}}'>
