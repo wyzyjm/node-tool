@@ -157,9 +157,18 @@ function renderEelement(compId){
             data.i18nJson=JSON.stringify(data.i18n,null,2);
             compData=data;
             let compDiv=fdoc.createElement('div');
-            compDiv.id=compId;
+            compDiv.id="c_static_001";
+            let input = fdoc.createElement('input')
+            input.type="hidden"
+            input.name="propJson"
+            input.value=data.propJson
+            let div=fdoc.createElement('div');
+            div.id="con"
+            $(compDiv).append(div)
+            $(compDiv).append(input)
             fbody.appendChild(compDiv);
-            $(compDiv).html(tmpl(compData));
+            $(compDiv).find("#con").html(tmpl(compData));
+            
             // let compDiv=fdoc.createElement('div');
             // compDiv.id='c_prudtct_001-111111122334';
             // let childDiv=fdoc.createElement('div');

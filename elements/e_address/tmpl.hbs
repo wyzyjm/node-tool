@@ -1,12 +1,11 @@
-<div class="e_address form-group" needjs="true">
+<div class="e_address s_form1 form-group" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
-        <span>{{prop.label}}</span>
+        <span class="s_label">{{prop.label}}</span>
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
-    <input type="text" class="form-control p_input" {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} >
+    <input type="text" class="form-control s_form-control s_input p_input" {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} >
     <input type="hidden" name="${elemId}" >
     <div class="invalid-feedback"></div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

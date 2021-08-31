@@ -1,8 +1,8 @@
 {
   "cname": "条款条件",
   "styleId": "e_agreement",
-  "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span>{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div>\n        <div class=\"form-check form-check-inline p_input\">\n            <input class=\"form-check-input\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" {{#if ${validate}.select.value}}checked{{/if}}>\n            <label class=\"form-check-label\" for=\"${elemId}-{{@index}}\">{{${placeholder}}}</label>\n            <a href=\"javascript:;\" class=\"text-primary p_showAgreement\">{{${linkText}}}</a>\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "styleClass": "s_form1",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div>\n        <div class=\"form-check form-check-inline p_input\">\n            <input class=\"form-check-input s_form-control\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" {{#if ${validate}.select.value}}checked{{/if}}>\n            <label class=\"form-check-label s_other\" for=\"${elemId}-{{@index}}\">{{${placeholder}}}</label>\n            <a href=\"javascript:;\" class=\"text-primary p_showAgreement\">{{${linkText}}}</a>\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</div>",
   "css": [
     {
       "media": "",

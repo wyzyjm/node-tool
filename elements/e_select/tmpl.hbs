@@ -1,15 +1,15 @@
-<div class="e_select form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
+<div class="e_select s_form1 form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
-        <span>{{prop.label}}</span>
+        <span class="s_label">{{prop.label}}</span>
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
     {{#eq prop.state 'readOnly'}}
-    <p class="p_formValue"></p>
+    <p class="p_formValue s_input"></p>
     {{/eq}}
     <div class="{{#eq prop.state 'readOnly'}}hide{{/eq}}">
-        <select class="form-control p_input" name="${elemId}" {{#eq prop.state 'disabled'}}disabled{{/eq}} >
+        <select class="form-control s_form-control s_input p_input" name="${elemId}" {{#eq prop.state 'disabled'}}disabled{{/eq}} >
             {{#if prop.showPlaceholder}}
             <option value="">{{prop.placeholder}}</option>
             {{/if}}
@@ -19,5 +19,4 @@
         </select>
         <div class="invalid-feedback"></div>
     </div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

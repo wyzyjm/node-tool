@@ -1,7 +1,7 @@
-<div class="e_uploadFile" needjs="true">
+<div class="e_uploadFile s_form1" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
-        <span>{{prop.label}}</span>
+        <span class="s_label">{{prop.label}}</span>
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
@@ -11,9 +11,8 @@
             <input type="file" name="file" class="uploadInput" multiple>
             <button class="btn btn-primary btn-sm">上传</button>
         </div>
-        <span>{{prop.placeholder}}</span>
+        <span class="s_other">{{prop.placeholder}}</span>
     </div>
     <input type="hidden" name="${elemId}" class="p_input">
     <div class="invalid-feedback"></div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

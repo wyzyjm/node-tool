@@ -1,7 +1,7 @@
-<div class="e_uploadImg" needjs="true">
+<div class="e_uploadImg s_form1" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
-        <span>{{prop.label}}</span>
+        <span class="s_label">{{prop.label}}</span>
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
@@ -17,8 +17,7 @@
             
         </ul>
     </div>
-    <p class="p_placeholder">{{prop.placeholder}}</p>
+    <p class="p_placeholder s_other">{{prop.placeholder}}</p>
     <input name="${elemId}" class="p_input" type="hidden" >
     <div class="invalid-feedback"></div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

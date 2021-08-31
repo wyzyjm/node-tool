@@ -1,20 +1,19 @@
-<div class="e_date form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
+<div class="e_date s_form1 form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
-        <span>{{prop.label}}</span>
+        <span class="s_label">{{prop.label}}</span>
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
     {{#eq prop.state 'readOnly'}}
-    <p class="p_formValue"></p>
+    <p class="p_formValue s_input"></p>
     {{/eq}}
     <div class="{{#eq prop.state 'readOnly'}}hide{{/eq}}">
         <div class="j_date">
-            <input type="text" name="${elemId}" class="form-control p_input" 
+            <input type="text" name="${elemId}" class="form-control s_form-control s_input p_input" 
             {{#eq prop.showPlaceholder 'word'}}placeholder="{{prop.placeholder}}"{{/eq}} 
             {{#eq prop.state 'disabled'}}disabled{{/eq}} >
         </div>
         <div class="invalid-feedback"></div>
     </div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

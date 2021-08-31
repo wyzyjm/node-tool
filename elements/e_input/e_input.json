@@ -1,10 +1,10 @@
 {
   "cname": "单行文本",
   "styleId": "e_input",
-  "styleClass": "s_form",
+  "styleClass": "s_form1",
   "type": "form",
   "putSubForm": true,
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span>{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"input-group\">\n            {{#eq ${type} 'countryMobile'}}\n            <div class=\"input-group-prepend\">\n                <select class=\"form-control p_phoneCode\" name=\"phoneDail\"></select>\n                <input type=\"hidden\" name=\"phoneIso\" />\n            </div>\n            {{/eq}}\n            {{#eq ${type} 'countryTel'}}\n            <div class=\"input-group-prepend\">\n                <select class=\"form-control p_phoneCode\" name=\"phoneDail\"></select>\n                <input type=\"hidden\" name=\"phoneIso\" />\n            </div>\n            {{/eq}}\n            <input type=\"text\" class=\"form-control p_input\" name=\"${elemId}\" \n                {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n                {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n                {{#eq ${state} 'disabled'}}disabled{{/eq}}\n            >\n            <div class=\"invalid-feedback\"></div>\n        </div>\n        \n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"s_input p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"input-group\">\n            {{#eq ${type} 'countryMobile'}}\n            <div class=\"input-group-prepend\">\n                <select class=\"form-control p_phoneCode\" name=\"phoneDail\"></select>\n                <input type=\"hidden\" name=\"phoneIso\" />\n            </div>\n            {{/eq}}\n            {{#eq ${type} 'countryTel'}}\n            <div class=\"input-group-prepend\">\n                <select class=\"form-control p_phoneCode\" name=\"phoneDail\"></select>\n                <input type=\"hidden\" name=\"phoneIso\" />\n            </div>\n            {{/eq}}\n            <input type=\"text\" class=\"form-control s_form-control s_input p_input\" name=\"${elemId}\" \n                {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n                {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n                {{#eq ${state} 'disabled'}}disabled{{/eq}}\n            >\n            <div class=\"invalid-feedback\"></div>\n        </div>\n    </div>\n</div>",
   "css": [
     {
       "media": "",
@@ -38,12 +38,12 @@
         "msg": "内容不能为空"
       },
       "minLength": {
-        "state": true,
+        "state": false,
         "value": 5,
         "msg": "您输入的内容不能少于%len个字符"
       },
       "maxLength": {
-        "state": true,
+        "state": false,
         "value": 128,
         "msg": "您输入的内容不能多于%len个字符"
       },
