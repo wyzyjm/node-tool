@@ -1,13 +1,13 @@
 {
   "cname": "按钮",
   "styleId": "e_formBtn",
-  "styleClass": "",
-  "tmpl": "<div>\n    <a class=\"${elemId} ${styleClass} btn btn-primary\" href=\"javascript:;\" needjs=\"true\">{{${text}}}</a>\n</div>",
+  "styleClass": "s_button1",
+  "tmpl": "<a class=\"${elemId} ${styleClass} btn btn-primary\" href=\"javascript:;\" needjs=\"true\">{{${text}}}</a>",
   "type": "form",
   "css": [
     {
       "media": "",
-      "cssText": ".e_formBtn{\n\n}\n"
+      "cssText": ".e_formBtn{\n    display: block;\n    width: 100px;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",

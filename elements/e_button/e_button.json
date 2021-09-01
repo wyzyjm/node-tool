@@ -2,11 +2,11 @@
   "cname": "按钮",
   "styleId": "e_button",
   "styleClass": "s_button1",
-  "tmpl": "<div>\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    <button class=\"${elemId} ${styleClass} btn btn-primary\">{{${text}}}</button>\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
+  "tmpl": "<a class=\"${elemId} ${styleClass} btn btn-primary\" href=\"{{#if ${href}.value}}{{$transferLink ${href} compId}}{{^}}javascript:;{{/if}}\" {{#if ${href}.value}}target=\"{{${href}.target}}\"{{/if}}>{{${text}}}</a>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_button{\n}\n"
+      "cssText": ".e_button{\n    display: block;\n    width: 100px;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -25,7 +25,7 @@
     "text": "按钮",
     "href": {
       "type": "link",
-      "value": "http://www.baidu.com",
+      "value": "",
       "target": "_blank"
     }
   },
