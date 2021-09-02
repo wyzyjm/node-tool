@@ -3,7 +3,7 @@
   "styleId": "e_relevantItem",
   "styleClass": "",
   "putSubForm": true,
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    <div class=\"p_thead\">\n        {{#${previewList}}}\n        <div class=\"p_th\">{{label}}</div>\n        {{/${previewList}}}\n    </div>\n    <div class=\"p_tbody\">\n        <div class=\"p_tr\">\n        </div>\n    </div>\n    <div>\n        <a href=\"javascript:;\" class=\"btn btn-primary btn-sm\">{{${btnText}}}</a>\n    </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"p_thead\">\n        {{#${previewList}}}\n        <div class=\"p_th\">{{label}}</div>\n        {{/${previewList}}}\n    </div>\n    <div class=\"p_tbody\">\n        <div class=\"p_tr\">\n        </div>\n    </div>\n    <div>\n        <a href=\"javascript:;\" class=\"btn btn-primary btn-sm p_addRow\">{{${btnText}}}</a>\n    </div>\n</div>",
   "css": [
     {
       "media": "",
@@ -26,27 +26,8 @@
     "type": 1,
     "btnText": "添加内容",
     "datasource": {},
-    "previewList": [
-      {
-        "label": "内容名称",
-        "key": "name",
-        "tableShow": true
-      },
-      {
-        "label": "缩略图",
-        "key": "img"
-      }
-    ],
-    "searchList": [
-      {
-        "label": "内容名称",
-        "key": "name"
-      },
-      {
-        "label": "缩略图",
-        "key": "img"
-      }
-    ],
+    "previewList": [],
+    "searchList": [],
     "isHide": true
   },
   "i18n": {

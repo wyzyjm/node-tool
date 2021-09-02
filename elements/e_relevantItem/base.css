@@ -17,3 +17,9 @@
 .e_relevantItem .p_th,.p_td{
     flex: 1;
 }
+.p_modelDialog{
+    max-width: 960px;
+}
+.p_modalContent{
+    border-radius: 6px;
+}
