@@ -14,12 +14,12 @@
             "msg":"内容不能为空"
         },
         "minLength":{
-            "state":true,
+            "state":false,
             "value":5,
             "msg":"您输入的内容不能少于%len个字符"
         },
         "maxLength":{
-            "state":true,
+            "state":false,
             "value":128,
             "msg":"您输入的内容不能多于%len个字符"
         },

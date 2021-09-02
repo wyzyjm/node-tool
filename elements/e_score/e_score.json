@@ -1,10 +1,10 @@
 {
   "cname": "评分、评价",
   "styleId": "e_score",
-  "styleClass": "",
+  "styleClass": "s_form1",
   "type": "form",
   "putSubForm": true,
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span>{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div class=\"clearfix p_input\">\n        <div class=\"p_score\"></div>\n        <div class=\"p_hint\"></div>\n        <input type=\"hidden\" name=\"${elemId}\" value=\"{{#if score}}{{score}}/{{number}}{{/if}}\">\n    </div>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>\n",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div class=\"clearfix p_input\">\n        <div class=\"p_score\"></div>\n        <div class=\"p_hint s_other\"></div>\n        <input type=\"hidden\" name=\"${elemId}\" value=\"{{#if score}}{{score}}/{{number}}{{/if}}\">\n    </div>\n    <div class=\"invalid-feedback\"></div>\n</div>\n",
   "css": [
     {
       "media": "",
@@ -30,7 +30,7 @@
     "placeholder": "请选择评分",
     "type": 0,
     "number": 5,
-    "score": 3,
+    "score": 0,
     "half": true,
     "prompt": [
       {

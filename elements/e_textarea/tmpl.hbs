@@ -1,19 +1,18 @@
-<div class="e_textarea form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
+<div class="e_textarea s_form1 form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
-        <span>{{prop.label}}</span>
+        <span class="s_label">{{prop.label}}</span>
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
     {{#eq prop.state 'readOnly'}}
-    <p class="p_formValue">{{prop.value}}</p>
+    <p class="s_input p_formValue">{{prop.value}}</p>
     {{/eq}}
     <div class="{{#eq prop.state 'readOnly'}}hide{{/eq}}">
-        <textarea class="form-control p_input" rows="3" name="${elemId}" 
+        <textarea class="form-control s_form-control s_input p_input" rows="3" name="${elemId}" 
             {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} 
             {{#eq prop.state 'disabled'}}disabled{{/eq}} 
         >{{#if prop.value}}{{prop.value}}{{/if}}</textarea>
         <div class="invalid-feedback"></div>
     </div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

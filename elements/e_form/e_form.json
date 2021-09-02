@@ -3,7 +3,7 @@
   "styleId": "e_form",
   "styleClass": "",
   "type": "form",
-  "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"cbox-${id}\">\n        \n    </div>\n    {{#eq ${submit}.type 2}}\n    <a class=\"p_submitPage hide\" href=\"{{$transferLink ${submit}.obj2 compId}}\" target=\"{{${submit}.obj2.target}}\"></a>\n    {{/eq}}\n</form>",
+  "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"cbox-${id} s_layout\"></div>\n    {{#eq ${submit}.type 2}}\n    <a class=\"p_submitPage hide\" href=\"{{$transferLink ${submit}.obj2 compId}}\" target=\"{{${submit}.obj2.target}}\"></a>\n    {{/eq}}\n</form>",
   "css": [
     {
       "media": "",
@@ -50,6 +50,7 @@
     "rule": [],
     "submit": {
       "type": 1,
+      "logic": [],
       "obj1": {
         "prompt": "",
         "request": [],

@@ -27,6 +27,7 @@
         "rule":[],
         "submit":{  
             "type":1,   
+            "logic":[],
             "obj1":{  
                 "prompt":"",  
                 "request":[],   

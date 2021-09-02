@@ -6,7 +6,7 @@
     "placeholder":"请选择评分",
     "type":0,
     "number":5,
-    "score":3,
+    "score":0,
     "half":true,
     "prompt":[
         {
