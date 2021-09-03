@@ -1,12 +1,12 @@
 {
-  "cname": "线条",
-  "styleId": "e_line",
-  "styleClass": "s_line",
-  "tmpl": "<hr class=\"${elemId} ${styleClass}\" />",
+  "cname": "图片组",
+  "styleId": "e_imageGroup",
+  "styleClass": "",
+  "tmpl": "",
   "css": [
     {
       "media": "",
-      "cssText": ".e_line{\n\n}\n"
+      "cssText": ""
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,8 +22,7 @@
     }
   ],
   "prop": {},
-  "i18n": {
-    "zh_CN": {}
-  },
-  "datasource": "prop"
+  "i18n": {},
+  "datasource": "prop",
+  "dataFields": {}
 }

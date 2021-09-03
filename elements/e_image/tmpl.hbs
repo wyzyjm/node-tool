@@ -1,9 +1,13 @@
 <div class="e_image s_img">
-    {{#if prop.href.value}}
-        <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}">
-    {{/if}}
-    {{{lazyImage prop.src "alt='{{prop.title}}'" "{{prop.isLazy}}"}}}
-    {{#if prop.href.value}}
-        </a>
-    {{/if}}
+    {{#prop.imgList}}
+        {{#eq @index 0}}
+        {{#if ${imgList$href}.value}}
+            <a href="{{$transferLink ${imgList$href} compId}}" target="{{${imgList$href}.target}}">
+        {{/if}}
+        {{{lazyImage url "alt='{{${imgList$title}}}'" "{{isLazy}}"}}}
+        {{#if ${imgList$href}.value}}
+            </a>
+        {{/if}}
+        {{/eq}}
+    {{/prop.imgList}}
 </div>

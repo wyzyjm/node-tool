@@ -2,17 +2,15 @@
     "apiType":"object",
     "dataFields":[
         {
-            "name":"src",
-            "cname":"图片地址",
-            "type":"string"
-        },
-        {
-            "name":"title",
+            "name":"imgList",
+            "cname":"图片集",
+            "type":"array[img]"
+        },{
+            "name":"imgList$title",
             "cname":"标题",
             "type":"string"
-        },
-        {
-            "name":"href",
+        },{
+            "name":"imgList$href",
             "cname":"链接",
             "type":"link"
         }
