@@ -1,12 +1,12 @@
 {
   "cname": "容器",
   "styleId": "e_container",
-  "styleClass": "s_list",
+  "styleClass": "s_layout",
   "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${layout}}}\n    <div class=\"cbox-${id}-{{@index}} p_item\"></div>\n    {{/${layout}}}\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_container{\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_container .p_item{\n    flex: 1;\n}"
+      "cssText": ".e_container{\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction:row;\n}\n.e_container .p_item{\n    flex: 1;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -24,6 +24,7 @@
   "container": true,
   "prop": {
     "layout": [
+      {},
       {}
     ]
   },

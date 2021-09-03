@@ -4,6 +4,8 @@
             "compName":"setting-image",
             "title":"图像",
             "bind-imgList":"prop.imgList",
+            "bind-href":"prop.href",
+            "bind-title":"prop.title",
             "bind-space":"prop.space"
         }
     ]

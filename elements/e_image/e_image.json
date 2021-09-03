@@ -2,7 +2,7 @@
   "cname": "图片",
   "styleId": "e_image",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${imgList}}}\n        {{#eq @index 0}}\n        {{#if ${imgList$href}.value}}\n            <a href=\"{{$transferLink ${imgList$href} compId}}\" target=\"{{${imgList$href}.target}}\">\n        {{/if}}\n        {{{lazyImage url \"alt='{{${imgList$title}}}'\" \"{{isLazy}}\"}}}\n        {{#if ${imgList$href}.value}}\n            </a>\n        {{/if}}\n        {{/eq}}\n    {{/${imgList}}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#each ${imgList}}}\n        {{#eq @index 0}}\n        {{#if ../${href}.value}}\n            <a href=\"{{$transferLink ../${href} compId}}\" target=\"{{../${href}.target}}\">\n        {{/if}}\n        {{{nLazyImage url ../${title} \"{{isLazy}}\"}}}\n        {{#if ../${href}.value}}\n            </a>\n        {{/if}}\n        {{/eq}}\n    {{/each}}\n</div>",
   "css": [
     {
       "media": "",
@@ -24,17 +24,17 @@
   "prop": {
     "imgList": [
       {
-        "title": "图片名称",
         "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "href": {
-          "type": "",
-          "value": "",
-          "target": ""
-        },
         "isLazy": true,
         "fit": "contain"
       }
     ],
+    "title": "图片名称",
+    "href": {
+      "type": "",
+      "value": "",
+      "target": ""
+    },
     "space": 0
   },
   "i18n": {

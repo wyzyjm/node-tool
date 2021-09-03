@@ -6,11 +6,11 @@
             "cname":"图片集",
             "type":"array[img]"
         },{
-            "name":"imgList$title",
+            "name":"title",
             "cname":"标题",
             "type":"string"
         },{
-            "name":"imgList$href",
+            "name":"href",
             "cname":"链接",
             "type":"link"
         }
