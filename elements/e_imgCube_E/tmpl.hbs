@@ -6,7 +6,7 @@
             style="width:calc(( 100% - 2 * {{../prop.space}}px) / 3);height:calc(( 100% - {{../prop.space}}px) / 2)">
                 <!-- 链接 -->
                 {{#if href.value}}	
-                <a href="{{$transferLink href.value compId}}" target="{{href.target}}">
+                <a href="{{$transferLink href compId}}" target="{{href.target}}">
                 {{/if}}
                     <!-- 图片 -->
                     {{{nLazyImage url title "{{isLazy}}"}}}
@@ -21,7 +21,7 @@
             style="width:calc((( 100% - 2 * {{../prop.space}}px) / 3) * 2 + {{../prop.space}}px);height:calc(( 100% - {{../prop.space}}px) / 2)">
                 <!-- 链接 -->
                 {{#if href.value}}	
-                <a href="{{$transferLink href.value compId}}" target="{{href.target}}">
+                <a href="{{$transferLink href compId}}" target="{{href.target}}">
                 {{/if}}
                     <!-- 图片 -->
                     {{{nLazyImage url title "{{isLazy}}"}}}
