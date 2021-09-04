@@ -75,6 +75,14 @@
     {
       "name": "图片组",
       "code": "e_imageGroup"
+    },
+    {
+      "name": "网站分享",
+      "code": "e_websiteShare"
+    },
+    {
+      "name": "图方魔盒1",
+      "code": "e_imgCube_A"
     }
   ],
   "complex": [
