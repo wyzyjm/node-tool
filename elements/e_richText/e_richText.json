@@ -28,7 +28,6 @@
     "zh_CN": {}
   },
   "datasource": "prop",
-  "scope": true,
   "dataFields": {
     "richtext": "richtext"
   }

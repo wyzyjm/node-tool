@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-text",
+            "bind-text": "prop.richtext",
+            "bind-href": "prop.href",
+            "title": "富文本"
+        }
+    ]
+}

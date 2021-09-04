@@ -1,0 +1,10 @@
+{   
+    "apiType":"object",
+    "dataFields":[
+        {
+            "name":"richtext",
+            "cname":"富文本文字",
+            "type":"string"
+        }
+    ]
+}
