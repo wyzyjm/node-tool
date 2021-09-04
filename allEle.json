@@ -54,7 +54,7 @@
     },
     {
       "name": "循环体元素",
-      "code": "e_loopElement"
+      "code": "e_listElement"
     },
     {
       "name": "富文本",
