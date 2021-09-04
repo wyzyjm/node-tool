@@ -9,7 +9,7 @@ $(function(){
             layer.msg('元素名称必填', {offset: '100px'});
             return
         }
-        if(!/^e_[0-9a-zA-Z]+$/.test(eleId)){
+        if(!/^e_[0-9a-zA-Z]+(_[0-9a-zA-Z])?$/.test(eleId)){
             layer.msg('元素ID不符合规范', {offset: '100px'});
             return
         }
