@@ -83,6 +83,26 @@
     {
       "name": "图方魔盒1",
       "code": "e_imgCube_A"
+    },
+    {
+      "name": "图方魔盒2",
+      "code": "e_imgCube_B"
+    },
+    {
+      "name": "图方魔盒3",
+      "code": "e_imgCube_C"
+    },
+    {
+      "name": "图方魔盒4",
+      "code": "e_imgCube_D"
+    },
+    {
+      "name": "图方魔盒5",
+      "code": "e_imgCube_E"
+    },
+    {
+      "name": "图方魔盒6",
+      "code": "e_imgCube_F"
     }
   ],
   "complex": [

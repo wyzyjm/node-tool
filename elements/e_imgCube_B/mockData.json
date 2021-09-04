@@ -12,32 +12,28 @@
         "isLazy": true,
         "fit": "cover"
       },
-    
       {
         "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片完整",
+        "title": "无连接图片",
         "href": {
           "type": "",
-          "value": "http://www.baidu.com",
+          "value": "",
           "target": "_blank"
         },
         "isLazy": true,
         "fit": "cover"
       },
-    
       {
         "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片完整",
+        "title": "图片名称",
         "href": {
           "type": "",
           "value": "http://www.baidu.com",
-          "target": "_blank"
+          "target": "_self"
         },
         "isLazy": true,
         "fit": "cover"
       },
-    
-      
       {
         "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "title": "图片名称",

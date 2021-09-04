@@ -1,0 +1,34 @@
+<div class="e_imgCube_E">
+    {{#prop.imgList}}
+		<!-- 前3个 -->
+		{{#lt @index 4}}
+			<div class="p_imgItem " 
+            style="width:calc(( 100% - 2 * {{../prop.space}}px) / 3);height:calc(( 100% - {{../prop.space}}px) / 2)">
+                <!-- 链接 -->
+                {{#if href.value}}	
+                <a href="{{$transferLink href.value compId}}" target="{{href.target}}">
+                {{/if}}
+                    <!-- 图片 -->
+                    {{{nLazyImage url title "{{isLazy}}"}}}
+                {{#if href.value}}	
+                </a>
+                {{/if}}
+            </div>
+		{{/lt}}
+
+        {{#eq @index 4}}
+            <div class="p_imgItem " 
+            style="width:calc((( 100% - 2 * {{../prop.space}}px) / 3) * 2 + {{../prop.space}}px);height:calc(( 100% - {{../prop.space}}px) / 2)">
+                <!-- 链接 -->
+                {{#if href.value}}	
+                <a href="{{$transferLink href.value compId}}" target="{{href.target}}">
+                {{/if}}
+                    <!-- 图片 -->
+                    {{{nLazyImage url title "{{isLazy}}"}}}
+                {{#if href.value}}	
+                </a>
+                {{/if}}
+            </div>
+		{{/eq}}
+    {{/prop.imgList}}
+</div>

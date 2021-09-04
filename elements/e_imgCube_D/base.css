@@ -1,20 +1,21 @@
-.e_imgCube_A{
+.e_imgCube_D{
     width: 100%;
     max-width: 700px;
     height: 525px;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
 }
 
-.e_imgCube_A img {
+.e_imgCube_D img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.e_imgCube_A .p_imgItem {
+.e_imgCube_D .p_imgItem {
     overflow: hidden;
 }
