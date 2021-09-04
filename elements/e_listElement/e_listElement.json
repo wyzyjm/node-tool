@@ -1,12 +1,12 @@
 {
   "cname": "循环体元素",
-  "styleId": "e_loopElement",
+  "styleId": "e_listElement",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#${options}}}\r\n    <span class=\"p_item\">{{itemName}}</span>\r\n    {{/${options}}}\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${options}}}\n    <span class=\"p_item\">{{itemName}}</span>\n    {{/${options}}}\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_loopElement .p_item+.p_item{\r\n    margin-left: 10px;\r\n}\r\n"
+      "cssText": ".e_listElement .p_item+.p_item{\n    margin-left: 10px;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",

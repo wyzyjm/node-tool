@@ -1,0 +1,3 @@
+.e_listElement .p_item+.p_item{
+    margin-left: 10px;
+}
