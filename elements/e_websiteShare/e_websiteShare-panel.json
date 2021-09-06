@@ -1,10 +1,10 @@
 {
     "panelConfig": [
         {
-            "compName": "setting-select",
-            "name": "版本控制",
+            "compName": "setting-static-select",
+            "title": "网站分享",
             "bind-value": "prop.selectValue",
-            "selectList": "prop.selectList"
+            "bind-selectList": "prop.selectList"
         }
     ]
 }
