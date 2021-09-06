@@ -1,0 +1,19 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-select",
+            "name": "版本控制",
+            "bind-value": "prop.selectValue",
+            "selectList": [
+                {
+                    "label": "内贸",
+                    "value": "1"
+                },
+                {
+                    "label": "外贸",
+                    "value": "2"
+                }
+            ]
+        }
+    ]
+}

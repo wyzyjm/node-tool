@@ -1,0 +1,8 @@
+.e_websiteShare .p_share a{
+    width: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.e_websiteShare .p_share a img{
+    width: 100%;
+}

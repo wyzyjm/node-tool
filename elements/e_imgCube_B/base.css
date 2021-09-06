@@ -1,0 +1,21 @@
+.e_imgCube_B{
+    width: 100%;
+    max-width: 700px;
+    height: 525px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+}
+
+.e_imgCube_B img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.e_imgCube_B .p_imgItem {
+    overflow: hidden;
+}
