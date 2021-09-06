@@ -1,11 +1,11 @@
 <div class="e_imgCube_A">
     {{#prop.imgList}}
 		<!-- 前四个 -->
-		{{#lte @index 4}}
+		{{#lt @index 4}}
 			<div class="p_imgItem " style="width:calc(( 100% - {{../prop.space}}px) / 2);height:calc(( 100% - {{../prop.space}}px) / 2)">
                 <!-- 链接 -->
                 {{#if href.value}}	
-                <a href="{{$transferLink href.value compId}}" target="{{href.target}}">
+                <a href="{{$transferLink href compId}}" target="{{href.target}}">
                 {{/if}}
                     <!-- 图片 -->
                     {{{nLazyImage url title "{{isLazy}}"}}}
@@ -14,6 +14,6 @@
                 {{/if}}
             </div>
                         
-		{{/lte}}
+		{{/lt}}
     {{/prop.imgList}}
 </div>

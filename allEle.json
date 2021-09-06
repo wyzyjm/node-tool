@@ -77,12 +77,68 @@
       "code": "e_imageGroup"
     },
     {
+      "name": "循环体",
+      "code": "e_loop_A"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_B"
+    },
+    {
       "name": "网站分享",
       "code": "e_websiteShare"
     },
     {
       "name": "图方魔盒1",
       "code": "e_imgCube_A"
+    },
+    {
+      "name": "图方魔盒2",
+      "code": "e_imgCube_B"
+    },
+    {
+      "name": "图方魔盒3",
+      "code": "e_imgCube_C"
+    },
+    {
+      "name": "图方魔盒4",
+      "code": "e_imgCube_D"
+    },
+    {
+      "name": "图方魔盒5",
+      "code": "e_imgCube_E"
+    },
+    {
+      "name": "图方魔盒6",
+      "code": "e_imgCube_F"
+    },
+    {
+      "name": "循环体7",
+      "code": "e_loop_G"
+    },
+    {
+      "name": "循环体8",
+      "code": "e_loop_H"
+    },
+    {
+      "name": "循环体9",
+      "code": "e_loop_I"
+    },
+    {
+      "name": "地图1",
+      "code": "e_map_A"
+    },
+    {
+      "name": "面包屑",
+      "code": "e_breadcrumb"
+    },
+    {
+      "name": "备案号",
+      "code": "e_provider"
+    },
+    {
+      "name": "访问计数",
+      "code": "e_visitNumber"
     }
   ],
   "complex": [
