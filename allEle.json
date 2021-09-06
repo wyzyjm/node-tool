@@ -77,6 +77,14 @@
       "code": "e_imageGroup"
     },
     {
+      "name": "循环体",
+      "code": "e_loop_A"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_B"
+    }
+    {
       "name": "网站分享",
       "code": "e_websiteShare"
     },
