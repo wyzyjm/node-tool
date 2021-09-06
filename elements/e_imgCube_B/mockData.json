@@ -6,8 +6,8 @@
         "title": "图片完整",
         "href": {
           "type": "",
-          "value": "http://www.baidu.com",
-          "target": "_blank"
+          "value": "",
+          "target": ""
         },
         "isLazy": true,
         "fit": "cover"
@@ -18,7 +18,7 @@
         "href": {
           "type": "",
           "value": "",
-          "target": "_blank"
+          "target": ""
         },
         "isLazy": true,
         "fit": "cover"
@@ -28,8 +28,8 @@
         "title": "图片名称",
         "href": {
           "type": "",
-          "value": "http://www.baidu.com",
-          "target": "_self"
+          "value": "",
+          "target": ""
         },
         "isLazy": true,
         "fit": "cover"
@@ -39,8 +39,8 @@
         "title": "图片名称",
         "href": {
           "type": "",
-          "value": "http://www.baidu.com",
-          "target": "_parent"
+          "value": "",
+          "target": ""
         },
         "isLazy": true,
         "fit": "cover"
