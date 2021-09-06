@@ -75,6 +75,14 @@
     {
       "name": "图片组",
       "code": "e_imageGroup"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_A"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_B"
     }
   ],
   "complex": [
