@@ -1,10 +1,15 @@
-<div class="e_video s_img p_video" needjs="true">
-    <span class="cover">
-        <img class="playBtn" src="/public/img/playVideo.png" alt="">
-        {{#if prop.coverImage}}
-            <img class="coverImage" src="{{prop.coverImage}}" alt="">
-        {{/if}}
-    </span>
-    <video class="video" src="{{prop.video}}" muted></video>
-    <input type="hidden" value='{{{propJson}}}' name="propJson" />
+<div class="e_video s_img" needjs="true">
+    {{#each prop.videoList}}
+    {{#eq @index 0}}
+    <div class="p_video">
+        <span class="cover">
+            <img class="playBtn" src="/npublic/img/playVideo.png" alt="">
+            {{#if coverImgUrl}}
+                <img class="coverImage" src="{{coverImgUrl}}" alt="">
+            {{/if}}
+        </span>
+        <video class="video" src="{{url}}" muted></video>
+    </div>
+    {{/eq}}
+    {{/each}}
 </div>
