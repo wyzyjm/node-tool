@@ -103,6 +103,34 @@
     {
       "name": "图方魔盒6",
       "code": "e_imgCube_F"
+    },
+    {
+      "name": "循环体7",
+      "code": "e_loop_G"
+    },
+    {
+      "name": "循环体8",
+      "code": "e_loop_H"
+    },
+    {
+      "name": "循环体9",
+      "code": "e_loop_I"
+    },
+    {
+      "name": "地图1",
+      "code": "e_map_A"
+    },
+    {
+      "name": "面包屑",
+      "code": "e_breadcrumb"
+    },
+    {
+      "name": "备案号",
+      "code": "e_provider"
+    },
+    {
+      "name": "访问计数",
+      "code": "e_visitNumber"
     }
   ],
   "complex": [
