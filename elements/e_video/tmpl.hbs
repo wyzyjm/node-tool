@@ -5,7 +5,9 @@
         <span class="cover">
             <img class="playBtn" src="/npublic/img/playVideo.png" alt="">
             {{#if coverImgUrl}}
-                <img class="coverImage" src="{{coverImgUrl}}" alt="">
+                <div class="coverImage">
+                    {{{nLazyImage coverImgUrl '' 'false'}}}
+                </div>
             {{/if}}
         </span>
         <video class="video" src="{{url}}" muted></video>

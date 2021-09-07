@@ -2,11 +2,11 @@
   "cname": "轮播图-缩略图",
   "styleId": "e_bannerC",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${bannerLists}}}\n    <div class=\"swiper-container gallery-top\" >\n        <div class=\"swiper-wrapper\">\n            {{#${bannerLists}}}\n            <div class=\"swiper-slide\" >\n                {{#eq type 1}}\n                    {{#if href}}\n                    <a href=\"{{href}}\" target=\"{{target}}\">\n                    {{/if}}\n                    <div class=\"p_img\">\n                        {{{lazyImage imgUrl \"title='{{title}}' alt='{{title}}'\" 'true'}}}\n                    </div>\n                    {{#if href}}\n                    </a>\n                    {{/if}}\n                {{/eq}}\n                {{#eq type 2}}\n                    <div class=\"p_video\">\n                        <div class=\"p_videoPoster\">\n                            {{{lazyImage video.imgUrl \"title='{{title}}' alt='{{title}}'\" 'false'}}}\n                        </div>\n                        <video class=\"videoContent\" src=\"{{video.videoUrl}}\" muted></video>\n                    </div>\n                {{/eq}}\n                <div class=\"p_info {{#eq type 2}}p_videoInfo{{/eq}}\">\n                    <div>\n                        {{#if title}}\n                        <h1 class=\"text-white p_btitle\">{{title}}</h1>\n                        {{/if}}\n                        {{#if subTitle}}\n                        <h6 class=\"text-white bg-dark p_subtitle\">{{subTitle}}</h6>\n                        {{/if}}\n                        {{#if summary}}\n                        <p class=\"text-white p_summary\">{{summary}}</p>\n                        {{/if}}\n                    </div>\n                </div>\n            </div>\n            {{/${bannerLists}}}\n        </div>\n        <!-- Add Arrows -->\n        {{#if ${navigation}}}\n        <div class=\"swiper-button-next swiper-button-white\"></div>\n        <div class=\"swiper-button-prev swiper-button-white\"></div>\n        {{/if}}\n    </div>\n    <div class=\"swiper-container gallery-thumbs\">\n        <div class=\"swiper-wrapper\">\n            {{#${bannerLists}}}\n            <div class=\"swiper-slide\" >\n                {{#eq type 1}}\n                    <div class=\"p_img\">\n                        {{{lazyImage imgUrl \"title='{{${bannerLists$title}}}' alt='{{${bannerLists$title}}}'\" 'true'}}}\n                    </div>\n                {{/eq}}\n                {{#eq type 2}}\n                    <div class=\"p_img\">\n                        {{{lazyImage video.imgUrl \"title='{{title}}' alt='{{title}}'\" 'true'}}}\n                    </div>\n                {{/eq}}\n            </div>\n            {{/${bannerLists}}}\n        </div>\n    </div>\n    {{^}}\n    {{{noDataPrompt}}}\n    {{/if}}\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}' />\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${bannerLists}}}\n    <div class=\"swiper-container gallery-top\" >\n        <div class=\"swiper-wrapper\">\n            {{#each ${bannerLists}}}\n            <div class=\"swiper-slide\" >\n                {{#eq type 1}}\n                    {{#if href.value}}\n                    <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\n                    {{/if}}\n                    <div class=\"p_img\">\n                        {{{nLazyImage imgUrl title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}\n                    </div>\n                    {{#if href.value}}\n                    </a>\n                    {{/if}}\n                {{/eq}}\n                {{#eq type 2}}\n                    <div class=\"p_video\">\n                        <div class=\"p_videoPoster\">\n                            {{{nLazyImage video.imgUrl title 'false'}}}\n                        </div>\n                        <video class=\"videoContent\" src=\"{{video.videoUrl}}\" muted></video>\n                    </div>\n                {{/eq}}\n                <div class=\"p_info {{#eq type 2}}p_videoInfo{{/eq}}\">\n                    <div>\n                        {{#if title}}\n                        <h1 class=\"text-white p_btitle\">{{title}}</h1>\n                        {{/if}}\n                        {{#if subTitle}}\n                        <h6 class=\"text-white bg-dark p_subtitle\">{{subTitle}}</h6>\n                        {{/if}}\n                        {{#if summary}}\n                        <p class=\"text-white p_summary\">{{summary}}</p>\n                        {{/if}}\n                    </div>\n                </div>\n            </div>\n            {{/each}}\n        </div>\n        {{#if ${settings}.navigation}}\n        <div class=\"swiper-button-next swiper-button-white\"></div>\n        <div class=\"swiper-button-prev swiper-button-white\"></div>\n        {{/if}}\n    </div>\n    <div class=\"swiper-container gallery-thumbs\">\n        <div class=\"swiper-wrapper\">\n            {{#each ${bannerLists}}}\n            <div class=\"swiper-slide\" >\n                {{#eq type 1}}\n                    <div class=\"p_img\">\n                        {{{nLazyImage imgUrl title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}\n                    </div>\n                {{/eq}}\n                {{#eq type 2}}\n                    <div class=\"p_img\">\n                        {{{nLazyImage video.imgUrl title 'false'}}}\n                    </div>\n                {{/eq}}\n            </div>\n            {{/each}}\n        </div>\n    </div>\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_bannerC{\n    height: 600px;\n}\n.e_bannerC .p_img{\n    width: 100%;\n    height: 100%;\n    background: #000;\n}\n.e_bannerC .p_img img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_bannerC .custom-bullet{\n    background:#ccc;\n}\n.e_bannerC .p_info{\n    height: 100%;\n    width: 50%;\n    position: absolute;\n    right: 50%;\n    top: 0;\n    z-index: 9;\n    display: flex;\n    transform: translateX(50%);\n    align-items: center;\n    text-align: center;\n}\n.e_bannerC .p_info div{\n    width: 100%;\n}\n.e_bannerC .p_subtitle{\n    line-height: 2;\n    padding: 5px 0;\n}\n.e_bannerC .p_video{\n    width: 100%;\n    height: 100%;\n    z-index: 3;\n    overflow: hidden;\n    margin-right: 0;\n    margin-left: auto;\n    position: relative;\n}\n.e_bannerC .p_video video{\n    width: 100%;\n    height: 100%;\n    background: #000;\n}\n.e_bannerC .p_videoPoster{\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    cursor: pointer;\n}\n.e_bannerC .p_videoPoster::before{\n    content:\" \";\n    position:absolute;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    background: url('/public/img/playVideo.png') no-repeat center center;\n}\n.e_bannerC .p_videoPoster img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n\n\n  .e_bannerC .swiper-slide img{\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n  }\n  .e_bannerC .gallery-top {\n    height: 80%;\n    width: 100%;\n  }\n\n  .e_bannerC .gallery-thumbs {\n    height: 20%;\n    box-sizing: border-box;\n    padding-top: 5px;\n  }\n\n  .e_bannerC .gallery-thumbs .swiper-slide {\n    width: 25%;\n    height: 100%;\n    opacity: 0.6;\n  }\n  .e_bannerC .gallery-thumbs .swiper-slide img{\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n  }\n\n  .e_bannerC .gallery-thumbs .swiper-slide-thumb-active {\n    opacity: 1;\n  }"
+      "cssText": ".e_bannerC{\n    height: 600px;\n}\n.e_bannerC .p_img{\n    width: 100%;\n    height: 100%;\n    background: #000;\n}\n.e_bannerC .p_img img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_bannerC .custom-bullet{\n    background:#ccc;\n}\n.e_bannerC .p_info{\n    height: 100%;\n    width: 50%;\n    position: absolute;\n    right: 50%;\n    top: 0;\n    z-index: 9;\n    display: flex;\n    transform: translateX(50%);\n    align-items: center;\n    text-align: center;\n}\n.e_bannerC .p_info div{\n    width: 100%;\n}\n.e_bannerC .p_subtitle{\n    line-height: 2;\n    padding: 5px 0;\n}\n.e_bannerC .p_video{\n    width: 100%;\n    height: 100%;\n    z-index: 3;\n    overflow: hidden;\n    margin-right: 0;\n    margin-left: auto;\n    position: relative;\n}\n.e_bannerC .p_video video{\n    width: 100%;\n    height: 100%;\n    background: #000;\n}\n.e_bannerC .p_videoPoster{\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    cursor: pointer;\n}\n.e_bannerC .p_videoPoster::before{\n    content:\" \";\n    position:absolute;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n    background: url('/npublic/img/playVideo.png') no-repeat center center;\n}\n.e_bannerC .p_videoPoster img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n\n\n  .e_bannerC .swiper-slide img{\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n  }\n  .e_bannerC .gallery-top {\n    height: 80%;\n    width: 100%;\n  }\n\n  .e_bannerC .gallery-thumbs {\n    height: 20%;\n    box-sizing: border-box;\n    padding-top: 5px;\n  }\n\n  .e_bannerC .gallery-thumbs .swiper-slide {\n    width: 25%;\n    height: 100%;\n    opacity: 0.6;\n  }\n  .e_bannerC .gallery-thumbs .swiper-slide img{\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n  }\n\n  .e_bannerC .gallery-thumbs .swiper-slide-thumb-active {\n    opacity: 1;\n  }\n  .e_bannerC .p_videoInfo{\n    display: none;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -32,7 +32,11 @@
           "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.jpg"
         },
         "imgUrl": null,
-        "href": null,
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
         "summary": "按时大萨达阿萨德按时打算按时啊 按时啊是啊啊啊",
         "type": 2
       },
@@ -40,7 +44,11 @@
         "target": "blank",
         "title": "kjhgfds",
         "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
-        "href": null,
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
         "summary": "",
         "type": 1
       },
@@ -50,21 +58,32 @@
         "video": null,
         "code": null,
         "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
-        "href": null,
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
         "summary": "",
         "type": 1
       }
     ],
-    "direction": "horizontal",
-    "pagination": true,
-    "navigation": true,
-    "autoplay": false,
-    "autoPlayVideo": false,
-    "deplay": 4,
-    "effect": "flip"
+    "settings": {
+      "direction": "horizontal",
+      "pagination": true,
+      "navigation": true,
+      "autoplay": false,
+      "deplay": 4,
+      "effect": "slide",
+      "videoAutoplay": false,
+      "videoLoop": false,
+      "videoMouted": true,
+      "videoControlor": false
+    }
   },
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "noData": "暂无数据"
+    }
   },
   "datasource": "prop",
   "dataFields": {
