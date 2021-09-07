@@ -1,0 +1,22 @@
+<div class="e_loop_G" needjs="true">
+    {{#if prop.dataList}}
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+             
+                {{#prop.dataList}}
+                    <div class="swiper-slide p_slide">
+                        <div class="cbox-${id}-{{@index}} p_item">{{@index}} </div>
+                    </div>
+                {{/prop.dataList}}
+            </div>
+             <!-- 分页器 -->
+            <div class="swiper-pagination p_pagenation"></div>
+            <!-- 导航按钮 -->
+            <div class="swiper-button-next p_btn_next"></div>
+            <div class="swiper-button-prev p_btn_prev"></div>
+        </div>
+    {{^}}
+        {{{noDataPrompt}}}
+    {{/if}}
+    <input type="hidden" name="propJson" value='{{{propJson}}}' />
+</div>

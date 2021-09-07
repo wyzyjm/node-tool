@@ -1,3 +1,7 @@
 .e_loop_G{
-
+    overflow: hidden;
+}
+.e_loop_G .p_item {
+    min-height: 200px;
+    border: 1px dashed #ccc;
 }

@@ -1,6 +1,16 @@
 {
   "prop": {
-    "selectValue": "1"
+    "selectValue": "1",
+    "selectList": [
+      {
+        "label": "内贸",
+        "value": "1"
+      },
+      {
+        "label": "外贸",
+        "value": "2"
+      }
+    ]
   },
   "i18n": {}
 }
