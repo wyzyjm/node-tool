@@ -2,7 +2,7 @@
   "cname": "视频",
   "styleId": "e_video",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#each ${videoList}}}\n    {{#eq @index 0}}\n    <div class=\"p_video\">\n        <span class=\"cover\">\n            <img class=\"playBtn\" src=\"/npublic/img/playVideo.png\" alt=\"\">\n            {{#if coverImgUrl}}\n                <div class=\"coverImage\">\n                    {{{nLazyImage coverImgUrl '' 'false'}}}\n                </div>\n            {{/if}}\n        </span>\n        <video class=\"video\" src=\"{{url}}\" muted></video>\n    </div>\n    {{/eq}}\n    {{/each}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#each ${videoList}}}\n    {{#eq @index 0}}\n    <div class=\"p_video\">\n        <span class=\"cover\">\n            <img class=\"playBtn\" src=\"/npublic/img/playVideo.png\" alt=\"\">\n            {{#if coverImgUrl}}\n                <div class=\"coverImage\">\n                    {{{nLazyImage coverImgUrl '' 'false'}}}\n                </div>\n            {{/if}}\n        </span>\n        {{{lazyVideo url mouted controlor}}}\n    </div>\n    {{/eq}}\n    {{/each}}\n</div>",
   "css": [
     {
       "media": "",
@@ -31,7 +31,7 @@
         "autoPlay": false,
         "loop": false,
         "mouted": true,
-        "controlor": false
+        "controlor": true
       }
     ]
   },
@@ -40,12 +40,7 @@
   },
   "datasource": "prop",
   "dataFields": {
-    "coverImage": "coverImage",
-    "video": "video",
-    "autoPlay": "autoPlay",
-    "loop": "loop",
-    "mouted": "mouted",
-    "controlor": "controlor",
+    "videoList": "videoList",
     "videoList$title": "title",
     "videoList$summary": "summary",
     "videoList$coverImgUrl": "coverImgUrl",

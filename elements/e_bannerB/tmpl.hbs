@@ -19,7 +19,7 @@
                     <div class="p_videoPoster">
                         {{{nLazyImage video.imgUrl title 'false'}}}
                     </div>
-                    <video class="videoContent" src="{{video.videoUrl}}" muted></video>
+                    {{{lazyVideo video.videoUrl ../prop.settings.videoMouted false}}}
                 </div>
             {{/eq}}
             <div class="p_info {{#eq type 2}}p_videoInfo{{/eq}}">
