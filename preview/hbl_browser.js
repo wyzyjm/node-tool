@@ -169,14 +169,26 @@ helpers.lazyImage = function (url,attr,isLazy) {
     let resultStr=`
             <img src="${url}" ${attr} />
         `
-    return new Handlebars.SafeString(Handlebars.compile(resultStr,{compat:true})(this))
+    return new Handlebars.SafeString(Handlebars.compile(resultStr)(this))
 };
 helpers.nLazyImage = function (url,attr,isLazy) {
     let resultStr=`
             <img src="${url}" alt="${attr}" />
         `
-    return new Handlebars.SafeString(Handlebars.compile(resultStr,{compat:true})(this))
+    return new Handlebars.SafeString(Handlebars.compile(resultStr)(this))
 };
+
+
+helpers.lazyVideo = function (url,muted,controls) {
+    let mutedstr = muted ? 'muted' : ''
+    let controlsstr = controls ? 'controls' : ''
+    let resultStr=`
+        <video class="video" src="${url}" ${mutedstr} ${controlsstr} ></video>
+    `
+    return new Handlebars.SafeString(Handlebars.compile(resultStr)(this))
+};
+
+
 helpers.lazySource = function (url,attr,isLazy) {
     let resultStr= `
     <source srcset="${url}" ${attr} />
@@ -372,6 +384,7 @@ Handlebars.registerHelper("paging", helpers.paging);
 Handlebars.registerHelper("nPaging", helpers.nPaging);
 Handlebars.registerHelper("lazyImage", helpers.lazyImage);
 Handlebars.registerHelper("nLazyImage", helpers.nLazyImage);
+Handlebars.registerHelper("lazyVideo", helpers.lazyVideo);
 Handlebars.registerHelper("lazySource", helpers.lazySource);
 Handlebars.registerHelper("compare", helpers.compare);
 Handlebars.registerHelper("eq", helpers.eq);

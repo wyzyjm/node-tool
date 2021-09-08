@@ -9,7 +9,7 @@
                 "autoPlay":false,
                 "loop":false,
                 "mouted":true,
-                "controlor":false
+                "controlor":true
             }
         ]
     },
