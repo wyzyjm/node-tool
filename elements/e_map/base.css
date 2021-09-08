@@ -1,0 +1,9 @@
+.e_map{
+    width: 100%;
+    height: 550px;
+    border: 1px solid #ccc;
+}
+.e_map #mapCotainer {
+    width: 100%;
+    height: 100%;
+}

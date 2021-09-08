@@ -139,6 +139,14 @@
     {
       "name": "访问计数",
       "code": "e_visitNumber"
+    },
+    {
+      "name": "地图3",
+      "code": "e_map_C"
+    },
+    {
+      "name": "地图",
+      "code": "e_map"
     }
   ],
   "complex": [
