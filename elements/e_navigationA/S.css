@@ -18,10 +18,8 @@
     float: right;
     margin: 15px 0;
     transition: 0.5s;
-    color: #cdcdcd;
-    transform: rotate(90deg);
 }
 .e_navigationA .p_jtHover {
     transition: 0.5s;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }

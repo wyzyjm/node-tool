@@ -2,7 +2,7 @@
     display: flex;
 }
 .e_navigationA .p_level1Item{
-    width: 160px;
+    min-width: 120px;
     padding: 0 20px;
 }
 .e_navigationA .p_level2Item, 

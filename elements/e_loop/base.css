@@ -2,10 +2,159 @@
     display: flex;
     flex-wrap: wrap;
 }
-.e_loop .p_item{
+.e_loop .p_loopitem{
     flex:0 0 33.3%;
     position: relative;
 }
 .e_loop .p_page{
     text-align: center;
+}
+.e_loop .p_filter_wrapper{
+    width: 100%;
+}
+.e_loop .p_kv_wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.e_loop .p_filter_key{
+    /* min-width: 80px; */
+    line-height: 40px;
+    margin-right: 10px;
+}
+.e_loop .p_v_item{
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.e_loop .p_active{
+    color: blueviolet;
+}
+.e_loop .p_result_item{
+    position: relative;
+    padding: 3px 20px 3px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;;
+    margin-right:10px;
+}
+.e_loop .p_filter_close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px;
+    font-style: normal;
+    font-size: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.e_loop .p_s_option{
+
+}
+.e_loop .multSelect {
+	font-size: 14px;
+	position: relative;
+}
+.e_loop .multSelect .inputWrap {
+    width: 100%;
+    min-width: 100px;
+	min-height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	position: relative;
+	cursor: pointer;
+}
+.e_loop .multSelect.is-invalid .inputWrap {
+	border-color: #dc3545;
+}
+.e_loop .multSelect ul {
+	padding: 0 5px;
+	margin: 0;
+	padding-right: 35px;
+}
+.e_loop .multSelect ul,li {
+	list-style: none;
+}
+.e_loop .multSelect li {
+	display: inline-block;
+	background: #edf0f3;
+	color: #92969c;
+	padding: 3px 5px;
+	margin: 5px 5px 5px 0;
+	border-radius: 5px;
+}
+.e_loop .multSelect .multSelect-option {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-top: 0;
+	max-height: 200px;
+	overflow-y: scroll;
+	position: absolute;
+	height: 0;
+	opacity: 0;
+	z-index: 9;
+	background: #fff;
+}
+.e_loop .multSelect .multSelect-option>div {
+	line-height: 40px;
+	cursor: pointer;
+	padding: 0 10px;
+}
+.e_loop .multSelect .multSelect-option>div.selected {
+	color: #409eff;
+}
+.e_loop .multSelect .multSelect-option>div:hover {
+	color: #409eff;
+	background: #f3f6f9;
+}
+.e_loop .multSelect .fa-close {
+	font-style: normal;
+	font-size: 12px;
+	padding: 0 5px 0 7px;
+}
+.e_loop .multSelect .inputWrap>.fa svg {
+	fill: #666;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 0;
+	top: calc(50% - 8px);
+}
+.e_loop .multSelect .inputWrap>.fa-down svg {
+	transform: rotate(-90deg);
+}
+.e_loop .multSelect .inputWrap>.fa-up svg {
+	transform: rotate(90deg);
+}
+.e_loop .multSelect .placeholder {
+	line-height: 40px;
+	padding-left: 10px;
+	color: #aaa;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/* .e_loop .p_filter_close::before{
+    content: "\2716";
+    
+} */
+.e_loop .p_filter_select{
+    width: 150px;
+}
+.e_loop .p_normal_start,
+.e_loop .p_date_start
+{
+    display: inline;
+    width: 100px;
+
+}
+.e_loop .p_normal_end,
+.e_loop .p_date_end{
+    display: inline;
+    width: 100px;
+}
+.e_loop .p_split{
+    margin: 0 5px;
+}
+.e_loop .p_normal{
+    margin-right: 16px;
 }

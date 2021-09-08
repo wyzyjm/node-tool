@@ -1,12 +1,12 @@
 {
-  "cname": "面包屑",
-  "styleId": "e_breadcrumb",
+  "cname": "时间",
+  "styleId": "e_timeFormat",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    面包屑\n</div>",
+  "tmpl": "<P class=\"${elemId} ${styleClass}\">{{{dateFormat ${time} ${format}}}}</P>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_breadcrumb{\n\n}\n"
+      "cssText": ".e_timeFormat{\n    min-height: 20px;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,11 +21,14 @@
       "cssText": ""
     }
   ],
-  "prop": {},
+  "prop": {
+    "time": "2021-09-15 00:00",
+    "format": "yyyy-MM-dd hh:mm",
+    "range": "-"
+  },
   "i18n": {
     "zh_CN": {}
   },
   "datasource": "prop",
-  "container": true,
   "dataFields": {}
 }

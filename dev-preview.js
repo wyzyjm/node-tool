@@ -227,6 +227,18 @@ app.use(async function (ctx,next) {
             }else{
                 result=JSON.stringify({error:'缺少参数 compId'})
             }
+        }else if(api=='copyFile'){//同步
+            let compId=ctx.query.compId;
+            if(compId){
+                try{
+                    elementMaker.copyFile(compId);
+                    result=JSON.stringify({success:true});
+                }catch(e){
+                    result=JSON.stringify({error:e.toString()});
+                }
+            }else{
+                result=JSON.stringify({error:'缺少参数 compId'})
+            }
         }
         ctx.body=result;
         ctx.set('content-type','application/json;charset=utf-8');

@@ -6,7 +6,7 @@ const sd = require('silly-datetime');
 const {promises: {readdir, writeFile,readFile,stat}} = require('fs');
 const gta = require('google-translate-api-cn');
 const COMP_PATH=path.join(__dirname, './elements');//组件基础路径
-const DESIGNlIB_pATH=path.join(__dirname, '../../designlib/comp/');//组件基础路径
+const DESIGNlIB_pATH=path.join(__dirname, '../ndesignlib/elem/');//组件基础路径
 
 const defaultJson={
     "cname": "",
@@ -110,6 +110,43 @@ async function addElement(body){
     logger.info(`Component "${compId}" initialization is complete`)
 }
 
+//同步文件
+async function copyFile(compId){
+    let compPath=`${COMP_PATH}/${compId}/`;
+    let compJsonFilePath=`${compPath + compId}.json`;
+    let compPanelFilePath=`${compPath + compId}-panel.json`;
+    let compDataFilePath=`${compPath + compId}-data.json`;
+    let compJson,compPanelJson,compDataJson
+    try{
+        compJson=JSON.parse(await readFile(compJsonFilePath));
+    }catch(e){
+        compJson=[]
+    }
+    try{
+        compPanelJson=JSON.parse(await readFile(compPanelFilePath));
+    }catch(e){
+        compPanelJson=[]
+    }
+    try{
+        compDataJson=JSON.parse(await readFile(compDataFilePath));
+    }catch(e){
+        compDataJson=[]
+    }
+    let desginLibComp = `${DESIGNlIB_pATH + compId}/`;
+    console.log(desginLibComp)
+    if(!fs.existsSync(desginLibComp)){
+        createDir(desginLibComp);
+    }
+
+  
+    let dsignCompPath = `${desginLibComp + compId}.json`;
+    let dsignCompPannelPath = `${desginLibComp + compId}-panel.json`;
+    let dsignCompDataPath = `${desginLibComp + compId}-data.json`;
+    
+    await writeFile(dsignCompPath,JSON.stringify(compJson,null,2),'utf8');
+    await writeFile(dsignCompPannelPath,JSON.stringify(compPanelJson,null,2),'utf8');
+    await writeFile(dsignCompDataPath,JSON.stringify(compDataJson,null,2),'utf8');
+}
 
 //自动修改json
 async function compJsonBuilder(compId) {
@@ -164,6 +201,27 @@ function handleStr(str,dataFields,compId){
             // }
         })
     }
+    str = str.replace(/datasource/ig, "${datasource}")
+    // let datasourceReg = /datasource/g
+    //  matchArrSource = str.match(datasourceReg)
+    // if(matchArrSource){
+    //     matchArrSource.forEach((e,index)=>{
+    //         if(index==0){
+    //             tmpStr = e.trim()
+    //             let f="${"+e+"}"
+    //             console.log(str)
+    //             str=str.replace(e,f)
+    //         }
+            
+            
+    //     })
+    //     // let old = matchArrSource[0];
+    //     // let f = "${"+old+"}"
+    //     // str.replace(old,f)
+    //     // console.log(old);
+    //     // console.log(f);
+    // }
+    
  
     //数据替换
     let dataReg2 = /(\{\{#[\w\W]*?\}\}[\w\W]*?{{\/[\w\W]*?\}\})/g
@@ -245,5 +303,6 @@ function createDir(dir){
 
 module.exports={
   compJsonBuilder,
-  addElement
+  addElement,
+  copyFile
 }

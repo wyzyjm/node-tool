@@ -2,11 +2,11 @@
   "cname": "地图1",
   "styleId": "e_map_A",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    地图\n    <div id=\"mapBox\"></div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_map_A{\n\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,7 +22,9 @@
     }
   ],
   "prop": {},
-  "i18n": {},
+  "i18n": {
+    "zh_CN": {}
+  },
   "datasource": "prop",
   "container": true,
   "dataFields": {}
