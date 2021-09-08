@@ -14,6 +14,7 @@
 let util = {};
 
 util.formatDate = function (date, fmt) {
+    if(date  == "Invalid Date" ) return ''
     var o = {
         "M+": date.getMonth() + 1,                 //月份 
         "d+": date.getDate(),                    //日 
@@ -163,7 +164,9 @@ helpers.compare = function (a, operator, b, options) {
     return util.value(result, this, options);
 }
 helpers.dateFormat = function (date, options) {
-    return util.formatDate(new Date(Number(date)), 'yyyy-MM-dd');
+    let nformat = (typeof options) == 'object' ? 'yyyy-MM-dd' : options
+    let time = /^\d+$/.test(date) ? Number(date) : date
+    return util.formatDate(new Date(time), nformat);
 }
 helpers.lazyImage = function (url,attr,isLazy) {
     let resultStr=`

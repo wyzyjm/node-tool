@@ -1,0 +1,11 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-timeFormat",
+            "bind-time": "prop.time",
+            "bind-format": "prop.format",
+            "bind-range": "prop.range",
+            "title": "时间"
+        }
+    ]
+}

@@ -9,7 +9,8 @@
         <li class="border-bottom p_level1Item">
             <p class="p_menuItem">
                 <a href="{{#if href}}{{href}}{{^}}javascript:;{{/if}}" target="{{#eq target 'BLANk'}}_blank{{/eq}}">
-                {{name}}{{#if children}}{{{../prop.arrow}}}{{/if}}
+                    <span>{{name}}</span>
+                    {{#if children}}{{{../prop.arrow}}}{{/if}}
                 </a>
             </p>
             {{#if children}}
@@ -18,7 +19,8 @@
                 <li class="p_level2Item">
                     <p class="p_menuItem">
                         <a href="{{#if href}}{{href}}{{^}}javascript:;{{/if}}" target="{{#eq target 'BLANk'}}_blank{{/eq}}">
-                        {{name}}{{#if children}}{{{../../prop.arrow}}}{{/if}}
+                            <span>{{name}}</span>
+                            {{#if children}}{{{../../prop.arrow}}}{{/if}}
                         </a>
                     </p>
                     {{#if children}}
@@ -27,7 +29,7 @@
                         <li class="p_level3Item">
                             <p class="p_menuItem">
                                 <a href="{{#if href}}{{href}}{{^}}javascript:;{{/if}}" target="{{#eq target 'BLANk'}}_blank{{/eq}}">
-                                {{name}}
+                                    <span>{{name}}</span>
                                 </a>
                             </p>
                         </li>
