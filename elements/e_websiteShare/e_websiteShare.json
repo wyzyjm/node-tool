@@ -2,7 +2,7 @@
   "cname": "网站分享",
   "styleId": "e_websiteShare",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n   <div class=\"p_share\" data-ename=\"分享容器\" data-selectValue=\"{{${selectValue}}}\"></div>\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n   <div class=\"p_share\" data-ename=\"分享容器\" data-selectValue=\"{{${selectValue}}}\"></div>\n</div>",
   "css": [
     {
       "media": "",

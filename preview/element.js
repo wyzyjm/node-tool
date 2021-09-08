@@ -44,6 +44,13 @@ $(function(){
         var comp=_t.parents('.list-group-item').attr('name')
         bq(comp)
     })
+    //同步
+    $('.elementlist').on('click','.tb',function(e){
+        e.stopPropagation();
+        var _t=$(this)
+        var comp=_t.parents('.list-group-item').attr('name')
+        tb(comp)
+    })
     $('.eleCateCon button').click(function(){
         if($(this).hasClass('active')){
             return
@@ -69,6 +76,7 @@ async function initElements() {
                 <div class="p_name">${ele.name}(${ele.code})</div>
                 <div class="p_oper">
                     <button type="button" class="btn btn-success btn-sm bq">补全</button>
+                    <button type="button" class="btn btn-primary btn-sm tb">同步</button>
                 </div>
             </div>
         </li>
@@ -83,6 +91,7 @@ async function initElements() {
                 <div class="p_name">${ele.name}(${ele.code})</div>
                 <div class="p_oper">
                     <button type="button" class="btn btn-success btn-sm bq">补全</button>
+                    <button type="button" class="btn btn-primary btn-sm tb">同步</button>
                 </div>
             </div>
         </li>
@@ -97,6 +106,7 @@ async function initElements() {
                 <div class="p_name">${ele.name}(${ele.code})</div>
                 <div class="p_oper">
                     <button type="button" class="btn btn-success btn-sm bq">补全</button>
+                    <button type="button" class="btn btn-primary btn-sm tb">同步</button>
                 </div>
             </div>
         </li>
@@ -189,6 +199,15 @@ async function bq(comp){
     let result=await (await fetch('/element/buildCompJson?compId='+comp)).json();
     if(result.success){
         layer.msg('操作成功', {offset: '100px'});
+    }else{
+        layer.msg(result.error, {offset: '100px'});
+    }
+}
+//同步
+async function tb(comp){
+    let result=await (await fetch('/element/copyFile?compId='+comp)).json();
+    if(result.success){
+        layer.msg('同步成功', {offset: '100px'});
     }else{
         layer.msg(result.error, {offset: '100px'});
     }

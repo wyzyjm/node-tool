@@ -2,7 +2,7 @@
   "cname": "标记图标",
   "styleId": "e_flagIcon",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n         {{#${markList}}}\r\n            <div class=\"p_flog\">\r\n                <div class=\"p_flog_c\">\r\n                    {{{lazyImage markUrl 'class=\"p_flog_img\"  title=\"{{${markList$markName}}}\" alt=\"{{${markList$markName}}}\"' 'true'}}}     \r\n                </div>\r\n            </div>\r\n        {{/${markList}}}\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n         {{#${markList}}}\n            <div class=\"p_flog\">\n                <div class=\"p_flog_c\">\n                    {{{lazyImage markUrl 'class=\"p_flog_img\"  title=\"{{${markList$markName}}}\" alt=\"{{${markList$markName}}}\"' 'true'}}}     \n                </div>\n            </div>\n        {{/${markList}}}\n</div>",
   "css": [
     {
       "media": "",
