@@ -1,41 +1,164 @@
 {
     "prop": {
-        "dataList":[
-            {},{},{},{},{},{}
+        "dataList": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
         ],
-        "page":{
-            "from":0,
-            "size":6,
-            "totalCount":100
+        "page": {
+            "from": 0,
+            "size": 6,
+            "totalCount": 100
         },
-        "pageConfig":{
+        "pageConfig": {
             "showJump": true,
             "pcRow": 2,
             "pcColumn": 3,
             "moColumn": 1,
             "pageType": "hidden",
-            "rolling":{
-                "navigation":true,
-                "pagenation":true,
-                "autoScroll":true,
-                "scrollTime":4,
-                "scrollType":"horizontal"
+            "rolling": {
+                "navigation": true,
+                "pagenation": true,
+                "autoScroll": true,
+                "scrollTime": 4,
+                "scrollType": "horizontal"
             },
-            "marquee":{
-                "navigation":true,
-                "marqueeTime":4
+            "marquee": {
+                "navigation": true,
+                "marqueeTime": 4
             },
-            "loopItem": ".p_item"
+            "loopItem": ".p_loopitem"
         }
     },
     "i18n": {
-        "pageWhole":"共",
-        "pageItem":"条",
-        "pageJump":"前往",
-        "pageUnit":"页",
+        "pageWhole": "共",
+        "pageItem": "条",
+        "pageJump": "前往",
+        "pageUnit": "页",
         "loadMore": "点击加载更多",
         "loadNow": "加载中",
         "noMore": "没有更多了",
         "noData": "暂无数据"
+    },
+    "datasource": {
+        "_config": {
+            "appId": "exist-data-source",
+            "cname": "列表",
+            "pageParams": [
+                {
+                    "code": "_detailId",
+                    "name": "_detailId"
+                },
+                {
+                    "code": "name",
+                    "name": "name"
+                }
+            ],
+            "metaUrl": "/fwebapi/cms/lowcode/1293/21446/list/meta?cate=0",
+            "api": "/fwebapi/cms/lowcode/1293/21446/list?cate=0",
+            "id": "datasource1",
+            "type": "list",
+            "params": {
+                "size": 50,
+                "query": [
+                    {
+                        "esField": "CID",
+                        "groupEnd": "1",
+                        "field": "CID",
+                        "sourceType": "page",
+                        "logic": "and",
+                        "groupBegin": "1",
+                        "value": "_detailId",
+                        "operator": "eq"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_symbol_description",
+                        "groupEnd": "1",
+                        "field": "description",
+                        "sourceType": "page",
+                        "logic": "and",
+                        "value": "name",
+                        "operator": "eq"
+                    }
+                ],
+                "from": 0,
+                "sort": []
+            },
+            "valueUrl": "/fwebapi/cms/lowcode/1293/21446/list/value?cate=0",
+            "_dataFilter": {
+                "filter": true,
+                "showCondition": true,
+                "showSearch": "_detailId",
+                "fields": [
+                    {
+                        "field": "TOP",
+                        "selectMode": "radio",
+                        "values": [
+                            {
+                                "valueType": "all",
+                                "name": "全部",
+                                "range": {
+                                    "left": 100,
+                                    "right": 10000,
+                                    "leftType": ">=",
+                                    "rightType": "<="
+                                },
+                                "filterType": "",
+                                "value": ""
+                            },
+                            {
+                                "valueType": "custom",
+                                "name": "是",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "range",
+                                "value": "1"
+                            },
+                            {
+                                "valueType": "custom",
+                                "name": "否",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "range",
+                                "value": "0"
+                            }
+                        ],
+                        "name": "置顶",
+                        "displayMode": "tag"
+                    },
+                    {
+                        "field": "thumb",
+                        "selectMode": "radio",
+                        "values": [
+                            {
+                                "valueType": "all",
+                                "name": "全部",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": ""
+                            }
+                        ],
+                        "name": "测试",
+                        "displayMode": "tag"
+                    }
+                ]
+            }
+        }
     }
 }

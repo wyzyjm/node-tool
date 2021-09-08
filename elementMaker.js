@@ -164,6 +164,27 @@ function handleStr(str,dataFields,compId){
             // }
         })
     }
+    str = str.replace(/datasource/ig, "${datasource}")
+    // let datasourceReg = /datasource/g
+    //  matchArrSource = str.match(datasourceReg)
+    // if(matchArrSource){
+    //     matchArrSource.forEach((e,index)=>{
+    //         if(index==0){
+    //             tmpStr = e.trim()
+    //             let f="${"+e+"}"
+    //             console.log(str)
+    //             str=str.replace(e,f)
+    //         }
+            
+            
+    //     })
+    //     // let old = matchArrSource[0];
+    //     // let f = "${"+old+"}"
+    //     // str.replace(old,f)
+    //     // console.log(old);
+    //     // console.log(f);
+    // }
+    
  
     //数据替换
     let dataReg2 = /(\{\{#[\w\W]*?\}\}[\w\W]*?{{\/[\w\W]*?\}\})/g
