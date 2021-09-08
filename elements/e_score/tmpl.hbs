@@ -1,15 +1,14 @@
-<div class="e_score form-group" needjs="true">
+<div class="e_score s_form1 form-group" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
-        <span>{{prop.label}}</span>
+        <span class="s_label">{{prop.label}}</span>
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
     <div class="clearfix p_input">
         <div class="p_score"></div>
-        <div class="p_hint"></div>
+        <div class="p_hint s_other"></div>
         <input type="hidden" name="${elemId}" value="{{#if score}}{{score}}/{{number}}{{/if}}">
     </div>
     <div class="invalid-feedback"></div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </div>

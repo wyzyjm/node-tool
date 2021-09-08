@@ -1,9 +1,9 @@
 {
   "cname": "标签型",
   "styleId": "e_label",
-  "styleClass": "",
+  "styleClass": "s_form1",
   "type": "form",
-  "tmpl": "<fieldset class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        <span>{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </legend>\n    {{/if}}\n    <div class=\"p_input\">\n        {{#${options}}}\n        <div class=\"form-check form-check-inline p_labelItem\">\n            <input class=\"form-check-input\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" value=\"{{value}}\" {{#if select}}checked{{/if}}>\n            <label class=\"form-check-label\" for=\"${elemId}-{{@index}}\">{{label}}</label>\n        </div>\n        {{/${options}}}\n    </div>\n    <div class=\"invalid-feedback\"></div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</fieldset>",
+  "tmpl": "<fieldset class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </legend>\n    {{/if}}\n    <div class=\"p_input\">\n        {{#${options}}}\n        <div class=\"form-check form-check-inline p_labelItem\">\n            <input class=\"form-check-input s_form-control\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" value=\"{{value}}\" {{#if select}}checked{{/if}}>\n            <label class=\"form-check-label s_other\" for=\"${elemId}-{{@index}}\">{{label}}</label>\n        </div>\n        {{/${options}}}\n    </div>\n    <div class=\"invalid-feedback\"></div>\n</fieldset>",
   "css": [
     {
       "media": "",

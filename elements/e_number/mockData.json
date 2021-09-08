@@ -15,12 +15,12 @@
             "msg":"内容不能为空"
         },
         "min":{
-            "state":true,
+            "state":false,
             "value":10,
             "msg":"您输入的内容最小值为%len"
         },
         "max":{
-            "state":true,
+            "state":false,
             "value":100,
             "msg":"您输入的内容最大值为%len"
         },

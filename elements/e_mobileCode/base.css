@@ -6,7 +6,9 @@
     margin-bottom: 10px;
 }
 .e_mobileCode .p_sendBtn{
-    height: 35px;
-    padding: 0 15px;
     margin-left: 5px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    font-size: 12px;
 }

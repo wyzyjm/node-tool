@@ -2,8 +2,44 @@
     "apiType":"object",
     "dataFields":[
         {
-            "name":"value",
-            "cname":"值",
+            "name":"value1",
+            "cname":"隐藏域1值",
+            "type":"string"
+        },{
+            "name":"value2",
+            "cname":"隐藏域2值",
+            "type":"string"
+        },{
+            "name":"value3",
+            "cname":"隐藏域3值",
+            "type":"string"
+        },{
+            "name":"value4",
+            "cname":"隐藏域4值",
+            "type":"string"
+        },{
+            "name":"value5",
+            "cname":"隐藏域5值",
+            "type":"string"
+        },{
+            "name":"value6",
+            "cname":"隐藏域6值",
+            "type":"string"
+        },{
+            "name":"value7",
+            "cname":"隐藏域7值",
+            "type":"string"
+        },{
+            "name":"value8",
+            "cname":"隐藏域8值",
+            "type":"string"
+        },{
+            "name":"value9",
+            "cname":"隐藏域9值",
+            "type":"string"
+        },{
+            "name":"value10",
+            "cname":"隐藏域10值",
             "type":"string"
         }
     ]

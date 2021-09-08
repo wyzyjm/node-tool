@@ -1,0 +1,41 @@
+{
+  "cname": "循环体7",
+  "styleId": "e_loop_G",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${dataList}}}\n        <div class=\"swiper-container\">\n            <div class=\"swiper-wrapper\">\n             \n                {{#${dataList}}}\n                    <div class=\"swiper-slide p_slide\">\n                        <div class=\"cbox-${id}-{{@index}} p_item\">{{@index}} </div>\n                    </div>\n                {{/${dataList}}}\n            </div>\n             <!-- 分页器 -->\n            <div class=\"swiper-pagination p_pagenation\"></div>\n            <!-- 导航按钮 -->\n            <div class=\"swiper-button-next p_btn_next\"></div>\n            <div class=\"swiper-button-prev p_btn_prev\"></div>\n        </div>\n    {{^}}\n        {{{noDataPrompt}}}\n    {{/if}}\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}' />\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_loop_G{\n    overflow: hidden;\n}\n.e_loop_G .p_item {\n    min-height: 200px;\n    border: 1px dashed #ccc;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "autoplay": true
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "container": true,
+  "dataFields": {}
+}

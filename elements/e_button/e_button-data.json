@@ -2,6 +2,11 @@
     "apiType":"object",
     "dataFields":[
         {
+            "name":"status",
+            "cname":"显示状态",
+            "type":"string"
+        },
+        {
             "name":"text",
             "cname":"按钮文字",
             "type":"string"

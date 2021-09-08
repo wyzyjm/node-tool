@@ -1,0 +1,107 @@
+{
+  "cname": "图方魔盒3",
+  "styleId": "e_imgCube_C",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${imgList}}}\n        {{#eq @index 0}}\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3);height:calc(( 100% - {{../${space}}}px) / 2)\">\n                <!-- 链接 -->\n                {{#if href.value}}\t\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\n                {{/if}}\n                    <!-- 图片 -->\n                    {{{nLazyImage url title \"{{isLazy}}\"}}}\n                {{#if href.value}}\t\n                </a>\n                {{/if}}\n            </div>      \n\t\t{{/eq}}\n\n        {{#eq @index 1}}\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3 * 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\n                <!-- 链接 -->\n                {{#if href.value}}\t\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\n                {{/if}}\n                    <!-- 图片 -->\n                    {{{nLazyImage url title \"{{isLazy}}\"}}}\n                {{#if href.value}}\t\n                </a>\n                {{/if}}\n            </div>\n\t\t{{/eq}}\n        \n        {{#eq @index 2}}\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3 * 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\n                <!-- 链接 -->\n                {{#if href.value}}\t\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\n                {{/if}}\n                    <!-- 图片 -->\n                    {{{nLazyImage url title \"{{isLazy}}\"}}}\n                {{#if href.value}}\t\n                </a>\n                {{/if}}\n            </div>\n\t\t{{/eq}} \n\n        {{#eq @index 3}}\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3);height:calc(( 100% - {{../${space}}}px) / 2)\">\n                <!-- 链接 -->\n                {{#if href.value}}\t\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\n                {{/if}}\n                    <!-- 图片 -->\n                    {{{nLazyImage url title \"{{isLazy}}\"}}}\n                {{#if href.value}}\t\n                </a>\n                {{/if}}\n            </div>\n\t\t{{/eq}} \n    {{/${imgList}}}\n</div>\n",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_imgCube_C{\n    width: 100%;\n    max-width: 700px;\n    height: 525px;\n    overflow: hidden;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    align-content: space-between;\n}\n\n.e_imgCube_C img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n\n.e_imgCube_C .p_imgItem {\n    overflow: hidden;\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ".e_imgCube_C{\n    height: 300px;\n}\n"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "imgList": [
+      {
+        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "title": "图片1",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "isLazy": true,
+        "fit": "cover"
+      },
+      {
+        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "title": "图片2",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "isLazy": true,
+        "fit": "cover"
+      },
+      {
+        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "title": "图片3",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "isLazy": true,
+        "fit": "cover"
+      },
+      {
+        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "title": "图片4",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "isLazy": true,
+        "fit": "cover"
+      },
+      {
+        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "title": "图片5",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "isLazy": true,
+        "fit": "cover"
+      },
+      {
+        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "title": "图片6",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "isLazy": true,
+        "fit": "cover"
+      }
+    ],
+    "space": 5
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "scope": true,
+  "dataFields": {
+    "imgList$url": "url",
+    "imgList$title": "title",
+    "imgList$href": "href",
+    "imgList$isLazy": "isLazy",
+    "imgList$fit": "fit"
+  }
+}

@@ -2,25 +2,25 @@
     {{#if prop.bannerLists}}
     <div class="swiper-container gallery-top" >
         <div class="swiper-wrapper">
-            {{#prop.bannerLists}}
+            {{#each prop.bannerLists}}
             <div class="swiper-slide" >
                 {{#eq type 1}}
-                    {{#if href}}
-                    <a href="{{href}}" target="{{target}}">
+                    {{#if href.value}}
+                    <a href="{{$transferLink href compId}}" target="{{href.target}}">
                     {{/if}}
                     <div class="p_img">
-                        {{{lazyImage imgUrl "title='{{title}}' alt='{{title}}'" 'true'}}}
+                        {{{nLazyImage imgUrl title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}
                     </div>
-                    {{#if href}}
+                    {{#if href.value}}
                     </a>
                     {{/if}}
                 {{/eq}}
                 {{#eq type 2}}
                     <div class="p_video">
                         <div class="p_videoPoster">
-                            {{{lazyImage video.imgUrl "title='{{title}}' alt='{{title}}'" 'false'}}}
+                            {{{nLazyImage video.imgUrl title 'false'}}}
                         </div>
-                        <video class="videoContent" src="{{video.videoUrl}}" muted></video>
+                        {{{lazyVideo video.videoUrl ../prop.settings.videoMouted false}}}
                     </div>
                 {{/eq}}
                 <div class="p_info {{#eq type 2}}p_videoInfo{{/eq}}">
@@ -37,34 +37,32 @@
                     </div>
                 </div>
             </div>
-            {{/prop.bannerLists}}
+            {{/each}}
         </div>
-        <!-- Add Arrows -->
-        {{#if prop.navigation}}
+        {{#if prop.settings.navigation}}
         <div class="swiper-button-next swiper-button-white"></div>
         <div class="swiper-button-prev swiper-button-white"></div>
         {{/if}}
     </div>
     <div class="swiper-container gallery-thumbs">
         <div class="swiper-wrapper">
-            {{#prop.bannerLists}}
+            {{#each prop.bannerLists}}
             <div class="swiper-slide" >
                 {{#eq type 1}}
                     <div class="p_img">
-                        {{{lazyImage imgUrl "title='{{title}}' alt='{{title}}'" 'true'}}}
+                        {{{nLazyImage imgUrl title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}
                     </div>
                 {{/eq}}
                 {{#eq type 2}}
                     <div class="p_img">
-                        {{{lazyImage video.imgUrl "title='{{title}}' alt='{{title}}'" 'true'}}}
+                        {{{nLazyImage video.imgUrl title 'false'}}}
                     </div>
                 {{/eq}}
             </div>
-            {{/prop.bannerLists}}
+            {{/each}}
         </div>
     </div>
     {{^}}
-    {{{noDataPrompt}}}
+    {{{nNoDataPrompt i18n.noData}}}
     {{/if}}
-    <input type="hidden" name="propJson" value='{{{propJson}}}' />
 </div>

@@ -1,0 +1,7 @@
+.e_loop_H{
+    overflow: hidden;
+}
+.e_loop_H .p_item {
+    min-height: 200px;
+    border: 1px dashed #ccc;
+}

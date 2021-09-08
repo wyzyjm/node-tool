@@ -1,0 +1,49 @@
+{
+  "cname": "循环体元素",
+  "styleId": "e_listElement",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${options}}}\n    <span class=\"p_item\">{{${options$itemName}}}</span>\n    {{/${options}}}\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_listElement .p_item+.p_item{\n    margin-left: 10px;\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "options": [
+      {
+        "itemName": "数据1"
+      },
+      {
+        "itemName": "数据2"
+      },
+      {
+        "itemName": "数据3"
+      },
+      {
+        "itemName": "数据4"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "options": "options",
+    "options$title": "title",
+    "options$itemName": "itemName"
+  }
+}

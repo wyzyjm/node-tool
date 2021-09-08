@@ -1,23 +1,22 @@
-<fieldset class="e_radio form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
+<fieldset class="e_radio s_form1 form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
     {{#if prop.showLabel}}
     <legend class="col-form-label p_label">
-        <span>{{prop.label}}</span>
+        <span class="s_label">{{prop.label}}</span>
         {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </legend>
     {{/if}}
     {{#eq prop.state 'readOnly'}}
-    <p class="p_formValue"></p>
+    <p class="s_input p_formValue"></p>
     {{/eq}}
     <div class="{{#eq prop.state 'readOnly'}}hide{{/eq}}">
         <div class="p_input">
             {{#prop.options}}
-            <div class="form-check form-check-inline p_radioItem">
-                <input class="form-check-input" type="radio" name="${elemId}" id="${elemId}-{{@index}}" value="{{value}}" {{#if select}}checked{{/if}} {{#eq ../prop.state 'disabled'}}disabled{{/eq}}>
-                <label class="form-check-label" for="${elemId}-{{@index}}">{{label}}</label>
+            <div class="form-check form-check-inline  p_radioItem">
+                <input class="form-check-input s_form-control" type="radio" name="${elemId}" id="${elemId}-{{@index}}" value="{{value}}" {{#if select}}checked{{/if}} {{#eq ../prop.state 'disabled'}}disabled{{/eq}}>
+                <label class="form-check-label s_other" for="${elemId}-{{@index}}">{{label}}</label>
             </div>
             {{/prop.options}}
         </div>
         <div class="invalid-feedback"></div>
     </div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}'>
 </fieldset>

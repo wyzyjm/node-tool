@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-static-select",
+            "title": "网站分享",
+            "bind-value": "prop.selectValue",
+            "bind-selectList": "prop.selectList"
+        }
+    ]
+}

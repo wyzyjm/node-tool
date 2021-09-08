@@ -1,0 +1,46 @@
+{
+  "cname": "网站分享",
+  "styleId": "e_websiteShare",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n   <div class=\"p_share\" data-ename=\"分享容器\" data-selectValue=\"{{${selectValue}}}\"></div>\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_websiteShare .p_share a{\n    width: 30px;\n    display: inline-block;\n    margin-right: 10px;\n}\n.e_websiteShare .p_share a img{\n    width: 100%;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "selectValue": "1",
+    "selectList": [
+      {
+        "label": "内贸",
+        "value": "1"
+      },
+      {
+        "label": "外贸",
+        "value": "2"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "selectList$label": "label",
+    "selectList$value": "value"
+  },
+  "dataManage": {}
+}

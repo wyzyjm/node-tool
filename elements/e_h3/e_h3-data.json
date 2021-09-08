@@ -5,6 +5,11 @@
             "name":"h3",
             "cname":"标题三",
             "type":"string"
+        },
+        {
+            "name":"href",
+            "cname":"链接",
+            "type":"link"
         }
     ]
 }

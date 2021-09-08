@@ -2,7 +2,7 @@
   "cname": "图片",
   "styleId": "e_image",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${href}.value}}\n        <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n    {{/if}}\n    {{{lazyImage ${src} \"alt='{{${title}}}'\" \"{{${isLazy}}}\"}}}\n    {{#if ${href}.value}}\n        </a>\n    {{/if}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#each ${imgList}}}\n        {{#eq @index 0}}\n        {{#if ../${href}.value}}\n            <a href=\"{{$transferLink ../${href} compId}}\" target=\"{{../${href}.target}}\">\n        {{/if}}\n        {{{nLazyImage url ../${title} \"{{isLazy}}\"}}}\n        {{#if ../${href}.value}}\n            </a>\n        {{/if}}\n        {{/eq}}\n    {{/each}}\n</div>",
   "css": [
     {
       "media": "",
@@ -22,23 +22,30 @@
     }
   ],
   "prop": {
-    "src": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-    "title": "图片标题",
+    "imgList": [
+      {
+        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "isLazy": true,
+        "fit": "contain"
+      }
+    ],
+    "title": "图片名称",
     "href": {
       "type": "",
       "value": "",
       "target": ""
     },
-    "isLazy": true,
-    "fit": "contain"
+    "space": 0
   },
   "i18n": {
     "zh_CN": {}
   },
   "datasource": "prop",
   "dataFields": {
-    "src": "src",
-    "title": "title",
-    "href": "href"
+    "imgList$title": "title",
+    "imgList$url": "url",
+    "imgList$href": "href",
+    "imgList$isLazy": "isLazy",
+    "imgList$fit": "fit"
   }
 }

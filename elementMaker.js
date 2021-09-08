@@ -6,7 +6,7 @@ const sd = require('silly-datetime');
 const {promises: {readdir, writeFile,readFile,stat}} = require('fs');
 const gta = require('google-translate-api-cn');
 const COMP_PATH=path.join(__dirname, './elements');//组件基础路径
-const DESIGNlIB_pATH=path.join(__dirname, '../../designlib/comp/');//组件基础路径
+const DESIGNlIB_pATH=path.join(__dirname, '../ndesignlib/elem/');//组件基础路径
 
 const defaultJson={
     "cname": "",
@@ -110,6 +110,43 @@ async function addElement(body){
     logger.info(`Component "${compId}" initialization is complete`)
 }
 
+//同步文件
+async function copyFile(compId){
+    let compPath=`${COMP_PATH}/${compId}/`;
+    let compJsonFilePath=`${compPath + compId}.json`;
+    let compPanelFilePath=`${compPath + compId}-panel.json`;
+    let compDataFilePath=`${compPath + compId}-data.json`;
+    let compJson,compPanelJson,compDataJson
+    try{
+        compJson=JSON.parse(await readFile(compJsonFilePath));
+    }catch(e){
+        compJson=[]
+    }
+    try{
+        compPanelJson=JSON.parse(await readFile(compPanelFilePath));
+    }catch(e){
+        compPanelJson=[]
+    }
+    try{
+        compDataJson=JSON.parse(await readFile(compDataFilePath));
+    }catch(e){
+        compDataJson=[]
+    }
+    let desginLibComp = `${DESIGNlIB_pATH + compId}/`;
+    console.log(desginLibComp)
+    if(!fs.existsSync(desginLibComp)){
+        createDir(desginLibComp);
+    }
+
+  
+    let dsignCompPath = `${desginLibComp + compId}.json`;
+    let dsignCompPannelPath = `${desginLibComp + compId}-panel.json`;
+    let dsignCompDataPath = `${desginLibComp + compId}-data.json`;
+    
+    await writeFile(dsignCompPath,JSON.stringify(compJson,null,2),'utf8');
+    await writeFile(dsignCompPannelPath,JSON.stringify(compPanelJson,null,2),'utf8');
+    await writeFile(dsignCompDataPath,JSON.stringify(compDataJson,null,2),'utf8');
+}
 
 //自动修改json
 async function compJsonBuilder(compId) {
@@ -199,7 +236,7 @@ function handleStr(str,dataFields,compId){
             let tkA=e.match(/{{[a-zA-Z0-9]*?}}/g)
             if(tkA){
                 tkA.forEach(el=>{
-                    let noArr = ["noDataPrompt","this","if","children","eq ","options","dataList","attributeList","keywords","specList","list","gt","previewList"]
+                    let noArr = ["noDataPrompt","this","if","children","eq ","each ","options","dataList","attributeList","keywords","specList","list","gt","previewList"]
                     let teo = el.replace(/{/g,'').replace(/}/g,'')
                     let flag = true
                     noArr.forEach(e=>{
@@ -266,5 +303,6 @@ function createDir(dir){
 
 module.exports={
   compJsonBuilder,
-  addElement
+  addElement,
+  copyFile
 }

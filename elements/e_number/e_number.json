@@ -1,10 +1,10 @@
 {
   "cname": "数字输入框",
   "styleId": "e_number",
-  "styleClass": "",
+  "styleClass": "s_form1",
   "type": "form",
   "putSubForm": true,
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span>{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"p_number {{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"input-group\">\n            <input type=\"number\" class=\"form-control p_input\" name=\"${elemId}\" \n                {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n                {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n                {{#eq ${state} 'disabled'}}disabled{{/eq}}\n            >\n            <div class=\"input-group-append\">\n                <span class=\"p_unit\">\n                {{${unit}}}\n                </span>\n            </div>\n            <div class=\"invalid-feedback\"></div>\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"s_input p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"p_number {{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"input-group\">\n            <input type=\"number\" class=\"form-control s_form-control s_input p_input\" name=\"${elemId}\" \n                {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n                {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n                {{#eq ${state} 'disabled'}}disabled{{/eq}}\n            >\n            <div class=\"input-group-append\">\n                <span class=\"s_other p_unit\">\n                {{${unit}}}\n                </span>\n            </div>\n            <div class=\"invalid-feedback\"></div>\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</div>",
   "css": [
     {
       "media": "",
@@ -39,12 +39,12 @@
         "msg": "内容不能为空"
       },
       "min": {
-        "state": true,
+        "state": false,
         "value": 10,
         "msg": "您输入的内容最小值为%len"
       },
       "max": {
-        "state": true,
+        "state": false,
         "value": 100,
         "msg": "您输入的内容最大值为%len"
       },

@@ -3,9 +3,10 @@
       "text":"按钮",
       "href":{
         "type":"link",
-        "value":"http://www.baidu.com",
+        "value":"",
         "target":"_blank"
-      }
+      },
+      "status":true
   },
   "i18n": {}
 }

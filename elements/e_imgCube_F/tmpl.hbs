@@ -1,0 +1,48 @@
+<div class="e_imgCube_F">
+    {{#prop.imgList}}
+		<!-- 前3个 -->
+		{{#lt @index 3}}
+			<div class="p_imgItem " 
+            style="width:calc(( 100% - 2 * {{../prop.space}}px) / 3);height:calc(( 100% - {{../prop.space}}px) / 2)">
+                <!-- 链接 -->
+                {{#if href.value}}	
+                <a href="{{$transferLink href compId}}" target="{{href.target}}">
+                {{/if}}
+                    <!-- 图片 -->
+                    {{{nLazyImage url title "{{isLazy}}"}}}
+                {{#if href.value}}	
+                </a>
+                {{/if}}
+            </div>
+		{{/lt}}
+
+        {{#eq @index 3}}
+            <div class="p_imgItem " 
+            style="width:calc(( 100% - {{../prop.space}}px) / 2);height:calc(( 100% - {{../prop.space}}px) / 2)">
+                <!-- 链接 -->
+                {{#if href.value}}	
+                <a href="{{$transferLink href compId}}" target="{{href.target}}">
+                {{/if}}
+                    <!-- 图片 -->
+                    {{{nLazyImage url title "{{isLazy}}"}}}
+                {{#if href.value}}	
+                </a>
+                {{/if}}
+            </div>
+		{{/eq}}
+         {{#eq @index 4}}
+            <div class="p_imgItem " 
+            style="width:calc(( 100% - {{../prop.space}}px) / 2);height:calc(( 100% - {{../prop.space}}px) / 2)">
+                <!-- 链接 -->
+                {{#if href.value}}	
+                <a href="{{$transferLink href compId}}" target="{{href.target}}">
+                {{/if}}
+                    <!-- 图片 -->
+                    {{{nLazyImage url title "{{isLazy}}"}}}
+                {{#if href.value}}	
+                </a>
+                {{/if}}
+            </div>
+		{{/eq}}
+    {{/prop.imgList}}
+</div>

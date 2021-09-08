@@ -17,3 +17,60 @@
 .e_relevantItem .p_th,.p_td{
     flex: 1;
 }
+.p_screen{
+    margin-bottom: 20px;
+}
+.p_modelDialog{
+    max-width: 960px;
+}
+.p_modalContent{
+    border-radius: 6px;
+}
+.p_category{
+    display: inline-block;
+    width: 200px;
+}
+.p_searchCon{
+    float: right;
+    width: 260px;
+}
+.p_listImg{
+    width: 30px;
+    height: 30px;
+}
+.p_listImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.p_listWord{
+    line-height: 30px;
+    max-height: 60px;
+    overflow: hidden;
+}
+.p_tabel{
+    border: 1px  solid #f0f0f0;
+}
+.p_tabel thead  td{
+    border-bottom: none;
+    background-color: #e0e0e0;
+    padding:15px 10px;
+}
+.p_tabel td, .p_tabel th{
+    padding: 5px 10px;
+    border: 1px  solid #f0f0f0;
+}
+.p_listSelect{
+    width: 50px;
+    text-align: center;
+}
+.p_listSelect input{
+    vertical-align: middle;
+    margin-top: 3px;
+}
+.p_listPage{
+    float: right;
+}
+.p_selectAll{
+    padding-left: 25px;
+}

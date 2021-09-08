@@ -3,11 +3,10 @@
         {
             "compName":"setting-image",
             "title":"图像",
-            "bind-src":"prop.src",
-            "bind-title": "prop.title",
-            "bind-href": "prop.href",
-            "bind-fit":"prop.fit",
-            "bind-isLazy":"prop.isLazy"
+            "bind-imgList":"prop.imgList",
+            "bind-href":"prop.href",
+            "bind-title":"prop.title",
+            "bind-space":"prop.space"
         }
     ]
 }

@@ -1,7 +1,7 @@
 {
   "cname": "线条",
   "styleId": "e_line",
-  "styleClass": "s_list",
+  "styleClass": "s_line",
   "tmpl": "<hr class=\"${elemId} ${styleClass}\" />",
   "css": [
     {

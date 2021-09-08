@@ -54,7 +54,7 @@
     },
     {
       "name": "循环体元素",
-      "code": "e_loopElement"
+      "code": "e_listElement"
     },
     {
       "name": "富文本",
@@ -71,6 +71,78 @@
     {
       "name": "隐藏域",
       "code": "e_inputHidden"
+    },
+    {
+      "name": "图片组",
+      "code": "e_imageGroup"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_A"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_B"
+    },
+    {
+      "name": "网站分享",
+      "code": "e_websiteShare"
+    },
+    {
+      "name": "图方魔盒1",
+      "code": "e_imgCube_A"
+    },
+    {
+      "name": "图方魔盒2",
+      "code": "e_imgCube_B"
+    },
+    {
+      "name": "图方魔盒3",
+      "code": "e_imgCube_C"
+    },
+    {
+      "name": "图方魔盒4",
+      "code": "e_imgCube_D"
+    },
+    {
+      "name": "图方魔盒5",
+      "code": "e_imgCube_E"
+    },
+    {
+      "name": "图方魔盒6",
+      "code": "e_imgCube_F"
+    },
+    {
+      "name": "循环体7",
+      "code": "e_loop_G"
+    },
+    {
+      "name": "循环体8",
+      "code": "e_loop_H"
+    },
+    {
+      "name": "循环体9",
+      "code": "e_loop_I"
+    },
+    {
+      "name": "地图1",
+      "code": "e_map_A"
+    },
+    {
+      "name": "面包屑",
+      "code": "e_breadcrumb"
+    },
+    {
+      "name": "备案号",
+      "code": "e_provider"
+    },
+    {
+      "name": "访问计数",
+      "code": "e_visitNumber"
+    },
+    {
+      "name": "时间",
+      "code": "e_timeFormat"
     }
   ],
   "complex": [
@@ -85,10 +157,6 @@
     {
       "name": "轮播图-缩略图",
       "code": "e_bannerC"
-    },
-    {
-      "name": "轮播图-百叶窗",
-      "code": "e_bannerD"
     },
     {
       "name": "分类树-滑出",

@@ -1,10 +1,10 @@
 {
   "cname": "多选项",
   "styleId": "e_checkbox",
-  "styleClass": "",
+  "styleClass": "s_form1",
   "type": "form",
   "putSubForm": true,
-  "tmpl": "<fieldset class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        <span>{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </legend>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"p_input\">\n            {{#${options}}}\n            <div class=\"form-check form-check-inline p_radioItem\">\n                <input class=\"form-check-input\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" value=\"{{value}}\" {{#if select}}checked{{/if}} {{#eq ../${state} 'disabled'}}disabled{{/eq}}>\n                <label class=\"form-check-label\" for=\"${elemId}-{{@index}}\">{{label}}</label>\n            </div>\n            {{/${options}}}\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}'>\n</fieldset>",
+  "tmpl": "<fieldset class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </legend>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue s_input\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"p_input\">\n            {{#${options}}}\n            <div class=\"form-check form-check-inline p_radioItem\">\n                <input class=\"form-check-input s_form-control\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" value=\"{{value}}\" {{#if select}}checked{{/if}} {{#eq ../${state} 'disabled'}}disabled{{/eq}}>\n                <label class=\"form-check-label s_other\" for=\"${elemId}-{{@index}}\">{{label}}</label>\n            </div>\n            {{/${options}}}\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</fieldset>",
   "css": [
     {
       "media": "",

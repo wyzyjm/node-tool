@@ -1,0 +1,31 @@
+{
+  "cname": "访问计数",
+  "styleId": "e_visitNumber",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    访问计数\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_visitNumber{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {},
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "container": true,
+  "dataFields": {}
+}
