@@ -1,0 +1,32 @@
+<div class="e_map_C" needjs="true">
+    <!-- 地图 -->
+    <div id="mapBox"></div>
+    <!-- 内容 -->
+    <div class="p_websiteList">
+        <ul class="p_list">
+            {{#prop.dataList}}
+            <li class="p_item {{#eq @index 0}}active{{/eq}}" data-site="{{site}}">
+                <div class="{{#unless @last }} border-bottom {{/unless}} p_info">
+                    <!-- 名称 -->
+                    <p class="p_title"> {{title}} </p>
+                    <!-- 电话 -->
+                    <p class="text-secondary p_phone">
+                        <span class="p_label"> {{../i18n.phone}} </span>
+                        <span> {{phone}} </span>
+                    </p>
+                    <!-- 邮箱 -->
+                    <p class="text-secondary p_email">
+                        <span class="p_label"> {{../i18n.email}} </span>
+                        <span> {{email}} </span>
+                    </p>
+                    <!-- 地址 -->
+                    <p class="text-secondary p_address">
+                        <span class="p_label"> {{../i18n.address}} </span>
+                        <span> {{address}} </span>
+                    </p>
+                </div>
+            </li>
+            {{/prop.dataList}}
+        </ul>
+    </div>
+</div>

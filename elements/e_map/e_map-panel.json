@@ -1,0 +1,9 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-map",
+            "title": "缩放级别",
+            "bind-zoom": "prop.zoom"
+        }
+    ]
+}

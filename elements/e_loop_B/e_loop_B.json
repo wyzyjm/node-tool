@@ -2,11 +2,11 @@
   "cname": "循环体",
   "styleId": "e_loop_B",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n     <!-- Swiper -->\n  <div class=\"swiper-container\">\n    <div class=\"swiper-wrapper\">\n        {{#each ${dataList}}}\n         <div class=\"swiper-slide\">\n             <div class=\"cbox-${id} p_template\"></div>\n         </div>\n       {{/each}}\n    </div>\n    <!-- Add Pagination -->\n    <div class=\"js_editor_click swiper-button-prev\"></div>\n    <div class=\"js_editor_click swiper-button-next\"></div>\n  </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n   <div class=\"swiper-container\">\n        {{#if ${dataList}}}\n            <div class=\"swiper-wrapper\">\n                {{#${dataList}}}\n                <div class=\"swiper-slide\">\n                    <div class=\"cbox-${id} p_template\"></div>\n                </div>\n                {{/${dataList}}}\n            </div>   \n            <!-- 如果需要导航按钮 -->\n            <div class=\"js_editor_click swiper-button-prev\"></div>\n            <div class=\"js_editor_click swiper-button-next\"></div>\n        {{/if}}\n    </div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_loop_B{\n\n}\n.swiper-container {\n    width: 100%;\n    height: 100%;\n  }\n\n  .swiper-slide {\n    text-align: center;\n    font-size: 18px;\n    background: #fff;\n    width: 50%;\n\n    /* Center slide text vertically */\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    -webkit-justify-content: center;\n    justify-content: center;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    -webkit-align-items: center;\n    align-items: center;\n  }\n\n  .swiper-slide:nth-child(2n) {\n    width: 50%;\n  }\n\n  .swiper-slide:nth-child(3n) {\n    width: 50%;\n  }\n.swiper-button-prev,.swiper-button-next{\n    background-color:#007bff;\n    bottom: 10px;\n    width: 56px;\n    top: auto;\n\n}\n.swiper-button-prev{\n    left: auto;\n    right: 64px;\n    border-top-left-radius:50%;\n    border-bottom-left-radius:50%;\n    \n}\n.swiper-button-next{\n    border-top-right-radius:50%;\n    border-bottom-right-radius:50%;  \n}\n.swiper-button-next:after, .swiper-button-prev:after{\n    font-size: 22px;\n    color: #fff;\n}"
+      "cssText": ".e_loop_B{\n\n}\n.e_loop_B .swiper-container {\n    width: 100%;\n    height: 100%;\n  }\n\n.e_loop_B .swiper-slide {\n    text-align: center;\n    font-size: 18px;\n    background: #fff;\n    width: 50%;\n\n    /* Center slide text vertically */\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    -webkit-justify-content: center;\n    justify-content: center;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    -webkit-align-items: center;\n    align-items: center;\n  }\n\n  .e_loop_B .swiper-slide:nth-child(2n) {\n    width: 50%;\n  }\n\n  .e_loop_B .swiper-slide:nth-child(3n) {\n    width: 50%;\n  }\n  .e_loop_B .swiper-button-prev,.e_loop_B .swiper-button-next{\n    background-color:#007bff;\n    bottom: 10px;\n    width: 56px;\n    top: auto;\n\n}\n.e_loop_B .swiper-button-prev{\n    left: auto;\n    right: 64px;\n    border-top-left-radius:50%;\n    border-bottom-left-radius:50%;\n    border-top-right-radius:0;\n    border-bottom-right-radius:0;\n    \n}\n.e_loop_B .swiper-button-next{\n    border-top-right-radius:50%;\n    border-bottom-right-radius:50%; \n    border-top-left-radius:0;\n    border-bottom-left-radius:0;   \n}\n.e_loop_B .swiper-button-next:after, .e_loop_B .swiper-button-prev:after{\n    font-size: 22px;\n    color: #fff;\n}\n.e_loop_B .p_template{\n    min-height: 200px;\n    min-width: 200px;\n}\n.e_loop_B .swiper-slide-active, .e_loop_B .swiper-slide-duplicate-active{\n  transform: scale();\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -24,17 +24,19 @@
   "prop": {
     "dataList": [
       {},
-      {},
-      {},
-      {},
-      {},
       {}
-    ]
+    ],
+    "pageConfig": {
+      "autoplay": false,
+      "loopItem": ".p_template"
+    }
   },
   "i18n": {
     "zh_CN": {}
   },
   "datasource": "prop",
   "container": true,
-  "dataFields": {}
+  "dataFields": {},
+  "scope": true,
+  "dataManage": true
 }

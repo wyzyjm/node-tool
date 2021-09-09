@@ -151,6 +151,26 @@
     {
       "name": "图集",
       "code": "e_imageList"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_D"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_E"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_F"
+    },
+    {
+      "name": "地图3",
+      "code": "e_map_C"
+    },
+    {
+      "name": "地图",
+      "code": "e_map"
     }
   ],
   "complex": [

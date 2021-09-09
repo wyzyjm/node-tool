@@ -1,12 +1,12 @@
 .e_loop_B{
 
 }
-.swiper-container {
+.e_loop_B .swiper-container {
     width: 100%;
     height: 100%;
   }
 
-  .swiper-slide {
+.e_loop_B .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -27,32 +27,43 @@
     align-items: center;
   }
 
-  .swiper-slide:nth-child(2n) {
+  .e_loop_B .swiper-slide:nth-child(2n) {
     width: 50%;
   }
 
-  .swiper-slide:nth-child(3n) {
+  .e_loop_B .swiper-slide:nth-child(3n) {
     width: 50%;
   }
-.swiper-button-prev,.swiper-button-next{
+  .e_loop_B .swiper-button-prev,.e_loop_B .swiper-button-next{
     background-color:#007bff;
     bottom: 10px;
     width: 56px;
     top: auto;
 
 }
-.swiper-button-prev{
+.e_loop_B .swiper-button-prev{
     left: auto;
     right: 64px;
     border-top-left-radius:50%;
     border-bottom-left-radius:50%;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
     
 }
-.swiper-button-next{
+.e_loop_B .swiper-button-next{
     border-top-right-radius:50%;
-    border-bottom-right-radius:50%;  
+    border-bottom-right-radius:50%; 
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;   
 }
-.swiper-button-next:after, .swiper-button-prev:after{
+.e_loop_B .swiper-button-next:after, .e_loop_B .swiper-button-prev:after{
     font-size: 22px;
     color: #fff;
+}
+.e_loop_B .p_template{
+    min-height: 200px;
+    min-width: 200px;
+}
+.e_loop_B .swiper-slide-active, .e_loop_B .swiper-slide-duplicate-active{
+  transform: scale();
 }
