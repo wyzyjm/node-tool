@@ -29,34 +29,21 @@
   }
   .e_loop_D .swiper-button-prev,.e_loop_D .swiper-button-next{
     background-color:#007bff;
-    width: 56px;
+    width: 44px;
     top: 25px;
+    border-radius: 100%;
 
 }
 .e_loop_D .swiper-button-next{
     right: auto;
-    left: 64px;
-    border-top-right-radius:50%;
-    border-bottom-right-radius:50%;  
-    border-top-left-radius:0;
-    border-bottom-left-radius:0;  
-    
-    
-}
-.e_loop_D .swiper-button-prev{
-    border-top-left-radius:50%;
-    border-bottom-left-radius:50%;
-    border-top-right-radius:0;
-    border-bottom-right-radius:0;
-   
+    left: 64px;  
 }
 .e_loop_D .swiper-button-next:after,.e_loop_D .swiper-button-prev:after{
     font-size: 22px;
     color: #fff;
 }
 .e_loop_D .p_template{
-    min-height: 200px;
-    min-width: 200px;
+   width: 100%;
 }
 .e_loop_D .swiper-slide-active, .e_loop_D .swiper-slide-duplicate-active{
     transform: scale();

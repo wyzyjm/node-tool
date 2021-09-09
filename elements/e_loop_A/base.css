@@ -30,8 +30,7 @@
     transform: scale(1);
   }
 .e_loop_A .p_template{
-    min-height: 200px;
-    min-width: 200px;
+    width: 100%;
 }
 .e_loop_A .swiper-button-prev,.e_loop_A .swiper-button-next{
     background: #007bff;
