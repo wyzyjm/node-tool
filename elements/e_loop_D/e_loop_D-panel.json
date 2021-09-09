@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-loop",
+            "title": "循环体数据",
+            "bind-value": "prop.dataList",
+            "bind-autoplay": "prop.pageConfig"
+        }
+    ]
+}

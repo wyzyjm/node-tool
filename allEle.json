@@ -139,6 +139,18 @@
     {
       "name": "访问计数",
       "code": "e_visitNumber"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_D"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_E"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_F"
     }
   ],
   "complex": [
