@@ -280,7 +280,7 @@ helpers.paging = function (context,pageType) {
   return new Handlebars.SafeString(Handlebars.compile(resultStr)(this));
 };
 
-helpers.nPaging = function (page,pageConfig) {
+helpers.nPaging = function (page,pageConfig,i18n) {
     let { from, size, totalCount } = page;
     let currentPage = Math.ceil(from/size)+1;
     let pageSize = size;
@@ -338,7 +338,7 @@ helpers.nPaging = function (page,pageConfig) {
             <a href="${pageUrl}-${currentPage < pageNums ? (currentPage + 1) : pageNums}.html" class="page_a page_next ${nextDisabled}">&gt;</a >
             {{#if prop.pageConfig.showJump}}
             <span class="page_jump">
-                {{i18n.pageJump}} <input type="text" class="page_input" > {{i18n.pageUnit}}
+                ${i18n.pageJump} <input type="text" class="page_input" > ${i18n.pageUnit}
             </span>
             {{/if}}
         </div>
@@ -346,7 +346,7 @@ helpers.nPaging = function (page,pageConfig) {
     } else if ('click' == pageConfig.pageType) {
         resultStr = `
             <div class="page_con">
-                <button class="btn btn-primary btn-sm e_button page_clickLoad">{{i18n.loadMore}}</button>
+                <button class="btn btn-primary btn-sm e_button page_clickLoad">${i18n.loadMore}</button>
             </div>
         `
     } else {

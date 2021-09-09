@@ -1,10 +1,6 @@
 {
   "base": [
     {
-      "name": "测试",
-      "code": "e_groupBtn"
-    },
-    {
       "name": "按钮",
       "code": "e_button"
     },
@@ -75,10 +71,6 @@
     {
       "name": "隐藏域",
       "code": "e_inputHidden"
-    },
-    {
-      "name": "图片组",
-      "code": "e_imageGroup"
     },
     {
       "name": "循环体",

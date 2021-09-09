@@ -2,9 +2,9 @@
   "prop": {
     "cate":[
         {
-            "name":"@ctitle(3,5)",
-            "imgUrl":"http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-            "href":"#",
+            "categoryName":"@ctitle(3,5)",
+            "categoryImage":"http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
+            "categoryUrl":"#",
             "target":"",
             "children":[
                 {
