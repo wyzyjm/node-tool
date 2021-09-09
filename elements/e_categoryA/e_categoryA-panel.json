@@ -2,9 +2,9 @@
     "panelConfig": [
         {
             "compName": "setting-text",
-            "bind-text": "prop.text",
-            "bind-href": "prop.href",
-            "title": "文字"
+            "bind-cate": "prop.cate",
+            "bind-showImg": "prop.showImg",
+            "title": "分类-滑出"
         }
     ]
 }

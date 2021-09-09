@@ -7,8 +7,6 @@
 .e_navigationB .p_navBox1, .e_navigationB .p_navBox2{
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .e_navigationB .p_navBox2{
     position: absolute;

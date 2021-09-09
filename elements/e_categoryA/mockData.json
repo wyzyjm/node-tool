@@ -70,7 +70,8 @@
             "href":"#",
             "target":""
         }
-      ]
+      ],
+      "showImg":true
   },
   "i18n": {
     "moCategoryTitle":"全部分类",

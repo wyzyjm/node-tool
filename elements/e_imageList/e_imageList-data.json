@@ -1,0 +1,14 @@
+{   
+    "apiType":"object",
+    "dataFields":[
+        {
+            "name":"imgList",
+            "cname":"图片集",
+            "type":"array[img]"
+        },{
+            "name":"title",
+            "cname":"标题",
+            "type":"string"
+        }
+    ]
+}

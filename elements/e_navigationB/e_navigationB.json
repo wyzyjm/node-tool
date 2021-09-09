@@ -14,7 +14,7 @@
     },
     {
       "media": "screen and (min-width: 769px)",
-      "cssText": ".e_navigationB .p_iconBox{\n    display: none;\n}\n.e_navigationB .p_navBox1{\n    position: relative;\n}\n.e_navigationB .p_navBox1, .e_navigationB .p_navBox2{\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.e_navigationB .p_navBox2{\n    position: absolute;\n    top: 50px;\n    left: 0;\n    flex-wrap: wrap;\n    padding: 20px;\n}\n.e_navigationB .p_navItem1{ \n    border: none;\n}\n.e_navigationB .p_navItem1:hover>p span{ \n    color: #409eff;\n}\n.e_navigationB .p_navItem2{\n    width: 200px;\n    margin: 16px 0;\n    text-align: center;\n}\n.e_navigationB .p_navItem2 + .p_navItem2{\n    border-left:1px solid #e8e8e8\n}\n.e_navigationB p{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.e_navigationB span{\n    text-align: center;\n}\n.e_navigationB .p_img{\n    width: 120px;\n    height: 120px;\n    margin-bottom: 16px;\n    display: block;\n}\n.e_navigationB .p_img img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_navigationB .p_jtIcon{\n    display: none;\n}"
+      "cssText": ".e_navigationB .p_iconBox{\n    display: none;\n}\n.e_navigationB .p_navBox1{\n    position: relative;\n}\n.e_navigationB .p_navBox1, .e_navigationB .p_navBox2{\n    width: 100%;\n    display: flex;\n}\n.e_navigationB .p_navBox2{\n    position: absolute;\n    top: 50px;\n    left: 0;\n    flex-wrap: wrap;\n    padding: 20px;\n}\n.e_navigationB .p_navItem1{ \n    border: none;\n}\n.e_navigationB .p_navItem1:hover>p span{ \n    color: #409eff;\n}\n.e_navigationB .p_navItem2{\n    width: 200px;\n    margin: 16px 0;\n    text-align: center;\n}\n.e_navigationB .p_navItem2 + .p_navItem2{\n    border-left:1px solid #e8e8e8\n}\n.e_navigationB p{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.e_navigationB span{\n    text-align: center;\n}\n.e_navigationB .p_img{\n    width: 120px;\n    height: 120px;\n    margin-bottom: 16px;\n    display: block;\n}\n.e_navigationB .p_img img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_navigationB .p_jtIcon{\n    display: none;\n}"
     },
     {
       "media": "screen and (max-width: 1024px) and (min-width: 769px)",
@@ -32,32 +32,62 @@
         "children": [
           {
             "name": "新闻资讯",
-            "imgUrl": "https://img.alicdn.com/imgextra/i3/44242389/O1CN01YMwzqz1TWCtPCBn4B_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"
+            "imgUrl": "https://img.alicdn.com/imgextra/i3/44242389/O1CN01YMwzqz1TWCtPCBn4B_!!0-saturn_solar.jpg_468x468q75.jpg_.webp",
+            "children": [
+              {
+                "name": "百度新闻"
+              },
+              {
+                "name": "腾讯新闻"
+              },
+              {
+                "name": "头条新闻"
+              },
+              {
+                "name": "网易新闻"
+              }
+            ]
           },
           {
             "name": "新闻资讯111111",
-            "imgUrl": "https://img.alicdn.com/imgextra/i4/29242799/O1CN01OjRIlM1WXzH2opoIU_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"
+            "imgUrl": "https://img.alicdn.com/imgextra/i4/29242799/O1CN01OjRIlM1WXzH2opoIU_!!0-saturn_solar.jpg_468x468q75.jpg_.webp",
+            "children": [
+              {
+                "name": "百度新闻11111"
+              },
+              {
+                "name": "腾讯新闻11111"
+              },
+              {
+                "name": "头条新闻11111"
+              },
+              {
+                "name": "网易新闻11111"
+              }
+            ]
           }
         ]
       },
       {
         "name": "行业资讯",
+        "imgUrl": "https://img.alicdn.com/imgextra/i4/29242799/O1CN01OjRIlM1WXzH2opoIU_!!0-saturn_solar.jpg_468x468q75.jpg_.webp",
         "children": [
           {
-            "name": "百度新闻",
-            "imgUrl": "https://img.alicdn.com/imgextra/i3/44242389/O1CN01YMwzqz1TWCtPCBn4B_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"
-          },
-          {
-            "name": "腾讯新闻",
-            "imgUrl": "https://img.alicdn.com/imgextra/i3/44242389/O1CN01YMwzqz1TWCtPCBn4B_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"
-          },
-          {
-            "name": "头条新闻",
-            "imgUrl": "https://img.alicdn.com/imgextra/i3/44242389/O1CN01YMwzqz1TWCtPCBn4B_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"
-          },
-          {
-            "name": "网易新闻",
-            "imgUrl": "https://img.alicdn.com/imgextra/i3/44242389/O1CN01YMwzqz1TWCtPCBn4B_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"
+            "name": "职位招聘",
+            "children": [
+              {
+                "name": "web前端"
+              },
+              {
+                "name": "架构师"
+              },
+              {
+                "name": "实习生"
+              },
+              {
+                "name": "管理岗"
+              }
+            ]
           }
         ]
       },
@@ -65,23 +95,16 @@
         "name": "产品展示",
         "children": [
           {
-            "name": "百度新闻11111"
-          },
-          {
-            "name": "腾讯新闻11111"
-          },
-          {
-            "name": "头条新闻11111"
-          },
-          {
-            "name": "网易新闻11111"
+            "name": "产品类型",
+            "children": []
           }
         ]
       }
     ],
     "arrow": "<svg t=\"1625735163067\" class=\"icon p_jtIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1486\" width=\"200\" height=\"200\"><path d=\"M661.16183428 486.94732961L415.99871022 219.24359155c-13.37500289-14.59708438-35.98351032-15.54759219-50.51270128-2.24048272-14.59708438 13.37500289-15.54759219 35.98351032-2.24048272 50.51270127l223.09776396 243.60157549-222.89408371 244.28050967c-13.30710947 14.59708438-12.28870823 37.20559179 2.30837613 50.51270125 14.59708438 13.30710947 37.20559179 12.28870823 50.51270128-2.30837613l244.75576356-268.11109855c0.47525392-0.54314733 1.01840124-1.15418807 1.42576173-1.6973354 11.13452018-13.51078973 10.93083994-33.53934734-1.2899749-46.84645682z\" p-id=\"1487\"></path></svg>",
     "menu": "<svg t=\"1625644785779\" class=\"icon p_openIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"5036\" width=\"200\" height=\"200\"><path d=\"M793.93115234 342.36010742H230.21716308c-18.58886719 0-33.65112305-14.75738526-33.65112304-32.95898437s15.0704956-32.95898438 33.65112305-32.95898438h563.71398925c18.58886719 0 33.65112305 14.75738526 33.65112305 32.95898438 0 18.20983887-15.0704956 32.95898438-33.65112305 32.95898437zM793.93115234 732.80047607H230.21716308c-18.58886719 0-33.65112305-14.75738526-33.65112304-32.95898437s15.0704956-32.95898438 33.65112305-32.95898438h563.71398925c18.58886719 0 33.65112305 14.75738526 33.65112305 32.95898438s-15.0704956 32.95898438-33.65112305 32.95898437zM793.93115234 537.99639893H230.21716308c-18.58886719 0-33.65112305-14.75738526-33.65112304-32.95898438s15.0704956-32.95898438 33.65112305-32.95898437h563.71398925c18.58886719 0 33.65112305 14.75738526 33.65112305 32.95898437s-15.0704956 32.95898438-33.65112305 32.95898438z\" p-id=\"5037\"></path></svg>",
-    "close": "<svg t=\"1625645389126\" class=\"icon p_closeIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"5167\" width=\"200\" height=\"200\"><path d=\"M798.72 225.73511147a44.78293333 44.78293333 0 0 0-31.85777813-13.19822294c-11.83288853 0-23.66577813 5.00622187-31.85777707 13.19822294L512 447.82933333 289.45066667 225.28a44.78293333 44.78293333 0 0 0-31.85777814-13.19822187c-11.83288853 0-23.66577813 5.00622187-32.31288853 13.19822187a45.32906667 45.32906667 0 0 0 0 64.17066667L447.82933333 512 225.28 734.54933333a45.32906667 45.32906667 0 1 0 64.17066667 64.17066667L512 576.17066667l222.54933333 222.54933333a45.32906667 45.32906667 0 1 0 64.17066667-64.17066667L576.17066667 512l222.54933333-222.54933333c17.29422187-17.29422187 17.29422187-46.42133333 0-63.7155552z\" p-id=\"5168\"></path></svg>"
+    "close": "<svg t=\"1625645389126\" class=\"icon p_closeIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"5167\" width=\"200\" height=\"200\"><path d=\"M798.72 225.73511147a44.78293333 44.78293333 0 0 0-31.85777813-13.19822294c-11.83288853 0-23.66577813 5.00622187-31.85777707 13.19822294L512 447.82933333 289.45066667 225.28a44.78293333 44.78293333 0 0 0-31.85777814-13.19822187c-11.83288853 0-23.66577813 5.00622187-32.31288853 13.19822187a45.32906667 45.32906667 0 0 0 0 64.17066667L447.82933333 512 225.28 734.54933333a45.32906667 45.32906667 0 1 0 64.17066667 64.17066667L512 576.17066667l222.54933333 222.54933333a45.32906667 45.32906667 0 1 0 64.17066667-64.17066667L576.17066667 512l222.54933333-222.54933333c17.29422187-17.29422187 17.29422187-46.42133333 0-63.7155552z\" p-id=\"5168\"></path></svg>",
+    "showArrow": true
   },
   "i18n": {
     "zh_CN": {}

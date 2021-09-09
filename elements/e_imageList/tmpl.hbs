@@ -1,0 +1,30 @@
+<div class="e_imageList" needjs="true">
+    {{#if prop.imgList}}
+    <div class="swiper-container gallery-top" >
+        <div class="swiper-wrapper">
+            {{#each prop.imgList}}
+            <div class="swiper-slide" >
+                <div class="p_img">
+                    {{{nLazyImage url ../prop.title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+            {{#each prop.imgList}}
+            <div class="swiper-slide" >
+                <div class="p_img">
+                    {{{nLazyImage url ../prop.title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    {{^}}
+    {{{nNoDataPrompt i18n.noData}}}
+    {{/if}}
+</div>

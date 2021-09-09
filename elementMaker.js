@@ -120,17 +120,17 @@ async function copyFile(compId){
     try{
         compJson=JSON.parse(await readFile(compJsonFilePath));
     }catch(e){
-        compJson=[]
+        compJson={}
     }
     try{
         compPanelJson=JSON.parse(await readFile(compPanelFilePath));
     }catch(e){
-        compPanelJson=[]
+        compPanelJson={}
     }
     try{
         compDataJson=JSON.parse(await readFile(compDataFilePath));
     }catch(e){
-        compDataJson=[]
+        compDataJson={}
     }
     let desginLibComp = `${DESIGNlIB_pATH + compId}/`;
     console.log(desginLibComp)
