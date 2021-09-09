@@ -2,11 +2,11 @@
   "cname": "面包屑",
   "styleId": "e_breadcrumb",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    面包屑\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_breadcrumb{\n\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -22,7 +22,9 @@
     }
   ],
   "prop": {},
-  "i18n": {},
+  "i18n": {
+    "zh_CN": {}
+  },
   "datasource": "prop",
   "container": true,
   "dataFields": {}

@@ -1,0 +1,10 @@
+{   
+    "apiType":"object",
+    "dataFields":[
+        {
+            "name":"time",
+            "cname":"时间",
+            "type":"string"
+        }
+    ]
+}

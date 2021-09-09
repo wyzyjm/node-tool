@@ -5,7 +5,8 @@
         "type":"link",
         "value":"",
         "target":"_blank"
-      }
+      },
+      "status":true
   },
   "i18n": {}
 }

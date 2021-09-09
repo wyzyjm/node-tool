@@ -117,3 +117,6 @@ Handlebars.registerHelper('$transferLink', function(linkOption) {
     }
     return link;
 });
+Handlebars.registerHelper('$toJson', function(data) {
+  return JSON.stringify(data);
+});

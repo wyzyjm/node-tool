@@ -3,48 +3,66 @@
     "imgList": [
       {
         "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片完整",
+        "title": "图片1",
         "href": {
           "type": "",
-          "value": "http://www.baidu.com",
-          "target": "_blank"
+          "value": "",
+          "target": ""
         },
         "isLazy": true,
         "fit": "cover"
       },
-    
       {
         "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片完整",
+        "title": "图片2",
         "href": {
           "type": "",
-          "value": "http://www.baidu.com",
-          "target": "_blank"
+          "value": "",
+          "target": ""
         },
         "isLazy": true,
         "fit": "cover"
       },
-    
       {
         "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片完整",
+        "title": "图片3",
         "href": {
           "type": "",
-          "value": "http://www.baidu.com",
-          "target": "_blank"
+          "value": "",
+          "target": ""
         },
         "isLazy": true,
         "fit": "cover"
       },
-    
-      
       {
         "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片名称",
+        "title": "图片4",
         "href": {
           "type": "",
-          "value": "http://www.baidu.com",
-          "target": "_parent"
+          "value": "",
+          "target": ""
+        },
+        "isLazy": true,
+        "fit": "cover"
+      },
+      {
+        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "title": "图片5",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "isLazy": true,
+        "fit": "cover"
+      },
+      {
+        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "title": "图片6",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
         },
         "isLazy": true,
         "fit": "cover"

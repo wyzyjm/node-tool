@@ -1,0 +1,47 @@
+.e_map_C{
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 600px;
+    overflow: hidden;
+    display: flex;
+    border: 1px dashed #ccc;
+}
+
+.e_map_C #mapBox {
+    flex: 2;
+}
+
+/* 内容区 start */
+.e_map_C .p_websiteList {
+    flex: 1;
+    border-left: 1px dashed #ccc;
+    overflow-y: auto;
+}
+/* .e_map_C  .p_list {
+    overflow: hidden;
+} */
+.e_map_C  .p_item {
+    position: relative;
+    padding:0 20px;
+    border-right: 5px solid transparent;
+    overflow: hidden;
+}
+.e_map_C  .p_item.active {
+    border-color: rgb(64, 158, 255);
+    background-color: rgb(217, 236, 255);
+}
+.e_map_C  .p_info {
+    padding: 10px 0;
+}
+.e_map_C  .p_info p {
+    display: flex;
+}
+.e_map_C  .p_label {
+    width: 30px;
+    flex-shrink: 0;
+}
+.e_map_C .text-secondary {
+     font-size: 12px;
+ }
+/* 内容区 end */

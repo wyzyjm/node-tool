@@ -2,7 +2,7 @@
   "cname": "循环体元素",
   "styleId": "e_listElement",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${options}}}\n    <span class=\"p_item\">{{itemName}}</span>\n    {{/${options}}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${options}}}\n    <span class=\"p_item\">{{${options$itemName}}}</span>\n    {{/${options}}}\n</div>",
   "css": [
     {
       "media": "",

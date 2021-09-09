@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-banner",
+            "bind-bannerList": "prop.bannerLists",
+            "bind-settings": "prop.settings",
+            "title": "banner"
+        }
+    ]
+}

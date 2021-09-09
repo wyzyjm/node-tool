@@ -151,6 +151,14 @@
     {
       "name": "循环体",
       "code": "e_loop_F"
+    },
+    {
+      "name": "地图3",
+      "code": "e_map_C"
+    },
+    {
+      "name": "地图",
+      "code": "e_map"
     }
   ],
   "complex": [
@@ -165,10 +173,6 @@
     {
       "name": "轮播图-缩略图",
       "code": "e_bannerC"
-    },
-    {
-      "name": "轮播图-百叶窗",
-      "code": "e_bannerD"
     },
     {
       "name": "分类树-滑出",

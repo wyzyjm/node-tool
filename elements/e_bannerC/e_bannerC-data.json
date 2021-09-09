@@ -1,0 +1,10 @@
+{   
+    "apiType":"list",
+    "dataFields":[
+        {
+            "name":"bannerLists",
+            "cname":"banner",
+            "type":"array[object]"
+        }
+    ]
+}

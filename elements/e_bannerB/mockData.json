@@ -10,7 +10,11 @@
                 "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.jpg"
             },
             "imgUrl": null,
-            "href": null,
+            "href": {
+                "type":"",
+                "value":"",
+                "target":""
+            },
             "summary": "按时大萨达阿萨德按时打算按时啊 按时啊是啊啊啊",
             "type": 2
         },
@@ -18,7 +22,11 @@
             "target": "blank",
             "title": "kjhgfds",
             "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
-            "href": null,
+            "href": {
+                "type":"",
+                "value":"",
+                "target":""
+            },
             "summary": "",
             "type": 1
         },
@@ -28,18 +36,29 @@
             "video": null,
             "code": null,
             "imgUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
-            "href": null,
+            "href": {
+                "type":"",
+                "value":"",
+                "target":""
+            },
             "summary": "",
             "type": 1
         }
-      ],
-      "direction":"horizontal",
-      "pagination":true,
-      "navigation":true,
-      "autoplay":false,
-      "autoPlayVideo": false,
-      "deplay":4,
-      "effect":"flip"
+    ],
+    "settings":{
+        "direction":"horizontal",
+        "pagination":true,
+        "navigation":true,
+        "autoplay":false,
+        "deplay":4,
+        "effect":"slide",
+        "videoAutoplay": false,
+        "videoLoop":false,
+        "videoMouted":true,
+        "videoControlor":false
+    }
   },
-  "i18n": {}
+  "i18n": {
+    "noData": "暂无数据"
+  }
 }

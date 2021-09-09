@@ -26,6 +26,10 @@
 .e_navigationB .p_navItem2{
     width: 200px;
     margin: 16px 0;
+    text-align: center;
+}
+.e_navigationB .p_navItem2 + .p_navItem2{
+    border-left:1px solid #e8e8e8
 }
 .e_navigationB p{
     display: flex;
@@ -36,9 +40,15 @@
     text-align: center;
 }
 .e_navigationB .p_img{
-    width: 100px;
+    width: 120px;
     height: 120px;
     margin-bottom: 16px;
+    display: block;
+}
+.e_navigationB .p_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .e_navigationB .p_jtIcon{
     display: none;

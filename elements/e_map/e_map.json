@@ -1,0 +1,31 @@
+{
+  "cname": "地图",
+  "styleId": "e_map",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div id=\"mapCotainer\"></div>\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_map{\n    width: 100%;\n    height: 550px;\n    border: 1px solid #ccc;\n}\n.e_map #mapCotainer {\n    width: 100%;\n    height: 100%;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "zoom": 4
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}

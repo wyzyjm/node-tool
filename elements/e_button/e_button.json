@@ -2,7 +2,7 @@
   "cname": "按钮",
   "styleId": "e_button",
   "styleClass": "s_button1",
-  "tmpl": "<a class=\"${elemId} ${styleClass} btn btn-primary\" href=\"{{#if ${href}.value}}{{$transferLink ${href} compId}}{{^}}javascript:;{{/if}}\" {{#if ${href}.value}}target=\"{{${href}.target}}\"{{/if}}>{{${text}}}</a>",
+  "tmpl": "{{#if ${status}}}\n<a class=\"${elemId} ${styleClass} btn btn-primary\" href=\"{{#if ${href}.value}}{{$transferLink ${href} compId}}{{^}}javascript:;{{/if}}\" {{#if ${href}.value}}target=\"{{${href}.target}}\"{{/if}}>{{${text}}}</a>\n{{/if}}",
   "css": [
     {
       "media": "",
@@ -27,7 +27,8 @@
       "type": "link",
       "value": "",
       "target": "_blank"
-    }
+    },
+    "status": true
   },
   "i18n": {
     "zh_CN": {}
