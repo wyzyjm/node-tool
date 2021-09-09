@@ -54,8 +54,7 @@
     color: #fff;
 }
 .e_loop_F .p_template{
-    min-height: 200px;
-    min-width: 200px;
+    width: 100%;
 }
 .e_loop_F .swiper-slide-active, .e_loop_F .swiper-slide-duplicate-active{
     transform: scale();
