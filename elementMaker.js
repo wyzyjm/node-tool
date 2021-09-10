@@ -239,7 +239,7 @@ function handleStr(str,dataFields,compId){
             if(tmp.indexOf(e)==-1){
                 tmp.push(e)
                 let ne = e.replace(/}/g,'')
-                str=str.replace(new RegExp(e,'g'),'${'+ne+'}')
+                str=str.replace(new RegExp(ne,'g'),'${'+ne+'}')
             }
         })
     }    
