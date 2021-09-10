@@ -10,7 +10,7 @@
                 <li class="p_c_item">
                     <span class="p_c_title">
                         <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}" target="{{#eq categoryTarget 'BLANK'}}_blank{{/eq}}">
-                            {{#if categoryImage}}{{#if prop.showImg}}
+                            {{#if categoryImage}}{{#if ../prop.showImg}}
                                 <span>{{{nLazyImage categoryImage categoryName "true" unittype cdnTag}}}</span>
                             {{/if}}{{/if}}
                             <span>{{categoryName}}</span>
