@@ -1,0 +1,43 @@
+{
+  "prop": {
+    "attachment": [
+      {
+        "id": 123,
+        "fileId": 123456,
+        "fileName": "pdf警告框组件通过提供一些灵活的预定义消息，为常见的用户动作提供常见的上下反馈消息和提示。",
+        "fileExtName": "pdf",
+        "fileType": "pdf",
+        "fileSize": "26 KB",
+        "pvs": 100,
+        "filePath": "https: //v1.cecdn.yun300.cn/site_1809290214/pdf1548219939078.pdf"
+      },
+      {
+        "id": 456,
+        "fileId": 123456,
+        "fileName": "exe文件",
+        "fileExtName": "exe",
+        "fileType": "pdf",
+        "fileSize": "26 KB",
+        "pvs": 100,
+        "filePath": "https: //v1.cecdn.yun300.cn/site_1809290214/pdf1548219939078.pdf"
+      },
+      {
+        "id": 789,
+        "fileId": 123456,
+        "fileName": "txt文件名称",
+        "fileExtName": "txt",
+        "fileType": "pdf",
+        "fileSize": "26 KB",
+        "pvs": 100,
+        "filePath": "https: //v1.cecdn.yun300.cn/site_1809290214/pdf1548219939078.pdf"
+      }
+    ]
+  },
+  "i18n": {
+    "fileSize": "文件大小:",
+    "pvs": "访问量:",
+    "allSelect": "全选",
+    "download":"下载",
+    "preview":"预览"
+  }
+}
