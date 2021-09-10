@@ -1,14 +1,12 @@
 {
   "prop": {
-    "dataList": [
-      {},
-      {},
-      {},
-      {},
-      {},
-      {}
+    "dataList":[
+      {},{},{},{},{}
     ],
-    "autoplay": true
+    "pageConfig":{
+      "autoplay": false,
+      "loopItem": ".p_template"
+    }
   },
   "i18n": {}
 }

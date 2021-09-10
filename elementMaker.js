@@ -119,33 +119,29 @@ async function copyFile(compId){
     let compJson,compPanelJson,compDataJson
     try{
         compJson=JSON.parse(await readFile(compJsonFilePath));
-    }catch(e){
-        compJson=[]
-    }
+    }catch(e){}
     try{
         compPanelJson=JSON.parse(await readFile(compPanelFilePath));
-    }catch(e){
-        compPanelJson=[]
-    }
+    }catch(e){}
     try{
         compDataJson=JSON.parse(await readFile(compDataFilePath));
-    }catch(e){
-        compDataJson=[]
-    }
+    }catch(e){}
     let desginLibComp = `${DESIGNlIB_pATH + compId}/`;
-    console.log(desginLibComp)
     if(!fs.existsSync(desginLibComp)){
         createDir(desginLibComp);
     }
-
-  
-    let dsignCompPath = `${desginLibComp + compId}.json`;
-    let dsignCompPannelPath = `${desginLibComp + compId}-panel.json`;
-    let dsignCompDataPath = `${desginLibComp + compId}-data.json`;
-    
-    await writeFile(dsignCompPath,JSON.stringify(compJson,null,2),'utf8');
-    await writeFile(dsignCompPannelPath,JSON.stringify(compPanelJson,null,2),'utf8');
-    await writeFile(dsignCompDataPath,JSON.stringify(compDataJson,null,2),'utf8');
+    if(compJson){
+        let dsignCompPath = `${desginLibComp + compId}.json`;
+        await writeFile(dsignCompPath,JSON.stringify(compJson,null,2),'utf8');
+    }
+    if(compPanelJson){
+        let dsignCompPannelPath = `${desginLibComp + compId}-panel.json`;
+        await writeFile(dsignCompPannelPath,JSON.stringify(compPanelJson,null,2),'utf8');
+    }
+    if(compDataJson){
+        let dsignCompDataPath = `${desginLibComp + compId}-data.json`;
+        await writeFile(dsignCompDataPath,JSON.stringify(compDataJson,null,2),'utf8');
+    }
 }
 
 //自动修改json
@@ -255,7 +251,7 @@ function handleStr(str,dataFields,compId){
     }
 
     //词条替换
-    let i18nReg = /i18n\..*?}}/g
+    let i18nReg = /i18n.*?}}/g
     let i18nMatch = str.match(i18nReg)
     if(i18nMatch){
         i18nMatch.forEach(e=>{

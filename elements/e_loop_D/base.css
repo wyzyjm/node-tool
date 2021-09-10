@@ -1,0 +1,50 @@
+.e_loop_D{
+
+}
+.e_loop_D .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+  }
+
+  .e_loop_D .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .e_loop_D .swiper-button-prev,.e_loop_D .swiper-button-next{
+    background-color:#007bff;
+    width: 44px;
+    top: 25px;
+    border-radius: 100%;
+
+}
+.e_loop_D .swiper-button-next{
+    right: auto;
+    left: 64px;  
+}
+.e_loop_D .swiper-button-next:after,.e_loop_D .swiper-button-prev:after{
+    font-size: 22px;
+    color: #fff;
+}
+.e_loop_D .p_template{
+   width: 100%;
+}
+.e_loop_D .swiper-slide-active, .e_loop_D .swiper-slide-duplicate-active{
+    transform: scale();
+  }

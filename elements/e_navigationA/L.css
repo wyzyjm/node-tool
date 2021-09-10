@@ -28,7 +28,7 @@
     width: 200px;
     position: absolute;
     top: 0;
-    left: 200px;
+    left: 100%;
     z-index: 9;
     box-shadow: 5px 5px 20px rgb(236, 233, 233);
 }
@@ -37,7 +37,7 @@
 }
 .e_navigationA .p_jtIcon{
     /* transition: 0.5s; */
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     color: #cdcdcd;
 }
 .e_navigationA .p_level1Item:hover .p_jtIcon {

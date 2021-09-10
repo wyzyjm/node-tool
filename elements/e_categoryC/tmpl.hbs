@@ -1,66 +1,20 @@
 <div class="e_categoryC" needjs='true'>
     <div class="p_c_tree">
-        <ul class="p_c_content">
-            {{#prop.cate}}
-            <li class="p_c_item">
-                {{#if href}}
-                    <a href="{{href}}" class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}" target="{{target}}">
-                        {{name}}
-                    </a>
-                {{^}}
-                    <span class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}" >
-                        {{name}}
+        {{#if prop.cate}}
+            {{#tree prop.cate}}
+                {{#if @nodeBegin}}<ul class="p_c_content">{{/if}}
+                <li class="p_c_item">
+                    <span class="p_c_title">
+                        <a href="{{#if href}}{{href}}{{^}}javascript:;{{/if}}" class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}" target="{{#eq target 'BLANK'}}_blank{{/eq}}">
+                            <span>{{name}}</span>
+                        </a>
                     </span>
-                {{/if}}
-                <ul class="p_c_content">
-                    {{#children}}
-                    <li class="p_c_item">
-                        {{#if href}}
-                            <a href="{{href}}" class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}" target="{{target}}">
-                                {{name}}
-                            </a>
-                        {{^}}
-                            <span class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}">
-                                {{name}}
-                            </span>
-                        {{/if}}
-                        <ul class="p_c_content">
-                            {{#this.children}}
-                            <li class="p_c_item">
-                                {{#if href}}
-                                    <a href="{{href}}" class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}" target="{{target}}">
-                                        {{name}}
-                                    </a>
-                                {{^}}
-                                    <span class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}">
-                                        {{name}}
-                                    </span>
-                                {{/if}}
-                                <ul class="p_c_content">
-                                    {{#this.children}}
-                                    <li class="p_c_item">
-                                        {{#if href}}
-                                            <a href="{{href}}" class="btn btn-primary p_c_title {{#selected}}active{{/selected}}" target="{{target}}">
-                                                {{name}}
-                                            </a>
-                                        {{^}}
-                                            <span class="btn btn-primary p_c_title {{#selected}}active{{/selected}}">
-                                                {{name}}
-                                            </span>
-                                        {{/if}}
-                                    </li>
-                                    {{/this.children}}
-                                </ul>
-                            </li>
-                            {{/this.children}}
-                        </ul>
-                    </li>
-                    {{/children}}
-                </ul>
-            </li>
-            {{^}}
-            {{noDataPrompt}}
-            {{/prop.cate}}
-        </ul>
+                    {{tree children}}
+                </li>
+                {{#if @nodeEnd}}</ul>{{/if}}
+            {{/tree}}
+        {{^}}
+            {{nNoDataPrompt i18n.noData}}
+        {{/if}}
     </div>
 </div>

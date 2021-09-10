@@ -72,7 +72,8 @@
             "href":"#",
             "target":""
         }
-      ]
+      ],
+      "showImg":false
   },
   "i18n": {}
 }

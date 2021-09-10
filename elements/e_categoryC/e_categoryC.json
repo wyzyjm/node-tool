@@ -2,7 +2,7 @@
   "cname": "分类树-横向",
   "styleId": "e_categoryC",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs='true'>\n    <div class=\"p_c_tree\">\n        <ul class=\"p_c_content\">\n            {{#${cate}}}\n            <li class=\"p_c_item\">\n                {{#if href}}\n                    <a href=\"{{href}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{target}}\">\n                        {{name}}\n                    </a>\n                {{^}}\n                    <span class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" >\n                        {{name}}\n                    </span>\n                {{/if}}\n                <ul class=\"p_c_content\">\n                    {{#children}}\n                    <li class=\"p_c_item\">\n                        {{#if href}}\n                            <a href=\"{{href}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{target}}\">\n                                {{name}}\n                            </a>\n                        {{^}}\n                            <span class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\">\n                                {{name}}\n                            </span>\n                        {{/if}}\n                        <ul class=\"p_c_content\">\n                            {{#this.children}}\n                            <li class=\"p_c_item\">\n                                {{#if href}}\n                                    <a href=\"{{href}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{target}}\">\n                                        {{name}}\n                                    </a>\n                                {{^}}\n                                    <span class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\">\n                                        {{name}}\n                                    </span>\n                                {{/if}}\n                                <ul class=\"p_c_content\">\n                                    {{#this.children}}\n                                    <li class=\"p_c_item\">\n                                        {{#if href}}\n                                            <a href=\"{{href}}\" class=\"btn btn-primary p_c_title {{#selected}}active{{/selected}}\" target=\"{{target}}\">\n                                                {{name}}\n                                            </a>\n                                        {{^}}\n                                            <span class=\"btn btn-primary p_c_title {{#selected}}active{{/selected}}\">\n                                                {{name}}\n                                            </span>\n                                        {{/if}}\n                                    </li>\n                                    {{/this.children}}\n                                </ul>\n                            </li>\n                            {{/this.children}}\n                        </ul>\n                    </li>\n                    {{/children}}\n                </ul>\n            </li>\n            {{^}}\n            {{noDataPrompt}}\n            {{/${cate}}}\n        </ul>\n    </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs='true'>\n    <div class=\"p_c_tree\">\n        {{#if ${cate}}}\n            {{#tree ${cate}}}\n                {{#if @nodeBegin}}<ul class=\"p_c_content\">{{/if}}\n                <li class=\"p_c_item\">\n                    <span class=\"p_c_title\">\n                        <a href=\"{{#if href}}{{href}}{{^}}javascript:;{{/if}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{#eq target 'BLANK'}}_blank{{/eq}}\">\n                            <span>{{name}}</span>\n                        </a>\n                    </span>\n                    {{tree children}}\n                </li>\n                {{#if @nodeEnd}}</ul>{{/if}}\n            {{/tree}}\n        {{^}}\n            {{nNoDataPrompt ${i18n.noData}}}\n        {{/if}}\n    </div>\n</div>",
   "css": [
     {
       "media": "",
@@ -102,14 +102,15 @@
         "href": "#",
         "target": ""
       }
-    ]
+    ],
+    "showImg": false
   },
   "i18n": {
     "zh_CN": {}
   },
   "datasource": "prop",
   "dataFields": {
-      "cate":"cate",
+    "cate": "cate",
     "cate$name": "name",
     "cate$imgUrl": "imgUrl",
     "cate$href": "href",

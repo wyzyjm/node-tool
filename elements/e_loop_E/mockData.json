@@ -1,0 +1,12 @@
+{
+  "prop": {
+    "dataList":[
+      {}
+    ],
+    "pageConfig":{
+      "autoplay": false,
+      "loopItem": ".p_template"
+    }
+  },
+  "i18n": {}
+}

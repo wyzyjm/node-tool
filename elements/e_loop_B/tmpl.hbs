@@ -1,15 +1,16 @@
 <div class="e_loop_B" needjs="true">
-     <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-        {{#each prop.dataList}}
-         <div class="swiper-slide">
-             <div class="cbox-${id} p_template"></div>
-         </div>
-       {{/each}}
+   <div class="swiper-container">
+        {{#if prop.dataList}}
+            <div class="swiper-wrapper">
+                {{#prop.dataList}}
+                <div class="swiper-slide">
+                    <div class="cbox-${id} p_template"></div>
+                </div>
+                {{/prop.dataList}}
+            </div>   
+            <!-- 如果需要导航按钮 -->
+            <div class="js_editor_click swiper-button-prev"></div>
+            <div class="js_editor_click swiper-button-next"></div>
+        {{/if}}
     </div>
-    <!-- Add Pagination -->
-    <div class="js_editor_click swiper-button-prev"></div>
-    <div class="js_editor_click swiper-button-next"></div>
-  </div>
 </div>

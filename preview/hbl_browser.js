@@ -280,7 +280,7 @@ helpers.paging = function (context,pageType) {
   return new Handlebars.SafeString(Handlebars.compile(resultStr)(this));
 };
 
-helpers.nPaging = function (page,pageConfig) {
+helpers.nPaging = function (page,pageConfig,i18n) {
     let { from, size, totalCount } = page;
     let currentPage = Math.ceil(from/size)+1;
     let pageSize = size;
@@ -338,7 +338,7 @@ helpers.nPaging = function (page,pageConfig) {
             <a href="${pageUrl}-${currentPage < pageNums ? (currentPage + 1) : pageNums}.html" class="page_a page_next ${nextDisabled}">&gt;</a >
             {{#if prop.pageConfig.showJump}}
             <span class="page_jump">
-                {{i18n.pageJump}} <input type="text" class="page_input" > {{i18n.pageUnit}}
+                ${i18n.pageJump} <input type="text" class="page_input" > ${i18n.pageUnit}
             </span>
             {{/if}}
         </div>
@@ -346,7 +346,7 @@ helpers.nPaging = function (page,pageConfig) {
     } else if ('click' == pageConfig.pageType) {
         resultStr = `
             <div class="page_con">
-                <button class="btn btn-primary btn-sm e_button page_clickLoad">{{i18n.loadMore}}</button>
+                <button class="btn btn-primary btn-sm e_button page_clickLoad">${i18n.loadMore}</button>
             </div>
         `
     } else {
@@ -379,7 +379,28 @@ helpers.nNoDataPrompt = function (prompt) {
     `
     return new Handlebars.SafeString(Handlebars.compile(resultStr)(this))
 };
-
+helpers.tree = function (children,options) {
+    let context = undefined;
+    if (this.__context !== undefined) {
+        context = this.__context;
+        options = this.__context.options;
+    }
+    let deep = context !== undefined && context.deep !== undefined ? context.deep : 1;
+    let itemsAsHtml = "";
+    for (let index in children) {
+        let item = children[index];
+        item['__context'] = { _this: this, options: options, deep: deep + 1 };
+        itemsAsHtml += options.fn(item, {
+            data: {
+                index,
+                deep,
+                nodeBegin: index === '0',
+                nodeEnd: index === (children.length - 1).toString()
+            }
+        });
+    }
+    return new Handlebars.SafeString(Handlebars.compile(itemsAsHtml)(this))
+};
 //Handlebars  browser
 Handlebars.registerHelper("noDataPrompt", helpers.noDataPrompt);
 Handlebars.registerHelper("nNoDataPrompt", helpers.nNoDataPrompt);
@@ -397,3 +418,4 @@ Handlebars.registerHelper("lt", helpers.lt);
 Handlebars.registerHelper("lte", helpers.lte);
 Handlebars.registerHelper("ellipsis", helpers.ellipsis);
 Handlebars.registerHelper("dateFormat", helpers.dateFormat);//日期格式化
+Handlebars.registerHelper("tree", helpers.tree);//日期格式化
