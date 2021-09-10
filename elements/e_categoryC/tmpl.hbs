@@ -5,8 +5,8 @@
                 {{#if @nodeBegin}}<ul class="p_c_content">{{/if}}
                 <li class="p_c_item">
                     <span class="p_c_title">
-                        <a href="{{#if href}}{{href}}{{^}}javascript:;{{/if}}" class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}" target="{{#eq target 'BLANK'}}_blank{{/eq}}">
-                            <span>{{name}}</span>
+                        <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}" class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}" target="{{#eq categoryTarget 'BLANK'}}_blank{{/eq}}">
+                            <span>{{categoryName}}</span>
                         </a>
                     </span>
                     {{tree children}}

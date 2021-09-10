@@ -401,6 +401,9 @@ helpers.tree = function (children,options) {
     }
     return new Handlebars.SafeString(Handlebars.compile(itemsAsHtml)(this))
 };
+helpers.lazyFile = function (url) {
+    return url;
+};
 //Handlebars  browser
 Handlebars.registerHelper("noDataPrompt", helpers.noDataPrompt);
 Handlebars.registerHelper("nNoDataPrompt", helpers.nNoDataPrompt);
@@ -408,6 +411,7 @@ Handlebars.registerHelper("paging", helpers.paging);
 Handlebars.registerHelper("nPaging", helpers.nPaging);
 Handlebars.registerHelper("lazyImage", helpers.lazyImage);
 Handlebars.registerHelper("nLazyImage", helpers.nLazyImage);
+Handlebars.registerHelper("lazyFile", helpers.lazyFile);
 Handlebars.registerHelper("lazyVideo", helpers.lazyVideo);
 Handlebars.registerHelper("lazySource", helpers.lazySource);
 Handlebars.registerHelper("compare", helpers.compare);

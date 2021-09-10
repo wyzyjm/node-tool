@@ -2,7 +2,7 @@
   "cname": "分类树-横向",
   "styleId": "e_categoryC",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs='true'>\n    <div class=\"p_c_tree\">\n        {{#if ${cate}}}\n            {{#tree ${cate}}}\n                {{#if @nodeBegin}}<ul class=\"p_c_content\">{{/if}}\n                <li class=\"p_c_item\">\n                    <span class=\"p_c_title\">\n                        <a href=\"{{#if href}}{{href}}{{^}}javascript:;{{/if}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{#eq target 'BLANK'}}_blank{{/eq}}\">\n                            <span>{{name}}</span>\n                        </a>\n                    </span>\n                    {{tree children}}\n                </li>\n                {{#if @nodeEnd}}</ul>{{/if}}\n            {{/tree}}\n        {{^}}\n            {{nNoDataPrompt ${i18n.noData}}}\n        {{/if}}\n    </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs='true'>\n    <div class=\"p_c_tree\">\n        {{#if ${cate}}}\n            {{#tree ${cate}}}\n                {{#if @nodeBegin}}<ul class=\"p_c_content\">{{/if}}\n                <li class=\"p_c_item\">\n                    <span class=\"p_c_title\">\n                        <a href=\"{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{#eq categoryTarget 'BLANK'}}_blank{{/eq}}\">\n                            <span>{{categoryName}}</span>\n                        </a>\n                    </span>\n                    {{tree children}}\n                </li>\n                {{#if @nodeEnd}}</ul>{{/if}}\n            {{/tree}}\n        {{^}}\n            {{nNoDataPrompt ${i18n.noData}}}\n        {{/if}}\n    </div>\n</div>",
   "css": [
     {
       "media": "",
@@ -24,89 +24,91 @@
   "prop": {
     "cate": [
       {
-        "name": "@ctitle(3,5)",
-        "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-        "href": "http://www.baidu.com",
-        "target": "_blank",
+        "categoryName": "分类一级",
+        "categoryImage": "/npublic/img/star-on.png",
+        "categoryUrl": "",
+        "categoryTarget": "",
         "children": [
           {
-            "name": "@ctitle(3,5)",
-            "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-            "href": "#",
-            "target": ""
-          },
-          {
-            "name": "@ctitle(3,5)",
-            "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-            "href": "#",
-            "target": "",
-            "selected": "true"
-          },
-          {
-            "name": "@ctitle(3,5)",
-            "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-            "href": "#",
-            "target": "",
+            "categoryName": "分类二级",
+            "categoryImage": "/npublic/img/star-on.png",
+            "categoryUrl": "",
+            "categoryTarget": "",
             "children": [
               {
-                "name": "@ctitle(3,5)",
-                "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                "href": "#",
-                "target": ""
+                "categoryName": "分类三级",
+                "categoryImage": "",
+                "categoryUrl": "",
+                "categoryTarget": ""
               },
               {
-                "name": "@ctitle(3,5)",
-                "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                "href": "#",
-                "target": ""
+                "categoryName": "分类三级",
+                "categoryImage": null,
+                "categoryUrl": "",
+                "categoryTarget": ""
               },
               {
-                "name": "@ctitle(3,5)",
-                "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                "href": "#",
-                "target": "",
+                "categoryName": "分类三级",
+                "categoryImage": "",
+                "categoryUrl": "",
+                "categoryTarget": "",
                 "children": [
                   {
-                    "name": "@ctitle(3,5)",
-                    "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                    "href": "#",
-                    "target": ""
+                    "categoryName": "分类四级",
+                    "categoryImage": "",
+                    "categoryUrl": "#",
+                    "categoryTarget": ""
                   },
                   {
-                    "name": "@ctitle(3,5)",
-                    "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                    "href": "#",
-                    "target": ""
+                    "categoryName": "分类四级",
+                    "categoryImage": "",
+                    "categoryUrl": "#",
+                    "categoryTarget": ""
                   },
                   {
-                    "name": "@ctitle(3,5)",
-                    "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                    "href": "#",
-                    "target": ""
+                    "categoryName": "分类四级",
+                    "categoryImage": "",
+                    "categoryUrl": "#",
+                    "categoryTarget": ""
                   }
                 ]
               }
             ]
+          },
+          {
+            "categoryName": "分类二级",
+            "categoryImage": "",
+            "categoryUrl": "",
+            "categoryTarget": ""
+          },
+          {
+            "categoryName": "分类二级",
+            "categoryImage": "",
+            "categoryUrl": "#",
+            "categoryTarget": ""
           }
         ]
       },
       {
-        "name": "@ctitle(3,5)",
-        "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-        "href": "#",
-        "target": ""
+        "categoryName": "分类一级",
+        "categoryImage": "/npublic/img/star-on.png",
+        "categoryUrl": "#",
+        "categoryTarget": ""
       },
       {
-        "name": "@ctitle(3,5)",
-        "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-        "href": "#",
-        "target": ""
+        "categoryName": "分类一级",
+        "categoryImage": "/npublic/img/star-on.png",
+        "categoryUrl": "#",
+        "categoryTarget": ""
       }
     ],
-    "showImg": false
+    "showImg": true
   },
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "moCategoryTitle": "全部分类",
+      "noData": "暂无数据"
+    }
   },
   "datasource": "prop",
   "dataFields": {
@@ -115,7 +117,11 @@
     "cate$imgUrl": "imgUrl",
     "cate$href": "href",
     "cate$target": "target",
-    "cate$children": "children"
+    "cate$children": "children",
+    "cate$categoryName": "categoryName",
+    "cate$categoryImage": "categoryImage",
+    "cate$categoryUrl": "categoryUrl",
+    "cate$categoryTarget": "categoryTarget"
   },
   "scope": true
 }
