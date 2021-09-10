@@ -232,7 +232,7 @@ function handleStr(str,dataFields,compId){
             let tkA=e.match(/{{[a-zA-Z0-9]*?}}/g)
             if(tkA){
                 tkA.forEach(el=>{
-                    let noArr = ["noDataPrompt","this","if","children","eq ","each ","options","dataList","attributeList","keywords","specList","list","gt","previewList"]
+                    let noArr = ["noDataPrompt","this","if","children","eq ","each ","options","dataList","attributeList","keywords","specList","list","gt","previewList","i18n"]
                     let teo = el.replace(/{/g,'').replace(/}/g,'')
                     let flag = true
                     noArr.forEach(e=>{
