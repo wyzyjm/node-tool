@@ -1,11 +1,11 @@
 <div class="e_image s_img">
     {{#each prop.imgList}}
         {{#eq @index 0}}
-        {{#if ../prop.href.value}}
-            <a href="{{$transferLink ../prop.href compId}}" target="{{../prop.href.target}}">
+        {{#if prop.href.value}}
+            <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}">
         {{/if}}
-        {{{nLazyImage url ../prop.title "{{isLazy}}"}}}
-        {{#if ../prop.href.value}}
+        {{{nLazyImage url prop.title "{{isLazy}}"}}}
+        {{#if prop.href.value}}
             </a>
         {{/if}}
         {{/eq}}
