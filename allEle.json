@@ -137,8 +137,6 @@
       "code": "e_visitNumber"
     },
     {
-<<<<<<< HEAD
-=======
       "name": "时间",
       "code": "e_timeFormat"
     },
@@ -159,20 +157,12 @@
       "code": "e_loop_F"
     },
     {
->>>>>>> 799978f7bc7f30b90276600bed52a27195ed65c4
       "name": "地图3",
       "code": "e_map_C"
     },
     {
       "name": "地图",
       "code": "e_map"
-<<<<<<< HEAD
-    },
-    {
-      "name": "时间",
-      "code": "e_timeFormat"
-=======
->>>>>>> 799978f7bc7f30b90276600bed52a27195ed65c4
     }
   ],
   "complex": [

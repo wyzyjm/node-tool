@@ -113,15 +113,6 @@
   "datasource": "prop",
   "dataFields": {
     "cate": "cate",
-    "cate$name": "name",
-    "cate$imgUrl": "imgUrl",
-    "cate$href": "href",
-    "cate$target": "target",
-    "cate$children": "children",
-    "cate$categoryName": "categoryName",
-    "cate$categoryImage": "categoryImage",
-    "cate$categoryUrl": "categoryUrl",
-    "cate$categoryTarget": "categoryTarget"
-  },
-  "scope": true
+    "showImg": "showImg"
+  }
 }
