@@ -1,0 +1,10 @@
+{   
+  "apiType":"object",
+  "dataFields":[
+      {
+          "name":"attachment",
+          "cname":"文件列表",
+          "type":"array[file]"
+      }
+  ]
+}
