@@ -87,12 +87,7 @@
   },
   "datasource": "prop",
   "dataFields": {
-    "bannerLists$target": "target",
-    "bannerLists$title": "title",
-    "bannerLists$video": "video",
-    "bannerLists$imgUrl": "imgUrl",
-    "bannerLists$href": "href",
-    "bannerLists$summary": "summary",
-    "bannerLists$type": "type"
+    "bannerLists": "bannerLists",
+    "settings": "settings"
   }
 }

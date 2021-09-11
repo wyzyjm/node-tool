@@ -24,79 +24,84 @@
   "prop": {
     "dataList": [
       {
-        "name": "网站首页",
-        "children": []
+        "name": "首页"
       },
       {
-        "name": "列表数据",
+        "name": "公司概况",
         "children": [
           {
-            "name": "新闻资讯",
-            "imgUrl": "https://img.alicdn.com/imgextra/i3/44242389/O1CN01YMwzqz1TWCtPCBn4B_!!0-saturn_solar.jpg_468x468q75.jpg_.webp",
+            "name": "企业介绍"
+          },
+          {
+            "name": "发展历程"
+          },
+          {
+            "name": "关于我们"
+          }
+        ]
+      },
+      {
+        "name": "我们的产品"
+      },
+      {
+        "name": "新闻资讯",
+        "children": [
+          {
+            "imgUrl": "https://img.alicdn.com/imgextra/i4/29242799/O1CN01OjRIlM1WXzH2opoIU_!!0-saturn_solar.jpg_468x468q75.jpg_.webp",
+            "name": "最新动态"
+          },
+          {
+            "name": "企业新闻"
+          },
+          {
+            "name": "行业新闻"
+          }
+        ]
+      },
+      {
+        "name": "招商加盟",
+        "children": [
+          {
+            "name": "合作伙伴"
+          },
+          {
+            "name": "加入我们"
+          }
+        ]
+      },
+      {
+        "name": "售后服务",
+        "children": [
+          {
+            "name": "服务宗旨"
+          },
+          {
+            "name": "在线咨询"
+          },
+          {
+            "name": "常见问题",
             "children": [
               {
-                "name": "百度新闻"
+                "name": "生活常识"
               },
               {
-                "name": "腾讯新闻"
-              },
-              {
-                "name": "头条新闻"
-              },
-              {
-                "name": "网易新闻"
+                "name": "百度百科"
               }
             ]
           },
           {
-            "name": "新闻资讯111111",
-            "imgUrl": "https://img.alicdn.com/imgextra/i4/29242799/O1CN01OjRIlM1WXzH2opoIU_!!0-saturn_solar.jpg_468x468q75.jpg_.webp",
-            "children": [
-              {
-                "name": "百度新闻11111"
-              },
-              {
-                "name": "腾讯新闻11111"
-              },
-              {
-                "name": "头条新闻11111"
-              },
-              {
-                "name": "网易新闻11111"
-              }
-            ]
+            "name": "用户协议"
           }
         ]
       },
       {
-        "name": "行业资讯",
-        "imgUrl": "https://img.alicdn.com/imgextra/i4/29242799/O1CN01OjRIlM1WXzH2opoIU_!!0-saturn_solar.jpg_468x468q75.jpg_.webp",
+        "name": "联系我们",
         "children": [
           {
-            "name": "职位招聘",
-            "children": [
-              {
-                "name": "web前端"
-              },
-              {
-                "name": "架构师"
-              },
-              {
-                "name": "实习生"
-              },
-              {
-                "name": "管理岗"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "产品展示",
-        "children": [
+            "name": "在线留言"
+          },
           {
-            "name": "产品类型",
-            "children": []
+            "name": "联系我们"
           }
         ]
       }
@@ -111,8 +116,11 @@
   },
   "datasource": "prop",
   "dataFields": {
-    "dataList$name": "name",
-    "dataList$children": "children"
+    "dataList": "dataList",
+    "arrow": "arrow",
+    "menu": "menu",
+    "close": "close",
+    "showArrow": "showArrow"
   },
   "dataManage": {}
 }
