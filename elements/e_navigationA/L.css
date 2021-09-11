@@ -20,6 +20,7 @@
     left: 0;
     top: 100%;
     box-shadow: -5px 5px 20px rgb(236, 233, 233);
+    z-index: 99;
 }
 .e_navigationA .p_level2Item{
     position: relative;

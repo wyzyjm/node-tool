@@ -42,6 +42,10 @@
     margin-left: auto;
     position: relative;
 }
+.e_bannerC .p_video .videoContent{
+    width: 100%;
+    height: 100%;
+}
 .e_bannerC .p_video video{
     width: 100%;
     height: 100%;
