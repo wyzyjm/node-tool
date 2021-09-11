@@ -163,6 +163,10 @@
     {
       "name": "地图",
       "code": "e_map"
+    },
+    {
+      "name": "时间",
+      "code": "e_timeFormat"
     }
   ],
   "complex": [

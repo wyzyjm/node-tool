@@ -1,26 +1,22 @@
 <div class="e_download" needjs="true">
     <ul class="p_download">
         {{#each prop.attachment}}
-            <li class="d-flex align-items-center border mb-2 pl-3 pr-3 p_item" data-fileExtName="{{fileExtName}}"> 
+            <li class="d-flex align-items-center border mb-2 pl-3 pr-3 p_item" data-title="{{title}}" data-extName="{{extName}}"> 
                 <!-- 复选框 -->
                 <div class="form-check  p_name">
-                    <input class="form-check-input p_inputitem" type="checkbox" value="{{filePath}}" id="checkId{{@index}}">
+                    <input class="form-check-input p_inputitem" type="checkbox" value="{{{lazyFile url}}}" id="checkId{{@index}}">
                     <!-- 文件名称 -->
-                    <label class="form-check-label text-nowrap text-dark p_filename"  for="checkId{{@index}}"> {{fileName}} </label>
+                    <label class="form-check-label text-nowrap text-dark p_filename"  for="checkId{{@index}}"> {{name}} </label>
                 </div>
                 <!-- 文件大小 -->
-                <p class="flex1 flex-shinrk-0 text-center">
+                <p class="flex1 flex-shinrk-0 ">
                     <span class="text-secondary p_label"> {{../i18n.fileSize}} </span>
-                    <span> {{fileSize}} </span>
+                    <span> {{size}} </span>
                 </p>
-                <!-- 访问量 -->
-                <p class="flex1 flex-shinrk-0 text-center">
-                    <span class="text-secondary p_label"> {{../i18n.pvs}} </span>
-                    <span> {{pvs}} </span>
-                </p>
+                
                 <!-- 按钮组 -->
                 <div class="flex1 flex-shinrk-0 text-right  p_btnGroup">
-                    {{#eq fileExtName 'pdf'}}
+                    {{#eq extName 'pdf'}}
                         <button type="button" class="btn btn-outline-primary btn-sm pl-3 pr-3 s_button1 p_preview" >{{../i18n.preview}}</button>
                     {{/eq}}
                     <button type="button" class="btn btn-primary btn-sm pl-3 pr-3 s_button1 p_downbtn">{{../i18n.download}}</button>

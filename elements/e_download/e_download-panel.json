@@ -1,0 +1,8 @@
+{
+  "panelConfig": [
+      {
+      "compName": "setting-text",
+      "bind-text": "prop.h1"
+      }
+  ]
+}

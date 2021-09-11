@@ -1,15 +1,11 @@
-.e_download{
-
-}
 .e_download button{
     font-size: 12px;
 }
 .e_download .p_item {
     height: 42px;
 }
-
 .e_download .p_name {
-    width: 40%;
+    width: 60%;
     height: 30px;
     line-height: 30px;
     overflow: hidden;
@@ -21,6 +17,9 @@
    width: 100%;
    text-overflow: ellipsis;
    overflow: hidden;
+}
+.e_download .p_btnGroup {
+    white-space: nowrap;
 }
 .e_download .flex1 {
     flex:1;

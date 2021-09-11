@@ -2,11 +2,11 @@
   "cname": "文件下载",
   "styleId": "e_download",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <ul class=\"p_download\">\r\n        {{#each ${attachment}}}\r\n            <li class=\"d-flex align-items-center border mb-2 pl-3 pr-3 p_item\" data-title=\"{{title}}\" data-extName=\"{{extName}}\"> \r\n                <!-- 复选框 -->\r\n                <div class=\"form-check  p_name\">\r\n                    <input class=\"form-check-input p_inputitem\" type=\"checkbox\" value=\"{{{lazyFile url}}}\" id=\"checkId{{@index}}\">\r\n                    <!-- 文件名称 -->\r\n                    <label class=\"form-check-label text-nowrap text-dark p_filename\"  for=\"checkId{{@index}}\"> {{name}} </label>\r\n                </div>\r\n                <!-- 文件大小 -->\r\n                <p class=\"flex1 flex-shinrk-0 \">\r\n                    <span class=\"text-secondary p_label\"> {{../${i18n.fileSize}}} </span>\r\n                    <span> {{size}} </span>\r\n                </p>\r\n                \r\n                <!-- 按钮组 -->\r\n                <div class=\"flex1 flex-shinrk-0 text-right  p_btnGroup\">\r\n                    {{#eq extName 'pdf'}}\r\n                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm pl-3 pr-3 s_button1 p_preview\" >{{../${i18n.preview}}}</button>\r\n                    {{/eq}}\r\n                    <button type=\"button\" class=\"btn btn-primary btn-sm pl-3 pr-3 s_button1 p_downbtn\">{{../${i18n.download}}}</button>\r\n                </div>\r\n            </li>\r\n        {{/each}}\r\n    </ul>\r\n    <div class=\"d-flex align-items-center pl-3 pr-3 \">\r\n         <!-- 全选 -->\r\n        <div class=\"form-check p_allSelect mr-3\">\r\n            <input class=\"form-check-input p_allCheck\" type=\"checkbox\" value=\"\" id=\"allcheck\">\r\n            <label class=\"form-check-label text-nowrap text-dark p_filename\"  for=\"allcheck\"> {{${i18n.allSelect}}} </label>\r\n        </div>\r\n        <!-- 全选 -->\r\n        <button class=\"btn btn-primary btn-sm pl-3 pr-3 s_button1 p_allBtn\"> {{${i18n.download}}} </button>\r\n    </div>\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_download button{\n    font-size: 12px;\n}\n.e_download .p_item {\n    height: 42px;\n}\n.e_download .p_name {\n    width: 60%;\n    height: 30px;\n    line-height: 30px;\n    overflow: hidden;\n}\n.e_download .form-check-input {\n    margin-top: 8px;\n}\n.e_download .p_filename {\n   width: 100%;\n   text-overflow: ellipsis;\n   overflow: hidden;\n}\n.e_download .p_btnGroup {\n    white-space: nowrap;\n}\n.e_download .flex1 {\n    flex:1;\n}\n.e_download .flex2 {\n    flex:2;\n}\n.e_download .p_preview {\n   border-width: 1px; \n   background-color: rgba(0,123,255,.1);\n}\n.e_download .p_allSelect {\n    height: 30px;\n    line-height: 30px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,8 +21,81 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "attachment": [
+      {
+        "summary": "",
+        "size": 41753,
+        "id": 1817297,
+        "extName": "jpeg",
+        "name": "文件名称",
+        "title": "5kC9IC1zWz6AT2c4RbiKLvYMsoouUhg9Ra0yTqK3.jpeg",
+        "url": "portal-saas/shen8_c63078d7d785480988948f7a9cb8330f/cms/file/ab0a1058-8800-494d-8b99-0c89f45623be.jpeg"
+      },
+      {
+        "summary": "",
+        "size": 5130,
+        "id": 1817298,
+        "extName": "webp",
+        "name": "文件名称",
+        "title": "u=2124041851,3939553777&fm=26&fmt=auto&gp=0.jpg.webp",
+        "url": "portal-saas/shen8_c63078d7d785480988948f7a9cb8330f/cms/file/a0d49ee7-a59b-4ffc-8d8b-7045aa4f5a04.jpg"
+      },
+      {
+        "summary": "",
+        "size": 110579,
+        "id": 1818178,
+        "extName": "pdf",
+        "name": "文件名称",
+        "title": "我是PDF我能预览.pdf",
+        "url": "portal-saas/shen8_c63078d7d785480988948f7a9cb8330f/cms/file/aabcc3c8-f845-4a98-8ee7-9ea469ef0aa0.pdf"
+      },
+      {
+        "summary": "",
+        "size": 9216,
+        "id": 1818179,
+        "extName": "doc",
+        "name": "文件名称",
+        "title": "新建DOC文档.doc",
+        "url": "portal-saas/shen8_c63078d7d785480988948f7a9cb8330f/cms/file/d2e56304-580b-4f5b-bb9f-ae41729af114.doc"
+      },
+      {
+        "summary": "",
+        "size": 110579,
+        "id": 1818180,
+        "extName": "pdf",
+        "name": "文件名称",
+        "title": "新建DOCX文档.pdf",
+        "url": "portal-saas/shen8_c63078d7d785480988948f7a9cb8330f/cms/file/da34f42c-6f63-4e94-9546-2afcae9757c3.pdf"
+      },
+      {
+        "summary": "",
+        "size": 5709225,
+        "id": 1818185,
+        "extName": "mp4",
+        "name": "文件名称",
+        "title": "HhuTaoLkNpetLM3Ffg9_312475717342_mp4_264_hd.mp4",
+        "url": "portal-saas/shen8_c63078d7d785480988948f7a9cb8330f/cms/file/b8891486-cf5c-4431-a1e3-27d02299bea8.mp4"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {
+      "fileSize": "文件大小:",
+      "allSelect": "全选",
+      "download": "下载",
+      "preview": "预览"
+    }
+  },
   "datasource": "prop",
-  "dataFields": {}
+  "dataFields": {
+    "attachment": "attachment",
+    "attachment$summary": "summary",
+    "attachment$size": "size",
+    "attachment$id": "id",
+    "attachment$extName": "extName",
+    "attachment$name": "name",
+    "attachment$title": "title",
+    "attachment$url": "url"
+  }
 }
