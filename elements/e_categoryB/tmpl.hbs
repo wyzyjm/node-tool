@@ -9,9 +9,11 @@
                 {{#if @nodeBegin}}<ul class="p_c_content">{{/if}}
                 <li class="p_c_item">
                     <span class="p_c_title">
-                        <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}" target="{{#eq categoryTarget 'BLANK'}}_blank{{/eq}}">
+                        <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}" target="{{#eq target 'BLANK'}}_blank{{/eq}}">
                             {{#if categoryImage}}{{#if ../prop.showImg}}
-                                <span>{{{nLazyImage categoryImage categoryName "true" unittype cdnTag}}}</span>
+                            {{#each categoryImage}}{{#eq @index 0}}
+                                <span>{{{nLazyImage this ../categoryName "true" unittype cdnTag}}}</span>
+                            {{/eq}}{{/each}}
                             {{/if}}{{/if}}
                             <span>{{categoryName}}</span>
                         </a>
