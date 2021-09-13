@@ -28,7 +28,7 @@
                 </ul>
                 <div class="p_imgBox">
                     {{#each children}}
-                    {{{nLazyImage imgUrl name 'true'}}}
+                        <span class="p_img">{{#if imgUrl}}{{{nLazyImage imgUrl name 'true'}}}{{/if}}</span>
                     {{/each}}
                 </div>
             </div>

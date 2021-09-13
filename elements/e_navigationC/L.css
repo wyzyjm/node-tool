@@ -4,13 +4,13 @@
 .e_navigationC .p_navBox1, .e_navigationC .p_navBox2{
     width: 100%;
     display: flex;
-    justify-content: center;
 }
 .e_navigationC .p_navBox2{
     position: absolute;
     top: 100%;
     left: 0;
     padding: 20px;
+    z-index: 99;
 }
 .e_navigationC .p_navBox2 ul{
     width: 900px;
@@ -34,7 +34,7 @@
 .e_navigationC .p_navItem1{ 
     border: none;
 }
-.e_navigationC .p_navItem1:hover>p span{ 
+.e_navigationC .p_navItem1:hover{ 
     color: #409eff;
     border-bottom: 2px solid #409eff;
     box-sizing: border-box;

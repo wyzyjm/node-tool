@@ -2,11 +2,11 @@
   "cname": "分类树-滑出",
   "styleId": "e_categoryA",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass} slide_out\" needjs=\"true\">\n    <button class=\"btn btn-primary p_c_mbtn\">{{i18n.moCategoryTitle}}</button>\n    <div class=\"p_c_tree\">\n        <div class=\"p_c_mput\">\n            <svg t=\"1604645690044\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"9896\" width=\"200\" height=\"200\"><path d=\"M725.333333 127.146667a53.333333 53.333333 0 0 0-75.52 0L295.253333 482.133333a42.496 42.496 0 0 0 0 60.16l354.56 354.56c20.906667 20.906667 54.613333 20.906667 75.52 0s20.906667-54.613333 0-75.52L416.426667 512l309.333333-309.333333c20.48-20.906667 20.48-55.04-0.426667-75.52z\" p-id=\"9897\"></path></svg>\n        </div>\n        {{#if ${cate}}}\n        <ul class=\"p_c_content\">\n            {{#${cate}}}\n            <li class=\"p_c_item\">\n                <span class=\"p_c_title\">\n                    {{#if href}}<a href=\"{{href}}\" target=\"{{target}}\">{{/if}}\n                    {{#if imgUrl}} {{{lazyImage imgUrl \"class='p_img'\" \"true\"}}} {{/if}}\n                    {{name}}\n                    {{#if href}}</a>{{/if}}\n                </span>\n                <ul class=\"p_c_content\">\n                    {{#children}}\n                    <li class=\"p_c_item\">\n                        <span class=\"p_c_title\">\n                            {{#if href}}<a href=\"{{href}}\" target=\"{{target}}\">{{/if}}\n                            {{#if imgUrl}} {{{lazyImage imgUrl \"class='p_img'\" \"true\"}}} {{/if}}\n                            {{name}}\n                            {{#if href}}</a>{{/if}}\n                        </span>\n                        <ul class=\"p_c_content\">\n                            {{#this.children}}\n                            <li class=\"p_c_item\">\n                                <span class=\"p_c_title\">\n                                    {{#if href}}<a href=\"{{href}}\" target=\"{{target}}\">{{/if}}\n                                    {{#if imgUrl}} {{{lazyImage imgUrl \"class='p_img'\" \"true\"}}} {{/if}}\n                                    {{name}}\n                                    {{#if href}}</a>{{/if}}\n                                </span>\n                                <ul class=\"p_c_content\">\n                                    {{#this.children}}\n                                    <li class=\"p_c_item\">\n                                        <span class=\"p_c_title\">\n                                            {{#if href}}<a href=\"{{href}}\" target=\"{{target}}\">{{/if}}\n                                            {{#if imgUrl}} {{{lazyImage imgUrl \"class='p_img'\" \"true\"}}} {{/if}}\n                                            {{name}}\n                                            {{#if href}}</a>{{/if}}\n                                        </span>\n                                    </li>\n                                    {{/this.children}}\n                                </ul>\n                            </li>\n                            {{/this.children}}\n                        </ul>\n                    </li>\n                    {{/children}}\n                </ul>\n            </li>\n            {{/${cate}}}\n        </ul>\n        {{^}}\n        {{noDataPrompt}}\n        {{/if}}\n    </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} slide_out\" needjs=\"true\">\n    <button class=\"btn btn-primary p_c_mbtn\">{{${i18n.moCategoryTitle}}}</button>\n    <div class=\"p_c_tree\">\n        <div class=\"p_c_mput\">\n            <svg t=\"1604645690044\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"9896\" width=\"200\" height=\"200\"><path d=\"M725.333333 127.146667a53.333333 53.333333 0 0 0-75.52 0L295.253333 482.133333a42.496 42.496 0 0 0 0 60.16l354.56 354.56c20.906667 20.906667 54.613333 20.906667 75.52 0s20.906667-54.613333 0-75.52L416.426667 512l309.333333-309.333333c20.48-20.906667 20.48-55.04-0.426667-75.52z\" p-id=\"9897\"></path></svg>\n        </div>\n        {{#if ${cate}}}\n            {{#tree ${cate}}}\n                {{#if @nodeBegin}}<ul class=\"p_c_content\">{{/if}}\n                <li class=\"p_c_item\">\n                    <span class=\"p_c_title\">\n                        <a href=\"{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target '_blank'}}_blank{{/eq}}\">\n                            {{#if categoryImage}}{{#if ../${showImg}}}\n                            {{#each categoryImage}}{{#eq @index 0}}\n                                <span>{{{nLazyImage this ../categoryName \"true\" unittype cdnTag}}}</span>\n                            {{/eq}}{{/each}}\n                            {{/if}}{{/if}}\n                            <span>{{categoryName}}</span>\n                        </a>\n                    </span>\n                    {{tree children}}\n                </li>\n                {{#if @nodeEnd}}</ul>{{/if}}\n            {{/tree}}\n        {{^}}\n            {{nNoDataPrompt ${i18n.noData}}}\n        {{/if}}\n    </div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_categoryA {\n    user-select:none;\n    font-size:14px;\n}\n.e_categoryA  ul{\n    list-style-type:none;\n    padding-left:30px;\n    margin:0;\n}\n.e_categoryA  .p_c_tree>ul{\n    padding:0;\n}\n.e_categoryA  li{\n    position:relative;\n}\n.e_categoryA  li .p_c_title{\n    display:block;\n    position:relative;\n    line-height:42px;\n    border-bottom:1px solid #e4e7ec;\n    cursor:pointer;\n    padding-left:10px;\n}\n.e_categoryA  li .p_c_title.active,\n.e_categoryA  li .p_c_title:hover{\n    background:#e1f6ff;\n}\n.e_categoryA  li .p_c_title img{\n    width:20px;\n    height:20px;\n    vertical-align:middle;\n    margin-right:5px;\n}\n.e_categoryA  .p_c_title .p_arrow{\n    position:absolute;\n    right:10px;\n    top: 13px;\n    width:16px;\n    height: 16px;\n    transform:rotate(-90deg);\n    color:#ccc;\n    fill: currentColor;\n}\n.e_categoryA  .p_c_mbtn,\n.e_categoryA  .p_c_mput,\n.e_categoryA  .p_c_item>.p_c_content{\n    display:none;\n}\n.e_categoryA.slide_out{\n    width: 220px;\n}\n.e_categoryA.slide_out ul{\n    padding-left:0;\n}\n.e_categoryA.slide_out .p_c_item>.p_c_content{\n    position:absolute;\n    z-index: 9;\n    width:220px;\n    left:220px;\n    top:0;\n}\n.e_categoryA.slide_out .p_c_title .p_arrow{\n    transform: rotate(180deg)\n}"
+      "cssText": ".e_categoryA {\n    user-select:none;\n    font-size:14px;\n}\n.e_categoryA  ul{\n    list-style-type:none;\n    padding-left:30px;\n    margin:0;\n}\n.e_categoryA  .p_c_tree>ul{\n    padding:0;\n}\n.e_categoryA  li{\n    position:relative;\n}\n.e_categoryA  li .p_c_title{\n    display:block;\n    position:relative;\n    line-height:42px;\n    border-bottom:1px solid #e4e7ec;\n    cursor:pointer;\n    padding-left:10px;\n}\n.e_categoryA  li .p_c_title.active,\n.e_categoryA  li .p_c_title:hover{\n    background:#e1f6ff;\n}\n.e_categoryA  li .p_c_title img{\n    width:20px;\n    height:20px;\n    vertical-align:middle;\n    margin-right:5px;\n    margin-top: -4px;\n}\n.e_categoryA  .p_c_title .p_arrow{\n    position:absolute;\n    right:10px;\n    top: 13px;\n    width:16px;\n    height: 16px;\n    transform:rotate(-90deg);\n    color:#ccc;\n    fill: currentColor;\n}\n.e_categoryA  .p_c_mbtn,\n.e_categoryA  .p_c_mput,\n.e_categoryA  .p_c_item>.p_c_content{\n    display:none;\n}\n.e_categoryA.slide_out{\n    width: 220px;\n}\n.e_categoryA.slide_out ul{\n    padding-left:0;\n}\n.e_categoryA.slide_out .p_c_item>.p_c_content{\n    position:absolute;\n    z-index: 9;\n    background: #fff;\n    width:220px;\n    left:220px;\n    top:0;\n}\n.e_categoryA.slide_out .p_c_title .p_arrow{\n    transform: rotate(180deg)\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -24,83 +24,79 @@
   "prop": {
     "cate": [
       {
-        "name": "@ctitle(3,5)",
-        "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-        "href": "#",
-        "target": "",
+        "categoryName": "视觉设计",
         "children": [
           {
-            "name": "@ctitle(3,5)",
-            "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-            "href": "#",
-            "target": "",
+            "categoryName": "企业VI设计"
+          },
+          {
+            "categoryName": "VI智能全景"
+          },
+          {
+            "categoryName": "商标设计",
             "children": [
               {
-                "name": "@ctitle(3,5)",
-                "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                "href": "#",
-                "target": ""
+                "categoryName": "资深设计"
               },
               {
-                "name": "@ctitle(3,5)",
-                "imgUrl": null,
-                "href": "#",
-                "target": ""
+                "categoryName": "高级设计"
               },
               {
-                "name": "@ctitle(3,5)",
-                "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                "href": "#",
-                "target": "",
-                "children": [
-                  {
-                    "name": "@ctitle(3,5)",
-                    "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                    "href": "#",
-                    "target": ""
-                  },
-                  {
-                    "name": "@ctitle(3,5)",
-                    "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                    "href": "#",
-                    "target": ""
-                  },
-                  {
-                    "name": "@ctitle(3,5)",
-                    "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                    "href": "#",
-                    "target": ""
-                  }
-                ]
+                "categoryName": "优秀设计"
               }
             ]
-          },
-          {
-            "name": "@ctitle(3,5)",
-            "href": "#",
-            "target": ""
-          },
-          {
-            "name": "@ctitle(3,5)",
-            "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-            "href": "#",
-            "target": ""
           }
         ]
       },
       {
-        "name": "@ctitle(3,5)",
-        "imgUrl": "",
-        "href": "#",
-        "target": ""
+        "categoryName": "品牌优化",
+        "children": [
+          {
+            "categoryName": "品牌策划"
+          },
+          {
+            "categoryName": "企业宣传册"
+          }
+        ]
       },
       {
-        "name": "@ctitle(3,5)",
-        "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-        "href": "#",
-        "target": ""
+        "categoryName": "产品服务",
+        "children": [
+          {
+            "categoryName": "官方博客"
+          },
+          {
+            "categoryName": "帮助中心",
+            "children": [
+              {
+                "categoryName": "F&Q"
+              },
+              {
+                "categoryName": "意见反馈"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "categoryName": "企业图册",
+        "children": [
+          {
+            "categoryName": "折页设计"
+          },
+          {
+            "categoryName": "员工手册"
+          },
+          {
+            "categoryName": "集团画册"
+          },
+          {
+            "categoryName": "产品图册"
+          }
+        ]
       }
-    ]
+    ],
+    "showImg": true
   },
   "i18n": {
     "zh_CN": {
@@ -111,11 +107,6 @@
   "datasource": "prop",
   "dataFields": {
     "cate": "cate",
-    "cate$name": "name",
-    "cate$imgUrl": "imgUrl",
-    "cate$href": "href",
-    "cate$target": "target",
-    "cate$children": "children"
-  },
-  "scope": true
+    "showImg": "showImg"
+  }
 }

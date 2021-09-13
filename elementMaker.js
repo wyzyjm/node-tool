@@ -119,33 +119,29 @@ async function copyFile(compId){
     let compJson,compPanelJson,compDataJson
     try{
         compJson=JSON.parse(await readFile(compJsonFilePath));
-    }catch(e){
-        compJson=[]
-    }
+    }catch(e){}
     try{
         compPanelJson=JSON.parse(await readFile(compPanelFilePath));
-    }catch(e){
-        compPanelJson=[]
-    }
+    }catch(e){}
     try{
         compDataJson=JSON.parse(await readFile(compDataFilePath));
-    }catch(e){
-        compDataJson=[]
-    }
+    }catch(e){}
     let desginLibComp = `${DESIGNlIB_pATH + compId}/`;
-    console.log(desginLibComp)
     if(!fs.existsSync(desginLibComp)){
         createDir(desginLibComp);
     }
-
-  
-    let dsignCompPath = `${desginLibComp + compId}.json`;
-    let dsignCompPannelPath = `${desginLibComp + compId}-panel.json`;
-    let dsignCompDataPath = `${desginLibComp + compId}-data.json`;
-    
-    await writeFile(dsignCompPath,JSON.stringify(compJson,null,2),'utf8');
-    await writeFile(dsignCompPannelPath,JSON.stringify(compPanelJson,null,2),'utf8');
-    await writeFile(dsignCompDataPath,JSON.stringify(compDataJson,null,2),'utf8');
+    if(compJson){
+        let dsignCompPath = `${desginLibComp + compId}.json`;
+        await writeFile(dsignCompPath,JSON.stringify(compJson,null,2),'utf8');
+    }
+    if(compPanelJson){
+        let dsignCompPannelPath = `${desginLibComp + compId}-panel.json`;
+        await writeFile(dsignCompPannelPath,JSON.stringify(compPanelJson,null,2),'utf8');
+    }
+    if(compDataJson){
+        let dsignCompDataPath = `${desginLibComp + compId}-data.json`;
+        await writeFile(dsignCompDataPath,JSON.stringify(compDataJson,null,2),'utf8');
+    }
 }
 
 //自动修改json
@@ -162,13 +158,13 @@ async function compJsonBuilder(compId) {
   compJson.prop=mockJson.prop;
   if(compJson.dataFields){
     for(var i in compJson.prop){
-        // compJson.dataFields[i]=i
-        if(Array.isArray(compJson.prop[i])){
-            for(var j in compJson.prop[i][0]){
-                let tk=i+"$"+j
-                compJson.dataFields[tk]=j
-            }
-        }
+        compJson.dataFields[i]=i
+        // if(Array.isArray(compJson.prop[i])){
+        //     for(var j in compJson.prop[i][0]){
+        //         let tk=i+"$"+j
+        //         compJson.dataFields[tk]=j
+        //     }
+        // }
     }
   }
   
@@ -202,26 +198,6 @@ function handleStr(str,dataFields,compId){
         })
     }
     str = str.replace(/datasource/ig, "${datasource}")
-    // let datasourceReg = /datasource/g
-    //  matchArrSource = str.match(datasourceReg)
-    // if(matchArrSource){
-    //     matchArrSource.forEach((e,index)=>{
-    //         if(index==0){
-    //             tmpStr = e.trim()
-    //             let f="${"+e+"}"
-    //             console.log(str)
-    //             str=str.replace(e,f)
-    //         }
-            
-            
-    //     })
-    //     // let old = matchArrSource[0];
-    //     // let f = "${"+old+"}"
-    //     // str.replace(old,f)
-    //     // console.log(old);
-    //     // console.log(f);
-    // }
-    
  
     //数据替换
     let dataReg2 = /(\{\{#[\w\W]*?\}\}[\w\W]*?{{\/[\w\W]*?\}\})/g
@@ -236,7 +212,7 @@ function handleStr(str,dataFields,compId){
             let tkA=e.match(/{{[a-zA-Z0-9]*?}}/g)
             if(tkA){
                 tkA.forEach(el=>{
-                    let noArr = ["noDataPrompt","this","if","children","eq ","each ","options","dataList","attributeList","keywords","specList","list","gt","previewList"]
+                    let noArr = ["noDataPrompt","this","if","children","eq ","each ","options","dataList","attributeList","keywords","specList","list","gt","previewList","i18n"]
                     let teo = el.replace(/{/g,'').replace(/}/g,'')
                     let flag = true
                     noArr.forEach(e=>{
@@ -257,10 +233,14 @@ function handleStr(str,dataFields,compId){
     //词条替换
     let i18nReg = /i18n\..*?}}/g
     let i18nMatch = str.match(i18nReg)
+    let tmp = []
     if(i18nMatch){
         i18nMatch.forEach(e=>{
-            let ne = e.replace(/}/g,'')
-            str=str.replace(ne,'${'+ne+'}')
+            if(tmp.indexOf(e)==-1){
+                tmp.push(e)
+                let ne = e.replace(/}/g,'')
+                str=str.replace(new RegExp(ne,'g'),'${'+ne+'}')
+            }
         })
     }    
 

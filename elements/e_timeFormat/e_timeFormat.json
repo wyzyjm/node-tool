@@ -1,7 +1,7 @@
 {
   "cname": "时间",
   "styleId": "e_timeFormat",
-  "styleClass": "",
+  "styleClass": "s_title",
   "tmpl": "<P class=\"${elemId} ${styleClass}\">{{{dateFormat ${time} ${format}}}}</P>",
   "css": [
     {

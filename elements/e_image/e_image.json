@@ -2,7 +2,7 @@
   "cname": "图片",
   "styleId": "e_image",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#each ${imgList}}}\n        {{#eq @index 0}}\n        {{#if ../${href}.value}}\n            <a href=\"{{$transferLink ../${href} compId}}\" target=\"{{../${href}.target}}\">\n        {{/if}}\n        {{{nLazyImage url ../${title} \"{{isLazy}}\"}}}\n        {{#if ../${href}.value}}\n            </a>\n        {{/if}}\n        {{/eq}}\n    {{/each}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#each ${imgList}}}\n        {{#eq @index 0}}\n        {{#if ${href}.value}}\n            <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n        {{/if}}\n        {{{nLazyImage url ${title} \"{{isLazy}}\"}}}\n        {{#if ${href}.value}}\n            </a>\n        {{/if}}\n        {{/eq}}\n    {{/each}}\n</div>",
   "css": [
     {
       "media": "",

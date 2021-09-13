@@ -73,10 +73,6 @@
       "code": "e_inputHidden"
     },
     {
-      "name": "图片组",
-      "code": "e_imageGroup"
-    },
-    {
       "name": "循环体",
       "code": "e_loop_A"
     },
@@ -141,6 +137,14 @@
       "code": "e_visitNumber"
     },
     {
+      "name": "时间",
+      "code": "e_timeFormat"
+    },
+    {
+      "name": "图集",
+      "code": "e_imageList"
+    },
+    {
       "name": "循环体",
       "code": "e_loop_D"
     },
@@ -159,6 +163,10 @@
     {
       "name": "地图",
       "code": "e_map"
+    },
+    {
+      "name": "时间",
+      "code": "e_timeFormat"
     }
   ],
   "complex": [
@@ -259,10 +267,6 @@
       "code": "e_collect"
     },
     {
-      "name": "按钮组",
-      "code": "e_groupBtn"
-    },
-    {
       "name": "产品规格",
       "code": "e_specification"
     },
@@ -273,6 +277,10 @@
     {
       "name": "产品详情数量",
       "code": "e_productNumber"
+    },
+    {
+      "name": "文件下载",
+      "code": "e_download"
     }
   ],
   "form": [

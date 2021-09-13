@@ -2,7 +2,7 @@
   "cname": "分类树-横向",
   "styleId": "e_categoryC",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs='true'>\n    <div class=\"p_c_tree\">\n        <ul class=\"p_c_content\">\n            {{#${cate}}}\n            <li class=\"p_c_item\">\n                {{#if href}}\n                    <a href=\"{{href}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{target}}\">\n                        {{name}}\n                    </a>\n                {{^}}\n                    <span class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" >\n                        {{name}}\n                    </span>\n                {{/if}}\n                <ul class=\"p_c_content\">\n                    {{#children}}\n                    <li class=\"p_c_item\">\n                        {{#if href}}\n                            <a href=\"{{href}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{target}}\">\n                                {{name}}\n                            </a>\n                        {{^}}\n                            <span class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\">\n                                {{name}}\n                            </span>\n                        {{/if}}\n                        <ul class=\"p_c_content\">\n                            {{#this.children}}\n                            <li class=\"p_c_item\">\n                                {{#if href}}\n                                    <a href=\"{{href}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{target}}\">\n                                        {{name}}\n                                    </a>\n                                {{^}}\n                                    <span class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\">\n                                        {{name}}\n                                    </span>\n                                {{/if}}\n                                <ul class=\"p_c_content\">\n                                    {{#this.children}}\n                                    <li class=\"p_c_item\">\n                                        {{#if href}}\n                                            <a href=\"{{href}}\" class=\"btn btn-primary p_c_title {{#selected}}active{{/selected}}\" target=\"{{target}}\">\n                                                {{name}}\n                                            </a>\n                                        {{^}}\n                                            <span class=\"btn btn-primary p_c_title {{#selected}}active{{/selected}}\">\n                                                {{name}}\n                                            </span>\n                                        {{/if}}\n                                    </li>\n                                    {{/this.children}}\n                                </ul>\n                            </li>\n                            {{/this.children}}\n                        </ul>\n                    </li>\n                    {{/children}}\n                </ul>\n            </li>\n            {{^}}\n            {{noDataPrompt}}\n            {{/${cate}}}\n        </ul>\n    </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs='true'>\n    <div class=\"p_c_tree\">\n        {{#if ${cate}}}\n            {{#tree ${cate}}}\n                {{#if @nodeBegin}}<ul class=\"p_c_content\">{{/if}}\n                <li class=\"p_c_item\">\n                    <span class=\"p_c_title\">\n                        <a href=\"{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}\" class=\"btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}\" target=\"{{#eq target 'BLANK'}}_blank{{/eq}}\">\n                            <span>{{categoryName}}</span>\n                        </a>\n                    </span>\n                    {{tree children}}\n                </li>\n                {{#if @nodeEnd}}</ul>{{/if}}\n            {{/tree}}\n        {{^}}\n            {{nNoDataPrompt ${i18n.noData}}}\n        {{/if}}\n    </div>\n</div>",
   "css": [
     {
       "media": "",
@@ -24,97 +24,89 @@
   "prop": {
     "cate": [
       {
-        "name": "@ctitle(3,5)",
-        "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-        "href": "http://www.baidu.com",
-        "target": "_blank",
+        "categoryName": "视觉设计",
         "children": [
           {
-            "name": "@ctitle(3,5)",
-            "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-            "href": "#",
-            "target": ""
+            "categoryName": "企业VI设计"
           },
           {
-            "name": "@ctitle(3,5)",
-            "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-            "href": "#",
-            "target": "",
-            "selected": "true"
+            "categoryName": "VI智能全景"
           },
           {
-            "name": "@ctitle(3,5)",
-            "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-            "href": "#",
-            "target": "",
+            "categoryName": "商标设计",
             "children": [
               {
-                "name": "@ctitle(3,5)",
-                "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                "href": "#",
-                "target": ""
+                "categoryName": "资深设计"
               },
               {
-                "name": "@ctitle(3,5)",
-                "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                "href": "#",
-                "target": ""
+                "categoryName": "高级设计"
               },
               {
-                "name": "@ctitle(3,5)",
-                "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                "href": "#",
-                "target": "",
-                "children": [
-                  {
-                    "name": "@ctitle(3,5)",
-                    "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                    "href": "#",
-                    "target": ""
-                  },
-                  {
-                    "name": "@ctitle(3,5)",
-                    "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                    "href": "#",
-                    "target": ""
-                  },
-                  {
-                    "name": "@ctitle(3,5)",
-                    "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-                    "href": "#",
-                    "target": ""
-                  }
-                ]
+                "categoryName": "优秀设计"
               }
             ]
           }
         ]
       },
       {
-        "name": "@ctitle(3,5)",
-        "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-        "href": "#",
-        "target": ""
+        "categoryName": "品牌优化",
+        "children": [
+          {
+            "categoryName": "品牌策划"
+          },
+          {
+            "categoryName": "企业宣传册"
+          }
+        ]
       },
       {
-        "name": "@ctitle(3,5)",
-        "imgUrl": "http://1901045023.pool4-site.make.yun300.cn/repository/image/ea6f0a1e-92ee-4c7d-91ca-3cb35a870115.jpg",
-        "href": "#",
-        "target": ""
+        "categoryName": "产品服务",
+        "children": [
+          {
+            "categoryName": "官方博客"
+          },
+          {
+            "categoryName": "帮助中心",
+            "children": [
+              {
+                "categoryName": "F&Q"
+              },
+              {
+                "categoryName": "意见反馈"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "categoryName": "企业图册",
+        "children": [
+          {
+            "categoryName": "折页设计"
+          },
+          {
+            "categoryName": "员工手册"
+          },
+          {
+            "categoryName": "集团画册"
+          },
+          {
+            "categoryName": "产品图册"
+          }
+        ]
       }
-    ]
+    ],
+    "showImg": true
   },
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "moCategoryTitle": "全部分类",
+      "noData": "暂无数据"
+    }
   },
   "datasource": "prop",
   "dataFields": {
-      "cate":"cate",
-    "cate$name": "name",
-    "cate$imgUrl": "imgUrl",
-    "cate$href": "href",
-    "cate$target": "target",
-    "cate$children": "children"
-  },
-  "scope": true
+    "cate": "cate",
+    "showImg": "showImg"
+  }
 }

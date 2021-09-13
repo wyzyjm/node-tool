@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-navigation",
+            "bind-dataList": "prop.dataList",
+            "bind-showArrow": "prop.showArrow",
+            "title": "导航"
+        }
+    ]
+}
