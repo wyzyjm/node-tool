@@ -1,3 +1,6 @@
+.e_image{
+    overflow: hidden;
+}
 .e_image img{
     width: 100%;
     height: 100%;

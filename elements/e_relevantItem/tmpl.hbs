@@ -1,13 +1,17 @@
 <div class="e_relevantItem {{#if prop.isHide}}formHide{{/if}}" needjs="true">
-    <div class="p_thead">
-        {{#prop.previewList}}
-        <div class="p_th">{{label}}</div>
-        {{/prop.previewList}}
-    </div>
-    <div class="p_tbody">
-        <div class="p_tr">
-        </div>
-    </div>
+    <table class="table p_tabelList">
+        <thead>
+            <tr>
+                {{#each prop.previewList}}
+                {{#if tableShow}}
+                <td class="p_th">{{label}}</td>
+                {{/if}}
+                {{/each}}
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
     {{#eq prop.type 2}}
     <div>
         <a href="javascript:;" class="btn btn-primary btn-sm p_addRow" data-toggle="modal" data-target="#relevantModal">{{prop.btnText}}</a>
@@ -22,14 +26,14 @@
                 </div>
                 <div class="modal-body">
                     <div class="row p_screen">
-                        <div class="col">
+                        <div class="col p_categoryCon">
                             <label for="p_category">分类：</label>
                             <select class="form-control p_category" id="p_category">
                                 <option value="">请选择分诶</option>
                             </select>
                         </div>
-                        <div class="col">
-                            <div class="input-group p_searchCon">
+                        <div class="col p_searchCon">
+                            <div class="input-group p_search">
                                 <input type="text" class="form-control" placeholder="请输入关键词" aria-label="请输入关键词" aria-describedby="searchBtn">
                                 <div class="input-group-append">
                                     <a class="btn btn-primary" id="searchBtn" href="javascript:;" role="button"><svg t="1630585187983" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8475" width="128" height="128"><path d="M652.62500027 599.89062527h-28.12500054l-10.546875-10.546875c42.1875-49.21874973 63.28125-116.015625 52.734375-186.32812554-17.57812473-98.43750027-98.43750027-175.78124973-196.87499973-186.32812473-147.65625-21.09375-274.21875 105.46875-256.64062527 253.125 10.546875 98.43750027 91.40624973 179.296875 186.32812554 196.87499973 70.31249973 10.546875 137.109375-10.546875 186.32812473-52.734375l10.546875 10.546875v28.12500054l147.65625 151.17187446c14.06250027 14.06250027 38.67187473 14.06250027 52.734375 0s14.06250027-38.67187473 0-52.734375L652.62500027 599.89062527z m-210.9375 0c-87.89062527 0-158.203125-70.31249973-158.203125-158.203125s70.31249973-158.203125 158.203125-158.203125 158.203125 70.31249973 158.203125 158.203125-70.31249973 158.203125-158.203125 158.203125z" p-id="8476"></path></svg></a>
@@ -53,21 +57,13 @@
                             </div>
                         </div>
                         <div class="col-9">
-                            <div class="page_con p_listPage">
-                                <a href="#" class="page_a page_prev disabled">&lt;</a >
-                                <a class="page_a page_num current" href="javascript:;">1</a>
-                                <a class="page_a page_num" href="javascript:;">2</a>
-                                <a class="page_a page_num" href="javascript:;">3</a>
-                                <a class="page_a page_num" href="javascript:;">4</a>
-                                <a class="page_a page_num" href="javascript:;">5</a>
-                                <a href="#" class="page_a page_next">&gt;</a >
-                            </div>
+                            <div class="page_con p_listPage"></div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                    <button type="button" class="btn btn-primary">确认</button>
+                    <button type="button" class="btn btn-secondary p_cancel" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary p_confirm">确认</button>
                 </div>
             </div>
         </div>

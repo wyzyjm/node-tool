@@ -1,11 +1,11 @@
 {
-  "prop": {
-      "type":2,
-      "btnText":"添加内容",
-      "datasource":{},
-      "previewList":[],
-      "searchList":[],
-    "isHide":false
-  },
-  "i18n": {}
+    "prop": {
+        "type":2,
+        "btnText":"添加内容",
+        "datasource":{},
+        "previewList":[],
+        "searchList":[],
+        "isHide":false
+    },
+    "i18n": {}
 }

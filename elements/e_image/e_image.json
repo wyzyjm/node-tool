@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_image img{\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n}\n"
+      "cssText": ".e_image{\n    overflow: hidden;\n}\n.e_image img{\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -46,6 +46,10 @@
     "imgList$url": "url",
     "imgList$href": "href",
     "imgList$isLazy": "isLazy",
-    "imgList$fit": "fit"
+    "imgList$fit": "fit",
+    "imgList": "imgList",
+    "title": "title",
+    "href": "href",
+    "space": "space"
   }
 }
