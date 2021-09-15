@@ -2,7 +2,7 @@
   "cname": "导航二级横向带图片",
   "styleId": "e_navigationB",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${dataList}}}\n    <p class=\"p_iconBox\">\n        {{{${menu}}}}\n        {{{${close}}}}\n    </p>\n    <ul class=\"bg-white p_navBox1\">\n        {{#each ${dataList}}}\n        <li class=\"border-bottom p_navItem1\">\n            <p>\n                <a href=\"{{#if href}}{{href}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'BLANk'}}_blank{{/eq}}\">\n                    <span>{{name}}</span>\n                    {{#if children}}{{{../${arrow}}}}{{/if}}\n                </a>\n            </p>\n            {{#if children}}\n            <ul class=\"bg-white border p_navBox2\">\n                {{#each children}}\n                <li class=\"p_navItem2\">\n                    <p>\n                        <a href=\"{{#if href}}{{href}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'BLANk'}}_blank{{/eq}}\">\n                            {{#if imgUrl}}\n                            <span class=\"p_img\">{{{nLazyImage imgUrl name 'true'}}}</span>\n                            {{/if}}\n                            <span>{{name}}</span>\n                        </a>\n                    </p>\n                </li>\n                {{/each}}\n            </ul>\n            {{/if}}\n        </li>\n        {{/each}}\n    </ul>\n    {{^}}\n    {{noDataPrompt}}\n    {{/if}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${dataList}}}\n    <p class=\"p_iconBox\">\n        {{{${menu}}}}\n        {{{${close}}}}\n    </p>\n    <ul class=\"bg-white p_navBox1\">\n        {{#each ${dataList}}}\n        <li class=\"border-bottom p_navItem1\">\n            <p>\n                <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\n                    <span>{{navName}}</span>\n                    {{#if children}}{{{../${arrow}}}}{{/if}}\n                </a>\n            </p>\n            {{#if children}}\n            <ul class=\"bg-white border p_navBox2\">\n                {{#each children}}\n                <li class=\"p_navItem2\">\n                    <p>\n                        <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\n                            {{#if img}}\n                            <span class=\"p_img\">{{{nLazyImage img navName 'true'}}}</span>\n                            {{/if}}\n                            <span>{{navName}}</span>\n                        </a>\n                    </p>\n                </li>\n                {{/each}}\n            </ul>\n            {{/if}}\n        </li>\n        {{/each}}\n    </ul>\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
@@ -24,84 +24,84 @@
   "prop": {
     "dataList": [
       {
-        "name": "首页"
+        "navName": "首页"
       },
       {
-        "name": "公司概况",
+        "navName": "公司概况",
         "children": [
           {
-            "name": "企业介绍"
+            "navName": "企业介绍"
           },
           {
-            "name": "发展历程"
+            "navName": "发展历程"
           },
           {
-            "name": "关于我们"
+            "navName": "关于我们"
           }
         ]
       },
       {
-        "name": "我们的产品"
+        "navName": "我们的产品"
       },
       {
-        "name": "新闻资讯",
+        "navName": "新闻资讯",
         "children": [
           {
             "imgUrl": "https://img.alicdn.com/imgextra/i4/29242799/O1CN01OjRIlM1WXzH2opoIU_!!0-saturn_solar.jpg_468x468q75.jpg_.webp",
-            "name": "最新动态"
+            "navName": "最新动态"
           },
           {
-            "name": "企业新闻"
+            "navName": "企业新闻"
           },
           {
-            "name": "行业新闻"
+            "navName": "行业新闻"
           }
         ]
       },
       {
-        "name": "招商加盟",
+        "navName": "招商加盟",
         "children": [
           {
-            "name": "合作伙伴"
+            "navName": "合作伙伴"
           },
           {
-            "name": "加入我们"
+            "navName": "加入我们"
           }
         ]
       },
       {
-        "name": "售后服务",
+        "navName": "售后服务",
         "children": [
           {
-            "name": "服务宗旨"
+            "navName": "服务宗旨"
           },
           {
-            "name": "在线咨询"
+            "navName": "在线咨询"
           },
           {
-            "name": "常见问题",
+            "navName": "常见问题",
             "children": [
               {
-                "name": "生活常识"
+                "navName": "生活常识"
               },
               {
-                "name": "百度百科"
+                "navName": "百度百科"
               }
             ]
           },
           {
-            "name": "用户协议"
+            "navName": "用户协议"
           }
         ]
       },
       {
-        "name": "联系我们",
+        "navName": "联系我们",
         "children": [
           {
-            "name": "在线留言"
+            "navName": "在线留言"
           },
           {
-            "name": "联系我们"
+            "navName": "联系我们"
           }
         ]
       }
@@ -112,15 +112,13 @@
     "showArrow": true
   },
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "noData": "暂无数据"
+    }
   },
   "datasource": "prop",
   "dataFields": {
-    "dataList": "dataList",
-    "arrow": "arrow",
-    "menu": "menu",
-    "close": "close",
-    "showArrow": "showArrow"
+    "dataList": "dataList"
   },
   "dataManage": {}
 }
