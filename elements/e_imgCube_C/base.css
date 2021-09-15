@@ -7,6 +7,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .e_imgCube_C img {

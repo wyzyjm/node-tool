@@ -9,22 +9,22 @@
                     <label class="form-check-label text-nowrap text-dark p_filename"  for="checkId{{@index}}"> {{name}} </label>
                 </div>
                 <!-- 文件大小 -->
-                <p class="flex1 flex-shinrk-0 ">
+                <p class="flex1 flex-shinrk-0 sm-hide">
                     <span class="text-secondary p_label"> {{../i18n.fileSize}} </span>
                     <span> {{size}} </span>
                 </p>
                 
                 <!-- 按钮组 -->
-                <div class="flex1 flex-shinrk-0 text-right  p_btnGroup">
+                <div class="flex1 flex-shinrk-0 text-right sm-hide  p_btnGroup">
                     {{#eq extName 'pdf'}}
-                        <button type="button" class="btn btn-outline-primary btn-sm pl-3 pr-3 s_button1 p_preview" >{{../i18n.preview}}</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm pl-3 pr-3 s_button3 p_preview" >{{../i18n.preview}}</button>
                     {{/eq}}
                     <button type="button" class="btn btn-primary btn-sm pl-3 pr-3 s_button1 p_downbtn">{{../i18n.download}}</button>
                 </div>
             </li>
         {{/each}}
     </ul>
-    <div class="d-flex align-items-center pl-3 pr-3 ">
+    <div class="d-flex align-items-center pl-3 pr-3 justify-sm-between">
          <!-- 全选 -->
         <div class="form-check p_allSelect mr-3">
             <input class="form-check-input p_allCheck" type="checkbox" value="" id="allcheck">
