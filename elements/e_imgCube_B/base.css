@@ -8,6 +8,8 @@
     justify-content: space-between;
     align-items: stretch;
     align-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .e_imgCube_B img {

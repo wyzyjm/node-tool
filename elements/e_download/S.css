@@ -1,0 +1,13 @@
+.e_download .p_item{
+  border: none;
+  height: auto;
+}
+.e_download .p_name{
+  width: 100%;
+}
+.e_download .sm-hide{
+  display: none;
+}
+.e_download .justify-sm-between {
+  justify-content: space-between;
+}
