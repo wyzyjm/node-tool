@@ -1,7 +1,7 @@
 {
   "cname": "循环体7",
   "styleId": "e_loop_G",
-  "styleClass": "",
+  "styleClass": "s_list",
   "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n   <div class=\"swiper-container\">\n        {{#if ${dataList}}}\n            <div class=\"swiper-wrapper\">\n                {{#${dataList}}}\n                <div class=\"swiper-slide\">\n                    <div class=\"cbox-${id} p_template\"></div>\n                </div>\n                {{/${dataList}}}\n            </div>   \n            <!-- 如果需要导航按钮 -->\n             <div class=\"js_editor_click swiper-pagination\"></div>\n        {{/if}}\n    </div>\n</div>",
   "css": [
     {
