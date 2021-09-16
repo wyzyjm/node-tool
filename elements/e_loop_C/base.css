@@ -1,12 +1,12 @@
-.e_loop_G{
+.e_loop_C{
     overflow: hidden;
 }
-.e_loop_G .swiper-container {
+.e_loop_C .swiper-container {
     width: 100%;
     height: 100%;
   }
 
-.e_loop_G .swiper-slide {
+.e_loop_C .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -27,22 +27,22 @@
     align-items: center;
   }
 
-  .e_loop_G .swiper-slide:nth-child(2n) {
+  .e_loop_C .swiper-slide:nth-child(2n) {
     width: 50%;
   }
 
-  .e_loop_G .swiper-slide:nth-child(3n) {
+  .e_loop_C .swiper-slide:nth-child(3n) {
     width: 50%;
   }
-.e_loop_G .p_template{
+.e_loop_C .p_template{
     width: 100%;
 }
-.e_loop_G .swiper-pagination-bullet{
+.e_loop_C .swiper-pagination-bullet{
     width: 40px;
     height: 6px;
     border-radius: 14px;
 
 }
-.e_loop_G .swiper-slide-active, .e_loop_G .swiper-slide-duplicate-active{
+.e_loop_C .swiper-slide-active, .e_loop_C .swiper-slide-duplicate-active{
   transform: scale();
 }
