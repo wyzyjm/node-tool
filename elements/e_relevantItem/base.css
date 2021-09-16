@@ -60,9 +60,9 @@
     border-bottom: none;
     background-color: #f0f0f0;
     height: 36px;
-    line-height: 36px;
     overflow: hidden;
     padding:0 10px;
+    vertical-align: middle;
 }
 .e_relevantItem .p_tabel td, 
 .e_relevantItem .p_tabel th{
@@ -86,4 +86,9 @@
 }
 .e_relevantItem .p_selectAll{
     padding-left: 25px;
+}
+.e_relevantItem .p_remove_fixed{
+    width: 40px;
+    display: block;
+    color: #007bff;
 }
