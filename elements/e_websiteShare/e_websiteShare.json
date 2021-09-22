@@ -1,8 +1,8 @@
 {
   "cname": "网站分享",
   "styleId": "e_websiteShare",
-  "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n   <div class=\"p_share\" data-ename=\"分享容器\" data-selectValue=\"{{${selectValue}}}\"></div>\n</div>",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n   <div class=\"p_share\" data-ename=\"分享容器\" data-selectValue=\"{{${selectValue}}}\"></div>\r\n</div>",
   "css": [
     {
       "media": "",
@@ -40,7 +40,9 @@
   "datasource": "prop",
   "dataFields": {
     "selectList$label": "label",
-    "selectList$value": "value"
+    "selectList$value": "value",
+    "selectValue": "selectValue",
+    "selectList": "selectList"
   },
   "dataManage": {}
 }
