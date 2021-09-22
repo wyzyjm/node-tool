@@ -1,5 +1,5 @@
 .e_relevantItem{
-
+    min-height: 20px;
 }
 .e_relevantItem .p_thead{
     height: 36px;

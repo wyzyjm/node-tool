@@ -1,8 +1,8 @@
 {
   "cname": "子表单",
   "styleId": "e_subForm",
-  "styleClass": "s_form1",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <div class=\"p_title s_label\">{{${label}}}</div>\n    {{/if}}\n    <div class=\"p_thead\">\n        {{#${content}}}\n            <div class=\"p_th\">{{#eq @last true}}操作{{/eq}}</div>\n        {{/${content}}}\n    </div>\n    <div class=\"p_tbody\">\n        <div class=\"p_tr\">\n        {{#${content}}}\n            <div class=\"cbox-${id}-{{@index}} p_td\">{{#eq @last true}}<a class=\"text-primary p_remove\" href=\"javascript:;\">移除</a>{{/eq}}</div>\n        {{/${content}}}\n        </div>\n    </div>\n    {{#if ${showBtn}}}\n    <div>\n        <a href=\"javascript:;\" class=\"btn btn-primary btn-sm p_addRow\">{{${btnText}}}</a>\n    </div>\n    {{/if}}\n</div>",
+  "styleClass": "s_layout",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <div class=\"p_title s_label\">{{${label}}}</div>\n    {{/if}}\n    <div class=\"p_thead\">\n        {{#${layout}}}\n            <div class=\"p_th\">{{#eq @last true}}操作{{/eq}}</div>\n        {{/${layout}}}\n    </div>\n    <div class=\"p_tbody\">\n        <div class=\"p_tr\">\n        {{#${layout}}}\n            <div class=\"cbox-${id}-{{@index}} p_td\">{{#eq @last true}}<a class=\"text-primary p_remove\" href=\"javascript:;\">移除</a>{{/eq}}</div>\n        {{/${layout}}}\n        </div>\n    </div>\n    {{#if ${showBtn}}}\n    <div>\n        <a href=\"javascript:;\" class=\"btn btn-primary btn-sm p_addRow\">{{${btnText}}}</a>\n    </div>\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
@@ -26,7 +26,7 @@
     "label": "子表单",
     "showBtn": true,
     "btnText": "添加一行",
-    "content": [
+    "layout": [
       {},
       {}
     ]

@@ -246,7 +246,10 @@ function handleStr(str,dataFields,compId){
 
     //样式替换
     let classReg = new RegExp(compId+'.*?\\"');
-    let classStr = str.match(classReg)[0];
+    let classStr
+    if(str.match(classReg)){
+        classStr = str.match(classReg)[0];
+    }
     let styleClass = "";
     if(classStr){
         let handleStr = classStr.replace(/\/\"/,"").replace(/\"/,"").trim()
