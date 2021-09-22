@@ -30,5 +30,7 @@
     "zh_CN": {}
   },
   "datasource": "prop",
-  "dataFields": {}
+  "dataFields": {
+    "time": "time"
+  }
 }
