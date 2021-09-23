@@ -2,7 +2,7 @@
   "cname": "视频",
   "styleId": "e_video",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#each ${videoList}}}\n    {{#eq @index 0}}\n    <div class=\"p_video\">\n        <span class=\"cover\">\n            <img class=\"playBtn\" src=\"/npublic/img/playVideo.png\" alt=\"\">\n            {{#if coverImgUrl}}\n                <div class=\"coverImage\">\n                    {{{nLazyImage coverImgUrl '' 'false'}}}\n                </div>\n            {{/if}}\n        </span>\n        {{{lazyVideo videoUrl ../${config}.mouted ../${config}.controlor}}}\n    </div>\n    {{/eq}}\n    {{/each}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#each ${videoList}}}\n    {{#eq @index 0}}\n    <div class=\"p_video\">\n        <span class=\"cover\">\n            <img class=\"playBtn\" src=\"/npublic/img/playVideo.png\" alt=\"\">\n            {{#if coverImgUrl}}\n                <div class=\"coverImage\">\n                    {{{nLazyImage coverImgUrl '' 'false'}}}\n                </div>\n            {{/if}}\n        </span>\n        {{{lazyVideo videoUrl ${config}.mouted ${config}.controlor}}}\n    </div>\n    {{/eq}}\n    {{/each}}\n</div>",
   "css": [
     {
       "media": "",
