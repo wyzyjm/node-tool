@@ -1,0 +1,10 @@
+{   
+    "apiType":"object",
+    "dataFields":[
+        {
+            "name":"number",
+            "cname":"滚动数字",
+            "type":"string"
+        }
+    ]
+}

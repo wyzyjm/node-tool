@@ -2,7 +2,7 @@
   "cname": "图集",
   "styleId": "e_imageList",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${imgList}}}\n    <div class=\"swiper-container gallery-top\" >\n        <div class=\"swiper-wrapper\">\n            {{#each ${imgList}}}\n            <div class=\"swiper-slide\" >\n                <div class=\"p_img\">\n                    {{{nLazyImage url ../${title} '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n        <div class=\"swiper-button-next swiper-button-white\"></div>\n        <div class=\"swiper-button-prev swiper-button-white\"></div>\n    </div>\n    <div class=\"swiper-container gallery-thumbs\">\n        <div class=\"swiper-wrapper\">\n            {{#each ${imgList}}}\n            <div class=\"swiper-slide\" >\n                <div class=\"p_img\">\n                    {{{nLazyImage url ../${title} '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n    </div>\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${imgList}}}\n    <div class=\"swiper-container gallery-top\" >\n        <div class=\"swiper-wrapper\">\n            {{#each ${imgList}}}\n            <div class=\"swiper-slide\" >\n                <div class=\"p_img\">\n                    {{{nLazyImage imageUrl ../${title} '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n        <div class=\"swiper-button-next swiper-button-white\"></div>\n        <div class=\"swiper-button-prev swiper-button-white\"></div>\n    </div>\n    <div class=\"swiper-container gallery-thumbs\">\n        <div class=\"swiper-wrapper\">\n            {{#each ${imgList}}}\n            <div class=\"swiper-slide\" >\n                <div class=\"p_img\">\n                    {{{nLazyImage imageUrl ../${title} '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n    </div>\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
@@ -24,27 +24,27 @@
   "prop": {
     "imgList": [
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "isLazy": true,
         "fit": "contain"
       },
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "isLazy": true,
         "fit": "contain"
       },
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "isLazy": true,
         "fit": "contain"
       },
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "isLazy": true,
         "fit": "contain"
       },
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "isLazy": true,
         "fit": "contain"
       }
@@ -62,10 +62,5 @@
       "noData": "暂无数据"
     }
   },
-  "datasource": "prop",
-  "dataFields": {
-    "imgList$url": "url",
-    "imgList$isLazy": "isLazy",
-    "imgList$fit": "fit"
-  }
+  "datasource": "prop"
 }
