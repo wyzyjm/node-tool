@@ -4,11 +4,11 @@
   "styleClass": "s_form1",
   "type": "form",
   "putSubForm": true,
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"s_input p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"p_number {{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"input-group\">\n            <input type=\"number\" class=\"form-control s_form-control s_input p_input\" name=\"${elemId}\" \n                {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n                {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n                {{#eq ${state} 'disabled'}}disabled{{/eq}}\n            >\n            <div class=\"input-group-append\">\n                <span class=\"s_other p_unit\">\n                {{${unit}}}\n                </span>\n            </div>\n            <div class=\"invalid-feedback\"></div>\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"s_input p_formValue\">{{${value}}}</p>\n    {{/eq}}\n    <div class=\"p_number {{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"input-group\">\n            <input type=\"number\" class=\"form-control s_form-control s_input p_input\" name=\"${elemId}\" \n                {{#if ${showPlaceholder}}}placeholder=\"{{${placeholder}}}\"{{/if}} \n                {{#if ${value}}}value=\"{{${value}}}\"{{/if}} \n                {{#eq ${state} 'disabled'}}disabled{{/eq}}\n            >\n            <div class=\"input-group-append\">\n                {{#if ${unit}}}\n                <span class=\"s_other p_unit\">\n                {{${unit}}}\n                </span>\n                {{/if}}\n            </div>\n            <div class=\"invalid-feedback\"></div>\n        </div>\n    </div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_number .p_unit{\n    line-height: 36px;\n    padding:0 10px;\n}"
+      "cssText": ".e_number .p_unit{\n    line-height: 36px;\n    padding:0 10px;\n}\n.e_number .p_input{\n    -moz-appearance: textfield;\n}\n.e_number .p_input::-webkit-outer-spin-button,\n.e_number .p_input::-webkit-inner-spin-button {\n    -webkit-appearance: none;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -31,7 +31,7 @@
     "value": "",
     "state": "normal",
     "decimal": 2,
-    "unit": "千克",
+    "unit": "",
     "validate": {
       "required": {
         "state": true,

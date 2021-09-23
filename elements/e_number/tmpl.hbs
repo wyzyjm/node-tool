@@ -16,12 +16,13 @@
                 {{#eq prop.state 'disabled'}}disabled{{/eq}}
             >
             <div class="input-group-append">
+                {{#if prop.unit}}
                 <span class="s_other p_unit">
                 {{prop.unit}}
                 </span>
+                {{/if}}
             </div>
             <div class="invalid-feedback"></div>
         </div>
-        <div class="invalid-feedback"></div>
     </div>
 </div>
