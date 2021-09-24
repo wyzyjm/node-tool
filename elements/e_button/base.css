@@ -4,12 +4,8 @@
     overflow: hidden;
     text-align: center;
     box-sizing: border-box;
-    transition: all .3s;
-    transform-style: preserve-3d;
     width: 100px;
-    color: #fff;
     border-radius: 4px;
-    background: rgba(64, 158, 244, 1);
     padding: 8px;
 }
 .e_button span {
@@ -20,10 +16,6 @@
 	outline: 0;
 	margin: 0px;
     overflow: hidden;
-}
-.e_button:hover {
-	text-decoration: none;
-    background-color: #66b1f6;
 }
 .e_button::after {
 	content: "";
@@ -39,4 +31,3 @@
 .e_button:hover::after {
 	opacity: 1
 }
-

@@ -1,10 +1,10 @@
-<div class="e_download" needjs="true">
+<div class="e_download s_list" needjs="true">
     <ul class="p_download">
         {{#each prop.attachment}}
             <li class="d-flex align-items-center border mb-2 pl-3 pr-3 p_item" data-title="{{title}}" data-extName="{{extName}}"> 
                 <!-- 复选框 -->
                 <div class="form-check  p_name">
-                    <input class="form-check-input p_inputitem" type="checkbox" value="{{{lazyFile url}}}" id="checkId{{@index}}">
+                    <input class="form-check-input p_inputitem" type="checkbox" value="{{{lazyFile fileUrl}}}" id="checkId{{@index}}">
                     <!-- 文件名称 -->
                     <label class="form-check-label text-nowrap text-dark p_filename"  for="checkId{{@index}}"> {{name}} </label>
                 </div>

@@ -2,11 +2,11 @@
   "cname": "按钮",
   "styleId": "e_button",
   "styleClass": "s_button1",
-  "tmpl": "{{#if ${status}}}\n<a class=\"${elemId} ${styleClass}\" href=\"{{#if ${href}.value}}{{$transferLink ${href} compId}}{{^}}javascript:;{{/if}}\" {{#if ${href}.value}}target=\"{{${href}.target}}\"{{/if}}>\n    <span>{{${text}}}</span> \n</a>\n{{/if}}",
+  "tmpl": "<a class=\"${elemId} ${styleClass} btn btn-primary {{#eq ${status} false}}formHide{{/eq}}\" href=\"{{#if ${href}.value}}{{$transferLink ${href} compId}}{{^}}javascript:;{{/if}}\" {{#if ${href}.value}}target=\"{{${href}.target}}\"{{/if}}>\n    <span>{{${text}}}</span> \n</a>\n\n\n",
   "css": [
     {
       "media": "",
-      "cssText": ".e_button{\n    display: block;\n    position: relative;\n    overflow: hidden;\n    text-align: center;\n    box-sizing: border-box;\n    transition: all .3s;\n    transform-style: preserve-3d;\n    width: 100px;\n    color: #fff;\n    border-radius: 4px;\n    background: rgba(64, 158, 244, 1);\n    padding: 8px;\n}\n.e_button span {\n\tdisplay: block;\n\twidth: 100%;\n\tposition: relative;\n\tz-index: 1;\n\toutline: 0;\n\tmargin: 0px;\n    overflow: hidden;\n}\n.e_button:hover {\n\ttext-decoration: none;\n    background-color: #66b1f6;\n}\n.e_button::after {\n\tcontent: \"\";\n\tposition: absolute;\n\twidth: 100%;\n\theight: 100%;\n\ttransition: all .3s;\n\tz-index: 0;\n\topacity: 0;\n\ttop: 0;\n    left: 0px;\n}\n.e_button:hover::after {\n\topacity: 1\n}\n\n"
+      "cssText": ".e_button{\n    display: block;\n    position: relative;\n    overflow: hidden;\n    text-align: center;\n    box-sizing: border-box;\n    width: 100px;\n    border-radius: 4px;\n    padding: 8px;\n}\n.e_button span {\n\tdisplay: block;\n\twidth: 100%;\n\tposition: relative;\n\tz-index: 1;\n\toutline: 0;\n\tmargin: 0px;\n    overflow: hidden;\n}\n.e_button::after {\n\tcontent: \"\";\n\tposition: absolute;\n\twidth: 100%;\n\theight: 100%;\n\ttransition: all .3s;\n\tz-index: 0;\n\topacity: 0;\n\ttop: 0;\n    left: 0px;\n}\n.e_button:hover::after {\n\topacity: 1\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",

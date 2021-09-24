@@ -1,11 +1,11 @@
-<div class="border e_foldItem" needjs="true">
+<div class="e_foldItem border" needjs="true">
     <div class="bg-light p_ask">
         <i class="bg-primary text-white p_icon">{{i18n.ask}}</i>
-        {{#if prop.href}}
-        <a href="{{prop.href}}" class="text-body">
+        {{#if prop.href.value}}
+            <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}">
         {{/if}}
             <span class="p_asktitle">{{prop.title}}</span>
-        {{#if prop.href}}
+        {{#if prop.href.value}}
         </a>
         {{/if}}
         <span class="text-secondary p_time">{{prop.updateDate}}</span>

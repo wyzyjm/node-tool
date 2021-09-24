@@ -13,9 +13,9 @@
                     {{#if children}}{{{../prop.arrow}}}{{/if}}
                 </a>
             </p>
-            {{#if children}}
+            {{#if this.children}}
             <ul class="bg-white p_level2Box">
-                {{#each children}}
+                {{#each this.children}}
                 <li class="p_level2Item">
                     <p class="p_menuItem">
                         <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
@@ -23,9 +23,9 @@
                             {{#if children}}{{{../../prop.arrow}}}{{/if}}
                         </a>
                     </p>
-                    {{#if children}}
+                    {{#if this.children}}
                     <ul class="bg-white p_level3Box">
-                        {{#each children}}
+                        {{#each this.children}}
                         <li class="p_level3Item">
                             <p class="p_menuItem">
                                 <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">

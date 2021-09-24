@@ -2,7 +2,7 @@
   "cname": "视频",
   "styleId": "e_video",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#each ${videoList}}}\n    {{#eq @index 0}}\n    <div class=\"p_video\">\n        <span class=\"cover\">\n            <img class=\"playBtn\" src=\"/npublic/img/playVideo.png\" alt=\"\">\n            {{#if coverImgUrl}}\n                <div class=\"coverImage\">\n                    {{{nLazyImage coverImgUrl '' 'false'}}}\n                </div>\n            {{/if}}\n        </span>\n        {{{lazyVideo url mouted controlor}}}\n    </div>\n    {{/eq}}\n    {{/each}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#each ${videoList}}}\n    {{#eq @index 0}}\n    <div class=\"p_video\">\n        <span class=\"cover\">\n            <img class=\"playBtn\" src=\"/npublic/img/playVideo.png\" alt=\"\">\n            {{#if coverImgUrl}}\n                <div class=\"coverImage\">\n                    {{{nLazyImage coverImgUrl '' 'false'}}}\n                </div>\n            {{/if}}\n        </span>\n        {{{lazyVideo videoUrl ${config}.mouted ${config}.controlor}}}\n    </div>\n    {{/eq}}\n    {{/each}}\n</div>",
   "css": [
     {
       "media": "",
@@ -27,27 +27,18 @@
         "title": "视频标题",
         "summary": "视频概要",
         "coverImgUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "url": "https://blz-videos.nosdn.127.net/1/OverWatch/AnimatedShots/Overwatch_AnimatedShot_Soldier76_Hero.mp4",
-        "autoPlay": false,
-        "loop": false,
-        "mouted": true,
-        "controlor": true
+        "videoUrl": "https://blz-videos.nosdn.127.net/1/OverWatch/AnimatedShots/Overwatch_AnimatedShot_Soldier76_Hero.mp4"
       }
-    ]
+    ],
+    "config": {
+      "autoPlay": false,
+      "loop": false,
+      "mouted": true,
+      "controlor": true
+    }
   },
   "i18n": {
     "zh_CN": {}
   },
-  "datasource": "prop",
-  "dataFields": {
-    "videoList": "videoList",
-    "videoList$title": "title",
-    "videoList$summary": "summary",
-    "videoList$coverImgUrl": "coverImgUrl",
-    "videoList$url": "url",
-    "videoList$autoPlay": "autoPlay",
-    "videoList$loop": "loop",
-    "videoList$mouted": "mouted",
-    "videoList$controlor": "controlor"
-  }
+  "datasource": "prop"
 }

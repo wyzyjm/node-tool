@@ -1,0 +1,25 @@
+{   
+    "apiType":"object",
+    "dataFields":[
+        {
+            "name":"title",
+            "cname":"问题",
+            "type":"string"
+        },
+        {
+            "name":"href",
+            "cname":"链接",
+            "type":"link"
+        },
+        {
+            "name":"answer",
+            "cname":"答案",
+            "type":"string"
+        },
+        {
+            "name":"updateDate",
+            "cname":"时间",
+            "type":"string"
+        }
+    ]
+}

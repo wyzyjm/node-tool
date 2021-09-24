@@ -7,7 +7,7 @@
     "value":"",
     "state":"normal",
     "decimal":2,
-    "unit":"千克",
+    "unit":"",
     "validate":{
         "required":{
             "state":true,

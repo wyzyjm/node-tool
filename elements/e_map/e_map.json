@@ -1,7 +1,7 @@
 {
   "cname": "地图",
   "styleId": "e_map",
-  "styleClass": "",
+  "styleClass": "s_img",
   "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div id=\"mapCotainer\"></div>\r\n</div>",
   "css": [
     {

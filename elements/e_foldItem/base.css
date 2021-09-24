@@ -40,6 +40,7 @@
 }
 .e_foldItem .p_answer{
     display: none;
+    background-color: #fff;
 }
 .e_foldItem .p_icon,
 .e_foldItem .p_answer_icon{

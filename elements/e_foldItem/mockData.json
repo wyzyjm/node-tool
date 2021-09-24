@@ -1,10 +1,13 @@
 {
   "prop": {
-        "title":"@cparagraph",
-        "href":"",
-        "target":"",
-        "answer":"<p>ssssssss</p>",
-        "updateDate":"@date"
+        "title":"这里是问题",
+        "href":{
+            "type":"none",
+            "value":"",
+            "target":""
+        },
+        "answer":"<p>这里是答案</p>",
+        "updateDate":"2011-12-12 12:15:59"
   },
   "i18n": {
         "ask":"问",

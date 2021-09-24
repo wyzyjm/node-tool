@@ -1,17 +1,17 @@
-<div class="e_subForm s_form1" needjs="true">
+<div class="e_subForm s_layout" needjs="true">
     {{#if prop.showLabel}}
     <div class="p_title s_label">{{prop.label}}</div>
     {{/if}}
     <div class="p_thead">
-        {{#prop.content}}
+        {{#prop.layout}}
             <div class="p_th">{{#eq @last true}}操作{{/eq}}</div>
-        {{/prop.content}}
+        {{/prop.layout}}
     </div>
     <div class="p_tbody">
         <div class="p_tr">
-        {{#prop.content}}
+        {{#prop.layout}}
             <div class="cbox-${id}-{{@index}} p_td">{{#eq @last true}}<a class="text-primary p_remove" href="javascript:;">移除</a>{{/eq}}</div>
-        {{/prop.content}}
+        {{/prop.layout}}
         </div>
     </div>
     {{#if prop.showBtn}}
@@ -19,4 +19,5 @@
         <a href="javascript:;" class="btn btn-primary btn-sm p_addRow">{{prop.btnText}}</a>
     </div>
     {{/if}}
+    <input type="hidden" name="${elemId}" >
 </div>

@@ -1,0 +1,13 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-scrollNumber",
+            "title":"滚动数字",
+            "number":"prop.number",
+            "unit":"prop.unit",
+            "time":"prop.time",
+            "scroll":"prop.scroll"
+        }
+    ]
+}
+  
