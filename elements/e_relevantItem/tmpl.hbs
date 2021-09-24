@@ -1,22 +1,12 @@
-<div class="e_relevantItem {{#if prop.isHide}}formHide{{/if}}" needjs="true">
+<div class="e_relevantItem s_form1 {{#if prop.isHide}}formHide{{/if}}" needjs="true">
     <table class="table p_tabelList">
-        <thead>
-            <tr>
-                {{#each prop.previewList}}
-                {{#if tableShow}}
-                <td class="p_th">{{label}}</td>
-                {{/if}}
-                {{/each}}
-            </tr>
-        </thead>
+        <thead></thead>
         <tbody></tbody>
     </table>
-    
     {{#eq prop.type 2}}
     <div>
-        <a href="javascript:;" class="btn btn-primary btn-sm p_addRow" data-toggle="modal" data-target="#relevantModal">{{prop.btnText}}</a>
+        <a href="javascript:;" class="btn btn-primary btn-sm p_addContent" data-toggle="modal" data-target="#relevantModal">{{prop.btnText}}</a>
     </div>
-    <!-- Modal -->
     <div class="modal fade" id="relevantModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content p_modalContent">
@@ -69,5 +59,4 @@
         </div>
     </div>
     {{/eq}}
-
 </div>

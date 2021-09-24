@@ -2,7 +2,7 @@
   "cname": "图方魔盒6",
   "styleId": "e_imgCube_F",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#${imgList}}}\r\n\t\t<!-- 前3个 -->\r\n\t\t{{#lt @index 3}}\r\n\t\t\t<div class=\"p_imgItem \" \r\n            style=\"width:calc(( 100% - 2 * {{../${space}}}px) / 3);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage url title \"{{isLazy}}\"}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>\r\n\t\t{{/lt}}\r\n\r\n        {{#eq @index 3}}\r\n            <div class=\"p_imgItem \" \r\n            style=\"width:calc(( 100% - {{../${space}}}px) / 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage url title \"{{isLazy}}\"}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>\r\n\t\t{{/eq}}\r\n         {{#eq @index 4}}\r\n            <div class=\"p_imgItem \" \r\n            style=\"width:calc(( 100% - {{../${space}}}px) / 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage url title \"{{isLazy}}\"}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>\r\n\t\t{{/eq}}\r\n    {{/${imgList}}}\r\n</div>\r\n",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#${imgList}}}\r\n\t\t<!-- 前3个 -->\r\n\t\t{{#lt @index 3}}\r\n\t\t\t<div class=\"p_imgItem \" \r\n            style=\"width:calc(( 100% - 2 * {{../${space}}}px) / 3);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage imageUrl title \"{{isLazy}}\"}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>\r\n\t\t{{/lt}}\r\n\r\n        {{#eq @index 3}}\r\n            <div class=\"p_imgItem \" \r\n            style=\"width:calc(( 100% - {{../${space}}}px) / 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage imageUrl title \"{{isLazy}}\"}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>\r\n\t\t{{/eq}}\r\n         {{#eq @index 4}}\r\n            <div class=\"p_imgItem \" \r\n            style=\"width:calc(( 100% - {{../${space}}}px) / 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage imageUrl title \"{{isLazy}}\"}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>\r\n\t\t{{/eq}}\r\n    {{/${imgList}}}\r\n</div>\r\n",
   "css": [
     {
       "media": "",
@@ -24,7 +24,7 @@
   "prop": {
     "imgList": [
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "title": "图片1",
         "href": {
           "type": "",
@@ -35,7 +35,7 @@
         "fit": "cover"
       },
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "title": "图片2",
         "href": {
           "type": "",
@@ -46,7 +46,7 @@
         "fit": "cover"
       },
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "title": "图片3",
         "href": {
           "type": "",
@@ -57,7 +57,7 @@
         "fit": "cover"
       },
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "title": "图片4",
         "href": {
           "type": "",
@@ -68,7 +68,7 @@
         "fit": "cover"
       },
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "title": "图片5",
         "href": {
           "type": "",
@@ -79,7 +79,7 @@
         "fit": "cover"
       },
       {
-        "url": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
         "title": "图片6",
         "href": {
           "type": "",

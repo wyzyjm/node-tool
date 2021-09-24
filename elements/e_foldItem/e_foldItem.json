@@ -2,11 +2,11 @@
   "cname": "折叠元素",
   "styleId": "e_foldItem",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass} border\" needjs=\"true\">\n    <div class=\"bg-light p_ask\">\n        <i class=\"bg-primary text-white p_icon\">{{${i18n.ask}}}</i>\n        {{#if ${href}.value}}\n            <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n        {{/if}}\n            <span class=\"p_asktitle\">{{${title}}}</span>\n        {{#if ${href}.value}}\n        </a>\n        {{/if}}\n        <span class=\"text-secondary p_time\">{{${updateDate}}}</span>\n        <i class=\"p_arrow\"></i>\n    </div>\n    <div class=\"border-top p_answer\">\n        <i class=\"border border-primary text-primary p_answer_icon\">{{${i18n.answer}}}</i>\n        <div class=\"text-body p_answerCon\">{{{${answer}}}}</div>\n    </div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_foldItem{\n    margin-bottom: 20px;\n    border-radius: 4px;\n    overflow: hidden;\n}\n.e_foldItem .p_ask,\n.e_foldItem .p_answer{\n    line-height: 26px;\n    min-height: 42px;\n    padding: 8px 20px;\n    position: relative;\n    padding-left: 60px;\n    text-align: justify;\n}\n.e_foldItem .p_ask{\n    padding-right: 150px;\n}\n.e_foldItem .p_arrow{\n    width: 0;\n    height: 0;\n    border: 6px solid transparent;\n    border-right-color: #ccc;\n    position: absolute;\n    content: \"\";\n    right:20px;\n    top:15px;\n    z-index: 8;\n    cursor: pointer;\n}\n.e_foldItem .p_asktitle{\n    display: block;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n.e_foldItem .p_time{\n    position: absolute;\n    top:8px;\n    right: 40px;\n}\n.e_foldItem .p_answer{\n    display: none;\n    background-color: #fff;\n}\n.e_foldItem .p_icon,\n.e_foldItem .p_answer_icon{\n    width: 24px;\n    height: 24px;\n    display: block;\n    line-height: 24px;\n    text-align: center;\n    font-style: normal;\n    position: absolute;\n    left: 20px;\n    top:9px;\n    border-radius: 2px;\n}\n.e_foldItem.showDetail .p_answer{\n    display: block;\n}\n.e_foldItem.showDetail .p_asktitle{\n    white-space: normal;\n}\n.e_foldItem.showDetail .p_arrow{\n    transform: rotate(-90deg);\n    right: 16px;\n    top: 18px;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,9 +21,28 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "title": "这里是问题",
+    "href": {
+      "type": "none",
+      "value": "",
+      "target": ""
+    },
+    "answer": "<p>这里是答案</p>",
+    "updateDate": "2011-12-12 12:15:59"
+  },
+  "i18n": {
+    "zh_CN": {
+      "ask": "问",
+      "answer": "答"
+    }
+  },
   "datasource": "prop",
-  "dataFields": {},
+  "dataFields": {
+    "title": "title",
+    "href": "href",
+    "answer": "answer",
+    "updateDate": "updateDate"
+  },
   "scope": true
 }

@@ -2,3 +2,10 @@
     line-height: 36px;
     padding:0 10px;
 }
+.e_number .p_input{
+    -moz-appearance: textfield;
+}
+.e_number .p_input::-webkit-outer-spin-button,
+.e_number .p_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

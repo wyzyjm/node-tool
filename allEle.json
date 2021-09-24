@@ -200,7 +200,7 @@
     },
     {
       "name": "折叠元素",
-      "code": "e_folditem"
+      "code": "e_foldItem"
     },
     {
       "name": "回到顶部",

@@ -3,7 +3,8 @@
         {
             "compName": "setting-video",
             "title": "视频",
-            "bind-videoList": "prop.videoList"
+            "bind-videoList": "prop.videoList",
+            "bind-config": "prop.config"
         }
     ]
 }

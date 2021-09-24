@@ -8,7 +8,7 @@
             "label":"prop.label",
             "showBtn":"prop.showBtn",
             "btnText":"prop.btnText",
-            "content":"prop.content"
+            "bind-value":"prop.layout"
         }
     ]
 }

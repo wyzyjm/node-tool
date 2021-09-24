@@ -1,8 +1,8 @@
 {
   "cname": "滚动数字",
   "styleId": "e_scrollNumber",
-  "styleClass": "",
-  "tmpl": "<div class=\"text-primary ${elemId} ${styleClass}\" needjs=\"true\">\n    <span class=\"p_num\" {{#if ${scroll}}}use-rollNum{{/if}} data-num=\"{{${number}}}\">{{${number}}}</span>\n    <span class=\"p_plus\">{{${unit}}}</span>\n    <input type=\"hidden\" value='{{{propJson}}}' name=\"propJson\" />\n</div>\n",
+  "styleClass": "s_title",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <span class=\"p_num\" {{#if ${scroll}}}use-rollNum{{/if}} data-num=\"{{${number}}}\">{{${number}}}</span>\n    <span class=\"p_plus\">{{${unit}}}</span>\n</div>\n",
   "css": [
     {
       "media": "",
@@ -30,7 +30,5 @@
   "i18n": {
     "zh_CN": {}
   },
-  "datasource": "prop",
-  "dataFields": {},
-  "scope": true
+  "datasource": "prop"
 }
