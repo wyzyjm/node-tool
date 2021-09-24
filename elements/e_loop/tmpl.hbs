@@ -35,6 +35,7 @@
             {{/eq}}
             {{#eq selectMode 'radio'}}
             <select class="form-control p_filter_select" data-index="{{@index}}">
+                <option value="" data-index="-1">请选择</option>
                 {{#values}}
                 <option class="p_s_option" data-index="{{@index}}" value="{{value}}" data-valueType="{{valueType}}"
                     data-value="{{value}}">{{name}}</option>
@@ -103,4 +104,6 @@
 
     <input type="hidden" name="_config" value='{{$toJson datasource._config}}'>
     <input type="hidden" name="view" value='{{{view}}}'>
+    <input type="hidden" name="propJson" value='{{{propJson}}}'>
+    <input type="hidden" name="i18nJson" value='{{{i18nJson}}}'>
 </div>
