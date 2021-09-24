@@ -1,30 +1,257 @@
-<div class="e_floating" needjs="true">
-    <div class="p_comp" data-ename="组件容器">
-        <div class="badge-primary p-1 p_contrast" data-ename="对比按钮（mo）">
+<div class="e_floating desCss" needjs="true">
+    <div class="p_comp">
+        <!--移动端对比按钮-->
+        <div class="badge-primary p-1 p_contrast">
             <span class="p_contrast_text">{{i18n.contrast}}</span>
-            <span class="p_contrast_num" data-ename="对比数量"></span>
+            <span class="p_contrast_num"></span>
         </div>
-        <div class="p_obscuration" data-ename="蒙层">
-            <div class="bg-white p_contrast_list" data-ename="对比列表">
-                <div class="alert alert-danger p_danger hide" data-ename="提示语">
+        <div class="p_obscuration">
+            <div class="bg-white p_contrast_list">
+                <div class="alert alert-danger p_danger hide">
                     <span class="j_column"></span>{{i18n.tip}}
                 </div>
-                <div class="text-primary p_title" data-ename="副标题">
+                <!--tab区-->
+                <div class="text-primary p_title">
+                    <!--PC tab栏-->
                     <div class="j_tab p_tab">
+                        <span class="px-3 py-2 p_title_compareTheBar active">{{i18n.contrast}}</span>
+                        <span class="px-3 py-2 p_title_compareTheBar">{{i18n.online}}</span>
+                        <span class="px-3 py-2 p_title_compareTheBar">{{i18n.apply}}</span>
+                        <span class="px-3 py-2 p_title_compareTheBar">{{i18n.sample}}</span>
+                        <span class="px-3 py-2 p_title_compareTheBar">{{i18n.enquiry}}</span>
                     </div>
+                    <!--MO tab栏-->
                     <select class="mx-3 my-2 form-control j_mo_tab p_form-control">
+                        <option value="0">{{i18n.contrast}}</option>
+                        <option value="1">{{i18n.online}}</option>
+                        <option value="2">{{i18n.apply}}</option>
+                        <option value="3">{{i18n.sample}}</option>
+                        <option value="4">{{i18n.enquiry}}</option>
                     </select>
-                    <span class="px-3 py-2 p_title_hidden" data-ename="副标题隐藏">{{i18n.hidden}}</span>
+                    <span class="px-3 py-2 p_title_hidden">{{i18n.hidden}}</span>
                 </div>
+
                 <ul class="j_switch_list">
-                    <li>
-                        <ul class="border border-primary px-sm-2 py-md-2 p_data_list" data-ename="循环体容器">
+                    <!--对比-->
+                    <li class="hidden p_index1">
+                        <ul class="border border-primary px-sm-2 py-md-2 p_data_list">
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">1</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">2</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">3</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">4</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="text-primary py-sm-3 p_last_item">
+                                <a class="e_button btn btn-primary s_button1 p_contrast_btn" href="{{#if prop.href1.value}}{{$transferLink prop.href1 compId}} {{^}} javascript:;{{/if}}" {{#if prop.href1.value}} target="{{prop.href1.target}}"
+                                   {{/if}}>
+                                    <span>{{i18n.contrast}}</span>
+                                </a>
+                                <!--清空全部-->
+                                <p class="py-2 p_contrast_clear">{{i18n.clear}}</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--在线预约-->
+                    <li class="hidden p_index2">
+                        <ul class="border border-primary px-sm-2 py-md-2 p_data_list">
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">1</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">2</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">3</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">4</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="text-primary py-sm-3 p_last_item">
+                                <a class="e_button btn btn-primary s_button1 p_contrast_btn" href="{{#if prop.href2.value}}{{$transferLink prop.href2 compId}}  {{^}} javascript:;{{/if}}" {{#if prop.href2.value}} target="{{prop.href2.target}}"
+                                   {{/if}}>
+                                    <span>{{i18n.online}}</span>
+                                </a>
+                                <!--清空全部-->
+                                <p class="py-2 p_contrast_clear">{{i18n.clear}}</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--预约申请-->
+                    <li class="hidden p_index3">
+                        <ul class="border border-primary px-sm-2 py-md-2 p_data_list">
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">1</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">2</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">3</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">4</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="text-primary py-sm-3 p_last_item">
+                                <a class="e_button btn btn-primary s_button1 p_contrast_btn" href="{{#if prop.href3.value}}
+                                        {{$transferLink prop.href3 compId}}
+                                   {{^}}
+                                        javascript:;
+                                   {{/if}}" {{#if prop.href3.value}} target="{{prop.href3.target}}"
+                                   {{/if}}>
+                                    <span>{{i18n.apply}}</span>
+                                </a>
+                                <!--清空全部-->
+                                <p class="py-2 p_contrast_clear">{{i18n.clear}}</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--样品申请-->
+                    <li class="hidden p_index4">
+                        <ul class="border border-primary px-sm-2 py-md-2 p_data_list">
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">1</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">2</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">3</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">4</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="text-primary py-sm-3 p_last_item">
+                                <a class="e_button btn btn-primary s_button1 p_contrast_btn" href="{{#if prop.href4.value}}
+                                        {{$transferLink prop.href4 compId}}
+                                   {{^}}
+                                        javascript:;
+                                   {{/if}}" {{#if prop.href4.value}} target="{{prop.href4.target}}"
+                                   {{/if}}>
+                                    <span>{{i18n.sample}}</span>
+                                </a>
+                                <!--清空全部-->
+                                <p class="py-2 p_contrast_clear">{{i18n.clear}}</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--询价-->
+                    <li class="hidden p_index5">
+                        <ul class="border border-primary px-sm-2 py-md-2 p_data_list">
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">1</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">2</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">3</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="border-right border-secondary p-4 p_item">
+                                <!-- 无内容 -->
+                                <a href="javascript:;"
+                                   class="text-secondary bg-light mr-3 p_item_img">4</a>
+                                <div class="p_nocomparedata">{{i18n.noncontrastingDescription}}
+                                </div>
+                            </li>
+                            <li class="text-primary py-sm-3 p_last_item">
+                                <a class="e_button btn btn-primary s_button1 p_contrast_btn" href="{{#if prop.href5.value}}
+                                        {{$transferLink prop.href5 compId}}
+                                   {{^}}
+                                        javascript:;
+                                   {{/if}}" {{#if prop.href5.value}} target="{{prop.href5.target}}"
+                                   {{/if}}>
+                                    <span>{{i18n.enquiry}}</span>
+                                </a>
+                                <!--清空全部-->
+                                <p class="py-2 p_contrast_clear">{{i18n.clear}}</p>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <input type="hidden" name="propJson" value='{{{propJson}}}' />
     <input type="hidden" name="i18nJson" value='{{{i18nJson}}}' />
 </div>

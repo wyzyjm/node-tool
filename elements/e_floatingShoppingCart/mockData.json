@@ -1,16 +1,13 @@
 {
-  "prop": {
-    "text":"去购物车",
-    "href":{
-      "type":"link",
-      "value":"http://www.baidu.com",
-      "target":"_blank"
-    }
-  },
+  "prop": {},
   "i18n": {
     "notGoods": "还没有添加商品哦~",
     "notLogin": "请您登录再查看哦！",
     "shoppingCartTitle": "最近加入的商品:",
-    "shoppingCartBtnName": "购物车"
+    "shoppingCartBtnName": "购物车",
+    "goCart": "去购物车",
+    "total": "共",
+    "utilgoods": "件商品",
+    "sum": "合计"
   }
 }

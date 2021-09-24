@@ -1,34 +1,34 @@
 {
-  "panelConfig": [
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text1",
-          "bind-href": "prop.href1"
-      },
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text2",
-          "bind-href": "prop.href2"
-      },
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text3",
-          "bind-href": "prop.href3"
-      },
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text4",
-          "bind-href": "prop.href4"
-      },
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text5",
-          "bind-href": "prop.href5"
-      }
-  ]
+    "panelConfig": [
+        {
+            "compName": "setting-button",
+            "title": "对比",
+            "bind-text": "prop.text1",
+            "bind-href": "prop.href1"
+        },
+        {
+            "compName": "setting-button",
+            "title": "在线预约",
+            "bind-text": "prop.text2",
+            "bind-href": "prop.href2"
+        },
+        {
+            "compName": "setting-button",
+            "title": "预约申请",
+            "bind-text": "prop.text3",
+            "bind-href": "prop.href3"
+        },
+        {
+            "compName": "setting-button",
+            "title": "样品申请",
+            "bind-text": "prop.text4",
+            "bind-href": "prop.href4"
+        },
+        {
+            "compName": "setting-button",
+            "title": "询价",
+            "bind-text": "prop.text5",
+            "bind-href": "prop.href5"
+        }
+    ]
 }
