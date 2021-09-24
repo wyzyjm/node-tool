@@ -2,7 +2,7 @@
   "cname": "循环体8",
   "styleId": "e_loop_H",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${dataList}}}\n        <div class=\"swiper-container\">\n            <div class=\"swiper-wrapper\">\n                {{#${dataList}}}\n                    <div class=\"swiper-slide p_slide\">\n                        <div class=\"cbox-${id}-{{@index}} p_item\"> </div>\n                    </div>\n                {{/${dataList}}}\n            </div>\n             <!-- 分页器 -->\n            <div class=\"swiper-pagination p_pagenation\"></div>\n            <!-- 导航按钮 -->\n            <div class=\"swiper-button-next p_btn_next\"></div>\n            <div class=\"swiper-button-prev p_btn_prev\"></div>\n        </div>\n    {{^}}\n        {{{noDataPrompt}}}\n    {{/if}}\n    <input type=\"hidden\" name=\"propJson\" value='{{{propJson}}}' />\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${dataList}}}\n        <div class=\"swiper-container\">\n            <div class=\"swiper-wrapper\">\n                {{#${dataList}}}\n                    <div class=\"swiper-slide p_slide\">\n                        <div class=\"cbox-${id}-{{@index}} p_item\"> </div>\n                    </div>\n                {{/${dataList}}}\n            </div>\n             <!-- 分页器 -->\n            <div class=\"swiper-pagination p_pagenation\"></div>\n            <!-- 导航按钮 -->\n            <div class=\"swiper-button-next p_btn_next\"></div>\n            <div class=\"swiper-button-prev p_btn_prev\"></div>\n        </div>\n    {{^}}\n        {{{noDataPrompt}}}\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
@@ -37,5 +37,8 @@
   },
   "datasource": "prop",
   "container": true,
-  "dataFields": {}
+  "dataFields": {
+    "dataList": "dataList",
+    "autoplay": "autoplay"
+  }
 }
