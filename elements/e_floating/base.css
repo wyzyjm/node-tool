@@ -6,7 +6,7 @@
     display: none;
     z-index: 20;
 }
-.e_floating .p_obscuration.show{
+.e_floating .p_obscuration.show {
     display: block;
 }
 .e_floating .p_title{

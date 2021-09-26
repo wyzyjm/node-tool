@@ -331,22 +331,25 @@ helpers.nPaging = function (page,pageConfig,i18n) {
                 strArr.push(`<a class="page_a page_num" href="${pageUrl}-${pageNums}.html">${pageNums}</a >`);
             }
         }
+        let showJump=""
+        if(pageConfig.showJump){
+            showJump = `<span class="page_jump">
+            跳转到 <input type="text" class="page_input" > 页
+        </span>`
+        }
+
         resultStr = `
         <div class="page_con">
             <a href="${pageUrl}-${currentPage > 1 ? (currentPage - 1) : 1}.html" class="page_a page_prev ${prevDisabled}">&lt;</a >
             ${strArr.join('')}
             <a href="${pageUrl}-${currentPage < pageNums ? (currentPage + 1) : pageNums}.html" class="page_a page_next ${nextDisabled}">&gt;</a >
-            {{#if prop.pageConfig.showJump}}
-            <span class="page_jump">
-                ${i18n.pageJump} <input type="text" class="page_input" > ${i18n.pageUnit}
-            </span>
-            {{/if}}
+            ${showJump}
         </div>
         `
     } else if ('click' == pageConfig.pageType) {
         resultStr = `
             <div class="page_con">
-                <button class="btn btn-primary btn-sm e_button page_clickLoad">${i18n.loadMore}</button>
+                <button class="btn btn-primary btn-sm e_button page_clickLoad">点击更多</button>
             </div>
         `
     } else {
