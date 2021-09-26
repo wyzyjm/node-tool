@@ -1,29 +1,13 @@
 {
     "panelConfig": [
         {
-            "compName": "setting-button",
-            "title": "对比",
-            "bind-href": "prop.contrast.href"
-        },
-        {
-            "compName": "setting-button",
-            "title": "在线预约",
-            "bind-href": "prop.online.href"
-        },
-        {
-            "compName": "setting-button",
-            "title": "预约申请",
-            "bind-href": "prop.apply.href"
-        },
-        {
-            "compName": "setting-button",
-            "title": "样品申请",
-            "bind-href": "prop.sample.href"
-        },
-        {
-            "compName": "setting-button",
-            "title": "询价",
-            "bind-href": "prop.enquiry.href"
+            "compName": "setting-floating",
+            "title": "对比浮动框",
+            "bind-contrast":"prop.contrast",
+            "bind-online":"prop.online",
+            "bind-apply":"prop.apply",
+            "bind-sample":"prop.sample",
+            "bind-enquiry":"prop.enquiry"
         }
     ]
 }
