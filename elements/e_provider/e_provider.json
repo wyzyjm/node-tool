@@ -1,12 +1,12 @@
 {
   "cname": "备案号",
   "styleId": "e_provider",
-  "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    备案号\n</div>",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n   <div class=\"p_provider\">\n       备案号：ICP备**************_1号\n   </div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_provider{\n\n}\n"
+      "cssText": ".e_provider{\n\n}\n.e_provider .p_provider{\n    text-align: center;\n    font-size: 12px;\n    color: #666;\n}\n.e_provider span{\n    padding: 0 6px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
