@@ -1,35 +1,44 @@
 {
   "prop": {
-    "floatList": [],
-    "text1": "对比",
-    "href1": {
-      "type": "link",
-      "value": "",
-      "target": "_blank"
+    "contrast": {
+      "status": true,
+      "href": {
+        "type": "none",
+        "value": "",
+        "target": ""
+      }
     },
-    "text2": "在线预约",
-    "href2": {
-      "type": "link",
-      "value": "",
-      "target": "_blank"
+    "online": {
+      "status": false,
+      "href": {
+        "type": "none",
+        "value": "",
+        "target": ""
+      }
     },
-    "text3": "预约申请",
-    "href3": {
-      "type": "link",
-      "value": "",
-      "target": "_blank"
+    "apply": {
+      "status": true,
+      "href": {
+        "type": "none",
+        "value": "",
+        "target": ""
+      }
     },
-    "text4": "样品申请",
-    "href4": {
-      "type": "link",
-      "value": "",
-      "target": "_blank"
+    "sample": {
+      "status": true,
+      "href": {
+        "type": "none",
+        "value": "",
+        "target": ""
+      }
     },
-    "text5": "在线询价",
-    "href5": {
-      "type": "link",
-      "value": "",
-      "target": "_blank"
+    "enquiry": {
+      "status": true,
+      "href": {
+        "type": "none",
+        "value": "",
+        "target": ""
+      }
     }
   },
   "i18n": {

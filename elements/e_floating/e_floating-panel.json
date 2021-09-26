@@ -3,32 +3,27 @@
         {
             "compName": "setting-button",
             "title": "对比",
-            "bind-text": "prop.text1",
-            "bind-href": "prop.href1"
+            "bind-href": "prop.contrast.href"
         },
         {
             "compName": "setting-button",
             "title": "在线预约",
-            "bind-text": "prop.text2",
-            "bind-href": "prop.href2"
+            "bind-href": "prop.online.href"
         },
         {
             "compName": "setting-button",
             "title": "预约申请",
-            "bind-text": "prop.text3",
-            "bind-href": "prop.href3"
+            "bind-href": "prop.apply.href"
         },
         {
             "compName": "setting-button",
             "title": "样品申请",
-            "bind-text": "prop.text4",
-            "bind-href": "prop.href4"
+            "bind-href": "prop.sample.href"
         },
         {
             "compName": "setting-button",
             "title": "询价",
-            "bind-text": "prop.text5",
-            "bind-href": "prop.href5"
+            "bind-href": "prop.enquiry.href"
         }
     ]
 }
