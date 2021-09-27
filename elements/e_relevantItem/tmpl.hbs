@@ -5,9 +5,9 @@
     </table>
     {{#eq prop.type 2}}
     <div>
-        <a href="javascript:;" class="btn btn-primary btn-sm p_addContent" data-toggle="modal" data-target="#relevantModal">{{prop.btnText}}</a>
+        <a href="javascript:;" class="btn btn-primary btn-sm p_addContent" data-toggle="modal" data-target="#${elemId}-relevantModal">{{prop.btnText}}</a>
     </div>
-    <div class="modal fade" id="relevantModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal fade" id="${elemId}-relevantModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content p_modalContent">
                 <div class="modal-header bg-primary text-white">

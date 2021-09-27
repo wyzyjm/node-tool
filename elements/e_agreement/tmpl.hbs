@@ -9,12 +9,12 @@
         <div class="form-check form-check-inline p_input">
             <input class="form-check-input s_form-control" type="checkbox" name="${elemId}" id="${elemId}-{{@index}}" {{#if prop.validate.select.value}}checked{{/if}}>
             <label class="form-check-label s_other" for="${elemId}-{{@index}}">{{prop.placeholder}}</label>
-            <a href="javascript:;" class="text-primary p_showAgreement" data-toggle="modal" data-target="#relevantModal">{{prop.linkText}}</a>
+            <a href="javascript:;" class="text-primary p_showAgreement" data-toggle="modal" data-target="#${elemId}-relevantModal">{{prop.linkText}}</a>
         </div>
         <div class="invalid-feedback"></div>
     </div>
 
-    <div class="modal fade" id="relevantModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal fade" id="${elemId}-relevantModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content p_modalContent">
                 <div class="modal-header">
