@@ -1,4 +1,4 @@
-<div class="e_agreement s_form1 form-group">
+<div class="e_agreement s_form1 form-group" needjs="true">
     {{#if prop.showLabel}}
     <label class="p_label">
         <span class="s_label">{{prop.label}}</span>
@@ -9,8 +9,25 @@
         <div class="form-check form-check-inline p_input">
             <input class="form-check-input s_form-control" type="checkbox" name="${elemId}" id="${elemId}-{{@index}}" {{#if prop.validate.select.value}}checked{{/if}}>
             <label class="form-check-label s_other" for="${elemId}-{{@index}}">{{prop.placeholder}}</label>
-            <a href="javascript:;" class="text-primary p_showAgreement">{{prop.linkText}}</a>
+            <a href="javascript:;" class="text-primary p_showAgreement" data-toggle="modal" data-target="#${elemId}-relevantModal">{{prop.linkText}}</a>
         </div>
         <div class="invalid-feedback"></div>
+    </div>
+
+    <div class="modal fade" id="${elemId}-relevantModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content p_modalContent">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modalTitle">条款协议</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="text-white" aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body p_agreeContent">
+                    {{{prop.content}}}                  
+                </div>
+                <div class="modal-footer p_agreeBtn">
+                    <button type="button" class="btn btn-primary btn-sm p_confirm" data-dismiss="modal">阅读并同意</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

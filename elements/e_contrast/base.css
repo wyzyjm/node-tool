@@ -46,13 +46,11 @@
 /*参数单元格*/
 .e_contrast .p_ceil{
   padding: 10px 10px;
-  text-align: center;
   position: relative;
-  height: 110px;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .e_contrast .p_right .p_ceil{
   float: left;
@@ -143,6 +141,7 @@
   border: 2px solid #999;
   border-radius: 2px;
   position: relative;
+  text-align: center;
 }
 .e_contrast .p_arrow::after{
   position: absolute;

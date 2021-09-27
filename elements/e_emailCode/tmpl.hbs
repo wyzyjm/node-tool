@@ -7,8 +7,11 @@
     {{/if}}
     <div class="p_input">
         <input type="text" class="form-control s_form-control s_input p_Number" name="${elemId}-Number" placeholder="{{prop.placeholder1}}">
+        <div class="invalid-feedback"></div>
+    </div>
+    <div class="p_input">
         <input type="text" class="form-control s_form-control s_input p_Code" name="${elemId}-Code" placeholder="{{prop.placeholder2}}">
         <a href="javascript:;" class="btn btn-primary p_sendBtn">发送邮件验证码</a>
+        <div class="invalid-feedback"></div>
     </div>
-    <div class="invalid-feedback"></div>
 </div>
