@@ -9,7 +9,7 @@
       }
     },
     "online": {
-      "status": false,
+      "status": true,
       "href": {
         "type": "none",
         "value": "",
@@ -43,7 +43,7 @@
   },
   "i18n": {
     "contrast": "对比",
-    "online": "在线预约",
+    "online": "在线预订",
     "apply": "预约申请",
     "sample": "样品申请",
     "enquiry": "询价",

@@ -1,0 +1,31 @@
+{
+  "cname": "可信认证",
+  "styleId": "e_credible",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"p-container\">\n        <img class=\"p_credible_img\" src=\"https://rr.knet.cn/static/images/newLogo/star4.png\" alt=\"可信网站\" />\n    </div>\n    <script src=\"https://kxlogo.knet.cn/seallogo.dll?sn=e161220140700658139imb000000&amp;size=0&amp;ct=sel\"> </script>\n</div>\n\n",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_credible{\n    width: 140px;\n\n}\n.e_credible .p-container {\n    margin-bottom: 10px;\n}\n\n.e_credible .p_credible_img {\n    width: 100%;\n    height: 100%;\n}\n   "
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {},
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "scope": true,
+  "dataFields": {}
+}
