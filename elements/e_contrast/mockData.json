@@ -1,6 +1,8 @@
 {
   "prop": {},
   "i18n": {
-      "symbol": "¥"
+    "viewNow": "立即查看",
+    "delete": "删除",
+    "noPrice": "暂无报价"
   }
 }
