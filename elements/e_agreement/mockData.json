@@ -4,7 +4,7 @@
     "label":"条款协议",
     "placeholder":"我已阅读并接受条款及条件",
     "linkText":"查看使用条款",
-    "content":"<p>这里是条款内容，字数不限</p>",
+    "content":"",
     "validate":{
         "select":{
             "value":true

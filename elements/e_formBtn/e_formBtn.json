@@ -2,12 +2,12 @@
   "cname": "按钮",
   "styleId": "e_formBtn",
   "styleClass": "s_button1",
-  "tmpl": "<a class=\"${elemId} ${styleClass} btn btn-primary\" href=\"javascript:;\" needjs=\"true\">{{${text}}}</a>",
+  "tmpl": "<a class=\"${elemId} ${styleClass} btn btn-primary\" href=\"javascript:;\" needjs=\"true\">\n    <span>{{${text}}}</span> \n</a>",
   "type": "form",
   "css": [
     {
       "media": "",
-      "cssText": ".e_formBtn{\n    display: block;\n    width: 100px;\n}\n"
+      "cssText": ".e_formBtn{\n    display: block;\n    position: relative;\n    overflow: hidden;\n    text-align: center;\n    box-sizing: border-box;\n    width: 100px;\n    border-radius: 4px;\n    padding: 8px;\n}\n.e_formBtn span {\n\tdisplay: block;\n\twidth: 100%;\n\tposition: relative;\n\tz-index: 1;\n\toutline: 0;\n\tmargin: 0px;\n    overflow: hidden;\n}\n.e_formBtn::after {\n\tcontent: \"\";\n\tposition: absolute;\n\twidth: 100%;\n\theight: 100%;\n\ttransition: all .3s;\n\tz-index: 0;\n\topacity: 0;\n\ttop: 0;\n    left: 0px;\n}\n.e_formBtn:hover::after {\n\topacity: 1\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -26,81 +26,8 @@
     "text": "确认",
     "type": 1,
     "action": 1,
-    "business": [
-      {
-        "if": {
-          "item": "e_input-1",
-          "value": 1,
-          "option": []
-        },
-        "then": {
-          "item": "e_input-2",
-          "action": "show"
-        },
-        "logic": [
-          {
-            "name": "计算结果",
-            "formula": [
-              {
-                "value": "(",
-                "label": "("
-              },
-              {
-                "value": "e_input-1",
-                "label": "长"
-              },
-              {
-                "value": "*",
-                "label": "X"
-              },
-              {
-                "value": "e_input-2",
-                "label": "宽"
-              },
-              {
-                "value": "*",
-                "label": "X"
-              },
-              {
-                "value": "e_input-3",
-                "label": "高"
-              },
-              {
-                "value": ")",
-                "label": ")"
-              },
-              {
-                "value": "*",
-                "label": "X"
-              },
-              {
-                "value": "7.95",
-                "label": "floatNumber"
-              },
-              {
-                "value": "-",
-                "label": "-"
-              },
-              {
-                "value": "1.02",
-                "label": "floatNumber"
-              },
-              {
-                "value": "*",
-                "label": "X"
-              },
-              {
-                "value": "e_input-4",
-                "label": "初始值"
-              }
-            ],
-            "output": ""
-          }
-        ],
-        "state": true
-      }
-    ],
-    "prompt": "依据您填写的信息，计算预计费用为${计算结果}元。详情结果，获取方案请至电 18311121907"
+    "business": [],
+    "prompt": ""
   },
   "i18n": {
     "zh_CN": {}

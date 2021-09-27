@@ -1,3 +1,15 @@
 .e_agreement .p_showAgreement{
     margin-left: 10px;
 }
+.e_agreement .p_agreeContent{
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.e_agreement .p_agreeContent img{
+    max-width: 100% !important;
+}
+.e_agreement .p_agreeBtn{
+    text-align: center;
+    display: block;
+}
