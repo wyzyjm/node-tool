@@ -1,6 +1,6 @@
 {
   "prop": {
-    "showImages":true, 
+          "showImages":true, 
           "templateId":"132",
           "skuId": 0, 
           "productId": "012", 
@@ -8,7 +8,11 @@
           "summary": "@cparagraph", 
           "retailPrice":22,
           "price":28,
-          "href":"",
+          "href":{
+            "type":"none",
+            "value":"",
+            "target":""
+          },
           "code":"",
           "target":"",
           "weightunit":"weightunit",

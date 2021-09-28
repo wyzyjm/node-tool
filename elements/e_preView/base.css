@@ -41,3 +41,10 @@
 .e_preView .p_scroll_item.curr a{
     border-color:rgba(64, 158, 255, 1);
 }
+.e_preView .p_listimg{
+    display: none;
+
+}
+.e_preView  div.active{
+    display: block;
+}
