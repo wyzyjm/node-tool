@@ -15,7 +15,9 @@
         </div>
         <ul class="p_uploadList"></ul>
     </div>
+    {{#if prop.showPlaceholder}}
     <p class="p_placeholder s_other">{{prop.placeholder}}</p>
+    {{/if}}
     <input name="${elemId}" class="p_input" type="hidden" >
     <div class="invalid-feedback"></div>
 </div>

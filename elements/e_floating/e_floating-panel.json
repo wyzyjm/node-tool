@@ -1,34 +1,13 @@
 {
-  "panelConfig": [
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text1",
-          "bind-href": "prop.href1"
-      },
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text2",
-          "bind-href": "prop.href2"
-      },
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text3",
-          "bind-href": "prop.href3"
-      },
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text4",
-          "bind-href": "prop.href4"
-      },
-      {
-          "compName": "setting-button",
-          "title": "按钮",
-          "bind-text": "prop.text5",
-          "bind-href": "prop.href5"
-      }
-  ]
+    "panelConfig": [
+        {
+            "compName": "setting-floating",
+            "title": "对比浮动框",
+            "bind-contrast":"prop.contrast",
+            "bind-online":"prop.online",
+            "bind-apply":"prop.apply",
+            "bind-sample":"prop.sample",
+            "bind-enquiry":"prop.enquiry"
+        }
+    ]
 }

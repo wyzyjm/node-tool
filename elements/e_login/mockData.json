@@ -5,8 +5,15 @@
     "placeholderPhone":"请输入手机号",
     "placeholderCode":"短信验证码",
     "placeholderEmailCode":"短信验证码",
-    "placeholderEmail":" 请输入邮箱"
-
+    "placeholderEmail":" 请输入邮箱",
+    "contrast": {
+      "status": true,
+      "href": {
+        "type": "none",
+        "value": "",
+        "target": ""
+      }
+    }
   },
   "i18n": {
     "titlePassword":"密码登录"

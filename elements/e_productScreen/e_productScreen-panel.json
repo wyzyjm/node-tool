@@ -1,0 +1,9 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-productScreen",
+            "bind-val": "prop.groupId",
+            "title": "筛选"
+        }
+    ]
+}

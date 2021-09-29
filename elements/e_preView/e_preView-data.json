@@ -1,27 +1,23 @@
 {
-  "apiType": "object",
+  "apiType": "object", 
   "dataFields": [
     
     {
       "name": "href",
       "cname": "图片链接",
-      "type": "number"
+      "type": "link"
     },
-    {
-      "name": "target",
-      "cname": "打开方式",
-      "type": "number"
-    },
+   
     {
       "name": "coverImage",
       "cname": "封面图路径",
-      "type": "number"
+      "type": "string"
     },
     
     {
       "name": "productId",
       "cname": "产品ID",
-      "type": "number"
+      "type": "string"
     },
     
     {

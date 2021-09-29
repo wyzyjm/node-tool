@@ -1,3 +1,9 @@
 .e_provider{
 
 }
+.e_provider .p_provider{
+    text-align: center;
+}
+.e_provider span{
+    padding: 0 6px;
+}

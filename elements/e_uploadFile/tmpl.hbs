@@ -11,7 +11,9 @@
             <input type="file" name="file" class="uploadInput" multiple>
             <button class="btn btn-primary btn-sm">上传</button>
         </div>
+        {{#if prop.showPlaceholder}}
         <span class="s_other">{{prop.placeholder}}</span>
+        {{/if}}
     </div>
     <input type="hidden" name="${elemId}" class="p_input">
     <div class="invalid-feedback"></div>

@@ -17,7 +17,7 @@
                     </span>
                    
                 </a>
-                <a href="#" class="s_body p_nav_a" data-sort='2' data-field='productName'>{{i18n.product}}
+                <a href="#" class="s_body p_nav_a" data-sort='2' data-field='pyName'>{{i18n.product}}
                      <span class="p_opear" >
                          <i class="p_up"  data-ename="增">
                              {{{prop.opUp}}}
@@ -37,7 +37,7 @@
                         </i>
                     </span>
                 </a>
-                <a href="#" class="e_body p_nav_a" data-sort='2' data-field='price'>{{i18n.price}}
+                <a href="#" class="e_body p_nav_a" data-sort='2' data-field='retailPrice'>{{i18n.price}}
                      <span class="p_opear" >
                         <i class="p_up" data-ename="增">
                             {{{prop.opUp}}}
@@ -55,9 +55,9 @@
         </div>
         <div class="p_nav_page" data-ename="页码" data-from="{{prop.page.from}}" data-size={{prop.page.size}} data-totalCount="{{prop.page.totalCount}}">
             <span class="p_page_tall" data-ename="页数">{{i18n.pageWhole}} <em class="p_style_normal">{{prop.page.totalCount}}</em>  {{i18n.unit}}{{i18n.products}}</span>
-            <span class="p_page_text" data-ename="页码数内容"><em class="text-danger p_style_normal">{{prop.page.from}}</em>/ <em class="p_style_normal">{{prop.page.size}}</em></span>
+            {{!-- <span class="p_page_text" data-ename="页码数内容"><em class="text-danger p_style_normal">{{prop.page.from}}</em>/ <em class="p_style_normal">{{prop.page.size}}</em></span>
             <a href="#" class="p_page_prev p_disabled" data-ename="上一页"><</a>
-            <a href="#" class="p_page_next" data-ename="下一页">></a>
+            <a href="#" class="p_page_next" data-ename="下一页">></a> --}}
         </div>
     </div>
      <input type="hidden" name="view" value='{{{view}}}'>

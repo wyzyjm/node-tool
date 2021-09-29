@@ -43,6 +43,5 @@
     "href": "href",
     "answer": "answer",
     "updateDate": "updateDate"
-  },
-  "scope": true
+  }
 }

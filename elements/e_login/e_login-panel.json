@@ -1,10 +1,9 @@
 {
     "panelConfig": [
         {
-            "compName": "setting-text",
-            "bind-text": "prop.text",
-            "bind-href": "prop.href",
-            "title": "文字"
+            "compName": "setting-login",
+            "bind-href": "prop.contrast",
+            "title": "登录"
         }
     ]
   }

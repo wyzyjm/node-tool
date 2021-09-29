@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_icon{\n    width: 60px;\n    height: 60px;\n    display: inline-block;\n}\n.e_icon .icon{\n    width: 100%;\n    height: 100%;\n    fill: currentColor;\n}"
+      "cssText": ".e_icon{\n    width: 60px;\n    height: 60px;\n}\n.e_icon .icon{\n    margin:0;\n    width: 100%;\n    height: 100%;\n    fill: currentColor;\n}"
     },
     {
       "media": "screen and (max-width:768px)",

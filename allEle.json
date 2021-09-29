@@ -171,6 +171,10 @@
     {
       "name": "时间",
       "code": "e_timeFormat"
+    },
+    {
+      "name": "可信认证",
+      "code": "e_credible"
     }
   ],
   "complex": [

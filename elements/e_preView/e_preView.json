@@ -2,11 +2,11 @@
   "cname": "预览商品",
   "styleId": "e_preView",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    \n        <div class=\"p_img_div\" >\n            <a href=\"{{${href}}}\" target=\"{{${target}}}\" class=\"p_img_a\"  >\n                {{{lazyImage ${coverImage} 'class=\"p_img\"  title=\"{{${title}}}\" alt=\"{{${title}}}\"' 'true'}}}\n            </a>\n        </div>\n        <div class=\"p_scroll\" >\n            <ul class=\"p_scroll_main\">\n                {{#${images}}}\n                    <li class=\"p_scroll_item  {{#eq @index 0}}curr{{/eq}}\" >\n                        <a href=\"JavaScript:;\" class=\"p_scroll_item_a \" >\n                             {{{lazyImage url 'class=\"p_scroll_item_img\"  title=\"{{title}}\" alt=\"{{title}}\"' 'true'}}}\n                        </a>\n                    </li>\n                {{/${images}}}\n            </ul>\n        </div>\n        \n    \n    \n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"p_imgbox\">\n        <div class=\"p_img_div\" >\n             {{#${images}}}\n                <div class=\"p_listimg {{#eq @index 0}}active{{/eq}}\">\n                    <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\" class=\"p_img_a\"  >\n                     {{{lazyImage url 'class=\"p_scroll_item_img\"  title=\"{{title}}\" alt=\"{{title}}\"' 'true'}}}\n                     </a>\n                </div>\n            {{/${images}}}\n            {{!-- <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\" class=\"p_img_a\"  >\n                {{{lazyImage ${coverImage} 'class=\"p_img\"  title=\"{{${title}}}\" alt=\"{{${title}}}\"' 'true'}}}\n            </a> --}}\n        </div>\n        <div class=\"p_scroll\" >\n            <ul class=\"p_scroll_main\">\n                {{#${images}}}\n                    <li class=\"p_scroll_item  {{#eq @index 0}}curr{{/eq}}\" >\n                        <a href=\"JavaScript:;\" class=\"p_scroll_item_a \" >\n                             {{{lazyImage url 'class=\"p_scroll_item_img\"  title=\"{{title}}\" alt=\"{{title}}\"' 'true'}}}\n                        </a>\n                    </li>\n                {{/${images}}}\n            </ul>\n        </div>\n     </div>   \n</div>",
   "css": [
     {
       "media": "",
-      "cssText": "\n.e_preView .p_scroll_main{\n    display: flex;\n    flex-wrap: wrap;\n    height: 44px;\n}\n.e_preView .p_scroll_item{\n    width: 20%;\n   \n}\n.e_preView .p_scroll_item_img{\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.e_preView .p_img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_preView .p_img_div{\n    margin-bottom: 8px;\n}\n.e_preView .p_img_a{\n    height: 240px;\n    display: block;\n}\n.e_preView .p_img_a img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_preView .p_scroll_item_a{\n    display: block;\n  border: 1px solid #ddd;\n  height: 42px;\n  padding: 1px;\n  cursor: default;\n  margin-right: 8px;\n}\n.e_preView .p_scroll_item.curr a{\n    border-color:rgba(64, 158, 255, 1);\n}"
+      "cssText": "\n.e_preView .p_scroll_main{\n    display: flex;\n    flex-wrap: wrap;\n    height: 44px;\n}\n.e_preView .p_scroll_item{\n    width: 20%;\n   \n}\n.e_preView .p_scroll_item_img{\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.e_preView .p_img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_preView .p_img_div{\n    margin-bottom: 8px;\n}\n.e_preView .p_img_a{\n    height: 240px;\n    display: block;\n}\n.e_preView .p_img_a img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_preView .p_scroll_item_a{\n    display: block;\n  border: 1px solid #ddd;\n  height: 42px;\n  padding: 1px;\n  cursor: default;\n  margin-right: 8px;\n}\n.e_preView .p_scroll_item.curr a{\n    border-color:rgba(64, 158, 255, 1);\n}\n.e_preView .p_listimg{\n    display: none;\n\n}\n.e_preView  div.active{\n    display: block;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -30,7 +30,11 @@
     "summary": "@cparagraph",
     "retailPrice": 22,
     "price": 28,
-    "href": "",
+    "href": {
+      "type": "none",
+      "value": "",
+      "target": ""
+    },
     "code": "",
     "target": "",
     "weightunit": "weightunit",
@@ -66,7 +70,8 @@
     "images$id": "id",
     "images$title ": "title ",
     "images$url": "url",
-    "images$iscover": "iscover"
+    "images$iscover": "iscover",
+    "href": "href"
   },
   "dataManage": {}
 }
