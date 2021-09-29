@@ -2,7 +2,7 @@
     <div class="p_imgbox">
         <div class="p_img_div" >
              {{#prop.images}}
-                <div class="p_listimg {{#eq @index 0}}active{{/eq}}"">
+                <div class="p_listimg {{#eq @index 0}}active{{/eq}}">
                     <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}" class="p_img_a"  >
                      {{{lazyImage url 'class="p_scroll_item_img"  title="{{title}}" alt="{{title}}"' 'true'}}}
                      </a>

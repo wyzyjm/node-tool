@@ -1,6 +1,12 @@
 {
   "prop": {
-    "groupId":"0"
+    "groupId": ""
   },
-  "i18n": {}
+  "i18n": {
+    "screening": "筛选",
+    "selected": "已选",
+    "clearScreening": "清空筛选",
+    "reset": "重置",
+    "sure": "确定"
+  }
 }
