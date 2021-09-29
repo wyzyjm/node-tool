@@ -1,8 +1,7 @@
-<div class="e_input s_form1 form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
+<div class="e_input s_form1 form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true" {{#if prop.validate.required.value}}required{{/if}}>
     {{#if prop.showLabel}}
     <label class="p_label">
         <span class="s_label">{{prop.label}}</span>
-        {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
     {{#eq prop.state 'readOnly'}}
