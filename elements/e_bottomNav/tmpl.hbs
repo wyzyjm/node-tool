@@ -1,0 +1,53 @@
+<div class="e_bottomNav" needjs="true">
+    {{#if prop.dataList}}
+        <!-- 导航内容 开始 -->
+        <ul class="p_level1Box">
+            {{#each prop.dataList}}
+            <li class="border-bottom  pt-2  pb-2 p_level1Item">
+                <!-- 名称 -->
+                <p class="text-dark p_menuItem">
+                    <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
+                        <span>{{navName}}</span>
+                    </a>
+                    {{#if children}}{{{../prop.arrow}}}{{/if}}
+                </p>
+                <!-- 子集 -->
+                {{#if this.children}}
+                <ul class="mt-2 p_level2Box">
+                    {{#each this.children}}
+                    <li class="p_level2Item">
+                        <!-- 名称 2 -->
+                        <p class="text-secondary p_menuItem">
+                            <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
+                                <span>{{navName}}</span>
+                            </a>
+                             {{#if children}}{{{../../prop.arrow}}}{{/if}}
+                        </p>
+                        <!-- 子集 2 -->
+                        {{#if this.children}}
+                        <ul class="p_level3Box">
+                            {{#each this.children}}
+                            <li class="p_level3Item">
+                                <!-- 名称 3 -->
+                                <p class="text-secondary p_menuItem">
+                                    <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
+                                        <span>{{navName}}</span>
+                                    </a>
+                                </p>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+        <!-- 导航内容 结束 -->
+    {{^}}
+        {{{nNoDataPrompt i18n.noData}}}
+    {{/if}}
+</div>
+
