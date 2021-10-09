@@ -31,7 +31,6 @@
 .e_register .telBox{
     display: flex;
     height: 35px;
-    padding: 0 .75rem;
 }
 .e_register .telInput{
     width: 58px;
@@ -185,8 +184,11 @@
 .e_register .p_agreementWrapper{
     width: 700px;
     padding: 20px 10px;
-    text-align: center;
     margin: 0 auto;
+}
+.e_register h6{
+    text-align: center;
+    
 }
 .e_register .p_text{
     padding: 0 10px;
