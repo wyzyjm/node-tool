@@ -1,0 +1,17 @@
+.e_bottomNav .p_level1Box{
+    display: flex;
+}
+.e_bottomNav .p_level1Item{
+    min-width: 100px;
+    max-width: 20%;
+    width: auto;
+    padding: 0 10px;
+    flex-grow: 1;
+}
+.e_bottomNav p:hover{
+    color: #409EFF;
+}
+/* 移动端箭头隐藏 */
+.e_bottomNav .p_jtIcon{
+    display: none;
+}

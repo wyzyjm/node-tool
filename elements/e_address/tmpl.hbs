@@ -1,8 +1,7 @@
-<div class="e_address s_form1 form-group" needjs="true">
+<div class="e_address s_form1 form-group" needjs="true" {{#if prop.validate.required.value}}required{{/if}}>
     {{#if prop.showLabel}}
     <label class="p_label">
         <span class="s_label">{{prop.label}}</span>
-        {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
     <input type="text" class="form-control s_form-control s_input p_input" {{#if prop.showPlaceholder}}placeholder="{{prop.placeholder}}"{{/if}} >

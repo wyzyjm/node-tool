@@ -1,8 +1,7 @@
-<fieldset class="e_label s_form1 form-group" needjs="true">
+<fieldset class="e_label s_form1 form-group" needjs="true" {{#if prop.validate.required.value}}required{{/if}}>
     {{#if prop.showLabel}}
     <legend class="col-form-label p_label">
         <span class="s_label">{{prop.label}}</span>
-        {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </legend>
     {{/if}}
     <div class="p_input">

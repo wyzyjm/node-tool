@@ -175,6 +175,10 @@
     {
       "name": "可信认证",
       "code": "e_credible"
+    },
+    {
+      "name": "底部导航",
+      "code": "e_bottomNav"
     }
   ],
   "complex": [

@@ -1,8 +1,7 @@
-<fieldset class="e_radio s_form1 form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true">
+<fieldset class="e_radio s_form1 form-group {{#eq prop.state 'hidden'}}formHide{{/eq}}" needjs="true" {{#if prop.validate.required.value}}required{{/if}}>
     {{#if prop.showLabel}}
     <legend class="col-form-label p_label">
         <span class="s_label">{{prop.label}}</span>
-        {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </legend>
     {{/if}}
     {{#eq prop.state 'readOnly'}}

@@ -3,7 +3,7 @@
   "styleId": "e_uploadFile",
   "styleClass": "s_form1",
   "type": "form",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div class=\"p_fileList clearfix\"></div>\n    <div class=\"p_upload\">\n        <div class=\"p_uploadBtn\">\n            <input type=\"file\" name=\"file\" class=\"uploadInput\" multiple>\n            <button class=\"btn btn-primary btn-sm\">上传</button>\n        </div>\n        {{#if ${showPlaceholder}}}\n        <span class=\"s_other\">{{${placeholder}}}</span>\n        {{/if}}\n    </div>\n    <input type=\"hidden\" name=\"${elemId}\" class=\"p_input\">\n    <div class=\"invalid-feedback\"></div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\" {{#if ${validate}.required.value}}required{{/if}}>\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n    </label>\n    {{/if}}\n    <div class=\"p_fileList clearfix\"></div>\n    <div class=\"p_upload\">\n        <div class=\"p_uploadBtn\">\n            <input type=\"file\" name=\"file\" class=\"uploadInput\" multiple>\n            <button class=\"btn btn-primary btn-sm\">上传</button>\n        </div>\n        {{#if ${showPlaceholder}}}\n        <span class=\"s_other\">{{${placeholder}}}</span>\n        {{/if}}\n    </div>\n    <input type=\"hidden\" name=\"${elemId}\" class=\"p_input\">\n    <div class=\"invalid-feedback\"></div>\n</div>",
   "css": [
     {
       "media": "",

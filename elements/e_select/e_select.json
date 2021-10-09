@@ -4,7 +4,7 @@
   "styleClass": "s_form1",
   "type": "form",
   "putSubForm": true,
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue s_input\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <select class=\"form-control s_form-control s_input p_input\" name=\"${elemId}\" {{#eq ${state} 'disabled'}}disabled{{/eq}} >\n            {{#if ${showPlaceholder}}}\n            <option value=\"\">{{${placeholder}}}</option>\n            {{/if}}\n            {{#${options}}}\n            <option value=\"{{value}}\">{{label}}</option>\n            {{/${options}}}\n        </select>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</div>\n",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\" {{#if ${validate}.required.value}}required{{/if}}>\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue s_input\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <select class=\"form-control s_form-control s_input p_input\" name=\"${elemId}\" {{#eq ${state} 'disabled'}}disabled{{/eq}} >\n            {{#if ${showPlaceholder}}}\n            <option value=\"\">{{${placeholder}}}</option>\n            {{/if}}\n            {{#${options}}}\n            <option value=\"{{value}}\">{{label}}</option>\n            {{/${options}}}\n        </select>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</div>\n",
   "css": [
     {
       "media": "",
@@ -58,7 +58,14 @@
   "datasource": "prop",
   "dataFields": {
     "options$label": "label",
-    "options$value": "value"
+    "options$value": "value",
+    "showLabel": "showLabel",
+    "label": "label",
+    "showPlaceholder": "showPlaceholder",
+    "placeholder": "placeholder",
+    "state": "state",
+    "options": "options",
+    "validate": "validate"
   },
   "scope": true
 }

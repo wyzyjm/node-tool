@@ -4,7 +4,7 @@
   "styleClass": "s_form1",
   "type": "form",
   "putSubForm": true,
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue s_input\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"j_date\">\n            <input type=\"text\" name=\"${elemId}\" class=\"form-control s_form-control s_input p_input\" \n            {{#eq ${showPlaceholder} 'word'}}placeholder=\"{{${placeholder}}}\"{{/eq}} \n            {{#eq ${state} 'disabled'}}disabled{{/eq}} >\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group {{#eq ${state} 'hidden'}}formHide{{/eq}}\" needjs=\"true\" {{#if ${validate}.required.value}}required{{/if}}>\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n    </label>\n    {{/if}}\n    {{#eq ${state} 'readOnly'}}\n    <p class=\"p_formValue s_input\"></p>\n    {{/eq}}\n    <div class=\"{{#eq ${state} 'readOnly'}}hide{{/eq}}\">\n        <div class=\"j_date\">\n            <input type=\"text\" name=\"${elemId}\" class=\"form-control s_form-control s_input p_input\" \n            {{#eq ${showPlaceholder} 'word'}}placeholder=\"{{${placeholder}}}\"{{/eq}} \n            {{#eq ${state} 'disabled'}}disabled{{/eq}} >\n        </div>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</div>",
   "css": [
     {
       "media": "",
@@ -45,7 +45,13 @@
   "datasource": "prop",
   "dataFields": {
     "label": "label",
-    "placeholder": "placeholder"
+    "placeholder": "placeholder",
+    "showLabel": "showLabel",
+    "type": "type",
+    "showPlaceholder": "showPlaceholder",
+    "format": "format",
+    "state": "state",
+    "validate": "validate"
   },
   "scope": true
 }
