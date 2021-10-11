@@ -3,7 +3,7 @@
         "type":2,
         "btnText":"添加内容",
         "datasource":{},
-        "categorySource":{},
+        "ccsource":{},
         "previewList":[],
         "searchList":[],
         "isHide":false
