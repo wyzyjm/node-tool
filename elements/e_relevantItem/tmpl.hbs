@@ -3,6 +3,7 @@
         <thead></thead>
         <tbody></tbody>
     </table>
+   
     {{#eq prop.type 2}}
     <div>
         <a href="javascript:;" class="btn btn-primary btn-sm p_addContent" data-toggle="modal" data-target="#${elemId}-relevantModal">{{prop.btnText}}</a>
@@ -16,11 +17,11 @@
                 </div>
                 <div class="modal-body">
                     <div class="row p_screen">
-                        <div class="col p_categoryCon">
-                            <label for="p_category">分类：</label>
-                            <select class="form-control p_category" id="p_category">
-                                <option value="">请选择分诶</option>
-                            </select>
+                        <div class="col p_categoryCon clearfix">
+                            <div class="p_clabel">分类：</div>
+                            <div class="p_ccate">
+                                <div class="treeSelect p_treeSelect"></div>
+                            </div>
                         </div>
                         <div class="col p_searchCon">
                             <div class="input-group p_search">
