@@ -7,6 +7,15 @@
     "selected": "已选",
     "clearScreening": "清空筛选",
     "reset": "重置",
-    "sure": "确定"
+    "sure": "确定",
+    "allData":"全部",
+    "more":"更多",
+    "putAway":"收起",
+    "cancel":"取消",
+    "checkbox":"多选",
+    "dprice":"最低价",
+    "gprice":"最高价",
+    "biginTime":"开始时间",
+    "endTime":"结束时间"
   }
 }
