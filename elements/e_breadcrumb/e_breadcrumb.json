@@ -1,12 +1,12 @@
 {
   "cname": "面包屑",
   "styleId": "e_breadcrumb",
-  "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    面包屑\n</div>",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <ul class=\"p_breadcrumb\">\r\n        <!-- first-child -->\r\n        <li class=\"p_breadcrumbItem\">\r\n            <a href=\"/\">\r\n                <!-- 图标 -->\r\n                <span class=\"text-secondary p_icon\">\r\n                    <svg t=\"1631185047228\" class=\"icon\" viewBox=\"0 0 1029 1024\" version=\"1.1\"\r\n                         xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1034\" width=\"200\" height=\"200\">\r\n                        <path d=\"M44.799492 528.986943a42.836848 42.836848 0 0 1-31.231646-13.567846 42.725916 42.725916 0 0 1 2.133309-60.329983L491.685094 11.446142a42.68325 42.68325 0 0 1 58.538003 0.34133l465.658723 443.642972c17.066473 16.21315 17.749132 43.26351 1.45065 60.329983s-43.26351 17.749132-60.329983 1.45065L520.442102 101.301124 73.897829 517.552406c-8.27724 7.679913-18.687788 11.434537-29.098337 11.434537z\"\r\n                              p-id=\"1035\"></path>\r\n                        <path d=\"M752.716803 1024H282.876794c-111.188073 0-201.640381-86.697684-201.640381-193.27781V434.524014c0-23.551733 19.11445-42.666183 42.666183-42.666183s42.666183 19.11445 42.666183 42.666183v396.283509c0 59.476659 52.138076 107.945443 116.308015 107.945443h469.925341c64.084607 0 116.308015-48.383452 116.308015-107.945443V434.524014c0-23.551733 19.11445-42.666183 42.666183-42.666183s42.666183 19.11445 42.666183 42.666183v396.283509c-0.085332 106.494793-90.537641 193.192477-201.725713 193.192477z\"\r\n                              p-id=\"1036\"></path>\r\n                        <path d=\"M657.400549 1017.173411H383.142324c-23.551733 0-42.666183-19.11445-42.666183-42.666183V625.839179c0-23.551733 19.11445-42.666183 42.666183-42.666183h274.258225c23.551733 0 42.666183 19.11445 42.666184 42.666183v348.668049c0 23.551733-19.11445 42.666183-42.666184 42.666183z m-231.592041-85.332367h188.925858V668.505362H425.808508v263.335682z\"\r\n                              p-id=\"1037\"></path>\r\n                    </svg>\r\n                </span>\r\n                <!-- 图标 -->\r\n                <span class=\"text-secondary p_title\">{{${i18n.homePage}}}</span>\r\n            </a>\r\n        </li>\r\n    </ul>\r\n</div>\r\n",
   "css": [
     {
       "media": "",
-      "cssText": ".e_breadcrumb{\n\n}\n"
+      "cssText": ".e_breadcrumb .p_breadcrumbItem {\n  position: relative;\n}\n.e_breadcrumb .icon {\n  width: 12px;\n  height: 12px;\n}\n.e_breadcrumb .p_breadcrumbItem:not(:first-child) {\n  padding: 0 3px 0 15px;\n}\n.e_breadcrumb .p_breadcrumbItem:not(:first-child)::before {\n  content: '>';\n  position: absolute;\n  left: 3px;\n  color: #999;\n}\n.e_breadcrumb .p_breadcrumb {\n  display: flex;\n}\n.e_breadcrumb .p_showTitle {\n  position: relative;\n  display: flex;\n  align-items: center;\n  padding-left: 5px;\n  border: 1px solid transparent;\n}\n.e_breadcrumb .siblings::after {\n  content: '>';\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 20px;\n  height: 20px;\n  transform: rotateZ(90deg);\n  cursor: pointer;\n  color: #ccc;\n}\n/* 鼠标覆盖 */\n.e_breadcrumb .siblings.active {\n  border: 1px solid #dee2e6;\n}\n.e_breadcrumb .siblings.active::after {\n  transform: rotateZ(-90deg);\n}\n.e_breadcrumb .p_slide {\n  position: absolute;\n  left: 18px;\n  min-width: 100%;\n  padding: 5px;\n  display: none;\n  z-index: 999;\n}\n.e_breadcrumb .p_sibling {\n  display: block;\n  width: 100%;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -23,9 +23,10 @@
   ],
   "prop": {},
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "homePage": "首页"
+    }
   },
   "datasource": "prop",
-  "container": true,
   "dataFields": {}
 }
