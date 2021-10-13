@@ -5,7 +5,7 @@
         {{#datasource._config._dataFilter.fields}}
         <div class="p_kv_wrapper js-kv-wrapper" data-selectMode="{{selectMode}}">
             <div class="p_filter_key js-key">
-                {{name}}
+                {{name}}:
             </div>
             {{!-- 标签式 --}}
             {{#eq displayMode 'tag'}}
@@ -69,25 +69,7 @@
                         </div>
                     </div>
                     {{/eq}}
-                    {{!-- 输入框 指定值 --}}
-                    {{#eq filterType 'value'}}
-                    <div class="p_v_item js-value-item " data-index="{{@index}}" data-valueType="{{valueType}}"
-                        data-value="{{value}}">
-                        <div class="input-value">
-                            <input class="form-control " type="text" value="" />
-                        </div>
-                    </div>
-                    {{/eq}}
-
-                    {{!-- 输入框 指定区间 --}}
-                    {{#eq filterType 'range'}}
-                    <div class="p_v_item js-value-item " data-index="{{@index}}" data-valueType="{{valueType}}"
-                        data-value="{{value}}">
-                        <div class="input-range">
-                            <input class="form-control " type="text" value="" />
-                        </div>
-                    </div>
-                    {{/eq}}
+                   
 
                     {{/values}}
                 </div>
@@ -122,7 +104,8 @@
 
     <input type="hidden" name="_config" value='{{$toJson datasource._config}}'>
     <input type="hidden" name="view" value='{{{view}}}'>
-
-    <input type="hidden" name="i18nJson" value='{{{i18nJson}}}'>
+{{!-- datasource page 数据总条数 --}}
+    <input type="hidden" name="pageParamsJson" value='{{$toJson datasource.page}}'>
+    <input type="hidden" name="i18nJson" value='{{i18nJson}}'>
 
 </div>
