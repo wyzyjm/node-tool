@@ -33,7 +33,7 @@
   },
   "i18n": {
     "zh_CN": {
-      "category": "分类",
+      "category": "分类：",
       "select": "选择",
       "searchPlaceholder": "请输入关键词",
       "xzAll": "全选",
