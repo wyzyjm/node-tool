@@ -19,7 +19,8 @@
 .e_loop .p_filter_key{
     /* min-width: 80px; */
     line-height: 40px;
-    margin-right: 10px;
+		margin-right: 10px;
+		font-weight: bold;
 }
 .e_loop .p_v_item{
     display: inline-block;
@@ -43,8 +44,8 @@
     top: 0;
     padding: 3px;
     font-style: normal;
-    font-size: 10px;
-    margin-top: 2px;
+    font-size: 16px;
+    margin-top: -5px;
     cursor: pointer;
 }
 .e_loop .p_s_option{
