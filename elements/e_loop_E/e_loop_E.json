@@ -35,7 +35,10 @@
   },
   "datasource": "prop",
   "container": true,
-  "dataFields": {},
+  "dataFields": {
+    "dataList": "dataList",
+    "pageConfig": "pageConfig"
+  },
   "scope": true,
   "dataManage": true
 }

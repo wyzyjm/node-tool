@@ -16,21 +16,21 @@
                         {{#if brand}}
                             <!-- 品牌 -->
                             <li class="p_attrItem"> 
-                                <span class="s_summary p_attrName">品牌: </span>
+                                <span class="s_summary p_attrName">{{../i18n.brand}} </span>
                                 <span class="p_attrValue"> {{brand}} </span>
                             </li>
                         {{/if}}
                         {{#if title}}
                             <!-- 名称 -->
                             <li class="p_attrItem">
-                                <span class="s_summary p_attrName">商品名称: </span>
+                                <span class="s_summary p_attrName">{{../i18n.goodstName}} </span>
                                 <span class="p_attrValue"> {{title}} </span>
                             </li>
                         {{/if}}
                         {{#if code}}
                             <!-- 编号 -->
                             <li class="p_attrItem">
-                                <span class="s_summary p_attrName">商品编号: </span>
+                                <span class="s_summary p_attrName">{{../i18n.goodstCode}} </span>
                                 <span class="p_attrValue"> {{code}} </span>
                             </li>
                         {{/if}}
@@ -56,7 +56,7 @@
                     {{#if keywords}}
                         <!-- 关键词 -->
                         <div class="p_infoItem">
-                            <span class="s_summary p_keywordLabel">{{i18n.keyword}}</span>
+                            <span class="s_summary p_keywordLabel">{{../i18n.keyword}}</span>
                             <ul class="p_keywordValue">
                                 {{#keywords}}
                                 <li class="border text-secondary p_keywordItem">{{itemName}}</li>

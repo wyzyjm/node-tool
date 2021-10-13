@@ -3,7 +3,7 @@
   "styleId": "e_form",
   "styleClass": "s_layout",
   "type": "form",
-  "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"cbox-${id}\"></div>\n    {{#eq ${submit}.type 2}}\n    <a class=\"p_submitPage hide\" href=\"{{$transferLink ${submit}.obj2 compId}}\" target=\"{{${submit}.obj2.target}}\"></a>\n    {{/eq}}\n</form>",
+  "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"cbox-${id}\"></div>\n    {{#eq ${submit}.type 2}}\n    <input name=\"jumpPage\" type=\"hidden\" value=\"{{$transferLink ${submit}.obj2 compId}}\"></a>\n    {{/eq}}\n</form>",
   "css": [
     {
       "media": "",
@@ -23,6 +23,8 @@
     }
   ],
   "prop": {
+    "sourceUuid": "",
+    "formId": "",
     "basic": {
       "formInfo": {
         "title": "",
@@ -89,6 +91,8 @@
     "rule": "rule",
     "submit": "submit",
     "async": "async",
-    "notice": "notice"
+    "notice": "notice",
+    "sourceUuid": "sourceUuid",
+    "formId": "formId"
   }
 }

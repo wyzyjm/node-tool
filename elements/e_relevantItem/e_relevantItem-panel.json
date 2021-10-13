@@ -7,6 +7,7 @@
             "type":"prop.type",
             "btnText":"prop.btnText",
             "datasource":"prop.datasource",
+            "ccsource":"prop.ccsource",
             "previewList":"prop.previewList",
             "searchList":"prop.searchList",
             "isHide":"prop.isHide"

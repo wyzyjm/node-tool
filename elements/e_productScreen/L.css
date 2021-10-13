@@ -22,7 +22,17 @@
     justify-content: center;
 }
 .e_productScreen .p_rBox{
-    /* height: 50px; */
+    height: 50px;
+    flex-grow: 1;
+    padding: 10px 20px;
+    padding-right: 10px;
+    min-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.e_productScreen .p_rBox-button{
     flex-grow: 1;
     padding: 10px 20px;
     padding-right: 10px;
@@ -35,9 +45,7 @@
 .e_productScreen .p_bLine .p_rBox{
     padding-bottom: 4px;
 }
-.e_productScreen .p_screenLine .p_rBox{
-    height: 51px;
-}
+
 .e_productScreen .p_imgBox{
     max-width: 714px;
     max-height: 126px;
@@ -56,9 +64,7 @@
     height: 30px;
     overflow: hidden;
 } */
-.e_productScreen .p_brandLine .p_rBox{
-    height: 50px;
-}
+
 .e_productScreen .p_checkedLine:last-of-type .p_valBox{
     height: 31px;
 }

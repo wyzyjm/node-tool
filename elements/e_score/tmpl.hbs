@@ -1,8 +1,7 @@
-<div class="e_score s_form1 form-group" needjs="true">
+<div class="e_score s_form1 form-group" needjs="true" {{#if prop.validate.required.value}}required{{/if}}>
     {{#if prop.showLabel}}
     <label class="p_label">
         <span class="s_label">{{prop.label}}</span>
-        {{#if prop.validate.required.value}}<span class="text-danger p_required">*</span>{{/if}}
     </label>
     {{/if}}
     <div class="clearfix p_input">

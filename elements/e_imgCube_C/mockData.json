@@ -44,28 +44,6 @@
         },
         "isLazy": true,
         "fit": "cover"
-      },
-      {
-        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片5",
-        "href": {
-          "type": "",
-          "value": "",
-          "target": ""
-        },
-        "isLazy": true,
-        "fit": "cover"
-      },
-      {
-        "imageUrl": "https://pre-omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片6",
-        "href": {
-          "type": "",
-          "value": "",
-          "target": ""
-        },
-        "isLazy": true,
-        "fit": "cover"
       }
     ],
     "space": 5

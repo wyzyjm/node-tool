@@ -9,7 +9,6 @@
     "state":"normal",
     "validate":{
         "required":{
-            "state":true,
             "value":true,
             "msg":"内容不能为空"
         },

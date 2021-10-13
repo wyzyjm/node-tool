@@ -2,11 +2,11 @@
   "cname": "可信认证",
   "styleId": "e_credible",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"p-container\">\n        <img class=\"p_credible_img\" src=\"https://rr.knet.cn/static/images/newLogo/star4.png\" alt=\"可信网站\" />\n    </div>\n    <script src=\"https://kxlogo.knet.cn/seallogo.dll?sn=e161220140700658139imb000000&amp;size=0&amp;ct=sel\"> </script>\n</div>\n\n",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div class=\"p-container\">\r\n        <img class=\"p_credible_img\" src=\"https://rr.knet.cn/static/images/newLogo/star4.png\" alt=\"可信网站\" />\r\n    </div>\r\n    <script src=\"https://kxlogo.knet.cn/seallogo.dll?sn=e161220140700658139imb000000&amp;size=0&amp;ct=sel\"> </script>\r\n</div>\r\n\r\n",
   "css": [
     {
       "media": "",
-      "cssText": ".e_credible{\n    width: 140px;\n\n}\n.e_credible .p-container {\n    margin-bottom: 10px;\n}\n\n.e_credible .p_credible_img {\n    width: 100%;\n    height: 100%;\n}\n   "
+      "cssText": ".e_credible{\r\n    width: 140px;\r\n\r\n}\r\n.e_credible .p-container {\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.e_credible .p_credible_img {\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n   "
     },
     {
       "media": "screen and (max-width:768px)",

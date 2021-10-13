@@ -4,7 +4,7 @@
   "styleClass": "s_form1",
   "type": "form",
   "putSubForm": true,
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n        {{#if ${validate}.required.value}}<span class=\"text-danger p_required\">*</span>{{/if}}\n    </label>\n    {{/if}}\n    <div class=\"j_date form-control s_form-control clearfix p_range\">\n        <input type=\"text\" name=\"${elemId}-start\" {{#eq ${showPlaceholder} 'word'}}placeholder=\"{{${startPlaceholder}}}\"{{/eq}} class=\"p_start s_input\">\n        <span class=\"p_fenge\">—</span>\n        <input type=\"text\" name=\"${elemId}-end\" {{#eq ${showPlaceholder} 'word'}}placeholder=\"{{${endPlaceholder}}}\"{{/eq}} class=\"p_end s_input\">\n    </div>\n    <div class=\"invalid-feedback\"></div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\" {{#if ${validate}.required.value}}required{{/if}}>\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n    </label>\n    {{/if}}\n    <div class=\"j_date form-control s_form-control clearfix p_range\">\n        <input type=\"text\" name=\"${elemId}-start\" {{#eq ${showPlaceholder} 'word'}}placeholder=\"{{${startPlaceholder}}}\"{{/eq}} class=\"p_start s_input\">\n        <span class=\"p_fenge\">—</span>\n        <input type=\"text\" name=\"${elemId}-end\" {{#eq ${showPlaceholder} 'word'}}placeholder=\"{{${endPlaceholder}}}\"{{/eq}} class=\"p_end s_input\">\n    </div>\n    <div class=\"invalid-feedback\"></div>\n</div>",
   "css": [
     {
       "media": "",

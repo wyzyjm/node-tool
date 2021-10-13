@@ -21,6 +21,9 @@
 .e_relevantItem .p_screen{
     margin-bottom: 20px;
 }
+.e_relevantItem .p_screen .col{
+    flex:0 0 50%
+}
 .e_relevantItem .p_modelDialog{
     max-width: 960px;
 }
@@ -92,4 +95,17 @@
     width: 40px;
     display: block;
     color: #007bff;
+}
+.e_relevantItem .p_clabel{
+    width: 70px;
+    text-align: right;
+    float: left;
+    line-height: 36px;
+}
+.e_relevantItem .p_ccate{
+    width: calc(100% - 80px);
+    float: left;
+}
+.e_relevantItem .p_treeSelect{
+    width: 200px;
 }

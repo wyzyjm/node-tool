@@ -1,0 +1,239 @@
+{
+  "cname": "底部导航",
+  "styleId": "e_bottomNav",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n        <!-- 导航内容 开始 -->\r\n        <ul class=\"p_level1Box\">\r\n            {{#each ${dataList}}}\r\n            <li class=\"border-bottom  pt-2  pb-2 p_level1Item\">\r\n                <!-- 名称 -->\r\n                <p class=\"text-dark p_menuItem\">\r\n                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\r\n                        <span>{{navName}}</span>\r\n                    </a>\r\n                    {{#if children}}{{{../${arrow}}}}{{/if}}\r\n                </p>\r\n                <!-- 子集 -->\r\n                {{#if this.children}}\r\n                <ul class=\"mt-2 p_level2Box\">\r\n                    {{#each this.children}}\r\n                    <li class=\"p_level2Item\">\r\n                        <!-- 名称 2 -->\r\n                        <p class=\"text-secondary p_menuItem\">\r\n                            <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\r\n                                <span>{{navName}}</span>\r\n                            </a>\r\n                             {{#if children}}{{{../../${arrow}}}}{{/if}}\r\n                        </p>\r\n                        <!-- 子集 2 -->\r\n                        {{#if this.children}}\r\n                        <ul class=\"p_level3Box\">\r\n                            {{#each this.children}}\r\n                            <li class=\"p_level3Item\">\r\n                                <!-- 名称 3 -->\r\n                                <p class=\"text-secondary p_menuItem\">\r\n                                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\r\n                                        <span>{{navName}}</span>\r\n                                    </a>\r\n                                </p>\r\n                            </li>\r\n                            {{/each}}\r\n                        </ul>\r\n                        {{/if}}\r\n                    </li>\r\n                    {{/each}}\r\n                </ul>\r\n                {{/if}}\r\n            </li>\r\n            {{/each}}\r\n        </ul>\r\n        <!-- 导航内容 结束 -->\r\n    {{^}}\r\n        {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>\r\n\r\n",
+  "css": [
+    {
+      "media": "",
+      "cssText": "\n.e_bottomNav .p_level2Box, \n.e_bottomNav .p_level3Box{\n    height: auto;\n}\n\n.e_bottomNav .p_openIcon, \n.e_bottomNav .p_closeIcon{\n    width: 36px;\n    height: 36px;\n}\n\n.e_bottomNav span {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-line-clamp: 2;\n    -webkit-box-orient: vertical;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ".e_bottomNav .p_menuItem{ \r\n    position: relative;\r\n}\r\n.e_bottomNav .p_level1Box{\r\n    padding: 0 20px;\r\n    height: calc(100vh - 57px);\r\n}\r\n.e_bottomNav .p_level1Box ul {\r\n    display: none;\r\n}\r\n.e_bottomNav .p_level2Box, \r\n.e_bottomNav .p_level3Box{\r\n    padding-left: 10px;\r\n}\r\n.e_bottomNav .p_jtIcon{\r\n    position: absolute;\r\n    right: 0;\r\n    top: 0;\r\n    z-index: 999;\r\n    margin-top: 3px;\r\n    transition: 0.5s;\r\n}\r\n.e_bottomNav .p_jtIcon.active {\r\n    transform: rotateZ(90deg)\r\n}"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ".e_bottomNav .p_level1Box{\r\n    display: flex;\r\n}\r\n.e_bottomNav .p_level1Item{\r\n    min-width: 100px;\r\n    max-width: 20%;\r\n    width: auto;\r\n    padding: 0 10px;\r\n    flex-grow: 1;\r\n}\r\n.e_bottomNav p:hover{\r\n    color: #409EFF;\r\n}\r\n/* 移动端箭头隐藏 */\r\n.e_bottomNav .p_jtIcon{\r\n    display: none;\r\n}\r\n"
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {
+        "img": "",
+        "navId": "1818916",
+        "navName": "网站首页网站首页网站首页网站网站首页网站首页网站首页网站",
+        "sort": 1818916,
+        "parentId": "0",
+        "url": "/",
+        "target": "blank"
+      },
+      {
+        "img": "",
+        "navId": "1818917",
+        "children": [
+          {
+            "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/82f320ab-9e75-4eb7-9717-08cc20ebb289.jpg",
+            "navId": "1818922",
+            "children": [
+              {
+                "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/9d1476ac-f880-4bc2-8930-1e43d9f84b28.jpg",
+                "navId": "1818926",
+                "children": [
+                  {
+                    "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/5439ba8c-bedb-4b7e-8ff6-c34451778d30.jpg",
+                    "navId": "1818928",
+                    "navName": "内容管理",
+                    "sort": 1818928,
+                    "parentId": "1818926",
+                    "url": "/",
+                    "target": "blank"
+                  }
+                ],
+                "navName": "三级内容",
+                "sort": 1818926,
+                "parentId": "1818922",
+                "url": "/",
+                "target": "blank"
+              },
+              {
+                "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/9d1476ac-f880-4bc2-8930-1e43d9f84b28.jpg",
+                "navId": "1818926",
+                "children": [
+                  {
+                    "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/5439ba8c-bedb-4b7e-8ff6-c34451778d30.jpg",
+                    "navId": "1818928",
+                    "navName": "内容管理",
+                    "sort": 1818928,
+                    "parentId": "1818926",
+                    "url": "/",
+                    "target": "blank"
+                  }
+                ],
+                "navName": "三级内容比较长",
+                "sort": 1818926,
+                "parentId": "1818922",
+                "url": "/",
+                "target": "blank"
+              },
+              {
+                "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/9d1476ac-f880-4bc2-8930-1e43d9f84b28.jpg",
+                "navId": "1818926",
+                "children": [
+                  {
+                    "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/5439ba8c-bedb-4b7e-8ff6-c34451778d30.jpg",
+                    "navId": "1818928",
+                    "navName": "内容管理",
+                    "sort": 1818928,
+                    "parentId": "1818926",
+                    "url": "/",
+                    "target": "blank"
+                  }
+                ],
+                "navName": "三级内容特别发的发的说法是的发送到发的说法长",
+                "sort": 1818926,
+                "parentId": "1818922",
+                "url": "/",
+                "target": "blank"
+              }
+            ],
+            "navName": "公司介绍",
+            "sort": 1818922,
+            "parentId": "1818917",
+            "url": "/",
+            "target": "blank"
+          },
+          {
+            "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/5439ba8c-bedb-4b7e-8ff6-c34451778d30.jpg",
+            "navId": "1818923",
+            "navName": "董事长致辞",
+            "sort": 1818923,
+            "parentId": "1818917",
+            "url": "/",
+            "target": "blank"
+          },
+          {
+            "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/5439ba8c-bedb-4b7e-8ff6-c34451778d30.jpg",
+            "navId": "1818923",
+            "navName": "董事长致辞",
+            "sort": 1818923,
+            "parentId": "1818917",
+            "url": "/",
+            "target": "blank"
+          },
+          {
+            "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/5439ba8c-bedb-4b7e-8ff6-c34451778d30.jpg",
+            "navId": "1818923",
+            "navName": "董事长致辞",
+            "sort": 1818923,
+            "parentId": "1818917",
+            "url": "/",
+            "target": "blank"
+          }
+        ],
+        "navName": "关于我们",
+        "sort": 1818917,
+        "parentId": "0",
+        "url": "/",
+        "target": "blank"
+      },
+      {
+        "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/c371279c-a631-4cd0-8ec8-d287918a149e.jpg",
+        "navId": "1818918",
+        "navName": "产品列表",
+        "sort": 1818918,
+        "parentId": "0",
+        "url": "/",
+        "children": [
+          {
+            "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/5439ba8c-bedb-4b7e-8ff6-c34451778d30.jpg",
+            "navId": "1818928",
+            "navName": "内容管理",
+            "sort": 1818928,
+            "parentId": "1818926",
+            "url": "/",
+            "target": "blank"
+          },
+          {
+            "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/5439ba8c-bedb-4b7e-8ff6-c34451778d30.jpg",
+            "navId": "1818928",
+            "navName": "内容管理",
+            "sort": 1818928,
+            "parentId": "1818926",
+            "url": "/",
+            "target": "blank"
+          },
+          {
+            "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/5439ba8c-bedb-4b7e-8ff6-c34451778d30.jpg",
+            "navId": "1818928",
+            "navName": "内容管理",
+            "sort": 1818928,
+            "parentId": "1818926",
+            "url": "/",
+            "target": "blank"
+          }
+        ],
+        "target": "blank"
+      },
+      {
+        "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/0054907d-1a14-4969-ac12-430b96347775.jpg",
+        "navId": "1818919",
+        "children": [
+          {
+            "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/4bddcd56-35ec-4b9a-8173-7e903bde54d8.jpg",
+            "navId": "1818930",
+            "navName": "FAQ",
+            "sort": 1818930,
+            "parentId": "1818919",
+            "url": "http://www.baidu.com",
+            "target": "blank"
+          }
+        ],
+        "navName": "常见问题",
+        "sort": 1818919,
+        "parentId": "0",
+        "url": "/",
+        "target": "blank"
+      },
+      {
+        "img": "portal-saas/demo_a0f0c15013fa42c5a035c530f75506f9/cms/image/863b48bd-3797-4013-aedf-fdcceb86731c.png",
+        "navId": "1818920",
+        "navName": "联系我们",
+        "sort": 1818920,
+        "parentId": "0",
+        "url": "/",
+        "target": "blank"
+      },
+      {
+        "img": "",
+        "navId": "1818921",
+        "navName": "新闻资讯",
+        "sort": 1818921,
+        "parentId": "0",
+        "url": "/",
+        "target": "blank"
+      }
+    ],
+    "arrow": "<svg t=\"1625735163067\" class=\"icon p_jtIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1486\" width=\"200\" height=\"200\"><path d=\"M661.16183428 486.94732961L415.99871022 219.24359155c-13.37500289-14.59708438-35.98351032-15.54759219-50.51270128-2.24048272-14.59708438 13.37500289-15.54759219 35.98351032-2.24048272 50.51270127l223.09776396 243.60157549-222.89408371 244.28050967c-13.30710947 14.59708438-12.28870823 37.20559179 2.30837613 50.51270125 14.59708438 13.30710947 37.20559179 12.28870823 50.51270128-2.30837613l244.75576356-268.11109855c0.47525392-0.54314733 1.01840124-1.15418807 1.42576173-1.6973354 11.13452018-13.51078973 10.93083994-33.53934734-1.2899749-46.84645682z\" p-id=\"1487\"></path></svg>",
+    "menu": "<svg t=\"1625644785779\" class=\"icon p_openIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"5036\" width=\"200\" height=\"200\"><path d=\"M793.93115234 342.36010742H230.21716308c-18.58886719 0-33.65112305-14.75738526-33.65112304-32.95898437s15.0704956-32.95898438 33.65112305-32.95898438h563.71398925c18.58886719 0 33.65112305 14.75738526 33.65112305 32.95898438 0 18.20983887-15.0704956 32.95898438-33.65112305 32.95898437zM793.93115234 732.80047607H230.21716308c-18.58886719 0-33.65112305-14.75738526-33.65112304-32.95898437s15.0704956-32.95898438 33.65112305-32.95898438h563.71398925c18.58886719 0 33.65112305 14.75738526 33.65112305 32.95898438s-15.0704956 32.95898438-33.65112305 32.95898437zM793.93115234 537.99639893H230.21716308c-18.58886719 0-33.65112305-14.75738526-33.65112304-32.95898438s15.0704956-32.95898438 33.65112305-32.95898437h563.71398925c18.58886719 0 33.65112305 14.75738526 33.65112305 32.95898437s-15.0704956 32.95898438-33.65112305 32.95898438z\" p-id=\"5037\"></path></svg>",
+    "close": "<svg t=\"1625645389126\" class=\"icon p_closeIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"5167\" width=\"200\" height=\"200\"><path d=\"M798.72 225.73511147a44.78293333 44.78293333 0 0 0-31.85777813-13.19822294c-11.83288853 0-23.66577813 5.00622187-31.85777707 13.19822294L512 447.82933333 289.45066667 225.28a44.78293333 44.78293333 0 0 0-31.85777814-13.19822187c-11.83288853 0-23.66577813 5.00622187-32.31288853 13.19822187a45.32906667 45.32906667 0 0 0 0 64.17066667L447.82933333 512 225.28 734.54933333a45.32906667 45.32906667 0 1 0 64.17066667 64.17066667L512 576.17066667l222.54933333 222.54933333a45.32906667 45.32906667 0 1 0 64.17066667-64.17066667L576.17066667 512l222.54933333-222.54933333c17.29422187-17.29422187 17.29422187-46.42133333 0-63.7155552z\" p-id=\"5168\"></path></svg>",
+    "showArrow": true
+  },
+  "i18n": {
+    "zh_CN": {
+      "noData": "暂无数据"
+    }
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "dataList": "dataList",
+    "arrow": "arrow",
+    "menu": "menu",
+    "close": "close",
+    "showArrow": "showArrow"
+  }
+}

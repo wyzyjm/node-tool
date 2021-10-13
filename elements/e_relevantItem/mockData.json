@@ -3,9 +3,17 @@
         "type":2,
         "btnText":"添加内容",
         "datasource":{},
+        "ccsource":{},
         "previewList":[],
         "searchList":[],
         "isHide":false
     },
-    "i18n": {}
+    "i18n": {
+        "category":"分类",
+        "select":"选择",
+        "searchPlaceholder":"请输入关键词",
+        "xzAll":"全选",
+        "cancel":"取消",
+        "confirm":"确认"
+    }
 }

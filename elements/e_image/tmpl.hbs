@@ -1,4 +1,5 @@
 <div class="e_image s_img">
+    {{#if prop.imgList}}
     {{#each prop.imgList}}
         {{#eq @index 0}}
         {{#if prop.href.value}}
@@ -10,4 +11,7 @@
         {{/if}}
         {{/eq}}
     {{/each}}
+    {{^}}
+    {{{nNoDataPrompt i18n.noData}}}
+    {{/if}}
 </div>

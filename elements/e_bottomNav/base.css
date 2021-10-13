@@ -1,0 +1,19 @@
+
+.e_bottomNav .p_level2Box, 
+.e_bottomNav .p_level3Box{
+    height: auto;
+}
+
+.e_bottomNav .p_openIcon, 
+.e_bottomNav .p_closeIcon{
+    width: 36px;
+    height: 36px;
+}
+
+.e_bottomNav span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
