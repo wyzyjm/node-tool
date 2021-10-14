@@ -5,15 +5,11 @@
             {{#each prop.bannerLists}}
             <div class="swiper-slide" >
                 {{#eq type 1}}
-                    {{#if href.value}}
-                    <a href="{{$transferLink href compId}}" target="{{href.target}}">
-                    {{/if}}
                     <div class="p_img">
+                        <a href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}}>
                         {{{nLazyImage imgUrl title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}
+                        </a>
                     </div>
-                    {{#if href.value}}
-                    </a>
-                    {{/if}}
                 {{/eq}}
                 {{#eq type 2}}
                     <div class="p_video">
@@ -28,7 +24,11 @@
                 <div class="p_info {{#eq type 2}}p_videoInfo{{/eq}}">
                     <div>
                         {{#if title}}
-                        <h1 class="text-white p_btitle">{{title}}</h1>
+                        <h1 class="text-white p_btitle">
+                            <a href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}}>
+                            {{title}}
+                            </a>
+                        </h1>
                         {{/if}}
                         {{#if subTitle}}
                         <h6 class="text-white bg-dark p_subtitle">{{subTitle}}</h6>
