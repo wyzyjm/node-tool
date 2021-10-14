@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_text{\n\n}\n"
+      "cssText": ".e_text{\n    line-height: normal;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
