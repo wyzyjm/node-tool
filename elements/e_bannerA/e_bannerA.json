@@ -87,7 +87,6 @@
   },
   "datasource": "prop",
   "dataFields": {
-    "bannerLists": "bannerLists",
-    "settings": "settings"
+    "bannerLists": "bannerLists"
   }
 }

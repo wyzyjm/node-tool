@@ -31,7 +31,7 @@
                         </h1>
                         {{/if}}
                         {{#if subTitle}}
-                        <h6 class="text-white bg-dark p_subtitle">{{subTitle}}</h6>
+                        <h6 class="text-white p_subtitle">{{subTitle}}</h6>
                         {{/if}}
                         {{#if summary}}
                         <p class="text-white p_summary">{{summary}}</p>
@@ -57,7 +57,7 @@
                 {{/eq}}
                 {{#eq type 2}}
                     <div class="p_img">
-                        {{{nLazyImage video.imgUrl title 'false'}}}
+                        {{{nLazyImage video.coverImgUrl title 'false'}}}
                     </div>
                 {{/eq}}
             </div>
