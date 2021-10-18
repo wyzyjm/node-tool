@@ -9,7 +9,10 @@
                 <li class="itemValue " data-id="{{specId}}"> 
                     {{#if ../imageFlag}}
                         <!--图片类型-->
-                        {{{lazyImage img "class='specValueI p_size' title='{{name}}' alt='{{name}}' " 'true'}}}
+                        <div class="specValueI p_size">
+                            {{{nLazyImage img  name  'true'}}}
+                        </div>
+                        
                     {{^}}
                         <!--文字类型-->
                         <span class="specValueT p_size">{{name}}</span>
