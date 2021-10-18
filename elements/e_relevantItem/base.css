@@ -100,8 +100,12 @@
     width: 70px;
     text-align: right;
     float: left;
+    line-height: 36px;
 }
 .e_relevantItem .p_ccate{
     width: calc(100% - 80px);
     float: left;
+}
+.e_relevantItem .p_treeSelect{
+    width: 200px;
 }

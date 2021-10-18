@@ -1,5 +1,7 @@
 {
     "prop": {
+        "sourceUuid":"",
+        "formId":"",
         "basic":{  
             "formInfo":{  
                 "title":"", 

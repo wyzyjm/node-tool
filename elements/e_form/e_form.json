@@ -23,6 +23,8 @@
     }
   ],
   "prop": {
+    "sourceUuid": "",
+    "formId": "",
     "basic": {
       "formInfo": {
         "title": "",
@@ -89,6 +91,8 @@
     "rule": "rule",
     "submit": "submit",
     "async": "async",
-    "notice": "notice"
+    "notice": "notice",
+    "sourceUuid": "sourceUuid",
+    "formId": "formId"
   }
 }
