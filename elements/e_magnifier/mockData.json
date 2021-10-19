@@ -6,8 +6,8 @@
           "title": "视频标题",
           "type": "video",
           "summary": "视频简介",
-          "thumbnailUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.jpg",
-          "url": "https://pre-omo-oss-vedio.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
+          "thumbnailUrl": "https://omo-oss-image.thefastimg.com/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.jpg",
+          "url": "https://omo-oss-video.thefastvideo.com/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
           "duration": 4,
           "size": 3214
       },
@@ -37,14 +37,14 @@
           "id": 1231312,
           "title": "图片标题",
           "type": "image",
-          "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
+          "url": "https://omo-oss-image.thefastimg.com/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
           "iscover": true
       },
       {
           "id": 1231312,
           "title": "图片标题",
           "type": "image",
-          "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
+          "url": "https://omo-oss-image.thefastimg.com/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
           "iscover": false
       },
       {
