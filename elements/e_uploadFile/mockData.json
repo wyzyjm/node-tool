@@ -3,11 +3,11 @@
     "showLabel":true,
     "label":"文件型",
     "showPlaceholder":true,
-    "placeholder":"请上传2M以内的ISO格式图片",
-    "limit":4,
-    "size":5,
+    "placeholder":"请上传RAR或ZIP格式的文件",
+    "limit":"",
+    "size":"",
     "unit":"m",
-    "accept":[".iso",".rar",".zip"],
+    "accept":[".rar",".zip"],
     "validate":{
         "required":{
             "state":true,
