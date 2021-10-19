@@ -4,7 +4,7 @@
              {{#prop.images}}
                 <div class="p_listimg {{#eq @index 0}}active{{/eq}}">
                     <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}" class="p_img_a"  >
-                     {{{lazyImage url 'class="p_scroll_item_img"  title="{{title}}" alt="{{title}}"' 'true'}}}
+                     {{{nLazyImage url title  'true'}}}
                      </a>
                 </div>
             {{/prop.images}}
@@ -17,7 +17,7 @@
                 {{#prop.images}}
                     <li class="p_scroll_item  {{#eq @index 0}}curr{{/eq}}" >
                         <a href="JavaScript:;" class="p_scroll_item_a " >
-                             {{{lazyImage url 'class="p_scroll_item_img"  title="{{title}}" alt="{{title}}"' 'true'}}}
+                             {{{nLazyImage url title 'true'}}}
                         </a>
                     </li>
                 {{/prop.images}}

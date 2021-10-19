@@ -1,41 +1,40 @@
-.e_specification{
-
+.e_specification {
 }
-.e_specification img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.e_specification img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.e_specification .p_item{
-    padding-bottom: 10px;
-    overflow: hidden;
+.e_specification .p_item {
+  padding-bottom: 10px;
+  overflow: hidden;
 }
 .e_specification .p_specName {
-   float: left;
-   height: 30px;
-   line-height: 30px;
-   margin-right: 10px;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
 }
 .e_specification .p_valueUl {
-    margin-left: 40px;
-    overflow: hidden;
+  margin-left: 40px;
+  overflow: hidden;
 }
 .e_specification .itemValue {
-    float: left;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    overflow: hidden;
-    border: 1px solid #ccc;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  border: 1px solid #ccc;
 }
-.e_specification .p_active  {
-    border-color: var(--primary);
+.e_specification .p_active {
+  border-color: var(--primary);
 }
 .e_specification .specValueT {
-    display: block;
-    padding: 3px 16px;
-    text-align: center;
+  display: block;
+  padding: 3px 16px;
+  text-align: center;
 }
 .e_specification .specValueI {
-    width: 46px;
-    height: 46px;
+  width: 46px;
+  height: 46px;
 }

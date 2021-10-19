@@ -10,10 +10,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 20px;
 }
 .e_register .no_border{
     border: none;
+    background: none;
 }
 .e_register .p_label{
     width: 21%;
@@ -50,6 +52,8 @@
 }
 .e_register .invalid-feedback{
     padding-left: 23%;
+    position: absolute;
+    bottom: 0;
 }
 .e_register .p_codeInput{
     width: 60%;
