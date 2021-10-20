@@ -2,7 +2,7 @@
   "cname": "轮播图-产品详情",
   "styleId": "e_magnifier",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"magnifier\" id=\"magnifierWrapper\">\n        <div class=\"magnifier-container\">\n            <!--图片容器-->\n            <div class=\"images-cover\"></div>\n            <!--右下角的加号-->\n            <div class=\"image-bigger\">\n                <div class=\"add-icon\">+</div>\n            </div>\n            {{#eq ${dataList}.0.type 'video' }}\n            <!--视频按钮-->\n            <div class=\"image-big-video\"></div>\n            {{/eq}}\n            <!--跟随鼠标移动的盒子-->\n            <div class=\"move-view\"></div>\n        </div>\n        <div class=\"magnifier-assembly\">\n            <!--按钮组-->\n            <div class=\"magnifier-btn\">\n                <span class=\"magnifier-btn-left\"></span>\n                <span class=\"magnifier-btn-right\"></span>\n            </div>\n            <!--缩略图-->\n            <div class=\"magnifier-line js-magnifier-line\">\n                <ul class=\"clearfix animation03 p_thumbnail_box\" data-imglist=\"[{{#${dataList}}} {{#eq type \"image\"}} {url:{{url}},name:{{title}} }  {{/eq}} {{/${dataList}}}]\">\n                    {{#${dataList}}}\n                        {{#eq type \"video\"}}\n                        <!--视频-->\n                        <li class=\"video-img\">\n                            <div class=\"small-img video-icon\">\n                                 {{{lazyImage thumbnailUrl \"title='{{title}}' alt='{{title}}' data-url='{{thumbnailUrl}}' data-video='{{url}}'\" \"true\"}}}\n                            </div>\n                        </li>\n                        {{/eq}}\n\n                        {{#eq type \"360\"}}\n                        <!--360-->\n                        <li class=\"fullview-img\" data-imglist=\"{{imgUrlList}}\">\n                            <div class=\"small-img rotate-icon\">\n                                 <!-- 360显示第一张 -->\n                                 {{{lazyImage imgUrlList.[0] \"title='{{title}}' alt='{{title}}' data-url='{{imgUrlList.[0]}}'\" \"true\"}}}\n                            </div>\n                        </li>\n                        {{/eq}}\n\n                        {{#eq type \"image\"}}\n                        <!--静态图片-->\n                        <li class=\"static-img\">\n                            <div class=\"small-img\">\n                                {{{lazyImage url \"title='{{title}}' alt='{{title}}' data-url='{{url}}' \" \"true\"}}}\n                            </div>\n                        </li>\n                        {{/eq}}\n                    {{/${dataList}}}\n                </ul>\n            </div>\n        </div>\n        <!--经过放大的图片显示容器-->\n        <div class=\"magnifier-view\"></div>\n    </div>\n  \n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"magnifier\" id=\"magnifierWrapper\">\n        <div class=\"magnifier-container\">\n            <!--图片容器-->\n            <div class=\"images-cover\"></div>\n            <!--右下角的加号-->\n            <div class=\"image-bigger\">\n                <div class=\"add-icon\">+</div>\n            </div>\n            {{#eq ${dataList}.0.type 'video' }}\n            <!--视频按钮-->\n            <div class=\"image-big-video\"></div>\n            {{/eq}}\n            <!--跟随鼠标移动的盒子-->\n            <div class=\"move-view\"></div>\n        </div>\n        <div class=\"magnifier-assembly\">\n            <!--按钮组-->\n            <div class=\"magnifier-btn\">\n                <span class=\"magnifier-btn-left\"></span>\n                <span class=\"magnifier-btn-right\"></span>\n            </div>\n            <!--缩略图-->\n            <div class=\"magnifier-line js-magnifier-line\">\n                <ul class=\"clearfix animation03 p_thumbnail_box\" data-imglist=\"[{{#${dataList}}} {{#eq type \"image\"}} {url:{{url}},name:{{title}} }  {{/eq}} {{/${dataList}}}]\">\n                    {{#${dataList}}}\n                        {{#eq type \"video\"}}\n                        <!--视频-->\n                        <li class=\"video-img\">\n                            <div class=\"small-img video-icon\" data-url='{{thumbnailUrl}}' data-video='{{url}}'>\n                                 {{{nLazyImage thumbnailUrl title \"true\"}}}\n                            </div>\n                        </li>\n                        {{/eq}}\n\n                        {{#eq type \"360\"}}\n                        <!--360-->\n                        <li class=\"fullview-img\" data-imglist=\"{{imgUrlList}}\">\n                            <div class=\"small-img rotate-icon\" data-url=\"{{imgUrlList.[0]}}\">\n                                 <!-- 360显示第一张 -->\n                                 {{{nLazyImage imgUrlList.[0] title \"true\"}}}\n                            </div>\n                        </li>\n                        {{/eq}}\n\n                        {{#eq type \"image\"}}\n                        <!--静态图片-->\n                        <li class=\"static-img\">\n                            <div class=\"small-img\" data-url=\"{{url}}\">\n                                {{{nLazyImage url title \"true\"}}}\n                            </div>\n                        </li>\n                        {{/eq}}\n                    {{/${dataList}}}\n                </ul>\n            </div>\n        </div>\n        <!--经过放大的图片显示容器-->\n        <div class=\"magnifier-view\"></div>\n    </div>\n  \n</div>",
   "css": [
     {
       "media": "",
@@ -28,8 +28,8 @@
         "title": "视频标题",
         "type": "video",
         "summary": "视频简介",
-        "thumbnailUrl": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.jpg",
-        "url": "https://pre-omo-oss-vedio.site.cn/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
+        "thumbnailUrl": "https://omo-oss-image.thefastimg.com/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.jpg",
+        "url": "https://omo-oss-video.thefastvideo.com/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
         "duration": 4,
         "size": 3214
       },
@@ -59,14 +59,14 @@
         "id": 1231312,
         "title": "图片标题",
         "type": "image",
-        "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
+        "url": "https://omo-oss-image.thefastimg.com/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
         "iscover": true
       },
       {
         "id": 1231312,
         "title": "图片标题",
         "type": "image",
-        "url": "https://pre-omo-oss-image.site.cn/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
+        "url": "https://omo-oss-image.thefastimg.com/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
         "iscover": false
       },
       {

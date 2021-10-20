@@ -4,10 +4,10 @@
         {{{prop.menu}}}
         {{{prop.close}}}
     </p>
-    <ul class="bg-white p_navBox1">
+    <ul class="p_navBox1">
         {{#each prop.dataList}}
         <li class="border-bottom p_navItem1">
-            <p>
+            <p class="p_navCon">
                 <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
                     <span>{{navName}}</span>
                     {{#if children}}{{{../prop.arrow}}}{{/if}}
