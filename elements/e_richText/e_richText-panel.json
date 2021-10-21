@@ -1,9 +1,8 @@
 {
     "panelConfig": [
         {
-            "compName": "setting-text",
+            "compName": "setting-richText",
             "bind-text": "prop.richtext",
-            "bind-href": "prop.href",
             "title": "富文本"
         }
     ]
