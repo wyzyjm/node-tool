@@ -2,11 +2,11 @@
   "cname": "备案号",
   "styleId": "e_provider",
   "styleClass": "s_title",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n   <div class=\"p_provider\">\r\n       备案号：ICP备**************_1号\r\n   </div>\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n   <div class=\"p_provider\">\n       {{${i18n.recordName}}}\n   </div>\n   <input type=\"hidden\" name=\"i18nJson\" value='{{{i18nJson}}}'>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_provider{\r\n\r\n}\r\n.e_provider .p_provider{\r\n    text-align: center;\r\n}\r\n.e_provider span{\r\n    padding: 0 6px;\r\n}"
+      "cssText": ".e_provider{\n\n}\n.e_provider .p_provider{\n    text-align: center;\n}\n.e_provider span{\n    padding: 0 6px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -23,9 +23,9 @@
   ],
   "prop": {},
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "recordName": "备案号:ICP备**************_1号"
+    }
   },
-  "datasource": "prop",
-  "container": true,
-  "dataFields": {}
+  "datasource": "prop"
 }

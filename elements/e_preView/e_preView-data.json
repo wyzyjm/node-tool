@@ -28,7 +28,7 @@
     {
       "name": "images",
       "cname": "预览商品",
-      "type": "array[images]"
+      "type": "array[img]"
     }
   ]
 }
