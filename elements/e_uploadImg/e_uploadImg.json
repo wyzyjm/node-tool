@@ -26,17 +26,12 @@
     "showLabel": true,
     "label": "图片型",
     "showPlaceholder": true,
-    "placeholder": "请上传2M以内的jpg格式图片",
-    "limit": 3,
-    "size": 5,
+    "placeholder": "请上传5M以内的jpg格式图片",
+    "limit": "",
+    "size": "5",
     "unit": "m",
     "accept": [
-      "jpg",
-      "png",
-      "bmp",
-      "gif",
-      "webp",
-      "tiff"
+      "jpg"
     ],
     "validate": {
       "required": {

@@ -38,6 +38,10 @@
     float: right;
     width: 260px;
 }
+.e_relevantItem .p_list{
+    overflow: auto;
+    max-height: 800px;
+}
 .e_relevantItem .p_listImg{
     width: 30px;
     height: 30px;
