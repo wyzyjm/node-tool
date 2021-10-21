@@ -21,7 +21,7 @@
                             <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
                                 <span>{{navName}}</span>
                             </a>
-                             {{#if children}}{{{../../prop.arrow}}}{{/if}}
+                             {{#if this.children}}{{{../../prop.arrow}}}{{/if}}
                         </p>
                         <!-- 子集 2 -->
                         {{#if this.children}}
