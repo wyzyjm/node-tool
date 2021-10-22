@@ -52,6 +52,7 @@
     "hidden": "隐藏",
     "delete": "删除",
     "noncontrastingDescription": "您还可以继续添加",
-    "tip": "栏已满，您可以删除不需要的栏内商品再继续添加哦！"
+    "tip": "栏已满，您可以删除不需要的栏内商品再继续添加哦！",
+    "designtip": "对比浮动窗"
   }
 }
