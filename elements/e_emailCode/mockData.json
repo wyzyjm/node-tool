@@ -7,5 +7,7 @@
     "codeNeed":true,
     "focus":true
   },
-  "i18n": {}
+  "i18n": {
+      "send":"发送邮件验证码"
+  }
 }
