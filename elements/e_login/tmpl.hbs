@@ -4,90 +4,91 @@
             {{i18n.titlePassword}}
         </label>
         <div class="p_input">
-            <p class="p_error">账号与密码不匹配，请重新输入</p>
+            <p class="p_error">{{i18n.Accountandpasswordnotmatch}}</p>
             <ul>
                 <li>
-                     <input type="text" class="form-control p_user_name" placeholder="{{prop.placeholder}}" data-val="0">
-                     <p class="p_p_tip">请输入账户名</p>
+                     <input type="text" class="form-control p_user_name" placeholder="{{i18n.placeholderuser}}" data-val="0">
+                     <p class="p_p_tip">{{i18n.tipUsername}}</p>
                 </li>
             </ul>
              <ul>
                 <li>
-                     <input type="password" class="form-control p_user_passwrod" placeholder="{{prop.placeholderPassword}}" data-val="0"> 
-                     <p class="p_p_tip">请输入密码</p>
+                     <input type="password" class="form-control p_user_passwrod" placeholder="{{i18n.placeholderPassword}}" data-val="0"> 
+                     <p class="p_p_tip">{{i18n.tipPassword}}</p>
                 </li>
             </ul>
-            <p class="p_lable_text"><span class="p_code_login">验证码登录</span><span class="p_goto_passwrod">忘记密码</span></p>
-            <button class="btn btn-primary p_but p_password_button">登录</button>
-            <p class="p_lable_text"><span></span><span class="p_register">免费注册</span></p>
+            <p class="p_lable_text"><span class="p_code_login">{{i18n.codeLogin}}</span><span class="p_goto_passwrod">{{i18n.forgetPassword}}</span></p>
+            <button class="btn btn-primary p_but p_password_button">{{i18n.login}}</button>
+            <p class="p_lable_text"><span></span><span class="p_register">{{i18n.freeRegistration}}</span></p>
         </div>
   </div>  
   <div class="p_login_box">
       <label class="p_label p_tab_pe">
-            <span style="color: #333;" data-type="mobile">手机登录</span> ｜ <span data-type="email">邮箱登录</span>
+            <span style="color: #333;" data-type="mobile">{{i18n.phoneLogin}}</span> ｜ <span data-type="email">{{i18n.emailLogin}}</span>
      </label>
       {{!-- 手机号登录 --}}
       <div class="p_pe_box" style="display:block;">
             <div class="p_input">
-                <p class="p_error">账号与密码不匹配，请重新输入</p>
+                <p class="p_error">{{i18n.Accountandpasswordnotmatch}}</p>
                 <ul>
                     <li>
                         <div class="p_select">
-                        <input type="text" class="form-control p_indent p_user_phone" maxlength="12" placeholder="{{prop.placeholderPhone}}" data-val="0">
+                        <input type="text" class="form-control p_indent p_user_phone" maxlength="12" placeholder="{{i18n.placeholderPhone}}" data-val="0">
                         <select class="p_select_html">
                             <option value ="volvo">+ 86</option>
                             <option value ="saab">+ 86</option>
                         </select>
                         </div>
-                         <p class="p_p_tip">请输入账户名</p>
+                         <p class="p_p_tip">{{i18n.placeholderPhone}}</p>
                     </li>
                     <li>
                          <div class="p_input_div">
-                            <input type="text" class="form-control p_user_code" maxlength="6" placeholder="{{prop.placeholderCode}}" data-val="0">
-                            <div class="p_getcode p_time-1" data-code="0">获取验证码</div>
+                            <input type="text" class="form-control p_user_code" maxlength="6" placeholder="{{i18n.placeholderCode}}" data-val="0">
+                            <div class="p_getcode p_time-1" data-code="0">{{i18n.getCode}}</div>
                             <div class="p_time-2"></div>
                         </div>
-                        <p class="p_p_tip">请输入短信验证码</p>
+                        <p class="p_p_tip">{{i18n.tipphoceCode}}</p>
                     </li>
                 </ul>
-                <p class="p_lable_text"><span class="p_password_login">密码登录</span></p>
-                <button class="btn btn-primary p_but p_phone_button">登录</button>
-                <p class="p_lable_text"><span></span><span class="p_register">免费注册</span></p>
+                <p class="p_lable_text"><span class="p_password_login">{{i18n.titlePassword}}</span></p>
+                <button class="btn btn-primary p_but p_phone_button">{{i18n.login}}</button>
+                <p class="p_lable_text"><span></span><span class="p_register">{{i18n.freeRegistration}}</span></p>
             </div>
         </div>
          {{!-- 邮箱登录 --}}
          <div class="p_pe_box">
             <div class="p_input">
-                <p class="p_error">账号与密码不匹配，请重新输入</p>
+                <p class="p_error">{{i18n.Accountandpasswordnotmatch}}</p>
                 <ul>
                     <li>
                         <div>
-                        <input type="text" class="form-control p_user_email" placeholder="{{prop.placeholderEmail}}" data-val="0">
-                         <p class="p_p_tip">请输入邮箱</p>
+                        <input type="text" class="form-control p_user_email" placeholder="{{i18n.placeholderEmail}}" data-val="0">
+                         <p class="p_p_tip">{{i18n.placeholderEmail}}</p>
                          </div>
                     </li>
                     <li>
                         <div class="p_input_div">
-                        <input type="text" class="form-control p_user_emailcode" maxlength="6" placeholder="{{prop.placeholderEmailCode}}" data-val="0">
-                        <div class="p_getcode p_time-1" data-code="1">获取验证码</div>
+                        <input type="text" class="form-control p_user_emailcode" maxlength="6" placeholder="{{i18n.placeholderemailCode}}" data-val="0">
+                        <div class="p_getcode p_time-1" data-code="1">{{i18n.getCode}}</div>
                         <div class="p_time-2"></div>
                         </div>
-                        <p class="p_p_tip">请输入邮箱验证码</p>
+                        <p class="p_p_tip">{{i18n.tipemailCode}}</p>
                     </li>
                 </ul>
-                <p class="p_lable_text"><span class="p_password_login">密码登录</span></p>
-                <button class="btn btn-primary p_but p_email_button">登录</button>
-                <p class="p_lable_text"><span></span><span class="p_register">免费注册</span></p>
+                <p class="p_lable_text"><span class="p_password_login">{{i18n.titlePassword}}</span></p>
+                <button class="btn btn-primary p_but p_email_button">{{i18n.login}}</button>
+                <p class="p_lable_text"><span></span><span class="p_register">{{i18n.freeRegistration}}</span></p>
             </div>
         </div>
   </div> 
   <div class="p_popup_box"></div>
    <div class="p_popup_password">
-    <p>忘记密码</p>
-    <div>为确认是您本人操作<br>请选择以下任一方式完成身份认证</div>
+    <p>{{i18n.forgetPassword}}</p>
+    <div>{{i18n.topTip}}<br>{{i18n.topTips}}</div>
     <ul>
-        <li class="p_gotophone">手机验证码找回密码</li>
-        <li class="p_gotoemail">邮箱验证码找回密码</li>
+        <li class="p_gotophone">{{i18n.phonecodetoPassword}}</li>
+        <li class="p_gotoemail">{{i18n.emailcodetoPassword}}</li>
     </ul>
-</div> 
+</div>
+ <input type="hidden" name="i18nJson" value='{{{i18nJson}}}'>
 </div>
