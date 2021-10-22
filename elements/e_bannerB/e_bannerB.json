@@ -73,7 +73,6 @@
       "navigation": true,
       "autoplay": false,
       "deplay": 4,
-      "effect": "slide",
       "videoAutoplay": false,
       "videoLoop": false,
       "videoMouted": true,

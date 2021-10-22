@@ -2,7 +2,7 @@
   "cname": "手机号验证",
   "styleId": "e_mobileCode",
   "styleClass": "s_form1",
-  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\" required>\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n    </label>\n    {{/if}}\n    <div class=\"p_input\">\n        <input type=\"text\" class=\"form-control s_form-control s_input p_Number\" name=\"${elemId}-Number\" placeholder=\"{{${placeholder1}}}\">\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <div class=\"p_input\">\n        <input type=\"text\" class=\"form-control s_form-control s_input p_Code\" name=\"${elemId}-Code\" placeholder=\"{{${placeholder2}}}\">\n        <a href=\"javascript:;\" class=\"btn btn-primary btn-sm p_sendBtn\">发送短信验证码</a>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" needjs=\"true\" required>\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n    </label>\n    {{/if}}\n    <div class=\"p_input\">\n        <input type=\"text\" class=\"form-control s_form-control s_input p_Number\" name=\"${elemId}-Number\" placeholder=\"{{${placeholder1}}}\">\n        <div class=\"invalid-feedback\"></div>\n    </div>\n    <div class=\"p_input\">\n        <input type=\"text\" class=\"form-control s_form-control s_input p_Code\" name=\"${elemId}-Code\" placeholder=\"{{${placeholder2}}}\">\n        <a href=\"javascript:;\" class=\"btn btn-primary btn-sm p_sendBtn\">{{${i18n.send}}}</a>\n        <div class=\"invalid-feedback\"></div>\n    </div>\n</div>",
   "css": [
     {
       "media": "",
@@ -30,7 +30,9 @@
     "focus": true
   },
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "send": "发送短信验证码"
+    }
   },
   "datasource": "prop",
   "type": "form"
