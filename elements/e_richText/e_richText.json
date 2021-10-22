@@ -1,7 +1,7 @@
 {
   "cname": "富文本",
   "styleId": "e_richText",
-  "styleClass": "",
+  "styleClass": "s_title",
   "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{{${richtext}}}}\n</div>",
   "css": [
     {
@@ -22,7 +22,7 @@
     }
   ],
   "prop": {
-    "richtext": "<h4>富文本标题</h4><p>富文本段落占位</p><p>富文本段落占位</p><p>富文本段落占位</p><p>富文本段落占位</p>"
+    "richtext": "<p>这里是占位文字</p>"
   },
   "i18n": {
     "zh_CN": {}
