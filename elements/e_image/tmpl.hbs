@@ -5,7 +5,7 @@
         {{#if prop.href.value}}
             <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}">
         {{/if}}
-        {{{nLazyImage imageUrl prop.title "true"}}}
+        {{{nLazyImage imageUrl prop.title prop.setting.isLazy}}}
         {{#if prop.href.value}}
             </a>
         {{/if}}

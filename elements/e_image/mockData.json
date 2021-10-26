@@ -12,7 +12,7 @@
             "target":""
         },
         "setting":{
-            "isLazy":true,
+            "isLazy":"true",
             "fit":"contain"
         },
         "space":0

@@ -5,7 +5,7 @@
             {{#each prop.imgList}}
             <div class="swiper-slide" >
                 <div class="p_img">
-                    {{{nLazyImage imageUrl ../prop.title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}
+                    {{{nLazyImage imageUrl ../prop.title prop.setting.isLazy}}}
                 </div>
             </div>
             {{/each}}
@@ -18,7 +18,7 @@
             {{#each prop.imgList}}
             <div class="swiper-slide" >
                 <div class="p_img">
-                    {{{nLazyImage imageUrl ../prop.title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}
+                    {{{nLazyImage imageUrl ../prop.title prop.setting.isLazy}}}
                 </div>
             </div>
             {{/each}}
