@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-date",
-            "name":"日期时间",
+            "title":"日期时间",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

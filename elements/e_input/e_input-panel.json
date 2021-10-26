@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-input",
-            "name":"单行文本",
+            "title":"单行文本",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

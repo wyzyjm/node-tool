@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-uploadFile",
-            "name":"文件型",
+            "title":"文件型",
             "staticBind": true,
             "showLabel": "prop.showLabel",
             "label":"prop.label",

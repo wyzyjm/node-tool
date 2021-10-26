@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-agreement",
-            "name":"条款条件",
+            "title":"条款条件",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

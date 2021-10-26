@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-code",
-            "name":"安全验证",
+            "title":"安全验证",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",
