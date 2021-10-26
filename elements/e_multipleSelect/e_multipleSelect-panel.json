@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-multipleSelect",
-            "name":"下拉多选",
+            "title":"下拉多选",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

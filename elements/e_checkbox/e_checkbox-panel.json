@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-checkbox",
-            "name":"多选项",
+            "title":"多选项",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

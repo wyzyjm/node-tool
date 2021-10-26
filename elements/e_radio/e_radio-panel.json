@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-radio",
-            "name":"单选项",
+            "title":"单选项",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

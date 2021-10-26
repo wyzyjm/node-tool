@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-rangeDate",
-            "name":"区间时间",
+            "title":"区间时间",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

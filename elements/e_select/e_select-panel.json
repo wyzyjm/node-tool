@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-select",
-            "name":"下拉单选",
+            "title":"下拉单选",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-textarea",
-            "name":"多行文本",
+            "title":"多行文本",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

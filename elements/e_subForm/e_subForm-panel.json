@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-subForm",
-            "name":"子表单",
+            "title":"子表单",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",
