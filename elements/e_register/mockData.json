@@ -1,4 +1,32 @@
 {
   "prop": {},
-  "i18n": {}
+  "i18n": {
+    "welcometoRegister":"欢迎注册",
+    "confirmPassword":"确认密码",
+    "code":"验证码",
+    "phoneCode":"短信验证码",
+    "getCoce":"获取验证码",
+    "userRegistrationAgreement":"用户注册协议",
+    "agreeContinue":"同意并继续",
+    "ReadAgree":"已阅读并同意",
+    "register":"立即注册",
+    "existingAccount":"已有账号",
+    "pleaseLogin":"请登录",
+    "accounthasBeen":"此账号已被其他账户绑定",
+    "regPhone":"手机号限11个数字以内",
+    "phoneNumberHasBeen":"此手机号已被其他账户绑定",
+    "phoneEmailrHasBeen":"此邮箱已被其他账户绑定",
+    "regPassword":"密码设置为8-20位，并且由字母，数字和符号两种以上组合",
+    "twoPasswordsDifferent":"两次密码不相同，请重新输入",
+    "serviceAgreement":"请阅读并勾选服务协议",
+    "codeToPhone":"验证码已发送至手机",
+    "codeToEmail":"验证码已发送至邮箱",
+    "codeFill":"验证码发送失败，请稍后再试",
+    "succRegister":"注册成功",
+    "fillRegister":"注册失败",
+    "fillOption":"请填写该选项",
+    "regUser":"用户名限32个字符以内",
+    "inpassWord":"请再次输入密码"
+
+  }
 }

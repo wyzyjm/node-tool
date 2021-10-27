@@ -7,5 +7,12 @@
     "codeNeed":true,
     "focus":true
   },
-  "i18n": {}
+  "i18n": {
+      "send":"发送邮箱验证码",
+      "emptyEmail":"邮箱地址不能为空",
+      "errorFormat":"邮箱格式不正确",
+      "emptyCode":"验证码不能为空",
+      "again":"秒后再次获取",
+      "sendFail":"验证码发送失败"
+  }
 }

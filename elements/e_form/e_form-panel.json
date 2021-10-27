@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-form",
-            "name":"表单容器",
+            "title":"表单容器",
             "staticBind": true,
             "bind-basic":"prop.basic",
             "bind-rule":"prop.rule",

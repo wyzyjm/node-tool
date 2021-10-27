@@ -1,11 +1,5 @@
 {
   "prop": {
-    "placeholder":"用户名",
-    "placeholderPassword":"密码",
-    "placeholderPhone":"请输入手机号",
-    "placeholderCode":"短信验证码",
-    "placeholderEmailCode":"短信验证码",
-    "placeholderEmail":" 请输入邮箱",
     "contrast": {
       "status": true,
       "href": {
@@ -16,6 +10,36 @@
     }
   },
   "i18n": {
-    "titlePassword":"密码登录"
+    "titlePassword":"密码登录",
+    "placeholderuser":"用户名",
+    "placeholderPassword":"密码",
+    "placeholderPhone":"请输入手机号",
+    "placeholderCode":"短信验证码",
+    "placeholderemailCode":"邮箱验证码",
+    "placeholderEmail":" 请输入邮箱",
+    "tipUsername":"请输入账户名",
+    "tipPassword":"请输入密码",
+    "codeLogin":"验证码登录",
+    "forgetPassword":"忘记密码",
+    "login":"登录",
+    "freeRegistration":"免费注册",
+    "phoneLogin":"手机登录",
+    "emailLogin":"邮箱登录",
+    "getCode":"获取验证码",
+    "tipphoceCode":"请输入短信验证码",
+    "tipemailCode":"请输入邮箱验证码",
+    "topTip":"为确认是您本人操作",
+    "topTips":"请选择以下任一方式完成身份认证",
+    "phonecodetoPassword":"手机验证码找回密码",
+    "emailcodetoPassword":"邮箱验证码找回密码",
+    "Accountandpasswordnotmatch":"账号与密码不匹配，请重新输入",
+    "succLogin":"登录成功",
+    "codetoPhone":"验证码已发送至手机",
+    "codetoEmail":"验证码已发送至邮箱",
+    "codeFill":"验证码发送失败，请稍后再试",
+    "Verificationcodeerrororinvalid":"验证码错误或已失效",
+    "phoneFormaterro":"手机格式不正确",
+    "emailFormaterro":"邮箱格式不正确",
+    "accountNot":"此账号不存在"
   }
 }

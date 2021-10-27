@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-formBtn",
-            "name":"按钮",
+            "title":"按钮",
             "staticBind": true,
             "text":"prop.text",
             "type":"prop.type",

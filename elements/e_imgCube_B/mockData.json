@@ -9,7 +9,7 @@
           "value": "",
           "target": ""
         },
-        "isLazy": true,
+        "isLazy": "true",
         "fit": "cover"
       },
       {
@@ -20,7 +20,7 @@
           "value": "",
           "target": ""
         },
-        "isLazy": true,
+        "isLazy": "true",
         "fit": "cover"
       },
       {
@@ -31,7 +31,7 @@
           "value": "",
           "target": ""
         },
-        "isLazy": true,
+        "isLazy": "true",
         "fit": "cover"
       }
     ],

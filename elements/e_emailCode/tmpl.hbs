@@ -10,7 +10,8 @@
     </div>
     <div class="p_input">
         <input type="text" class="form-control s_form-control s_input p_Code" name="${elemId}-Code" placeholder="{{prop.placeholder2}}">
-        <a href="javascript:;" class="btn btn-primary p_sendBtn">发送邮件验证码</a>
+        <a href="javascript:;" class="btn btn-primary p_sendBtn">{{i18n.send}}</a>
         <div class="invalid-feedback"></div>
     </div>
+    <input type="hidden" name="i18nJson" value="{{$toJson i18n}}">
 </div>

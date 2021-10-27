@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-number",
-            "name":"数字输入框",
+            "title":"数字输入框",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-uploadVideo",
-            "name":"视频型",
+            "title":"视频型",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

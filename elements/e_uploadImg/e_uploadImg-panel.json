@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-uploadImg",
-            "name":"图片型",
+            "title":"图片型",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

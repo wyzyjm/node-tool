@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-score",
-            "name":"评分评价",
+            "title":"评分评价",
             "staticBind": true,
             "showLabel":"prop.showLabel",
             "label":"prop.label",

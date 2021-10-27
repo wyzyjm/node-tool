@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "compName":"setting-relevantItem",
-            "name":"相关项",
+            "title":"相关项",
             "staticBind": true,
             "type":"prop.type",
             "btnText":"prop.btnText",
