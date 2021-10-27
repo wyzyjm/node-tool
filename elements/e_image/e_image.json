@@ -2,7 +2,7 @@
   "cname": "图片",
   "styleId": "e_image",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${imgList}}}\n    {{#each ${imgList}}}\n        {{#eq @index 0}}\n        {{#if ${href}.value}}\n            <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n        {{/if}}\n        {{{nLazyImage imageUrl ${title} \"true\"}}}\n        {{#if ${href}.value}}\n            </a>\n        {{/if}}\n        {{/eq}}\n    {{/each}}\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#if ${imgList}}}\n    {{#each ${imgList}}}\n        {{#eq @index 0}}\n        {{#if ${href}.value}}\n            <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n        {{/if}}\n        {{{nLazyImage imageUrl ${title} ${setting}.isLazy}}}\n        {{#if ${href}.value}}\n            </a>\n        {{/if}}\n        {{/eq}}\n    {{/each}}\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
@@ -34,7 +34,7 @@
       "target": ""
     },
     "setting": {
-      "isLazy": true,
+      "isLazy": "true",
       "fit": "contain"
     },
     "space": 0

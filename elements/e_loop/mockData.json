@@ -17,7 +17,7 @@
             "showJump": true,
             "pcRow": 2,
             "pcColumn": 3,
-            "moColumn": 1,
+            "moColumn": 3,
             "pageType": "hidden",
             "rolling": {
                 "navigation": true,

@@ -2,7 +2,7 @@
   "cname": "图集",
   "styleId": "e_imageList",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${imgList}}}\n    <div class=\"swiper-container gallery-top\" >\n        <div class=\"swiper-wrapper\">\n            {{#each ${imgList}}}\n            <div class=\"swiper-slide\" >\n                <div class=\"p_img\">\n                    {{{nLazyImage imageUrl ../${title} '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n        <div class=\"swiper-button-next swiper-button-white\"></div>\n        <div class=\"swiper-button-prev swiper-button-white\"></div>\n    </div>\n    <div class=\"swiper-container gallery-thumbs\">\n        <div class=\"swiper-wrapper\">\n            {{#each ${imgList}}}\n            <div class=\"swiper-slide\" >\n                <div class=\"p_img\">\n                    {{{nLazyImage imageUrl ../${title} '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n    </div>\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${imgList}}}\n    <div class=\"swiper-container gallery-top\" >\n        <div class=\"swiper-wrapper\">\n            {{#each ${imgList}}}\n            <div class=\"swiper-slide\" >\n                <div class=\"p_img\">\n                    {{{nLazyImage imageUrl ../${title} ${setting}.isLazy}}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n        <div class=\"swiper-button-next swiper-button-white\"></div>\n        <div class=\"swiper-button-prev swiper-button-white\"></div>\n    </div>\n    <div class=\"swiper-container gallery-thumbs\">\n        <div class=\"swiper-wrapper\">\n            {{#each ${imgList}}}\n            <div class=\"swiper-slide\" >\n                <div class=\"p_img\">\n                    {{{nLazyImage imageUrl ../${title} ${setting}.isLazy}}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n    </div>\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
   "css": [
     {
       "media": "",
@@ -46,7 +46,7 @@
       "target": ""
     },
     "setting": {
-      "isLazy": true,
+      "isLazy": "true",
       "fit": "contain"
     },
     "space": 10

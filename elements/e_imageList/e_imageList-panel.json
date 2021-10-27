@@ -4,7 +4,8 @@
             "compName":"setting-imageList",
             "title":"图集",
             "bind-imgList":"prop.imgList",
-            "bind-space":"prop.space"
+            "bind-space":"prop.space",
+            "bind-setting":"prop.setting"
         }
     ]
 }

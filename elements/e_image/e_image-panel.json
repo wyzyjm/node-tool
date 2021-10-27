@@ -6,7 +6,8 @@
             "bind-imgList":"prop.imgList",
             "bind-href":"prop.href",
             "bind-title":"prop.title",
-            "bind-space":"prop.space"
+            "bind-space":"prop.space",
+            "bind-setting":"prop.setting"
         }
     ]
 }
