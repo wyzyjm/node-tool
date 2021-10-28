@@ -10,26 +10,37 @@
     text-align: center;
 }
 .e_loop .p_filter_wrapper{
-    width: 100%;
+		width: 100%;
+		font-size: 13px;
 }
 .e_loop .p_kv_wrapper{
     display: flex;
-    flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		line-height: 24px;
+		margin: 15px 0;
 }
 .e_loop .p_filter_key{
-    /* min-width: 80px; */
-    line-height: 40px;
+		/* min-width: 80px; */
+		width: 70px;
+		overflow: hidden;
 		margin-right: 10px;
 		font-weight: bold;
+		color:#333333;
+		font-size:12px;
+
 }
 .e_loop .p_v_item{
     display: inline-block;
-    margin: 0 5px;
-    line-height: 40px;
-    cursor: pointer;
+		padding: 0 3px;
+		cursor: pointer;
+		font-size: 13px;
+		color: #555555;
+		margin-right: 30px;;
 }
 .e_loop .p_active{
-    color: blueviolet;
+		color: #fff;
+		background-color: #409EFF;
+		border-radius: 2px;
 }
 .e_loop .p_result_item{
     position: relative;
@@ -52,17 +63,19 @@
 
 }
 .e_loop .multSelect {
-	font-size: 14px;
+	font-size: 13px;
 	position: relative;
 }
 .e_loop .multSelect .inputWrap {
     width: 100%;
     min-width: 100px;
-	min-height: 40px;
-	border: 1px solid #ccc;
+	min-height: 24px;
+	
+	border: 1px solid #DCDFE6;
 	border-radius: 3px;
 	position: relative;
 	cursor: pointer;
+	background: white;
 }
 .e_loop .multSelect.is-invalid .inputWrap {
 	border-color: #dc3545;
@@ -79,13 +92,15 @@
 	display: inline-block;
 	background: #edf0f3;
 	color: #92969c;
-	padding: 3px 5px;
-	margin: 5px 5px 5px 0;
+	padding: 0px 5px;
+	margin: 1px 5px 1px 0;
 	border-radius: 5px;
+	line-height: 16px;
 }
 .e_loop .multSelect .multSelect-option {
 	width: 100%;
-	border: 1px solid #ccc;
+	border: 1px solid #DCDFE6;
+border-radius: 2px;
 	border-top: 0;
 	max-height: 200px;
 	overflow-y: scroll;
@@ -96,7 +111,7 @@
 	background: #fff;
 }
 .e_loop .multSelect .multSelect-option>div {
-	line-height: 35px;
+	line-height: 24px;
 	cursor: pointer;
 	padding: 0 10px;
 }
@@ -114,11 +129,11 @@
 }
 .e_loop .multSelect .inputWrap>.fa svg {
 	fill: #666;
-	width: 16px;
-	height: 16px;
+	width: 12px;
+	height: 12px;
 	position: absolute;
 	right: 0;
-	top: calc(50% - 8px);
+	top: calc(50% - 3px);
 }
 .e_loop .multSelect .inputWrap>.fa-down svg {
 	transform: rotate(-90deg);
@@ -139,22 +154,40 @@
     
 } */
 .e_loop .p_filter_select{
-    width: 150px;
+		width: 110px;
+		height: 24px;
+		padding: 0;
+		border: 1px solid #DCDFE6;
+
 }
-.e_loop .p_normal_start,
+.e_loop .p_normal_start
+{
+    display: inline;
+		width: 60px;
+		height: 22px;
+
+}
 .e_loop .p_date_start
 {
     display: inline;
-    width: 100px;
+		width: 105px;
+		height: 22px;
 
 }
-.e_loop .p_normal_end,
-.e_loop .p_date_end{
+.e_loop .p_normal_end{
     display: inline;
-    width: 100px;
+    width: 60px;
+		height: 22px;
+		margin-right:5px
+}
+.e_loop .p_date_end{
+	display: inline;
+	width: 105px;
+	height: 22px;
+	margin-right:5px
 }
 .e_loop .p_split{
-    margin: 0 5px;
+	margin: 0 5px
 }
 .e_loop .p_normal{
     margin-right: 16px;

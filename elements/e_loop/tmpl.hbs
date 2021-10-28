@@ -52,7 +52,8 @@
                     <div class="p_v_item js-value-item " data-index="{{@index}}" data-valueType="{{valueType}}"
                         data-value="{{value}}">
                         <div class="js_normal p_normal">
-                            <input class="form-control js_normal-start p_normal_start" type="text" value="" /><span
+                            <input class="form-control js_normal-start p_normal_start" type="text" value="" />
+                            <span
                                 class="p_split">-</span>
                             <input class="form-control js_normal-end p_normal_end" type="text" />{{name}}
                         </div>
@@ -63,9 +64,12 @@
                     <div class="p_v_item js-value-item " data-index="{{@index}}" data-valueType="{{valueType}}"
                         data-value="{{value}}">
                         <div class="j_date">
-                            <input class="form-control date-start  p_date_start" type="text" value="" /><span
-                                class="p_split">-</span><input class="form-control date-end  p_date_start"
-                                type="text" />{{name}}
+                            <input class="form-control date-start  p_date_start" type="text" value="" />
+                            <span
+                                class="p_split">-</span>
+                                <input class="form-control date-end  p_date_end"
+                                type="text" />
+                                {{name}}
                         </div>
                     </div>
                     {{/eq}}
@@ -96,7 +100,7 @@
         {{/prop.dataList}}
     </div>
     <div class="p_page">
-        {{{nPaging prop.page prop.pageConfig datasource}}}
+        {{{nPaging prop.page prop.pageConfig datasource i18nJson ${id}}}}
     </div>
     {{^}}
     {{{nNoDataPrompt i18n.noData}}}
