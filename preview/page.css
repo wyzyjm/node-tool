@@ -16,20 +16,14 @@ body{
     padding: 20px;
 }
 
-.e_container .p_item,.e_loop .p_item{
+.e_container .p_item,.e_loop .p_item,.e_form .p_formItem{
     border: 1px dashed #ccc;
     min-height: 200px;
+    line-height: 200px;
+    text-align: center;
 }
 
-.e_container .p_item::after,.e_loop .p_item::after{
+.e_container .p_item::after,.e_loop .p_item::after,.e_form .p_formItem::after{
     content: "容器";
-    color:#ccc
-}
-.e_hidden{
-    border: 1px dashed #ccc;
-    height: 40px;
-}
-.e_hidden::after{
-    content: "隐藏表单项";
     color:#ccc
 }

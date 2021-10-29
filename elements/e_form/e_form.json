@@ -3,11 +3,11 @@
   "styleId": "e_form",
   "styleClass": "s_layout",
   "type": "form",
-  "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"cbox-${id}\"></div>\n    {{#eq ${submit}.type 2}}\n    <input name=\"jumpPage\" type=\"hidden\" value=\"{{$transferLink ${submit}.obj2 compId}}\"></a>\n    {{/eq}}\n</form>",
+  "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#${layout}}}\n    <div class=\"cbox-${id}-{{@index}} p_formItem\"></div>\n    {{/${layout}}}\n    {{#eq ${submit}.type 2}}\n    <input name=\"jumpPage\" type=\"hidden\" value=\"{{$transferLink ${submit}.obj2 compId}}\"></a>\n    {{/eq}}\n</form>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_form{\n\n}\n"
+      "cssText": ".e_form{\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction:row;\n    width: 100%;\n}\n.e_form > .p_formItem{\n    flex: 1;\n    max-width: 100%;\n    max-height: 100%;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -23,6 +23,9 @@
     }
   ],
   "prop": {
+    "layout": [
+      {}
+    ],
     "sourceUuid": "",
     "formId": "",
     "basic": {
@@ -93,6 +96,7 @@
     "async": "async",
     "notice": "notice",
     "sourceUuid": "sourceUuid",
-    "formId": "formId"
+    "formId": "formId",
+    "layout": "layout"
   }
 }

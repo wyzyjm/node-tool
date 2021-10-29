@@ -1,5 +1,7 @@
 <form class="e_form s_layout" needjs="true">
-    <div class="cbox-${id}"></div>
+    {{#prop.layout}}
+    <div class="cbox-${id}-{{@index}} p_formItem"></div>
+    {{/prop.layout}}
     {{#eq prop.submit.type 2}}
     <input name="jumpPage" type="hidden" value="{{$transferLink prop.submit.obj2 compId}}"></a>
     {{/eq}}
