@@ -4,6 +4,7 @@
     "type":1,
     "action":1,
     "business":[],
+    "logic":[],
     "prompt":""
   },
   "i18n": {}

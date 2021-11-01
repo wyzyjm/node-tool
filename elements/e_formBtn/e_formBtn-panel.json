@@ -8,6 +8,7 @@
             "type":"prop.type",
             "action":"prop.action",
             "business":"prop.business",
+            "logic":"prop.logic",
             "prompt":"prop.prompt"
         }
     ]

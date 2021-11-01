@@ -82,21 +82,5 @@
     "zh_CN": {}
   },
   "datasource": "prop",
-  "container": true,
-  "scope": true,
-  "dataFields": {
-    "rule$if": "if",
-    "rule$then": "then",
-    "rule$status": "status",
-    "rule$logic": "logic",
-    "rule$state": "state",
-    "basic": "basic",
-    "rule": "rule",
-    "submit": "submit",
-    "async": "async",
-    "notice": "notice",
-    "sourceUuid": "sourceUuid",
-    "formId": "formId",
-    "layout": "layout"
-  }
+  "container": true
 }
