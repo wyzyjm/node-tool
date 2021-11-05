@@ -3,11 +3,11 @@
         {{#if prop.dataList}}
             <div class="swiper-wrapper">
                 {{#prop.dataList}}
-                <div class="swiper-slide">
-                    <div class="cbox-${id} p_template"></div>
-                </div>
+                    <div class="swiper-slide">
+                        <div class="cbox-${id}-{{@index}} p_template"></div>
+                    </div>
                 {{/prop.dataList}}
-            </div>   
+            </div>
             <!-- 如果需要导航按钮 -->
             <div class="js_editor_click swiper-button-prev"></div>
             <div class="js_editor_click swiper-button-next"></div>
