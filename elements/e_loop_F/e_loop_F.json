@@ -2,7 +2,7 @@
   "cname": "循环体",
   "styleId": "e_loop_F",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div class=\"swiper-container\">\r\n        {{#if ${dataList}}}\r\n            <div class=\"swiper-wrapper\">\r\n                {{#${dataList}}}\r\n                    <div class=\"swiper-slide\">\r\n                        <div class=\"cbox-${id}-{{@index}} p_template\"></div>\r\n                    </div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <!-- 如果需要导航按钮 -->\r\n            <div class=\"js_editor_click swiper-button-prev\"></div>\r\n            <div class=\"js_editor_click swiper-button-next\"></div>\r\n        {{/if}}\r\n    </div>\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div class=\"swiper-container\">\r\n        {{#if ${dataList}}}\r\n            <div class=\"swiper-wrapper\">\r\n                {{#${dataList}}}\r\n                    <div class=\"swiper-slide\">\r\n                        <div class=\"cbox-${id} p_template\"></div>\r\n                    </div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <!-- 如果需要导航按钮 -->\r\n            <div class=\"js_editor_click swiper-button-prev\"></div>\r\n            <div class=\"js_editor_click swiper-button-next\"></div>\r\n        {{/if}}\r\n    </div>\r\n</div>",
   "css": [
     {
       "media": "",
