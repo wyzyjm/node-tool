@@ -2,7 +2,7 @@
   "cname": "循环体9",
   "styleId": "e_loop_I",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${dataList}}}\n        <div class=\"swiper-container\">\n            <div class=\"swiper-wrapper\">\n                {{#${dataList}}}\n                    <div class=\"swiper-slide p_slide\">\n                        <div class=\"cbox-${id}-{{@index}} p_item\"> </div>\n                    </div>\n                {{/${dataList}}}\n            </div>\n             <!-- 分页器 -->\n            <div class=\"swiper-pagination p_pagenation\"></div>\n            <!-- 导航按钮 -->\n            <div class=\"swiper-button-next p_btn_next\"></div>\n            <div class=\"swiper-button-prev p_btn_prev\"></div>\n        </div>\n    {{^}}\n        {{{noDataPrompt}}}\n    {{/if}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n        <div class=\"swiper-container\">\r\n            <div class=\"swiper-wrapper\">\r\n                {{#${dataList}}}\r\n                    <div class=\"swiper-slide p_slide\">\r\n                        <div class=\"cbox-${id} p_item\"> </div>\r\n                    </div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <!-- 分页器 -->\r\n            <div class=\"swiper-pagination p_pagenation\"></div>\r\n            <!-- 导航按钮 -->\r\n            <div class=\"swiper-button-next p_btn_next\"></div>\r\n            <div class=\"swiper-button-prev p_btn_prev\"></div>\r\n        </div>\r\n    {{else}}\r\n        {{{noDataPrompt}}}\r\n    {{/if}}\r\n</div>",
   "css": [
     {
       "media": "",

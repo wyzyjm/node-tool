@@ -2,11 +2,11 @@
   "cname": "图片",
   "styleId": "e_image",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#each ${imgList}}}\n        {{#eq @index 0}}\n        {{#if ${href}.value}}\n            <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\n        {{/if}}\n        {{{nLazyImage imageUrl ${title} ${setting}.isLazy}}}\n        {{#if ${href}.value}}\n            </a>\n        {{/if}}\n        {{/eq}}\n    {{/each}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#each ${imgList}}}\r\n        {{#eq @index 0}}\r\n        {{#if ${href}.value}}\r\n            <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\r\n        {{/if}}\r\n        {{{nLazyImage imageUrl ${title} ${setting}.isLazy}}}\r\n        {{#if ${href}.value}}\r\n            </a>\r\n        {{/if}}\r\n        {{/eq}}\r\n    {{/each}}\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_image{\n    overflow: hidden;\n}\n.e_image img{\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n}\n"
+      "cssText": ".e_image{\r\n    overflow: hidden;\r\n}\r\n.e_image img{\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: contain;\r\n}\r\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -24,7 +24,7 @@
   "prop": {
     "imgList": [
       {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg"
+        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
       }
     ],
     "title": "图片名称",
