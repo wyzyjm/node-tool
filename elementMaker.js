@@ -184,7 +184,7 @@ function isArray(o) {
 
 //处理模板字符串
 function handleStr(str,dataFields,compId){
-    let dataReg = /prop\.[a-zA-Z0-9]*/g
+    let dataReg = /prop\.[a-zA-Z0-9_]*/g
     let matchArr = str.match(dataReg)
     if(matchArr){
         matchArr.forEach(e=>{
