@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-turnPage",
+            "title": "翻屏式数据",
+            "bind-dataList": "prop.dataList",
+            "bind-settings": "prop.settings"
+        }
+    ]
+}
