@@ -1,11 +1,11 @@
-<div class="e_bottomNav s_list" needjs="true">
+<div class="e_bottomNav s_text" needjs="true">
     {{#if prop.dataList}}
         <!-- 导航内容 开始 -->
         <ul class="p_level1Box">
             {{#each prop.dataList}}
             <li class="pt-1  pb-1 p_level1Item">
                 <!-- 名称 -->
-                <p class="text-dark p_menuItem">
+                <p class="p_menuItem">
                     <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
                         <span>{{navName}}</span>
                     </a>
@@ -17,7 +17,7 @@
                     {{#each this.children}}
                     <li class="p_level2Item">
                         <!-- 名称 2 -->
-                        <p class="text-secondary p_menuItem">
+                        <p class="p_menuItem">
                             <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
                                 <span>{{navName}}</span>
                             </a>
@@ -29,7 +29,7 @@
                             {{#each this.children}}
                             <li class="p_level3Item">
                                 <!-- 名称 3 -->
-                                <p class="text-secondary p_menuItem">
+                                <p class="p_menuItem">
                                     <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
                                         <span>{{navName}}</span>
                                     </a>

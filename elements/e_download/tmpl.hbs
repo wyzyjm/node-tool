@@ -1,36 +1,37 @@
 <div class="e_download s_list" needjs="true">
-    <ul class="p_download">
-        {{#each prop.attachment}}
-            <li class="d-flex align-items-center border mb-2 pl-3 pr-3 p_item" data-title="{{title}}" data-extName="{{extName}}"> 
-                <!-- 复选框 -->
-                <div class="form-check  p_name">
-                    <input class="form-check-input p_inputitem" type="checkbox" value="{{{lazyFile fileUrl}}}" id="checkId{{@index}}">
-                    <!-- 文件名称 -->
-                    <label class="form-check-label text-nowrap text-dark p_filename"  for="checkId{{@index}}"> {{name}} </label>
-                </div>
-                <!-- 文件大小 -->
-                <p class="flex1 flex-shinrk-0 sm-hide">
-                    <span class="text-secondary p_label"> {{../i18n.fileSize}} </span>
-                    <span> {{size}} </span>
-                </p>
-                
-                <!-- 按钮组 -->
-                <div class="flex1 flex-shinrk-0 text-right sm-hide  p_btnGroup">
-                    {{#eq extName 'pdf'}}
-                        <button type="button" class="btn btn-outline-primary btn-sm pl-3 pr-3 s_button3 p_preview" >{{../i18n.preview}}</button>
-                    {{/eq}}
-                    <button type="button" class="btn btn-primary btn-sm pl-3 pr-3 s_button1 p_downbtn">{{../i18n.download}}</button>
-                </div>
-            </li>
-        {{/each}}
-    </ul>
-    <div class="d-flex align-items-center pl-3 pr-3 justify-sm-between">
-         <!-- 全选 -->
-        <div class="form-check p_allSelect mr-3">
-            <input class="form-check-input p_allCheck" type="checkbox" value="" id="allcheck">
-            <label class="form-check-label text-nowrap text-dark p_filename"  for="allcheck"> {{i18n.allSelect}} </label>
+    {{#if prop.attachment}}
+        <ul class="p_download">
+            {{#each prop.attachment}}
+                <li class="d-flex align-items-center border mb-2 pl-3 pr-3 p_item" data-title="{{title}}" data-extName="{{extName}}">
+                    <!-- 复选框 -->
+                    <div class="form-check p_name">
+                        <input class="form-check-input p_inputitem" type="checkbox" value="{{{lazyFile fileUrl}}}" id="checkId{{@index}}-{{id}}" />
+                        <!-- 文件名称 -->
+                        <label class="form-check-label text-nowrap text-dark p_filename" for="checkId{{@index}}-{{id}}"> {{name}} </label>
+                    </div>
+                    <!-- 文件大小 -->
+                    <p class="flex1 flex-shinrk-0 sm-hide">
+                        <span class="text-secondary p_label"> {{i18n.fileSize}} </span>
+                        <span> {{size}} </span>
+                    </p>
+                    <!-- 按钮组 -->
+                    <div class="flex1 flex-shinrk-0 text-right sm-hide p_btnGroup">
+                        {{#eq extName "pdf"}}
+                            <button type="button" class="btn btn-outline-primary btn-sm pl-3 pr-3 s_button3 p_preview">{{i18n.preview}}</button>
+                        {{/eq}}
+                        <button type="button" class="btn btn-primary btn-sm pl-3 pr-3 s_button1 p_downbtn">{{i18n.download}}</button>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+        <div class="d-flex align-items-center pl-3 pr-3 justify-sm-between">
+            <!-- 全选 -->
+            <div class="form-check p_allSelect mr-3">
+                <input class="form-check-input p_allCheck" type="checkbox" value="" id="allcheck-{{prop.attachment.0.id}}" />
+                <label class="form-check-label text-nowrap text-dark p_filename" for="allcheck-{{prop.attachment.0.id}}"> {{i18n.allSelect}} </label>
+            </div>
+            <!-- 全选 -->
+            <button class="btn btn-primary btn-sm pl-3 pr-3 s_button1 p_allBtn"> {{i18n.download}} </button>
         </div>
-        <!-- 全选 -->
-        <button class="btn btn-primary btn-sm pl-3 pr-3 s_button1 p_allBtn"> {{i18n.download}} </button>
-    </div>
+    {{/if}}
 </div>

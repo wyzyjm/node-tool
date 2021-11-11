@@ -1,7 +1,11 @@
-.e_loop_H{
-    overflow: hidden;
+.e_loop_H .p_list {
+    display: flex;
+    flex-wrap: wrap;
 }
-.e_loop_H .p_item {
-    min-height: 200px;
-    border: 1px dashed #ccc;
+.e_loop_H .p_loopitem {
+    position: relative;
+    flex: 0 0 100%;
+}
+.e_loop_H .p_page {
+    text-align: center;
 }
