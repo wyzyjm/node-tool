@@ -1,0 +1,11 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-soulTable",
+            "title":"循环体-筛选",
+            "datasource":"prop.datasource",
+            "previewList":"prop.previewList"
+        }
+    ]
+}
+  

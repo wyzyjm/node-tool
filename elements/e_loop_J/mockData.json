@@ -1,0 +1,9 @@
+{
+  "prop": {
+      "datasource":{},
+      "previewList":[]
+  },
+  "i18n": {
+    "noData": "暂无数据"
+  }
+}

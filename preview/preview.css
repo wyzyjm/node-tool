@@ -88,14 +88,14 @@ textarea.upMessage{
 }
 .p_oper{
     position: absolute;
-    /* width: 100%; */
-    /* right:calc(100% - 10px); */
-    right: 0;
+    width: 100%;
+    right:calc(-100% + 30px);
+    /* right: 0; */
     top: 0;
     transition: all 0.2s;
     padding: 0 10px;
-    /* background: #D8E9FF; */
-    /* border-right: 5px solid #fb0; */
+    background: #D8E9FF;
+    border-left: 30px solid #fb9;
     text-align: center;
 }
 /* .p_oper::after{
@@ -110,9 +110,9 @@ textarea.upMessage{
     border-bottom: 5px solid transparent;
     
 } */
-/* .p_oper:hover{
+.p_oper:hover{
     right: 0;
-} */
+}
 .p_logo,.p_header{
     padding:15px 20px;
     height: 60px;

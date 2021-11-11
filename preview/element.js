@@ -65,42 +65,23 @@ async function initElements() {
     let base = result.base
     let complex = result.complex
     let form = result.form
-    // let elementList=result.elementList
-    // let nameObj=result.nameObj
-    // elementList.sort();
     $('#baseList').empty()
     base.forEach(ele => {
-        let li=`
-        <li class="list-group-item p_item" name="${ele.code}">
-            <div class="p_compItem">
-                <div class="p_name">${ele.name}(${ele.code})</div>
-                <div class="p_oper">
-                    <button type="button" class="btn btn-success btn-sm bq">补全</button>
-                    <button type="button" class="btn btn-primary btn-sm tb">同步</button>
-                </div>
-            </div>
-        </li>
-        `;
+        let li=getLi(ele);
         $('#baseList').append(li)
     });  
     $('#complexList').empty()
     complex.forEach(ele => {
-        let li=`
-        <li class="list-group-item p_item" name="${ele.code}">
-            <div class="p_compItem">
-                <div class="p_name">${ele.name}(${ele.code})</div>
-                <div class="p_oper">
-                    <button type="button" class="btn btn-success btn-sm bq">补全</button>
-                    <button type="button" class="btn btn-primary btn-sm tb">同步</button>
-                </div>
-            </div>
-        </li>
-        `;
+        let li=getLi(ele);
         $('#complexList').append(li)
     });  
     $('#formList').empty()
     form.forEach(ele => {
-        let li=`
+        let li=getLi(ele);
+        $('#formList').append(li)
+    });  
+    function getLi(ele){
+        return `
         <li class="list-group-item p_item" name="${ele.code}">
             <div class="p_compItem">
                 <div class="p_name">${ele.name}(${ele.code})</div>
@@ -110,9 +91,8 @@ async function initElements() {
                 </div>
             </div>
         </li>
-        `;
-        $('#formList').append(li)
-    });  
+        `
+    }
 }
 //添加元素
 async function addElement(obj){
