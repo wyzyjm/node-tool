@@ -10,7 +10,7 @@
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ".e_loop_I .p_first {\r\n    width: 100%;\r\n}\r\n.e_loop_I .p_right {\r\n    width: 100%;\r\n}\r\n"
+      "cssText": ".e_loop_I {\r\n    height: 512px;\r\n    flex-wrap: wrap;\r\n}\r\n.e_loop_I .p_first {\r\n    width: 100%;\r\n}\r\n.e_loop_I .p_right {\r\n    width: 100%;\r\n}\r\n"
     },
     {
       "media": "screen and (min-width: 769px)",
