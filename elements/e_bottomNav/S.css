@@ -1,25 +1,22 @@
-.e_bottomNav .p_menuItem{ 
-    position: relative;
-}
-.e_bottomNav .p_level1Box{
-    padding: 0 20px;
-    height: calc(100vh - 57px);
+.e_bottomNav .p_menuItem {
+    display: flex;
+    justify-content: space-between;
 }
 .e_bottomNav .p_level1Box ul {
     display: none;
 }
-.e_bottomNav .p_level2Box, 
-.e_bottomNav .p_level3Box{
+.e_bottomNav .p_level2Box,
+.e_bottomNav .p_level3Box {
     padding-left: 10px;
 }
-.e_bottomNav .p_jtIcon{
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 999;
-    margin-top: 3px;
+.e_bottomNav .p_jtIcon {
+    align-items: stretch;
+    width: auto;
+    height: auto;
+    max-width: 25px;
+    font-size: inherit;
     transition: 0.5s;
 }
 .e_bottomNav .p_jtIcon.active {
-    transform: rotateZ(90deg)
+    transform: rotateZ(90deg);
 }

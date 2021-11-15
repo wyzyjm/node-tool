@@ -10,7 +10,7 @@
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ".e_bottomNav .p_menuItem{ \r\n    position: relative;\r\n}\r\n.e_bottomNav .p_level1Box{\r\n    padding: 0 20px;\r\n    height: calc(100vh - 57px);\r\n}\r\n.e_bottomNav .p_level1Box ul {\r\n    display: none;\r\n}\r\n.e_bottomNav .p_level2Box, \r\n.e_bottomNav .p_level3Box{\r\n    padding-left: 10px;\r\n}\r\n.e_bottomNav .p_jtIcon{\r\n    position: absolute;\r\n    right: 0;\r\n    top: 0;\r\n    z-index: 999;\r\n    margin-top: 3px;\r\n    transition: 0.5s;\r\n}\r\n.e_bottomNav .p_jtIcon.active {\r\n    transform: rotateZ(90deg)\r\n}"
+      "cssText": ".e_bottomNav .p_menuItem {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n.e_bottomNav .p_level1Box ul {\r\n    display: none;\r\n}\r\n.e_bottomNav .p_level2Box,\r\n.e_bottomNav .p_level3Box {\r\n    padding-left: 10px;\r\n}\r\n.e_bottomNav .p_jtIcon {\r\n    align-items: stretch;\r\n    width: auto;\r\n    height: auto;\r\n    max-width: 25px;\r\n    font-size: inherit;\r\n    transition: 0.5s;\r\n}\r\n.e_bottomNav .p_jtIcon.active {\r\n    transform: rotateZ(90deg);\r\n}\r\n"
     },
     {
       "media": "screen and (min-width: 769px)",
