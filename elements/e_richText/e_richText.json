@@ -2,11 +2,11 @@
   "cname": "富文本",
   "styleId": "e_richText",
   "styleClass": "s_title",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{{${richtext}}}}\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass} clearfix\">\r\n    {{{${richtext}}}}\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_richText{\n\n}\n"
+      "cssText": ".e_richText{\r\n\r\n}\r\n"
     },
     {
       "media": "screen and (max-width:768px)",
