@@ -6,11 +6,11 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_loop_I {\n    height: 384px;\n    display: flex;\n    overflow: hidden;\n}\n.e_loop_I .p_first {\n    width: 50%;\n}\n.e_loop_I .p_first_item {\n    height: 100%;\n    overflow: hidden;\n    /* border: 1px solid #ccc; */\n}\n.e_loop_I .p_right {\n    width: 50%;\n    overflow-y: auto;\n}\n\n/* 测试代码 */\n/* .e_loop_I .p_loopitem {\n    min-height: 100px;\n    border: 1px solid #ccc;\n} */\n"
+      "cssText": ".e_loop_I {\n    display: flex;\n    overflow: hidden;\n}\n.e_loop_I .p_first {\n    width: 50%;\n}\n.e_loop_I .p_first_item {\n    height: 100%;\n    overflow: hidden;\n    /* border: 1px solid #ccc; */\n}\n.e_loop_I .p_right {\n    width: 50%;\n    overflow-y: auto;\n}\n\n/* 测试代码 */\n/* .e_loop_I .p_loopitem {\n    min-height: 100px;\n    border: 1px solid #ccc;\n} */\n"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ".e_loop_I {\r\n    height: 512px;\r\n    flex-wrap: wrap;\r\n}\r\n.e_loop_I .p_first {\r\n    width: 100%;\r\n}\r\n.e_loop_I .p_right {\r\n    width: 100%;\r\n}\r\n"
+      "cssText": ".e_loop_I {\r\n    flex-wrap: wrap;\r\n}\r\n.e_loop_I .p_first {\r\n    width: 100%;\r\n}\r\n.e_loop_I .p_right {\r\n    width: 100%;\r\n}\r\n"
     },
     {
       "media": "screen and (min-width: 769px)",
