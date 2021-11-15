@@ -2,6 +2,14 @@
     display: flex;
     overflow: hidden;
 }
+.e_loop_I .p_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.e_loop_I .p_loopitem {
+    position: relative;
+    flex: 0 0 100%;
+}
 .e_loop_I .p_first {
     width: 50%;
 }
