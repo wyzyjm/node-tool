@@ -2,11 +2,11 @@
   "cname": "iframe",
   "styleId": "e_iframe",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#if ${frameUrl}}}\r\n        <iframe src=\"{{${frameUrl}}}\" frameborder=\"0\"></iframe>\r\n    {{else}}\r\n        <div class=\"noframeUrl\"> {{${i18n.noUrl}}} </div>\r\n    {{/if}}\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_iframe {\r\n    height: 300px;\r\n    min-height: 300px;\r\n}\r\n.e_iframe iframe {\r\n    width: 100%;\r\n    height: 100%;\r\n    border: 0;\r\n}\r\n.e_iframe .noframeUrl {\r\n    width: 100%;\r\n    height: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    color: rgba(0, 0, 0, 0.3);\r\n}\r\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,7 +21,12 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
-  "datasource": "prop"
+  "prop": {
+    "frameUrl": "http://www.300.cn"
+  },
+  "i18n": {
+    "zh_CN": {
+      "noUrl": "内嵌容器iframe"
+    }
+  }
 }

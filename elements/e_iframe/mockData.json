@@ -1,6 +1,8 @@
 {
-  "prop": {
-      "frameUrl":"http://www.300.cn"
-  },
-  "i18n": {}
+    "prop": {
+        "frameUrl": "http://www.300.cn"
+    },
+    "i18n": {
+        "noUrl": "内嵌容器iframe"
+    }
 }

@@ -1,3 +1,7 @@
 <div class="e_iframe">
-    <iframe src="{{prop.frameUrl}}" frameborder="0"></iframe>
+    {{#if prop.frameUrl}}
+        <iframe src="{{prop.frameUrl}}" frameborder="0"></iframe>
+    {{else}}
+        <div class="noframeUrl"> {{i18n.noUrl}} </div>
+    {{/if}}
 </div>
