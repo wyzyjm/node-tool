@@ -1,14 +1,14 @@
 {
     "prop": {
-        "dataList": [{}, {}, {}, {}, {}, {}],
+        "dataList": [{}, {}, {}, {}],
         "page": {
             "from": 0,
-            "size": 6,
+            "size": 4,
             "totalCount": 100
         },
         "pageConfig": {
             "showJump": true,
-            "pcRow": 6,
+            "pcRow": 4,
             "pcColumn": 1,
             "moColumn": 1,
             "pageType": "hidden",

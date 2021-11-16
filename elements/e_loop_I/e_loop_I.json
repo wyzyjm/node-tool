@@ -1,16 +1,16 @@
 {
   "cname": "循环体9",
   "styleId": "e_loop_I",
-  "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n        <div class=\"swiper-container\">\r\n            <div class=\"swiper-wrapper\">\r\n                {{#${dataList}}}\r\n                    <div class=\"swiper-slide p_slide\">\r\n                        <div class=\"cbox-${id} p_item\"> </div>\r\n                    </div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <!-- 分页器 -->\r\n            <div class=\"swiper-pagination p_pagenation\"></div>\r\n            <!-- 导航按钮 -->\r\n            <div class=\"swiper-button-next p_btn_next\"></div>\r\n            <div class=\"swiper-button-prev p_btn_prev\"></div>\r\n        </div>\r\n    {{else}}\r\n        {{{noDataPrompt}}}\r\n    {{/if}}\r\n</div>",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n        <div class=\"p_first\">\r\n             <!-- 第一条 -->\r\n            {{#${dataList}}}\r\n                {{#eq @index 0}}\r\n                    <div class=\"cbox-${id}-0 p_first_item\"></div>\r\n                {{/eq}}\r\n            {{/${dataList}}}\r\n        </div>\r\n\r\n        <div class=\"p_right\">\r\n            <div class=\"p_list\">\r\n                <!-- 后面的 -->\r\n                {{#${dataList}}}\r\n                    <div class=\"cbox-${id} p_loopitem {{#eq @index 0}} hide {{/eq}}\"></div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <div class=\"p_page\">\r\n                {{{nPaging ${page} ${pageConfig} ${datasource} i18nJson }}}\r\n            </div>\r\n        </div>\r\n    {{^}}\r\n        {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n    <!-- 所需数据 -->\r\n    <input type=\"hidden\" name=\"_config\" value='{{$toJson ${datasource}._config}}'>\r\n    <input type=\"hidden\" name=\"pageParamsJson\" value='{{$toJson ${datasource}.page}}'>\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{i18nJson}}'>\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_loop_I{\n    overflow: hidden;\n}\n.e_loop_I .p_item {\n    min-height: 200px;\n    border: 1px dashed #ccc;\n}"
+      "cssText": ".e_loop_I {\n    display: flex;\n    overflow: hidden;\n}\n.e_loop_I .p_list {\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_loop_I .p_loopitem {\n    position: relative;\n    flex: 0 0 100%;\n}\n.e_loop_I .p_first {\n    width: 50%;\n}\n.e_loop_I .p_first_item {\n    height: 100%;\n    overflow: hidden;\n    /* border: 1px solid #ccc; */\n}\n.e_loop_I .p_right {\n    width: 50%;\n    overflow-y: auto;\n}\n\n/* 测试代码 */\n/* .e_loop_I .p_loopitem {\n    min-height: 100px;\n    border: 1px solid #ccc;\n} */\n"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ""
+      "cssText": ".e_loop_I {\r\n    flex-wrap: wrap;\r\n}\r\n.e_loop_I .p_first {\r\n    width: 100%;\r\n}\r\n.e_loop_I .p_right {\r\n    width: 100%;\r\n}\r\n"
     },
     {
       "media": "screen and (min-width: 769px)",
@@ -26,19 +26,53 @@
       {},
       {},
       {},
-      {},
-      {},
       {}
     ],
-    "autoplay": true
+    "page": {
+      "from": 0,
+      "size": 4,
+      "totalCount": 100
+    },
+    "pageConfig": {
+      "showJump": true,
+      "pcRow": 4,
+      "pcColumn": 1,
+      "moColumn": 1,
+      "pageType": "hidden",
+      "rolling": {
+        "navigation": true,
+        "pagenation": true,
+        "autoScroll": true,
+        "scrollTime": 4,
+        "scrollType": "horizontal"
+      },
+      "marquee": {
+        "navigation": true,
+        "marqueeTime": 4
+      },
+      "loopItem": ".p_loopitem"
+    }
   },
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "pageWhole": "共",
+      "pageItem": "条",
+      "pageJump": "前往",
+      "pageUnit": "页",
+      "loadMore": "点击加载更多",
+      "loadNow": "加载中",
+      "noMore": "没有更多了",
+      "noData": "暂无数据"
+    }
   },
   "datasource": "prop",
+  "scope": true,
   "container": true,
   "dataFields": {
     "dataList": "dataList",
-    "autoplay": "autoplay"
-  }
+    "autoplay": "autoplay",
+    "page": "page",
+    "pageConfig": "pageConfig"
+  },
+  "dataManage": true
 }

@@ -1,7 +1,30 @@
-.e_loop_I{
+.e_loop_I {
+    display: flex;
     overflow: hidden;
 }
-.e_loop_I .p_item {
-    min-height: 200px;
-    border: 1px dashed #ccc;
+.e_loop_I .p_list {
+    display: flex;
+    flex-wrap: wrap;
 }
+.e_loop_I .p_loopitem {
+    position: relative;
+    flex: 0 0 100%;
+}
+.e_loop_I .p_first {
+    width: 50%;
+}
+.e_loop_I .p_first_item {
+    height: 100%;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+}
+.e_loop_I .p_right {
+    width: 50%;
+    overflow-y: auto;
+}
+
+/* 测试代码 */
+/* .e_loop_I .p_loopitem {
+    min-height: 100px;
+    border: 1px solid #ccc;
+} */

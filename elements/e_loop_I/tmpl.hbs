@@ -1,20 +1,30 @@
-<div class="e_loop_I" needjs="true">
+<div class="e_loop_I s_list" needjs="true">
     {{#if prop.dataList}}
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
+        <div class="p_first">
+             <!-- 第一条 -->
+            {{#prop.dataList}}
+                {{#eq @index 0}}
+                    <div class="cbox-${id}-0 p_first_item"></div>
+                {{/eq}}
+            {{/prop.dataList}}
+        </div>
+
+        <div class="p_right">
+            <div class="p_list">
+                <!-- 后面的 -->
                 {{#prop.dataList}}
-                    <div class="swiper-slide p_slide">
-                        <div class="cbox-${id} p_item"> </div>
-                    </div>
+                    <div class="cbox-${id} p_loopitem {{#eq @index 0}} hide {{/eq}}"></div>
                 {{/prop.dataList}}
             </div>
-            <!-- 分页器 -->
-            <div class="swiper-pagination p_pagenation"></div>
-            <!-- 导航按钮 -->
-            <div class="swiper-button-next p_btn_next"></div>
-            <div class="swiper-button-prev p_btn_prev"></div>
+            <div class="p_page">
+                {{{nPaging prop.page prop.pageConfig datasource i18nJson }}}
+            </div>
         </div>
-    {{else}}
-        {{{noDataPrompt}}}
+    {{^}}
+        {{{nNoDataPrompt i18n.noData}}}
     {{/if}}
+    <!-- 所需数据 -->
+    <input type="hidden" name="_config" value='{{$toJson datasource._config}}'>
+    <input type="hidden" name="pageParamsJson" value='{{$toJson datasource.page}}'>
+    <input type="hidden" name="i18nJson" value='{{i18nJson}}'>
 </div>

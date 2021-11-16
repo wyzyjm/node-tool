@@ -1,11 +1,11 @@
-<div class="e_bottomNav s_text" needjs="true">
+<div class="e_bottomNav s_title" needjs="true">
     {{#if prop.dataList}}
         <!-- 导航内容 开始 -->
         <ul class="p_level1Box">
             {{#each prop.dataList}}
             <li class="pt-1  pb-1 p_level1Item">
                 <!-- 名称 -->
-                <p class="p_menuItem">
+                <p class="p_menuItem s_templatetitle">
                     <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
                         <span>{{navName}}</span>
                     </a>
@@ -13,7 +13,7 @@
                 </p>
                 <!-- 子集 -->
                 {{#if this.children}}
-                <ul class="mt-2 p_level2Box">
+                <ul class="mt-2 p_level2Box s_templatesum">
                     {{#each this.children}}
                     <li class="p_level2Item">
                         <!-- 名称 2 -->
