@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_video{\n    width: 100%;\n    position: relative;\n    display: inline-block;\n}\n.e_video video{\n    width: 100%;\n    display: block;\n}\n.e_video .p_video{\n    position: relative;\n}\n.e_video .cover{\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    left: 0;\n    top: 0;\n}\n.e_video .cover .coverImage{\n    width: 100%;\n    height: 100%;\n}\n.e_video .cover .coverImage img{\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n}\n.e_video .cover .playBtn{\n    position:absolute;\n    width: 80px;\n    height: 80px;\n    z-index: 2;\n    left: 50%;\n    top: 50%;\n    margin: -40px auto auto -40px;\n    cursor: pointer;\n}"
+      "cssText": ".e_video{\n    width: 100%;\n    position: relative;\n}\n.e_video video{\n    width: 100%;\n    display: block;\n}\n.e_video .p_video{\n    position: relative;\n}\n.e_video .cover{\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    left: 0;\n    top: 0;\n}\n.e_video .cover .coverImage{\n    width: 100%;\n    height: 100%;\n}\n.e_video .cover .coverImage img{\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n}\n.e_video .cover .playBtn{\n    position:absolute;\n    width: 80px;\n    height: 80px;\n    z-index: 2;\n    left: 50%;\n    top: 50%;\n    margin: -40px auto auto -40px;\n    cursor: pointer;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
