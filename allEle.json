@@ -187,6 +187,10 @@
     {
       "name": "倒计时",
       "code": "e_leftTime"
+    },
+    {
+      "name": "html元素",
+      "code": "e_html"
     }
   ],
   "complex": [

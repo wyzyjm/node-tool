@@ -1,0 +1,9 @@
+{
+    "panelConfig": [
+        {
+            "title": "HTML",
+            "compName": "setting-text",
+            "bind-html": "prop.html"
+        }
+    ]
+}

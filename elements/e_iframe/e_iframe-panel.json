@@ -1,0 +1,9 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-iframe",
+            "title": "iFrame目标网址",
+            "bind-frameUrl": "prop.frameUrl"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "cname": "html元素",
+  "styleId": "e_html",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\"></div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_html {\n    min-height: 300px;\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {},
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}
