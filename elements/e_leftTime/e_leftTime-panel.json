@@ -1,0 +1,12 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-leftTime",
+            "bind-time": "prop.endTime",
+            "bind-end": "prop.end",
+            "bind-unit": "prop.unit",
+            "bind-danwei": "prop.danwei",
+            "title": "倒计时"
+        }
+    ]
+}

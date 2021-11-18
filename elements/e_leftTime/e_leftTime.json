@@ -1,0 +1,39 @@
+{
+  "cname": "倒计时",
+  "styleId": "e_leftTime",
+  "styleClass": "s_title",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <input type=\"hidden\" class=\"endTime\" value=\"{{${endTime}}}\" />\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_leftTime{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "endTime": "2026-12-12 10:00:00",
+    "end": 4,
+    "unit": 1,
+    "danwei": {
+      "day": "日",
+      "hour": "时",
+      "minute": "分",
+      "second": "秒"
+    }
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}

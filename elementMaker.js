@@ -74,9 +74,9 @@ async function addElement(body){
     if(obj.scope=='true'){
         defaultJson.scope=true
     }
-    if(obj.bindData=='true'){
-        defaultJson.dataFields={}
-    }
+    // if(obj.bindData=='true'){
+    //     defaultJson.dataFields={}
+    // }
     if(obj.adminData=='true'){
         defaultJson.dataManage={}
     }
