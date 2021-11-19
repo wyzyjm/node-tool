@@ -7,7 +7,11 @@
                 {{#eq type 1}}
                     <div class="p_img">
                         <a href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}}>
-                            {{{nLazyImage imgUrl title '{{#eq @index 0}}false{{^}}true{{/eq}}'}}}
+                            {{#eq @index 0}}
+                            {{{nLazyImage imgUrl title 'false'}}}
+                            {{^}}
+                            {{{nLazyImage imgUrl title 'true'}}}
+                            {{/eq}}
                         </a>
                     </div>
                 {{/eq}}
