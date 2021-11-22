@@ -23,7 +23,8 @@
                 "navigation": true,
                 "marqueeTime": 4
             },
-            "loopItem": ".p_loopitem"
+            "loopItem": ".p_loopitem",
+            "status": true
         }
     },
     "i18n": {

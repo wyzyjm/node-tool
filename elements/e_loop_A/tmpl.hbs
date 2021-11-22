@@ -1,6 +1,6 @@
 <div class="e_loop_A s_list" needjs="true">
     <div class="swiper-container">
-        {{#if prop.dataList}}
+        {{#arrControl prop.dataList prop.pageConfig.status}}
             <div class="swiper-wrapper">
                 {{#prop.dataList}}
                     <div class="swiper-slide">
@@ -11,6 +11,8 @@
             <!-- 如果需要导航按钮 -->
             <div class="js_editor_click swiper-button-prev"></div>
             <div class="js_editor_click swiper-button-next"></div>
-        {{/if}}
+        {{else}}
+            <div class="cbox-${id}-1 p_nodata"></div>
+        {{/arrControl}}
     </div>
 </div>

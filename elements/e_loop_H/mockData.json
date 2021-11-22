@@ -24,7 +24,7 @@
                 "marqueeTime": 4
             },
             "loopItem": ".p_loopitem",
-            "status": "hasData"
+            "status": true
         }
     },
     "i18n": {

@@ -2,11 +2,11 @@
   "cname": "循环体9",
   "styleId": "e_loop_I",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n        <div class=\"p_first\">\r\n             <!-- 第一条 -->\r\n            {{#${dataList}}}\r\n                {{#eq @index 0}}\r\n                    <div class=\"cbox-${id}-0 p_first_item\"></div>\r\n                {{/eq}}\r\n            {{/${dataList}}}\r\n        </div>\r\n\r\n        <div class=\"p_right\">\r\n            <div class=\"p_list\">\r\n                <!-- 后面的 -->\r\n                {{#${dataList}}}\r\n                    <div class=\"cbox-${id} p_loopitem {{#eq @index 0}} hide {{/eq}}\"></div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <div class=\"p_page\">\r\n                {{{nPaging ${page} ${pageConfig} ${datasource} i18nJson }}}\r\n            </div>\r\n        </div>\r\n    {{^}}\r\n        {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n    <!-- 所需数据 -->\r\n    <input type=\"hidden\" name=\"_config\" value='{{$toJson ${datasource}._config}}'>\r\n    <input type=\"hidden\" name=\"pageParamsJson\" value='{{$toJson ${datasource}.page}}'>\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{i18nJson}}'>\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#arrControl ${dataList} ${pageConfig}.status}}\r\n        <div class=\"p_first\">\r\n             <!-- 第一条 -->\r\n            {{#${dataList}}}\r\n                {{#eq @index 0}}\r\n                    <div class=\"cbox-${id}-0 p_first_item\"></div>\r\n                {{/eq}}\r\n            {{/${dataList}}}\r\n        </div>\r\n\r\n        <div class=\"p_right\">\r\n            <div class=\"p_list\">\r\n                <!-- 后面的 -->\r\n                {{#${dataList}}}\r\n                    <div class=\"cbox-${id} p_loopitem {{#eq @index 0}} hide {{/eq}}\"></div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <div class=\"p_page\">\r\n                {{{nPaging ${page} ${pageConfig} ${datasource} i18nJson }}}\r\n            </div>\r\n        </div>\r\n    {{^}}\r\n        <div class=\"cbox-${id}-1 p_nodata\"></div>\r\n    {{/arrControl}}\r\n    <!-- 所需数据 -->\r\n    <input type=\"hidden\" name=\"_config\" value='{{$toJson ${datasource}._config}}'>\r\n    <input type=\"hidden\" name=\"pageParamsJson\" value='{{$toJson ${datasource}.page}}'>\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{i18nJson}}'>\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_loop_I {\n    display: flex;\n    overflow: hidden;\n}\n.e_loop_I .p_list {\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_loop_I .p_loopitem {\n    position: relative;\n    flex: 0 0 100%;\n}\n.e_loop_I .p_first {\n    width: 50%;\n}\n.e_loop_I .p_first_item {\n    height: 100%;\n    overflow: hidden;\n    /* border: 1px solid #ccc; */\n}\n.e_loop_I .p_right {\n    width: 50%;\n    overflow-y: auto;\n}\n\n/* 测试代码 */\n/* .e_loop_I .p_loopitem {\n    min-height: 100px;\n    border: 1px solid #ccc;\n} */\n"
+      "cssText": ".e_loop_I {\n    display: flex;\n    overflow: hidden;\n}\n/* 无数据 */\n.e_loop_I .p_nodata {\n    width: 100%;\n}\n/* 有数据 */\n.e_loop_I .p_list {\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_loop_I .p_loopitem {\n    position: relative;\n    flex: 0 0 100%;\n}\n.e_loop_I .p_first {\n    width: 50%;\n}\n.e_loop_I .p_first_item {\n    height: 100%;\n    overflow: hidden;\n    /* border: 1px solid #ccc; */\n}\n.e_loop_I .p_right {\n    width: 50%;\n    overflow-y: auto;\n}\n\n/* 测试代码 */\n/* .e_loop_I .p_loopitem {\n    min-height: 100px;\n    border: 1px solid #ccc;\n} */\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -50,7 +50,8 @@
         "navigation": true,
         "marqueeTime": 4
       },
-      "loopItem": ".p_loopitem"
+      "loopItem": ".p_loopitem",
+      "status": true
     }
   },
   "i18n": {

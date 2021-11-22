@@ -1,8 +1,8 @@
 {
-  "cname": "循环体",
+  "cname": "循环体5",
   "styleId": "e_loop_E",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div class=\"swiper-container\">\r\n        {{#if ${dataList}}}\r\n            <div class=\"swiper-wrapper\">\r\n                {{#${dataList}}}\r\n                    <div class=\"swiper-slide\">\r\n                        <div class=\"slide-inner\">\r\n                            <div class=\"cbox-${id} p_template\"></div>\r\n                        </div>\r\n                    </div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <div class=\"swiper-pagination swiper-pagination-white\"></div>\r\n            <!-- 如果需要导航按钮 -->\r\n            <div class=\"js_editor_click swiper-button-prev swiper-button-white\"></div>\r\n            <div class=\"js_editor_click swiper-button-next swiper-button-white\"></div>\r\n        {{/if}}\r\n    </div>\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <div class=\"swiper-container\">\r\n        {{#arrControl ${dataList} ${pageConfig}.status}}\r\n            <div class=\"swiper-wrapper\">\r\n                {{#${dataList}}}\r\n                    <div class=\"swiper-slide\">\r\n                        <div class=\"slide-inner\">\r\n                            <div class=\"cbox-${id} p_template\"></div>\r\n                        </div>\r\n                    </div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <div class=\"swiper-pagination swiper-pagination-white\"></div>\r\n            <!-- 如果需要导航按钮 -->\r\n            <div class=\"js_editor_click swiper-button-prev swiper-button-white\"></div>\r\n            <div class=\"js_editor_click swiper-button-next swiper-button-white\"></div>\r\n        {{else}}\r\n            <div class=\"cbox-${id}-1 p_nodata\"></div>\r\n        {{/arrControl}}\r\n    </div>\r\n</div>",
   "css": [
     {
       "media": "",
@@ -27,7 +27,8 @@
     ],
     "pageConfig": {
       "autoplay": false,
-      "loopItem": ".p_template"
+      "loopItem": ".p_template",
+      "status": true
     }
   },
   "i18n": {

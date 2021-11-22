@@ -2,7 +2,7 @@
   "cname": "循环体8",
   "styleId": "e_loop_H",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n        <div class=\"p_first\">\r\n             <!-- 第一条 -->\r\n            {{#${dataList}}}\r\n                {{#eq @index 0}}\r\n                    <div class=\"cbox-${id}-0 p_loopitem\"></div>\r\n                {{/eq}}\r\n            {{/${dataList}}}\r\n        </div>\r\n        <div class=\"p_list\">\r\n            <!-- 后面的 -->\r\n            {{#${dataList}}}\r\n                <div class=\"cbox-${id} p_loopitem {{#eq @index 0}} hide {{/eq}}\"></div>\r\n            {{/${dataList}}}\r\n        </div>\r\n        <div class=\"p_page\">\r\n            {{{nPaging ${page} ${pageConfig} ${datasource} i18nJson }}}\r\n        </div>\r\n    {{^}}\r\n        {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n    <!-- 所需数据 -->\r\n    <input type=\"hidden\" name=\"_config\" value='{{$toJson ${datasource}._config}}'>\r\n    <input type=\"hidden\" name=\"pageParamsJson\" value='{{$toJson ${datasource}.page}}'>\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{i18nJson}}'>\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#arrControl ${dataList}  ${pageConfig}.status}}\r\n        <div class=\"p_first\">\r\n             <!-- 第一条 -->\r\n            {{#${dataList}}}\r\n                {{#eq @index 0}}\r\n                    <div class=\"cbox-${id}-0 p_loopitem\"></div>\r\n                {{/eq}}\r\n            {{/${dataList}}}\r\n        </div>\r\n        <div class=\"p_list\">\r\n            <!-- 后面的 -->\r\n            {{#${dataList}}}\r\n                <div class=\"cbox-${id} p_loopitem {{#eq @index 0}} hide {{/eq}}\"></div>\r\n            {{/${dataList}}}\r\n        </div>\r\n        <div class=\"p_page\">\r\n            {{{nPaging ${page} ${pageConfig} ${datasource} i18nJson }}}\r\n        </div>\r\n    {{^}}\r\n        <div class=\"cbox-${id}-1 p_nodata\"></div>\r\n    {{/arrControl}}\r\n    <!-- 所需数据 -->\r\n    <input type=\"hidden\" name=\"_config\" value='{{$toJson ${datasource}._config}}'>\r\n    <input type=\"hidden\" name=\"pageParamsJson\" value='{{$toJson ${datasource}.page}}'>\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{i18nJson}}'>\r\n</div>",
   "css": [
     {
       "media": "",
@@ -51,7 +51,7 @@
         "marqueeTime": 4
       },
       "loopItem": ".p_loopitem",
-      "status": "hasData"
+      "status": true
     }
   },
   "i18n": {

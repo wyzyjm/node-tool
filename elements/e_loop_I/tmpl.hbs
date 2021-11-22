@@ -1,5 +1,5 @@
 <div class="e_loop_I s_list" needjs="true">
-    {{#if prop.dataList}}
+    {{#arrControl prop.dataList prop.pageConfig.status}}
         <div class="p_first">
              <!-- 第一条 -->
             {{#prop.dataList}}
@@ -21,8 +21,8 @@
             </div>
         </div>
     {{^}}
-        {{{nNoDataPrompt i18n.noData}}}
-    {{/if}}
+        <div class="cbox-${id}-1 p_nodata"></div>
+    {{/arrControl}}
     <!-- 所需数据 -->
     <input type="hidden" name="_config" value='{{$toJson datasource._config}}'>
     <input type="hidden" name="pageParamsJson" value='{{$toJson datasource.page}}'>
