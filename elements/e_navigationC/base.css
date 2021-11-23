@@ -1,11 +1,21 @@
 .e_navigationC .p_navItem1{
-    line-height: 30px;
+    line-height: 1;
 }
 .e_navigationC .p_iconBox{
-    height: 57px;
-    padding: 10px;
+    height: 45px;
+    width: 45px;
+    background: rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    margin: 0px 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.e_navigationC .p_openIcon, .e_navigationC .p_closeIcon{
-    width: 36px;
-    height: 36px;
+.e_navigationC .p_openIcon, 
+.e_navigationC .p_closeIcon{
+    width: 100%;
+    height: 23px;
+}
+.e_navigationC .p_navButton{
+    display: none;
 }
