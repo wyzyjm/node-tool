@@ -1,9 +1,8 @@
 .e_navigationA .p_level1Box{
     display: flex;
+    justify-content: flex-end;
 }
 .e_navigationA .p_level1Item{
-    min-width: 100px;
-    padding: 0 20px;
 }
 .e_navigationA .p_level2Item, 
 .e_navigationA .p_level3Item{
@@ -17,10 +16,12 @@
 .e_navigationA .p_level2Box{
     width: 200px;
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 100%;
-    box-shadow: -5px 5px 20px rgb(236, 233, 233);
     z-index: 99;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .e_navigationA .p_level2Item{
     position: relative;
@@ -40,6 +41,7 @@
     /* transition: 0.5s; */
     transform: rotate(90deg);
     color: #cdcdcd;
+    display: none;
 }
 .e_navigationA .p_level1Item:hover .p_jtIcon {
     transition: 0.5s;
@@ -52,4 +54,12 @@
 
 .e_navigationA .p_iconBox{
     display: none;
+}
+
+.e_navigationA .p_level1Item a{
+    font-size: 16px;
+    padding: 0 20px;
+    line-height: 80px;
+    display: block;
+    text-align: center;
 }

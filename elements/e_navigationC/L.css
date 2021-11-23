@@ -12,18 +12,21 @@
     left: 0;
     padding: 30px 40px;
     z-index: 99;
-    background: rgb(255 255 255 / 70%);
+    background: #f5f5f5;
 }
 .e_navigationC .p_navBox2 ul{
     width: 60%;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    position: relative;
 }
 .e_navigationC .p_imgBox{
     width: 30%;
-    border: 2px solid rgba(0,0,0,.1);
     position: relative;
+    height: 150px;
+    background: rgb(0 0 0 / 2%);
+    overflow: hidden;
 }
 .e_navigationC .p_imgBox img{
     width: 100%;
@@ -83,7 +86,12 @@
     display: block;
 }
 .e_navigationC .p_img{
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: auto;
 }
 .e_navigationC .p_jtIcon{
     display: none;
@@ -98,11 +106,13 @@
     display: flex;
     justify-content: space-between;
 }
-.e_navigationC .p_imgBox::after{
+.e_navigationC .p_navBox2 ul::after{
     content: '';
-    border-right: 1px solid rgba(0, 0, 0, .05);
+    border-left: 1px solid rgba(0, 0, 0, .1);
     position: absolute;
     top: -2px;
     bottom: -2px;
-    right: -45px;
+    left: -45px;
+    z-index: 2;
+    width: 1px;
 }
