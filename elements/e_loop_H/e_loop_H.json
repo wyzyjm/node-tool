@@ -1,78 +1,73 @@
 {
-  "cname": "循环体8",
-  "styleId": "e_loop_H",
-  "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#arrControl ${dataList}  ${pageConfig}.status}}\r\n        <div class=\"p_first\">\r\n             <!-- 第一条 -->\r\n            {{#${dataList}}}\r\n                {{#eq @index 0}}\r\n                    <div class=\"cbox-${id}-0 p_loopitem\"></div>\r\n                {{/eq}}\r\n            {{/${dataList}}}\r\n        </div>\r\n        <div class=\"p_list\">\r\n            <!-- 后面的 -->\r\n            {{#${dataList}}}\r\n                <div class=\"cbox-${id} p_loopitem {{#eq @index 0}} hide {{/eq}}\"></div>\r\n            {{/${dataList}}}\r\n        </div>\r\n        <div class=\"p_page\">\r\n            {{{nPaging ${page} ${pageConfig} ${datasource} i18nJson }}}\r\n        </div>\r\n    {{^}}\r\n        <div class=\"cbox-${id}-1 p_nodata\"></div>\r\n    {{/arrControl}}\r\n    <!-- 所需数据 -->\r\n    <input type=\"hidden\" name=\"_config\" value='{{$toJson ${datasource}._config}}'>\r\n    <input type=\"hidden\" name=\"pageParamsJson\" value='{{$toJson ${datasource}.page}}'>\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{i18nJson}}'>\r\n</div>",
-  "css": [
-    {
-      "media": "",
-      "cssText": ".e_loop_H .p_list {\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_loop_H .p_loopitem {\n    position: relative;\n    flex: 0 0 100%;\n}\n.e_loop_H .p_page {\n    text-align: center;\n}\n"
-    },
-    {
-      "media": "screen and (max-width:768px)",
-      "cssText": ""
-    },
-    {
-      "media": "screen and (min-width: 769px)",
-      "cssText": ""
-    },
-    {
-      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
-      "cssText": ""
-    }
-  ],
-  "prop": {
-    "dataList": [
-      {},
-      {},
-      {},
-      {}
+    "cname": "循环体8",
+    "styleId": "e_loop_H",
+    "styleClass": "s_list",
+    "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#arrControl ${dataList}  ${pageConfig}.status}}\r\n        <div class=\"p_first\">\r\n             <!-- 第一条 -->\r\n            {{#${dataList}}}\r\n                {{#eq @index 0}}\r\n                    <div class=\"cbox-${id}-0 p_loopitem\"></div>\r\n                {{/eq}}\r\n            {{/${dataList}}}\r\n        </div>\r\n        <div class=\"p_list\">\r\n            <!-- 后面的 -->\r\n            {{#${dataList}}}\r\n                <div class=\"cbox-${id} p_loopitem {{#eq @index 0}} hide {{/eq}}\"></div>\r\n            {{/${dataList}}}\r\n        </div>\r\n        <div class=\"p_page\">\r\n            {{{nPaging ${page} ${pageConfig} ${datasource} i18nJson }}}\r\n        </div>\r\n    {{^}}\r\n       {{#prop.dataList_${id}}}\r\n            {{#eq @index 0}}\r\n                 <div class=\"cbox-${id}-1 p_nodata\"></div>\r\n           {{/eq}}\r\n        {{/prop.dataList_${id}}}\r\n    {{/arrControl}}\r\n    <!-- 所需数据 -->\r\n    <input type=\"hidden\" name=\"_config\" value='{{$toJson ${datasource}._config}}'>\r\n    <input type=\"hidden\" name=\"pageParamsJson\" value='{{$toJson ${datasource}.page}}'>\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{i18nJson}}'>\r\n</div>",
+    "css": [
+        {
+            "media": "",
+            "cssText": ".e_loop_H .p_list {\n    display: flex;\n    flex-wrap: wrap;\n}\n.e_loop_H .p_loopitem {\n    position: relative;\n    flex: 0 0 100%;\n}\n.e_loop_H .p_page {\n    text-align: center;\n}\n"
+        },
+        {
+            "media": "screen and (max-width:768px)",
+            "cssText": ""
+        },
+        {
+            "media": "screen and (min-width: 769px)",
+            "cssText": ""
+        },
+        {
+            "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+            "cssText": ""
+        }
     ],
-    "page": {
-      "from": 0,
-      "size": 4,
-      "totalCount": 100
+    "prop": {
+        "dataList": [{}, {}, {}, {}],
+        "page": {
+            "from": 0,
+            "size": 4,
+            "totalCount": 100
+        },
+        "pageConfig": {
+            "showJump": true,
+            "pcRow": 4,
+            "pcColumn": 1,
+            "moColumn": 1,
+            "pageType": "hidden",
+            "rolling": {
+                "navigation": true,
+                "pagenation": true,
+                "autoScroll": true,
+                "scrollTime": 4,
+                "scrollType": "horizontal"
+            },
+            "marquee": {
+                "navigation": true,
+                "marqueeTime": 4
+            },
+            "loopItem": ".p_loopitem",
+            "status": true
+        }
     },
-    "pageConfig": {
-      "showJump": true,
-      "pcRow": 4,
-      "pcColumn": 1,
-      "moColumn": 1,
-      "pageType": "hidden",
-      "rolling": {
-        "navigation": true,
-        "pagenation": true,
-        "autoScroll": true,
-        "scrollTime": 4,
-        "scrollType": "horizontal"
-      },
-      "marquee": {
-        "navigation": true,
-        "marqueeTime": 4
-      },
-      "loopItem": ".p_loopitem",
-      "status": true
-    }
-  },
-  "i18n": {
-    "zh_CN": {
-      "pageWhole": "共",
-      "pageItem": "条",
-      "pageJump": "前往",
-      "pageUnit": "页",
-      "loadMore": "点击加载更多",
-      "loadNow": "加载中",
-      "noMore": "没有更多了",
-      "noData": "暂无数据"
-    }
-  },
-  "datasource": "prop",
-  "scope": true,
-  "container": true,
-  "dataFields": {
-    "dataList": "dataList",
-    "page": "page",
-    "pageConfig": "pageConfig"
-  },
-  "dataManage": true
+    "i18n": {
+        "zh_CN": {
+            "pageWhole": "共",
+            "pageItem": "条",
+            "pageJump": "前往",
+            "pageUnit": "页",
+            "loadMore": "点击加载更多",
+            "loadNow": "加载中",
+            "noMore": "没有更多了",
+            "noData": "暂无数据"
+        }
+    },
+    "datasource": "prop",
+    "scope": true,
+    "container": true,
+    "dataFields": {
+        "dataList": "dataList",
+        "page": "page",
+        "pageConfig": "pageConfig"
+    },
+    "dataManage": true
 }

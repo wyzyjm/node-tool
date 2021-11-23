@@ -18,7 +18,11 @@
             {{{nPaging prop.page prop.pageConfig datasource i18nJson }}}
         </div>
     {{^}}
-        <div class="cbox-${id}-1 p_nodata"></div>
+       {{#prop.dataList_${id}}}
+            {{#eq @index 0}}
+                 <div class="cbox-${id}-1 p_nodata"></div>
+           {{/eq}}
+        {{/prop.dataList_${id}}}
     {{/arrControl}}
     <!-- 所需数据 -->
     <input type="hidden" name="_config" value='{{$toJson datasource._config}}'>
