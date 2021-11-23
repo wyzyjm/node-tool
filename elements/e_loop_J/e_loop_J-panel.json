@@ -4,7 +4,8 @@
             "compName":"setting-soulTable",
             "title":"循环体-筛选",
             "datasource":"prop.datasource",
-            "previewList":"prop.previewList"
+            "previewList":"prop.previewList",
+            "onePage":"prop.onePage"
         }
     ]
 }

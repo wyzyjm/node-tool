@@ -23,7 +23,8 @@
   ],
   "prop": {
     "datasource": {},
-    "previewList": []
+    "previewList": [],
+    "onePage": 30
   },
   "i18n": {
     "zh_CN": {

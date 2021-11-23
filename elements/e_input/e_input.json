@@ -29,6 +29,9 @@
     "showPlaceholder": true,
     "placeholder": "请输入...",
     "type": "text",
+    "initType": 1,
+    "datasource": {},
+    "ddItem": {},
     "value": "",
     "state": "normal",
     "validate": {
