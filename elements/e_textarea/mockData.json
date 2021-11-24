@@ -6,6 +6,9 @@
         "placeholder":"请输入...",
         "value":"",
         "state":"normal",
+        "initType":1,
+        "datasource":{},
+        "ddItem":{},
         "validate":{
             "required":{
                 "state":true,

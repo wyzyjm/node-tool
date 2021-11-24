@@ -32,6 +32,9 @@
     "state": "normal",
     "decimal": 2,
     "unit": "",
+    "initType": 1,
+    "datasource": {},
+    "ddItem": {},
     "validate": {
       "required": {
         "state": true,

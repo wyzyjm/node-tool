@@ -10,7 +10,10 @@
             "placeholder":"prop.placeholder",
             "value":"prop.value",
             "state":"prop.state",
-            "validate":"prop.validate"
+            "validate":"prop.validate",
+            "initType":"prop.initType",
+            "ddsource":"prop.datasource",
+            "ddItem":"prop.ddItem"
         }
     ]
 }

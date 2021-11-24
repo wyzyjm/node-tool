@@ -12,7 +12,10 @@
             "state":"prop.state",
             "decimal":"prop.decimal",
             "unit":"prop.unit",
-            "validate":"prop.validate"
+            "validate":"prop.validate",
+            "initType":"prop.initType",
+            "ddsource":"prop.datasource",
+            "ddItem":"prop.ddItem"
         }
     ]
 }

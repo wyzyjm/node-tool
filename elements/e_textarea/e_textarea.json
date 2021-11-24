@@ -30,6 +30,9 @@
     "placeholder": "请输入...",
     "value": "",
     "state": "normal",
+    "initType": 1,
+    "datasource": {},
+    "ddItem": {},
     "validate": {
       "required": {
         "state": true,
@@ -64,6 +67,9 @@
     "placeholder": "placeholder",
     "value": "value",
     "state": "state",
-    "validate": "validate"
+    "validate": "validate",
+    "initType": "initType",
+    "datasource": "datasource",
+    "ddItem": "ddItem"
   }
 }
