@@ -1,35 +1,39 @@
 <div class="e_navigationC" needjs="true">
     {{#if prop.dataList}}
-    <p class="p_iconBox">
-        {{{prop.menu}}}
-        {{{prop.close}}}
-    </p>
+    <div class="p_navButton">
+        <p class="p_iconBox">
+            {{{prop.menu}}}
+            {{{prop.close}}}
+        </p>
+    </div>
     <ul class="p_navBox1">
         {{#each prop.dataList}}
         <li class="border-bottom p_navItem1">
-            <p class="p_navCon">
+            <p class="p_navCon s_templatetitle">
                 <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
                     <span>{{navName}}</span>
-                    {{#if children}}{{{../prop.arrow}}}{{/if}}
                 </a>
+                {{#if children}}{{{../prop.arrow}}}{{/if}}
             </p>
             {{#if children}}
-            <div class="bg-white p_navBox2">
-                <ul>
-                    {{#each children}}
-                    <li class="border p_navItem2">
-                        <p>
-                            <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
-                                <span>{{navName}}</span>
-                            </a>
-                        </p>
-                    </li>
-                    {{/each}}
-                </ul>
-                <div class="p_imgBox">
-                    {{#each children}}
-                        <span class="p_img">{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>
-                    {{/each}}
+            <div class="p_navBox2">
+                <div>
+                    <div class="p_imgBox">
+                        {{#each children}}
+                            <span class="p_img">{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>
+                        {{/each}}
+                    </div>
+                    <ul>
+                        {{#each children}}
+                        <li class="p_navItem2">
+                            <p class="s_templatesum">
+                                <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
+                                    <span>{{navName}}</span>
+                                </a>
+                            </p>
+                        </li>
+                        {{/each}}
+                    </ul>
                 </div>
             </div>
             {{/if}}

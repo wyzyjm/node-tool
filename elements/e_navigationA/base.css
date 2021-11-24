@@ -4,15 +4,20 @@
     height: auto;
 }
 .e_navigationA .p_iconBox{
-    height: 57px;
-    padding: 10px;
-}
-.e_navigationA .p_menuItem{
-    line-height: 30px;
-    padding: 10px 0;
+    height: 45px;
+    width: 45px;
+    background: rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    margin: 0px 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .e_navigationA .p_openIcon, 
 .e_navigationA .p_closeIcon{
-    width: 36px;
-    height: 36px;
+    width: 100%;
+    height: 23px;
+}
+.e_navigationA .p_navButton {
+    display: none;
 }

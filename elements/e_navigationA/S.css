@@ -1,25 +1,63 @@
+.e_navigationA .p_navButton{
+    display: flex;
+    justify-content: flex-end;
+    padding: 18px 0;
+}
 .e_navigationA .p_level1Box{
-    padding: 0 20px;
     display: none;
-    height: calc(100vh - 57px);
+    height: calc(100vh - 80px);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #fbfbfb;
+    padding: 15px;
+    z-index: 99;
 }
 .e_navigationA .p_level2Box, 
 .e_navigationA .p_level3Box{
+    padding-bottom: 20px;
+}
+.e_navigationA .p_level3Box{
+    padding-top: 10px;
+    padding-bottom: 20px;
     padding-left: 20px;
 }
-.e_navigationA .p_iconBox{
-    display: block;
-}
+.e_navigationA .p_iconBox{}
 .e_navigationA .p_closeIcon{
     float: right;
     display: none;
 }
 .e_navigationA .p_jtIcon{
     float: right;
-    margin: 15px 0;
     transition: 0.5s;
+    margin: 20px 0;
+    width: 40px;
 }
 .e_navigationA .p_jtHover {
     transition: 0.5s;
     transform: rotate(90deg);
+}
+.e_navigationA .p_level1Item {
+    border-bottom: 1px solid rgb(0 0 0 / 5%);
+}
+.e_navigationA .p_level1Item a{
+    line-height: 60px;
+    font-size: 15px;
+}
+.e_navigationA .p_menuItem{
+    display: flex;
+    justify-content: space-between;
+}
+.e_navigationA .p_level2Item a{
+    color: rgb(0 0 0 / 40%);
+    line-height: 2;
+    transition: all ease .3s;
+}
+.e_navigationA .p_level2Item a:hover{
+    color: #000;
+}
+.e_navigationA .p_level2Item .p_jtIcon {
+    margin: 5px 0;
+    width: 40px;
 }

@@ -1,30 +1,32 @@
 <div class="e_navigationA" needjs="true">
     {{#if prop.dataList}}
-    <p class="p_iconBox">
-        {{{prop.menu}}}
-        {{{prop.close}}}
-    </p>
+    <div class="p_navButton">
+        <p class="p_iconBox">
+            {{{prop.menu}}}
+            {{{prop.close}}}
+        </p>
+    </div>
     <ul class="p_level1Box">
         {{#each prop.dataList}}
-        <li class="border-bottom p_level1Item">
+        <li class="p_level1Item">
             <p class="p_menuItem">
                 <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}{{/if}}">
                     <span>{{navName}}</span>
-                    {{#if children}}{{{../prop.arrow}}}{{/if}}
                 </a>
+                {{#if children}}{{{../prop.arrow}}}{{/if}}
             </p>
             {{#if this.children}}
-            <ul class="bg-white p_level2Box">
+            <ul class="p_level2Box">
                 {{#each this.children}}
                 <li class="p_level2Item">
                     <p class="p_menuItem">
                         <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
                             <span>{{navName}}</span>
-                            {{#if children}}{{{../../prop.arrow}}}{{/if}}
                         </a>
+                        {{#if children}}{{{../../prop.arrow}}}{{/if}}
                     </p>
                     {{#if this.children}}
-                    <ul class="bg-white p_level3Box">
+                    <ul class="p_level3Box">
                         {{#each this.children}}
                         <li class="p_level3Item">
                             <p class="p_menuItem">
