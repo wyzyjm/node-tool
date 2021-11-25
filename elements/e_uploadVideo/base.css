@@ -78,3 +78,10 @@
     max-height: 60px;
     overflow: hidden;
 }
+.e_uploadVideo .p_initList{
+    padding-top: 10px;
+}
+.e_uploadVideo .p_fileItem{
+    margin-bottom: 10px;
+    overflow: hidden;
+}

@@ -3,11 +3,11 @@
   "styleId": "e_uploadFile",
   "styleClass": "s_form1",
   "type": "form",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\" {{#if ${validate}.required.value}}required{{/if}}>\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n    </label>\n    {{/if}}\n    <div class=\"p_fileList clearfix\"></div>\n    <div class=\"p_upload\">\n        <div class=\"p_uploadBtn\">\n            <input type=\"file\" name=\"file\" class=\"uploadInput\" multiple>\n            <button class=\"btn btn-primary btn-sm\">{{${i18n.upload}}}</button>\n        </div>\n        {{#if ${showPlaceholder}}}\n        <span class=\"s_other\">{{${placeholder}}}</span>\n        {{/if}}\n    </div>\n    <input type=\"hidden\" name=\"${elemId}\" class=\"p_input\">\n    <div class=\"invalid-feedback\"></div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\" {{#if ${validate}.required.value}}required{{/if}}>\n    {{#if ${showLabel}}}\n    <label class=\"p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n    </label>\n    {{/if}}\n    <div class=\"p_fileList clearfix\"></div>\n    <div class=\"p_upload\">\n        <div class=\"p_uploadBtn\">\n            <input type=\"file\" name=\"file\" class=\"uploadInput\" multiple>\n            <button class=\"btn btn-primary btn-sm\">{{${i18n.upload}}}</button>\n        </div>\n        {{#if ${showPlaceholder}}}\n        <span class=\"s_other\">{{${placeholder}}}</span>\n        {{/if}}\n    </div>\n    <div class=\"p_initList clearfix\"></div>\n    <input type=\"hidden\" name=\"${elemId}\" class=\"p_input\">\n    <div class=\"invalid-feedback\"></div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_uploadFile .p_upload{\n    background-color: #f0f0f0;\n}\n.e_uploadFile .p_uploadBtn{\n    display: inline-block;\n    width: 80px;\n    margin-right: 20px;\n    position: relative;\n}\n.e_uploadFile .p_uploadBtn button{\n    width: 100%;\n    height: 100%;\n}\n.e_uploadFile .p_uploadBtn input {\n    position: absolute;\n    right: 0;\n    top: 0;\n    opacity: 0;\n    cursor: pointer;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n}\n.e_uploadFile .p_fileItem{\n    margin-bottom: 10px;\n    overflow: hidden;\n}\n.e_uploadFile .p_fileItem .p_uploading{\n    display: none;\n}\n.e_uploadFile .p_fileItem.onLoad .p_del{\n    display: none;\n}\n.e_uploadFile .p_fileItem.onLoad .p_uploading{\n    display: inline;\n}\n.e_uploadFile .p_op{\n    float: right;\n}\n.e_uploadFile .p_size{\n    margin-right: 10px;\n}\n.e_uploadFile .p_del{\n    cursor: pointer;\n}"
+      "cssText": ".e_uploadFile .p_upload{\n    background-color: #f0f0f0;\n}\n.e_uploadFile .p_uploadBtn{\n    display: inline-block;\n    width: 80px;\n    margin-right: 20px;\n    position: relative;\n}\n.e_uploadFile .p_uploadBtn button{\n    width: 100%;\n    height: 100%;\n}\n.e_uploadFile .p_uploadBtn input {\n    position: absolute;\n    right: 0;\n    top: 0;\n    opacity: 0;\n    cursor: pointer;\n    width: 100%;\n    height: 100%;\n    z-index: 2;\n}\n.e_uploadFile .p_fileItem{\n    margin-bottom: 10px;\n    overflow: hidden;\n}\n.e_uploadFile .p_fileItem .p_uploading{\n    display: none;\n}\n.e_uploadFile .p_fileItem.onLoad .p_del{\n    display: none;\n}\n.e_uploadFile .p_fileItem.onLoad .p_uploading{\n    display: inline;\n}\n.e_uploadFile .p_op{\n    float: right;\n}\n.e_uploadFile .p_size{\n    margin-right: 10px;\n}\n.e_uploadFile .p_del{\n    cursor: pointer;\n}\n.e_uploadFile .p_initList{\n    padding-top: 10px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -40,7 +40,11 @@
         "value": true,
         "msg": "内容不能为空"
       }
-    }
+    },
+    "initType": 1,
+    "initList": [],
+    "datasource": {},
+    "ddItem": {}
   },
   "i18n": {
     "zh_CN": {

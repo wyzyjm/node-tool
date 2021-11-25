@@ -43,3 +43,6 @@
 .e_uploadFile .p_del{
     cursor: pointer;
 }
+.e_uploadFile .p_initList{
+    padding-top: 10px;
+}

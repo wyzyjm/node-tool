@@ -14,7 +14,11 @@
             "value":true,
             "msg":"内容不能为空"
         }
-    }
+    },
+    "initType":1,
+    "initList":[],
+    "datasource":{},
+    "ddItem":{}
   },
   "i18n": {
       "upload":"上传"

@@ -12,7 +12,11 @@
             "size":"prop.size",
             "unit":"prop.unit",
             "accept":"prop.accept",
-            "validate":"prop.validate"
+            "validate":"prop.validate",
+            "initType":"prop.initType",
+            "initList":"prop.initList",
+            "datasource":"prop.datasource",
+            "ddItem":"prop.ddItem"
         }
     ]
 }
