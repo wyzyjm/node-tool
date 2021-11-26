@@ -3,7 +3,10 @@
         {
             "compName": "setting-map",
             "title": "缩放级别",
-            "bind-zoom": "prop.zoom"
+            "bind-zoom": "prop.zoom",
+            "bind-lat": "prop.lat",
+            "bind-lng": "prop.lng",
+            "bind-marker": "prop.marker"
         }
     ]
 }
