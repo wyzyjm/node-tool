@@ -14,6 +14,8 @@
             "totalCount": 100
         },
         "pageConfig": {
+            "status":true,
+            "filterPosition":"",
             "showJump": true,
             "pcRow": 2,
             "pcColumn": 3,
@@ -94,56 +96,25 @@
                 "showSearch": "_detailId",
                 "fields": [
                     {
-                        "field": "TOP",
+                        "esField": "DETAIL_ES.es_float_number_37V2YA46",
+                        "field": "number_37V2YA46",
                         "selectMode": "radio",
                         "values": [
                             {
                                 "valueType": "all",
-                                "name": "全部",
+                                "name": "大地方",
                                 "range": {
-                                    "left": 100,
-                                    "right": 10000,
-                                    "leftType": ">=",
-                                    "rightType": "<="
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
                                 },
-                                "filterType": "",
+                                "filterType": "value",
                                 "value": ""
                             },
                             {
-                                "valueType": "custom",
-                                "name": "是",
-                                "range": {
-                                    "left": 0,
-                                    "right": 0,
-                                    "leftType": "",
-                                    "rightType": ""
-                                },
-                                "filterType": "range",
-                                "value": "1"
-                            },
-                            {
-                                "valueType": "custom",
-                                "name": "否",
-                                "range": {
-                                    "left": 0,
-                                    "right": 0,
-                                    "leftType": "",
-                                    "rightType": ""
-                                },
-                                "filterType": "range",
-                                "value": "0"
-                            }
-                        ],
-                        "name": "置顶",
-                        "displayMode": "tag"
-                    },
-                    {
-                        "field": "thumb",
-                        "selectMode": "radio",
-                        "values": [
-                            {
                                 "valueType": "all",
-                                "name": "全部",
+                                "name": "胡椒粉感觉",
                                 "range": {
                                     "left": 0,
                                     "right": 0,
@@ -154,8 +125,128 @@
                                 "value": ""
                             }
                         ],
-                        "name": "测试",
+                        "name": "访问两",
                         "displayMode": "tag"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_multi_associationData_3H1S8a05",
+                        "field": "associationData_3H1S8a05",
+                        "selectMode": "",
+                        "values": [
+                            {
+                                "valueType": "all",
+                                "name": "adfadsf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "inputRange",
+                                "value": "normal"
+                            }
+                        ],
+                        "name": "asdfasdf af",
+                        "displayMode": "input"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_symbol_text_67j4VR7J",
+                        "field": "text_67j4VR7J",
+                        "selectMode": "",
+                        "values": [
+                            {
+                                "valueType": "all",
+                                "name": "adfasdf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "inputRange",
+                                "value": "date"
+                            }
+                        ],
+                        "name": "adfasfadfs",
+                        "displayMode": "input"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_symbol_address_og624h08province",
+                        "field": "address_og624h08province",
+                        "selectMode": "radio",
+                        "values": [
+                            {
+                                "valueType": "all",
+                                "name": "adfadsf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": ""
+                            },
+                            {
+                                "valueType": "all",
+                                "name": "adfadf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": ""
+                            }
+                        ],
+                        "name": "sdfaef",
+                        "displayMode": "select"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_symbol_address_og624h08city",
+                        "field": "address_og624h08city",
+                        "selectMode": "multiple",
+                        "values": [
+                            {
+                                "valueType": "custom",
+                                "name": "adfadsf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": "北京"
+                            },
+                            {
+                                "valueType": "custom",
+                                "name": "asdfadsf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": "企业网点"
+                            },
+                            {
+                                "valueType": "all",
+                                "name": "adfaeee",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": ""
+                            }
+                        ],
+                        "name": "afaf",
+                        "displayMode": "select"
                     }
                 ]
             }
