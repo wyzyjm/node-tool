@@ -44,6 +44,8 @@
         "value": "3"
       }
     ],
+    "datasourceList": [],
+    "ddItemList": [],
     "validate": {
       "required": {
         "state": true,
@@ -65,7 +67,9 @@
     "placeholder": "placeholder",
     "state": "state",
     "options": "options",
-    "validate": "validate"
+    "validate": "validate",
+    "datasourceList": "datasourceList",
+    "ddItemList": "ddItemList"
   },
   "scope": true
 }

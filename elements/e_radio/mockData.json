@@ -16,6 +16,8 @@
                 "value":"3"
             }
         ],
+        "datasourceList":[],
+        "ddItemList":[],
         "validate":{
             "required":{
                 "state":true,

@@ -1,7 +1,7 @@
 {
   "cname": "表单容器",
   "styleId": "e_form",
-  "styleClass": "s_layout",
+  "styleClass": "s_form_layout1",
   "type": "form",
   "tmpl": "<form class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#${layout}}}\n    <div class=\"cbox-${id}-{{@index}} p_formItem\"></div>\n    {{/${layout}}}\n    {{#eq ${submit}.type 2}}\n    <input name=\"jumpPage\" type=\"hidden\" value=\"{{$transferLink ${submit}.obj2 compId}}\"></a>\n    {{/eq}}\n</form>",
   "css": [

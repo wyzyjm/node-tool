@@ -8,7 +8,9 @@
             "label":"prop.label",
             "limit":"prop.limit",
             "options":"prop.options",
-            "validate":"prop.validate"
+            "validate":"prop.validate",
+            "datasourceList":"prop.datasourceList",
+            "ddItemList":"prop.ddItemList"
         }
     ]
 }

@@ -7,7 +7,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_label .p_required{\n    vertical-align: middle;\n    font-size: 1.4em;\n    line-height: 100%;\n    position: relative;\n    font-weight: bold;\n    top: 0.15em;\n    padding-left: 5px;\n}\n.e_label .p_labelItem{\n    margin-right: 10px;\n}\n.e_label .p_labelItem input{\n    display: none;\n}\n.e_label .p_labelItem label{\n    padding: 0 10px;\n    border-radius: 4px;\n}\n.e_label .p_labelItem input:checked+label{\n    background-color: #ed6f2d;\n    color: #fff;\n}"
+      "cssText": ".e_label .p_labelItem{\n    margin-right: 10px;\n    margin-bottom:5px;\n}\n.e_label .p_labelItem input{\n    display: none;\n}\n.e_label .p_labelItem label{\n    padding: 0 10px;\n    border-radius: 4px;\n}\n.e_label .p_labelItem input:checked+label{\n    background-color: #ed6f2d;\n    color: #fff;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -53,6 +53,8 @@
         "value": "6"
       }
     ],
+    "datasourceList": [],
+    "ddItemList": [],
     "validate": {
       "required": {
         "state": true,

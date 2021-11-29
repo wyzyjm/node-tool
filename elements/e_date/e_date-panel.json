@@ -11,7 +11,11 @@
             "placeholder":"prop.placeholder",
             "format":"prop.format",
             "state":"prop.state",
-            "validate":"prop.validate"
+            "validate":"prop.validate",
+            "initType":"prop.initType",
+            "initValue":"prop.initValue",
+            "datasource":"prop.datasource",
+            "ddItem":"prop.ddItem"
         }
     ]
 }

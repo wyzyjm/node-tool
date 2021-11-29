@@ -10,7 +10,9 @@
             "placeholder":"prop.placeholder",
             "state":"prop.state",
             "options":"prop.options",
-            "validate":"prop.validate"
+            "validate":"prop.validate",
+            "datasourceList":"prop.datasourceList",
+            "ddItemList":"prop.ddItemList"
         }
     ]
 }

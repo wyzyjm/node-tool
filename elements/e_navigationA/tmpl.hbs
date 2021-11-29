@@ -9,7 +9,7 @@
     <ul class="p_level1Box">
         {{#each prop.dataList}}
         <li class="p_level1Item">
-            <p class="p_menuItem">
+            <p class="p_menuItem js_editor_click">
                 <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}{{/if}}">
                     <span>{{navName}}</span>
                 </a>
@@ -19,7 +19,7 @@
             <ul class="p_level2Box">
                 {{#each this.children}}
                 <li class="p_level2Item">
-                    <p class="p_menuItem">
+                    <p class="p_menuItem js_editor_click">
                         <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
                             <span>{{navName}}</span>
                         </a>
