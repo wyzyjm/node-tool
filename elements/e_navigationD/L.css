@@ -1,0 +1,32 @@
+.e_navigationD .p_level1Box{
+    border-radius: 20px;
+    border: 1px solid rgb(0 0 0 / 5%);
+    background: #fff;
+} 
+.e_navigationD .p_menuItem{
+    padding: 7px 20px;
+    font-size: 14px;
+    color: rgb(0 0 0 / 70%);
+    cursor: pointer;
+    padding-right: 15px;
+}
+.e_navigationD .p_menuItem svg{
+    transition: all ease .3s;
+    margin: 0;
+    transform: rotate(0deg);
+}
+.e_navigationD .p_level1Box:hover .p_menuItem svg{
+    transform: rotate(-180deg);
+}
+.e_navigationD .p_level2Item .p_menuItem{
+    padding: 3px 20px;
+    color: rgb(0 0 0 / 40%);
+    transition: all ease .3s;
+}
+.e_navigationD .p_level2Item .p_menuItem:hover{
+    color: rgb(0 0 0 / 100%);
+}
+.e_navigationD .p_level2Box{
+    padding-bottom: 8px;
+    display: none;
+}
