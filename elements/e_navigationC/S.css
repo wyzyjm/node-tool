@@ -1,5 +1,5 @@
 .e_navigationC .p_navButton{
-    display: flex;
+    display: flex; 
     justify-content: flex-end;
     padding: 18px 0;
 }
