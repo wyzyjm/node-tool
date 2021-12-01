@@ -25,7 +25,7 @@
     width: 30%;
     position: relative;
     height: 150px;
-    background: rgb(0 0 0 / 2%);
+    background: rgba(0,0,0,.2);
     overflow: hidden;
 }
 .e_navigationC .p_imgBox img{
