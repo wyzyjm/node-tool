@@ -1,7 +1,12 @@
+<<<<<<< Updated upstream
 .e_navigationD{
 
 }
 .e_navigationD .p_languageNav{
+=======
+.e_navigationD{ }
+.e_navigationD .p_languageNav{ 
+>>>>>>> Stashed changes
     display: flex;
     justify-content: flex-end;
 }

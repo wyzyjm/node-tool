@@ -12,7 +12,7 @@
 .e_navigationD .p_menuItem{}
 .e_navigationD .p_level2Item .p_menuItem{
     padding: 3px 20px;
-    color: rgb(0 0 0 / 40%);
+    color: rgba(0,0,0,.4);
     transition: all ease .3s;
 }
 .e_navigationD .p_level2Item .p_menuItem:hover{

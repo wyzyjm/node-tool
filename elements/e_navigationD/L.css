@@ -1,6 +1,6 @@
 .e_navigationD .p_level1Box{
     border-radius: 20px;
-    border: 1px solid rgb(0 0 0 / 5%);
+    border: 1px solid rgba(0,0,0,.5);
     background: #fff;
 } 
 .e_navigationD .p_menuItem{
