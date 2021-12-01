@@ -9,7 +9,13 @@
 }
 .e_navigationB .p_navItem1{ 
     padding: 0;
+<<<<<<< Updated upstream
     margin: 0 20px;
+=======
+    margin: 0 0px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    line-height: 60px;
+>>>>>>> Stashed changes
  }
 .e_navigationB .p_navItem2{ 
     border-right: none;
