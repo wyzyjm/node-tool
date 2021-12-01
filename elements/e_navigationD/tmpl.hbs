@@ -1,0 +1,35 @@
+<div class="e_navigationD" needjs="true">
+    <div class="p_languageNav">
+        {{#if prop.dataList}}
+        <ul class="p_level1Box">
+            {{#each prop.dataList}}
+            <li class="p_level1Item">
+                <p class="p_menuItem p_o js_editor_click ">
+                    <span>{{navName}}</span>
+                    {{#if children}}{{{../prop.arrow}}}{{/if}}
+                </p>
+                <p class="p_menuItem_s p_p js_editor_click ">
+                    {{#if children}}{{{../prop.earch}}}{{/if}}
+                </p>
+                {{#if this.children}}
+                <ul class="p_level2Box">
+                    {{#each this.children}}
+                    <li class="p_level2Item">
+                        <p class="p_menuItem">
+                            <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
+                                <span>{{navName}}</span>
+                            </a>
+                        </p>
+                    </li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+        {{^}}
+        {{{nNoDataPrompt i18n.noData}}}
+        {{/if}}
+    </div>
+</div>
+

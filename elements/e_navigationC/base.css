@@ -1,10 +1,10 @@
 .e_navigationC .p_navItem1{
-    line-height: 1;
+    line-height: 1; 
 }
 .e_navigationC .p_iconBox{
     height: 45px;
     width: 45px;
-    background: rgb(0 0 0 / 10%);
+    background: rgba(0,0,0,.1);
     border-radius: 4px;
     margin: 0px 15px 0 0;
     display: flex;
