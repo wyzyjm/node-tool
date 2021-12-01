@@ -41,7 +41,7 @@ iframe#compview {
 }
 .iframe_con{
     padding: 20px;
-    height: calc(100% - 60px);
+    height: calc(100% - 90px);
     margin: 0 auto;
     overflow-y: auto;
 }
@@ -176,7 +176,7 @@ textarea.upMessage{
     position: relative;
 }
 .elementlist{
-    height: calc(100% - 60px);
+    height: calc(100% - 170px);
     overflow-y: auto;
     text-align: center;
     /* padding: 20px; */
@@ -200,4 +200,7 @@ textarea.upMessage{
     padding: 0;
     line-height: 30px;
 }
-
+.ctdiv{
+    text-align: center;
+    padding: 20px 0;
+}

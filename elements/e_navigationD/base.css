@@ -1,0 +1,8 @@
+.e_navigationD{ }
+.e_navigationD .p_languageNav{ 
+    display: flex;
+    justify-content: flex-end;
+}
+.e_navigationD .p_menuItem_s{
+    display: none; 
+}

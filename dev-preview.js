@@ -3,8 +3,10 @@ const static = require('koa-static');
 const {promises: {readFile,writeFile,readdir,stat}} = require('fs');
 const maker=require('./maker.js');
 const elementMaker=require('./elementMaker.js');
+const getI18nFun=require('./i18n/getI18n.js');
 const path=require('path');
 const mockJs = require('mockjs');
+const moment = require('moment');
 const logger = require('./logger');
 const app = new Koa();
 const {exec} = require("child_process");
@@ -238,6 +240,15 @@ app.use(async function (ctx,next) {
                 }
             }else{
                 result=JSON.stringify({error:'缺少参数 compId'})
+            }
+        }else if(api=='getI18n'){//读取中文词条
+            try{
+                getI18nFun.init()
+                var fileName = moment().format('YYYY-MM-DD')
+                var filePath = path.resolve('./i18n/dist/'+fileName+'.xlsx');
+                result=JSON.stringify({success:filePath});
+            }catch(e){
+                result=JSON.stringify({error:e.toString()});
             }
         }
         ctx.body=result;
