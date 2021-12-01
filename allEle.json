@@ -297,6 +297,10 @@
     {
       "name": "文件下载",
       "code": "e_download"
+    },
+    {
+      "name": "会员中心菜单",
+      "code": "e_member"
     }
   ],
   "form": [
