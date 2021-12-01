@@ -58,7 +58,21 @@ $(function(){
         $('.elementlist .list-group').eq($(this).index()).addClass('show').siblings().removeClass('show')
         $(this).addClass('active').siblings().removeClass('active')
     })
+    //读取中文词条
+    $(".getI18n").click(function(){
+        getI18n()
+    })
 })
+async function getI18n(){
+    let result=await (await fetch('/element/getI18n')).json();
+    if(result.success){
+        layer.open({
+            title: '生成词条成功',
+            content: '位置：'+result.success
+        });  
+    }
+    console.log(result,111)
+}
 //初始化元素列表
 async function initElements() {
     let result=await (await fetch('/element/elementlist')).json();
