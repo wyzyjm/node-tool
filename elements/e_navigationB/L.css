@@ -37,11 +37,8 @@
 }
 .e_navigationB span{
     text-align: center;
-<<<<<<< Updated upstream
-=======
     transition: all ease .3s;
     color: rgba(0,0,0,.6);
->>>>>>> Stashed changes
 }
 .e_navigationB .p_img{
     width: 120px;

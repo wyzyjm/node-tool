@@ -13,17 +13,10 @@
                     {{#if children}}{{{../prop.arrow}}}{{/if}}
                 </a>
             </p>
-<<<<<<< Updated upstream
-            {{#if children}}
-            <ul class="bg-white border p_navBox2">
-                {{#each children}}
-                <li class="p_navItem2">
-=======
             {{#if this.children}}
             <ul class="p_navBox2">
                 {{#each this.children}}
                 <li class="p_navItem2 js_editor_click ">
->>>>>>> Stashed changes
                     <p>
                         <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
                             {{#if img}}
