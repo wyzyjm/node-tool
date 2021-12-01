@@ -1,8 +1,8 @@
-<div class="e_bannerB s_banner swiper-container" needjs="true">
+<div class="e_bannerB s_list swiper-container" needjs="true">
     {{#if prop.bannerLists}}
     <ul class="swiper-wrapper">
         {{#each prop.bannerLists}}
-        <li class="swiper-slide">
+        <li class="swiper-slide p_s_slide">
             {{#eq type 1}}
                 <div class="p_img">
                     <a href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}}>
@@ -26,6 +26,7 @@
             {{/eq}}
             <div class="p_info {{#eq type 2}}p_videoInfo{{/eq}}">
                 <div>
+                    {{#if prop.settings.showText}}
                     {{#if title}}
                     <h1 class="text-white p_btitle">
                         <a href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}}>
@@ -39,14 +40,15 @@
                     {{#if summary}}
                     <p class="text-white p_summary">{{summary}}</p>
                     {{/if}}
+                    {{/if}}
                 </div>
             </div>
         </li>
         {{/each}}
     </ul>
     {{#if prop.settings.navigation}}
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="js_editor_click swiper-button-prev p_btn_icon"></div>
+    <div class="js_editor_click swiper-button-next p_btn_icon"></div>
     {{/if}}
     {{#if prop.settings.pagination}}
     <div class="swiper-pagination"></div>

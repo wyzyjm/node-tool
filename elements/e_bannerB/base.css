@@ -5,7 +5,7 @@
 
 .e_bannerB .swiper-pagination-bullet{ width:1em; height:2px; background:#fff; opacity:0.5; box-sizing:border-box; border-radius:0; -webkit-border-radius:0; vertical-align:middle;}
 .e_bannerB .swiper-pagination-bullet-active{width:1em; height:1em; border:2px solid #fff; background:none; opacity:1;border-radius:50%; -webkit-border-radius:50%;}
-.e_bannerB .swiper-button-prev,.e_bannerB .swiper-button-next{width:40px; height:60px; top:50%; margin-top:-30px; visibility:hidden; color: #ccc;}
+.e_bannerB .swiper-button-prev,.e_bannerB .swiper-button-next{width:40px; height:60px; top:50%; margin-top:-30px; visibility:visible; color: #ccc;}
 .e_bannerB:hover .swiper-button-prev,.e_bannerB:hover .swiper-button-next{ visibility:visible;}
 .e_bannerB .swiper-button-prev{ left:50px;}
 .e_bannerB .swiper-button-next{ right:50px;}

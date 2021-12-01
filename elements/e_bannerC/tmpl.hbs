@@ -1,4 +1,4 @@
-<div class="e_bannerC s_banner" needjs="true">
+<div class="e_bannerC s_list" needjs="true">
     {{#if prop.bannerLists}}
     <div class="swiper-container gallery-top" >
         <div class="swiper-wrapper">
@@ -27,6 +27,7 @@
                 {{/eq}}
                 <div class="p_info {{#eq type 2}}p_videoInfo{{/eq}}">
                     <div>
+                        {{#if prop.settings.showText}}
                         {{#if title}}
                         <h1 class="text-white p_btitle">
                             <a href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}}>
@@ -40,14 +41,15 @@
                         {{#if summary}}
                         <p class="text-white p_summary">{{summary}}</p>
                         {{/if}}
+                        {{/if}}
                     </div>
                 </div>
             </div>
             {{/each}}
         </div>
         {{#if prop.settings.navigation}}
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="js_editor_click swiper-button-next swiper-button-white p_btn_icon"></div>
+        <div class="js_editor_click swiper-button-prev swiper-button-white p_btn_icon"></div>
         {{/if}}
     </div>
     <div class="swiper-container gallery-thumbs">
