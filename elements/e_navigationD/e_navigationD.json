@@ -60,5 +60,11 @@
     }
   },
   "datasource": "prop",
+  "dataFields": {
+    "dataList": "dataList",
+    "arrow": "arrow",
+    "earch": "earch",
+    "showArrow": "showArrow"
+  },
   "dataManage": {}
 }
