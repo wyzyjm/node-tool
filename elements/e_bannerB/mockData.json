@@ -54,7 +54,8 @@
         "videoAutoplay": false,
         "videoLoop":false,
         "videoMouted":true,
-        "videoControlor":false
+        "videoControlor":false,
+        "showText":true
     }
   },
   "i18n": {

@@ -1,21 +1,26 @@
-.e_login .form-control-p{
-    display:block;
-    width:100%;
-    height:calc(1.5em + .75rem + 2px);
-    padding:.375rem .75rem;
-    font-weight:400;
-    line-height:1.5;
-    color:#495057;
-    background-color:#fff;
-    background-clip:padding-box;
+.e_login .form-control-p {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
     border: none;
-    border-bottom:1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
     border-radius: 0;
-    transition:border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.e_login input { 
+.e_login input {
     outline: none;
- }
- .e_login .btn{
-    border-radius:1.25rem;
- }
+}
+.e_login .btn {
+    border-radius: 1.25rem;
+}
+
+.e_login .error_li input {
+    border: none;
+    border-bottom: 1px solid #fa7679;
+}
