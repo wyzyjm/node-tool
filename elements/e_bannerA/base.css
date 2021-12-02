@@ -1,5 +1,14 @@
-.e_bannerA .swiper-slide{
+.e_bannerA{
     height: 600px;
+}
+.e_bannerA .swiper-container{
+    height: inherit;
+}
+.e_bannerA .swiper-wrapper{
+    height: inherit;
+}
+.e_bannerA .swiper-slide{
+    height: inherit;
 }
 .e_bannerA .p_img{
     width: 100%;
