@@ -4,6 +4,7 @@ const {promises: {readFile,writeFile,readdir,stat}} = require('fs');
 const maker=require('./maker.js');
 const elementMaker=require('./elementMaker.js');
 const getI18nFun=require('./i18n/getI18n.js');
+const setI18nFun=require('./i18n/setI18n.js');
 const path=require('path');
 const mockJs = require('mockjs');
 const moment = require('moment');
@@ -247,6 +248,13 @@ app.use(async function (ctx,next) {
                 var fileName = moment().format('YYYY-MM-DD')
                 var filePath = path.resolve('./i18n/dist/'+fileName+'.xlsx');
                 result=JSON.stringify({success:filePath});
+            }catch(e){
+                result=JSON.stringify({error:e.toString()});
+            }
+        }else if(api=='setI18n'){//设置翻译词条
+            try{
+                setI18nFun.init()
+                result=JSON.stringify({success:true});
             }catch(e){
                 result=JSON.stringify({error:e.toString()});
             }
