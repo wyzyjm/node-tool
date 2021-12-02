@@ -1,8 +1,4 @@
-.e_login {
-}
-
 /* 顶部 */
-
 /* 登录方式高亮 */
 .e_login .p_loginway {
     cursor: pointer;
@@ -11,7 +7,6 @@
 .e_login .p_loginway.active {
     color: #333;
 }
-
 /* body */
 .e_login .p_p_tip {
     height: 18px;
@@ -53,7 +48,8 @@
 .e_login .p_input_div {
     position: relative;
 }
-.e_login .p_input_div div {
+/* 获取验证码 */
+.e_login .p_getcode {
     position: absolute;
     right: 0;
     top: 0px;
@@ -66,7 +62,8 @@
 .e_login .p_select {
     position: relative;
 }
-.e_login .p_select select {
+/* 手机区号下拉 */
+.e_login .p_select_html {
     position: absolute;
     left: 1px;
     top: 6px;
@@ -84,7 +81,7 @@
 .e_login .p_login_box {
     display: none;
 }
-.e_login .p_time-2 {
+.e_login .js_time_2 {
     display: none;
 }
 .e_login .p_popup_box {
@@ -113,19 +110,19 @@
     margin-top: -140px;
     border-radius: 5px;
 }
-.e_login .p_popup_password p {
+.e_login .p_forgetPassword {
     text-align: center;
     color: #333;
     font-size: 16px;
     padding: 20px 0px;
 }
-.e_login .p_popup_password div {
+.e_login .p_topTip {
     text-align: center;
     color: #666;
     font-size: 14px;
     margin-bottom: 12px;
 }
-.e_login .p_popup_password li {
+.e_login .p_back {
     width: 196px;
     height: 38px;
     border: solid #007bff 1px;
