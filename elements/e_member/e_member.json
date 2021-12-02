@@ -1,0 +1,29 @@
+{
+  "cname": "会员中心菜单",
+  "styleId": "e_member",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n  <div class=\"p_leftMenu\">\n    <div class=\"p_sidebar\">\n      <div class=\"p_title\">个人中心 \n        <span class=\"p_icon_wrapper\">\n          <svg t=\"1638322142383\" class=\"icon p_icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"5821\" width=\"200\" height=\"200\"><path d=\"M216.72391147 651.21161694l274.52302186-331.13884376a28.8540448 28.8540448 0 0 1 42.96248854 0L807.36711147 651.21161694a28.76302187 28.76302187 0 0 1-21.4812448 47.96871146H238.11413333a28.76302187 28.76302187 0 0 1-21.39022186-47.96871146z\" fill=\"#666666\" p-id=\"5822\"></path></svg>\n        </span>\n      </div>\n      <ul class=\"p_menu js_menu\">\n        {{!-- <li class=\"item active\"><a>我的订单</a></li>\n        <li class=\"item\"><a>在线留言</a></li> --}}\n      </ul>\n    </div>\n  </div>\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_member .p_leftMenu{\n  width: 200px;\n  margin-right: 20px;\n  border: 1px solid #eee;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n}\n.e_member .p_sidebar {\n  text-align: center;\n  \n}\n.e_member .p_title {\n  line-height: 40px;\n  font-size: 18px;\n  border-bottom: 1px solid #ddd;\n}\n.e_member .p_menu {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n.e_member .p_item {\n  line-height: 44px;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  border-left: 5px solid #fff;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ".e_member .p_hide{\n  display: none;\n}\n"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ".e_member .p_icon_wrapper{\n  display: none;\n}"
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {},
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}
