@@ -19,9 +19,6 @@
 .e_navigationB .p_navItem1{ 
     border: none;
 }
-.e_navigationB .p_navItem1:hover>p span{ 
-    color: #409eff;
-}
 .e_navigationB .p_navItem2{
     width: 200px;
     margin: 16px 0;

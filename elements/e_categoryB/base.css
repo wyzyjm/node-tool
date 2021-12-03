@@ -21,10 +21,6 @@
     cursor:pointer;
     padding-left:10px;
 }
-.e_categoryB  li .p_c_title.active,
-.e_categoryB  li .p_c_title:hover{
-    background:#e1f6ff;
-}
 .e_categoryB  li .p_c_title img{
     width:20px;
     height:20px;

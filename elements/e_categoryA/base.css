@@ -21,10 +21,6 @@
     cursor:pointer;
     padding-left:10px;
 }
-.e_categoryA  li .p_c_title.active,
-.e_categoryA  li .p_c_title:hover{
-    background:#e1f6ff;
-}
 .e_categoryA  li .p_c_title img{
     width:20px;
     height:20px;
@@ -56,7 +52,6 @@
 .e_categoryA.slide_out .p_c_item>.p_c_content{
     position:absolute;
     z-index: 9;
-    background: #fff;
     width:220px;
     left:220px;
     top:0;
