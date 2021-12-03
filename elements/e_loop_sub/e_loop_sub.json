@@ -1,0 +1,41 @@
+{
+  "cname": "子循环体",
+  "styleId": "e_loop_sub",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#${dataList}}}\r\n        <div class=\"cbox-${id} p_loopItem\"></div>\r\n    {{/${dataList}}}\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_loop_sub {\r\n}\r\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {},
+      {},
+      {}
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "container": true,
+  "dataFields": {
+    "dataList": "dataList"
+  },
+  "scope": true,
+  "dataManage": true
+}
