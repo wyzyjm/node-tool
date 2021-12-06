@@ -1,0 +1,76 @@
+.e_navigationE .p_navButton {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.e_navigationE .p_navBox1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #f5f5f5;
+    padding: 0 15px;
+    height: calc(0vh);
+    overflow: hidden;
+    z-index: 10;
+    transition: all ease .3s;
+}
+.e_navigationE .p_navBox1.pkcclb{
+    height: calc(100vh);
+}
+.e_navigationE .p_navItem1 {
+    border-bottom: 1px solid rgb(0 0 0 / 7%);
+}
+.e_navigationE .p_navItem1 > p{
+    display: flex;
+    justify-content: space-between;
+}
+.e_navigationE .p_navItem1 > p svg{
+    width: auto;
+    margin: 20px 0;
+    opacity: .7;
+    /* border-left: 1px solid rgb(0 0 0 / 10%); */
+    padding-left: 10px;
+    cursor: pointer;
+    }
+.e_navigationE .p_navItem1 a{
+    line-height: 60px;
+    font-size: 16px;
+    color: rgb(0 0 0 / 70%);
+    transition: all ease .3s;
+}
+.e_navigationE .p_navItem1 a:hover{
+    color: rgb(0 0 0 / 100%);
+}
+.e_navigationE .p_navItem2 a{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    font-size: 14px;
+    color: rgb(0 0 0 / 50%);
+}
+.e_navigationE .p_navItem2 .p_img,
+.e_navigationE .p_level3Item span{
+    /* order: -1; */
+    width: 23px;
+    margin-top: -2px;
+    /* margin-right: 10px; */
+    opacity: .8;
+}
+.e_navigationE .p_navItem2 .p_img img,
+.e_navigationE .p_level3Item span img{
+    width:100%;
+}
+.e_navigationE .p_navBox2{
+    display: none;
+}
+.e_navigationE .p_navBox2 > div{
+    padding-bottom: 20px;
+}
+.e_navigationE .p_menuItem{
+    padding-left: 10px;
+}
+.e_navigationE .p_level3Box{
+    margin: 5px 0 10px;
+}
