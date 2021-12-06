@@ -42,12 +42,13 @@
     position: absolute;
     left: 0;
     right: 0;
-    background: rgb(245 245 245 / 90%);
+    background: rgb(255 255 255 / 80%);
     top: 100%;
     display: flex;
     justify-content: flex-end;
     padding: 40px 0 40px;
     padding-right: 110px;
+    z-index: 10;
     transition: all ease .3s;
     opacity: 0;
     visibility: hidden;
@@ -92,12 +93,12 @@
 }
 .e_navigationE .haveThree .p_level3Item{
     margin-right: 15px;
-    border-left: 1px solid rgb(0 0 0 / 10%);
-    padding-left: 15px;
 }
 .e_navigationE .haveThree .p_menuItem{
     font-size: 17px;
     font-weight: bold;
+    border-left: 1px solid rgb(0 0 0 / 10%);
+    padding-left: 15px;
 }
 .e_navigationE .haveThree .p_level3Item img{
     width: 35px;
