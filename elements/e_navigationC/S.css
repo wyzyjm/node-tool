@@ -1,42 +1,37 @@
+.e_navigationC .p_navContent{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 20px;
+    z-index: 99;
+}
 .e_navigationC .p_navButton{
     display: flex; 
     justify-content: flex-end;
-    padding: 18px 0;
 }
 .e_navigationC .p_navBox1{
-    display: none;
-    height: calc(100vh - 80px);
-    position: fixed;
-    top: 80px;
-    left: 0;
-    right: 0;
-    background: #fbfbfb;
-    padding: 15px;
-    z-index: 99;
+    width: 100%;
 }
 .e_navigationC .p_navBox2{ 
    display: none;
-   padding-bottom: 20px;
-}
-.e_navigationC .p_navItem2 a{
-    color: rgb(0 0 0 / 40%);
-    line-height: 2;
-    transition: all ease .3s;
+   padding-left: 20px;
 }
 .e_navigationC .p_navItem2 a:hover{
     color: #000;
 }
 .e_navigationC .p_navItem1{ 
     padding: 0;
-    border-bottom: 1px solid rgba(0,0,0,.5);
+    border-bottom: 1px solid rgb(0 0 0 / 5%);
+    line-height: 50px;
+    font-size: 14px;
  }
  .e_navigationC .p_navCon {
     display: flex;
     justify-content: space-between;
- }
- .e_navigationC .p_navCon a{
-    line-height: 60px;
-    font-size: 15px;
  }
 .e_navigationC .p_navItem2{ 
     border: none;
@@ -47,19 +42,12 @@
 .e_navigationC .p_jtIcon{ 
     float: right;
     transition: 0.5s;
-    margin: 20px 0;
-    width: 40px;
+    height: 30px;
+    margin-top: 10px;
 }
 .e_navigationC .p_jtHover {
     transition: 0.5s;
     transform: rotate(90deg);
-}
-.e_navigationC .p_closeIcon{ 
-    display: none;
-    float: right;
-}
-.e_navigationC .p_closeIcon, .e_navigationC .p_openIcon{ 
-    cursor: pointer;
 }
 .e_navigationC .p_imgBox{
     display: none;

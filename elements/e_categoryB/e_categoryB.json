@@ -6,11 +6,11 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_categoryB {\n    user-select:none;\n    font-size:14px;\n}\n.e_categoryB  ul{\n    list-style-type:none;\n    padding-left:30px;\n    margin:0;\n}\n.e_categoryB  .p_c_tree>ul{\n    padding:0;\n}\n.e_categoryB  li{\n    position:relative;\n}\n.e_categoryB  li .p_c_title{\n    display:block;\n    position:relative;\n    line-height:42px;\n    border-bottom:1px solid #e4e7ec;\n    cursor:pointer;\n    padding-left:10px;\n}\n.e_categoryB  li .p_c_title.active,\n.e_categoryB  li .p_c_title:hover{\n    background:#e1f6ff;\n}\n.e_categoryB  li .p_c_title img{\n    width:20px;\n    height:20px;\n    vertical-align:middle;\n    margin-right:5px;\n}\n.e_categoryB  .p_c_title .p_arrow{\n    position:absolute;\n    right:10px;\n    top: 13px;\n    width:16px;\n    height: 16px;\n    transform:rotate(-90deg);\n    color:#ccc;\n    fill: currentColor;\n}\n.e_categoryB  .p_c_mbtn,\n.e_categoryB  .p_c_mput,\n.e_categoryB  .p_c_item>.p_c_content{\n    display:none;\n}\n"
+      "cssText": ".e_categoryB {\n    user-select:none;\n    font-size:14px;\n}\n.e_categoryB  ul{\n    list-style-type:none;\n    padding-left:30px;\n    margin:0;\n}\n.e_categoryB  .p_c_tree>ul{\n    padding:0;\n}\n.e_categoryB  li{\n    position:relative;\n}\n.e_categoryB  li .p_c_title{\n    display:block;\n    position:relative;\n    line-height:42px;\n    border-bottom:1px solid #e4e7ec;\n    cursor:pointer;\n    padding-left:10px;\n}\n.e_categoryB  li .p_c_title img{\n    width:20px;\n    height:20px;\n    vertical-align:middle;\n    margin-right:5px;\n}\n.e_categoryB  .p_c_title .p_arrow{\n    position:absolute;\n    right:10px;\n    top: 13px;\n    width:16px;\n    height: 16px;\n    transform:rotate(-90deg);\n    color:#ccc;\n    fill: currentColor;\n}\n.e_categoryB  .p_c_mbtn,\n.e_categoryB  .p_c_mput,\n.e_categoryB  .p_c_item>.p_c_content{\n    display:none;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ".e_categoryB .p_c_tree{\n    position:fixed;\n    top:0;\n    right:-100%;\n    height:100%;\n    padding-left:36px;\n    width:100%;\n    transition:right 0.2s;\n    background:#555;\n    z-index: 99;\n}\n.e_categoryB .p_c_tree.show{\n    right:0\n}\n.e_categoryB .p_c_tree>ul{\n    height:100%;\n    overflow-y:auto;\n    overflow-x:hidden;\n}\n.e_categoryB .p_c_mbtn{\n    display:inline-block;\n}\n.e_categoryB .p_c_tree .p_c_mput{\n    display:block;\n    text-align:center;\n    width:36px;\n    height:100%;\n    line-height:100vh;\n    background:#888;\n    position:absolute;\n    left:0px;\n}\n.e_categoryB .p_c_tree .p_c_mput .icon{\n    transform: rotate(180deg);\n    fill: #ccc;\n}\n.e_categoryB .p_c_title{\n    color:#f4f4f5\n}\n.e_categoryB li .p_c_title.active,.e_categoryB li .p_c_title:hover{\n    color:#555;\n}\n.e_categoryB li .p_c_title.active a,.e_categoryB li .p_c_title:hover a{\n    color:#555;\n}"
+      "cssText": ".e_categoryB .p_c_tree{\n    position:fixed;\n    top:0;\n    right:-100%;\n    height:100%;\n    padding-left:36px;\n    width:100%;\n    transition:right 0.2s;\n    background:#555;\n    z-index: 99;\n}\n.e_categoryB .p_c_tree.show{\n    right:0\n}\n.e_categoryB .p_c_tree>ul{\n    height:100%;\n    overflow-y:auto;\n    overflow-x:hidden;\n}\n.e_categoryB .p_c_mbtn{\n    display:inline-block;\n}\n.e_categoryB .p_c_tree .p_c_mput{\n    display:block;\n    text-align:center;\n    width:36px;\n    height:100%;\n    line-height:100vh;\n    background:#888;\n    position:absolute;\n    left:0px;\n}\n.e_categoryB .p_c_tree .p_c_mput .icon{\n    transform: rotate(180deg);\n    fill: #ccc;\n}\n.e_categoryB .p_c_title{\n    color:#f4f4f5\n}\n"
     },
     {
       "media": "screen and (min-width: 769px)",
@@ -96,7 +96,8 @@
         ]
       }
     ],
-    "showImg": true
+    "showImg": true,
+    "onpenAll": false
   },
   "i18n": {
     "zh_CN": {
@@ -104,9 +105,5 @@
       "noData": "暂无数据"
     }
   },
-  "datasource": "prop",
-  "dataFields": {
-    "cate": "cate",
-    "showImg": "showImg"
-  }
+  "datasource": "prop"
 }

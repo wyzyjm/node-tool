@@ -4,6 +4,7 @@
             "compName": "setting-category",
             "bind-cate": "prop.cate",
             "bind-showImg": "prop.showImg",
+            "bind-onpenAll": "prop.onpenAll",
             "title": "分类-下拉"
         }
     ]

@@ -1,11 +1,19 @@
-.e_navigationB  .p_navBox1{
+.e_navigationB .p_navContent{
     display: none;
-    height: calc(100vh - 57px);
+    height: 100%;
     position: fixed;
     width: 100%;
+    top: 0;
     left: 0px;
     padding: 20px;
     background-color: #fff;
+}
+.e_navigationB .p_navButton{
+    display: flex;
+    justify-content: flex-end;
+}
+.e_navigationB  .p_navBox1{
+    width: 100%;   
 }
 .e_navigationB .p_navBox2{ 
    display: none;
@@ -13,10 +21,9 @@
    padding-left: 20px;
 }
 .e_navigationB .p_navItem1{ 
-    padding: 0;
-    margin: 0 0px;
-    border-bottom: 1px solid rgba(0,0,0,.5);
-    line-height: 60px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(0 0 0 / 5%);
+    line-height: 50px;
  }
 .e_navigationB .p_navItem2{ 
     border-right: none;
@@ -27,16 +34,10 @@
 .e_navigationB .p_jtIcon{ 
     float: right;
     transition: 0.5s;
-    margin: 15px 0;
+    height: 30px;
+    margin-top: 10px;
 }
 .e_navigationB .p_jtHover {
     transition: 0.5s;
     transform: rotate(90deg);
-}
-.e_navigationB .p_closeIcon{ 
-    display: none;
-    float: right;
-}
-.e_navigationB .p_closeIcon, .e_navigationB .p_openIcon{ 
-    cursor: pointer;
 }

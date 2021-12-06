@@ -37,9 +37,3 @@
 .e_categoryB .p_c_title{
     color:#f4f4f5
 }
-.e_categoryB li .p_c_title.active,.e_categoryB li .p_c_title:hover{
-    color:#555;
-}
-.e_categoryB li .p_c_title.active a,.e_categoryB li .p_c_title:hover a{
-    color:#555;
-}

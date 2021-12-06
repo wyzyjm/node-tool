@@ -1,19 +1,22 @@
 .e_navigationB .p_navItem1{
-    padding: 0 20px;
     line-height: 50px;
 }
 .e_navigationB .p_iconBox{
     height: 45px;
     width: 45px;
-    background: rgba(0,0,0,.1); 
     border-radius: 4px;
-    margin: 0px 15px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.e_navigationB .p_openIcon, .e_navigationB .p_closeIcon{
+.e_navigationB .p_openIcon{
     width: 100%;
-    height: 23px;
-    margin: 4px;
+    height: 36px;
+}
+.e_navigationB .p_closeIcon{
+    width: 100%;
+    height: 30px;
+}
+.e_navigationA .p_navButton {
+    display: none;
 }

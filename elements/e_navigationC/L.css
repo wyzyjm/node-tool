@@ -67,7 +67,6 @@
 .e_navigationC .p_navItem2 span{
     line-height: 1;
     transition: all ease .3s;
-    opacity: .6;
 }
 .e_navigationC .p_navItem2:hover span{
     opacity: 1;

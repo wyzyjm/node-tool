@@ -243,6 +243,10 @@
       "code": "e_navigationC"
     },
     {
+        "name": "导航-多语言",
+        "code": "e_navigationD"
+      },
+    {
       "name": "登录",
       "code": "e_login"
     },

@@ -9,6 +9,9 @@
     display: flex;
 }
 .e_navigationB .p_navBox2{
+    display: flex;
+    display: none;
+    width: 100%;
     position: absolute;
     top: 50px;
     left: 0;
@@ -16,7 +19,11 @@
     padding: 20px;
     z-index: 99;
 }
+.e_navigationB .p_navBox2[style*="display: block"] { 
+    display: flex !important; 
+}
 .e_navigationB .p_navItem1{ 
+    padding: 0 20px;
     border: none;
 }
 .e_navigationB .p_navItem2{
@@ -31,11 +38,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.e_navigationB span{
-    text-align: center;
-    transition: all ease .3s;
-    color: rgba(0,0,0,.6);
 }
 .e_navigationB .p_img{
     width: 120px;
