@@ -1,0 +1,11 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-dataList",
+            "title": "子循环体",
+            "isSingle": true,
+            "bind-value": "prop.dataList",
+            "bind-pageConfig": "prop.pageConfig"
+        }
+    ]
+}
