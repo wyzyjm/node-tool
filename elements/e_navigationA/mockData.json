@@ -8,7 +8,18 @@
                 "navName": "公司概况",
                 "children": [
                     {
-                        "navName": "企业介绍"
+                        "navName": "企业介绍",
+                        "children": [
+                            {
+                                "navName": "企业介绍"
+                            }, 
+                            {
+                                "navName": "发展历程"
+                            },
+                            {
+                                "navName": "关于我们"
+                            }
+                        ]   
                     }, 
                     {
                         "navName": "发展历程"

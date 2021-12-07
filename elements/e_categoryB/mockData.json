@@ -61,7 +61,8 @@
                 ]
             }
         ],
-        "showImg":true
+        "showImg":true,
+        "onpenAll":false
     },
     "i18n": {
         "moCategoryTitle":"全部分类",

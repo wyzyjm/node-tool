@@ -1,0 +1,12 @@
+{
+    "prop": {
+        "dataList": [{}, {}, {}, {}, {}, {}],
+        "pageConfig": {
+            "loopItem": ".p_loopItem",
+            "pcRow": 2,
+            "pcColumn": 3,
+            "moColumn": 3
+        }
+    },
+    "i18n": {}
+}

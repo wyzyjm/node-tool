@@ -8,7 +8,7 @@
             {{#tree prop.cate}}
                 {{#if @nodeBegin}}<ul class="p_c_content">{{/if}}
                 <li class="p_c_item">
-                    <span class="p_c_title">
+                    <span class="p_c_title js_editor_click">
                         <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}" target="{{#eq target '_blank'}}_blank{{/eq}}">
                             {{#if categoryImage}}{{#if ../prop.showImg}}
                             {{#each categoryImage}}{{#eq @index 0}}
