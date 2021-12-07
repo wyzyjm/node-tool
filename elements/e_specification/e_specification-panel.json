@@ -1,10 +1,9 @@
 {
     "panelConfig": [
         {
-            "compName": "setting-text",
-            "bind-text": "prop.text",
-            "bind-href": "prop.href",
-            "title": "文字"
+            "compName": "setting-spec",
+            "title": "图片规格类型",
+            "bind-style": "prop.style"
         }
     ]
 }
