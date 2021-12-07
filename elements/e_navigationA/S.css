@@ -1,3 +1,9 @@
+.e_navigationA .p_level1Box{
+    display: block;
+}
+.e_navigationA .p_iconBox{
+    display: block;
+}
 .e_navigationA .p_navContent{
     display: none;
     padding: 20px;
@@ -18,7 +24,8 @@
 }
 .e_navigationA .p_level2Box, 
 .e_navigationA .p_level3Box{
-    padding-left: 30px;
+    padding: 0 0 0 30px;
+    background: none;
 }
 .e_navigationA .p_jtIcon{
     float: right;
@@ -30,8 +37,23 @@
     transition: 0.5s;
     transform: rotate(90deg);
 }
-.e_navigationA .p_level1Item {
+.e_navigationA .p_level2Box,.e_navigationA .p_level3Box{
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+    position: inherit;
+    border-radius: 0;
+}
+.e_navigationA .p_level1Item{
     border-bottom: 1px solid rgb(0 0 0 / 5%);
     line-height: 50px;
     font-size: 14px;
+}
+.e_navigationA .p_level1Item a,.e_navigationA .p_level2Item a{
+    line-height: 50px;
+    font-size: 14px;
+    padding: 0;
+    display: inline;
+    text-align: left;
+    opacity: 1;
 }
