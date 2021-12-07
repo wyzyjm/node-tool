@@ -20,12 +20,12 @@
                         {{{nLazyImage video.coverImgUrl title 'false'}}}
                     </div>
                     <div class="videoContent">
-                    {{{lazyVideo video.url ../prop.settings.videoMouted false}}}
+                    {{{lazyVideo video.videoUrl ../prop.settings.videoMouted false}}}
                     </div>
                 </div>
             {{/eq}}
             <div class="p_info {{#eq type 2}}p_videoInfo{{/eq}}">
-                <div>
+                <div class="p_info_wrapper">
                     {{#if prop.settings.showText}}
                     {{#if title}}
                     <h1 class="text-white p_btitle">
