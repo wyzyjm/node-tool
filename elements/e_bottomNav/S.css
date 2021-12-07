@@ -1,4 +1,4 @@
-.e_bottomNav .p_menuItem {
+.e_bottomNav .p_menu1Item ,.e_bottomNav .p_menu2Item{
     display: flex;
     justify-content: space-between;
 }

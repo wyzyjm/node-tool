@@ -1,6 +1,3 @@
-.e_navigationC .p_navItem1{
-    line-height: 1; 
-}
 .e_navigationC .p_iconBox{
     height: 45px;
     width: 45px;
@@ -19,4 +16,97 @@
 }
 .e_navigationC .p_navButton{
     display: none;
+}
+.e_navigationC .p_navBox1, .e_navigationC .p_navBox2{
+    width: 100%;
+    display: flex;
+}
+.e_navigationC .p_navBox2{
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    padding: 30px 40px;
+    z-index: 99;
+    display: none;
+    background: #f5f5f5;
+}
+.e_navigationC .p_navBox2 ul{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+}
+.e_navigationC .p_imgBox{
+    width: 30%;
+    position: relative;
+    height: 150px;
+    background: rgba(0,0,0,.2);
+    overflow: hidden;
+}
+.e_navigationC .p_imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.e_navigationC .p_navItem1{ 
+    border: none;
+    line-height: 1; 
+    text-align: center;
+    font-size: 16px;
+    line-height: 100px;
+    display: block;
+}
+.e_navigationC .p_navCon{
+    position: relative;
+}
+.e_navigationC .p_navCon a{
+    display: block;
+    padding: 0 20px;
+}
+.e_navigationC .p_navCon::before{
+    content: " ";
+    height: 3px;
+    width: 0;
+    background-color: #409eff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: width 0.5s ease;
+    margin: 0 auto;
+}
+.e_navigationC .p_navItem1:hover .p_navCon::before{
+    width: 100%;
+}
+.e_navigationC .p_navItem2{
+    line-height: 1;
+    width: auto;
+    margin: 0 30px 0 0;
+}
+.e_navigationC .p_img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: auto;
+}
+
+.e_navigationC .p_navBox2 > div{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.e_navigationC .p_navBox2 ul::after{
+    content: '';
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -45px;
+    z-index: 2;
+    width: 1px;
 }
