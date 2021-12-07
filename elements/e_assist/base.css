@@ -1,0 +1,18 @@
+.e_assist {
+    display: flex;
+}
+.e_assist .icon {
+    fill: currentColor;
+}
+.e_assist div {
+    text-align: center;
+}
+.e_assist .p_assit {
+    margin-right: 5px;
+}
+.e_assist .p_text {
+    font-size: 12px;
+}
+.e_assist .btn:focus {
+    box-shadow: 0 0;
+}
