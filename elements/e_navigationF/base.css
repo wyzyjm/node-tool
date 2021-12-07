@@ -1,0 +1,84 @@
+.e_navigationF{
+    display: flex;
+    justify-content: flex-end;
+}
+.e_navigationF .p_navButton{
+    width: 100px;
+    justify-content: center;
+    padding: 20px 0;
+    display: none;
+}
+.e_navigationF .p_iconBox{
+    width: 21px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.e_navigationF .p_iconBox span {
+    width: 100%;
+    background: #333;
+    display: block;
+    height: 2px;
+    margin: 2px 0;
+    float: left;
+    -webkit-transition: all ease 0.8s,opacity ease 0.3s;
+    -moz-transition: all ease 0.8s,opacity ease 0.3s;
+    -ms-transition: all ease 0.8s,opacity ease 0.3s;
+    -o-transition: all ease 0.8s,opacity ease 0.3s;
+    transition: all ease 0.8s,opacity ease 0.3s;
+    opacity: 1;
+}
+
+.e_navigationF .p_iconBox span:nth-of-type(1) {
+    width: 50%;
+    float: left;
+}
+
+.e_navigationF .p_iconBox span:nth-of-type(2) {
+}
+
+.e_navigationF .p_iconBox span:nth-of-type(3) {
+    width: 50%;
+    float: right;
+}
+
+.e_navigationF .p_iconBox.showmenu span {
+    background: #323538;
+    -webkit-animation: animaspan 0.5s 1;
+    animation: animaspan 0.5s 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.e_navigationF .p_iconBox.showmenu span:nth-of-type(1) {
+    transform: translateY(6px)rotate(720deg);
+    width: 100%;
+}
+
+.e_navigationF .p_iconBox.showmenu span:nth-of-type(2) {
+    transform: rotate(720deg);
+}
+
+.e_navigationF .p_iconBox.showmenu span:nth-of-type(3) {
+    transform: translateY(-6px)rotate(720deg);
+    width: 100%;
+}
+
+.e_navigationF .p_iconBox.showmenu span.biahuan {}
+
+.e_navigationF .p_iconBox.showmenu span.biahuan:nth-of-type(1) {
+    transform: translateY(6px)rotate(670deg);
+}
+
+.e_navigationF .p_iconBox.showmenu span.biahuan:nth-of-type(2) {
+    transform: translateY(0px)rotate(768deg);
+}
+
+.e_navigationF .p_iconBox.showmenu span.biahuan:nth-of-type(3) {
+    width: 0;
+    opacity: 0;
+}
+
+.havestatic > div{
+    position: static;
+}

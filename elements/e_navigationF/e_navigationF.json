@@ -1,0 +1,178 @@
+{
+  "cname": "导航-四级带图标",
+  "styleId": "e_navigationF",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n    <ul class=\"p_navBox1\">\r\n        {{#each ${dataList}}}\r\n        <li class=\"p_navItem1 \">\r\n            <p class=\"p_navCon\">\r\n                <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if\r\n                    url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\" {{/if}}>\r\n                    <span>{{navName}}</span>\r\n                </a>\r\n                {{#if children}}{{{../${arrow}}}}{{/if}}\r\n            </p>\r\n            {{#if children}}\r\n            <div class=\"p_navBox2\">\r\n                <div>\r\n                    <ul>\r\n                        {{#each children}}\r\n                        <li class=\"p_navItem2\">\r\n                            <p>\r\n                                <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if\r\n                                    url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\" {{/if}}>\r\n                                    <span class=\"p_img\">{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>\r\n                                    <span>{{navName}}</span>\r\n                                </a>\r\n                                {{#if children}}{{{../../${arrow}}}}{{/if}}\r\n                            </p>\r\n                            {{#if this.children}}\r\n                            <ul class=\"p_level3Box\">\r\n                                {{#each this.children}}\r\n                                <li class=\"p_level3Item\">\r\n                                    <p>\r\n                                        <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if\r\n                                            url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\" {{/if}}>\r\n                                            <span>{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>\r\n                                            <span class=\"p_menuItem\">{{navName}}</span>\r\n                                        </a>\r\n                                        {{#if children}}{{{../../../${arrow}}}}{{/if}}\r\n                                    </p>\r\n                                    {{#if this.children}}\r\n                                    <ul class=\"p_level4Box\">\r\n                                        {{#each this.children}}\r\n                                            <li class=\"p_level4Item\">\r\n                                                <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if\r\n                                                    url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\" {{/if}}>\r\n                                                    <span>{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>\r\n                                                    <p class=\"p_menuItem\">{{navName}}</p>\r\n                                                </a>\r\n                                            </li>\r\n                                        {{/each}}\r\n                                    </ul>\r\n                                    {{/if}}\r\n                                </li>\r\n                                {{/each}}\r\n                            </ul>\r\n                            {{/if}}\r\n                        </li>\r\n                        {{/each}}\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n            {{/if}}\r\n        </li>\r\n        {{/each}}\r\n    </ul>\r\n    <div class=\"p_navButton\">\r\n        <p class=\"p_iconBox\">\r\n            <span></span>\r\n            <span></span>\r\n            <span></span>\r\n        </p>\r\n    </div>\r\n    {{^}}\r\n    {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_navigationF{\n    display: flex;\n    justify-content: flex-end;\n}\n.e_navigationF .p_navButton{\n    width: 100px;\n    justify-content: center;\n    padding: 20px 0;\n    display: none;\n}\n.e_navigationF .p_iconBox{\n    width: 21px;\n    height: 16px;\n    cursor: pointer;\n}\n\n.e_navigationF .p_iconBox span {\n    width: 100%;\n    background: #333;\n    display: block;\n    height: 2px;\n    margin: 2px 0;\n    float: left;\n    -webkit-transition: all ease 0.8s,opacity ease 0.3s;\n    -moz-transition: all ease 0.8s,opacity ease 0.3s;\n    -ms-transition: all ease 0.8s,opacity ease 0.3s;\n    -o-transition: all ease 0.8s,opacity ease 0.3s;\n    transition: all ease 0.8s,opacity ease 0.3s;\n    opacity: 1;\n}\n\n.e_navigationF .p_iconBox span:nth-of-type(1) {\n    width: 50%;\n    float: left;\n}\n\n.e_navigationF .p_iconBox span:nth-of-type(2) {\n}\n\n.e_navigationF .p_iconBox span:nth-of-type(3) {\n    width: 50%;\n    float: right;\n}\n\n.e_navigationF .p_iconBox.showmenu span {\n    background: #323538;\n    -webkit-animation: animaspan 0.5s 1;\n    animation: animaspan 0.5s 1;\n    animation-fill-mode: forwards;\n    -webkit-animation-fill-mode: forwards;\n}\n\n.e_navigationF .p_iconBox.showmenu span:nth-of-type(1) {\n    transform: translateY(6px)rotate(720deg);\n    width: 100%;\n}\n\n.e_navigationF .p_iconBox.showmenu span:nth-of-type(2) {\n    transform: rotate(720deg);\n}\n\n.e_navigationF .p_iconBox.showmenu span:nth-of-type(3) {\n    transform: translateY(-6px)rotate(720deg);\n    width: 100%;\n}\n\n.e_navigationF .p_iconBox.showmenu span.biahuan {}\n\n.e_navigationF .p_iconBox.showmenu span.biahuan:nth-of-type(1) {\n    transform: translateY(6px)rotate(670deg);\n}\n\n.e_navigationF .p_iconBox.showmenu span.biahuan:nth-of-type(2) {\n    transform: translateY(0px)rotate(768deg);\n}\n\n.e_navigationF .p_iconBox.showmenu span.biahuan:nth-of-type(3) {\n    width: 0;\n    opacity: 0;\n}\n\n.havestatic > div{\n    position: static;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ".e_navigationF .p_navButton {\r\n    width: 50px;\r\n    display: flex;\r\n    justify-content: center;\r\n    padding: 10px 0;\r\n}\r\n.e_navigationF .p_navBox1{\r\n    position: absolute;\r\n    top: 100%;\r\n    left: 0;\r\n    right: 0;\r\n    background: #f5f5f5;\r\n    padding: 0 15px;\r\n    height: calc(0vh);\r\n    overflow-y: scroll;\r\n    z-index: 10;\r\n    transition: all ease .3s;\r\n}\r\n.e_navigationF .p_navBox1.pkcclb{\r\n    height: calc(100vh);\r\n}\r\n.e_navigationF .p_navItem1 {\r\n    border-bottom: 1px solid rgb(0 0 0 / 7%);\r\n}\r\n.e_navigationF .p_navItem1 > p,\r\n.e_navigationF .p_navItem2 > p,\r\n.e_navigationF .p_level3Item > p{\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n.e_navigationF .p_navItem1 > p svg,\r\n.e_navigationF .p_navItem2 > p svg,\r\n.e_navigationF .p_level3Item > p svg{\r\n    width: auto;\r\n    margin: 20px 0;\r\n    opacity: .7;\r\n    padding-left: 10px;\r\n    cursor: pointer;\r\n}\r\n.e_navigationF .p_navItem2 > p svg,\r\n.e_navigationF .p_level3Item > p svg{\r\n    margin: 5px 0;\r\n}\r\n.e_navigationF .p_navItem1 a{\r\n    line-height: 60px;\r\n    font-size: 16px;\r\n    color: rgb(0 0 0 / 70%);\r\n    transition: all ease .3s;\r\n}\r\n.e_navigationF .p_navItem1 a:hover{\r\n    color: rgb(0 0 0 / 100%);\r\n}\r\n.e_navigationF .p_navItem2 a{\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    line-height: 30px;\r\n    font-size: 14px;\r\n    color: rgb(0 0 0 / 60%);\r\n}\r\n.e_navigationF .p_navItem2 .p_img,\r\n.e_navigationF .p_level3Item span{\r\n    margin-top: -2px;\r\n    opacity: .8;\r\n}\r\n.e_navigationF .p_navItem2 .p_img img,\r\n.e_navigationF .p_level3Item span img{\r\n    width: 23px;\r\n    margin-right: 10px;\r\n}\r\n.e_navigationF .p_navBox2{\r\n    display: none;\r\n}\r\n.e_navigationF .p_navBox2 > div{\r\n    padding-bottom: 20px;\r\n}\r\n.e_navigationF .p_menuItem{\r\n    padding-left: 33px;\r\n    position: relative;\r\n}\r\n.e_navigationF .p_level3Box{\r\n    display: none;\r\n}\r\n.e_navigationF .p_level3Item{\r\n    margin-bottom: 0;\r\n}\r\n.e_navigationF .p_level3Item span,\r\n.e_navigationF .p_level4Item span{\r\n    display: none;\r\n}\r\n.e_navigationF .p_level4Box{\r\n    display: none;\r\n}\r\n.e_navigationF .p_menuItem::before{\r\n    content:'';\r\n    position: absolute;\r\n    left: 16px;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n    width: 5px;\r\n    height: 5px;\r\n    background: rgb(0 0 0 / 60%);\r\n    border-radius: 100%;\r\n}\r\n.e_navigationF .p_level3Item .p_menuItem{\r\n    display: block;\r\n}\r\n.e_navigationF .p_level4Item .p_menuItem::before{\r\n    display:none;\r\n}"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ".e_navigationF .p_navBox1{\r\n    display: flex;\r\n    justify-content: flex-end;\r\n}\r\n.e_navigationF .p_navItem1 {\r\n    position: relative;\r\n}\r\n.e_navigationF .p_navItem1 > p{\r\n    line-height: 1;\r\n    padding: 0 20px;\r\n    display: flex;\r\n}\r\n.e_navigationF .p_navItem1 > p svg{\r\n    display:none;\r\n}\r\n.e_navigationF .p_navItem1 > p a{\r\n    font-size: 16px;\r\n    line-height: 1;\r\n    transition: all ease .3s;\r\n    color: rgb(0 0 0 / 60%);\r\n    position: relative;\r\n    padding: 20px 0;\r\n    display: block;\r\n}\r\n.e_navigationF .p_navItem1 > p a:hover{\r\n    color: rgb(0 0 0 / 100%);\r\n}\r\n.e_navigationF .p_navItem1 > p a::after{\r\n    content:'';\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    width: 0;\r\n    height: 2px;\r\n    background: #409eff;\r\n    margin: 0 auto;\r\n    transition: all ease .3s;\r\n}\r\n.e_navigationF .p_navItem1 > p a:hover::after{\r\n    width: 100%;\r\n}\r\n\r\n.e_navigationF .p_navBox2{\r\n    position: absolute;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n    background: rgb(255 255 255 / 80%);\r\n    top: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    padding: 0px 0 0px;\r\n    z-index: 10;\r\n    transition: all ease .3s;\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    width: 180px;\r\n}\r\n.e_navigationF .p_navBox2 > div{\r\n    width: 100%;\r\n}\r\n.e_navigationF .p_navItem1:hover .p_navBox2{\r\n    opacity: 1;\r\n    visibility: visible;\r\n}\r\n.e_navigationF .p_navBox2 ul{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: flex-end;\r\n    padding: 10px 0;\r\n}\r\n.e_navigationF .haveThree .p_navItem2{\r\n    width: auto;\r\n    margin-right: 60px;\r\n}\r\n.e_navigationF .haveThree .p_navItem2 svg{\r\n    display:none;\r\n}\r\n.e_navigationF .p_navItem2 a{\r\n    font-size: 16px;\r\n    text-align: center;\r\n    line-height: 38px;\r\n    color: rgb(0 0 0 / 80%);\r\n    transition: all ease .3s;\r\n    display: flex;\r\n    width: 100%;\r\n    padding: 10px 20px;\r\n}\r\n.e_navigationF .p_navItem2 .p_img{\r\n    display: block;\r\n}\r\n.e_navigationF .p_navItem2 img{\r\n    width: 100%;\r\n    max-width: 38px;\r\n    margin-right: 13px;\r\n}\r\n.e_navigationF .haveThree .p_navItem2 .p_img{\r\n}\r\n.e_navigationF .haveThree .p_navItem2 a{\r\n    text-align: left;\r\n    font-size: 22px;\r\n    padding: 0;\r\n}\r\n.e_navigationF .haveThree .p_level3Box{\r\n    margin-top: 20px;\r\n    padding-left: 13px;\r\n}\r\n.e_navigationF .p_level3Item{\r\n    margin-right: 55px;\r\n}\r\n.e_navigationF .p_level3Item .p_menuItem{\r\n    font-size: 17px;\r\n    font-weight: bold;\r\n    line-height: 29px;\r\n}\r\n.e_navigationF .p_level3Item img{\r\n    width: 26px;\r\n    display: block;\r\n}\r\n.e_navigationF .haveThree{\r\n    position: static;\r\n}\r\n.e_navigationF .haveThree .p_navBox2{\r\n    width: 100%;\r\n    padding: 25px 40px;\r\n}\r\n.e_navigationF .haveThree ul{\r\n    flex-direction: row;\r\n    justify-content: flex-end;\r\n    padding: 0;\r\n}\r\n.e_navigationF .haveThree .p_level4Box{\r\n    flex-direction: column;\r\n    padding-left: 15px;\r\n    margin-top: 10px;\r\n}\r\n.e_navigationF .p_level4Item .p_menuItem{\r\n    font-size: 14px;\r\n    font-weight: 500;\r\n    line-height: 2;\r\n    margin-left: 10px;\r\n}\r\n.e_navigationF .p_level4Item span{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    width: 15px;\r\n}\r\n.e_navigationF .p_level4Item img{\r\n    width: 100%;\r\n    margin-right: 0;\r\n}\r\n.e_navigationF .p_level4Item .p_dian{\r\n    width: 15px;\r\n    position: relative;\r\n}\r\n.e_navigationF .p_level4Item .p_dian::after{\r\n    content:'';\r\n    width: 4px;\r\n    height: 4px;\r\n    background: rgb(0 0 0 / 40%);\r\n    border-radius: 100%;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%,-50%);\r\n}\r\n.e_navigationF .p_navItem2 > p svg{\r\n    display:none;\r\n}"
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ".e_navigationF .p_level3Item {\r\n    margin-right: 25px;\r\n}\r\n.e_navigationF .haveThree .p_navItem2{\r\n    margin-right: 30px;\r\n}\r\n.e_navigationF .haveThree .p_navItem2 a {\r\n    font-size: 18px;\r\n    line-height: 28px;\r\n}\r\n.e_navigationF .p_navItem2 img {\r\n    max-width: 28px;\r\n    margin-right: 10px;\r\n}\r\n.e_navigationF .haveThree .p_level3Box {\r\n    padding-left: 3px;\r\n}\r\n.e_navigationF .haveThree .p_level4Box {\r\n    padding-left: 11px;\r\n}"
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {
+        "navName": "首页"
+      },
+      {
+        "navName": "公司概况",
+        "children": [
+          {
+            "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+            "navName": "企业介绍"
+          },
+          {
+            "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+            "navName": "发展历程"
+          },
+          {
+            "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+            "navName": "关于我们"
+          }
+        ]
+      },
+      {
+        "navName": "我们的产品"
+      },
+      {
+        "navName": "新闻资讯",
+        "children": [
+          {
+            "navName": "最新动态"
+          },
+          {
+            "navName": "企业新闻"
+          },
+          {
+            "navName": "行业新闻"
+          }
+        ]
+      },
+      {
+        "navName": "招商加盟",
+        "children": [
+          {
+            "navName": "合作伙伴"
+          },
+          {
+            "navName": "加入我们"
+          }
+        ]
+      },
+      {
+        "navName": "售后服务",
+        "children": [
+          {
+            "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+            "navName": "服务宗旨"
+          },
+          {
+            "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+            "navName": "在线咨询"
+          },
+          {
+            "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+            "navName": "常见问题",
+            "children": [
+              {
+                "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+                "navName": "生活常识",
+                "children": [
+                  {
+                    "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+                    "navName": "生活常识1"
+                  },
+                  {
+                    "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+                    "navName": "生活常识2"
+                  },
+                  {
+                    "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+                    "navName": "生活常识3"
+                  },
+                  {
+                    "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+                    "navName": "生活常识4"
+                  },
+                  {
+                    "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+                    "navName": "生活常识5"
+                  },
+                  {
+                    "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+                    "navName": "生活常识6"
+                  }
+                ]
+              },
+              {
+                "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+                "navName": "百度百科",
+                "children": [
+                  {
+                    "navName": "百度百科1"
+                  },
+                  {
+                    "navName": "百度百科2"
+                  },
+                  {
+                    "navName": "百度百科3"
+                  },
+                  {
+                    "navName": "百度百科4"
+                  },
+                  {
+                    "navName": "百度百科5"
+                  },
+                  {
+                    "navName": "百度百科6"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/c601d8b9-cd24-4c5d-930b-351e2da0275a.png",
+            "navName": "用户协议"
+          }
+        ]
+      },
+      {
+        "navName": "联系我们",
+        "children": [
+          {
+            "navName": "在线留言"
+          },
+          {
+            "navName": "联系我们"
+          }
+        ]
+      }
+    ],
+    "arrow": "<svg t=\"1625735163067\" class=\"icon p_jtIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1486\" width=\"200\" height=\"200\"><path d=\"M661.16183428 486.94732961L415.99871022 219.24359155c-13.37500289-14.59708438-35.98351032-15.54759219-50.51270128-2.24048272-14.59708438 13.37500289-15.54759219 35.98351032-2.24048272 50.51270127l223.09776396 243.60157549-222.89408371 244.28050967c-13.30710947 14.59708438-12.28870823 37.20559179 2.30837613 50.51270125 14.59708438 13.30710947 37.20559179 12.28870823 50.51270128-2.30837613l244.75576356-268.11109855c0.47525392-0.54314733 1.01840124-1.15418807 1.42576173-1.6973354 11.13452018-13.51078973 10.93083994-33.53934734-1.2899749-46.84645682z\" p-id=\"1487\"></path></svg>",
+    "showArrow": true
+  },
+  "i18n": {
+    "zh_CN": {
+      "noData": "暂无数据"
+    }
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "dataList": "dataList",
+    "arrow": "arrow",
+    "showArrow": "showArrow"
+  },
+  "dataManage": {}
+}
