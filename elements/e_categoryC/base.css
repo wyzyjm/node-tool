@@ -9,7 +9,7 @@
     width: 140px;
     margin-bottom:1px;
 }
-.e_categoryC li .p_c_title{
+.e_categoryC .p_c_title{
     font-size: inherit;
     width: 100%;
     overflow: hidden;

@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_categoryC{\n    user-select:none;\n}\n.e_categoryC .p_c_tree>ul>li{\n    display: inline-block;\n}\n.e_categoryC .p_c_item{\n    position:relative;\n    width: 140px;\n    margin-bottom:1px;\n}\n.e_categoryC li .p_c_title{\n    font-size: inherit;\n    width: 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n.e_categoryC .p_c_item>.p_c_content{\n    position: absolute;\n    left: 100%;\n    top: 0;\n    display: none;\n    z-index: 9;\n}\n.e_categoryC .p_c_tree>ul>.p_c_item>.p_c_content{\n    left: 0;\n    top: 100%;\n}\n\n.e_categoryC .p_c_mbtn,.e_categoryC .p_c_tree .p_c_mput{\n    display:none;\n}\n"
+      "cssText": ".e_categoryC{\n    user-select:none;\n}\n.e_categoryC .p_c_tree>ul>li{\n    display: inline-block;\n}\n.e_categoryC .p_c_item{\n    position:relative;\n    width: 140px;\n    margin-bottom:1px;\n}\n.e_categoryC .p_c_title{\n    font-size: inherit;\n    width: 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n.e_categoryC .p_c_item>.p_c_content{\n    position: absolute;\n    left: 100%;\n    top: 0;\n    display: none;\n    z-index: 9;\n}\n.e_categoryC .p_c_tree>ul>.p_c_item>.p_c_content{\n    left: 0;\n    top: 100%;\n}\n\n.e_categoryC .p_c_mbtn,.e_categoryC .p_c_tree .p_c_mput{\n    display:none;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
