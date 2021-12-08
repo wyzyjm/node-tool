@@ -2,22 +2,25 @@
     <!-- 赞 -->
     <button class="btn p-0 p_assit">
         <p class="text-muted p_assit_icon">{{{prop.assitIcon}}}</p>
-        <p class="p_text">
-            {{prop.assitText}}
-            {{#if prop.showNum}}
-                <span class="p_num">(10)</span>
-            {{/if}}
-        </p>
+        {{#if prop.showAssitText}}
+            <p class="p_text">
+                {{prop.assitText}}
+                {{#if prop.showNum}}
+                    <span class="p_num">(10)</span>
+                {{/if}}
+            </p>
+        {{/if}}
     </button>
     <!-- 踩 -->
     <button class="btn p-0 p_step">
         <p class="text-muted p_step_icon">{{{prop.stepIcon}}}</p>
-        <p class="p_text">
-            {{prop.stepText}}
-            {{#if prop.showNum}}
-                <span class="p_num">(20)</span>
-            {{/if}}
-        </p>
+        {{#if prop.showStepText}}
+            <p class="p_text">
+                {{prop.stepText}}
+                {{#if prop.showNum}}
+                    <span class="p_num">(20)</span>
+                {{/if}}
+            </p>
+        {{/if}}
     </button>
-    <input type="hidden" name="propJson" value="{{propJson}}" />
 </div>
