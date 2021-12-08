@@ -1,0 +1,15 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-assist",
+            "title": "赞/踩",
+            "bind-showAssitText": "prop.showAssitText",
+            "bind-assitIcon": "prop.assitIcon",
+            "bind-assitText": "prop.assitText",
+            "bind-showStepText": "prop.showStepText",
+            "bind-stepIcon": "prop.stepIcon",
+            "bind-stepText": "prop.stepText",
+            "bind-showNum": "prop.showNum"
+        }
+    ]
+}
