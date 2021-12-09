@@ -6,16 +6,15 @@
     width: 100px;
     display: flex;
     justify-content: center;
-    padding: 20px
- 0;
+    padding: 20px 0;
 }
-.e_navigationE .p_iconBox{
+.e_navigationE .p_navButton > p{
     width: 21px;
     height: 16px;
     cursor: pointer;
 }
 
-.e_navigationE .p_iconBox span {
+.e_navigationE .p_navButton span {
     width: 100%;
     background: #333;
     display: block;
@@ -30,20 +29,20 @@
     opacity: 1;
 }
 
-.e_navigationE .p_iconBox span:nth-of-type(1) {
+.e_navigationE .p_navButton span:nth-of-type(1) {
     width: 50%;
     float: left;
 }
 
-.e_navigationE .p_iconBox span:nth-of-type(2) {
+.e_navigationE .p_navButton span:nth-of-type(2) {
 }
 
-.e_navigationE .p_iconBox span:nth-of-type(3) {
+.e_navigationE .p_navButton span:nth-of-type(3) {
     width: 50%;
     float: right;
 }
 
-.e_navigationE .p_iconBox.showmenu span {
+.e_navigationE .p_navButton > p.showmenu span {
     background: #323538;
     -webkit-animation: animaspan 0.5s 1;
     animation: animaspan 0.5s 1;
@@ -51,31 +50,88 @@
     -webkit-animation-fill-mode: forwards;
 }
 
-.e_navigationE .p_iconBox.showmenu span:nth-of-type(1) {
+.e_navigationE .p_navButton > p.showmenu span:nth-of-type(1) {
     transform: translateY(6px)rotate(720deg);
     width: 100%;
 }
 
-.e_navigationE .p_iconBox.showmenu span:nth-of-type(2) {
+.e_navigationE .p_navButton > p.showmenu span:nth-of-type(2) {
     transform: rotate(720deg);
 }
 
-.e_navigationE .p_iconBox.showmenu span:nth-of-type(3) {
+.e_navigationE .p_navButton > p.showmenu span:nth-of-type(3) {
     transform: translateY(-6px)rotate(720deg);
     width: 100%;
 }
 
-.e_navigationE .p_iconBox.showmenu span.biahuan {}
-
-.e_navigationE .p_iconBox.showmenu span.biahuan:nth-of-type(1) {
+.e_navigationE .p_navButton > p.showmenu span.biahuan:nth-of-type(1) {
     transform: translateY(6px)rotate(670deg);
 }
 
-.e_navigationE .p_iconBox.showmenu span.biahuan:nth-of-type(2) {
+.e_navigationE .p_navButton > p.showmenu span.biahuan:nth-of-type(2) {
     transform: translateY(0px)rotate(768deg);
 }
 
-.e_navigationE .p_iconBox.showmenu span.biahuan:nth-of-type(3) {
+.e_navigationE .p_navButton > p.showmenu span.biahuan:nth-of-type(3) {
     width: 0;
     opacity: 0;
+}
+
+
+
+.e_navigationE .p_navItem1 > p a{
+    transition: all ease .3s;
+    position: relative;
+    padding: 20px 10px;
+    display: block;
+}
+.e_navigationE .p_navCon{
+    color: rgb(0 0 0 / 60%);
+    font-size: 16px;
+    line-height: 1;
+}
+.e_navigationE .p_navItem1 > p a:hover{
+    color: rgb(0 0 0 / 100%);
+}
+.e_navigationE .p_navItem1 > p a::after{
+    background: #409eff;
+}
+.e_navigationE .p_navItem2 a{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    color: rgb(0 0 0 / 80%);
+    transition: all ease .3s;
+}
+.e_navigationE .p_img{
+    width: 100%;
+    display: block;
+    max-width: 35px;
+    margin: 20px auto 0;
+}
+.e_navigationE .p_menuItem{
+    font-size: 15px;
+    border-left: 1px solid rgb(0 0 0 / 20%);
+    padding-left: 15px;
+    font-weight: 500;
+    color: rgb(0 0 0 / 50%);
+}
+.e_navigationE .p_navItem2 img{
+    width: 100%;
+}
+.e_navigationE .haveThree .p_navItem2 a{
+    text-align: left;
+}
+.e_navigationE .p_level3Box{
+    margin-top: 50px;
+}
+.e_navigationE .p_navBox2{
+    background: rgb(255 255 255 / 80%);
+    padding: 40px 110px 39px;
+}
+
+.havestatic > div,
+.havestatic > div[class*="cbox-"] {
+    position: static !important;
 }

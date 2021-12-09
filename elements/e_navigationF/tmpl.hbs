@@ -2,8 +2,8 @@
     {{#if prop.dataList}}
     <ul class="p_navBox1">
         {{#each prop.dataList}}
-        <li class="p_navItem1 ">
-            <p class="p_navCon">
+        <li class="p_navItem1">
+            <p class="p_navCon js_editor_click">
                 <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if
                     url}}target="{{#eq target 'blank'}}_blank{{/eq}}" {{/if}}>
                     <span>{{navName}}</span>
@@ -11,12 +11,12 @@
                 {{#if children}}{{{../prop.arrow}}}{{/if}}
             </p>
             {{#if children}}
-            <div class="p_navBox2">
+            <ul class="p_navBox2">
                 <div>
                     <ul>
                         {{#each children}}
                         <li class="p_navItem2">
-                            <p>
+                            <p class="p_navCon2 js_editor_click">
                                 <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if
                                     url}}target="{{#eq target 'blank'}}_blank{{/eq}}" {{/if}}>
                                     <span class="p_img">{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>
@@ -28,11 +28,11 @@
                             <ul class="p_level3Box">
                                 {{#each this.children}}
                                 <li class="p_level3Item">
-                                    <p>
+                                    <p class="p_navCon3 js_editor_click">
                                         <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if
                                             url}}target="{{#eq target 'blank'}}_blank{{/eq}}" {{/if}}>
                                             <span>{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>
-                                            <span class="p_menuItem">{{navName}}</span>
+                                            <span class="p_menuItemhat">{{navName}}</span>
                                         </a>
                                         {{#if children}}{{{../../../prop.arrow}}}{{/if}}
                                     </p>
@@ -43,7 +43,7 @@
                                                 <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if
                                                     url}}target="{{#eq target 'blank'}}_blank{{/eq}}" {{/if}}>
                                                     <span>{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>
-                                                    <p class="p_menuItem">{{navName}}</p>
+                                                    <span class="p_menuItem">{{navName}}</span>
                                                 </a>
                                             </li>
                                         {{/each}}
@@ -57,13 +57,13 @@
                         {{/each}}
                     </ul>
                 </div>
-            </div>
+            </ul>
             {{/if}}
         </li>
         {{/each}}
     </ul>
-    <div class="p_navButton">
-        <p class="p_iconBox">
+    <div class="p_navButton js_editor_click">
+        <p>
             <span></span>
             <span></span>
             <span></span>

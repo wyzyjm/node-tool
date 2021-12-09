@@ -2,25 +2,48 @@
     display: flex;
     justify-content: flex-end;
 }
-.e_navigationE .p_navItem1  > p{
-    line-height: 1;
-    padding: 0 10px;
+.e_navigationE .p_navItem1 > p{
     display: flex;
 }
 .e_navigationE .p_navItem1 > p svg{
     display:none;
 }
-.e_navigationE .p_navItem1 > p a{
-    font-size: 16px;
-    line-height: 1;
-    transition: all ease .3s;
-    color: rgb(0 0 0 / 60%);
-    position: relative;
-    padding: 20px 0;
-    display: block;
+.e_navigationE .p_navBox2{
+    display: flex;
+    justify-content: flex-end;
 }
-.e_navigationE .p_navItem1 > p a:hover{
-    color: rgb(0 0 0 / 100%);
+.e_navigationE .p_navBox2 ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.e_navigationE .haveThree .p_navItem2 > a > .p_img{
+    display: none;
+}
+.e_navigationE .haveThree .p_level3Item:nth-child(1) p{
+    padding: 0;
+    border: 0;
+}
+.e_navigationE .p_navItem2{
+    margin-left: 50px;
+}
+.e_navigationE .p_navItem2:first-child{
+    margin-left: 0px;
+}
+.e_navigationE .p_level3Item{
+    margin-right: 15px;
+}
+
+.e_navigationE .p_navBox2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    transition: all ease .3s;
+    opacity: 0;
+    visibility: hidden;
 }
 .e_navigationE .p_navItem1 > p a::after{
     content:'';
@@ -30,78 +53,17 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background: #409eff;
     margin: 0 auto;
     transition: all ease .3s;
 }
 .e_navigationE .p_navItem1 > p a:hover::after{
     width: 100%;
 }
-
-.e_navigationE .p_navBox2{
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: rgb(255 255 255 / 80%);
-    top: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 40px 0 40px;
-    padding-right: 110px;
-    z-index: 10;
-    transition: all ease .3s;
-    opacity: 0;
-    visibility: hidden;
-}
-.e_navigationE .p_navItem1:hover .p_navBox2{
+.e_navigationE .p_navItem1:hover .p_navBox2,
+.e_navigationE .p_navBox2.isdesign{
     opacity: 1;
     visibility: visible;
 }
-.e_navigationE .p_navBox2 ul{
-    display: flex;
-    justify-content: flex-end;
-}
-.e_navigationE .p_navItem2{
-    margin-left: 60px;
-}
-.e_navigationE .p_navItem2 a{
-    font-size: 19px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1;
-    color: rgb(0 0 0 / 80%);
-    transition: all ease .3s;
-}
-.e_navigationE .p_navItem2 .p_img{
-    width: 100%;
-    display: block;
-    max-width: 38px;
-    margin: 20px auto 0;
-}
-.e_navigationE .p_navItem2 img{
-    width: 100%;
-}
-.e_navigationE .haveThree .p_navItem2 .p_img{
+.e_navigationE .p_navBox2.isdesign{
     display: none;
-}
-.e_navigationE .haveThree .p_navItem2 a{
-    text-align: left;
-}
-.e_navigationE .haveThree .p_level3Box{
-    margin-top: 50px;
-    margin-left: 3px;
-}
-.e_navigationE .haveThree .p_level3Item{
-    margin-right: 15px;
-}
-.e_navigationE .haveThree .p_menuItem{
-    font-size: 17px;
-    font-weight: bold;
-    border-left: 1px solid rgb(0 0 0 / 10%);
-    padding-left: 15px;
-}
-.e_navigationE .haveThree .p_level3Item img{
-    width: 35px;
-    display: block;
-    margin: 20px auto 0;
 }

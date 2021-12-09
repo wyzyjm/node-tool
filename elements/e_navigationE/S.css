@@ -1,3 +1,15 @@
+.e_navigationE .p_navBox1::-webkit-scrollbar {
+    width: 3px;
+}
+.e_navigationE .p_navBox1::-webkit-scrollbar-track {
+    background: #eee;
+}
+.e_navigationE .p_navBox1::-webkit-scrollbar-thumb {
+    background: #d7d7d7;
+}
+.e_navigationE .p_navBox1::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
 .e_navigationE .p_navButton {
     width: 50px;
     display: flex;
@@ -12,33 +24,41 @@
     background: #f5f5f5;
     padding: 0 15px;
     height: calc(0vh);
-    overflow: hidden;
+    overflow-y: scroll;
     z-index: 10;
+    max-height: 1080px;
     transition: all ease .3s;
 }
 .e_navigationE .p_navBox1.pkcclb{
     height: calc(100vh);
 }
+.e_navigationE .p_navBox1.isdesign{
+    height: calc(100vh);
+    display: none;
+}
 .e_navigationE .p_navItem1 {
     border-bottom: 1px solid rgb(0 0 0 / 7%);
 }
-.e_navigationE .p_navItem1 > p{
+.e_navigationE .p_navCon{
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    color: rgb(0 0 0 / 70%);
+    font-size: 16px;
+    line-height: 60px;
 }
 .e_navigationE .p_navItem1 > p svg{
     width: auto;
-    margin: 20px 0;
+    margin: 18px 0;
     opacity: .7;
-    /* border-left: 1px solid rgb(0 0 0 / 10%); */
-    padding-left: 10px;
     cursor: pointer;
-    }
-.e_navigationE .p_navItem1 a{
-    line-height: 60px;
-    font-size: 16px;
-    color: rgb(0 0 0 / 70%);
     transition: all ease .3s;
+}
+.e_navigationE .p_navItem1 > p svg.rotate{
+    transform: rotate(90deg);
+}
+.e_navigationE .p_navItem1 > p a{
+    padding: 0;
 }
 .e_navigationE .p_navItem1 a:hover{
     color: rgb(0 0 0 / 100%);
@@ -49,28 +69,42 @@
     line-height: 30px;
     font-size: 14px;
     color: rgb(0 0 0 / 50%);
+    font-weight: 500;
 }
-.e_navigationE .p_navItem2 .p_img,
-.e_navigationE .p_level3Item span{
-    /* order: -1; */
+.e_navigationE .p_navItem2 .p_img{
     width: 23px;
-    margin-top: -2px;
-    /* margin-right: 10px; */
     opacity: .8;
+    margin: 0;
 }
 .e_navigationE .p_navItem2 .p_img img,
 .e_navigationE .p_level3Item span img{
     width:100%;
+    margin: 0;
 }
 .e_navigationE .p_navBox2{
     display: none;
+    padding: 0;
+    background: rgb(255 255 255 / 0%);
 }
 .e_navigationE .p_navBox2 > div{
     padding-bottom: 20px;
 }
 .e_navigationE .p_menuItem{
-    padding-left: 10px;
+    padding-left: 0;
+    border: 0;
+    font-size: 14px;
 }
 .e_navigationE .p_level3Box{
-    margin: 5px 0 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(255 255 255 / 60%);
+    padding: 15px;
+}
+.e_navigationE .p_level3Item span{
+    display:none;
+}
+.e_navigationE .p_level3Item{
+    width: 33.333%;
+    display: inline-block;
 }
