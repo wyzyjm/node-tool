@@ -10,7 +10,8 @@
             "ccsource":"prop.ccsource",
             "previewList":"prop.previewList",
             "searchList":"prop.searchList",
-            "isHide":"prop.isHide"
+            "isHide":"prop.isHide",
+            "removeBtn":"prop.removeBtn"
         }
     ]
 }

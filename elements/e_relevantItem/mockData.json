@@ -6,6 +6,7 @@
         "ccsource":{},
         "previewList":[],
         "searchList":[],
+        "removeBtn":true,
         "isHide":false
     },
     "i18n": {
