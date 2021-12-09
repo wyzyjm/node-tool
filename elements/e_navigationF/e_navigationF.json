@@ -1,0 +1,226 @@
+{
+  "cname": "导航-四级带图标",
+  "styleId": "e_navigationF",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n    <ul class=\"p_navBox1\">\r\n        {{#each ${dataList}}}\r\n        <li class=\"p_navItem1\">\r\n            <p class=\"p_navCon js_editor_click\">\r\n                <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if\r\n                    url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\" {{/if}}>\r\n                    <span>{{navName}}</span>\r\n                </a>\r\n                {{#if children}}{{{../${arrow}}}}{{/if}}\r\n            </p>\r\n            {{#if children}}\r\n            <ul class=\"p_navBox2\">\r\n                <div>\r\n                    <ul>\r\n                        {{#each children}}\r\n                        <li class=\"p_navItem2\">\r\n                            <p class=\"p_navCon2 js_editor_click\">\r\n                                <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if\r\n                                    url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\" {{/if}}>\r\n                                    <span class=\"p_img\">{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>\r\n                                    <span>{{navName}}</span>\r\n                                </a>\r\n                                {{#if children}}{{{../../${arrow}}}}{{/if}}\r\n                            </p>\r\n                            {{#if this.children}}\r\n                            <ul class=\"p_level3Box\">\r\n                                {{#each this.children}}\r\n                                <li class=\"p_level3Item\">\r\n                                    <p class=\"p_navCon3 js_editor_click\">\r\n                                        <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if\r\n                                            url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\" {{/if}}>\r\n                                            <span>{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>\r\n                                            <span class=\"p_menuItemhat\">{{navName}}</span>\r\n                                        </a>\r\n                                        {{#if children}}{{{../../../${arrow}}}}{{/if}}\r\n                                    </p>\r\n                                    {{#if this.children}}\r\n                                    <ul class=\"p_level4Box\">\r\n                                        {{#each this.children}}\r\n                                            <li class=\"p_level4Item\">\r\n                                                <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if\r\n                                                    url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\" {{/if}}>\r\n                                                    <span>{{#if img}}{{{nLazyImage img navName 'true'}}}{{/if}}</span>\r\n                                                    <span class=\"p_menuItem\">{{navName}}</span>\r\n                                                </a>\r\n                                            </li>\r\n                                        {{/each}}\r\n                                    </ul>\r\n                                    {{/if}}\r\n                                </li>\r\n                                {{/each}}\r\n                            </ul>\r\n                            {{/if}}\r\n                        </li>\r\n                        {{/each}}\r\n                    </ul>\r\n                </div>\r\n            </ul>\r\n            {{/if}}\r\n        </li>\r\n        {{/each}}\r\n    </ul>\r\n    <div class=\"p_navButton js_editor_click\">\r\n        <p>\r\n            <span></span>\r\n            <span></span>\r\n            <span></span>\r\n        </p>\r\n    </div>\r\n    {{^}}\r\n    {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_navigationF{\n    display: flex;\n    justify-content: flex-end;\n}\n.e_navigationF .p_navButton{\n    width: 100px;\n    justify-content: center;\n    padding: 20px 0;\n    display: none;\n}\n.e_navigationF .p_navButton > p{\n    width: 21px;\n    height: 16px;\n    cursor: pointer;\n}\n\n.e_navigationF .p_navButton > p span {\n    width: 100%;\n    background: #333;\n    display: block;\n    height: 2px;\n    margin: 2px 0;\n    float: left;\n    -webkit-transition: all ease 0.8s,opacity ease 0.3s;\n    -moz-transition: all ease 0.8s,opacity ease 0.3s;\n    -ms-transition: all ease 0.8s,opacity ease 0.3s;\n    -o-transition: all ease 0.8s,opacity ease 0.3s;\n    transition: all ease 0.8s,opacity ease 0.3s;\n    opacity: 1;\n}\n\n.e_navigationF .p_navButton > p span:nth-of-type(1) {\n    width: 50%;\n    float: left;\n}\n\n.e_navigationF .p_navButton > p span:nth-of-type(2) {}\n\n.e_navigationF .p_navButton > p span:nth-of-type(3) {\n    width: 50%;\n    float: right;\n}\n\n.e_navigationF .p_navButton > p.showmenu span {\n    background: #323538;\n    -webkit-animation: animaspan 0.5s 1;\n    animation: animaspan 0.5s 1;\n    animation-fill-mode: forwards;\n    -webkit-animation-fill-mode: forwards;\n}\n\n.e_navigationF .p_navButton > p.showmenu span:nth-of-type(1) {\n    transform: translateY(6px)rotate(720deg);\n    width: 100%;\n}\n\n.e_navigationF .p_navButton > p.showmenu span:nth-of-type(2) {\n    transform: rotate(720deg);\n}\n\n.e_navigationF .p_navButton > p.showmenu span:nth-of-type(3) {\n    transform: translateY(-6px)rotate(720deg);\n    width: 100%;\n}\n\n.e_navigationF .p_navButton > p.showmenu span.biahuan:nth-of-type(1) {\n    transform: translateY(6px)rotate(670deg);\n}\n\n.e_navigationF .p_navButton > p.showmenu span.biahuan:nth-of-type(2) {\n    transform: translateY(0px)rotate(768deg);\n}\n\n.e_navigationF .p_navButton > p.showmenu span.biahuan:nth-of-type(3) {\n    width: 0;\n    opacity: 0;\n}\n\n.e_navigationF .p_navCon{\n    color: rgb(0 0 0 / 60%);\n    font-size: 16px;\n    line-height: 1;\n    transition: all ease .3s;\n    text-decoration: none;\n}\n.e_navigationF .p_navCon:hover{\n    color: rgb(0 0 0 / 100%);\n}\n.e_navigationF .p_navCon::after{\n    background: #409eff;\n    height: 2px;\n}\n.e_navigationF .p_navBox2 > div{\n    width: 100%;\n}\n.e_navigationF .p_navItem1:hover .p_navBox2,\n.e_navigationF .p_navBox2.isdesign{\n    opacity: 1;\n    visibility: visible;\n}\n.e_navigationF .p_navBox2 ul{\n    padding: 10px 0;\n}\n.e_navigationF .haveThree ul{\n    padding: 0;\n}\n.e_navigationF .haveThree .p_navItem2{\n    width: auto;\n    margin-right: 60px;\n}\n.e_navigationF .p_navItem2 a{\n    display: flex;\n    width: 100%;\n    transition: all ease .3s;\n}\n.e_navigationF .p_navCon2 {\n    font-size: 15px;\n    text-align: left;\n    color: #fff;\n    transition: all ease .15s;\n    display: flex;\n    width: 100%;\n    padding: 10px 20px;\n    line-height: 1;\n    text-decoration: none;\n}\n.e_navigationF .haveThree .p_navCon2{\n    text-align: left;\n    font-size: 21px;\n    padding: 0;\n    font-weight: bold;\n    letter-spacing: 3px;\n}\n.e_navigationF .p_navItem2 a span{\n    width: 100%;\n}\n.e_navigationF .p_navItem2 img{\n    width: 100%;\n    max-width: 24px;\n    margin-right: 25px;\n}\n.e_navigationF .haveThree .p_navItem2 img {\n    margin-right: 10px;\n}\n.e_navigationF .haveThree .p_level3Box{\n    margin-top: 25px;\n    padding-top: 25px;\n    border-top: 1px solid rgb(255 255 255 / 20%);\n}\n.e_navigationF .p_level3Item{\n    margin-right: 45px;\n}\n.e_navigationF .p_navCon3{\n    font-size: 18px;\n    letter-spacing: 0;\n    color: rgb(255 255 255 / 80%);\n    transition: all ease .15s;\n    font-weight: bold;\n}\n.e_navigationF .p_navItem1 {\n    position: relative;\n    padding-left: 20px;\n    padding-right: 20px;\n}\n.e_navigationF .haveThree{\n    position: static;\n}\n.e_navigationF .haveThree .p_navBox2{\n    width: 100%;\n    padding: 35px 60px;\n}\n.e_navigationF .haveThree .p_level4Box{\n    flex-direction: column;\n    margin-top: 20px;\n}\n.e_navigationF .p_menuItem{\n    font-size: 14px;\n    font-weight: 500;\n    color: rgb(255 255 255 / 50%);\n    line-height: 1.7;\n    transition: all ease .15s;\n}\n.e_navigationF .p_level4Item span{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.e_navigationF .p_level4Item .p_dian{\n    width: 15px;\n    position: relative;\n}\n.e_navigationF .p_level4Item .p_dian::after{\n    content:'';\n    width: 4px;\n    height: 4px;\n    background: rgb(0 0 0 / 40%);\n    border-radius: 100%;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%,-50%);\n}\n.e_navigationF .p_level4Item img{\n    width: auto;\n}\n.e_navigationF .p_navItem2 a:hover,\n.e_navigationF .p_navItem2 .p_navCon3:hover,\n.e_navigationF .p_navItem2 .p_menuItem:hover,\n.e_navigationF .p_navItem2 .p_menuItemhat:hover{\n    color:#fff;\n}\n.e_navigationF .p_listthree img{\n    width: auto;\n}\n.e_navigationF .p_listthree .p_menuItemhat{\n    font-size: 14px;\n    font-weight: 500;\n    color: rgb(255 255 255 / 50%);\n    line-height: 1.7;\n    transition: all ease .15s;\n}\n.e_navigationF .p_navBox2.isdesign{\n    display: none;\n}\n.e_navigationF .p_navItem1 > p a{\n    padding: 20px 0;\n    width: 100%;\n}\n.e_navigationF .p_navBox2{\n    background: rgb(0 0 0 / 80%);\n    padding: 0px 0 0px;\n    opacity: 0;\n    visibility: hidden;\n    width: 180px;\n}\n.e_navigationF .p_navItem2 a span.p_img{\n    width: auto;\n    margin-right: 0;\n}\n.e_navigationF .haveThree .p_navItem2 a span{\n    width: auto;\n    margin-right: 0;\n}\n\n.havestatic > div,\n.havestatic > div[class*=\"cbox-\"] {\n    position: static !important;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ".e_navigationF .p_navBox1::-webkit-scrollbar {\r\n    width: 3px;\r\n}\r\n.e_navigationF .p_navBox1::-webkit-scrollbar-track {\r\n    background: #252525;\r\n}\r\n.e_navigationF .p_navBox1::-webkit-scrollbar-thumb {\r\n    background: #545454;\r\n}\r\n.e_navigationF .p_navBox1::-webkit-scrollbar-thumb:hover {\r\n    background: #fff;\r\n}\r\n.e_navigationF .p_navButton {\r\n    width: 50px;\r\n    display: flex;\r\n    justify-content: center;\r\n    padding: 10px 0;\r\n}\r\n.e_navigationF .p_navBox1{\r\n    position: absolute;\r\n    top: 100%;\r\n    left: 0;\r\n    right: 0;\r\n    background: rgb(0 0 0 / 90%);\r\n    padding: 0 15px;\r\n    height: calc(0vh);\r\n    overflow-y: scroll;\r\n    z-index: 10;\r\n    max-height: 1080px;\r\n    transition: all ease .3s;\r\n}\r\n.e_navigationF .p_navBox1.pkcclb{\r\n    height: calc(100vh);\r\n}\r\n.e_navigationF .p_navItem1 {\r\n    border-bottom: 1px solid rgb(255 255 255 / 10%);\r\n    padding: 0;\r\n}\r\n.e_navigationF .p_navCon{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    color: #fff;\r\n    line-height: 60px;\r\n    font-size: 16px;\r\n}\r\n.e_navigationF .p_navCon2{\r\n    padding: 0;\r\n    font-size: 14px;\r\n    color: rgb(255 255 255 / 60%);\r\n}\r\n.e_navigationF .p_navCon3{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 0;\r\n    color: rgb(255 255 255 / 60%);\r\n    font-size: 14px;\r\n}\r\n.e_navigationF .p_navItem1 > p svg,\r\n.e_navigationF .p_navItem2 > p svg,\r\n.e_navigationF .p_level3Item > p svg{\r\n    width: auto;\r\n    margin: 20px 0;\r\n    opacity: .7;\r\n    cursor: pointer;\r\n    transition: all ease .3s;\r\n}\r\n.e_navigationF .p_navItem2 > p svg,\r\n.e_navigationF .p_level3Item > p svg{\r\n    margin: 0px 0;\r\n}\r\n.e_navigationF .p_navItem1 > p a{\r\n    padding: 0;\r\n}\r\n.e_navigationF .p_navItem1 > p:hover{\r\n    color: rgb(255 255 255);\r\n}\r\n.e_navigationF .p_navItem2 .p_img,\r\n.e_navigationF .p_level3Item span{\r\n    opacity: .8;\r\n}\r\n.e_navigationF .p_navItem2 .p_img img{\r\n    width: 23px;\r\n    margin-right: 10px;\r\n}\r\n.e_navigationF .p_navBox2{\r\n    display: none;\r\n    opacity: 1;\r\n    visibility: visible;\r\n    background: none;\r\n    width: 100%;\r\n}\r\n.e_navigationF .p_navBox2 ul {\r\n    padding: 0px 0 10px;\r\n}\r\n.e_navigationF .p_level3Box{\r\n    display: none;\r\n}\r\n.e_navigationF .p_level3Item{\r\n    width: 100%;\r\n    margin: 0;\r\n}\r\n.e_navigationF .p_level3Item span,\r\n.e_navigationF .p_level4Item span{\r\n    display: none;\r\n}\r\n.e_navigationF .p_level4Box{\r\n    display: none;\r\n}\r\n.e_navigationF .p_level3Item .p_menuItem{\r\n    font-size: 14px;\r\n}\r\n.e_navigationF .p_level4Item .p_menuItem::before{\r\n    display:none;\r\n}\r\n.e_navigationF p svg.rotate{\r\n    transform: rotate(90deg);\r\n}\r\n.e_navigationF .p_navItem2{\r\n    margin-bottom: 7px;\r\n}\r\n.e_navigationF .p_navItem2 span{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n}\r\n.e_navigationF .haveThree .p_navBox2 {\r\n    padding: 0;\r\n}\r\n.e_navigationF .haveThree .p_navItem2 {\r\n    margin-right: 0;\r\n}\r\n.e_navigationF .haveThree .p_navItem2 a {\r\n    font-size: 14px;\r\n    font-weight: 500;\r\n    letter-spacing: 0px;\r\n}\r\n.e_navigationF .haveThree .p_level3Box {\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n}\r\n.e_navigationF .p_level3Item:first-child{\r\n    margin-top: 15px;\r\n    padding-top: 15px;\r\n    border-top: 1px solid rgb(255 255 255 / 20%);\r\n    margin-right: 0;\r\n}\r\n.e_navigationF .p_level3Item:last-child{\r\n    padding: 0 0 20px;\r\n}\r\n.e_navigationF .p_navItem2 img {\r\n    width: auto;\r\n    max-width: 23px;\r\n    margin-right: 10px;\r\n}\r\n.e_navigationF .p_level4Item:first-child{\r\n    margin-top: 20px;\r\n}\r\n.e_navigationF .p_level4Item:last-child{\r\n    margin-bottom: 20px;\r\n}\r\n.e_navigationF .haveThree .p_level4Box {\r\n    margin: 0;\r\n}\r\n.e_navigationF .p_navBox1.isdesign{\r\n    height: calc(100vh);\r\n    display: none;\r\n}"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ".e_navigationF .p_navBox1{\r\n    display: flex;\r\n    justify-content: flex-end;\r\n}\r\n\r\n.e_navigationF .p_navItem1 > p{\r\n    display: flex;\r\n    position: relative;\r\n}\r\n.e_navigationF .p_navItem1 > p a{\r\n    display: block;\r\n}\r\n.e_navigationF .p_navItem1 > p svg{\r\n    display:none;\r\n}\r\n.e_navigationF .p_navItem1 > p::after{\r\n    content:'';\r\n    position: absolute;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    width: 0;\r\n    margin: 0 auto;\r\n    transition: all ease .3s;\r\n}\r\n.e_navigationF .p_navItem1 > p:hover::after{\r\n    width: 100%;\r\n}\r\n.e_navigationF .p_navBox2{\r\n    position: absolute;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n    top: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    z-index: 10;\r\n    transition: all ease .3s;\r\n}\r\n.e_navigationF .p_navBox2 ul{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: flex-end;\r\n}\r\n.e_navigationF .haveThree ul{\r\n    flex-direction: row;\r\n    justify-content: flex-end;\r\n}\r\n.e_navigationF .haveThree .p_navItem2 svg{\r\n    display:none;\r\n}\r\n.e_navigationF .p_navItem2 a span{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n}\r\n.e_navigationF .p_navItem2 > p svg{\r\n    display:none;\r\n}\r\n.e_navigationF .p_level3Box.p_listthree{\r\n    flex-direction: column;\r\n}\r\n"
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ".e_navigationF .p_level3Item {\r\n    margin-right: 25px;\r\n}\r\n.e_navigationF .haveThree .p_navItem2{\r\n    margin-right: 30px;\r\n}\r\n.e_navigationF .haveThree .p_navItem2 a {\r\n    font-size: 18px;\r\n    line-height: 28px;\r\n}\r\n.e_navigationF .p_navItem2 img {\r\n    max-width: 28px;\r\n    margin-right: 10px;\r\n}\r\n.e_navigationF .haveThree .p_level3Box {\r\n    padding-left: 3px;\r\n}\r\n.e_navigationF .haveThree .p_level4Box {\r\n    padding-left: 11px;\r\n}\r\n"
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {
+        "navName": "首页"
+      },
+      {
+        "navName": "公司概况",
+        "children": [
+          {
+            "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+            "navName": "企业介绍"
+          },
+          {
+            "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+            "navName": "发展历程"
+          },
+          {
+            "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+            "navName": "关于我们"
+          }
+        ]
+      },
+      {
+        "navName": "我们的产品"
+      },
+      {
+        "navName": "新闻资讯",
+        "children": [
+          {
+            "navName": "最新动态"
+          },
+          {
+            "navName": "企业新闻"
+          },
+          {
+            "navName": "行业新闻"
+          }
+        ]
+      },
+      {
+        "navName": "招商加盟",
+        "children": [
+          {
+            "navName": "合作伙伴"
+          },
+          {
+            "navName": "加入我们"
+          }
+        ]
+      },
+      {
+        "navName": "售后服务",
+        "children": [
+          {
+            "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+            "navName": "服务宗旨",
+            "children": [
+              {
+                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                "navName": "服务宗旨1"
+              },
+              {
+                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                "navName": "服务宗旨2"
+              },
+              {
+                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                "navName": "服务宗旨3"
+              },
+              {
+                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                "navName": "服务宗旨4"
+              },
+              {
+                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                "navName": "服务宗旨5"
+              },
+              {
+                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                "navName": "服务宗旨6"
+              }
+            ]
+          },
+          {
+            "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+            "navName": "在线咨询",
+            "children": [
+              {
+                "navName": "在线咨询1"
+              },
+              {
+                "navName": "在线咨询2"
+              },
+              {
+                "navName": "在线咨询2"
+              }
+            ]
+          },
+          {
+            "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+            "navName": "常见问题",
+            "children": [
+              {
+                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                "navName": "生活常识",
+                "children": [
+                  {
+                    "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                    "navName": "生活常识1"
+                  },
+                  {
+                    "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                    "navName": "生活常识2"
+                  },
+                  {
+                    "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                    "navName": "生活常识3"
+                  },
+                  {
+                    "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                    "navName": "生活常识4"
+                  },
+                  {
+                    "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                    "navName": "生活常识5"
+                  },
+                  {
+                    "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                    "navName": "生活常识6"
+                  }
+                ]
+              },
+              {
+                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                "navName": "百度百科",
+                "children": [
+                  {
+                    "navName": "百度百科1"
+                  },
+                  {
+                    "navName": "百度百科2"
+                  },
+                  {
+                    "navName": "百度百科3"
+                  },
+                  {
+                    "navName": "百度百科4"
+                  },
+                  {
+                    "navName": "百度百科5"
+                  },
+                  {
+                    "navName": "百度百科6"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+            "navName": "用户协议",
+            "children": [
+              {
+                "navName": "用户协议1"
+              },
+              {
+                "navName": "用户协议2"
+              },
+              {
+                "navName": "用户协议2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "navName": "联系我们",
+        "children": [
+          {
+            "navName": "在线留言"
+          },
+          {
+            "navName": "联系我们"
+          }
+        ]
+      }
+    ],
+    "arrow": "<svg t=\"1638932461478\" class=\"icon p_jtIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"2646\" width=\"16\" height=\"16\"><path d=\"M761.055557 532.128047c0.512619-0.992555 1.343475-1.823411 1.792447-2.848649 8.800538-18.304636 5.919204-40.703346-9.664077-55.424808L399.935923 139.743798c-19.264507-18.208305-49.631179-17.344765-67.872168 1.888778-18.208305 19.264507-17.375729 49.631179 1.888778 67.872168l316.960409 299.839269L335.199677 813.631716c-19.071845 18.399247-19.648112 48.767639-1.247144 67.872168 9.407768 9.791372 21.984142 14.688778 34.560516 14.688778 12.000108 0 24.000215-4.479398 33.311652-13.439914l350.048434-337.375729c0.672598-0.672598 0.927187-1.599785 1.599785-2.303346 0.512619-0.479935 1.056202-0.832576 1.567101-1.343475C757.759656 538.879828 759.199462 535.391265 761.055557 532.128047z\" p-id=\"2647\"></path></svg>",
+    "showArrow": true
+  },
+  "i18n": {
+    "zh_CN": {
+      "noData": "暂无数据"
+    }
+  },
+  "datasource": "prop",
+  "dataFields": {
+    "dataList": "dataList",
+    "arrow": "arrow",
+    "showArrow": "showArrow"
+  },
+  "dataManage": {}
+}

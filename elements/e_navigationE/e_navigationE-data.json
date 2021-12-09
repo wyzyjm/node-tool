@@ -1,0 +1,10 @@
+{   
+    "apiType":"list",
+    "dataFields":[
+        {
+            "name":"dataList",
+            "cname":"导航",
+            "type":"array[object]"
+        } 
+    ]
+}

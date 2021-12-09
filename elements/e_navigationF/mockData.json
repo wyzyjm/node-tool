@@ -1,0 +1,195 @@
+{
+    "prop": {
+        "dataList": [
+            {
+                "navName": "首页"
+            },
+            {
+                "navName": "公司概况",
+                "children": [
+                    {
+                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                        "navName": "企业介绍"
+                    },
+                    {
+                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                        "navName": "发展历程"
+                    },
+                    {
+                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                        "navName": "关于我们"
+                    }
+                ]
+            },
+            {
+                "navName": "我们的产品"
+            },
+            {
+                "navName": "新闻资讯",
+                "children": [
+                    {
+                        "navName": "最新动态"
+                    },
+                    {
+                        "navName": "企业新闻"
+                    },
+                    {
+                        "navName": "行业新闻"
+                    }
+                ]
+            },
+            {
+                "navName": "招商加盟",
+                "children": [
+                    {
+                        "navName": "合作伙伴"
+                    },
+                    {
+                        "navName": "加入我们"
+                    }
+                ]
+            },
+            {
+                "navName": "售后服务",
+                "children": [
+                    {
+                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                        "navName": "服务宗旨",
+                        "children": [
+                            {
+                                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                "navName": "服务宗旨1"
+                            },
+                            {
+                                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                "navName": "服务宗旨2"
+                            },
+                            {
+                                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                "navName": "服务宗旨3"
+                            },
+                            {
+                                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                "navName": "服务宗旨4"
+                            },
+                            {
+                                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                "navName": "服务宗旨5"
+                            },
+                            {
+                                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                "navName": "服务宗旨6"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                        "navName": "在线咨询",
+                        "children": [
+                            {
+                                "navName": "在线咨询1"
+                            },
+                            {
+                                "navName": "在线咨询2"
+                            },
+                            {
+                                "navName": "在线咨询2"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                        "navName": "常见问题",
+                        "children": [
+                            {
+                                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                                "navName": "生活常识",
+                                "children": [
+                                    {
+                                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                        "navName": "生活常识1"
+                                    },
+                                    {
+                                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                        "navName": "生活常识2"
+                                    },
+                                    {
+                                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                        "navName": "生活常识3"
+                                    },
+                                    {
+                                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                        "navName": "生活常识4"
+                                    },
+                                    {
+                                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                        "navName": "生活常识5"
+                                    },
+                                    {
+                                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/f97fcbca-68ed-424d-94e4-508c98cdeb4b.png",
+                                        "navName": "生活常识6"
+                                    }
+                                ]
+                            },
+                            {
+                                "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                                "navName": "百度百科",
+                                "children": [
+                                    {
+                                        "navName": "百度百科1"
+                                    },
+                                    {
+                                        "navName": "百度百科2"
+                                    },
+                                    {
+                                        "navName": "百度百科3"
+                                    },
+                                    {
+                                        "navName": "百度百科4"
+                                    },
+                                    {
+                                        "navName": "百度百科5"
+                                    },
+                                    {
+                                        "navName": "百度百科6"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "img": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/ba7acd6c-c046-4c3a-a96c-b5406ada198d.png",
+                        "navName": "用户协议",
+                        "children": [
+                            {
+                                "navName": "用户协议1"
+                            },
+                            {
+                                "navName": "用户协议2"
+                            },
+                            {
+                                "navName": "用户协议2"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "navName": "联系我们",
+                "children": [
+                    {
+                        "navName": "在线留言"
+                    },
+                    {
+                        "navName": "联系我们"
+                    }
+                ]
+            }
+        ],
+        "arrow": "<svg t=\"1638932461478\" class=\"icon p_jtIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"2646\" width=\"16\" height=\"16\"><path d=\"M761.055557 532.128047c0.512619-0.992555 1.343475-1.823411 1.792447-2.848649 8.800538-18.304636 5.919204-40.703346-9.664077-55.424808L399.935923 139.743798c-19.264507-18.208305-49.631179-17.344765-67.872168 1.888778-18.208305 19.264507-17.375729 49.631179 1.888778 67.872168l316.960409 299.839269L335.199677 813.631716c-19.071845 18.399247-19.648112 48.767639-1.247144 67.872168 9.407768 9.791372 21.984142 14.688778 34.560516 14.688778 12.000108 0 24.000215-4.479398 33.311652-13.439914l350.048434-337.375729c0.672598-0.672598 0.927187-1.599785 1.599785-2.303346 0.512619-0.479935 1.056202-0.832576 1.567101-1.343475C757.759656 538.879828 759.199462 535.391265 761.055557 532.128047z\" p-id=\"2647\"></path></svg>",
+        "showArrow": true
+    },
+    "i18n": {
+        "noData": "暂无数据"
+    }
+}
