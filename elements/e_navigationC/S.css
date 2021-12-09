@@ -16,19 +16,18 @@
 .e_navigationC .p_navBox1{
     width: 100%;
 }
-.e_navigationC .p_navBox2{ 
-   display: none;
-   padding-left: 20px;
-}
-.e_navigationC .p_navItem2 a:hover{
-    color: #000;
-}
 .e_navigationC .p_navItem1{ 
     padding: 0;
     border-bottom: 1px solid rgb(0 0 0 / 5%);
     line-height: 50px;
     font-size: 14px;
+    text-align: left;
  }
+ .e_navigationC .p_navItem2{
+    line-height: 50px;
+    width: auto;
+    margin: 0;
+}
  .e_navigationC .p_navCon {
     display: flex;
     justify-content: space-between;
@@ -50,5 +49,43 @@
     transform: rotate(90deg);
 }
 .e_navigationC .p_imgBox{
+    display: none;
+}
+.e_navigationC .p_navBox1, .e_navigationC .p_navBox2{
+    width: 100%;
+    display: block;
+}
+.e_navigationC .p_navBox2{
+    display: none;
+    padding:0 0 0 20px;
+    position: relative; 
+    top: 0;
+    left: 0;
+    background: none;
+}
+.e_navigationC .p_navBox2 ul{
+    width: 100%;
+    display: block;
+}
+.e_navigationC .p_navCon{
+    position: relative;
+}
+.e_navigationC .p_navCon a{
+    display: block;
+    padding: 0;
+}
+.e_navigationC .p_navCon::before{
+    display: none;
+}
+.e_navigationC .p_navItem2{
+    margin: 0 ;
+}
+.e_navigationC .p_navBox2 > div{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 ;
+    display: block;
+}
+.e_navigationC .p_navBox2 ul::after{
     display: none;
 }

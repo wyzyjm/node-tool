@@ -15,18 +15,17 @@
 .e_navigationB  .p_navBox1{
     width: 100%;   
 }
-.e_navigationB .p_navBox2{ 
-   display: none;
-   border: none;
-   padding-left: 20px;
-}
 .e_navigationB .p_navItem1{ 
     font-size: 14px;
     border-bottom: 1px solid rgb(0 0 0 / 5%);
     line-height: 50px;
+    padding: 0;
  }
 .e_navigationB .p_navItem2{ 
-    border-right: none;
+    border: none;
+    width: 100%;
+    margin:  0;
+    text-align: left;
 }
 .e_navigationB .p_img{ 
     display: none;
@@ -40,4 +39,16 @@
 .e_navigationB .p_jtHover {
     transition: 0.5s;
     transform: rotate(90deg);
+}
+.e_navigationB .p_navBox2{
+    border: none;
+    padding:0 0 0 20px;
+    display: none;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.e_navigationB .p_navItem2 + .p_navItem2{
+    border:none
 }

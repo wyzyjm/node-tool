@@ -13,7 +13,7 @@
 .e_categoryA  li{
     position:relative;
 }
-.e_categoryA  li .p_c_title{
+.e_categoryA .p_c_title{
     display:block;
     position:relative;
     line-height:42px;
@@ -21,21 +21,20 @@
     cursor:pointer;
     padding-left:10px;
 }
-.e_categoryA  li .p_c_title img{
+.e_categoryA .p_c_title img{
     width:20px;
     height:20px;
     vertical-align:middle;
     margin-right:5px;
     margin-top: -4px;
 }
-.e_categoryA  .p_c_title .p_arrow{
+.e_categoryA  .p_arrow{
     position:absolute;
     right:10px;
     top: 13px;
     width:16px;
     height: 16px;
     transform:rotate(-90deg);
-    color:#ccc;
     fill: currentColor;
 }
 .e_categoryA  .p_c_mbtn,
@@ -56,6 +55,6 @@
     left:220px;
     top:0;
 }
-.e_categoryA.slide_out .p_c_title .p_arrow{
+.e_categoryA.slide_out .p_arrow{
     transform: rotate(180deg)
 }

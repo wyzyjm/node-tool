@@ -191,6 +191,10 @@
     {
       "name": "html元素",
       "code": "e_html"
+    },
+    {
+      "name": "赞踩",
+      "code": "e_assist"
     }
   ],
   "complex": [
@@ -243,9 +247,9 @@
       "code": "e_navigationC"
     },
     {
-        "name": "导航-多语言",
-        "code": "e_navigationD"
-      },
+      "name": "导航-多语言",
+      "code": "e_navigationD"
+    },
     {
       "name": "登录",
       "code": "e_login"

@@ -11,44 +11,19 @@
 .e_navigationB .p_navBox2{
     display: flex;
     display: none;
-    width: 100%;
     position: absolute;
     top: 50px;
     left: 0;
     flex-wrap: wrap;
-    padding: 20px;
     z-index: 99;
 }
 .e_navigationB .p_navBox2[style*="display: block"] { 
     display: flex !important; 
 }
-.e_navigationB .p_navItem1{ 
-    padding: 0 20px;
-    border: none;
-}
-.e_navigationB .p_navItem2{
-    width: 200px;
-    margin: 16px 0;
-    text-align: center;
-}
-.e_navigationB .p_navItem2 + .p_navItem2{
-    border-left:1px solid #e8e8e8
-}
 .e_navigationB p{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.e_navigationB .p_img{
-    width: 120px;
-    height: 120px;
-    margin-bottom: 16px;
-    display: block;
-}
-.e_navigationB .p_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 .e_navigationB .p_jtIcon{
     display: none;

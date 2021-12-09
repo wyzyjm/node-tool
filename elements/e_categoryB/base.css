@@ -13,7 +13,7 @@
 .e_categoryB  li{
     position:relative;
 }
-.e_categoryB  li .p_c_title{
+.e_categoryB .p_c_title{
     display:block;
     position:relative;
     line-height:42px;
@@ -21,20 +21,19 @@
     cursor:pointer;
     padding-left:10px;
 }
-.e_categoryB  li .p_c_title img{
+.e_categoryB .p_c_title img{
     width:20px;
     height:20px;
     vertical-align:middle;
     margin-right:5px;
 }
-.e_categoryB  .p_c_title .p_arrow{
+.e_categoryB  .p_arrow{
     position:absolute;
     right:10px;
     top: 13px;
     width:16px;
     height: 16px;
     transform:rotate(-90deg);
-    color:#ccc;
     fill: currentColor;
 }
 .e_categoryB  .p_c_mbtn,
