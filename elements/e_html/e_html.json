@@ -2,11 +2,11 @@
   "cname": "html元素",
   "styleId": "e_html",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\"></div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{{${html}}}}\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_html {\n    min-height: 300px;\n}\n"
+      "cssText": ".e_html {\r\n    min-height: 300px;\r\n}\r\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,7 +21,9 @@
       "cssText": ""
     }
   ],
-  "prop": {},
+  "prop": {
+    "html": ""
+  },
   "i18n": {
     "zh_CN": {}
   },

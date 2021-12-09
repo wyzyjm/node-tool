@@ -2,7 +2,7 @@
     "panelConfig": [
         {
             "title": "HTML",
-            "compName": "setting-text",
+            "compName": "setting-html",
             "bind-html": "prop.html"
         }
     ]
