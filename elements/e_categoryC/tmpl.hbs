@@ -1,20 +1,23 @@
 <div class="e_categoryC" needjs='true'>
     <div class="p_c_tree">
         {{#if prop.cate}}
-            {{#tree prop.cate}}
-                {{#if @nodeBegin}}<ul class="p_c_content">{{/if}}
-                <li class="p_c_item">
-                    <span class="p_c_title">
-                        <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}" class="btn btn-primary p_c_title {{#eq selected true}}active{{/eq}}" target="{{#eq target 'BLANK'}}_blank{{/eq}}">
-                            <span>{{categoryName}}</span>
-                        </a>
-                    </span>
-                    {{tree children}}
-                </li>
-                {{#if @nodeEnd}}</ul>{{/if}}
-            {{/tree}}
+        {{#tree prop.cate}}
+        {{#if @nodeBegin}}<ul class="p_c_content">{{/if}}
+            <li class="p_c_item js_editor_click">
+                <span>
+                    <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}"
+                        class="p_c_title{{#eq selected true}}active{{/eq}}"
+                        target="{{#eq target 'BLANK'}}_blank{{/eq}}">
+                        <span>{{categoryName}}</span>
+                    </a>
+                </span>
+                {{tree children}}
+            </li>
+            {{#if @nodeEnd}}
+        </ul>{{/if}}
+        {{/tree}}
         {{^}}
-            {{nNoDataPrompt i18n.noData}}
+        {{nNoDataPrompt i18n.noData}}
         {{/if}}
     </div>
 </div>
