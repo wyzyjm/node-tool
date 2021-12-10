@@ -325,6 +325,10 @@
     {
       "name": "导航-四级带图标",
       "code": "e_navigationF"
+    },
+    {
+      "name": "全局搜索",
+      "code": "e_searchResult"
     }
   ],
   "form": [
