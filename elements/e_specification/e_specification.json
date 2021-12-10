@@ -2,11 +2,11 @@
   "cname": "产品规格",
   "styleId": "e_specification",
   "styleClass": "",
-  "tmpl": "<ul class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#${specList}}}\r\n        <li class=\"p_item\">\r\n            <!--规格名称-->\r\n            <span class=\"p_specName\"> {{specName}} </span>\r\n            <!--规格值-->\r\n            <ul class=\"p_valueUl\">\r\n                {{#productSpecValues}}\r\n                <li class=\"itemValue \" data-id=\"{{specId}}\"> \r\n                    {{#if ../imageFlag}}\r\n                        <!--图片类型-->\r\n                        <div class=\"specValueI p_size\">\r\n                            {{{nLazyImage img  name  'true'}}}\r\n                        </div>\r\n                        \r\n                    {{^}}\r\n                        <!--文字类型-->\r\n                        <span class=\"specValueT p_size\">{{name}}</span>\r\n                    {{/if}}\r\n                </li>\r\n                {{/productSpecValues}}\r\n            </ul>\r\n        </li>\r\n    {{/${specList}}}\r\n</ul>",
+  "tmpl": "<ul class=\"${elemId} ${styleClass} {{${style}}}\" needjs=\"true\">\r\n    {{#${specList}}}\r\n        <li class=\"p_item\">\r\n            <!--规格名称-->\r\n            <span class=\"p_specName\"> {{specName}} </span>\r\n            <!--规格值-->\r\n            <ul class=\"p_valueUl\">\r\n                {{#productSpecValues}}\r\n                <li class=\"itemValue p_itemValue\" data-id=\"{{specId}}\"> \r\n                    {{#if ../imageFlag}}\r\n                        <!--图片类型-->\r\n                        <div class=\"specValueI p_size\">\r\n                            {{{nLazyImage img  name  'true'}}}\r\n                            {{#if name}}\r\n                                    <span class=\"p_imgName\"> {{name}} </span>\r\n                            {{/if}}\r\n                        </div>\r\n                        \r\n                    {{^}}\r\n                        <!--文字类型-->\r\n                        <span class=\"specValueT p_size\">{{name}}</span>\r\n                    {{/if}}\r\n                </li>\r\n                {{/productSpecValues}}\r\n            </ul>\r\n        </li>\r\n    {{/${specList}}}\r\n</ul>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_specification {\r\n}\r\n.e_specification img {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n}\r\n.e_specification .p_item {\r\n  padding-bottom: 10px;\r\n  overflow: hidden;\r\n}\r\n.e_specification .p_specName {\r\n  float: left;\r\n  height: 30px;\r\n  line-height: 30px;\r\n  margin-right: 10px;\r\n}\r\n.e_specification .p_valueUl {\r\n  margin-left: 40px;\r\n  overflow: hidden;\r\n}\r\n.e_specification .itemValue {\r\n  float: left;\r\n  margin-right: 5px;\r\n  margin-bottom: 5px;\r\n  overflow: hidden;\r\n  border: 1px solid #ccc;\r\n}\r\n.e_specification .p_active {\r\n  border-color: var(--primary);\r\n}\r\n.e_specification .specValueT {\r\n  display: block;\r\n  padding: 3px 16px;\r\n  text-align: center;\r\n}\r\n.e_specification .specValueI {\r\n  width: 46px;\r\n  height: 46px;\r\n}\r\n"
+      "cssText": ".e_specification {\r\n}\r\n.e_specification img {\r\n    width: 36px;\r\n    height: 36px;\r\n    object-fit: cover;\r\n}\r\n.e_specification .p_item {\r\n    padding-bottom: 10px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .p_specName {\r\n    float: left;\r\n    height: 30px;\r\n    line-height: 30px;\r\n    margin-right: 10px;\r\n}\r\n.e_specification .p_valueUl {\r\n    margin-left: 40px;\r\n    overflow: hidden;\r\n}\r\n.e_specification .itemValue {\r\n    float: left;\r\n    margin-right: 5px;\r\n    margin-bottom: 5px;\r\n    overflow: hidden;\r\n    border: 1px solid #ccc;\r\n}\r\n.e_specification .p_active {\r\n    border-color: var(--primary);\r\n}\r\n.e_specification .specValueT {\r\n    display: block;\r\n    padding: 3px 16px;\r\n    text-align: center;\r\n}\r\n.e_specification .p_imgName {\r\n    padding: 0 8px;\r\n}\r\n/* 图片 无文字 */\r\n.e_specification.style .p_imgName {\r\n    display: none;\r\n}\r\n/* 左侧 文字 */\r\n.e_specification.style1 .specValueI {\r\n    display: flex;\r\n    align-items: center;\r\n    flex-direction: row-reverse;\r\n}\r\n/* 右侧 文字 */\r\n.e_specification.style2 .p_imgName {\r\n}\r\n/* 伸缩蚊帐 显示 */\r\n.e_specification.style3 .specValueI {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n.e_specification.style3 .p_imgName {\r\n    display: none;\r\n}\r\n.e_specification.style3 .p_active .p_imgName {\r\n    display: block;\r\n}\r\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -69,17 +69,18 @@
           },
           {
             "specId": "877593912750432256",
-            "name": "蓝",
+            "name": "蓝蓝蓝蓝蓝",
             "img": "https://img14.360buyimg.com/n9/s60x76_jfs/t1/35240/39/15274/119256/60e547f9Edf1c8e52/7e473069ba1c1404.jpg!cc_60x76.jpg"
           },
           {
             "specId": "877593912750432257",
-            "name": "黑",
+            "name": "黑色黑色黑色黑色",
             "img": "https://img12.360buyimg.com/n9/s60x76_jfs/t1/193831/14/12097/100870/60e547f1E7ff195b4/509be41568751514.jpg!cc_60x76.jpg"
           }
         ]
       }
-    ]
+    ],
+    "style": "style"
   },
   "i18n": {
     "zh_CN": {}
@@ -91,6 +92,8 @@
     "specList$templateId": "templateId",
     "specList$specName": "specName",
     "specList$imageFlag": "imageFlag",
-    "specList$productSpecValues": "productSpecValues"
+    "specList$productSpecValues": "productSpecValues",
+    "rule": "rule",
+    "style": "style"
   }
 }
