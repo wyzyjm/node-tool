@@ -27,8 +27,9 @@ module.exports={
                     mockJson={}
                 }
                 for(var i in mockJson.i18n){
-                    if(i18nList.indexOf(mockJson.i18n[i])==-1 && data.indexOf(mockJson.i18n[i])==-1){
-                        i18nList.push(mockJson.i18n[i])
+                    var tmp = mockJson.i18n[i].trim()
+                    if(i18nList.indexOf(tmp)==-1 && data.indexOf(tmp)==-1){
+                        i18nList.push(tmp)
                     }
                 }
             }
