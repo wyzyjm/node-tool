@@ -1,6 +1,6 @@
-{   
-    "apiType":"list",
-    "dataFields":[
+{
+    "apiType": "object",
+    "dataFields": [
         {
             "name": "dataList",
             "cname": "列表",
