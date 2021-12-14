@@ -19,8 +19,8 @@
 .e_navigationF .p_navBox1{
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
+    /* left: 0; */
+    /* right: 0; */
     background: rgb(0 0 0 / 90%);
     padding: 0 15px;
     height: calc(0vh);
@@ -28,6 +28,7 @@
     z-index: 10;
     max-height: 1080px;
     transition: all ease .3s;
+    width: 100vw;
 }
 .e_navigationF .p_navBox1.pkcclb{
     height: calc(100vh);

@@ -1,0 +1,36 @@
+{
+  "prop": {
+      "previewList":[
+          {
+              "title":"内容标题",
+              "key":"title",
+              "element":"e_text-12"
+          }
+      ],
+      "appList":[
+          {
+              "appId":"11",
+              "nick":"产品",
+              "adaptationList":[
+                  {
+                      "target":"title",
+                      "source":"productTitle",
+                      "sourceName":"产品名称"
+                  }
+              ],
+              "searchRange":[
+                  {
+                      "outCode":"",
+                      "esField":""
+                  }
+              ]
+          }
+      ],
+      "sort":[
+          {
+              "title":"asc"
+          }
+      ]
+  },
+  "i18n": {}
+}

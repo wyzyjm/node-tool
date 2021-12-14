@@ -30,7 +30,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 100%;
+    top: 56px;
     display: flex;
     justify-content: center;
     z-index: 10;

@@ -1,0 +1,62 @@
+{
+  "cname": "全局搜索",
+  "styleId": "e_searchResult",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    <div class=\"p_container\">\n        <p class=\"p_preview\">单图效果</p>\n        <div class=\"cbox-${id}-0 p_item1\"></div>\n        <p class=\"p_preview\">多图效果</p>\n        <div class=\"cbox-${id}-1 p_item2\"></div>\n        <p class=\"p_preview\">无图效果</p>\n        <div class=\"cbox-${id}-2 p_item3\"></div>\n        <p class=\"p_preview\">无数据效果</p>\n        <div class=\"cbox-${id}-3 p_noData\"></div>\n    </div>\n    <div class=\"p_list\"></div>\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_searchResult .p_preview{\n    line-height: 50px;\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "previewList": [
+      {
+        "title": "内容标题",
+        "key": "title",
+        "element": "e_text-12"
+      }
+    ],
+    "appList": [
+      {
+        "appId": "11",
+        "nick": "产品",
+        "adaptationList": [
+          {
+            "target": "title",
+            "source": "productTitle",
+            "sourceName": "产品名称"
+          }
+        ],
+        "searchRange": [
+          {
+            "outCode": "",
+            "esField": ""
+          }
+        ]
+      }
+    ],
+    "sort": [
+      {
+        "title": "asc"
+      }
+    ]
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop",
+  "container": true
+}
