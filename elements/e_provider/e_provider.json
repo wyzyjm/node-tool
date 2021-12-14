@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_provider{\r\n\r\n}\r\n.e_provider a{\r\n    text-align: center;\r\n    display: block;\r\n}\r\n"
+      "cssText": ".e_provider {\r\n    text-align: center;\r\n}\r\n"
     },
     {
       "media": "screen and (max-width:768px)",
