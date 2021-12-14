@@ -1,5 +1,8 @@
 <a class="e_button btn btn-primary s_button1 {{#eq prop.status false}}formHide{{/eq}}" href="{{#if prop.href.value}}{{$transferLink prop.href compId}}{{^}}javascript:;{{/if}}" {{#if prop.href.value}}target="{{prop.href.target}}"{{/if}}>
     <span>{{prop.text}}</span> 
 </a>
+{{!-- <span dialogId="{{prop.href}}" class="btn btn-primary s_button1 p_button" target="{{prop.target}}" title="{{prop.text}}">
+  {{prop.text}}
+</span> --}}
 
 

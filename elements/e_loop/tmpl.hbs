@@ -8,7 +8,7 @@
             {{#datasource._config._dataFilter.fields}}
             <div class="p_kv_wrapper js-kv-wrapper" data-selectMode="{{selectMode}}">
                 <div class="p_filter_key js-key">
-                    {{name}}:
+                    {{name}}
                 </div>
                 {{!-- 标签式 --}}
                 {{#eq displayMode 'tag'}}
@@ -28,7 +28,7 @@
                             {{#eq selectMode 'multiple'}}
                             {{#eq styleMode "labelCheckbox"}}
                             <label class="p_checkbox">
-                                <input class="input-check p_input_check" type="checkbox" />{{name}}
+                                <input class="input-check p_input_check" type="checkbox" checked="false"/>{{name}}
                             </label>
                             {{/eq}}
                             {{/eq}}
@@ -36,7 +36,7 @@
                             {{#eq selectMode 'radio'}}
                             {{#eq styleMode "labelRadio"}}
                             <label class="p_radio">
-                                <input class="input-radio p_input_radio" name="inputname{{../field}}" type="radio" />{{name}}
+                                <input class="input-radio p_input_radio" checked="false" name="inputname{{../field}}" type="radio" />{{name}}
                             </label>
                             {{/eq}}
                             {{/eq}}
