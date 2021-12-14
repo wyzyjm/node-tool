@@ -2,15 +2,15 @@
     <div class="p_c_tree">
         {{#if prop.cate}}
         {{#tree prop.cate}}
-        {{#if @nodeBegin}}<ul class="p_c_content">{{/if}}
-            <li class="p_c_item js_editor_click">
-                <span>
+        {{#if @nodeBegin}}<ul class="p_c_content deep-{{@deep}}">{{/if}}
+            <li class="p_c_item">
+                <p class="p_c_t js_editor_click">
                     <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}"
-                        class="p_c_title{{#eq selected true}}active{{/eq}}"
-                        target="{{#eq target 'BLANK'}}_blank{{/eq}}">
-                        <span>{{categoryName}}</span>
+                    class="p_c_title{{#eq selected true}}active{{/eq}} deep-{{@deep}}-{{@deep}}"
+                    target="{{#eq target 'BLANK'}}_blank{{/eq}}">
+                        {{categoryName}}
                     </a>
-                </span>
+                </p>
                 {{tree children}}
             </li>
             {{#if @nodeEnd}}

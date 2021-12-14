@@ -59,11 +59,12 @@
 .e_navigationE .p_navItem1 > p a:hover::after{
     width: 100%;
 }
-.e_navigationE .p_navItem1:hover .p_navBox2,
-.e_navigationE .p_navBox2.isdesign{
+.e_navigationE .p_navItem1:hover .p_navBox2{
     opacity: 1;
     visibility: visible;
 }
 .e_navigationE .p_navBox2.isdesign{
     display: none;
+    opacity: 1;
+    visibility: visible;
 }

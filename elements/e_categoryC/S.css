@@ -1,0 +1,20 @@
+.e_categoryC .deep-1{
+    flex-direction: column;
+    padding: 0 15px;
+}
+.e_categoryC .p_c_title{
+    text-align: left;
+    padding: 0;
+    border-bottom: 1px solid rgb(0 0 0 / 5%);
+}
+.e_categoryC .deep-2{
+    position: static;
+    padding: 0 15px;
+}
+.e_categoryC .deep-3{
+    position: static;
+    background: none;
+}
+.e_categoryC .p_c_item:last-child > p > .p_c_title{
+    border-bottom: 0px solid rgb(0 0 0 / 10%);
+}
