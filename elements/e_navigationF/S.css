@@ -36,6 +36,9 @@
     border-bottom: 1px solid rgb(255 255 255 / 10%);
     padding: 0;
 }
+.e_navigationF .p_navItem1:last-child{
+    margin-bottom:100px;
+}
 .e_navigationF .p_navCon{
     display: flex;
     justify-content: space-between;
@@ -176,4 +179,5 @@
     top: 0;
     left: 0;
     right: 0;
+    background: #fff;
 }
