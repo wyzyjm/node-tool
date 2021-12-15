@@ -1,52 +1,52 @@
 {
-  "prop": {
-    "imgList": [
-      {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片1",
-        "href": {
-          "type": "",
-          "value": "",
-          "target": ""
-        },
-        "isLazy": "true",
-        "fit": "cover"
-      },
-      {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片2",
-        "href": {
-          "type": "",
-          "value": "",
-          "target": ""
-        },
-        "isLazy": "true",
-        "fit": "cover"
-      },
-      {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片3",
-        "href": {
-          "type": "",
-          "value": "",
-          "target": ""
-        },
-        "isLazy": "true",
-        "fit": "cover"
-      },
-      {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
-        "title": "图片4",
-        "href": {
-          "type": "",
-          "value": "",
-          "target": ""
-        },
-        "isLazy": "true",
-        "fit": "cover"
-      }
-    ],
-    "space": 5
-  },
-  "i18n": {}
+    "prop": {
+        "imgList": [
+            {
+                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+                "title": "图片1",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                },
+                "isLazy": "true",
+                "fit": "cover"
+            },
+            {
+                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+                "title": "图片2",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                },
+                "isLazy": "true",
+                "fit": "cover"
+            },
+            {
+                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+                "title": "图片3",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                },
+                "isLazy": "true",
+                "fit": "cover"
+            },
+            {
+                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+                "title": "图片4",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                },
+                "isLazy": "true",
+                "fit": "cover"
+            }
+        ],
+        "space": 5
+    },
+    "i18n": {}
 }

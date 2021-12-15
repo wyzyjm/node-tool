@@ -2,15 +2,15 @@
   "cname": "图方魔盒3",
   "styleId": "e_imgCube_C",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\n    {{#${imgList}}}\n        {{#eq @index 0}}\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3);height:calc(( 100% - {{../${space}}}px) / 2)\">\n                <!-- 链接 -->\n                {{#if href.value}}\t\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\n                {{/if}}\n                    <!-- 图片 -->\n                    {{{nLazyImage imageUrl title isLazy}}}\n                {{#if href.value}}\t\n                </a>\n                {{/if}}\n            </div>      \n\t\t{{/eq}}\n\n        {{#eq @index 1}}\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3 * 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\n                <!-- 链接 -->\n                {{#if href.value}}\t\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\n                {{/if}}\n                    <!-- 图片 -->\n                    {{{nLazyImage imageUrl title isLazy}}}\n                {{#if href.value}}\t\n                </a>\n                {{/if}}\n            </div>\n\t\t{{/eq}}\n        \n        {{#eq @index 2}}\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3 * 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\n                <!-- 链接 -->\n                {{#if href.value}}\t\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\n                {{/if}}\n                    <!-- 图片 -->\n                    {{{nLazyImage imageUrl title isLazy}}}\n                {{#if href.value}}\t\n                </a>\n                {{/if}}\n            </div>\n\t\t{{/eq}} \n\n        {{#eq @index 3}}\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3);height:calc(( 100% - {{../${space}}}px) / 2)\">\n                <!-- 链接 -->\n                {{#if href.value}}\t\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\n                {{/if}}\n                    <!-- 图片 -->\n                    {{{nLazyImage imageUrl title isLazy}}}\n                {{#if href.value}}\t\n                </a>\n                {{/if}}\n            </div>\n\t\t{{/eq}} \n    {{/${imgList}}}\n</div>\n",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#${imgList}}}\r\n        {{#eq @index 0}}\r\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage imageUrl title isLazy}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>      \r\n\t\t{{/eq}}\r\n\r\n        {{#eq @index 1}}\r\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3 * 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage imageUrl title isLazy}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>\r\n\t\t{{/eq}}\r\n        \r\n        {{#eq @index 2}}\r\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3 * 2);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage imageUrl title isLazy}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>\r\n\t\t{{/eq}} \r\n\r\n        {{#eq @index 3}}\r\n\t\t\t<div class=\"p_imgItem \" style=\"width:calc(( 100% - {{../${space}}}px) / 3);height:calc(( 100% - {{../${space}}}px) / 2)\">\r\n                <!-- 链接 -->\r\n                {{#if href.value}}\t\r\n                <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                {{/if}}\r\n                    <!-- 图片 -->\r\n                    {{{nLazyImage imageUrl title isLazy}}}\r\n                {{#if href.value}}\t\r\n                </a>\r\n                {{/if}}\r\n            </div>\r\n\t\t{{/eq}} \r\n    {{/${imgList}}}\r\n</div>\r\n",
   "css": [
     {
       "media": "",
-      "cssText": ".e_imgCube_C{\n    width: 100%;\n    max-width: 700px;\n    height: 525px;\n    overflow: hidden;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    align-content: space-between;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.e_imgCube_C img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n\n.e_imgCube_C .p_imgItem {\n    overflow: hidden;\n}\n"
+      "cssText": ".e_imgCube_C{\r\n    width: 100%;\r\n    max-width: 700px;\r\n    height: 525px;\r\n    overflow: hidden;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: space-between;\r\n    align-content: space-between;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n.e_imgCube_C img {\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: cover;\r\n}\r\n\r\n.e_imgCube_C .p_imgItem {\r\n    overflow: hidden;\r\n}\r\n"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ".e_imgCube_C{\n    height: 300px;\n}\n"
+      "cssText": ".e_imgCube_C{\r\n    height: 300px;\r\n}\r\n"
     },
     {
       "media": "screen and (min-width: 769px)",
@@ -24,7 +24,7 @@
   "prop": {
     "imgList": [
       {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
         "title": "图片1",
         "href": {
           "type": "",
@@ -35,7 +35,7 @@
         "fit": "cover"
       },
       {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
         "title": "图片2",
         "href": {
           "type": "",
@@ -46,7 +46,7 @@
         "fit": "cover"
       },
       {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
         "title": "图片3",
         "href": {
           "type": "",
@@ -57,7 +57,7 @@
         "fit": "cover"
       },
       {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/shop/PDEMO_1tYF1i024dBY/cms/image/ff24e9cb-991a-4082-a336-b7cc2c188dac.jpg",
+        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
         "title": "图片4",
         "href": {
           "type": "",
