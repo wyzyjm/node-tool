@@ -60,3 +60,6 @@
 .e_categoryC .active > p > .p_c_title{
     color: rgb(0 123 255);
 }
+.e_categoryC .p_c_menu{
+    display: none;
+}
