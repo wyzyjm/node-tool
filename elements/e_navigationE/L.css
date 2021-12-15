@@ -37,7 +37,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 56px;
+    top: 100%;
     display: flex;
     justify-content: flex-end;
     z-index: 10;
@@ -67,4 +67,8 @@
     display: none;
     opacity: 1;
     visibility: visible;
+}
+
+.p_haveNav{
+    min-height: auto !important;
 }

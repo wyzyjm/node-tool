@@ -1,0 +1,30 @@
+.e_bannerD .swiper-container{
+    width: 100%;
+    height: 100vh;
+    max-height: 1080px;
+    overflow: hidden;
+}
+.e_bannerD .swiper-slide{
+    overflow: hidden;
+    background: #fff;
+}
+.e_bannerD .p_img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.e_bannerD .P_link_img{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.e_bannerD .P_link_img img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 100%;
+}

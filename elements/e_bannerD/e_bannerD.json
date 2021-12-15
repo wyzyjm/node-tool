@@ -1,0 +1,91 @@
+{
+  "cname": "轮播图-特效一",
+  "styleId": "e_bannerD",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${bannerLists}}}\r\n    <div class=\"swiper-container\" >\r\n        <div class=\"swiper-wrapper p_swiperContainer\">\r\n            {{#each ${bannerLists}}}\r\n            <div class=\"swiper-slide p_slide\">\r\n                {{#eq type 1}}\r\n                    <div class=\"p_img\">\r\n                        <a href=\"{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}\" {{#if href.value}}target=\"{{href.target}}\"{{/if}}>\r\n                            {{#eq @index 0}}\r\n                            {{{nLazyImage imgUrl title 'false'}}}\r\n                            {{^}}\r\n                            {{{nLazyImage imgUrl title 'true'}}}\r\n                            {{/eq}}\r\n                        </a>\r\n                    </div>\r\n                {{/eq}}\r\n                {{#eq type 2}}\r\n                    <div class=\"p_video\">\r\n                        <div class=\"p_videoPoster\">\r\n                            {{{nLazyImage video.coverImgUrl title 'false'}}}\r\n                        </div>\r\n                        <div class=\"videoContent\">\r\n                        {{{lazyVideo video.url ../${settings}.videoMouted false}}}\r\n                        </div>\r\n                    </div>\r\n                {{/eq}}\r\n                <div class=\"p_info {{#eq type 2}}p_videoInfo{{/eq}}\">\r\n                    <div>\r\n                        {{#if ${settings}.showText}}\r\n                            {{#if title}}<h1 class=\"text-white p_btitle\">{{title}}</h1>{{/if}}\r\n                            {{#if subTitle}}<h6 class=\"text-white p_subtitle\">{{subTitle}}</h6>{{/if}}\r\n                            {{#if summary}}<p class=\"text-white p_summary\">{{summary}}</p>{{/if}}\r\n                        {{/if}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            {{/each}}\r\n        </div>\r\n        {{#if ${settings}.pagination}}\r\n        <div class=\"swiper-pagination p_pagenation\"></div>\r\n        {{/if}}\r\n        {{#if ${settings}.navigation}}\r\n        <div class=\"js_editor_click swiper-button-next p_btn_next\"></div>\r\n        <div class=\"js_editor_click swiper-button-prev p_btn_prev\"></div>\r\n        {{/if}}\r\n    </div>\r\n    {{^}}\r\n    {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_bannerD{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "bannerLists": [
+      {
+        "target": "blank",
+        "title": "滴答滴答所多",
+        "video": {
+          "title": "1616551727640631.mp4",
+          "url": "https://omo-oss-video.thefastvideo.com/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
+          "coverImgUrl": "https://omo-oss-image.thefastimg.com/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.jpg"
+        },
+        "imgUrl": null,
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "按时大萨达阿萨德按时打算按时啊 按时啊是啊啊啊",
+        "type": 2
+      },
+      {
+        "target": "blank",
+        "title": "kjhgfds",
+        "imgUrl": "https://omo-oss-image.thefastimg.com/shop/NEW2021031622594531518/cms/image/6d65c1fe-77a2-4319-af0a-3dda7a2c433d.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "",
+        "type": 1
+      },
+      {
+        "target": "blank",
+        "title": "klk",
+        "video": null,
+        "code": null,
+        "imgUrl": "https://omo-oss-image.thefastimg.com/shop/NEW2021031622594531518/cms/image/ecbc34b3-c766-4a64-b5ed-206d4be7efe5.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "",
+        "type": 1
+      }
+    ],
+    "settings": {
+      "direction": "horizontal",
+      "pagination": true,
+      "navigation": true,
+      "autoplay": false,
+      "deplay": 4,
+      "effect": "slide",
+      "videoAutoplay": false,
+      "videoLoop": false,
+      "videoMouted": true,
+      "videoControlor": false,
+      "showText": true
+    }
+  },
+  "i18n": {
+    "zh_CN": {
+      "noData": "暂无数据"
+    }
+  },
+  "datasource": "prop",
+  "dataManage": {}
+}

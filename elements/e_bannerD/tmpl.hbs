@@ -1,0 +1,51 @@
+<div class="e_bannerD s_list" needjs="true">
+    {{#if prop.bannerLists}}
+    <div class="swiper-container" >
+        <div class="swiper-wrapper p_swiperContainer">
+            {{#each prop.bannerLists}}
+            <div class="swiper-slide p_slide">
+                {{#eq type 1}}
+                    <div class="p_img">
+                        <a class="P_link_img" href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}}>
+                            {{#eq @index 0}}
+                            {{{nLazyImage imgUrl title 'false'}}}
+                            {{^}}
+                            {{{nLazyImage imgUrl title 'true'}}}
+                            {{/eq}}
+                        </a>
+                    </div>
+                {{/eq}}
+                {{#eq type 2}}
+                    <div class="p_video">
+                        <div class="p_videoPoster">
+                            {{{nLazyImage video.coverImgUrl title 'false'}}}
+                        </div>
+                        <div class="videoContent">
+                        {{{lazyVideo video.url ../prop.settings.videoMouted false}}}
+                        </div>
+                    </div>
+                {{/eq}}
+                <div class="p_info {{#eq type 2}}p_videoInfo{{/eq}}">
+                    <div>
+                        {{#if prop.settings.showText}}
+                            {{#if title}}<h1 class="text-white p_btitle">{{title}}</h1>{{/if}}
+                            {{#if subTitle}}<h6 class="text-white p_subtitle">{{subTitle}}</h6>{{/if}}
+                            {{#if summary}}<p class="text-white p_summary">{{summary}}</p>{{/if}}
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        {{#if prop.settings.pagination}}
+        <div class="swiper-pagination p_pagenation"></div>
+        {{/if}}
+        {{#if prop.settings.navigation}}
+        <div class="js_editor_click swiper-button-next p_btn_next"></div>
+        <div class="js_editor_click swiper-button-prev p_btn_prev"></div>
+        {{/if}}
+    </div>
+    {{^}}
+    {{{nNoDataPrompt i18n.noData}}}
+    {{/if}}
+</div>
