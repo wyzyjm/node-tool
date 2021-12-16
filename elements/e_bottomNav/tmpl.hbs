@@ -3,9 +3,9 @@
         <!-- 导航内容 开始 -->
         <ul class="p_level1Box">
             {{#each prop.dataList}}
-            <li class="pt-1  pb-1 p_level1Item">
+            <li class="p_level1Item">
                 <!-- 名称 -->
-                <p class="p_menu1Item s_templatetitle">
+                <p class="p_menu1Item s_templatetitle p_onu">
                     <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
                         <span>{{navName}}</span>
                     </a>
@@ -13,11 +13,11 @@
                 </p>
                 <!-- 子集 -->
                 {{#if this.children}}
-                <ul class="mt-2 p_level2Box s_templatesum">
+                <ul class="p_level2Box s_templatesum">
                     {{#each this.children}}
                     <li class="p_level2Item">
                         <!-- 名称 2 -->
-                        <p class="p_menu2Item">
+                        <p class="p_menu2Item p_onu">
                             <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
                                 <span>{{navName}}</span>
                             </a>
