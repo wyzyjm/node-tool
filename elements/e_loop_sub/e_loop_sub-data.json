@@ -6,5 +6,6 @@
             "cname": "列表",
             "type": "array[object]"
         }
-    ]
+    ],
+    "require": true
 }
