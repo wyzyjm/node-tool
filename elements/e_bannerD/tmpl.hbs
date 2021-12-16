@@ -32,6 +32,7 @@
                         {{#if summary}}<p class="p_summary">{{summary}}</p>{{/if}}
                         {{#if title}}<h1 class="p_btitle">{{title}}</h1>{{/if}}
                         <span class="p_cspan"></span>
+                        <a href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}} class="p_button">MORE +</a>
                     </div>
                 {{/if}}
                 </div>
