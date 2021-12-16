@@ -1,432 +1,436 @@
 {
-    "base": [
-        {
-            "name": "按钮",
-            "code": "e_button"
-        },
-        {
-            "name": "容器",
-            "code": "e_container"
-        },
-        {
-            "name": "文字",
-            "code": "e_text"
-        },
-        {
-            "name": "图标",
-            "code": "e_icon"
-        },
-        {
-            "name": "图片",
-            "code": "e_image"
-        },
-        {
-            "name": "线条",
-            "code": "e_line"
-        },
-        {
-            "name": "H1",
-            "code": "e_h1"
-        },
-        {
-            "name": "H2",
-            "code": "e_h2"
-        },
-        {
-            "name": "H3",
-            "code": "e_h3"
-        },
-        {
-            "name": "H4",
-            "code": "e_h4"
-        },
-        {
-            "name": "H5",
-            "code": "e_h5"
-        },
-        {
-            "name": "H6",
-            "code": "e_h6"
-        },
-        {
-            "name": "循环体容器",
-            "code": "e_loop"
-        },
-        {
-            "name": "循环体",
-            "code": "e_loop_A"
-        },
-        {
-            "name": "子循环体",
-            "code": "e_loop_sub"
-        },
-        {
-            "name": "循环体",
-            "code": "e_loop_B"
-        },
-        {
-            "name": "循环体",
-            "code": "e_loop_C"
-        },
-        {
-            "name": "循环体",
-            "code": "e_loop_D"
-        },
-        {
-            "name": "循环体",
-            "code": "e_loop_E"
-        },
-        {
-            "name": "循环体",
-            "code": "e_loop_F"
-        },
-        {
-            "name": "循环体7",
-            "code": "e_loop_G"
-        },
-        {
-            "name": "循环体8",
-            "code": "e_loop_H"
-        },
-        {
-            "name": "循环体9",
-            "code": "e_loop_I"
-        },
-        {
-            "name": "循环体元素",
-            "code": "e_listElement"
-        },
-        {
-            "name": "富文本",
-            "code": "e_richText"
-        },
-        {
-            "name": "视频",
-            "code": "e_video"
-        },
-        {
-            "name": "iframe",
-            "code": "e_iframe"
-        },
-        {
-            "name": "隐藏域",
-            "code": "e_inputHidden"
-        },
-        {
-            "name": "网站分享",
-            "code": "e_websiteShare"
-        },
-        {
-            "name": "图方魔盒1",
-            "code": "e_imgCube_A"
-        },
-        {
-            "name": "图方魔盒2",
-            "code": "e_imgCube_B"
-        },
-        {
-            "name": "图方魔盒3",
-            "code": "e_imgCube_C"
-        },
-        {
-            "name": "图方魔盒4",
-            "code": "e_imgCube_D"
-        },
-        {
-            "name": "图方魔盒5",
-            "code": "e_imgCube_E"
-        },
-        {
-            "name": "图方魔盒6",
-            "code": "e_imgCube_F"
-        },
-        {
-            "name": "地图1",
-            "code": "e_map_A"
-        },
-        {
-            "name": "面包屑",
-            "code": "e_breadcrumb"
-        },
-        {
-            "name": "备案号",
-            "code": "e_provider"
-        },
-        {
-            "name": "访问计数",
-            "code": "e_visitNumber"
-        },
-        {
-            "name": "时间",
-            "code": "e_timeFormat"
-        },
-        {
-            "name": "图集",
-            "code": "e_imageList"
-        },
-        {
-            "name": "地图3",
-            "code": "e_map_C"
-        },
-        {
-            "name": "地图",
-            "code": "e_map"
-        },
-        {
-            "name": "时间",
-            "code": "e_timeFormat"
-        },
-        {
-            "name": "可信认证",
-            "code": "e_credible"
-        },
-        {
-            "name": "底部导航",
-            "code": "e_bottomNav"
-        },
-        {
-            "name": "循环体-筛选",
-            "code": "e_loop_J"
-        },
-        {
-            "name": "倒计时",
-            "code": "e_leftTime"
-        },
-        {
-            "name": "html元素",
-            "code": "e_html"
-        },
-        {
-            "name": "赞踩",
-            "code": "e_assist"
-        }
-    ],
-    "complex": [
-        {
-            "name": "轮播图-基础",
-            "code": "e_bannerA"
-        },
-        {
-            "name": "轮播图-旋转木马",
-            "code": "e_bannerB"
-        },
-        {
-            "name": "轮播图-缩略图",
-            "code": "e_bannerC"
-        },
-        {
-            "name": "分类树-滑出",
-            "code": "e_categoryA"
-        },
-        {
-            "name": "分类树-下拉",
-            "code": "e_categoryB"
-        },
-        {
-            "name": "分类树-横向",
-            "code": "e_categoryC"
-        },
-        {
-            "name": "折叠元素",
-            "code": "e_foldItem"
-        },
-        {
-            "name": "回到顶部",
-            "code": "e_top"
-        },
-        {
-            "name": "滚动数字",
-            "code": "e_scrollNumber"
-        },
-        {
-            "name": "导航-三级",
-            "code": "e_navigationA"
-        },
-        {
-            "name": "导航-二级带图片",
-            "code": "e_navigationB"
-        },
-        {
-            "name": "导航-二级组合",
-            "code": "e_navigationC"
-        },
-        {
-            "name": "导航-多语言",
-            "code": "e_navigationD"
-        },
-        {
-            "name": "登录",
-            "code": "e_login"
-        },
-        {
-            "name": "注册",
-            "code": "e_register"
-        },
-        {
-            "name": "产品筛选",
-            "code": "e_productScreen"
-        },
-        {
-            "name": "轮播图-产品详情",
-            "code": "e_magnifier"
-        },
-        {
-            "name": "对比-详情",
-            "code": "e_contrast"
-        },
-        {
-            "name": "对比-浮动窗",
-            "code": "e_floating"
-        },
-        {
-            "name": "对比-浮动窗A",
-            "code": "e_floatingA"
-        },
-        {
-            "name": "浮动购物车",
-            "code": "e_floatingShoppingCart"
-        },
-        {
-            "name": "筛选排序",
-            "code": "e_filterSort"
-        },
-        {
-            "name": "标记图标",
-            "code": "e_flagIcon"
-        },
-        {
-            "name": "预览商品",
-            "code": "e_preView"
-        },
-        {
-            "name": "收藏",
-            "code": "e_collect"
-        },
-        {
-            "name": "产品规格",
-            "code": "e_specification"
-        },
-        {
-            "name": "tab栏产品详情",
-            "code": "e_productTabList"
-        },
-        {
-            "name": "产品详情数量",
-            "code": "e_productNumber"
-        },
-        {
-            "name": "文件下载",
-            "code": "e_download"
-        },
-        {
-            "name": "会员中心菜单",
-            "code": "e_member"
-        },
-        {
-            "name": "导航-三级带图标",
-            "code": "e_navigationE"
-        },
-        {
-            "name": "导航-四级带图标",
-            "code": "e_navigationF"
-        },
-        {
-            "name": "全局搜索",
-            "code": "e_searchResult"
-        }
-    ],
-    "form": [
-        {
-            "name": "表单容器",
-            "code": "e_form"
-        },
-        {
-            "name": "单行输入框",
-            "code": "e_input"
-        },
-        {
-            "name": "数字输入框",
-            "code": "e_number"
-        },
-        {
-            "name": "多行输入框",
-            "code": "e_textarea"
-        },
-        {
-            "name": "下拉单选",
-            "code": "e_select"
-        },
-        {
-            "name": "下拉多选",
-            "code": "e_multipleSelect"
-        },
-        {
-            "name": "单选项",
-            "code": "e_radio"
-        },
-        {
-            "name": "多选项",
-            "code": "e_checkbox"
-        },
-        {
-            "name": "标签型",
-            "code": "e_label"
-        },
-        {
-            "name": "日期型",
-            "code": "e_date"
-        },
-        {
-            "name": "区间日期型",
-            "code": "e_rangeDate"
-        },
-        {
-            "name": "评分、评价",
-            "code": "e_score"
-        },
-        {
-            "name": "按钮",
-            "code": "e_formBtn"
-        },
-        {
-            "name": "地址型",
-            "code": "e_address"
-        },
-        {
-            "name": "图片型",
-            "code": "e_uploadImg"
-        },
-        {
-            "name": "文件型",
-            "code": "e_uploadFile"
-        },
-        {
-            "name": "视频型",
-            "code": "e_uploadVideo"
-        },
-        {
-            "name": "子表单",
-            "code": "e_subForm"
-        },
-        {
-            "name": "相关项",
-            "code": "e_relevantItem"
-        },
-        {
-            "name": "条款条件",
-            "code": "e_agreement"
-        },
-        {
-            "name": "安全验证",
-            "code": "e_code"
-        },
-        {
-            "name": "手机号验证",
-            "code": "e_mobileCode"
-        },
-        {
-            "name": "邮箱验证",
-            "code": "e_emailCode"
-        }
-    ]
+  "base": [
+    {
+      "name": "按钮",
+      "code": "e_button"
+    },
+    {
+      "name": "容器",
+      "code": "e_container"
+    },
+    {
+      "name": "文字",
+      "code": "e_text"
+    },
+    {
+      "name": "图标",
+      "code": "e_icon"
+    },
+    {
+      "name": "图片",
+      "code": "e_image"
+    },
+    {
+      "name": "线条",
+      "code": "e_line"
+    },
+    {
+      "name": "H1",
+      "code": "e_h1"
+    },
+    {
+      "name": "H2",
+      "code": "e_h2"
+    },
+    {
+      "name": "H3",
+      "code": "e_h3"
+    },
+    {
+      "name": "H4",
+      "code": "e_h4"
+    },
+    {
+      "name": "H5",
+      "code": "e_h5"
+    },
+    {
+      "name": "H6",
+      "code": "e_h6"
+    },
+    {
+      "name": "循环体容器",
+      "code": "e_loop"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_A"
+    },
+    {
+      "name": "子循环体",
+      "code": "e_loop_sub"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_B"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_C"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_D"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_E"
+    },
+    {
+      "name": "循环体",
+      "code": "e_loop_F"
+    },
+    {
+      "name": "循环体7",
+      "code": "e_loop_G"
+    },
+    {
+      "name": "循环体8",
+      "code": "e_loop_H"
+    },
+    {
+      "name": "循环体9",
+      "code": "e_loop_I"
+    },
+    {
+      "name": "循环体元素",
+      "code": "e_listElement"
+    },
+    {
+      "name": "富文本",
+      "code": "e_richText"
+    },
+    {
+      "name": "视频",
+      "code": "e_video"
+    },
+    {
+      "name": "iframe",
+      "code": "e_iframe"
+    },
+    {
+      "name": "隐藏域",
+      "code": "e_inputHidden"
+    },
+    {
+      "name": "网站分享",
+      "code": "e_websiteShare"
+    },
+    {
+      "name": "图方魔盒1",
+      "code": "e_imgCube_A"
+    },
+    {
+      "name": "图方魔盒2",
+      "code": "e_imgCube_B"
+    },
+    {
+      "name": "图方魔盒3",
+      "code": "e_imgCube_C"
+    },
+    {
+      "name": "图方魔盒4",
+      "code": "e_imgCube_D"
+    },
+    {
+      "name": "图方魔盒5",
+      "code": "e_imgCube_E"
+    },
+    {
+      "name": "图方魔盒6",
+      "code": "e_imgCube_F"
+    },
+    {
+      "name": "地图1",
+      "code": "e_map_A"
+    },
+    {
+      "name": "面包屑",
+      "code": "e_breadcrumb"
+    },
+    {
+      "name": "备案号",
+      "code": "e_provider"
+    },
+    {
+      "name": "访问计数",
+      "code": "e_visitNumber"
+    },
+    {
+      "name": "时间",
+      "code": "e_timeFormat"
+    },
+    {
+      "name": "图集",
+      "code": "e_imageList"
+    },
+    {
+      "name": "地图3",
+      "code": "e_map_C"
+    },
+    {
+      "name": "地图",
+      "code": "e_map"
+    },
+    {
+      "name": "时间",
+      "code": "e_timeFormat"
+    },
+    {
+      "name": "可信认证",
+      "code": "e_credible"
+    },
+    {
+      "name": "底部导航",
+      "code": "e_bottomNav"
+    },
+    {
+      "name": "循环体-筛选",
+      "code": "e_loop_J"
+    },
+    {
+      "name": "倒计时",
+      "code": "e_leftTime"
+    },
+    {
+      "name": "html元素",
+      "code": "e_html"
+    },
+    {
+      "name": "赞踩",
+      "code": "e_assist"
+    }
+  ],
+  "complex": [
+    {
+      "name": "轮播图-基础",
+      "code": "e_bannerA"
+    },
+    {
+      "name": "轮播图-旋转木马",
+      "code": "e_bannerB"
+    },
+    {
+      "name": "轮播图-缩略图",
+      "code": "e_bannerC"
+    },
+    {
+      "name": "轮播图-特效一",
+      "code": "e_bannerD"
+    },
+    {
+      "name": "分类树-滑出",
+      "code": "e_categoryA"
+    },
+    {
+      "name": "分类树-下拉",
+      "code": "e_categoryB"
+    },
+    {
+      "name": "分类树-横向",
+      "code": "e_categoryC"
+    },
+    {
+      "name": "折叠元素",
+      "code": "e_foldItem"
+    },
+    {
+      "name": "回到顶部",
+      "code": "e_top"
+    },
+    {
+      "name": "滚动数字",
+      "code": "e_scrollNumber"
+    },
+    {
+      "name": "导航-三级",
+      "code": "e_navigationA"
+    },
+    {
+      "name": "导航-二级带图片",
+      "code": "e_navigationB"
+    },
+    {
+      "name": "导航-二级组合",
+      "code": "e_navigationC"
+    },
+    {
+      "name": "导航-多语言",
+      "code": "e_navigationD"
+    },
+    {
+      "name": "导航-三级带图标",
+      "code": "e_navigationE"
+    },
+    {
+      "name": "导航-四级带图标",
+      "code": "e_navigationF"
+    },
+    {
+      "name": "登录",
+      "code": "e_login"
+    },
+    {
+      "name": "注册",
+      "code": "e_register"
+    },
+    {
+      "name": "产品筛选",
+      "code": "e_productScreen"
+    },
+    {
+      "name": "轮播图-产品详情",
+      "code": "e_magnifier"
+    },
+    {
+      "name": "对比-详情",
+      "code": "e_contrast"
+    },
+    {
+      "name": "对比-浮动窗",
+      "code": "e_floating"
+    },
+    {
+      "name": "对比-浮动窗A",
+      "code": "e_floatingA"
+    },
+    {
+      "name": "浮动购物车",
+      "code": "e_floatingShoppingCart"
+    },
+    {
+      "name": "筛选排序",
+      "code": "e_filterSort"
+    },
+    {
+      "name": "标记图标",
+      "code": "e_flagIcon"
+    },
+    {
+      "name": "预览商品",
+      "code": "e_preView"
+    },
+    {
+      "name": "收藏",
+      "code": "e_collect"
+    },
+    {
+      "name": "产品规格",
+      "code": "e_specification"
+    },
+    {
+      "name": "tab栏产品详情",
+      "code": "e_productTabList"
+    },
+    {
+      "name": "产品详情数量",
+      "code": "e_productNumber"
+    },
+    {
+      "name": "文件下载",
+      "code": "e_download"
+    },
+    {
+      "name": "会员中心菜单",
+      "code": "e_member"
+    },
+    {
+      "name": "全局搜索",
+      "code": "e_searchResult"
+    }
+  ],
+  "form": [
+    {
+      "name": "表单容器",
+      "code": "e_form"
+    },
+    {
+      "name": "单行输入框",
+      "code": "e_input"
+    },
+    {
+      "name": "数字输入框",
+      "code": "e_number"
+    },
+    {
+      "name": "多行输入框",
+      "code": "e_textarea"
+    },
+    {
+      "name": "下拉单选",
+      "code": "e_select"
+    },
+    {
+      "name": "下拉多选",
+      "code": "e_multipleSelect"
+    },
+    {
+      "name": "单选项",
+      "code": "e_radio"
+    },
+    {
+      "name": "多选项",
+      "code": "e_checkbox"
+    },
+    {
+      "name": "标签型",
+      "code": "e_label"
+    },
+    {
+      "name": "日期型",
+      "code": "e_date"
+    },
+    {
+      "name": "区间日期型",
+      "code": "e_rangeDate"
+    },
+    {
+      "name": "评分、评价",
+      "code": "e_score"
+    },
+    {
+      "name": "按钮",
+      "code": "e_formBtn"
+    },
+    {
+      "name": "地址型",
+      "code": "e_address"
+    },
+    {
+      "name": "图片型",
+      "code": "e_uploadImg"
+    },
+    {
+      "name": "文件型",
+      "code": "e_uploadFile"
+    },
+    {
+      "name": "视频型",
+      "code": "e_uploadVideo"
+    },
+    {
+      "name": "子表单",
+      "code": "e_subForm"
+    },
+    {
+      "name": "相关项",
+      "code": "e_relevantItem"
+    },
+    {
+      "name": "条款条件",
+      "code": "e_agreement"
+    },
+    {
+      "name": "安全验证",
+      "code": "e_code"
+    },
+    {
+      "name": "手机号验证",
+      "code": "e_mobileCode"
+    },
+    {
+      "name": "邮箱验证",
+      "code": "e_emailCode"
+    }
+  ]
 }
