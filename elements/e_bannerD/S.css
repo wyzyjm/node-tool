@@ -20,6 +20,14 @@
 .e_bannerD .p_kongjian{
     max-width: 55px;
 }
+.e_bannerD .p_arr{
+    max-width: 55px;
+}
+.e_bannerD .p_video_button{
+    max-width: 55px;
+    bottom: 106px;
+    height: 28px;
+}
 .e_bannerD .swiper-pagination-bullet{
     width: 6px;
     height: 6px;
@@ -30,7 +38,11 @@
 .e_bannerD .p_btn_prev{
     width: 28px;
     height: 28px;
-    bottom: 80px;
+    margin: 5px auto 0;
+}
+.e_bannerD .p_video_button span{
+    width: 28px;
+    height: 28px;
 }
 .e_bannerD .p_btn_next{
     width: 28px;
@@ -47,4 +59,17 @@
 }
 .e_bannerD .p_cspan{
     margin-top: 20px;
+}
+.e_bannerD .p_video_button svg{
+    width: 12px;
+}
+.e_bannerD .swiper-pagination{
+    right: 27px;
+}
+.e_bannerD .videoContent video{
+    height: 100%;
+    width: auto;
+}
+.e_bannerD .p_scrool span{
+    display: none;
 }

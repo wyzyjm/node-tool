@@ -6,31 +6,43 @@
             <div class="swiper-slide p_slide">
                 {{#eq type 1}}
                     <div class="p_img">
-                        <a class="P_link_img" href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}} style="background-image:url({{imgUrl}});background-position:center;background-repeat:no-repeat;"></a>
+                        <a class="P_link_img" href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if href.value}}target="{{href.target}}"{{/if}}>
+                            {{#eq @index 0}}
+                            {{{nLazyImage imgUrl title 'false'}}}
+                            {{^}}
+                            {{{nLazyImage imgUrl title 'true'}}}
+                            {{/eq}}
+                        </a>
                     </div>
                 {{/eq}}
                 {{#eq type 2}}
                     <div class="p_video">
-                        <div class="p_videoPoster" style="background-image:url({{video.coverImgUrl}});background-position:center;background-repeat:no-repeat;"></div>
+                        <div class="p_videoPoster">
+                            {{{nLazyImage video.coverImgUrl title 'false'}}}
+                        </div>
                         <div class="videoContent">
                         {{{lazyVideo video.url ../prop.settings.videoMouted false}}}
                         </div>
                     </div>
+                    <div class="p_video_button"><span><svg t="1639621414867" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1769" width="20" height="20"><path d="M128 138.666667c0-47.232 33.322667-66.666667 74.176-43.562667l663.146667 374.954667c40.96 23.168 40.853333 60.8 0 83.882666L202.176 928.896C161.216 952.064 128 932.565333 128 885.333333v-746.666666z" fill="#ffffff" p-id="1770"></path></svg></span></div>
                 {{/eq}}
                 <div class="p_info {{#eq type 2}}p_videoInfo{{/eq}}">
+                {{#if prop.settings.showText}}
                     <div class="p_info_fivebox">
-                            {{#if summary}}<p class="p_summary">{{summary}}</p>{{/if}}
-                            {{#if title}}<h1 class="p_btitle">{{title}}</h1>{{/if}}
-                            <span class="p_cspan"></span>
+                        {{#if summary}}<p class="p_summary">{{summary}}</p>{{/if}}
+                        {{#if title}}<h1 class="p_btitle">{{title}}</h1>{{/if}}
+                        <span class="p_cspan"></span>
                     </div>
+                {{/if}}
                 </div>
             </div>
             {{/each}}
         </div>
-        <div class="p_kongjian">
-            {{#if prop.settings.pagination}}
-            <div class="swiper-pagination p_pagenation"></div>
-            {{/if}}
+        <div class="p_kongjian"></div>
+        {{#if prop.settings.pagination}}
+        <div class="swiper-pagination p_pagenation"></div>
+        {{/if}}
+        <div class="p_arr">
             {{#if prop.settings.navigation}}
             <div class="js_editor_click swiper-button-next p_btn_next"></div>
             <div class="js_editor_click swiper-button-prev p_btn_prev"></div>
