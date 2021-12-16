@@ -4,13 +4,10 @@
             "compName":"setting-searchResult",
             "title":"全局搜索",
             "staticBind": true,
-            "showLabel":"prop.showLabel",
-            "label":"prop.label",
-            "showPlaceholder":"prop.showPlaceholder",
-            "placeholder":"prop.placeholder",
-            "range":"prop.range",
-            "validate":"prop.validate"
+            "previewList":"prop.previewList",
+            "appList":"prop.appList",
+            "sort":"prop.sort",
+            "searchOption":"prop.searchOption"
         }
     ]
 }
-  

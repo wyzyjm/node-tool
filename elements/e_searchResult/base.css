@@ -1,3 +1,6 @@
 .e_searchResult .p_preview{
     line-height: 50px;
 }
+.e_searchResult .p_container{
+    display: none;
+}
