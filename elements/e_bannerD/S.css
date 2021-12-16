@@ -1,0 +1,50 @@
+.e_bannerD .p_info_fivebox {
+    width: 75%;
+    padding-bottom: 90px;
+}
+.e_bannerD .p_summary{
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.e_bannerD .p_btitle{
+    font-size: 22px;
+}
+.e_bannerD .p_cspan::before, .e_bannerD .p_cspan::after{
+    width: 10px;
+    height: 10px;
+}
+.e_bannerD .p_cspan::after{
+    margin-left: -3px;
+}
+.e_bannerD .p_kongjian{
+    max-width: 55px;
+}
+.e_bannerD .swiper-pagination-bullet{
+    width: 6px;
+    height: 6px;
+}
+.e_bannerD .swiper-pagination-bullet-active{
+    height: 20px;
+}
+.e_bannerD .p_btn_prev{
+    width: 28px;
+    height: 28px;
+    bottom: 80px;
+}
+.e_bannerD .p_btn_next{
+    width: 28px;
+    height: 28px;
+}
+.e_bannerD .p_btn_prev::after{
+    font-size: 12px;
+}
+.e_bannerD .p_btn_next::after{
+    font-size: 12px;
+}
+.e_bannerD .swiper-container{
+    height: 70vh;
+}
+.e_bannerD .p_cspan{
+    margin-top: 20px;
+}
