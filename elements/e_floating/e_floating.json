@@ -6,11 +6,11 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_floating .p_obscuration{\r\n    width: 100%;\r\n    position: fixed;\r\n    bottom: 0;\r\n    left: 0;\r\n    display: none;\r\n    z-index: 20;\r\n}\r\n.e_floating .p_obscuration.show {\r\n    display: block;\r\n}\r\n.e_floating .p_title{\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n.e_floating .p_form-control{\r\n    width: 7rem;\r\n    display: none;\r\n}\r\n.e_floating .p_contrast{\r\n    border-radius: 25px;\r\n    position: fixed;\r\n    bottom: 10%;\r\n    right: 0;\r\n    z-index: 20;\r\n}\r\n.e_floating .p_contrast_text{\r\n    min-width: 80px;\r\n    height: 28px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n.e_floating .p_contrast_num{\r\n    position: absolute;\r\n    right: 0px;\r\n    top: -5px;\r\n}\r\n.e_floating .p_tab{\r\n    height: 100%;\r\n    margin-top: 11px;\r\n}\r\n.e_floating .p_title_compareTheBar{\r\n    margin: 0 1px;\r\n}\r\n.e_floating .p_title_compareTheBar.active{\r\n    background: #fff;\r\n    border: 1px solid #007bff;\r\n    border-bottom: #fff;\r\n    margin: 0\r\n}\r\n.e_floating .p_data_list{\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n    justify-content: space-between;\r\n}\r\n.e_floating .p_item{\r\n    flex: 1;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    border-right-style: dashed;\r\n    min-height: 120px;\r\n}\r\n.e_floating .p_item_delete{\r\n    cursor: pointer;\r\n    display: none;\r\n}\r\n.e_floating .p_compare_amount{\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: space-between;\r\n}\r\n.e_floating .p_comparedata{\r\n    flex: 1;\r\n}\r\n.e_floating .p_item:last-child{\r\n    width: 230px;\r\n}\r\n.e_floating .p_item_img{\r\n    width: 60px;\r\n    height: 60px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n.e_floating .p_item_imgsrc{\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: cover;\r\n}\r\n.e_floating .p_compare_title{\r\n    overflow : hidden;\r\n    text-overflow: ellipsis;\r\n    display: -webkit-box;\r\n    -webkit-line-clamp: 2;\r\n    -webkit-box-orient: vertical;\r\n    word-break: break-all;\r\n}\r\n.e_floating .p_last_item{\r\n    display: flex;\r\n    width: 230px;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n.e_floating .p_contrast,\r\n.e_floating .p_contrast_hidden{\r\n    display: none;\r\n    opacity: 0;\r\n\r\n}\r\n.e_floating .p_danger.hide, .e_floating .hidden{\r\n    display: none;\r\n}\r\n.e_floating .p_item:hover .p_item_delete{\r\n    display: block;\r\n    transition: 1s height, 1s width;\r\n}\r\n.e_floating .hidden.showList{\r\n    display: block;\r\n}\r\n.e_floating .p_contrast_btn{\r\n    width: 200px;\r\n}\r\n"
+      "cssText": ".e_floating .p_obscuration {\r\n    width: 100%;\r\n    position: fixed;\r\n    bottom: 0;\r\n    left: 0;\r\n    display: none;\r\n    z-index: 20;\r\n}\r\n.e_floating .p_obscuration.show {\r\n    display: block;\r\n}\r\n.e_floating .p_title {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n.e_floating .p_form-control {\r\n    width: 7rem;\r\n    display: none;\r\n}\r\n\r\n.e_floating .p_contrast_text {\r\n    min-width: 80px;\r\n    height: 28px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n.e_floating .p_contrast_num {\r\n    position: absolute;\r\n    right: 0px;\r\n    top: -5px;\r\n}\r\n.e_floating .p_tab {\r\n    height: 100%;\r\n    margin-top: 11px;\r\n}\r\n.e_floating .p_title_compareTheBar {\r\n    margin: 0 1px;\r\n}\r\n.e_floating .p_title_compareTheBar.active {\r\n    background: #fff;\r\n    border: 1px solid #007bff;\r\n    border-bottom: #fff;\r\n    margin: 0;\r\n}\r\n.e_floating .p_data_list {\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n    justify-content: space-between;\r\n}\r\n.e_floating .p_item {\r\n    flex: 1;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    border-right-style: dashed;\r\n    min-height: 120px;\r\n}\r\n.e_floating .p_item_delete {\r\n    cursor: pointer;\r\n    display: none;\r\n}\r\n.e_floating .p_compare_amount {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: space-between;\r\n}\r\n.e_floating .p_comparedata {\r\n    flex: 1;\r\n}\r\n.e_floating .p_item:last-child {\r\n    width: 230px;\r\n}\r\n.e_floating .p_item_img {\r\n    width: 60px;\r\n    height: 60px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n.e_floating .p_item_imgsrc {\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: cover;\r\n}\r\n.e_floating .p_compare_title {\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    display: -webkit-box;\r\n    -webkit-line-clamp: 2;\r\n    -webkit-box-orient: vertical;\r\n    word-break: break-all;\r\n}\r\n.e_floating .p_last_item {\r\n    display: flex;\r\n    width: 230px;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n.e_floating .p_contrast,\r\n.e_floating .p_contrast_hidden {\r\n    display: none;\r\n    opacity: 0;\r\n}\r\n.e_floating .p_danger.hide,\r\n.e_floating .hidden {\r\n    display: none;\r\n}\r\n.e_floating .p_item:hover .p_item_delete {\r\n    display: block;\r\n    transition: 1s height, 1s width;\r\n}\r\n.e_floating .hidden.showList {\r\n    display: block;\r\n}\r\n.e_floating .p_contrast_btn {\r\n    width: 200px;\r\n}\r\n"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ".e_floating .p_contrast,\r\n.e_floating .p_contrast_hidden{\r\n    display: block;\r\n    opacity: 1;\r\n}\r\n.e_floating .p_obscuration{\r\n    height: 100%;\r\n    top: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n    left: 0;\r\n    background: rgba(0, 0, 0, .6);\r\n    display: none;\r\n}\r\n.e_floating .p_contrast_list{\r\n    width: 100%;\r\n    position: absolute;\r\n    bottom: -100%;\r\n    transition:all 1s;\r\n}\r\n.e_floating .p_obscuration.show .p_contrast_list{\r\n    width: 100%;\r\n    position: absolute;\r\n    bottom: 0;\r\n    transition:all 1s;\r\n}\r\n.e_floating .p_tab{\r\n    display: none;\r\n}\r\n.e_floating .p_form-control{\r\n    display: block;\r\n}\r\n.e_floating .p_data_list{\r\n    flex-direction: column;\r\n    border: none;\r\n}\r\n.e_floating .p_item{\r\n    border-right: none;\r\n    border-bottom: 1px solid #ddd;\r\n}\r\n.e_floating .p_last_item{\r\n    width: 100%;\r\n    border-right: none;\r\n    flex-direction: row-reverse;\r\n    justify-content: space-between;\r\n}\r\n.e_floating .p_item_delete{\r\n    display: block;\r\n}"
+      "cssText": ".e_floating .p_contrast {\r\n    border-radius: 25px;\r\n    position: fixed;\r\n    bottom: 10%;\r\n    left: 0;\r\n    z-index: 20;\r\n}\r\n\r\n.e_floating .p_contrast,\r\n.e_floating .p_contrast_hidden {\r\n    display: block;\r\n    opacity: 1;\r\n}\r\n.e_floating .p_obscuration {\r\n    height: 100%;\r\n    top: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n    left: 0;\r\n    background: rgba(0, 0, 0, 0.6);\r\n    display: none;\r\n}\r\n.e_floating .p_contrast_list {\r\n    width: 100%;\r\n    position: absolute;\r\n    bottom: -100%;\r\n    transition: all 1s;\r\n}\r\n.e_floating .p_obscuration.show .p_contrast_list {\r\n    width: 100%;\r\n    position: absolute;\r\n    bottom: 0;\r\n    transition: all 1s;\r\n}\r\n.e_floating .p_tab {\r\n    display: none;\r\n}\r\n.e_floating .p_form-control {\r\n    display: block;\r\n}\r\n.e_floating .p_data_list {\r\n    flex-direction: column;\r\n    border: none;\r\n}\r\n.e_floating .p_item {\r\n    border-right: none;\r\n    border-bottom: 1px solid #ddd;\r\n}\r\n.e_floating .p_last_item {\r\n    width: 100%;\r\n    border-right: none;\r\n    flex-direction: row-reverse;\r\n    justify-content: space-between;\r\n}\r\n.e_floating .p_item_delete {\r\n    display: block;\r\n}\r\n"
     },
     {
       "media": "screen and (min-width: 769px)",
@@ -31,7 +31,7 @@
       }
     },
     "online": {
-      "status": true,
+      "status": false,
       "href": {
         "type": "none",
         "value": "",
@@ -39,7 +39,7 @@
       }
     },
     "apply": {
-      "status": true,
+      "status": false,
       "href": {
         "type": "none",
         "value": "",
@@ -47,7 +47,7 @@
       }
     },
     "sample": {
-      "status": true,
+      "status": false,
       "href": {
         "type": "none",
         "value": "",
@@ -55,7 +55,7 @@
       }
     },
     "enquiry": {
-      "status": true,
+      "status": false,
       "href": {
         "type": "none",
         "value": "",
