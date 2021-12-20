@@ -333,10 +333,6 @@
     {
       "name": "会员中心菜单",
       "code": "e_member"
-    },
-    {
-      "name": "全局搜索",
-      "code": "e_searchResult"
     }
   ],
   "form": [
@@ -431,6 +427,10 @@
     {
       "name": "邮箱验证",
       "code": "e_emailCode"
+    },
+    {
+      "name": "全局搜索",
+      "code": "e_searchResult"
     }
   ]
 }
