@@ -1,0 +1,39 @@
+<div class="e_loop_K s_list" needjs="true">
+    <div class="contents">
+        <div class="p_head">
+            {{#each prop.columnData}}
+                <div class="item cbox-${id} p_loopitem">
+                    {{#if prop.pageConfig.needHead}}
+                        <div class="title">
+                            <span class="p_tName">{{prop.pageConfig.title}}</span>
+                            <div class="p_icons">
+                                {{#if prop.pageConfig.needSort}}
+                                    <span class="p_icon">icon</span>
+                                {{/if}}
+                                {{#if prop.pageConfig.needScreen}}
+                                    <span class="p_screen">筛选</span>
+                                {{/if}}
+                            </div>
+                        </div>
+                    {{/if}}
+                </div>
+            {{/each}}
+        </div>
+        <div class="p_body">
+            {{#each prop.dataList}}
+                <div class="info">
+                    {{#each prop.columnData}}
+                        <div class="cbox-${id} p_loopitem"></div>
+                    {{/each}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="p_nav_page" data-ename="页码" data-from="{{prop.page.from}}" data-size={{prop.page.size}} data-totalCount="{{prop.page.totalCount}}">
+        <span class="p_page_tall" data-ename="页数">{{i18n.pageWhole}}
+            <em class="p_style_normal">{{prop.page.totalCount}}</em>
+            {{i18n.pageItem}}
+            {{i18n.products}}
+        </span>
+    </div>
+</div>
