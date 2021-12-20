@@ -1,6 +1,23 @@
 {
   "prop": {
-      "previewList":[],
+      "previewList":[
+            {
+                "title":"标题",
+                "key": "title",
+                "element1":"",
+                "element2":"",
+                "element3":"",
+                "isDefault":true
+            },
+            {
+                "title":"图片",
+                "key": "image",
+                "element1":"",
+                "element2":"",
+                "element3":"",
+                "isDefault":true
+            }
+      ],
       "appList":[],
       "sort":{
           "field":"",
