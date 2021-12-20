@@ -34,6 +34,7 @@
                         </svg></span></div>
                 {{/eq}}
                 <div class="p_info {{#eq type 2}}p_videoInfo{{/eq}}">
+                    {{#if prop.settings.showText}}
                     <div class="p_info_fivebox">
                         {{#if title}}<p class="p_btitle">{{title}}</p>{{/if}}
                         <span class="p_solid"></span>
@@ -41,6 +42,7 @@
                         <a href="{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}" {{#if
                             href.value}}target="{{href.target}}" {{/if}} class="p_button">MORE +</a>
                     </div>
+                    {{/if}}
                 </div>
             </div>
             {{/each}}

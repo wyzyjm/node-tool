@@ -1,6 +1,7 @@
 .e_navigationE .p_navBox1{
     display: flex;
     justify-content: flex-end;
+    height: auto !important;
 }
 .e_navigationE .p_navItem1 > p{
     display: flex;
