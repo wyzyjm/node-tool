@@ -1,0 +1,59 @@
+{
+    "prop": {
+        "dataList": [
+          {"name": "小d", "title": "标题2", "age": 19},
+          {"name": "小EEEEEEE", "title": "五菱宏光MINI", "price": 9.9}
+        ],
+        "columnData": [
+            {
+              "title": "迪迦",
+              "needSort": true,
+              "needScreen": true
+            },
+            {
+              "title": "汽车",
+              "needSort": true,
+              "needScreen": true
+            }
+        ],
+        "sxData": [
+        ],
+        "page": {
+            "from": 0,
+            "size": 4,
+            "totalCount": 100
+        },
+        "pageConfig": {
+            "showJump": true,
+            "needHead": true,
+            "filterPosition":"",
+            "pcRow": 4,
+            "pcColumn": 1,
+            "moColumn": 1,
+            "pageType": "hidden",
+            "rolling": {
+                "navigation": true,
+                "pagenation": true,
+                "autoScroll": true,
+                "scrollTime": 4,
+                "scrollType": "horizontal"
+            },
+            "marquee": {
+                "navigation": true,
+                "marqueeTime": 4
+            },
+            "loopItem": ".p_info",
+            "status": true
+        }
+    },
+    "i18n": {
+        "pageWhole": "共",
+        "pageItem": "条",
+        "pageJump": "前往",
+        "pageUnit": "页",
+        "loadMore": "点击加载更多",
+        "loadNow": "加载中",
+        "noMore": "没有更多了",
+        "noData": "暂无数据"
+    }
+}

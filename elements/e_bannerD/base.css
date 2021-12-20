@@ -77,7 +77,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 15px 20px;
-    pointer-events: none;
 }
 .e_bannerD .p_info_fivebox{
     width: 40%;
