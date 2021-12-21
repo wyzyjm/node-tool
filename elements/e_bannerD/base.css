@@ -130,6 +130,7 @@
     opacity: 0;
     transform: translateY(40px);
     transition: all ease .3s,transform ease .8s .9s,opacity ease .8s .9s;
+    display: none;
 }
 .e_bannerD .p_button:hover{
     border: 1px solid #fff;
@@ -308,7 +309,7 @@
     max-width: 100px;
     height: 50px;
 }
-.e_bannerD .p_video_button span{
+.e_bannerD .p_videobtm{
     color: #fff;
     border-radius: 100%;
     border: 2px solid #fff;
@@ -344,7 +345,7 @@
     justify-content: center;
     text-align: center;
 }
-.e_bannerD .p_video_button span:hover{
+.e_bannerD .p_videobtm:hover{
     background: #000;
     border: 2px solid #000;
 }
