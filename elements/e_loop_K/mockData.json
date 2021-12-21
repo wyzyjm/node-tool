@@ -1,9 +1,9 @@
 {
     "prop": {
         "dataList": [
-          {"name": "小d", "title": "标题2", "age": 19},
-          {"name": "小EEEEEEE", "title": "五菱宏光MINI", "price": 9.9}
+          {}
         ],
+        "columnCount":2,
         "columnData": [
             {
               "title": "迪迦",
