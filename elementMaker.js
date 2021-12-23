@@ -7,7 +7,7 @@ const {promises: {readdir, writeFile,readFile,stat}} = require('fs');
 const gta = require('google-translate-api-cn');
 const COMP_PATH=path.join(__dirname, './elements');//组件基础路径
 const DESIGNlIB_pATH=path.join(__dirname, '../ndesignlib/elem/');//组件基础路径
-
+const NPUBLIC_pATH=path.join(__dirname, '../publics/');//组件基础路径
 const defaultJson={
     "cname": "",
     "styleId": "",
@@ -142,6 +142,18 @@ async function copyFile(compId){
         let dsignCompDataPath = `${desginLibComp + compId}-data.json`;
         await writeFile(dsignCompDataPath,JSON.stringify(compDataJson,null,2),'utf8');
     }
+}
+
+//同步文件
+async function asyncJsI18n(compId){
+    const jsI18n_path=path.join(__dirname, './i18n/compJs/');
+    const npublicI18n_path = path.join(NPUBLIC_pATH, './libs/widget/language/');
+    console.log(npublicI18n_path)
+    let files = await readdir(jsI18n_path);
+    await Promise.all(files.map(async (file)=>{
+        let fileStr = await readFile(jsI18n_path + file)
+        await writeFile(npublicI18n_path+file,fileStr,'utf8');
+    }));
 }
 
 //一键同步词条
@@ -318,5 +330,6 @@ module.exports={
   compJsonBuilder,
   addElement,
   copyFile,
-  asyncI18n
+  asyncI18n,
+  asyncJsI18n
 }

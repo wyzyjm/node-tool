@@ -266,6 +266,13 @@ app.use(async function (ctx,next) {
             }catch(e){
                 result=JSON.stringify({error:e.toString()});
             }
+        }else if(api=='asyncJsI18n'){//同步组件Js词条
+            try{
+                elementMaker.asyncJsI18n()
+                result=JSON.stringify({success:true});
+            }catch(e){
+                result=JSON.stringify({error:e.toString()});
+            }
         }
         ctx.body=result;
         ctx.set('content-type','application/json;charset=utf-8');

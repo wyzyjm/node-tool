@@ -75,9 +75,20 @@ $(function(){
     $(".setJsI18n").click(function(){
         setI18n(3)
     })
+    $(".asyncCompJs").click(function(){
+        asyncJsI18n()
+    })
 })
+async function asyncJsI18n(){
+    let result=await (await fetch('/element/asyncJsI18n')).json();
+    if(result.success){
+        layer.open({
+            title: '设置翻译词条成功',
+            content: '位置：'+result.success
+        });  
+    }
+}
 async function asyncI18n(){
-    console.log(1111)
     let result=await (await fetch('/element/asyncI18n')).json();
     if(result.success){
         layer.open({
@@ -85,7 +96,6 @@ async function asyncI18n(){
             content: '位置：'+result.success
         });  
     }
-    console.log(result,111)
 }
 async function setI18n(k){
     let result=await (await fetch('/element/setI18n?k='+k)).json();
@@ -95,7 +105,6 @@ async function setI18n(k){
             content: '位置：'+result.success
         });  
     }
-    console.log(result,111)
 }
 async function getI18n(){
     let result=await (await fetch('/element/getI18n')).json();
@@ -105,7 +114,6 @@ async function getI18n(){
             content: '位置：'+result.success
         });  
     }
-    console.log(result,111)
 }
 //初始化元素列表
 async function initElements() {
