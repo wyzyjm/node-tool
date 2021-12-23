@@ -32,6 +32,63 @@
   "i18n": {
     "zh_CN": {
       "send": "发送短信验证码"
+    },
+    "en": {
+      "send": "Send the SMS verification code"
+    },
+    "de": {
+      "send": "Senden des Textbestätigungscodes"
+    },
+    "fr": {
+      "send": "Envoyer le code de vérification SMS"
+    },
+    "ru": {
+      "send": "Отправить проверочный код по SMS"
+    },
+    "pt": {
+      "send": "Enviar o código de verificação por SMS"
+    },
+    "ko": {
+      "send": "문자 메시지로 인증번호 보내기"
+    },
+    "ja": {
+      "send": "ＳＭＳ確認コードを送信します"
+    },
+    "es": {
+      "send": "Enviar código de verificación SMS"
+    },
+    "ar": {
+      "send": "ارسال رمز التحقيق إلى"
+    },
+    "it": {
+      "send": "Invia il codice di verifica del testo"
+    },
+    "bn": {
+      "send": "এসএমএস যাচাইকরণ কোড পাঠান"
+    },
+    "da": {
+      "send": "Send SMS-verifikationskode"
+    },
+    "idn": {
+      "send": "Kirim kode verifikasi SMS"
+    },
+    "th": {
+      "send": "ส่งรหัสยืนยันทางSMS"
+    },
+    "vi": {
+      "send": "Gửi mã xác minh tin nhắn"
+    },
+    "tr": {
+      "send": "Doğrulama kodu mesajını gönder"
+    },
+    "nl": {
+      "send": "SMS-verificatiecode verzenden"
+    },
+    "pl": {
+      "send": "Wyślij kod weryfikacyjny SMS"
+    },
+    "zh_HN": {
+      "send": "發送短信驗證碼"
     }
   },
   "datasource": "prop",

@@ -29,6 +29,63 @@
   "i18n": {
     "zh_CN": {
       "propmpt": "安全验证"
+    },
+    "en": {
+      "propmpt": "Security verification"
+    },
+    "de": {
+      "propmpt": "Sicherheitsüberprüfung"
+    },
+    "fr": {
+      "propmpt": "Vérification de la sécurité"
+    },
+    "ru": {
+      "propmpt": "Проверка безопасности"
+    },
+    "pt": {
+      "propmpt": "Verificação de segurança"
+    },
+    "ko": {
+      "propmpt": "보안 인증"
+    },
+    "ja": {
+      "propmpt": "セキュリティ検証"
+    },
+    "es": {
+      "propmpt": "Verificación de seguridad"
+    },
+    "ar": {
+      "propmpt": "تحقيق الأمن"
+    },
+    "it": {
+      "propmpt": "Verifica di sicurezza"
+    },
+    "bn": {
+      "propmpt": "সুরক্ষা যাচাইকরণ"
+    },
+    "da": {
+      "propmpt": "Sikkerhedsverifikation"
+    },
+    "idn": {
+      "propmpt": "Verifikasi keamanan"
+    },
+    "th": {
+      "propmpt": "การยืนยันเพื่อความปลอดภัย"
+    },
+    "vi": {
+      "propmpt": "Xác minh an toàn"
+    },
+    "tr": {
+      "propmpt": "Güvenlik Doğrulaması"
+    },
+    "nl": {
+      "propmpt": "veiligheidsverificatie"
+    },
+    "pl": {
+      "propmpt": "Weryfikacja zabezpieczeń"
+    },
+    "zh_HN": {
+      "propmpt": "安全驗證"
     }
   },
   "datasource": "prop",

@@ -49,6 +49,63 @@
   "i18n": {
     "zh_CN": {
       "upload": "上传"
+    },
+    "en": {
+      "upload": "Upload"
+    },
+    "de": {
+      "upload": "Hochladen"
+    },
+    "fr": {
+      "upload": "Uploader"
+    },
+    "ru": {
+      "upload": "Загрузить"
+    },
+    "pt": {
+      "upload": "Envio"
+    },
+    "ko": {
+      "upload": "업로드"
+    },
+    "ja": {
+      "upload": "アップロード"
+    },
+    "es": {
+      "upload": "Subir"
+    },
+    "ar": {
+      "upload": "تحميل"
+    },
+    "it": {
+      "upload": "Caricamento"
+    },
+    "bn": {
+      "upload": "আপলোড করুন"
+    },
+    "da": {
+      "upload": "Upload"
+    },
+    "idn": {
+      "upload": "Unggah"
+    },
+    "th": {
+      "upload": "อัพโหลด"
+    },
+    "vi": {
+      "upload": "Tải lên"
+    },
+    "tr": {
+      "upload": "Yükle"
+    },
+    "nl": {
+      "upload": "Uploaden"
+    },
+    "pl": {
+      "upload": "Załaduj"
+    },
+    "zh_HN": {
+      "upload": "上傳"
     }
   },
   "datasource": "prop"

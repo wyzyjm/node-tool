@@ -107,6 +107,177 @@
       "delete": "删除",
       "noncontrastingDescription": "您还可以继续添加",
       "tip": "栏已满，您可以删除不需要的栏内商品再继续添加哦！"
+    },
+    "en": {
+      "contrast": "Compare",
+      "compareTheBar": "Comparison column",
+      "clear": "Clear all",
+      "hidden": "Hide",
+      "delete": "Delete",
+      "noncontrastingDescription": "You may add more",
+      "tip": "It is full, and you may remove unnecessary items from the column and continue!"
+    },
+    "de": {
+      "contrast": "Kontrast",
+      "compareTheBar": "Kontrastleiste",
+      "clear": "Alle Inhalte leeren",
+      "hidden": "Verstecken",
+      "delete": "Löschen",
+      "noncontrastingDescription": "Sie können weiterhin hinzufügen",
+      "tip": "Die Spalte ist voll, Sie können die nicht benötigten Elemente in der Spalte löschen und weiter hinzufügen!"
+    },
+    "fr": {
+      "contrast": "Contraster",
+      "compareTheBar": "Barre de contraste",
+      "clear": "Vider tout",
+      "hidden": "Cacher",
+      "delete": "Supprimer",
+      "noncontrastingDescription": "Vous pouvez continuer à ajouter",
+      "tip": "La barre est pleine, vous pouvez supprimer les articles indésirables dans la barre et continuer à ajouter!"
+    },
+    "ru": {
+      "contrast": "Сравнить",
+      "compareTheBar": "Столбец сравнения",
+      "clear": "Очистить все содержимое",
+      "hidden": "Скрыть",
+      "delete": "Удалить",
+      "noncontrastingDescription": "Вы также можете продолжить добавление",
+      "tip": "Столбец заполнен, в столбце можно удалить ненужное и продолжить добавление!"
+    },
+    "pt": {
+      "contrast": "Contraste",
+      "compareTheBar": "Barra de contraste",
+      "clear": "Esvaziar todo o conteúdo",
+      "hidden": "Oculto",
+      "delete": "Deletar",
+      "noncontrastingDescription": "Você pode continuar a adicionar",
+      "tip": "A coluna está cheia, você pode excluir os itens desnecessários na coluna e continuar a adicionar!"
+    },
+    "ko": {
+      "contrast": "대조",
+      "compareTheBar": "대조란",
+      "clear": "모든 내용 비우기",
+      "hidden": "숨기기",
+      "delete": "삭제",
+      "noncontrastingDescription": "계속 추가할 수 있습니다",
+      "tip": "칸이 꽉 찼습니다. 필요없는 상품을 삭제하고 계속 추가할 수 있습니다!"
+    },
+    "ja": {
+      "contrast": "コントラスト",
+      "compareTheBar": "コントラストバー",
+      "clear": "すべての内容をクリアします",
+      "hidden": "非表示",
+      "delete": "削除",
+      "noncontrastingDescription": "引き続き入れてもいいです",
+      "tip": "リストはもういっぱいです。リストから不要の商品を削除して、引き続き商品を入れてもいいです！"
+    },
+    "es": {
+      "contrast": "Comparar",
+      "compareTheBar": "Barra de comparación",
+      "clear": "Vaciar todo",
+      "hidden": "Esconder",
+      "delete": "Borrar",
+      "noncontrastingDescription": "Puede continuar agregando",
+      "tip": "La barra está llena, puede borrar productos innecesarios y continuar agregando."
+    },
+    "ar": {
+      "contrast": "التباين",
+      "compareTheBar": "شريط التباين",
+      "clear": "إفراغ كل المحتويات",
+      "hidden": "إخفاء",
+      "delete": "حذف",
+      "noncontrastingDescription": "يمكنك ان تستمر الإضافة",
+      "tip": "قد امتلأ الشريط، يمكنك حذف ما لا تحتاجها واستمر الإضافة!"
+    },
+    "it": {
+      "contrast": "Contrasto",
+      "compareTheBar": "Barra di contrasto",
+      "clear": "Svuota tutto il contenuto",
+      "hidden": "Nascondi",
+      "delete": "Elimina",
+      "noncontrastingDescription": "Puoi continuare ad aggiungere",
+      "tip": "La colonna è piena, puoi eliminare i prodotti non necessari nella colonna e continuare ad aggiungere!"
+    },
+    "bn": {
+      "contrast": "বিপরীত",
+      "compareTheBar": "বিপরীত স্তম্ভ",
+      "clear": "সব কিছু ফাঁকা করুন",
+      "hidden": "লুকান",
+      "delete": "মুছে ফেলুন",
+      "noncontrastingDescription": "যোগ করা চালিয়ে যান",
+      "tip": "সম্পূর্ণ স্তম্ভ, অপ্রয়োজনীয় সামগ্রী স্তম্ভ থেকে মুছে ফেলুন এবং যোগ করা চালিয়ে যান!"
+    },
+    "da": {
+      "contrast": "Sammenlign",
+      "compareTheBar": "Sammenligning kolonne",
+      "clear": "Ryd alt indhold",
+      "hidden": "Skjul",
+      "delete": "Slet",
+      "noncontrastingDescription": "Du kan fortsætte med at tilføje",
+      "tip": "Kolonnen er fuld, du kan slette de unødvendige varer derefter fortsætte med at tilføje!"
+    },
+    "idn": {
+      "contrast": "Dibandingkan",
+      "compareTheBar": "Kolom dibandingkan",
+      "clear": "Kosongkan semua konten",
+      "hidden": "Sembunyikan",
+      "delete": "Hapus",
+      "noncontrastingDescription": "Anda dapat terus menambahkan",
+      "tip": "Sudah penuh, hapus barangan yang tidak dibutuhkan dan terus menambahkan!"
+    },
+    "th": {
+      "contrast": "เปรียบเทียบ",
+      "compareTheBar": "แถบเปรียบเทียบ",
+      "clear": "ลบเนื้อหาทั้งหมด",
+      "hidden": "ซ่อน",
+      "delete": "ลบ",
+      "noncontrastingDescription": "คุณยังสามารเพิ่มต่อไปได้",
+      "tip": "แถบเต็ม  คุณสามารถลบสินค้าที่ไม่ต้องการในแถบ  แล้วเพิ่มต่อไปนะ !"
+    },
+    "vi": {
+      "contrast": "So sánh",
+      "compareTheBar": "Cột so sánh",
+      "clear": "Làm trống tất cả nội dung",
+      "hidden": "Ẩn giấu",
+      "delete": "Xóa",
+      "noncontrastingDescription": "Bạn có thể tiếp tục tăng thêm",
+      "tip": "Cột đã đầy, bạn có thể xóa các sản phẩm không cần thiết trong cột và tiếp tục thêm!"
+    },
+    "tr": {
+      "contrast": "Karşılaştır",
+      "compareTheBar": "Karşılaştırma çubuğu",
+      "clear": "Süresi dolmuş içerikleri sil",
+      "hidden": "Gizle",
+      "delete": "Sil",
+      "noncontrastingDescription": "Eklemeye devam edebilirsiniz",
+      "tip": "Sütun dolu, sütundaki gereksiz maddeleri silip eklemeye devam edebilirsiniz!"
+    },
+    "nl": {
+      "contrast": "Contrasteren",
+      "compareTheBar": "Contrast kolom",
+      "clear": "Alle inhoud leegmaken",
+      "hidden": "Verbergen",
+      "delete": "Verwijderen",
+      "noncontrastingDescription": "U kunt doorgaan met toevoegen",
+      "tip": "De kolom is vol, u kunt onnodige items in de kolom verwijderen en doorgaan met het toevoegen !"
+    },
+    "pl": {
+      "contrast": "Kontrast",
+      "compareTheBar": "Kolumna z kontrastem",
+      "clear": "Opróżnij całą zawartość",
+      "hidden": "Ukryj",
+      "delete": "Usuń",
+      "noncontrastingDescription": "Kontynuuj dodawanie",
+      "tip": "Pełna kolumna, usuń niepotrzebne elementy w kolumnie i kontynuuj dodawanie!"
+    },
+    "zh_HN": {
+      "contrast": "對比",
+      "compareTheBar": "對比欄",
+      "clear": "清空全部內容",
+      "hidden": "隱藏",
+      "delete": "刪除",
+      "noncontrastingDescription": "您還可以繼續添加",
+      "tip": "欄已滿，您可以刪除不需要的欄內商品再繼續添加哦！"
     }
   },
   "datasource": "prop",

@@ -26,6 +26,82 @@
     "zh_CN": {
       "sshow": "收藏",
       "sActives": "已收藏"
+    },
+    "en": {
+      "sshow": "Favorite",
+      "sActives": "Favorited"
+    },
+    "de": {
+      "sshow": "Sammeln",
+      "sActives": "Gesammelt"
+    },
+    "fr": {
+      "sshow": "Collectionner en favoris",
+      "sActives": "Favoris"
+    },
+    "ru": {
+      "sshow": "Избранное",
+      "sActives": "Добавлено в избранное"
+    },
+    "pt": {
+      "sshow": "Favoritos",
+      "sActives": "Coletado"
+    },
+    "ko": {
+      "sshow": "즐겨찾기",
+      "sActives": "즐겨찾기에 추가되었습니다"
+    },
+    "ja": {
+      "sshow": "お気に入り",
+      "sActives": "お気に入りにしました"
+    },
+    "es": {
+      "sshow": "Favoritos",
+      "sActives": "Agregado"
+    },
+    "ar": {
+      "sshow": "جمع",
+      "sActives": "قد جمع"
+    },
+    "it": {
+      "sshow": "Aggiungere ai preferiti",
+      "sActives": "Aggiunto ai preferiti"
+    },
+    "bn": {
+      "sshow": "প্রিয়",
+      "sActives": "বুকমার্ক করা"
+    },
+    "da": {
+      "sshow": "Favorit",
+      "sActives": "Tilføjt"
+    },
+    "idn": {
+      "sshow": "Favorit",
+      "sActives": "Telah difavoritkan"
+    },
+    "th": {
+      "sshow": "เก็บสะสม",
+      "sActives": "เก็บสะสมไว้"
+    },
+    "vi": {
+      "sshow": "Thu thập",
+      "sActives": "Đã thu thập"
+    },
+    "tr": {
+      "sshow": "Favoriler",
+      "sActives": "Favorilere eklendi"
+    },
+    "nl": {
+      "sshow": "Collecties",
+      "sActives": "Verzameld"
+    },
+    "pl": {
+      "sshow": "Ulubione",
+      "sActives": "Dodano do zakładek"
+    },
+    "zh_HN": {
+      "sshow": "收藏",
+      "sActives": "已收藏"
     }
   },
   "datasource": "prop",

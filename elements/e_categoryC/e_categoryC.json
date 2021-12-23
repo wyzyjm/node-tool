@@ -102,6 +102,82 @@
     "zh_CN": {
       "moCategoryTitle": "全部分类",
       "noData": "暂无数据"
+    },
+    "en": {
+      "moCategoryTitle": "All categories",
+      "noData": "No data"
+    },
+    "de": {
+      "moCategoryTitle": "Alle Kategorien",
+      "noData": "Keine Daten"
+    },
+    "fr": {
+      "moCategoryTitle": "Toutes catégories",
+      "noData": "Aucune donnée pour l'instant"
+    },
+    "ru": {
+      "moCategoryTitle": "Все категории",
+      "noData": "Нет данных"
+    },
+    "pt": {
+      "moCategoryTitle": "Todas as categorias",
+      "noData": "Sem dados no momento"
+    },
+    "ko": {
+      "moCategoryTitle": "전체 분류",
+      "noData": "잠시 데이터가 없음"
+    },
+    "ja": {
+      "moCategoryTitle": "すべてのカテゴリ",
+      "noData": "データなし"
+    },
+    "es": {
+      "moCategoryTitle": "Todas las categorias",
+      "noData": "No hay datos"
+    },
+    "ar": {
+      "moCategoryTitle": "تقسيم الكل",
+      "noData": "لا توجد المعلمات موقتا"
+    },
+    "it": {
+      "moCategoryTitle": "Tutte le categorie",
+      "noData": "Nessun dato"
+    },
+    "bn": {
+      "moCategoryTitle": "সব শ্রেনিবিভাগ",
+      "noData": "কোন তথ্য নেই"
+    },
+    "da": {
+      "moCategoryTitle": "Alle kategorier",
+      "noData": "Intet data"
+    },
+    "idn": {
+      "moCategoryTitle": "Semua kategori",
+      "noData": "Tiada data sekarang"
+    },
+    "th": {
+      "moCategoryTitle": "การจัดหมวดหมู่ทั้งหมด",
+      "noData": "ไม่มีข้อมูล"
+    },
+    "vi": {
+      "moCategoryTitle": "Phân loại toàn bộ",
+      "noData": "Tạm thời không có dữ liệu"
+    },
+    "tr": {
+      "moCategoryTitle": "Tüm Kategoriler",
+      "noData": "Veri Yok"
+    },
+    "nl": {
+      "moCategoryTitle": "Alle categorieën",
+      "noData": "Geen gegevens"
+    },
+    "pl": {
+      "moCategoryTitle": "Wszystkie kategorie",
+      "noData": "Brak danych"
+    },
+    "zh_HN": {
+      "moCategoryTitle": "全部分類",
+      "noData": "暫無數據"
     }
   },
   "datasource": "prop",

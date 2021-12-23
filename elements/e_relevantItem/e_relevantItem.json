@@ -40,6 +40,158 @@
       "xzAll": "全选",
       "cancel": "取消",
       "confirm": "确认"
+    },
+    "en": {
+      "category": "Category:",
+      "select": "Select",
+      "searchPlaceholder": "Please enter keywords",
+      "xzAll": "Select all",
+      "cancel": "Cancel",
+      "confirm": "OK"
+    },
+    "de": {
+      "category": "Einstufung:",
+      "select": "Auswählen",
+      "searchPlaceholder": "Stichworte eingeben",
+      "xzAll": "Alle auswählen",
+      "cancel": "Abbrechen",
+      "confirm": "Bestimmen"
+    },
+    "fr": {
+      "category": "Classification:",
+      "select": "Choix",
+      "searchPlaceholder": "Veuillez saisir les mots clés",
+      "xzAll": "Tout sélectionner",
+      "cancel": "Annuler",
+      "confirm": "Confirmer"
+    },
+    "ru": {
+      "category": "Категория:",
+      "select": "Выбрать",
+      "searchPlaceholder": "Пожалуйста, введите ключевые слова",
+      "xzAll": "Выбрать все",
+      "cancel": "Отмена",
+      "confirm": "Подтвердить"
+    },
+    "pt": {
+      "category": "Classificação:",
+      "select": "Escolha",
+      "searchPlaceholder": "Por favor insira uma palavra-chave",
+      "xzAll": "Selecionar tudo",
+      "cancel": "Cancelar",
+      "confirm": "confirme"
+    },
+    "ko": {
+      "category": "분류:",
+      "select": "옵션",
+      "searchPlaceholder": "키워드를 입력하세요",
+      "xzAll": "전체 선택",
+      "cancel": "취소",
+      "confirm": "확인"
+    },
+    "ja": {
+      "category": "カテゴリ：",
+      "select": "選択",
+      "searchPlaceholder": "キーワードを入力してください",
+      "xzAll": "すべて選択",
+      "cancel": "キャンセル",
+      "confirm": "確認"
+    },
+    "es": {
+      "category": "Clasificación:",
+      "select": "Seleccionar",
+      "searchPlaceholder": "Ingrese palabras clave",
+      "xzAll": "Seleccionar todo",
+      "cancel": "Cancelar",
+      "confirm": "Aceptar"
+    },
+    "ar": {
+      "category": "تقسيم",
+      "select": "اختر",
+      "searchPlaceholder": "ادخال كلمة الأساس",
+      "xzAll": "اختر الكل",
+      "cancel": "إلغاء",
+      "confirm": "تاأكد"
+    },
+    "it": {
+      "category": "Classificazione:",
+      "select": "Scegliere",
+      "searchPlaceholder": "Si prega di inserire una parola chiave",
+      "xzAll": "Seleziona tutto",
+      "cancel": "Annulla",
+      "confirm": "Conferm"
+    },
+    "bn": {
+      "category": "শ্রেনীবিন্যাস:",
+      "select": "চয়ন",
+      "searchPlaceholder": "কীওয়ার্ড প্রদান করুন",
+      "xzAll": "সব চয়ন করুন",
+      "cancel": "বাতিল করুন",
+      "confirm": "নিশ্চিত"
+    },
+    "da": {
+      "category": "Klassifikation:",
+      "select": "Vælg",
+      "searchPlaceholder": "Indtast nøgleord",
+      "xzAll": "Vælg alle",
+      "cancel": "Annuller",
+      "confirm": "Bekræft"
+    },
+    "idn": {
+      "category": "Klasifikasi:",
+      "select": "Pilih",
+      "searchPlaceholder": "Silakan masukkan kata kunci",
+      "xzAll": "Pilih semua",
+      "cancel": "Batalkan",
+      "confirm": "Konfirmasi"
+    },
+    "th": {
+      "category": "การจัดหมวดหมู่:",
+      "select": "เลือก",
+      "searchPlaceholder": "โปรดป้อนคำหลัก",
+      "xzAll": "เลือกทั้งหมด",
+      "cancel": "ยกเลิก",
+      "confirm": "ยืนยัน"
+    },
+    "vi": {
+      "category": "Phân loại:",
+      "select": "Lựa chọn",
+      "searchPlaceholder": "Vui lòng nhập từ khóa",
+      "xzAll": "Lựa chọn tất cả",
+      "cancel": "Hủy bỏ",
+      "confirm": "Xác nhận"
+    },
+    "tr": {
+      "category": "Sınıflandırma:",
+      "select": "Seçenek",
+      "searchPlaceholder": "Lütfen bir anahtar kelime girin",
+      "xzAll": "Hepsini Seç",
+      "cancel": "İptal",
+      "confirm": "Onayla"
+    },
+    "nl": {
+      "category": "Classificatie:",
+      "select": "Kiezen",
+      "searchPlaceholder": "Voer een sleutelwoord in a.u.b.",
+      "xzAll": "Selecteer alles",
+      "cancel": "Annuleren",
+      "confirm": "Bevestigen"
+    },
+    "pl": {
+      "category": "Klasyfikacja:",
+      "select": "Wybierz",
+      "searchPlaceholder": "Wprowadź słowa kluczowe",
+      "xzAll": "Wybierz wszystko",
+      "cancel": "Anuluj",
+      "confirm": "Potwierdzono"
+    },
+    "zh_HN": {
+      "category": "分類：",
+      "select": "選擇",
+      "searchPlaceholder": "請輸入關鍵詞",
+      "xzAll": "全選",
+      "cancel": "取消",
+      "confirm": "確認"
     }
   },
   "datasource": "prop",

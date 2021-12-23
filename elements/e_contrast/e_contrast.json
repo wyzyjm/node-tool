@@ -29,6 +29,139 @@
       "noPrice": "暂无报价",
       "hideSame": "隐藏相同",
       "theme": "主题"
+    },
+    "en": {
+      "viewNow": "View now",
+      "delete": "Delete",
+      "noPrice": "No quotation",
+      "hideSame": "Hide the same",
+      "theme": "Theme"
+    },
+    "de": {
+      "viewNow": "Jetzt ansehen",
+      "delete": "Löschen",
+      "noPrice": "Kein Angebot",
+      "hideSame": "Gleiche ausblenden",
+      "theme": "Thema"
+    },
+    "fr": {
+      "viewNow": "Voir maintenant",
+      "delete": "Supprimer",
+      "noPrice": "Aucune offre pour l'instant",
+      "hideSame": "Cacher les mêmes",
+      "theme": "Sujet"
+    },
+    "ru": {
+      "viewNow": "Смотреть сейчас",
+      "delete": "Удалить",
+      "noPrice": "Нет цены",
+      "hideSame": "Скрыть схожее",
+      "theme": "Тема"
+    },
+    "pt": {
+      "viewNow": "Veja Agora",
+      "delete": "Deletar",
+      "noPrice": "Nenhuma cotação no momento",
+      "hideSame": "Ocultar similares",
+      "theme": "Tema"
+    },
+    "ko": {
+      "viewNow": "바로 보기",
+      "delete": "삭제",
+      "noPrice": "잠시 견적이 없음",
+      "hideSame": "동일하게 숨기기",
+      "theme": "테마"
+    },
+    "ja": {
+      "viewNow": "即時確認",
+      "delete": "削除",
+      "noPrice": "見積なし",
+      "hideSame": "同じ内容を非表示します",
+      "theme": "テーマ"
+    },
+    "es": {
+      "viewNow": "Ver ahora",
+      "delete": "Borrar",
+      "noPrice": "No hay oferta",
+      "hideSame": "Ocultar los repetidos",
+      "theme": "Tema"
+    },
+    "ar": {
+      "viewNow": "عرض فورا",
+      "delete": "حذف",
+      "noPrice": "لا يوجد سعر معروض مؤقتا",
+      "hideSame": "إخفاء النفس",
+      "theme": "موضوع رئيسي"
+    },
+    "it": {
+      "viewNow": "Controlla ora",
+      "delete": "Elimina",
+      "noPrice": "Nessuna offerta",
+      "hideSame": "Nascondi lo stesso",
+      "theme": "Tema"
+    },
+    "bn": {
+      "viewNow": "এখনই দেখুন",
+      "delete": "মুছে ফেলুন",
+      "noPrice": "কোন কোটেশান নেই",
+      "hideSame": "একই লুকান",
+      "theme": "বিষয়"
+    },
+    "da": {
+      "viewNow": "Se nu",
+      "delete": "Slet",
+      "noPrice": "Intet tilbud",
+      "hideSame": "Skjul de samme",
+      "theme": "Tema"
+    },
+    "idn": {
+      "viewNow": "Lihat sekarang",
+      "delete": "Hapus",
+      "noPrice": "Tiada kutipan sekarang",
+      "hideSame": "Sembunyikan yang sama",
+      "theme": "Tema"
+    },
+    "th": {
+      "viewNow": "เรียกดูทันที",
+      "delete": "ลบ",
+      "noPrice": "ไม่มีราคาเสนอชั่วคราว",
+      "hideSame": "ซ่อนเดียวกัน",
+      "theme": "ธีม"
+    },
+    "vi": {
+      "viewNow": "Xem ngay",
+      "delete": "Xóa",
+      "noPrice": "Tạm thời không có báo giá",
+      "hideSame": "Ẩn giống nhau",
+      "theme": "Chủ đề"
+    },
+    "tr": {
+      "viewNow": "Şimdi görüntüle",
+      "delete": "Sil",
+      "noPrice": "Teklif Yok",
+      "hideSame": "Benzerleri Gizle",
+      "theme": "Tema"
+    },
+    "nl": {
+      "viewNow": "Onmiddellijk bekijken",
+      "delete": "Verwijderen",
+      "noPrice": "Geen offerte",
+      "hideSame": "Verberg hetzelfde",
+      "theme": "Thema"
+    },
+    "pl": {
+      "viewNow": "Wyświetl teraz",
+      "delete": "Usuń",
+      "noPrice": "Brak oferty",
+      "hideSame": "Ukryj to samo",
+      "theme": "Temat"
+    },
+    "zh_HN": {
+      "viewNow": "立即查看",
+      "delete": "刪除",
+      "noPrice": "暫無報價",
+      "hideSame": "隱藏相同",
+      "theme": "主題"
     }
   },
   "datasource": "prop"

@@ -35,6 +35,82 @@
     "zh_CN": {
       "ask": "问",
       "answer": "答"
+    },
+    "en": {
+      "ask": "Question",
+      "answer": "Answer"
+    },
+    "de": {
+      "ask": "Fragen",
+      "answer": "Antwort"
+    },
+    "fr": {
+      "ask": "Demander",
+      "answer": "Réponse"
+    },
+    "ru": {
+      "ask": "Вопрос",
+      "answer": "Ответ"
+    },
+    "pt": {
+      "ask": "Pergunta",
+      "answer": "Responder"
+    },
+    "ko": {
+      "ask": "질문",
+      "answer": "답"
+    },
+    "ja": {
+      "ask": "質問",
+      "answer": "出荷待ち"
+    },
+    "es": {
+      "ask": "Pregunta",
+      "answer": "Respuesta"
+    },
+    "ar": {
+      "ask": "سؤال",
+      "answer": "اجابة"
+    },
+    "it": {
+      "ask": "Domanda",
+      "answer": "Rispondere"
+    },
+    "bn": {
+      "ask": "জিজ্ঞাস্য",
+      "answer": "জবাব"
+    },
+    "da": {
+      "ask": "Spørg",
+      "answer": "Svar"
+    },
+    "idn": {
+      "ask": "Tanya",
+      "answer": "Jawab"
+    },
+    "th": {
+      "ask": "ถาม",
+      "answer": "ตอบ"
+    },
+    "vi": {
+      "ask": "Hỏi",
+      "answer": "Trả lời"
+    },
+    "tr": {
+      "ask": "Soru",
+      "answer": "Cevap"
+    },
+    "nl": {
+      "ask": "Vragen",
+      "answer": "Een antwoord geven"
+    },
+    "pl": {
+      "ask": "Zapytanie",
+      "answer": "Odpowiedź"
+    },
+    "zh_HN": {
+      "ask": "問",
+      "answer": "答"
     }
   },
   "datasource": "prop",

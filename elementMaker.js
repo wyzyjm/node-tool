@@ -144,6 +144,36 @@ async function copyFile(compId){
     }
 }
 
+//一键同步词条
+async function asyncI18n(){
+    let comps = await readdir(COMP_PATH);
+    await Promise.all(comps.map(async (comp)=>{
+        asyncCompI18n(comp)
+    }));
+}
+
+//同步词条
+async function asyncCompI18n(compId){
+    let compPath=`${COMP_PATH}/${compId}/`;
+    let compJsonFilePath=`${compPath + compId}.json`;
+    let compJson
+    try{
+        compJson=JSON.parse(await readFile(compJsonFilePath));
+    }catch(e){}
+    if(compJson){
+        let desginLibComp = `${DESIGNlIB_pATH + compId}/`;
+        let dsignCompPath = `${desginLibComp + compId}.json`;
+        let desginLibCompJson
+        try{
+            desginLibCompJson=JSON.parse(await readFile(dsignCompPath));
+        }catch(e){}
+        if(desginLibCompJson){
+            desginLibCompJson.i18n = compJson.i18n
+            await writeFile(dsignCompPath,JSON.stringify(desginLibCompJson,null,2),'utf8');
+        }
+    }
+}
+
 //自动修改json
 async function compJsonBuilder(compId) {
   let compPath=`${COMP_PATH}/${compId}/`;
@@ -287,5 +317,6 @@ function createDir(dir){
 module.exports={
   compJsonBuilder,
   addElement,
-  copyFile
+  copyFile,
+  asyncI18n
 }

@@ -168,6 +168,120 @@
       "brand": "品牌::",
       "goodstName": "商品名称:",
       "goodstCode": "商品编号:"
+    },
+    "en": {
+      "keyword": "Keywords:",
+      "brand": "Brand:",
+      "goodstName": "Commodity name:",
+      "goodstCode": "Commodity ID:"
+    },
+    "de": {
+      "keyword": "Schlüsselwort:",
+      "brand": "Marke::",
+      "goodstName": "Warenbezeichnung:",
+      "goodstCode": "Warennummer:"
+    },
+    "fr": {
+      "keyword": "Mots clés:",
+      "brand": "Marque::",
+      "goodstName": "Nom d'article:",
+      "goodstCode": "Numéro d'article:"
+    },
+    "ru": {
+      "keyword": "Ключевое слово:",
+      "brand": "Бренд:",
+      "goodstName": "Название товара:",
+      "goodstCode": "Номер товара:"
+    },
+    "pt": {
+      "keyword": "Palavras-chave:",
+      "brand": "Marca::",
+      "goodstName": "Nome do Produto:",
+      "goodstCode": "Número de produto:"
+    },
+    "ko": {
+      "keyword": "키워드;",
+      "brand": "브랜드::",
+      "goodstName": "상품 명칭;",
+      "goodstCode": "상품 번호;"
+    },
+    "ja": {
+      "keyword": "キーワード：",
+      "brand": "ブランド：",
+      "goodstName": "商品名:",
+      "goodstCode": "商品番号:"
+    },
+    "es": {
+      "keyword": "Palabras clave:",
+      "brand": "Marca:",
+      "goodstName": "Nombre del producto:",
+      "goodstCode": "Código de producto:"
+    },
+    "ar": {
+      "keyword": "كلمةالأساس",
+      "brand": "ماركة:",
+      "goodstName": "اسم المنتج",
+      "goodstCode": "رقم المنتج"
+    },
+    "it": {
+      "keyword": "Parole chiave:",
+      "brand": "Marchio::",
+      "goodstName": "Nome del prodotto:",
+      "goodstCode": "Numero del prodotto:"
+    },
+    "bn": {
+      "keyword": "কীওয়ার্ড:",
+      "brand": "ব্র্যান্ড::",
+      "goodstName": "পণ্যের নাম:",
+      "goodstCode": "পণ্য নং. :"
+    },
+    "da": {
+      "keyword": "Nøgleord:",
+      "brand": "Mærke::",
+      "goodstName": "Varenavn:",
+      "goodstCode": "Varenummer:"
+    },
+    "idn": {
+      "keyword": "Kata kunci:",
+      "brand": "Merek::",
+      "goodstName": "Nama Produk:",
+      "goodstCode": "Nomor Produk:"
+    },
+    "th": {
+      "keyword": "คำหลัก:",
+      "brand": "ยี่ห้อ::",
+      "goodstName": "ชื่อผลิตภัณฑ์:",
+      "goodstCode": "หมายเลขผลิตภัณฑ์:"
+    },
+    "vi": {
+      "keyword": "Từ khóa:",
+      "brand": "Nhãn hiệu:",
+      "goodstName": "Tên sản phẩm:",
+      "goodstCode": "Mã số sản phẩm:"
+    },
+    "tr": {
+      "keyword": "Anahtar kelime:",
+      "brand": "Marka::",
+      "goodstName": "Ürün adı:",
+      "goodstCode": "Ürün numarası:"
+    },
+    "nl": {
+      "keyword": "Sleutelwoorden:",
+      "brand": "Merk:",
+      "goodstName": "Productnaam",
+      "goodstCode": "Productnummer:"
+    },
+    "pl": {
+      "keyword": "Słowo kluczowe:",
+      "brand": "Marka::",
+      "goodstName": "Nazwa towaru:",
+      "goodstCode": "Nr towaru:"
+    },
+    "zh_HN": {
+      "keyword": "關鍵詞:",
+      "brand": "品牌::",
+      "goodstName": "商品名稱:",
+      "goodstCode": "商品編號:"
     }
   },
   "datasource": "prop",

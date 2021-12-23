@@ -85,6 +85,120 @@
       "allSelect": "全选",
       "download": "下载",
       "preview": "预览"
+    },
+    "en": {
+      "fileSize": "File size:",
+      "allSelect": "Select all",
+      "download": "Download",
+      "preview": "Preview"
+    },
+    "de": {
+      "fileSize": "Dateigröße:",
+      "allSelect": "Alle auswählen",
+      "download": "Downloaden",
+      "preview": "Vorschau"
+    },
+    "fr": {
+      "fileSize": "Taille du fichier:",
+      "allSelect": "Tout sélectionner",
+      "download": "Télécharger",
+      "preview": "Aperçu"
+    },
+    "ru": {
+      "fileSize": "Размер файла:",
+      "allSelect": "Выбрать все",
+      "download": "Скачать",
+      "preview": "Предварительный просмотр"
+    },
+    "pt": {
+      "fileSize": "Tamanho do arquivo:",
+      "allSelect": "Selecionar tudo",
+      "download": "Download",
+      "preview": "Antevisão"
+    },
+    "ko": {
+      "fileSize": "문서 크기：",
+      "allSelect": "전체 선택",
+      "download": "다운로드",
+      "preview": "미리보기"
+    },
+    "ja": {
+      "fileSize": "文書のサイズ",
+      "allSelect": "すべて選択",
+      "download": "ダウンロード",
+      "preview": "プレビュー"
+    },
+    "es": {
+      "fileSize": "Tamaño del archivo:",
+      "allSelect": "Seleccionar todo",
+      "download": "Descargar",
+      "preview": "Avance"
+    },
+    "ar": {
+      "fileSize": "جحم الملف:",
+      "allSelect": "اختر الكل",
+      "download": "تنزيل",
+      "preview": "المعاينة"
+    },
+    "it": {
+      "fileSize": "Dimensione del file:",
+      "allSelect": "Seleziona tutto",
+      "download": "Scarica",
+      "preview": "Anteprima"
+    },
+    "bn": {
+      "fileSize": "ফাইলের আঁকার:",
+      "allSelect": "সব চয়ন করুন",
+      "download": "ডাউনলোড",
+      "preview": "প্রিভিউ"
+    },
+    "da": {
+      "fileSize": "Filstørrelse:",
+      "allSelect": "Vælg alle",
+      "download": "Download",
+      "preview": "Forpremier"
+    },
+    "idn": {
+      "fileSize": "Ukuran file:",
+      "allSelect": "Pilih semua",
+      "download": "Download",
+      "preview": "Pratinjau"
+    },
+    "th": {
+      "fileSize": "ขนาดไฟล์:",
+      "allSelect": "เลือกทั้งหมด",
+      "download": "ดาวน์โหลด",
+      "preview": "ดูตัวอย่าง"
+    },
+    "vi": {
+      "fileSize": "Kích thước tập tin:",
+      "allSelect": "Lựa chọn tất cả",
+      "download": "Tải xuống",
+      "preview": "Xem trước"
+    },
+    "tr": {
+      "fileSize": "Dosya boyutu:",
+      "allSelect": "Hepsini Seç",
+      "download": "İndir",
+      "preview": "Ön izleme"
+    },
+    "nl": {
+      "fileSize": "Bestandsgrootte",
+      "allSelect": "Selecteer alles",
+      "download": "Downloaden",
+      "preview": "Voorvertoning"
+    },
+    "pl": {
+      "fileSize": "Wielkość pliku:",
+      "allSelect": "Wybierz wszystko",
+      "download": "Pobierz",
+      "preview": "Podgląd"
+    },
+    "zh_HN": {
+      "fileSize": "文件大小:",
+      "allSelect": "全選",
+      "download": "下載",
+      "preview": "預覽"
     }
   },
   "datasource": "prop",

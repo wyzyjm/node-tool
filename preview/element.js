@@ -66,6 +66,9 @@ $(function(){
     $(".setCompI18n").click(function(){
         setI18n(1)
     })
+    $(".asyncCompJson").click(function(){
+        asyncI18n()
+    })
     $(".setVueI18n").click(function(){
         setI18n(2)
     })
@@ -73,6 +76,17 @@ $(function(){
         setI18n(3)
     })
 })
+async function asyncI18n(){
+    console.log(1111)
+    let result=await (await fetch('/element/asyncI18n')).json();
+    if(result.success){
+        layer.open({
+            title: '设置翻译词条成功',
+            content: '位置：'+result.success
+        });  
+    }
+    console.log(result,111)
+}
 async function setI18n(k){
     let result=await (await fetch('/element/setI18n?k='+k)).json();
     if(result.success){

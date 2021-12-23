@@ -27,6 +27,63 @@
   "i18n": {
     "zh_CN": {
       "noUrl": "内嵌容器iframe"
+    },
+    "en": {
+      "noUrl": "Embedded container iframe"
+    },
+    "de": {
+      "noUrl": "Embedded container iframe"
+    },
+    "fr": {
+      "noUrl": "conteneur intégré à l'intérieur iframe"
+    },
+    "ru": {
+      "noUrl": "Встроенный контейнер iframe"
+    },
+    "pt": {
+      "noUrl": "Iframe de contêiner integrado"
+    },
+    "ko": {
+      "noUrl": "내장 용기 iframe"
+    },
+    "ja": {
+      "noUrl": "埋め込みコンテナiframe"
+    },
+    "es": {
+      "noUrl": "Contenedor integrado iframe"
+    },
+    "ar": {
+      "noUrl": "وعاء مضمنة iframe"
+    },
+    "it": {
+      "noUrl": "Embedded container iframe"
+    },
+    "bn": {
+      "noUrl": "এমবেড করা ফ্রেম iframe"
+    },
+    "da": {
+      "noUrl": "Indbygget iframe"
+    },
+    "idn": {
+      "noUrl": "Inline kontainer iframe"
+    },
+    "th": {
+      "noUrl": "iframe คอนเทนเนอร์แบบฝังตัว"
+    },
+    "vi": {
+      "noUrl": "Nhúng iFrame"
+    },
+    "tr": {
+      "noUrl": "Satır içi kapsayıcı iframe"
+    },
+    "nl": {
+      "noUrl": "Ingebouwde container iframe"
+    },
+    "pl": {
+      "noUrl": "Wbudowany pojemnik iframe"
+    },
+    "zh_HN": {
+      "noUrl": "內嵌容器iframe"
     }
   }
 }
