@@ -28,7 +28,6 @@
     position: absolute;
     left: 22px;
     top: 12px;
-    width: 100px;
     border-radius: 4px;
     box-shadow: 0px 2px 8px 0px rgba(22, 45, 61, 0.3);
     background: #fff;
@@ -56,6 +55,16 @@
 }
 .e_loop_K .p_screen .p_screenData label input{
     margin-right: 5px;
+    vertical-align: middle;
+}
+.e_loop_K .p_screen .p_screenData label span {
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 120px;
+    vertical-align: middle;
 }
 .e_loop_K .p_screen .p_optDta{
     padding: 5px 0;
