@@ -7,7 +7,8 @@
             "previewList":"prop.previewList",
             "appList":"prop.appList",
             "sort":"prop.sort",
-            "searchOption":"prop.searchOption"
+            "searchOption":"prop.searchOption",
+            "pageConfig":"prop.pageConfig"
         }
     ]
 }
