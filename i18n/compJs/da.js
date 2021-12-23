@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "Billedoverførselsgrænse",
   "form_img": "billede",
   "form_videoLimit": "Video upload grænse",
-  "form_video": "video"
+  "form_video": "video",
+  "form_remove": "Fjerne",
+  "form_invalidMobile": "Telefonnummerformatet er ikke korrekt",
+  "form_formulaError": "regnefejl"
 }

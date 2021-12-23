@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "Giới hạn tải lên hình ảnh",
   "form_img": "bức ảnh",
   "form_videoLimit": "Giới hạn tải lên video",
-  "form_video": "băng hình"
+  "form_video": "băng hình",
+  "form_remove": "Tẩy",
+  "form_invalidMobile": "Định dạng số điện thoại không đúng",
+  "form_formulaError": "tính toán sai lầm"
 }

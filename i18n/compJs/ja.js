@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "画像のアップロード制限",
   "form_img": "写真",
   "form_videoLimit": "動画のアップロード制限",
-  "form_video": "ビデオ"
+  "form_video": "ビデオ",
+  "form_remove": "削除する",
+  "form_invalidMobile": "電話番号の形式が正しくありません",
+  "form_formulaError": "計算ミス"
 }

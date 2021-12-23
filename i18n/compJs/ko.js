@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "이미지 업로드 제한",
   "form_img": "그림",
   "form_videoLimit": "동영상 업로드 제한",
-  "form_video": "동영상"
+  "form_video": "동영상",
+  "form_remove": "제거하다",
+  "form_invalidMobile": "전화번호 형식이 올바르지 않습니다.",
+  "form_formulaError": "계산 실수"
 }

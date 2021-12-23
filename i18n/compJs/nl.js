@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "Uploadlimiet voor afbeeldingen",
   "form_img": "afbeelding",
   "form_videoLimit": "Limiet voor video-upload",
-  "form_video": "video-"
+  "form_video": "video-",
+  "form_remove": "Verwijderen",
+  "form_invalidMobile": "Het formaat van het telefoonnummer is niet correct",
+  "form_formulaError": "rekenfout"
 }

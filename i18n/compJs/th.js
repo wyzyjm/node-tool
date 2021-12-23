@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "ขีดจำกัดการอัพโหลดภาพ",
   "form_img": "รูปภาพ",
   "form_videoLimit": "ขีดจำกัดการอัปโหลดวิดีโอ",
-  "form_video": "วีดีโอ"
+  "form_video": "วีดีโอ",
+  "form_remove": "ลบ",
+  "form_invalidMobile": "รูปแบบหมายเลขโทรศัพท์ไม่ถูกต้อง",
+  "form_formulaError": "การคำนวณผิดพลาด"
 }

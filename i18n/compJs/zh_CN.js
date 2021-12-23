@@ -38,5 +38,8 @@ window.i18n = {
     "form_imgLimit": "图片限制上传",
     "form_img": "图片",
     "form_videoLimit": "视频限制上传",
-    "form_video": "视频"
+    "form_video": "视频",
+    "form_remove": "移除",
+    "form_invalidMobile": "手机号格式不正确",
+    "form_formulaError": "计算错误"
 }

@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "Batas unggah gambar",
   "form_img": "gambar",
   "form_videoLimit": "Batas unggah video",
-  "form_video": "video"
+  "form_video": "video",
+  "form_remove": "Menghapus",
+  "form_invalidMobile": "Format nomor telepon tidak benar",
+  "form_formulaError": "kesalahan perhitungan"
 }

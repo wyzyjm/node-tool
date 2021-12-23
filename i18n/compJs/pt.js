@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "Limite de upload de imagem",
   "form_img": "foto",
   "form_videoLimit": "Limite de upload de vídeo",
-  "form_video": "vídeo"
+  "form_video": "vídeo",
+  "form_remove": "Remover",
+  "form_invalidMobile": "O formato do número de telefone não está correto",
+  "form_formulaError": "erro de cálculo"
 }

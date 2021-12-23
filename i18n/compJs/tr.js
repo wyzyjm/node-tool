@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "Resim yükleme sınırı",
   "form_img": "resim",
   "form_videoLimit": "Video yükleme sınırı",
-  "form_video": "video"
+  "form_video": "video",
+  "form_remove": "Kaldırmak",
+  "form_invalidMobile": "Telefon numarası biçimi doğru değil",
+  "form_formulaError": "hesaplama hatası"
 }

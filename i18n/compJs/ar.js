@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "حد تحميل الصور",
   "form_img": "صورة",
   "form_videoLimit": "حد تحميل الفيديو",
-  "form_video": "فيديو"
+  "form_video": "فيديو",
+  "form_remove": "إزالة",
+  "form_invalidMobile": "تنسيق رقم الهاتف غير صحيح",
+  "form_formulaError": "خطأ في الحساب"
 }

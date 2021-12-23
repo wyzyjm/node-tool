@@ -38,5 +38,8 @@ window.i18n = {
   "form_imgLimit": "ছবি আপলোড সীমা",
   "form_img": "ছবি",
   "form_videoLimit": "ভিডিও আপলোড সীমা",
-  "form_video": "ভিডিও"
+  "form_video": "ভিডিও",
+  "form_remove": "অপসারণ",
+  "form_invalidMobile": "ফোন নম্বর বিন্যাস সঠিক নয়",
+  "form_formulaError": "গণনার ভুল"
 }
