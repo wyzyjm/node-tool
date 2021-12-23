@@ -252,8 +252,9 @@ app.use(async function (ctx,next) {
                 result=JSON.stringify({error:e.toString()});
             }
         }else if(api=='setI18n'){//设置翻译词条
+            let k=ctx.query.k;
             try{
-                setI18nFun.init()
+                setI18nFun.init(k)
                 result=JSON.stringify({success:true});
             }catch(e){
                 result=JSON.stringify({error:e.toString()});

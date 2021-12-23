@@ -62,13 +62,19 @@ $(function(){
     $(".getI18n").click(function(){
         getI18n()
     })
-    //设置词条
-    $(".setI18n").click(function(){
-        setI18n()
+    // //设置词条
+    $(".setCompI18n").click(function(){
+        setI18n(1)
+    })
+    $(".setVueI18n").click(function(){
+        setI18n(2)
+    })
+    $(".setJsI18n").click(function(){
+        setI18n(3)
     })
 })
-async function setI18n(){
-    let result=await (await fetch('/element/setI18n')).json();
+async function setI18n(k){
+    let result=await (await fetch('/element/setI18n?k='+k)).json();
     if(result.success){
         layer.open({
             title: '设置翻译词条成功',
