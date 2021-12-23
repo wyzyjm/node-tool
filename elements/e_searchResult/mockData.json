@@ -1,13 +1,14 @@
 {
-  "prop": {
-      "previewList":[
+    "prop": {
+        "previewList":[
             {
                 "title":"标题",
                 "key": "title",
                 "element1":"",
                 "element2":"",
                 "element3":"",
-                "isDefault":true
+                "isDefault":true,
+                "openLink":false
             },
             {
                 "title":"图片",
@@ -15,18 +16,26 @@
                 "element1":"",
                 "element2":"",
                 "element3":"",
-                "isDefault":true
+                "isDefault":true,
+                "openLink":false
             }
-      ],
-      "appList":[],
-      "sort":{
-          "field":"",
-          "order":"asc"
-      },
-      "searchOption":{
-          "keywords":"keywords",
-          "appIds":"appIds"
-      }
-  },
-  "i18n": {}
+        ],
+        "appList":[],
+        "sort":{
+            "field":"",
+            "order":"asc"
+        },
+        "searchOption":{
+            "keywords":"keywords",
+            "appIds":"appIds"
+        },
+        "pageConfig": {
+            "showJump": true,
+            "pcRow": 10,
+            "pcColumn": 1,
+            "moColumn": 1,
+            "pageType": "hidden"
+        }
+    },
+    "i18n": {}
 }
