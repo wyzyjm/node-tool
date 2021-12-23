@@ -1,6 +1,7 @@
 .e_loop_K table {
     border-collapse: collapse;
-    width: 100%;
+    width: 99.99%;
+    overflow: auto;
 }
 .e_loop_K table th,
 .e_loop_K table td {
@@ -12,6 +13,10 @@
 .e_loop_K table tbody td{
     position: relative;
     height: 120px;
+    min-width: 120px;
+}
+.e_loop_K .p_iconsBox{
+    margin: 8px 0;
 }
 .e_loop_K .p_icon,
 .e_loop_K .p_screen {
@@ -28,16 +33,35 @@
     box-shadow: 0px 2px 8px 0px rgba(22, 45, 61, 0.3);
     background: #fff;
     z-index: 9999;
+    text-align: left;
+    padding: 6px;
 }
 .e_loop_K .p_screen .p_screenData label {
+    cursor: pointer;
     float: left;
     width: 100%;
     margin: 3px 0;
     text-align: left;
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.e_loop_K .p_screen .p_optDta ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background: #f0f0f0;
+}
+.e_loop_K .p_screen .p_optDta ::-webkit-scrollbar-thumb {
+    background: #D2D2D2;
+}
+.e_loop_K .p_screen .p_screenData label input{
+    margin-right: 5px;
 }
 .e_loop_K .p_screen .p_optDta{
-    padding: 5px;
+    padding: 5px 0;
     overflow: hidden;
+    max-height: 200px;
+    overflow-y: auto;
 }
 .e_loop_K .p_screen .p_clear {
     background: #4d90cb;
@@ -48,7 +72,5 @@
     border-radius: 2px;
     padding: 0 4px;
     cursor: pointer;
-}
-.e_loop_K .p_loopitem{
-    min-width: 50px;
+    display: inline-block;
 }

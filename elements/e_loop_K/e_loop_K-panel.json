@@ -1,10 +1,11 @@
 {
     "panelConfig": [
         {
-            "compName":"setting-loopEleven",
+            "compName":"setting-loopK",
             "title":"循环列数据",
             "bind-value": "prop.columnData",
-            "bind-pageConfig": "prop.pageConfig"
+            "bind-pageConfig": "prop.pageConfig",
+            "bind-columnCount": "prop.columnCount"
         }
     ]
 }
