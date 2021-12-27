@@ -5,7 +5,7 @@ const {promises: {readFile,writeFile,readdir,stat}} = require('fs');
 const ELE_PATH=path.join(__dirname, '../elements/');
 module.exports={
     //读取xls文件
-    getXls(){
+    getXls(k){
         let _=this;
         let filePath = path.resolve('./i18n/xls');
         let exBuf=fs.readFileSync(filePath+'/i18n.xlsx');
@@ -26,8 +26,13 @@ module.exports={
                     })
                 }
             })
-            // _.setElemI18n(data,keyArr)  
-            _.setVueI18n(data,keyArr)  
+            if(k==1){
+                _.setElemI18n(data,keyArr)  
+            }else if(k==2){
+                _.setVueI18n(data,keyArr)  
+            }else if(k==3){
+                _.setJsI18n(data,keyArr)
+            }
         }).catch(error=>{
             console.log(error);
         });
@@ -119,6 +124,32 @@ module.exports={
             })
         });
     },
+    //设置js词条
+    async setJsI18n(data,keyArr){
+        let _=this;
+        let pcPath=path.join(__dirname, './compJs/');
+        fs.readFile(pcPath+'zh_CN.js', "utf-8", function(error, response) {
+            let res = response.replace("window.i18n = ","")
+            res = JSON.parse(res)
+            let cnData = data.zh_CN
+            keyArr.forEach(e=>{
+                if(e!='zh_CN'){
+                    let nObj = {}
+                    for(let i in res){
+                        let ind = cnData.findIndex(n=>n.trim()==res[i].trim())
+                        if(ind>-1){
+                            nObj[i] = data[e][ind]
+                        }else{
+                            nObj[i] = res[i]
+                        }
+                    }
+                    let nStr = "window.i18n = "+ JSON.stringify(nObj,null,2)
+                    let nPath = pcPath + e + '.js'
+                    _.setFile(nPath,nStr)
+                }
+            })
+        });
+    },
     async setFile(nPath,nStr){
         await writeFile(nPath,nStr,'utf8');
     },
@@ -143,7 +174,7 @@ module.exports={
         return str
     },
     //初始化
-    init(){
-        this.getXls()
+    init(k){
+        this.getXls(k)
     },
 }

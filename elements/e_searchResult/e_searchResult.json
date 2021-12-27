@@ -3,11 +3,11 @@
   "styleId": "e_searchResult",
   "styleClass": "s_list",
   "type": "form",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"p_container\">\n        <p class=\"p_preview\">单图效果</p>\n        <div class=\"cbox-${id}-0 p_item1\"></div>\n        <p class=\"p_preview\">多图效果</p>\n        <div class=\"cbox-${id}-1 p_item2\"></div>\n        <p class=\"p_preview\">无图效果</p>\n        <div class=\"cbox-${id}-2 p_item3\"></div>\n        <p class=\"p_preview\">无数据效果</p>\n        <div class=\"cbox-${id}-3 p_noData\"></div>\n    </div>\n    <div class=\"p_list\"></div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"p_container\">\n        <p class=\"p_preview\">单图效果</p>\n        <div class=\"cbox-${id}-0 p_item1\"></div>\n        <p class=\"p_preview\">多图效果</p>\n        <div class=\"cbox-${id}-1 p_item2\"></div>\n        <p class=\"p_preview\">无图效果</p>\n        <div class=\"cbox-${id}-2 p_item3\"></div>\n        <p class=\"p_preview\">无数据效果</p>\n        <div class=\"cbox-${id}-3 p_noData\"></div>\n        <p class=\"p_preview\">搜索中效果</p>\n        <div class=\"cbox-${id}-4 p_loading\"></div>\n    </div>\n    <div class=\"p_list\"></div>\n    <div class=\"p_page\"></div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_searchResult .p_preview{\n    line-height: 50px;\n}\n.e_searchResult .p_container{\n    display: none;\n}"
+      "cssText": ".e_searchResult .p_preview{\n    line-height: 50px;\n}\n.e_searchResult .p_container{\n    display: none;\n}\n.e_searchResult .p_page{\n    text-align: center;\n    padding-top: 30px;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -30,7 +30,8 @@
         "element1": "",
         "element2": "",
         "element3": "",
-        "isDefault": true
+        "isDefault": true,
+        "openLink": false
       },
       {
         "title": "图片",
@@ -38,7 +39,8 @@
         "element1": "",
         "element2": "",
         "element3": "",
-        "isDefault": true
+        "isDefault": true,
+        "openLink": false
       }
     ],
     "appList": [],
@@ -49,10 +51,36 @@
     "searchOption": {
       "keywords": "keywords",
       "appIds": "appIds"
+    },
+    "pageConfig": {
+      "showJump": true,
+      "pcRow": 10,
+      "pcColumn": 1,
+      "moColumn": 1,
+      "pageType": "hidden"
     }
   },
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {},
+    "en": {},
+    "de": {},
+    "fr": {},
+    "ru": {},
+    "pt": {},
+    "ko": {},
+    "ja": {},
+    "es": {},
+    "ar": {},
+    "it": {},
+    "bn": {},
+    "da": {},
+    "idn": {},
+    "th": {},
+    "vi": {},
+    "tr": {},
+    "nl": {},
+    "pl": {},
+    "zh_HN": {}
   },
   "datasource": "prop",
   "container": true

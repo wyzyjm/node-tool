@@ -2,11 +2,11 @@
   "cname": "备案号",
   "styleId": "e_provider",
   "styleClass": "s_title",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    <a href=\"https://beian.miit.gov.cn\" target=\"_blank\">\r\n        {{${i18n.recordName}}}\r\n    </a>\r\n    <input type=\"hidden\" name=\"i18nJson\" value=\"{{{i18nJson}}}\" />\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <a href=\"https://beian.miit.gov.cn\" target=\"_blank\">{{${recordName}}}</a>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_provider {\r\n    text-align: center;\r\n}\r\n"
+      "cssText": ".e_provider {\n    text-align: center;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,11 +21,30 @@
       "cssText": ""
     }
   ],
-  "prop": {},
+  "prop": {
+    "recordName": "京ICP备10002622号-38"
+  },
   "i18n": {
-    "zh_CN": {
-      "recordName": "京ICP备10002622号-38"
-    }
+    "zh_CN": {},
+    "en": {},
+    "de": {},
+    "fr": {},
+    "ru": {},
+    "pt": {},
+    "ko": {},
+    "ja": {},
+    "es": {},
+    "ar": {},
+    "it": {},
+    "bn": {},
+    "da": {},
+    "idn": {},
+    "th": {},
+    "vi": {},
+    "tr": {},
+    "nl": {},
+    "pl": {},
+    "zh_HN": {}
   },
   "datasource": "prop"
 }

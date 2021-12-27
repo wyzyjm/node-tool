@@ -28,6 +28,63 @@
   "i18n": {
     "zh_CN": {
       "count": "数量"
+    },
+    "en": {
+      "count": "Quantity"
+    },
+    "de": {
+      "count": "Anzahl"
+    },
+    "fr": {
+      "count": "Quantité"
+    },
+    "ru": {
+      "count": "Количество"
+    },
+    "pt": {
+      "count": "Quantidade"
+    },
+    "ko": {
+      "count": "수량"
+    },
+    "ja": {
+      "count": "数量"
+    },
+    "es": {
+      "count": "Cantidad"
+    },
+    "ar": {
+      "count": "عدد"
+    },
+    "it": {
+      "count": "Quantità"
+    },
+    "bn": {
+      "count": "পরিমাণ"
+    },
+    "da": {
+      "count": "Antal"
+    },
+    "idn": {
+      "count": "Kuantitas"
+    },
+    "th": {
+      "count": "ปริมาณ"
+    },
+    "vi": {
+      "count": "Số lượng"
+    },
+    "tr": {
+      "count": "Miktar"
+    },
+    "nl": {
+      "count": "Hoeveelheid"
+    },
+    "pl": {
+      "count": "Ilość"
+    },
+    "zh_HN": {
+      "count": "數量"
     }
   },
   "datasource": "prop",

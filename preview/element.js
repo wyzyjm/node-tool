@@ -62,20 +62,49 @@ $(function(){
     $(".getI18n").click(function(){
         getI18n()
     })
-    //设置词条
-    $(".setI18n").click(function(){
-        setI18n()
+    // //设置词条
+    $(".setCompI18n").click(function(){
+        setI18n(1)
+    })
+    $(".asyncCompJson").click(function(){
+        asyncI18n()
+    })
+    $(".setVueI18n").click(function(){
+        setI18n(2)
+    })
+    $(".setJsI18n").click(function(){
+        setI18n(3)
+    })
+    $(".asyncCompJs").click(function(){
+        asyncJsI18n()
     })
 })
-async function setI18n(){
-    let result=await (await fetch('/element/setI18n')).json();
+async function asyncJsI18n(){
+    let result=await (await fetch('/element/asyncJsI18n')).json();
     if(result.success){
         layer.open({
             title: '设置翻译词条成功',
             content: '位置：'+result.success
         });  
     }
-    console.log(result,111)
+}
+async function asyncI18n(){
+    let result=await (await fetch('/element/asyncI18n')).json();
+    if(result.success){
+        layer.open({
+            title: '设置翻译词条成功',
+            content: '位置：'+result.success
+        });  
+    }
+}
+async function setI18n(k){
+    let result=await (await fetch('/element/setI18n?k='+k)).json();
+    if(result.success){
+        layer.open({
+            title: '设置翻译词条成功',
+            content: '位置：'+result.success
+        });  
+    }
 }
 async function getI18n(){
     let result=await (await fetch('/element/getI18n')).json();
@@ -85,7 +114,6 @@ async function getI18n(){
             content: '位置：'+result.success
         });  
     }
-    console.log(result,111)
 }
 //初始化元素列表
 async function initElements() {

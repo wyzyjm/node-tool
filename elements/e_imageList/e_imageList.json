@@ -54,6 +54,63 @@
   "i18n": {
     "zh_CN": {
       "noData": "暂无数据"
+    },
+    "en": {
+      "noData": "No data"
+    },
+    "de": {
+      "noData": "Keine Daten"
+    },
+    "fr": {
+      "noData": "Aucune donnée pour l'instant"
+    },
+    "ru": {
+      "noData": "Нет данных"
+    },
+    "pt": {
+      "noData": "Sem dados no momento"
+    },
+    "ko": {
+      "noData": "잠시 데이터가 없음"
+    },
+    "ja": {
+      "noData": "データなし"
+    },
+    "es": {
+      "noData": "No hay datos"
+    },
+    "ar": {
+      "noData": "لا توجد المعلمات موقتا"
+    },
+    "it": {
+      "noData": "Nessun dato"
+    },
+    "bn": {
+      "noData": "কোন তথ্য নেই"
+    },
+    "da": {
+      "noData": "Intet data"
+    },
+    "idn": {
+      "noData": "Tiada data sekarang"
+    },
+    "th": {
+      "noData": "ไม่มีข้อมูล"
+    },
+    "vi": {
+      "noData": "Tạm thời không có dữ liệu"
+    },
+    "tr": {
+      "noData": "Veri Yok"
+    },
+    "nl": {
+      "noData": "Geen gegevens"
+    },
+    "pl": {
+      "noData": "Brak danych"
+    },
+    "zh_HN": {
+      "noData": "暫無數據"
     }
   },
   "datasource": "prop"

@@ -1,50 +1,69 @@
 {
-    "cname": "翻屏容器",
-    "styleId": "e_turnPage",
-    "styleClass": "",
-    "tmpl": "<div class=\"${elemId} ${styleClass} swiper-container p_turnPage_container\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n        <div class=\"swiper-wrapper\">\r\n            {{#each ${dataList}}}\r\n                <div id=\"content_box-{{../prop.__instanceId}}-{{@index}}\" class=\"swiper-slide p_turnPage_slide\"> </div>\r\n            {{/each}}\r\n        </div>\r\n        <!--分页器-->\r\n        <div class=\"swiper-pagination p_turnPage_pagination\"> </div>\r\n    {{/if}}\r\n</div>",
-    "css": [
-        {
-            "media": "",
-            "cssText": ".e_turnPage {\n    width: 100%;\n    height: 800px;\n    min-height: 300px;\n    max-height: 100vh;\n    overflow: hidden;\n}\n.e_turnPage .p_turnPage_container {\n    width: 100%;\n    height: 100%;\n}\n.e_turnPage .p_turnPage_slide:nth-child(odd) {\n    background-color: #85d4e6;\n}\n.e_turnPage .p_turnPage_slide:nth-child(even) {\n    background-color: #cfc7f4;\n}\n/* slide */\n.e_turnPage .p_turnPage_slide {\n    overflow-y: auto;\n}\n/* 分页器 */\n.e_turnPage .p_turnPageItem {\n    width: 25px;\n    height: 25px;\n    display: inline-block;\n    margin: 10px;\n    border-radius: 100%;\n    border: 1px solid #d7d7d7;\n}\n/* 高亮 */\n.e_turnPage .p_turnPageItem_active {\n    background-color: #409eff;\n    border-color: #409eff;\n}\n"
-        },
-        {
-            "media": "screen and (max-width:768px)",
-            "cssText": ""
-        },
-        {
-            "media": "screen and (min-width: 769px)",
-            "cssText": ""
-        },
-        {
-            "media": "screen and (max-width: 1024px) and (min-width: 769px)",
-            "cssText": ""
-        }
+  "cname": "翻屏容器",
+  "styleId": "e_turnPage",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass} swiper-container p_turnPage_container\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n        <div class=\"swiper-wrapper\">\r\n            {{#each ${dataList}}}\r\n                <div id=\"content_box-{{../prop.__instanceId}}-{{@index}}\" class=\"swiper-slide p_turnPage_slide\"> </div>\r\n            {{/each}}\r\n        </div>\r\n        <!--分页器-->\r\n        <div class=\"swiper-pagination p_turnPage_pagination\"> </div>\r\n    {{/if}}\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_turnPage {\n    width: 100%;\n    height: 800px;\n    min-height: 300px;\n    max-height: 100vh;\n    overflow: hidden;\n}\n.e_turnPage .p_turnPage_container {\n    width: 100%;\n    height: 100%;\n}\n.e_turnPage .p_turnPage_slide:nth-child(odd) {\n    background-color: #85d4e6;\n}\n.e_turnPage .p_turnPage_slide:nth-child(even) {\n    background-color: #cfc7f4;\n}\n/* slide */\n.e_turnPage .p_turnPage_slide {\n    overflow-y: auto;\n}\n/* 分页器 */\n.e_turnPage .p_turnPageItem {\n    width: 25px;\n    height: 25px;\n    display: inline-block;\n    margin: 10px;\n    border-radius: 100%;\n    border: 1px solid #d7d7d7;\n}\n/* 高亮 */\n.e_turnPage .p_turnPageItem_active {\n    background-color: #409eff;\n    border-color: #409eff;\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "needjs": true,
+    "dataList": [
+      {
+        "title": "第一屏"
+      },
+      {
+        "title": "第二屏"
+      },
+      {
+        "title": "第三屏"
+      }
     ],
-    "prop": {
-        "needjs": true,
-        "dataList": [
-            {
-                "title": "第一屏"
-            },
-            {
-                "title": "第二屏"
-            },
-            {
-                "title": "第三屏"
-            }
-        ],
-        "settings": {
-            "pageDomSite": "right",
-            "direction": "vertical",
-            "effect": "effect1",
-            "speed": 1000
-        }
-    },
-    "i18n": {
-        "zh_CN": {}
-    },
-    "datasource": "prop",
-    "isContainer": true,
-    "scope": true
+    "settings": {
+      "pageDomSite": "right",
+      "direction": "vertical",
+      "effect": "effect1",
+      "speed": 1000
+    }
+  },
+  "i18n": {
+    "zh_CN": {},
+    "en": {},
+    "de": {},
+    "fr": {},
+    "ru": {},
+    "pt": {},
+    "ko": {},
+    "ja": {},
+    "es": {},
+    "ar": {},
+    "it": {},
+    "bn": {},
+    "da": {},
+    "idn": {},
+    "th": {},
+    "vi": {},
+    "tr": {},
+    "nl": {},
+    "pl": {},
+    "zh_HN": {}
+  },
+  "datasource": "prop",
+  "isContainer": true,
+  "scope": true
 }

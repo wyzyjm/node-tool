@@ -38,7 +38,7 @@
             </div>
             <div class="ctdiv">
                 <button class="btn btn-primary getI18n" type="button" data-toggle="modal">读取中文词条</button>
-                <button class="btn btn-primary setI18n" type="button" data-toggle="modal">设置翻译词条</button>
+                <button class="btn btn-primary setI18n" type="button" data-toggle="modal" data-target="#setI18n">设置翻译词条</button>
             </div>
         </div>
     </div>
@@ -74,27 +74,6 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
                 <button type="button" class="btn btn-primary takeToEdit">取回再编辑</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="upVersion" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="upVersionLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="upVersionLabel">请填写组件: <span class="compName"></span> 的版本升级说明</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <textarea class="form-control upMessage" id="upMessage" placeholder="组件版本升级说明"></textarea>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary confirmUpVersion">确定</button>
             </div>
             </div>
         </div>
@@ -216,6 +195,34 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
                 <button type="button" class="btn btn-primary confirmnewElement">确定</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="setI18n" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="setI18nLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="setI18nLabel">生成词条文件</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="ctdiv">
+                    <button class="btn btn-primary setCompI18n" type="button">生成组件词条</button>
+                    <button class="btn btn-primary asyncCompJson" type="button">一键同步</button>
+                </div>
+                <div class="ctdiv">
+                    <button class="btn btn-primary setVueI18n" type="button">生成VUE词条</button>
+                </div>
+                <div class="ctdiv">
+                    <button class="btn btn-primary setJsI18n" type="button">生成组件JS词条</button>
+                    <button class="btn btn-primary asyncCompJs" type="button">一键同步</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
             </div>
             </div>
         </div>

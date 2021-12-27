@@ -1,9 +1,9 @@
 <div class="e_loop_K s_list" needjs="true">
-    <table class="contents"> 
+    <table class="contents p_list"> 
         {{#if prop.pageConfig.needHead}}
         <thead class="p_head">
             <tr>
-                {{#each prop.columnData}}
+                <!-- {{#each prop.columnData}} -->
                     <th data-index="{{@index}}" type="string">
                         <span class="p_title">{{title}}</span>
                         <div class="p_iconsBox">
@@ -20,53 +20,129 @@
                                     <div class="p_screenData">
                                         <div class="p_clear">清空筛选</div>
                                         <div class="p_optDta">
-                                            {{#each prop.sxData}}
-                                                <label class="p_label"><input type="checkbox" value="{{name}}"/>{{name}}</label>
-                                            {{/each}}
                                         </div>
                                     </div>
                                 </span>
                             {{/if}}
                         </div>
                     </th>
-                {{/each}}
+                <!-- {{/each}} -->
             </tr>
         </thead>
         {{/if}}
         <tbody class="p_body">
-            {{#prop.dataList}}
+            <!-- {{#each prop.dataList}} -->
                 <tr class="p_info">
-                    {{#prop.columnData}}
+                    <!-- {{#gte ../prop.columnCount "1"}} -->
                         <td>
-                            <div class="cbox-${id}-{{@index}} p_loopitem"></div>
+                            <div class="cbox-${id}-1 p_loopitem"></div>
                         </td>
-                    {{/prop.columnData}}
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "2"}} -->
+                        <td>
+                            <div class="cbox-${id}-2 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "3"}} -->
+                        <td>
+                            <div class="cbox-${id}-3 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "4"}} -->
+                        <td>
+                            <div class="cbox-${id}-4 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "5"}} -->
+                        <td>
+                            <div class="cbox-${id}-5 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "6"}} -->
+                        <td>
+                            <div class="cbox-${id}-6 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "7"}} -->
+                        <td>
+                            <div class="cbox-${id}-7 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "8"}} -->
+                        <td>
+                            <div class="cbox-${id}-8 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "9"}} -->
+                        <td>
+                            <div class="cbox-${id}-9 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "10"}} -->
+                        <td>
+                            <div class="cbox-${id}-10 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "11"}} -->
+                        <td>
+                            <div class="cbox-${id}-11 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "12"}} -->
+                        <td>
+                            <div class="cbox-${id}-12 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "13"}} -->
+                        <td>
+                            <div class="cbox-${id}-13 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "14"}} -->
+                        <td>
+                            <div class="cbox-${id}-14 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "15"}} -->
+                        <td>
+                            <div class="cbox-${id}-15 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "16"}} -->
+                        <td>
+                            <div class="cbox-${id}-16 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "17"}} -->
+                        <td>
+                            <div class="cbox-${id}-17 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "18"}} -->
+                        <td>
+                            <div class="cbox-${id}-18 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "19"}} -->
+                        <td>
+                            <div class="cbox-${id}-19 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
+                    <!-- {{#gte ../prop.columnCount "20"}} -->
+                        <td>
+                            <div class="cbox-${id}-20 p_loopitem"></div>
+                        </td>
+                    <!-- {{/gte}} -->
                 </tr>
-            {{/prop.dataList}}
-            {{!-- <tr class="p_info">
-                <td>
-                    <span>小s</span>
-                    <span >19</span>
-                </td>
-            </tr>
-            <tr class="p_info">
-                <td>
-                    <span>小a</span>
-                    <span>189999999</span>
-                    <input type="hidden" value="age">
-                </td>
-            </tr>
-            <tr class="p_info">
-                <td>
-                    <span>小ccccccccccc</span>
-                    <span>11</span>
-                    <input type="hidden" value="name">
-                </td>
-            </tr> --}}
+            <!-- {{/each}} -->
         </tbody>
     </table>
     <div class="p_page">
-        {{{nPaging prop.page prop.pageConfig datasource i18nJson ${id}}}}
+        {{!-- {{{nPaging prop.page prop.pageConfig datasource i18nJson ${id}}}} --}}
+        {{{nPaging prop.page prop.pageConfig datasource i18nJson }}}
     </div>
-
+    <!-- 所需数据 -->
+    <input type="hidden" name="_config" value='{{$toJson datasource._config}}'>
+    <input type="hidden" name="pageParamsJson" value='{{$toJson datasource.page}}'>
+    <input type="hidden" name="i18nJson" value='{{i18nJson}}'>
 </div>

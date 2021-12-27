@@ -1,22 +1,15 @@
 {
     "prop": {
         "dataList": [
-          {"name": "小d", "title": "标题2", "age": 19},
-          {"name": "小EEEEEEE", "title": "五菱宏光MINI", "price": 9.9}
+          {}
         ],
+        "columnCount": 1,
         "columnData": [
             {
-              "title": "迪迦",
-              "needSort": true,
-              "needScreen": true
-            },
-            {
-              "title": "汽车",
+              "title": "循环体",
               "needSort": true,
               "needScreen": true
             }
-        ],
-        "sxData": [
         ],
         "page": {
             "from": 0,
@@ -55,5 +48,212 @@
         "loadNow": "加载中",
         "noMore": "没有更多了",
         "noData": "暂无数据"
+    },
+    "datasource": {
+        "_config": {
+            "appId": "exist-data-source",
+            "cname": "列表",
+            "pageParams": [
+                {
+                    "code": "_detailId",
+                    "name": "_detailId"
+                },
+                {
+                    "code": "name",
+                    "name": "name"
+                }
+            ],
+            "metaUrl": "/fwebapi/cms/lowcode/1293/21446/list/meta?cate=0",
+            "api": "/fwebapi/cms/lowcode/1293/21446/list?cate=0",
+            "id": "datasource1",
+            "type": "list",
+            "params": {
+                "size": 50,
+                "query": [
+                    {
+                        "esField": "CID",
+                        "groupEnd": "1",
+                        "field": "CID",
+                        "sourceType": "page",
+                        "logic": "and",
+                        "groupBegin": "1",
+                        "value": "_detailId",
+                        "operator": "eq"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_symbol_description",
+                        "groupEnd": "1",
+                        "field": "description",
+                        "sourceType": "page",
+                        "logic": "and",
+                        "value": "name",
+                        "operator": "eq"
+                    }
+                ],
+                "from": 0,
+                "sort": []
+            },
+            "valueUrl": "/fwebapi/cms/lowcode/1293/21446/list/value?cate=0",
+            "_dataFilter": {
+                "filter": true,
+                "showCondition": true,
+                "showSearch": "_detailId",
+                "fields": [
+                    {
+                        "esField": "DETAIL_ES.es_float_number_37V2YA46",
+                        "field": "number_37V2YA46",
+                        "selectMode": "radio",
+                        "values": [
+                            {
+                                "valueType": "all",
+                                "name": "大地方",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": ""
+                            },
+                            {
+                                "valueType": "all",
+                                "name": "胡椒粉感觉",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": ""
+                            }
+                        ],
+                        "name": "访问两",
+                        "displayMode": "tag"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_multi_associationData_3H1S8a05",
+                        "field": "associationData_3H1S8a05",
+                        "selectMode": "",
+                        "values": [
+                            {
+                                "valueType": "all",
+                                "name": "adfadsf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "inputRange",
+                                "value": "normal"
+                            }
+                        ],
+                        "name": "asdfasdf af",
+                        "displayMode": "input"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_symbol_text_67j4VR7J",
+                        "field": "text_67j4VR7J",
+                        "selectMode": "",
+                        "values": [
+                            {
+                                "valueType": "all",
+                                "name": "adfasdf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "inputRange",
+                                "value": "date"
+                            }
+                        ],
+                        "name": "adfasfadfs",
+                        "displayMode": "input"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_symbol_address_og624h08province",
+                        "field": "address_og624h08province",
+                        "selectMode": "radio",
+                        "values": [
+                            {
+                                "valueType": "all",
+                                "name": "adfadsf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": ""
+                            },
+                            {
+                                "valueType": "all",
+                                "name": "adfadf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": ""
+                            }
+                        ],
+                        "name": "sdfaef",
+                        "displayMode": "select"
+                    },
+                    {
+                        "esField": "DETAIL_ES.es_symbol_address_og624h08city",
+                        "field": "address_og624h08city",
+                        "selectMode": "multiple",
+                        "values": [
+                            {
+                                "valueType": "custom",
+                                "name": "adfadsf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": "北京"
+                            },
+                            {
+                                "valueType": "custom",
+                                "name": "asdfadsf",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": "企业网点"
+                            },
+                            {
+                                "valueType": "all",
+                                "name": "adfaeee",
+                                "range": {
+                                    "left": 0,
+                                    "right": 0,
+                                    "leftType": "",
+                                    "rightType": ""
+                                },
+                                "filterType": "value",
+                                "value": ""
+                            }
+                        ],
+                        "name": "afaf",
+                        "displayMode": "select"
+                    }
+                ]
+            }
+        }
     }
 }
