@@ -6,7 +6,7 @@
             <li class="p_c_item">
                 <p class="p_c_t js_editor_click">
                     <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}"
-                    class="p_c_title{{#eq selected true}}active{{/eq}} deep-{{@deep}}-{{@deep}}"
+                    class="p_c_title{{@deep}} {{#eq selected true}}active{{/eq}} deep"
                     target="{{#eq target 'BLANK'}}_blank{{/eq}}">
                         {{categoryName}}
                     </a>
