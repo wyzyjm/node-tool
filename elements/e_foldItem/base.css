@@ -9,11 +9,10 @@
     min-height: 42px;
     padding: 8px 20px;
     position: relative;
-    padding-left: 60px;
     text-align: justify;
 }
 .e_foldItem .p_ask{
-    padding-right: 150px;
+    padding-right: 170px;
 }
 .e_foldItem .p_arrow{
     width: 0;
@@ -28,7 +27,6 @@
     cursor: pointer;
 }
 .e_foldItem .p_asktitle{
-    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -44,15 +42,9 @@
 }
 .e_foldItem .p_icon,
 .e_foldItem .p_answer_icon{
-    width: 24px;
-    height: 24px;
-    display: block;
-    line-height: 24px;
-    text-align: center;
+    padding: 4px 5px;
+    margin-right:5px;
     font-style: normal;
-    position: absolute;
-    left: 20px;
-    top:9px;
     border-radius: 2px;
 }
 .e_foldItem.showDetail .p_answer{

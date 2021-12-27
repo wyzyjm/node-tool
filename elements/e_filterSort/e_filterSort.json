@@ -2,7 +2,7 @@
   "cname": "筛选排序",
   "styleId": "e_filterSort",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"s_body p_nav\">\n        <div class=\"p_nav_list\">\n                <a href=\"#\" class=\"s_body p_nav_a\"  data-field=\"\">{{${i18n.zSort}}}\n                    <span class=\"p_down_san\">\n                        {{{${downSan}}}}\n                    </span>\n                </a>\n                <a href=\"#\" class=\"s_body p_nav_a\" data-sort='2' data-field='publishDate'>{{${i18n.upTime}}}\n                    <span class=\"p_opear\" >\n                        <i class=\" p_up\" data-ename=\"增\">\n                            {{{${opUp}}}}\n                        </i>\n                        <i class=\"p_down\" data-ename=\"减\">\n                             {{{${opDown}}}}\n                            </i>\n                    </span>\n                   \n                </a>\n                <a href=\"#\" class=\"s_body p_nav_a\" data-sort='2' data-field='pyName'>{{${i18n.product}}}\n                     <span class=\"p_opear\" >\n                         <i class=\"p_up\"  data-ename=\"增\">\n                             {{{${opUp}}}}\n                        </i>\n                        <i class=\"p_down\" data-ename=\"减\">\n                            {{{${opDown}}}}\n                        </i>\n                    </span>\n                </a>\n                <a href=\"#\" class=\"s_body p_nav_a\" data-sort='2'  data-field='productCode'>{{${i18n.product}Num}}\n                     <span class=\"p_opear\" >\n                        <i class=\"p_up\" data-ename=\"增\">\n                            {{{${opUp}}}}\n                        </i>\n                        <i class=\"p_down\" data-ename=\"减\">\n                            {{{${opDown}}}}\n                        </i>\n                    </span>\n                </a>\n                <a href=\"#\" class=\"e_body p_nav_a\" data-sort='2' data-field='retailPrice'>{{${i18n.price}}}\n                     <span class=\"p_opear\" >\n                        <i class=\"p_up\" data-ename=\"增\">\n                            {{{${opUp}}}}\n                        </i>\n                        <i class=\"p_down\" data-ename=\"减\">\n                             {{{${opDown}}}}\n                        </i>\n                    </span>\n                </a>\n                {{!-- <a href=\"#\" class=\"e_body p_nav_a\" data-field='sale'>{{${i18n.sale}}}\n                      <span class=\"p_down_san\" data-ename=\"排序icon\">\n                          {{{${downSan}}}}\n                    </span> \n                </a> --}}\n        </div>\n        <div class=\"p_nav_page\" data-ename=\"页码\" data-from=\"{{${page}.from}}\" data-size={{${page}.size}} data-totalCount=\"{{${page}.totalCount}}\">\n            <span class=\"p_page_tall\" data-ename=\"页数\">{{${i18n.pageWhole}}} <em class=\"p_style_normal\">{{${page}.totalCount}}</em>  {{${i18n.unit}}}{{${i18n.product}s}}</span>\n            {{!-- <span class=\"p_page_text\" data-ename=\"页码数内容\"><em class=\"text-danger p_style_normal\">{{${page}.from}}</em>/ <em class=\"p_style_normal\">{{${page}.size}}</em></span>\n            <a href=\"#\" class=\"p_page_prev p_disabled\" data-ename=\"上一页\"><</a>\n            <a href=\"#\" class=\"p_page_next\" data-ename=\"下一页\">></a> --}}\n        </div>\n    </div>\n     <input type=\"hidden\" name=\"view\" value='{{{view}}}'>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <div class=\"s_body p_nav\">\n        <div class=\"p_nav_list\">\n                <a href=\"#\" class=\"s_body p_nav_a\"  data-field=\"\">{{${i18n.zSort}}}\n                    <span class=\"p_down_san\">\n                        {{{${downSan}}}}\n                    </span>\n                </a>\n                <a href=\"#\" class=\"s_body p_nav_a\" data-sort='2' data-field='publishDate'>{{${i18n.upTime}}}\n                    <span class=\"p_opear\" >\n                        <i class=\" p_up\" data-ename=\"增\">\n                            {{{${opUp}}}}\n                        </i>\n                        <i class=\"p_down\" data-ename=\"减\">\n                             {{{${opDown}}}}\n                            </i>\n                    </span>\n                   \n                </a>\n                <a href=\"#\" class=\"s_body p_nav_a\" data-sort='2' data-field='pyName'>{{${i18n.product}}}\n                     <span class=\"p_opear\" >\n                         <i class=\"p_up\"  data-ename=\"增\">\n                             {{{${opUp}}}}\n                        </i>\n                        <i class=\"p_down\" data-ename=\"减\">\n                            {{{${opDown}}}}\n                        </i>\n                    </span>\n                </a>\n                <a href=\"#\" class=\"s_body p_nav_a\" data-sort='2'  data-field='productCode'>{{${i18n.producnum}}}\n                     <span class=\"p_opear\" >\n                        <i class=\"p_up\" data-ename=\"增\">\n                            {{{${opUp}}}}\n                        </i>\n                        <i class=\"p_down\" data-ename=\"减\">\n                            {{{${opDown}}}}\n                        </i>\n                    </span>\n                </a>\n                <a href=\"#\" class=\"e_body p_nav_a\" data-sort='2' data-field='retailPrice'>{{${i18n.price}}}\n                     <span class=\"p_opear\" >\n                        <i class=\"p_up\" data-ename=\"增\">\n                            {{{${opUp}}}}\n                        </i>\n                        <i class=\"p_down\" data-ename=\"减\">\n                             {{{${opDown}}}}\n                        </i>\n                    </span>\n                </a>\n                {{!-- <a href=\"#\" class=\"e_body p_nav_a\" data-field='sale'>{{${i18n.sale}}}\n                      <span class=\"p_down_san\" data-ename=\"排序icon\">\n                          {{{${downSan}}}}\n                    </span> \n                </a> --}}\n        </div>\n        <div class=\"p_nav_page\" data-ename=\"页码\" data-from=\"{{${page}.from}}\" data-size={{${page}.size}} data-totalCount=\"{{${page}.totalCount}}\">\n            <span class=\"p_page_tall\" data-ename=\"页数\">{{${i18n.pageWhole}}} <em class=\"p_style_normal\">{{${page}.totalCount}}</em>  {{${i18n.unit}}}{{${i18n.product}s}}</span>\n            {{!-- <span class=\"p_page_text\" data-ename=\"页码数内容\"><em class=\"text-danger p_style_normal\">{{${page}.from}}</em>/ <em class=\"p_style_normal\">{{${page}.size}}</em></span>\n            <a href=\"#\" class=\"p_page_prev p_disabled\" data-ename=\"上一页\"><</a>\n            <a href=\"#\" class=\"p_page_next\" data-ename=\"下一页\">></a> --}}\n        </div>\n    </div>\n     <input type=\"hidden\" name=\"view\" value='{{{view}}}'>\n</div>",
   "css": [
     {
       "media": "",
@@ -38,7 +38,7 @@
       "product": "产品名称",
       "price": "价格",
       "sale": "销量",
-      "productNum": "产品编号",
+      "producnum": "产品编号",
       "unit": "件",
       "pageWhole": "共",
       "pageItem": "条"
@@ -49,7 +49,7 @@
       "product": "Commodity name",
       "price": "Price",
       "sale": "Sales volume",
-      "productNum": "Commodity ID",
+      "producnum": "Commodity ID",
       "unit": "picecs",
       "pageWhole": "in total",
       "pageItem": "picecs"
@@ -60,7 +60,7 @@
       "product": "Produktname",
       "price": "Preis",
       "sale": "Absatz",
-      "productNum": "Produktnummer",
+      "producnum": "Produktnummer",
       "unit": "Artikel",
       "pageWhole": "geläufig",
       "pageItem": "Artikel"
@@ -71,7 +71,7 @@
       "product": "Nom du produit",
       "price": "Prix",
       "sale": "Ventes",
-      "productNum": "Numéro de produit",
+      "producnum": "Numéro de produit",
       "unit": "XX",
       "pageWhole": "Total",
       "pageItem": "XX"
@@ -82,7 +82,7 @@
       "product": "Название продукта",
       "price": "Цена",
       "sale": "Объем продаж",
-      "productNum": "Номер продукта",
+      "producnum": "Номер продукта",
       "unit": "шт.",
       "pageWhole": "всего",
       "pageItem": "шт."
@@ -93,7 +93,7 @@
       "product": "Nome do produto",
       "price": "Preço",
       "sale": "Vendas",
-      "productNum": "Número de produto",
+      "producnum": "Número de produto",
       "unit": "faixas",
       "pageWhole": "Total de",
       "pageItem": "faixas"
@@ -104,7 +104,7 @@
       "product": "제품 명칭",
       "price": "가격",
       "sale": "판매량",
-      "productNum": "제품 번호",
+      "producnum": "제품 번호",
       "unit": "조",
       "pageWhole": "총",
       "pageItem": "조"
@@ -115,7 +115,7 @@
       "product": "製品名称",
       "price": "価格",
       "sale": "販売量",
-      "productNum": "製品番号",
+      "producnum": "製品番号",
       "unit": "件",
       "pageWhole": "合計",
       "pageItem": "件"
@@ -126,7 +126,7 @@
       "product": "Nombre del producto",
       "price": "Precio",
       "sale": "Ventas",
-      "productNum": "Código de producto",
+      "producnum": "Código de producto",
       "unit": "Filas",
       "pageWhole": "Total",
       "pageItem": "Filas"
@@ -137,7 +137,7 @@
       "product": "اسم المنتج",
       "price": "السعر",
       "sale": "مبيعات",
-      "productNum": "رقم المنتج",
+      "producnum": "رقم المنتج",
       "unit": "مادة",
       "pageWhole": "قطعة",
       "pageItem": "مادة"
@@ -148,7 +148,7 @@
       "product": "Nome del prodotto",
       "price": "Prezzo",
       "sale": "Quantità di vendite",
-      "productNum": "Numero del prodotto",
+      "producnum": "Numero del prodotto",
       "unit": "Pezzi",
       "pageWhole": "Totale",
       "pageItem": "striscia"
@@ -159,7 +159,7 @@
       "product": "সামগ্রীর নাম",
       "price": "মূল্য",
       "sale": "বিক্রির পরিমাণ",
-      "productNum": "সামগ্রী নম্বর",
+      "producnum": "সামগ্রী নম্বর",
       "unit": "টুকরো",
       "pageWhole": "মোট",
       "pageItem": "টুকরো"
@@ -170,7 +170,7 @@
       "product": "Produkt navn",
       "price": "Pris",
       "sale": "Salg",
-      "productNum": "Produkt no.",
+      "producnum": "Produkt no.",
       "unit": "stk.",
       "pageWhole": "I alt",
       "pageItem": "stk."
@@ -181,7 +181,7 @@
       "product": "Nama Produk",
       "price": "Harga",
       "sale": "Jumlah penjualan",
-      "productNum": "No. Produk",
+      "producnum": "No. Produk",
       "unit": "xx",
       "pageWhole": "Total",
       "pageItem": "xx"
@@ -192,7 +192,7 @@
       "product": "ชื่อผลิตภัณฑ์",
       "price": "ราคา",
       "sale": "ยอดขาย",
-      "productNum": "หมายเลขผลิตภัณฑ์",
+      "producnum": "หมายเลขผลิตภัณฑ์",
       "unit": "ข้อ",
       "pageWhole": "ร่วม",
       "pageItem": "ข้อ"
@@ -203,7 +203,7 @@
       "product": "Tên sản phẩm",
       "price": "Giá cả",
       "sale": "Lượng bán hàng",
-      "productNum": "Mã số sản phẩm",
+      "producnum": "Mã số sản phẩm",
       "unit": "Điều",
       "pageWhole": "Tổng số",
       "pageItem": "Điều"
@@ -214,7 +214,7 @@
       "product": "Ürün İsmi",
       "price": "Fiyat",
       "sale": "Satış",
-      "productNum": "Ürün Numarası",
+      "producnum": "Ürün Numarası",
       "unit": "Adet",
       "pageWhole": "Toplam",
       "pageItem": "Adet"
@@ -225,7 +225,7 @@
       "product": "productnaam",
       "price": "Prijs",
       "sale": "Verkoopvolume",
-      "productNum": "Productnummer",
+      "producnum": "Productnummer",
       "unit": "Artikel",
       "pageWhole": "Totaal",
       "pageItem": "Artikel"
@@ -236,7 +236,7 @@
       "product": "Nazwa produktu",
       "price": "Cena",
       "sale": "Wielkość sprzedaży",
-      "productNum": "Nr produktu",
+      "producnum": "Nr produktu",
       "unit": "szt.",
       "pageWhole": "sztuk",
       "pageItem": "szt."
@@ -247,7 +247,7 @@
       "product": "產品名稱",
       "price": "價格",
       "sale": "銷量",
-      "productNum": "產品編號",
+      "producnum": "產品編號",
       "unit": "件",
       "pageWhole": "共",
       "pageItem": "條"

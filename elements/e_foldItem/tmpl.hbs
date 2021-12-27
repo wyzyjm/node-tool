@@ -1,6 +1,6 @@
 <div class="e_foldItem border" needjs="true">
     <div class="bg-light p_ask">
-        <i class="bg-primary text-white p_icon">{{i18n.ask}}</i>
+        <i class="border border-primary bg-primary text-white p_icon">{{i18n.ask}}</i>
         {{#if prop.href.value}}
             <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}">
         {{/if}}
@@ -12,7 +12,6 @@
         <i class="p_arrow"></i>
     </div>
     <div class="border-top p_answer">
-        <i class="border border-primary text-primary p_answer_icon">{{i18n.answer}}</i>
         <div class="text-body p_answerCon">{{{prop.answer}}}</div>
     </div>
 </div>
