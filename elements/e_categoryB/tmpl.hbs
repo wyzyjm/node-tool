@@ -5,7 +5,7 @@
         {{#tree prop.cate}}
         {{#if @nodeBegin}}<ul class="p_c_content deep-{{@deep}}">{{/if}}
             <li class="p_c_item">
-                <p class="p_c_title js_editor_click deep-{{@deep}}-{{@deep}} {{#eq selected true}}active{{/eq}}">
+                <p class="p_c_title{{@deep}} js_editor_click deep {{#eq selected true}}active{{/eq}}">
                     <a href="{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}"
                         target="{{#eq target '_blank'}}_blank{{/eq}}">
                         {{#if categoryImage}}{{#if ../prop.showImg}}

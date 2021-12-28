@@ -52,11 +52,11 @@
 .e_categoryA .p_c_mput:hover{
     background: rgb(0 0 0 / 80%);
 }
-.e_categoryA .p_c_title a{
+.e_categoryA .deep a{
     width: auto;
     padding-right: 15px;
 }
-.e_categoryA .p_c_title{
+.e_categoryA .deep{
     color: #666;
 }
 .e_categoryA .deep-2{
@@ -70,7 +70,7 @@
     width: 100%;
     background: #dfdfdf;
 }
-.e_categoryA .deep-3-3{
+.e_categoryA .p_c_title3{
     border-bottom: 1px solid #d5d5d5;
 }
 .e_categoryA.design_nomput .p_c_mput{

@@ -14,7 +14,7 @@
 .e_categoryC .p_c_item{
     position: relative;
 }
-.e_categoryC .p_c_title{
+.e_categoryC .deep{
     font-size: 15px;
     width: 100%;
     padding-top: 0;
@@ -41,11 +41,11 @@
     width: 100%;
     display: none;
 }
-.e_categoryC .deep-2-2{
+.e_categoryC .p_c_title2{
     font-size: 14px;
     color: rgb(0 0 0 / 60%);
 }
-.e_categoryC .deep-3-3{
+.e_categoryC .p_c_title3{
     font-size: 14px;
     color: rgb(0 0 0 / 60%);
 }
@@ -56,8 +56,8 @@
     left: 100%;
     position: absolute;
 }
-.e_categoryC .p_c_title:hover,
-.e_categoryC .active > p > .p_c_title{
+.e_categoryC .deep:hover,
+.e_categoryC .active > p > .deep{
     color: rgb(0 123 255);
 }
 .e_categoryC .p_c_menu{
