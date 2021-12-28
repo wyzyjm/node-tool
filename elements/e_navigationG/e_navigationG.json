@@ -1,0 +1,129 @@
+{
+  "cname": "导航-面包导航-01",
+  "styleId": "e_navigationG",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n    <div class=\"p_navButton js_editor_click\">\r\n        <p class=\"p_navBu1\">\r\n            <span class=\"p_navS1\"></span>\r\n            <span class=\"p_navS1\"></span>\r\n            <span class=\"p_navS1\"></span>\r\n        </p>\r\n    </div>\r\n    <div class=\"p_navContent\">\r\n        <div class=\"p_closeT js_editor_click\">\r\n            <div class=\"p_closeButton\">\r\n                <p class=\"p_navBu2\">\r\n                    <span class=\"p_navS2\"></span>\r\n                    <span class=\"p_navS2\"></span>\r\n                    <span class=\"p_navS2\"></span>\r\n                </p>\r\n            </div>\r\n            <div class=\"p_closeText\"><span class=\"p_cT\">Close</span><i class=\"p_cS\">This</i></div>\r\n        </div>\r\n        <ul class=\"p_level1Box\">\r\n            {{#each ${dataList}}}\r\n            <li class=\"p_level1Item\">\r\n                <p class=\"p_menu1Item js_editor_click\">\r\n                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}{{/if}}\">\r\n                        <span>{{navName}}</span>\r\n                    </a>\r\n                </p>\r\n                {{#if this.children}}\r\n                <ul class=\"p_level2Box\">\r\n                    {{#each this.children}}\r\n                    <li class=\"p_level2Item\">\r\n                        <p class=\"p_menu2Item js_editor_click\">\r\n                            <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\"{{/if}}>\r\n                                <span>{{navName}}</span>\r\n                            </a>\r\n                        </p>\r\n                        {{#if this.children}}\r\n                        <ul class=\"p_level3Box\">\r\n                            {{#each this.children}}\r\n                            <li class=\"p_level3Item\">\r\n                                <p class=\"p_menu3Item\">\r\n                                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\"{{/if}}>\r\n                                        <span>{{navName}}</span>\r\n                                    </a>\r\n                                </p>\r\n                            </li>\r\n                            {{/each}}\r\n                        </ul>\r\n                        {{/if}}\r\n                    </li>\r\n                    {{/each}}\r\n                </ul>\r\n                {{/if}}\r\n            </li>\r\n            {{/each}}\r\n        </ul>\r\n    </div>\r\n    <div class=\"p_blackbg\"></div>\r\n    {{^}}\r\n    {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>\r\n\r\n",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_navigationG .p_navButton{\r\n    width: 21px;\r\n    justify-content: center;\r\n}\r\n.e_navigationG .p_navBu1{\r\n    width: 21px;\r\n    height: 16px;\r\n    cursor: pointer;\r\n}\r\n.e_navigationG .p_navS1 {\r\n    width: 100%;\r\n    background: #333;\r\n    display: block;\r\n    height: 2px;\r\n    margin: 2px 0;\r\n    float: left;\r\n}\r\n.e_navigationG .p_closeButton{\r\n    width: 15px;\r\n    justify-content: center;\r\n    margin-right: 10px;\r\n}\r\n.e_navigationG .p_navBu2{\r\n    width: 15px;\r\n    height: 12px;\r\n    cursor: pointer;\r\n    margin-top: 1px;\r\n}\r\n.e_navigationG .p_navS2 {\r\n    width: 100%;\r\n    background: #333;\r\n    display: block;\r\n    height: 2px;\r\n    margin: 1px 0;\r\n    float: left;\r\n    -webkit-transition: all ease 0.3s;\r\n    -moz-transition: all ease 0.3s;\r\n    -ms-transition: all ease 0.3s;\r\n    -o-transition: all ease 0.3s;\r\n    transition: all ease 0.3s;\r\n}\r\n.e_navigationG .p_closeButton > p span:nth-of-type(1) {\r\n    transform: translateY(4px)rotate(670deg);\r\n}\r\n.e_navigationG .p_closeButton > p span:nth-of-type(2) {\r\n    transform: translateY(0px)rotate(768deg);\r\n}\r\n.e_navigationG .p_closeButton > p span:nth-of-type(3) {\r\n    width: 0;\r\n    opacity: 0;\r\n}\r\n.e_navigationG .p_navContent {\n    position: fixed;\n    left: -400px;\n    max-width: 400px;\n    width: 100%;\n    background: #fff;\n    transition: all ease .6s;\n    top: 0;\n    bottom: 0;\n    height: 100%;\n    padding: 40px 60px 40px 90px;\n    z-index: 2;\n    overflow-y: scroll;\n}\r\n.e_navigationG .p_closeT{\r\n    margin-bottom: 60px;\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    cursor: pointer;\r\n}\r\n.e_navigationG .p_closeText{\r\n    font-size: 15px;\r\n    font-family: arial;\r\n    color: rgb(0 0 0 / 50%);\r\n    line-height: 14px;\r\n}\r\n.e_navigationG .p_cS{\r\n    text-transform: uppercase;\r\n    font-style: inherit;\r\n    margin-left: 8px;\r\n    color: rgb(0 0 0 / 80%);\r\n    opacity: 0;\r\n    transform: translateX(6px);\r\n    transition: all ease .3s;\r\n    display: inline-block;\r\n}\r\n.e_navigationG .p_closeText:hover .p_cS{\r\n    opacity: 1;\r\n    transform: translateX(0px);\r\n}\r\n.e_navigationG .p_blackbg{\n    position: fixed;\n    left: 0;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    background: rgb(8 28 48 / 70%);\n    z-index: 1;\n    opacity: 0;\n    transition: all ease .6s;\n    pointer-events: none;\n}\r\n.e_navigationG .p_level1Box{\r\n    padding-bottom: 60px;\r\n    border-bottom: 1px solid #eee;\r\n}\r\n.e_navigationG .p_level2Box{\r\n    display: none;\r\n}\r\n.e_navigationG .p_level3Box{\r\n    display: none;\r\n}\r\n.e_navigationG .p_menu1Item{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    line-height: 1;\r\n    padding: 18px 0;\r\n    font-size: 16px;\r\n    color: #333;\r\n    transition: all ease .15s;\r\n}\r\n.e_navigationG .p_menu2Item{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    line-height: 1;\r\n    padding: 5px 0 10px 0;\r\n    font-size: 16px;\r\n    color: rgb(0 0 0 / .5);\r\n    transition: all ease .15s;\r\n}\r\n.e_navigationG .p_menu3Item{\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    line-height: 1;\r\n    padding: 5px 0px 5px 15px;\r\n    font-size: 15px;\r\n    color: rgb(0 0 0 / .5);\r\n    margin-bottom:6px;\r\n    transition: all ease .15s;\r\n}\r\n.e_navigationG .p_menu3Item::before{\r\n    content:'';\r\n    margin-right: 10px;\r\n    width: 5px;\r\n    height: 5px;\r\n    background: rgb(0 0 0 / 30%);\r\n    border-radius: 100%;\r\n    display: inline-block;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 0;\r\n    transform: translateY(-50%);\r\n}\r\n.e_navigationG .p_level3Item:last-child .p_menu3Item{\r\n    margin-bottom:10px;\r\n}\r\n.e_navigationG .p_level3Item:first-child{\r\n    padding-top:15px;\r\n    margin-top:15px;\r\n    border-top:1px solid #eee;\r\n}\r\n.e_navigationG .p_level3Item:last-child{\r\n    margin-bottom:15px;\r\n    padding-bottom:10px;\r\n    border-bottom:1px solid #eee;\r\n}\r\n.e_navigationG a{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    line-height: 1;\r\n    width: 100%;\r\n}\r\n.e_navigationG svg{\r\n    margin: 0;\r\n    height: 18px;\r\n    cursor: pointer;\r\n    transition: all ease .3s;\r\n    transform: rotate(90deg)rotateY(0deg);\r\n}\r\n.e_navigationG p:hover{\r\n    color:#007bff;\r\n}\r\n.e_navigationG p:hover .p_jtIcon{\r\n    transform: rotate(90deg)rotateY(180deg);\r\n}\r\n\r\n.e_navigationG .p_navContent.showmenuBox{\r\n    left: 0;\r\n}\r\n.e_navigationG .p_blackbg.showbg{\n    opacity: 1;\n    pointer-events: auto;\n}\r\n.e_navigationG .p_navContent::-webkit-scrollbar {\r\n  display: none;\r\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ".e_navigationG .p_navContent{\n    max-width: 100%;\n    left: -100%;\n    padding: 40px 30px 40px 30px;\n}\n.e_navigationG .p_closeT{\n    margin-bottom: 30px;\n}"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {
+        "navName": "首页"
+      },
+      {
+        "navName": "公司概况",
+        "children": [
+          {
+            "navName": "企业介绍",
+            "children": [
+              {
+                "navName": "企业介绍"
+              },
+              {
+                "navName": "发展历程"
+              },
+              {
+                "navName": "关于我们"
+              }
+            ]
+          },
+          {
+            "navName": "发展历程"
+          },
+          {
+            "navName": "关于我们"
+          }
+        ]
+      },
+      {
+        "navName": "我们的产品"
+      },
+      {
+        "navName": "新闻资讯",
+        "children": [
+          {
+            "navName": "最新动态"
+          },
+          {
+            "navName": "企业新闻"
+          },
+          {
+            "navName": "行业新闻"
+          }
+        ]
+      },
+      {
+        "navName": "招商加盟",
+        "children": [
+          {
+            "navName": "合作伙伴"
+          },
+          {
+            "navName": "加入我们"
+          }
+        ]
+      },
+      {
+        "navName": "售后服务",
+        "children": [
+          {
+            "navName": "服务宗旨"
+          },
+          {
+            "navName": "在线咨询"
+          },
+          {
+            "navName": "常见问题",
+            "children": [
+              {
+                "navName": "生活常识"
+              },
+              {
+                "navName": "百度百科"
+              }
+            ]
+          },
+          {
+            "navName": "用户协议"
+          }
+        ]
+      },
+      {
+        "navName": "联系我们",
+        "children": [
+          {
+            "navName": "在线留言"
+          },
+          {
+            "navName": "联系我们"
+          }
+        ]
+      }
+    ],
+    "arrow": "<svg t=\"1625735163067\" class=\"icon p_jtIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1486\" width=\"200\" height=\"200\"><path d=\"M661.16183428 486.94732961L415.99871022 219.24359155c-13.37500289-14.59708438-35.98351032-15.54759219-50.51270128-2.24048272-14.59708438 13.37500289-15.54759219 35.98351032-2.24048272 50.51270127l223.09776396 243.60157549-222.89408371 244.28050967c-13.30710947 14.59708438-12.28870823 37.20559179 2.30837613 50.51270125 14.59708438 13.30710947 37.20559179 12.28870823 50.51270128-2.30837613l244.75576356-268.11109855c0.47525392-0.54314733 1.01840124-1.15418807 1.42576173-1.6973354 11.13452018-13.51078973 10.93083994-33.53934734-1.2899749-46.84645682z\" p-id=\"1487\"></path></svg>",
+    "showArrow": true
+  },
+  "i18n": {
+    "zh_CN": {
+      "noData": "暂无数据"
+    }
+  },
+  "datasource": "prop",
+  "dataManage": {}
+}
