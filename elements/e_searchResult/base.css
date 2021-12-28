@@ -1,5 +1,6 @@
 .e_searchResult .p_preview{
     line-height: 50px;
+    color: #ccc;
 }
 .e_searchResult .p_container{
     display: none;
