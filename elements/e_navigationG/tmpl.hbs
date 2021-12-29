@@ -1,0 +1,64 @@
+<div class="e_navigationG" needjs="true">
+    {{#if prop.dataList}}
+    <div class="p_navButton js_editor_click">
+        <p class="p_navBu1">
+            <span class="p_navS1"></span>
+            <span class="p_navS1"></span>
+            <span class="p_navS1"></span>
+        </p>
+    </div>
+    <div class="p_navContent">
+        <div class="p_closeT js_editor_click">
+            <div class="p_closeButton">
+                <p class="p_navBu2">
+                    <span class="p_navS2"></span>
+                    <span class="p_navS2"></span>
+                    <span class="p_navS2"></span>
+                </p>
+            </div>
+            <div class="p_closeText"><span class="p_cT">Close</span><i class="p_cS">This</i></div>
+        </div>
+        <ul class="p_level1Box">
+            {{#each prop.dataList}}
+            <li class="p_level1Item">
+                <p class="p_menu1Item js_editor_click">
+                    <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}{{/if}}">
+                        <span>{{navName}}</span>
+                    </a>
+                </p>
+                {{#if this.children}}
+                <ul class="p_level2Box">
+                    {{#each this.children}}
+                    <li class="p_level2Item">
+                        <p class="p_menu2Item js_editor_click">
+                            <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
+                                <span>{{navName}}</span>
+                            </a>
+                        </p>
+                        {{#if this.children}}
+                        <ul class="p_level3Box">
+                            {{#each this.children}}
+                            <li class="p_level3Item">
+                                <p class="p_menu3Item">
+                                    <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
+                                        <span>{{navName}}</span>
+                                    </a>
+                                </p>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="p_blackbg"></div>
+    {{^}}
+    {{{nNoDataPrompt i18n.noData}}}
+    {{/if}}
+</div>
+
