@@ -42,9 +42,10 @@ window.i18n = {
   "form_remove": "削除する",
   "form_invalidMobile": "電話番号の形式が正しくありません",
   "form_formulaError": "計算ミス",
-  "longbow_loading": "読み込んでいます...",
+  "longbow_loading": "読み込み中...",
   "longbow_agin": "再試行",
-  "longbow_bar": "右にスワイプしてパズルを埋めます",
+  "longbow_bar": "右へスライド",
   "longbow_refresh": "更新",
-  "longbow_fail": "読み込みに失敗しました"
+  "longbow_fail": "読み込みに失敗しました",
+  "longbow_title": "セキュリティ検証"
 }

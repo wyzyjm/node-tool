@@ -42,9 +42,10 @@ window.i18n = {
   "form_remove": "Entfernen",
   "form_invalidMobile": "Das Telefonnummernformat ist nicht korrekt",
   "form_formulaError": "Rechenfehler",
-  "longbow_loading": "Wird geladen...",
+  "longbow_loading": "Laden...",
   "longbow_agin": "Versuch es noch einmal",
-  "longbow_bar": "Wische nach rechts, um das Puzzle zu füllen",
+  "longbow_bar": "Schieben nach rechts",
   "longbow_refresh": "Aktualisierung",
-  "longbow_fail": "Laden fehlgeschlagen"
+  "longbow_fail": "Laden fehlgeschlagen",
+  "longbow_title": "Sicherheitsüberprüfung"
 }

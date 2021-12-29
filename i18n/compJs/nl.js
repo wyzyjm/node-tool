@@ -44,7 +44,8 @@ window.i18n = {
   "form_formulaError": "rekenfout",
   "longbow_loading": "Bezig met laden...",
   "longbow_agin": "probeer opnieuw",
-  "longbow_bar": "Veeg naar rechts om de puzzel te vullen",
+  "longbow_bar": "Schuif naar rechts",
   "longbow_refresh": "Vernieuwen",
-  "longbow_fail": "Laden mislukt"
+  "longbow_fail": "Laden mislukt",
+  "longbow_title": "veiligheidsverificatie"
 }

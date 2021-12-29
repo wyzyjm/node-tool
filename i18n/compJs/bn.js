@@ -42,9 +42,10 @@ window.i18n = {
   "form_remove": "অপসারণ",
   "form_invalidMobile": "ফোন নম্বর বিন্যাস সঠিক নয়",
   "form_formulaError": "গণনার ভুল",
-  "longbow_loading": "লোড হচ্ছে...",
+  "longbow_loading": "লোড হচ্ছে",
   "longbow_agin": "আবার চেষ্টা করুন",
-  "longbow_bar": "ধাঁধাটি পূরণ করতে ডানদিকে সোয়াইপ করুন",
+  "longbow_bar": "ডান দিয়ে সরান",
   "longbow_refresh": "রিফ্রেশ",
-  "longbow_fail": "লোড করতে ব্যর্থ"
+  "longbow_fail": "লোড করতে ব্যর্থ",
+  "longbow_title": "সুরক্ষা যাচাইকরণ"
 }

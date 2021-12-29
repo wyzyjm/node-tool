@@ -44,7 +44,8 @@ window.i18n = {
   "form_formulaError": "regnefejl",
   "longbow_loading": "Indlæser...",
   "longbow_agin": "Prøv igen",
-  "longbow_bar": "Stryg til højre for at fylde puslespillet",
+  "longbow_bar": "Skub til højre",
   "longbow_refresh": "Opdater",
-  "longbow_fail": "Kunne ikke indlæses"
+  "longbow_fail": "Kunne ikke indlæses",
+  "longbow_title": "Sikkerhedsverifikation"
 }

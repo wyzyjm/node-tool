@@ -44,7 +44,8 @@ window.i18n = {
   "form_formulaError": "hesaplama hatası",
   "longbow_loading": "Yükleniyor...",
   "longbow_agin": "Tekrar deneyin",
-  "longbow_bar": "Bulmacayı doldurmak için sağa kaydırın",
+  "longbow_bar": "Sağa kaydır",
   "longbow_refresh": "Yenile",
-  "longbow_fail": "Yükleme başarısız"
+  "longbow_fail": "Yükleme başarısız",
+  "longbow_title": "Güvenlik Doğrulaması"
 }

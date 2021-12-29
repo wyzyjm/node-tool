@@ -44,7 +44,8 @@ window.i18n = {
   "form_formulaError": "tính toán sai lầm",
   "longbow_loading": "Đang tải...",
   "longbow_agin": "thử lại",
-  "longbow_bar": "Vuốt sang phải để điền câu đố",
+  "longbow_bar": "Vuốt sang phải",
   "longbow_refresh": "Làm mới",
-  "longbow_fail": "Không tải được"
+  "longbow_fail": "Không tải được",
+  "longbow_title": "Xác minh an toàn"
 }

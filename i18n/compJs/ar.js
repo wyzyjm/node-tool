@@ -42,9 +42,10 @@ window.i18n = {
   "form_remove": "إزالة",
   "form_invalidMobile": "تنسيق رقم الهاتف غير صحيح",
   "form_formulaError": "خطأ في الحساب",
-  "longbow_loading": "جار التحميل...",
+  "longbow_loading": "جارء التحميل",
   "longbow_agin": "حاول مرة أخرى",
-  "longbow_bar": "اسحب لليمين لملء اللغز",
+  "longbow_bar": "إسحب إلى اليمين",
   "longbow_refresh": "تحديث",
-  "longbow_fail": "فشل في التحميل"
+  "longbow_fail": "فشل في التحميل",
+  "longbow_title": "تحقيق الأمن"
 }

@@ -44,7 +44,8 @@ window.i18n = {
   "form_formulaError": "błąd obliczeniowy",
   "longbow_loading": "Ładowanie...",
   "longbow_agin": "Spróbuj ponownie",
-  "longbow_bar": "Przesuń w prawo, aby wypełnić układankę",
+  "longbow_bar": "Przesuń w prawo",
   "longbow_refresh": "Odśwież",
-  "longbow_fail": "Nie udało się załadować"
+  "longbow_fail": "Nie udało się załadować",
+  "longbow_title": "Weryfikacja zabezpieczeń"
 }

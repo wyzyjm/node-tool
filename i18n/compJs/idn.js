@@ -44,7 +44,8 @@ window.i18n = {
   "form_formulaError": "kesalahan perhitungan",
   "longbow_loading": "Memuat...",
   "longbow_agin": "coba lagi",
-  "longbow_bar": "Geser ke kanan untuk mengisi puzzle",
+  "longbow_bar": "Geser ke kanan",
   "longbow_refresh": "Segarkan",
-  "longbow_fail": "Gagal untuk memuat"
+  "longbow_fail": "Gagal untuk memuat",
+  "longbow_title": "Verifikasi keamanan"
 }

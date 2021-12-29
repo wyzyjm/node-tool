@@ -42,9 +42,10 @@ window.i18n = {
   "form_remove": "ลบ",
   "form_invalidMobile": "รูปแบบหมายเลขโทรศัพท์ไม่ถูกต้อง",
   "form_formulaError": "การคำนวณผิดพลาด",
-  "longbow_loading": "กำลังโหลด...",
+  "longbow_loading": "กำลังโหลด",
   "longbow_agin": "ลองอีกครั้ง",
-  "longbow_bar": "ปัดไปทางขวาเพื่อเติมปริศนา",
+  "longbow_bar": "เลื่อนไปทางขวา",
   "longbow_refresh": "รีเฟรช",
-  "longbow_fail": "โหลดไม่สำเร็จ"
+  "longbow_fail": "โหลดไม่สำเร็จ",
+  "longbow_title": "การยืนยันเพื่อความปลอดภัย"
 }

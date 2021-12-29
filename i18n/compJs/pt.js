@@ -44,7 +44,8 @@ window.i18n = {
   "form_formulaError": "erro de cálculo",
   "longbow_loading": "Carregando...",
   "longbow_agin": "tente novamente",
-  "longbow_bar": "Deslize para a direita para preencher o quebra-cabeça",
+  "longbow_bar": "Deslizar para a direita",
   "longbow_refresh": "Atualizar",
-  "longbow_fail": "Falha ao carregar"
+  "longbow_fail": "Falha ao carregar",
+  "longbow_title": "Verificação de segurança"
 }
