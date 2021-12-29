@@ -41,5 +41,11 @@ window.i18n = {
   "form_video": "видео",
   "form_remove": "Удалять",
   "form_invalidMobile": "Неверный формат номера телефона",
-  "form_formulaError": "ошибка расчета"
+  "form_formulaError": "ошибка расчета",
+  "longbow_loading": "Загрузка...",
+  "longbow_agin": "попробуй снова",
+  "longbow_bar": "Сдвиг вправо",
+  "longbow_refresh": "Обновить",
+  "longbow_fail": "Ошибка загрузки",
+  "longbow_title": "Проверка безопасности"
 }

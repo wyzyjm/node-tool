@@ -41,5 +41,11 @@ window.i18n = {
   "form_video": "Video",
   "form_remove": "Entfernen",
   "form_invalidMobile": "Das Telefonnummernformat ist nicht korrekt",
-  "form_formulaError": "Rechenfehler"
+  "form_formulaError": "Rechenfehler",
+  "longbow_loading": "Laden...",
+  "longbow_agin": "Versuch es noch einmal",
+  "longbow_bar": "Schieben nach rechts",
+  "longbow_refresh": "Aktualisierung",
+  "longbow_fail": "Laden fehlgeschlagen",
+  "longbow_title": "Sicherheitsüberprüfung"
 }

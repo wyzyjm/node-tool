@@ -41,5 +41,11 @@ window.i18n = {
   "form_video": "فيديو",
   "form_remove": "إزالة",
   "form_invalidMobile": "تنسيق رقم الهاتف غير صحيح",
-  "form_formulaError": "خطأ في الحساب"
+  "form_formulaError": "خطأ في الحساب",
+  "longbow_loading": "جارء التحميل",
+  "longbow_agin": "حاول مرة أخرى",
+  "longbow_bar": "إسحب إلى اليمين",
+  "longbow_refresh": "تحديث",
+  "longbow_fail": "فشل في التحميل",
+  "longbow_title": "تحقيق الأمن"
 }

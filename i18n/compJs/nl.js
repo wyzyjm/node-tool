@@ -41,5 +41,11 @@ window.i18n = {
   "form_video": "video-",
   "form_remove": "Verwijderen",
   "form_invalidMobile": "Het formaat van het telefoonnummer is niet correct",
-  "form_formulaError": "rekenfout"
+  "form_formulaError": "rekenfout",
+  "longbow_loading": "Bezig met laden...",
+  "longbow_agin": "probeer opnieuw",
+  "longbow_bar": "Schuif naar rechts",
+  "longbow_refresh": "Vernieuwen",
+  "longbow_fail": "Laden mislukt",
+  "longbow_title": "veiligheidsverificatie"
 }
