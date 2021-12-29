@@ -41,5 +41,10 @@ window.i18n = {
   "form_video": "視頻",
   "form_remove": "移除",
   "form_invalidMobile": "手機號格式不正確",
-  "form_formulaError": "計算錯誤"
+  "form_formulaError": "計算錯誤",
+  "longbow_loading": "正在加載中...",
+  "longbow_agin": "再試一次",
+  "longbow_bar": "向右滑動填充拼圖",
+  "longbow_refresh": "刷新",
+  "longbow_fail": "加載失敗"
 }

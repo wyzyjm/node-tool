@@ -41,5 +41,10 @@ window.i18n = {
   "form_video": "video",
   "form_remove": "Fjerne",
   "form_invalidMobile": "Telefonnummerformatet er ikke korrekt",
-  "form_formulaError": "regnefejl"
+  "form_formulaError": "regnefejl",
+  "longbow_loading": "Indlæser...",
+  "longbow_agin": "Prøv igen",
+  "longbow_bar": "Stryg til højre for at fylde puslespillet",
+  "longbow_refresh": "Opdater",
+  "longbow_fail": "Kunne ikke indlæses"
 }

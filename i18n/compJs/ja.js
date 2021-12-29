@@ -41,5 +41,10 @@ window.i18n = {
   "form_video": "ビデオ",
   "form_remove": "削除する",
   "form_invalidMobile": "電話番号の形式が正しくありません",
-  "form_formulaError": "計算ミス"
+  "form_formulaError": "計算ミス",
+  "longbow_loading": "読み込んでいます...",
+  "longbow_agin": "再試行",
+  "longbow_bar": "右にスワイプしてパズルを埋めます",
+  "longbow_refresh": "更新",
+  "longbow_fail": "読み込みに失敗しました"
 }

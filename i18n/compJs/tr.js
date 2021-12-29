@@ -41,5 +41,10 @@ window.i18n = {
   "form_video": "video",
   "form_remove": "Kaldırmak",
   "form_invalidMobile": "Telefon numarası biçimi doğru değil",
-  "form_formulaError": "hesaplama hatası"
+  "form_formulaError": "hesaplama hatası",
+  "longbow_loading": "Yükleniyor...",
+  "longbow_agin": "Tekrar deneyin",
+  "longbow_bar": "Bulmacayı doldurmak için sağa kaydırın",
+  "longbow_refresh": "Yenile",
+  "longbow_fail": "Yükleme başarısız"
 }

@@ -41,5 +41,10 @@ window.i18n = {
   "form_video": "동영상",
   "form_remove": "제거하다",
   "form_invalidMobile": "전화번호 형식이 올바르지 않습니다.",
-  "form_formulaError": "계산 실수"
+  "form_formulaError": "계산 실수",
+  "longbow_loading": "로드 중...",
+  "longbow_agin": "다시 시도하십시오",
+  "longbow_bar": "퍼즐을 채우려면 오른쪽으로 스와이프하세요.",
+  "longbow_refresh": "리프레시",
+  "longbow_fail": "불러 오지 못했습니다"
 }

@@ -41,5 +41,10 @@ window.i18n = {
   "form_video": "ভিডিও",
   "form_remove": "অপসারণ",
   "form_invalidMobile": "ফোন নম্বর বিন্যাস সঠিক নয়",
-  "form_formulaError": "গণনার ভুল"
+  "form_formulaError": "গণনার ভুল",
+  "longbow_loading": "লোড হচ্ছে...",
+  "longbow_agin": "আবার চেষ্টা করুন",
+  "longbow_bar": "ধাঁধাটি পূরণ করতে ডানদিকে সোয়াইপ করুন",
+  "longbow_refresh": "রিফ্রেশ",
+  "longbow_fail": "লোড করতে ব্যর্থ"
 }

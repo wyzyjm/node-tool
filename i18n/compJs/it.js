@@ -41,5 +41,10 @@ window.i18n = {
   "form_video": "video",
   "form_remove": "Rimuovere",
   "form_invalidMobile": "Il formato del numero di telefono non è corretto",
-  "form_formulaError": "errore di calcolo"
+  "form_formulaError": "errore di calcolo",
+  "longbow_loading": "Caricamento in corso...",
+  "longbow_agin": "riprova",
+  "longbow_bar": "Scorri verso destra per riempire il puzzle",
+  "longbow_refresh": "Aggiorna",
+  "longbow_fail": "Caricamento fallito"
 }

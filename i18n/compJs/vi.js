@@ -41,5 +41,10 @@ window.i18n = {
   "form_video": "băng hình",
   "form_remove": "Tẩy",
   "form_invalidMobile": "Định dạng số điện thoại không đúng",
-  "form_formulaError": "tính toán sai lầm"
+  "form_formulaError": "tính toán sai lầm",
+  "longbow_loading": "Đang tải...",
+  "longbow_agin": "thử lại",
+  "longbow_bar": "Vuốt sang phải để điền câu đố",
+  "longbow_refresh": "Làm mới",
+  "longbow_fail": "Không tải được"
 }
