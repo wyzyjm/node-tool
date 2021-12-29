@@ -1,8 +1,8 @@
 <div class="e_register p_container" needjs="true">
     <!-- 欢迎注册 -->
     <h4 class="p_title">{{i18n.welcometoRegister}}</h4>
+    <!-- 注册体 -->
     <div class="p_wrapper">
-        <!-- 确认密码 -->
         <div class="p_line" itemCode="confirmPassword" dataType="password" dataSubType="password" isRequire="true" fixed="1">
             <label class="p_label"> <span class="text-danger p_required">*</span> {{i18n.confirmPassword}}</label>
             <div class="form-control clearfix p_range">
@@ -10,7 +10,6 @@
             </div>
             <div class="invalid-feedback"></div>
         </div>
-        <!-- 验证码 -->
         <div class="p_line codeLine" itemCode="code" isRequire="1">
             <label class="p_label">{{i18n.code}}</label>
             <div class="form-control clearfix p_range">
@@ -23,7 +22,7 @@
         <!-- 用户注册协议 -->
         <div class="p_mark">
             <div class="bg-white p_agreementWrapper">
-                <h6>
+                <h6 class="text-center">
                     {{i18n.userRegistrationAgreement}}
                     <svg t="1629190318737" class="icon closeAgreement" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1523" width="200" height="200"><path
                             d="M787.8125 296.1875L296.28125 787.8125c-16.40625 16.40625-43.125 16.40625-59.625 0-16.40625-16.40625-16.40625-43.125 0-59.625l491.53125-491.53125c16.40625-16.40625 43.125-16.40625 59.625 0s16.5 43.125 0 59.53125z"
@@ -35,7 +34,6 @@
                 <button class="text-white p_agreementBtn s_button1">{{i18n.agreeContinue}}</button>
             </div>
         </div>
-        <!-- 阅读并同意 -->
         <div class="p_line" itemCode="agreement" isRequire="1" style="margin-bottom:0px">
             <label class="p_label"></label>
             <div class="form-control clearfix p_range no_border">
@@ -46,10 +44,15 @@
             </div>
             <div class="invalid-feedback"></div>
         </div>
-        <!-- 立即注册 已有账号 -->
+        <!-- 注册按钮 -->
         <div class="p_bLine">
             <button class="btn btn-primary p_registerBtn">{{i18n.register}}</button>
-            <p class="p_loginBtn">{{i18n.existingAccount}}？<span class="text-primary goLogin">{{i18n.pleaseLogin}}></span> </p>
+            <p class="p_loginBtn">
+                {{i18n.existingAccount}}？
+                <span class="text-primary">
+                    <a href="/login.html">{{i18n.pleaseLogin}}></a>
+                </span>
+            </p>
         </div>
     </div>
     <input type="hidden" name="i18nJson" value="{{i18nJson}}" />
