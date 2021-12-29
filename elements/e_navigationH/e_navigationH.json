@@ -1,0 +1,142 @@
+{
+  "cname": "导航-面包导航-02",
+  "styleId": "e_navigationH",
+  "styleClass": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n    <div class=\"p_navButton js_editor_click\">\r\n        <p>\r\n            <span></span>\r\n            <span></span>\r\n            <span></span>\r\n        </p>\r\n    </div>\r\n    <div class=\"p_navContent\">\r\n        <ul class=\"p_level1Box\">\r\n            {{#each ${dataList}}}\r\n            <li class=\"p_level1Item\">\r\n                <p class=\"p_menu1Item js_editor_click\">\r\n                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}{{/if}}\">\r\n                        <span>{{navName}}</span>\r\n                    </a>\r\n                </p>\r\n                {{#if this.children}}\r\n                <ul class=\"p_level2Box\">\r\n                    {{#each this.children}}\r\n                    <li class=\"p_level2Item\">\r\n                        <p class=\"p_menu2Item js_editor_click\">\r\n                            <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\"{{/if}}>\r\n                                <span>{{navName}}</span>\r\n                            </a>\r\n                        </p>\r\n                        {{#if this.children}}\r\n                        <ul class=\"p_level3Box\">\r\n                            {{#each this.children}}\r\n                            <li class=\"p_level3Item\">\r\n                                <p class=\"p_menu3Item\">\r\n                                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" {{#if url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\"{{/if}}>\r\n                                        <span>{{navName}}</span>\r\n                                    </a>\r\n                                </p>\r\n                            </li>\r\n                            {{/each}}\r\n                        </ul>\r\n                        {{/if}}\r\n                    </li>\r\n                    {{/each}}\r\n                </ul>\r\n                {{/if}}\r\n            </li>\r\n            {{/each}}\r\n        </ul>\r\n    </div>\r\n    <div class=\"p_bg\"></div>\r\n    <div class=\"p_icoBox\">\r\n            {{#each ${dataList}}}\r\n                <ul class=\"p_icoBoxl\">\r\n                {{#if this.children}}\r\n                {{#each this.children}}\r\n                    <li class=\"p_ico1List\">\r\n                        <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" class=\"p_icoA\" {{#if url}}target=\"{{#eq target 'blank'}}_blank{{/eq}}\"{{/if}}>\r\n                            {{#if img}}<span class=\"p_icoImg\">{{{nLazyImage img navName 'true'}}}</span>{{/if}}\r\n                            <span class=\"p_icoText\">{{navName}}</span>\r\n                        </a>\r\n                    </li>\r\n                {{/each}}\r\n                {{/if}}\r\n                </ul>\r\n            {{/each}}\r\n    </div>\r\n    {{^}}\r\n    {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>\r\n\r\n\r\n",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_navigationH{\r\n    max-width: 100px;\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    height: 100%;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    bottom: 0;\r\n    border-right: 1px solid rgb(255 255 255 / 20%);\r\n    transition: all ease .3s;\r\n    z-index: 2;\r\n}\r\n.e_navigationH.on{\r\n    border-right: 1px solid rgb(255 255 255 / 0%);\r\n}\r\n.e_navigationH .p_navButton{\r\n    width: 100%;\r\n    height: 100px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    border-bottom: 1px solid rgb(255 255 255 / 20%);\r\n    transition: all linear .3s;\r\n    cursor: pointer;\r\n    position: relative;\r\n    z-index: 2;\r\n}\r\n.e_navigationH .p_navButton:hover,\r\n.e_navigationH.on .p_navButton{\r\n    background: #007bff;\r\n    border-bottom: 1px solid rgb(0 123 255);\r\n}\r\n.e_navigationH .p_navButton > p{\n    width: 21px;\n    height: 16px;\n    margin: 0 auto;\n    background: none !important;\n}\r\n.e_navigationH .p_navButton > p span {\r\n    width: 100%;\r\n    background: #fff;\r\n    display: block;\r\n    height: 2px;\r\n    margin: 2px 0;\r\n    float: left;\r\n    -webkit-transition: all ease 0.8s,opacity ease 0.3s;\r\n    -moz-transition: all ease 0.8s,opacity ease 0.3s;\r\n    -ms-transition: all ease 0.8s,opacity ease 0.3s;\r\n    -o-transition: all ease 0.8s,opacity ease 0.3s;\r\n    transition: all ease 0.8s,opacity ease 0.3s;\r\n    opacity: 1;\r\n}\r\n.e_navigationH .p_navButton > p span:nth-of-type(1) {\r\n    width: 50%;\r\n    float: left;\r\n}\r\n.e_navigationH .p_navButton > p span:nth-of-type(3) {\r\n    width: 50%;\r\n    float: right;\r\n}\r\n.e_navigationH .p_navButton > p.showmenu span {\r\n    -webkit-animation: animaspan 0.5s 1;\r\n    animation: animaspan 0.5s 1;\r\n    animation-fill-mode: forwards;\r\n    -webkit-animation-fill-mode: forwards;\r\n}\r\n.e_navigationH .p_navButton > p.showmenu span:nth-of-type(1) {\r\n    transform: translateY(6px)rotate(720deg);\r\n    width: 100%;\r\n}\r\n.e_navigationH .p_navButton > p.showmenu span:nth-of-type(2) {\r\n    transform: rotate(720deg);\r\n}\r\n.e_navigationH .p_navButton > p.showmenu span:nth-of-type(3) {\r\n    transform: translateY(-6px)rotate(720deg);\r\n    width: 100%;\r\n}\r\n.e_navigationH .p_navButton > p.showmenu span.biahuan:nth-of-type(1) {\r\n    transform: translateY(6px)rotate(670deg);\r\n}\r\n.e_navigationH .p_navButton > p.showmenu span.biahuan:nth-of-type(2) {\r\n    transform: translateY(0px)rotate(768deg);\r\n}\r\n.e_navigationH .p_navButton > p.showmenu span.biahuan:nth-of-type(3) {\r\n    width: 0;\r\n    opacity: 0;\r\n}\r\n.e_navigationH .p_bg{\r\n    position: absolute;\r\n    top: 100px;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: rgb(0 92 191);\r\n    z-index: 1;\r\n    transition: all ease .3s;\r\n    pointer-events: none;\r\n    width: 0;\r\n    opacity: 0;\r\n}\r\n.e_navigationH .p_bg.showbg{\r\n    pointer-events: auto;\r\n    width: 100%;\r\n    opacity: 1;\r\n}\r\n.e_navigationH .p_navContent {\r\n    position: absolute;\r\n    left: 100%;\r\n    max-width: 340px;\r\n    width: 340px;\r\n    background: rgb(0 0 0 / 50%);\r\n    transition: all ease .3s;\r\n    top: 100px;\r\n    bottom: 0;\r\n    height: calc(100% - 100px);\r\n    z-index: 2;\r\n    opacity: 0;\r\n    transform: perspective(300px) rotateY(90deg);\r\n    transform-origin: left;\r\n}\r\n.e_navigationH .p_navContent.showmenuBox{\r\n    opacity: 1;\r\n    transform: perspective(300px) rotateY(0deg);\r\n}\r\n.e_navigationH .p_level1Box{\r\n    padding-bottom: 60px;\r\n}\r\n.e_navigationH .p_level2Box{\n    display: none;\n    position: absolute;\n    left: 100%;\n    width: 70%;\n    top: 0;\n    background: rgb(0 0 0 / 80%);\n    overflow-y: scroll;\n}\r\n.e_navigationH .p_level3Box{\r\n    display: none;\r\n}\r\n.e_navigationH .p_menu1Item{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    line-height: 70px;\r\n    font-size: 16px;\r\n    color: #fff;\r\n    transition: all ease .15s;\r\n    border-bottom: 1px solid rgb(255 255 255 / 25%);\r\n    padding: 0 15px;\r\n}\r\n.e_navigationH .p_menu2Item{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    line-height: 50px;\r\n    font-size: 16px;\r\n    color: #fff;\r\n    transition: all ease .15s;\r\n    padding: 0 15px;\r\n}\r\n.e_navigationH .p_menu3Item{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    line-height: 1;\r\n    font-size: 15px;\r\n    color: rgb(255 255 255 / .5);\r\n    transition: all ease .15s;\r\n    padding: 4px 15px;\r\n}\r\n\r\n.e_navigationH .p_ico1List{\r\n    margin: 20px auto 0;\r\n    width: 40px;\r\n}\r\n.e_navigationH .p_icoA{\r\n    display: flex;\r\n    flex-direction: row;\r\n    border: 1px solid #fff;\r\n    width: 100%;\r\n    height: 40px;\r\n    border-radius: 50px;\r\n    justify-content: flex-start;\r\n    transition: all ease .3s;\r\n}\r\n.e_navigationH .p_icoText{\r\n    position: absolute;\r\n    left: calc(100% + 5px);\r\n    white-space: pre;\r\n    color: #fff;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    height: 100%;\r\n    transition: all ease .3s;\r\n    opacity: 0;\r\n    transform: translateX(10px);\r\n}\r\n.e_navigationH .p_icoImg{\r\n    margin: 0;\r\n}\r\n.e_navigationH .p_icoImg img{\r\n    position: absolute;\r\n    left: 0;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n}\r\n.e_navigationH .p_icoA:hover{\r\n    background: #007bff;\r\n    border: 1px solid #007bff;\r\n    width: 130px;\r\n}\r\n.e_navigationH .p_icoA:hover .p_icoText{\r\n    opacity: 1;\r\n    transform: translateX(0);\r\n}\r\n\r\n.e_navigationH li{\r\n    position:relative;\r\n}\r\n.e_navigationH a{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    width: 100%;\r\n}\r\n.e_navigationH svg{\r\n    margin: 0;\r\n    height: 18px;\r\n    width: auto;\r\n    cursor: pointer;\r\n    transition: all ease .3s;\r\n    transform: rotate(0deg)rotateY(0deg);\r\n}\r\n.e_navigationH p:hover{\r\n    color: #fff;\r\n    background: #005cbf;\r\n}\r\n.e_navigationH p:hover .p_jtIcon{\r\n    transform: rotate(0deg)rotateX(180deg);\r\n}\r\n.e_navigationH .p_menu2Item:hover{\r\n    color: #007bff;\r\n    background: rgb(0 92 191 / 0);\r\n}\r\n.e_navigationH .p_menu3Item:hover{\r\n    color: #007bff;\r\n    background: rgb(0 92 191 / 0);\r\n}\r\n.e_navigationH .p_level2Box::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n.e_navigationH .p_icoBox{\r\n    position: absolute;\r\n    width: 100%;\r\n    bottom: 40px;\r\n    z-index: 2;\r\n}\r\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ".e_navigationH{\r\n    max-width: 55px;\r\n}\r\n.e_navigationH .p_navButton{\r\n    height: 60px;\r\n}\r\n.e_navigationH .p_navContent{\r\n    top: 60px;\r\n    height: calc(100% - 60px);\r\n    max-width: calc(100vw - 54px);\r\n}\r\n.e_navigationH .p_bg{\r\n    top: 60px;\r\n}\r\n.e_navigationH .p_icoBox{\r\n    bottom: 20px;\r\n}\r\n.e_navigationH .p_ico1List{\r\n    margin: 10px auto 0;\r\n}\r\n.e_navigationH .p_menu1Item{\r\n    line-height: 60px;\r\n    padding: 0;\r\n}\r\n.e_navigationH .p_level2Box{\r\n    position: static;\r\n    width: 100%;\r\n    background: rgb(0 0 0 / 40%);\r\n}\r\n.e_navigationH .p_navContent p > a{\r\n    padding-left: 15px;\r\n    width: calc(100% - 50px);\r\n}\r\n.e_navigationH .p_baoS{\r\n    width: 50px;\r\n    border-left: 1px solid rgb(255 255 255 / 25%);\r\n    text-align: center;\r\n    cursor: pointer;\r\n}\r\n.e_navigationH .p_menu2Item{\r\n    padding: 0;\r\n    border-bottom: 1px solid rgb(255 255 255 / 25%);\r\n    color: rgb(255 255 255 / 70%);\r\n}\r\n.e_navigationH .p_menu3Item{\r\n    padding: 0;\r\n    line-height: 2;\r\n}\r\n.e_navigationH .p_level3Item:first-child .p_menu3Item{\r\n    margin-top:10px;\r\n}\r\n.e_navigationH .p_level3Item:last-child .p_menu3Item{\r\n    border-bottom: 1px solid rgb(255 255 255 / 25%);\r\n    padding-bottom:10px;\r\n}"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {
+        "navName": "首页"
+      },
+      {
+        "navName": "公司概况",
+        "children": [
+          {
+            "navName": "企业介绍",
+            "children": [
+              {
+                "navName": "企业介绍"
+              },
+              {
+                "navName": "发展历程"
+              },
+              {
+                "navName": "关于我们"
+              }
+            ]
+          },
+          {
+            "navName": "发展历程"
+          },
+          {
+            "navName": "关于我们"
+          }
+        ]
+      },
+      {
+        "navName": "我们的产品"
+      },
+      {
+        "navName": "新闻资讯",
+        "children": [
+          {
+            "navName": "最新动态"
+          },
+          {
+            "navName": "企业新闻"
+          },
+          {
+            "navName": "行业新闻"
+          }
+        ]
+      },
+      {
+        "navName": "招商加盟",
+        "children": [
+          {
+            "navName": "合作伙伴"
+          },
+          {
+            "navName": "加入我们"
+          }
+        ]
+      },
+      {
+        "navName": "售后服务",
+        "children": [
+          {
+            "navName": "服务宗旨"
+          },
+          {
+            "navName": "在线咨询"
+          },
+          {
+            "navName": "常见问题",
+            "children": [
+              {
+                "navName": "生活常识"
+              },
+              {
+                "navName": "百度百科"
+              }
+            ]
+          },
+          {
+            "navName": "用户协议"
+          }
+        ]
+      },
+      {
+        "navName": "联系我们",
+        "children": [
+          {
+            "navName": "在线留言"
+          },
+          {
+            "navName": "联系我们"
+          }
+        ]
+      },
+      {
+        "navName": "左下角按钮",
+        "children": [
+          {
+            "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/dbf70ccf-2af6-4c1a-9503-fafcd3cfaa9e.png",
+            "navName": "关于我们"
+          },
+          {
+            "img": "https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/445bbe3a-5663-48e4-9a92-52102c9efda5.png",
+            "navName": "产品中心"
+          }
+        ]
+      }
+    ],
+    "arrow": "<svg t=\"1625735163067\" class=\"icon p_jtIcon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1486\" width=\"200\" height=\"200\"><path d=\"M661.16183428 486.94732961L415.99871022 219.24359155c-13.37500289-14.59708438-35.98351032-15.54759219-50.51270128-2.24048272-14.59708438 13.37500289-15.54759219 35.98351032-2.24048272 50.51270127l223.09776396 243.60157549-222.89408371 244.28050967c-13.30710947 14.59708438-12.28870823 37.20559179 2.30837613 50.51270125 14.59708438 13.30710947 37.20559179 12.28870823 50.51270128-2.30837613l244.75576356-268.11109855c0.47525392-0.54314733 1.01840124-1.15418807 1.42576173-1.6973354 11.13452018-13.51078973 10.93083994-33.53934734-1.2899749-46.84645682z\" p-id=\"1487\"></path></svg>",
+    "showArrow": true
+  },
+  "i18n": {
+    "zh_CN": {
+      "noData": "暂无数据"
+    }
+  },
+  "datasource": "prop",
+  "dataManage": {}
+}
