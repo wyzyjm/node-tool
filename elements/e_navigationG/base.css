@@ -1,3 +1,6 @@
+.e_navigationG{
+    display: flex;
+}
 .e_navigationG .p_navButton{
     width: 21px;
     justify-content: center;
@@ -124,7 +127,7 @@
     display: flex;
     justify-content: space-between;
     line-height: 1;
-    padding: 5px 0 10px 0;
+    padding: 8px 0 8px 0;
     font-size: 16px;
     color: rgb(0 0 0 / .5);
     transition: all ease .15s;
