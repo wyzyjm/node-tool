@@ -5,7 +5,7 @@
             {{#each prop.dataList}}
             <li class="p_level1Item">
                 <!-- 名称 -->
-                <p class="p_menu1Item s_templatetitle p_onu js_editor_click">
+                <p class="p_menu1Item s_templatetitle js_editor_click">
                     <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
                         <span>{{navName}}</span>
                     </a>
@@ -17,7 +17,7 @@
                     {{#each this.children}}
                     <li class="p_level2Item">
                         <!-- 名称 2 -->
-                        <p class="p_menu2Item p_onu js_editor_click">
+                        <p class="p_menu2Item js_editor_click">
                             <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" target="{{#eq target 'blank'}}_blank{{/eq}}">
                                 <span>{{navName}}</span>
                             </a>
