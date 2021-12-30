@@ -39,7 +39,7 @@
       "placeholderPhone": "请输入手机号",
       "placeholderCode": "短信验证码",
       "placeholderemailCode": "邮箱验证码",
-      "placeholderEmail": " 请输入邮箱",
+      "placeholderEmail": "请输入邮箱",
       "tipUsername": "请输入账户名",
       "tipPassword": "请输入密码",
       "codeLogin": "验证码登录",
@@ -95,7 +95,8 @@
       "Verificationcodeerrororinvalid": "The verification code is incorrect or invalid",
       "phoneFormaterro": "Mobile phone format incorrect",
       "emailFormaterro": "Email format is incorrect",
-      "accountNot": "This account number does not exist"
+      "accountNot": "This account number does not exist",
+      "placeholderEmail": "Please enter your email address"
     },
     "de": {
       "titlePassword": "MitnPasswort einloggen",
@@ -127,7 +128,8 @@
       "Verificationcodeerrororinvalid": "Bestätigungscode ist falsch oder ungültig",
       "phoneFormaterro": "Falsches Handyformat",
       "emailFormaterro": "E-Mail-Format ist falsch",
-      "accountNot": "Dieser Account existiert nicht"
+      "accountNot": "Dieser Account existiert nicht",
+      "placeholderEmail": "E-Mail eingeben"
     },
     "fr": {
       "titlePassword": "Connecter par mot de passe",
@@ -159,7 +161,8 @@
       "Verificationcodeerrororinvalid": "Le code de vérification est incorrect ou invalide",
       "phoneFormaterro": "Format de téléphone incorrect",
       "emailFormaterro": "Le format d'adresse e-mail est incorrect",
-      "accountNot": "Ce compte n'existe pas"
+      "accountNot": "Ce compte n'existe pas",
+      "placeholderEmail": "Veuillez saisir l'adresse e-mail"
     },
     "ru": {
       "titlePassword": "Логин через пароль",
@@ -191,7 +194,8 @@
       "Verificationcodeerrororinvalid": "Ошибка кода подтверждения или код недействителен",
       "phoneFormaterro": "Неправильный формат номера телефона",
       "emailFormaterro": "Неверный формат E-mail",
-      "accountNot": "Этот аккаунт не существует"
+      "accountNot": "Этот аккаунт не существует",
+      "placeholderEmail": "Пожалуйста, введите e-mail"
     },
     "pt": {
       "titlePassword": "Login por senha",
@@ -223,7 +227,8 @@
       "Verificationcodeerrororinvalid": "O código de verificação está errado ou inválido",
       "phoneFormaterro": "Formato de celular incorreto",
       "emailFormaterro": "O formato do e-mail está incorreto",
-      "accountNot": "Essa conta não existe"
+      "accountNot": "Essa conta não existe",
+      "placeholderEmail": "Por favor digite seu e-mail"
     },
     "ko": {
       "titlePassword": "비밀번호 로그인",
@@ -255,7 +260,8 @@
       "Verificationcodeerrororinvalid": "인증번호가 틀렸거나 효력을 상실했습니다",
       "phoneFormaterro": "핸드폰 서식이 정확하지 않습니다",
       "emailFormaterro": "이메일 서식이 정확하지 않습니다",
-      "accountNot": "해당 계좌번호가 존재하지 않습니다"
+      "accountNot": "해당 계좌번호가 존재하지 않습니다",
+      "placeholderEmail": "이메일을 입력하세요"
     },
     "ja": {
       "titlePassword": "パスワードでログインします",
@@ -287,7 +293,8 @@
       "Verificationcodeerrororinvalid": "確認コードは間違っているか無効になりました",
       "phoneFormaterro": "携帯番号のフォーマットが正しくありません",
       "emailFormaterro": "メールアドレスのフォーマットは正しくありません",
-      "accountNot": "このアカウント番号が登録されていない"
+      "accountNot": "このアカウント番号が登録されていない",
+      "placeholderEmail": "メールアドレスを入力してください"
     },
     "es": {
       "titlePassword": "Contraseña",
@@ -319,7 +326,8 @@
       "Verificationcodeerrororinvalid": "El código de verificación es incorrecto o no es válido",
       "phoneFormaterro": "Formato de número de teléfono incorrecto",
       "emailFormaterro": "Formato de buzón incorrecto",
-      "accountNot": "Esta cuenta no existe"
+      "accountNot": "Esta cuenta no existe",
+      "placeholderEmail": "Ingrese su correo electrónico"
     },
     "ar": {
       "titlePassword": "تسجيل بكلمة المرور",
@@ -351,7 +359,8 @@
       "Verificationcodeerrororinvalid": "خطأ رمز التحقيق أو الإبطال",
       "phoneFormaterro": "تنسيق الجوال غير صحيح",
       "emailFormaterro": "تنسيق البريد الإلكتروني غير صحيح",
-      "accountNot": "هذا الحساب غير موجود"
+      "accountNot": "هذا الحساب غير موجود",
+      "placeholderEmail": "فضلا إدخال البريد الإلكتروني"
     },
     "it": {
       "titlePassword": "Accesso con password",
@@ -383,7 +392,8 @@
       "Verificationcodeerrororinvalid": "Il codice di verifica è sbagliato o non valido",
       "phoneFormaterro": "Formato del cellulare errato",
       "emailFormaterro": "Il formato della casella postale non è corretto",
-      "accountNot": "Questo account non esiste"
+      "accountNot": "Questo account non esiste",
+      "placeholderEmail": "Si prega di inserire la casella postale"
     },
     "bn": {
       "titlePassword": "পাসওয়ার্ড লগইন",
@@ -415,7 +425,8 @@
       "Verificationcodeerrororinvalid": "যাচাইকরণ কোড ভুল বা বৈধতা সমাপ্ত হয়েছে",
       "phoneFormaterro": "ফোন নম্বরের ধরণ ভুল",
       "emailFormaterro": "ইমেলের ধরণে ত্রুটি",
-      "accountNot": "খাতা উপলব্ধ নয়"
+      "accountNot": "খাতা উপলব্ধ নয়",
+      "placeholderEmail": "ইমেল প্রদান করুন"
     },
     "da": {
       "titlePassword": "Log ind med adgangskode",
@@ -447,7 +458,8 @@
       "Verificationcodeerrororinvalid": "Verifikationskoden forkert eller ugyldig",
       "phoneFormaterro": "Mobilformat forkert",
       "emailFormaterro": "E-mail format forkert",
-      "accountNot": "Denne konto kan ikke findes"
+      "accountNot": "Denne konto kan ikke findes",
+      "placeholderEmail": "Indtast e-mail"
     },
     "idn": {
       "titlePassword": "Login dengan kata sandi",
@@ -479,7 +491,8 @@
       "Verificationcodeerrororinvalid": "Kode verifikasi salah atau kadaluarsa",
       "phoneFormaterro": "Format ponsel salah",
       "emailFormaterro": "Format kotak surat salah",
-      "accountNot": "Akun ini tidak ada"
+      "accountNot": "Akun ini tidak ada",
+      "placeholderEmail": "Silakan masukkan kotak surat"
     },
     "th": {
       "titlePassword": "รหัสผ่านเข้าสู่ระบบ",
@@ -511,7 +524,8 @@
       "Verificationcodeerrororinvalid": "รหัสยืนยันผิดพลาดหรือหมดอายุ",
       "phoneFormaterro": "โทรศัพท์มือถือมีรูปแบบไม่ถูกต้อง",
       "emailFormaterro": "รูปแบบอีเมลไม่ถูกต้อง",
-      "accountNot": "บัญชีนี้ไม่มีอยู่"
+      "accountNot": "บัญชีนี้ไม่มีอยู่",
+      "placeholderEmail": "โปรดป้อนอีเมล"
     },
     "vi": {
       "titlePassword": "Mật khẩu đăng nhập",
@@ -543,7 +557,8 @@
       "Verificationcodeerrororinvalid": "Mã xác minh sai hoặc đã hết hiệu lực",
       "phoneFormaterro": "Định dạng điện thoại di động không chính xác",
       "emailFormaterro": "Định dạng e-mail không chính xác",
-      "accountNot": "Tài khoản này không tồn tại"
+      "accountNot": "Tài khoản này không tồn tại",
+      "placeholderEmail": "Vui lòng nhập Email"
     },
     "tr": {
       "titlePassword": "Şifre gir",
@@ -575,7 +590,8 @@
       "Verificationcodeerrororinvalid": "Doğrulama kodu yanlış veya geçersiz",
       "phoneFormaterro": "Cep telefonu formatı yanlış",
       "emailFormaterro": "E-posta biçimi doğru değil",
-      "accountNot": "Bu hesap mevcut değil"
+      "accountNot": "Bu hesap mevcut değil",
+      "placeholderEmail": "lütfen e-postanızı girin"
     },
     "nl": {
       "titlePassword": "Inloggen met wachtwoord",
@@ -607,7 +623,8 @@
       "Verificationcodeerrororinvalid": "De verificatiecode is verkeerd of ongeldig",
       "phoneFormaterro": "Onjuist mobiele telefoonformaat",
       "emailFormaterro": "Het mailboxformaat is onjuist",
-      "accountNot": "Dit account bestaat niet"
+      "accountNot": "Dit account bestaat niet",
+      "placeholderEmail": "Voer de mailbox  in a.u.b."
     },
     "pl": {
       "titlePassword": "Logowanie za pomocą hasła",
@@ -639,7 +656,8 @@
       "Verificationcodeerrororinvalid": "Kod weryfikacyjny jest nieprawidłowy lub wygasł",
       "phoneFormaterro": "Format numeru telefonu jest nieprawidłowy",
       "emailFormaterro": "Błąd formatu e-mail",
-      "accountNot": "Konto nie istnieje"
+      "accountNot": "Konto nie istnieje",
+      "placeholderEmail": "Wprowadź e-mail"
     },
     "zh_HN": {
       "titlePassword": "密碼登錄",
@@ -671,7 +689,8 @@
       "Verificationcodeerrororinvalid": "驗證碼錯誤或已失效",
       "phoneFormaterro": "手機格式不正確",
       "emailFormaterro": "郵箱格式不正確",
-      "accountNot": "此賬號不存在"
+      "accountNot": "此賬號不存在",
+      "placeholderEmail": "請輸入郵箱"
     }
   },
   "datasource": "prop"
