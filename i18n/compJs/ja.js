@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "右へスライド",
   "longbow_refresh": "更新",
   "longbow_fail": "読み込みに失敗しました",
-  "longbow_title": "セキュリティ検証"
+  "longbow_title": "セキュリティ検証",
+  "purchase_success": "購入に成功",
+  "purchase_failed": "追加購入に失敗しました",
+  "collection_success": "コレクションの成功",
+  "collection_failed": "収集に失敗しました",
+  "collected": "お気に入りにしました"
 }

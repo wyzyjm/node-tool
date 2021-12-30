@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Schieben nach rechts",
   "longbow_refresh": "Aktualisierung",
   "longbow_fail": "Laden fehlgeschlagen",
-  "longbow_title": "Sicherheitsüberprüfung"
+  "longbow_title": "Sicherheitsüberprüfung",
+  "purchase_success": "Kauf erfolgreich",
+  "purchase_failed": "Kauf hinzufügen fehlgeschlagen",
+  "collection_success": "Sammlungserfolg",
+  "collection_failed": "Abholung fehlgeschlagen",
+  "collected": "Gesammelt"
 }

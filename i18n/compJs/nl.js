@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Schuif naar rechts",
   "longbow_refresh": "Vernieuwen",
   "longbow_fail": "Laden mislukt",
-  "longbow_title": "veiligheidsverificatie"
+  "longbow_title": "veiligheidsverificatie",
+  "purchase_success": "Aankoop geslaagd",
+  "purchase_failed": "Aankoop toevoegen mislukt",
+  "collection_success": "Collectie succes",
+  "collection_failed": "Verzamelen mislukt",
+  "collected": "Verzameld"
 }

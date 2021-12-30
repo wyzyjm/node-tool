@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Przesuń w prawo",
   "longbow_refresh": "Odśwież",
   "longbow_fail": "Nie udało się załadować",
-  "longbow_title": "Weryfikacja zabezpieczeń"
+  "longbow_title": "Weryfikacja zabezpieczeń",
+  "purchase_success": "Udało się zakupić",
+  "purchase_failed": "Nie udało się dodać zakupu",
+  "collection_success": "Sukces kolekcji",
+  "collection_failed": "Zbieranie nie powiodło się",
+  "collected": "Dodano do zakładek"
 }

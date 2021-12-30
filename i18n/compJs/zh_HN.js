@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "向右滑動",
   "longbow_refresh": "刷新",
   "longbow_fail": "加載失敗",
-  "longbow_title": "安全驗證"
+  "longbow_title": "安全驗證",
+  "purchase_success": "加購成功",
+  "purchase_failed": "加購失敗",
+  "collection_success": "收藏成功",
+  "collection_failed": "收藏失敗",
+  "collected": "已收藏"
 }

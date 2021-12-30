@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "เลื่อนไปทางขวา",
   "longbow_refresh": "รีเฟรช",
   "longbow_fail": "โหลดไม่สำเร็จ",
-  "longbow_title": "การยืนยันเพื่อความปลอดภัย"
+  "longbow_title": "การยืนยันเพื่อความปลอดภัย",
+  "purchase_success": "ประสบความสำเร็จในการซื้อ",
+  "purchase_failed": "เพิ่มการซื้อล้มเหลว",
+  "collection_success": "ความสำเร็จของคอลเลกชัน",
+  "collection_failed": "การรวบรวมล้มเหลว",
+  "collected": "เก็บสะสมไว้"
 }

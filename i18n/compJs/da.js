@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Skub til højre",
   "longbow_refresh": "Opdater",
   "longbow_fail": "Kunne ikke indlæses",
-  "longbow_title": "Sikkerhedsverifikation"
+  "longbow_title": "Sikkerhedsverifikation",
+  "purchase_success": "Det lykkedes at købe",
+  "purchase_failed": "Tilføjelse af køb mislykkedes",
+  "collection_success": "Indsamling succes",
+  "collection_failed": "Indsamling mislykkedes",
+  "collected": "Tilføjt"
 }

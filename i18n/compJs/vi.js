@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Vuốt sang phải",
   "longbow_refresh": "Làm mới",
   "longbow_fail": "Không tải được",
-  "longbow_title": "Xác minh an toàn"
+  "longbow_title": "Xác minh an toàn",
+  "purchase_success": "Mua hàng thành công",
+  "purchase_failed": "Thêm giao dịch mua không thành công",
+  "collection_success": "Bộ sưu tập thành công",
+  "collection_failed": "Bộ sưu tập không thành công",
+  "collected": "Đã thu thập"
 }

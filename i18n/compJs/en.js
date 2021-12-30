@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Swiperight",
   "longbow_refresh": "Refresh",
   "longbow_fail": "Failed to load",
-  "longbow_title": "Security verification"
+  "longbow_title": "Security verification",
+  "purchase_success": "Succeeded in purchase",
+  "purchase_failed": "Add purchase failed",
+  "collection_success": "Collection success",
+  "collection_failed": "Collection failed",
+  "collected": "Favorited"
 }

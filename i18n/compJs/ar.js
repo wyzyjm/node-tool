@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "إسحب إلى اليمين",
   "longbow_refresh": "تحديث",
   "longbow_fail": "فشل في التحميل",
-  "longbow_title": "تحقيق الأمن"
+  "longbow_title": "تحقيق الأمن",
+  "purchase_success": "نجح في الشراء",
+  "purchase_failed": "فشلت إضافة الشراء",
+  "collection_success": "نجاح التحصيل",
+  "collection_failed": "فشل الجمع",
+  "collected": "قد جمع"
 }
