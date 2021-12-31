@@ -1,7 +1,6 @@
 <div class="e_loop_K s_list" needjs="true">
     <table class="contents p_list"> 
-        {{#if prop.pageConfig.needHead}}
-        <thead class="p_head">
+        <thead class="p_head {{#if prop.needHead}}aaa{{/if}}" >
             <tr>
                 <!-- {{#each prop.columnData}} -->
                     <th data-index="{{@index}}" type="string">
@@ -29,7 +28,6 @@
                 <!-- {{/each}} -->
             </tr>
         </thead>
-        {{/if}}
         <tbody class="p_body">
             <!-- {{#each prop.dataList}} -->
                 <tr class="p_info">
@@ -137,10 +135,8 @@
             <!-- {{/each}} -->
         </tbody>
     </table>
-    <div class="p_page">
-        {{!-- {{{nPaging prop.page prop.pageConfig datasource i18nJson ${id}}}} --}}
-        {{{nPaging prop.page prop.pageConfig datasource i18nJson }}}
-    </div>
+    <!-- 分页 -->
+    <div class="page-static"></div>
     <!-- 所需数据 -->
     <input type="hidden" name="_config" value='{{$toJson datasource._config}}'>
     <input type="hidden" name="pageParamsJson" value='{{$toJson datasource.page}}'>

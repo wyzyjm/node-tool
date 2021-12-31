@@ -5,11 +5,6 @@
             "name": "dataList",
             "cname": "列表",
             "type": "array[object]"
-        },
-        {
-            "name": "page",
-            "cname": "分页",
-            "type": "object[page]"
         }
     ]
 }
