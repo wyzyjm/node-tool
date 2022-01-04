@@ -83,3 +83,13 @@
     cursor: pointer;
     display: inline-block;
 }
+.e_loop_K .p_head{
+    display: none;
+}
+.e_loop_K .p_head.aaa{
+    display: table-header-group;
+}
+.page-static .p_selectPageSize{
+    display: inline-block;
+    width: 150px;
+}
