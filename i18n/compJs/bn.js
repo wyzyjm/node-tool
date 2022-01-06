@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "ডান দিয়ে সরান",
   "longbow_refresh": "রিফ্রেশ",
   "longbow_fail": "লোড করতে ব্যর্থ",
-  "longbow_title": "সুরক্ষা যাচাইকরণ"
+  "longbow_title": "সুরক্ষা যাচাইকরণ",
+  "purchase_success": "কেনাকাটায় সফল",
+  "purchase_failed": "ক্রয় যোগ করা ব্যর্থ হয়েছে৷",
+  "collection_success": "সংগ্রহ সাফল্য",
+  "collection_failed": "সংগ্রহ ব্যর্থ হয়েছে",
+  "collected": "বুকমার্ক করা"
 }

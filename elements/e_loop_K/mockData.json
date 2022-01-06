@@ -11,32 +11,11 @@
               "needScreen": true
             }
         ],
-        "page": {
-            "from": 0,
-            "size": 4,
-            "totalCount": 100
-        },
+        "needHead": true,
         "pageConfig": {
-            "showJump": true,
-            "needHead": true,
-            "filterPosition":"",
-            "pcRow": 4,
-            "pcColumn": 1,
-            "moColumn": 1,
-            "pageType": "hidden",
-            "rolling": {
-                "navigation": true,
-                "pagenation": true,
-                "autoScroll": true,
-                "scrollTime": 4,
-                "scrollType": "horizontal"
-            },
-            "marquee": {
-                "navigation": true,
-                "marqueeTime": 4
-            },
-            "loopItem": ".p_info",
-            "status": true
+            "pcRow": 600,
+            "pageSize": 10,
+            "loopItem": ".p_info"
         }
     },
     "i18n": {

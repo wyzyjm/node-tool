@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Сдвиг вправо",
   "longbow_refresh": "Обновить",
   "longbow_fail": "Ошибка загрузки",
-  "longbow_title": "Проверка безопасности"
+  "longbow_title": "Проверка безопасности",
+  "purchase_success": "Успешно в покупке",
+  "purchase_failed": "Не удалось добавить покупку",
+  "collection_success": "Успех коллекции",
+  "collection_failed": "Сбор не удалось",
+  "collected": "Добавлено в избранное"
 }

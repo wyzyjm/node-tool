@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Geser ke kanan",
   "longbow_refresh": "Segarkan",
   "longbow_fail": "Gagal untuk memuat",
-  "longbow_title": "Verifikasi keamanan"
+  "longbow_title": "Verifikasi keamanan",
+  "purchase_success": "Berhasil dalam pembelian",
+  "purchase_failed": "Tambahkan pembelian gagal",
+  "collection_success": "Koleksi sukses",
+  "collection_failed": "Koleksi gagal",
+  "collected": "Telah difavoritkan"
 }

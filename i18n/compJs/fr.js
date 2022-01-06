@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Balayez vers la droite",
   "longbow_refresh": "Actualiser",
   "longbow_fail": "Échec du chargement",
-  "longbow_title": "Vérification de la sécurité"
+  "longbow_title": "Vérification de la sécurité",
+  "purchase_success": "Achat réussi",
+  "purchase_failed": "Échec de l'ajout de l'achat",
+  "collection_success": "Succès de la collecte",
+  "collection_failed": "Échec de la collecte",
+  "collected": "Favoris"
 }

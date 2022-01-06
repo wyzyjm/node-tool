@@ -12,7 +12,6 @@
 }
 .e_loop_K table tbody td{
     position: relative;
-    height: 120px;
     min-width: 120px;
 }
 .e_loop_K .p_iconsBox{
@@ -82,4 +81,14 @@
     padding: 0 4px;
     cursor: pointer;
     display: inline-block;
+}
+.e_loop_K .p_head{
+    display: none;
+}
+.e_loop_K .p_head.aaa{
+    display: table-header-group;
+}
+.page-static .p_selectPageSize{
+    display: inline-block;
+    width: 150px;
 }

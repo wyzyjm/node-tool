@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "Sağa kaydır",
   "longbow_refresh": "Yenile",
   "longbow_fail": "Yükleme başarısız",
-  "longbow_title": "Güvenlik Doğrulaması"
+  "longbow_title": "Güvenlik Doğrulaması",
+  "purchase_success": "Satın almada başarılı",
+  "purchase_failed": "Satın alma eklenemedi",
+  "collection_success": "Koleksiyon başarısı",
+  "collection_failed": "Koleksiyon başarısız oldu",
+  "collected": "Favorilere eklendi"
 }

@@ -47,5 +47,10 @@ window.i18n = {
   "longbow_bar": "오른쪽 슬라이딩",
   "longbow_refresh": "리프레시",
   "longbow_fail": "불러 오지 못했습니다",
-  "longbow_title": "보안 인증"
+  "longbow_title": "보안 인증",
+  "purchase_success": "구매 성공",
+  "purchase_failed": "구매 추가 실패",
+  "collection_success": "컬렉션 성공",
+  "collection_failed": "수집 실패",
+  "collected": "즐겨찾기에 추가되었습니다"
 }
