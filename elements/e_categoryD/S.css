@@ -1,0 +1,44 @@
+.e_categoryD{
+    max-width: 100%;
+}
+.e_categoryD .breakbox-2{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    width: 92%;
+    margin: 10px auto 0;
+    display: none;
+    transition: auto;
+    padding: 0;
+}
+.e_categoryD .breakbox-2 > div{
+    height: 120px;
+    margin-bottom: 10px;
+}
+.e_categoryD .p_c_tree{
+    overflow-y: scroll;
+    height: 500px;
+    display: none;
+}
+.e_categoryD .breakbox-1{
+    padding-bottom: 100px;
+}
+.e_categoryD .p_c_tree::-webkit-scrollbar{
+    display:none;
+}
+.e_categoryD .p_bg{
+    position: fixed;
+    background: rgb(0 0 0 / 65%);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+.e_categoryD .breakbox-2 > .p_c_item:nth-child(2),
+.e_categoryD .breakbox-2 > .p_c_item:nth-child(5),
+.e_categoryD .breakbox-2 > .p_c_item:nth-child(8),
+.e_categoryD .breakbox-2 > .p_c_item:nth-child(11),
+.e_categoryD .breakbox-2 > .p_c_item:nth-child(14){
+    padding-left: 10px;
+}
