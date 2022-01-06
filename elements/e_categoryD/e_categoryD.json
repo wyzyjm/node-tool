@@ -2,15 +2,15 @@
   "cname": "分类树-面包",
   "styleId": "e_categoryD",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs='true'>\r\n    <div class=\"p_titleBox js_editor_click\">\r\n        <p class=\"p_title\">\r\n            <svg t=\"1641360457901\" class=\"icon p_ico\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"3309\" width=\"64\" height=\"64\"><path d=\"M927.25551408 262.13793185H96.96293925c-27.37948445 0-49.56463408-21.73610667-49.56463407-48.54518518s22.19728592-48.54518518 49.56463407-48.54518519h830.29257483c27.37948445 0 49.56463408 21.73610667 49.56463407 48.54518519 0 26.82121482-22.19728592 48.54518518-49.56463407 48.54518518zM927.25551408 837.21633185H96.96293925c-27.37948445 0-49.56463408-21.73610667-49.56463407-48.54518518s22.19728592-48.54518518 49.56463407-48.54518519h830.29257483c27.37948445 0 49.56463408 21.73610667 49.56463407 48.54518519s-22.19728592 48.54518518-49.56463407 48.54518518zM927.25551408 550.29001482H96.96293925c-27.37948445 0-49.56463408-21.73610667-49.56463407-48.54518519s22.19728592-48.54518518 49.56463407-48.54518518h830.29257483c27.37948445 0 49.56463408 21.73610667 49.56463407 48.54518518s-22.19728592 48.54518518-49.56463407 48.54518519z\" p-id=\"3310\"></path></svg>\r\n            <span class=\"p_flName\">分类名称</span>\r\n            </p>\r\n    </div>\r\n    <div class=\"p_c_tree\">\r\n        {{#if ${cate}}}\r\n        {{#tree ${cate}}}\r\n        {{#if @nodeBegin}}<ul class=\"p_c_content breakbox-{{@deep}}\">{{/if}}\r\n            <li class=\"p_c_item\">\r\n                <p class=\"p_c_t js_editor_click\">\r\n                    <a href=\"{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}\"\r\n                    class=\"p_c_title{{@deep}} {{#eq selected true}}active{{/eq}} deep\"\r\n                    target=\"{{#eq target 'BLANK'}}_blank{{/eq}}\">\r\n                        <span>{{categoryName}}</span>\r\n                    </a>\r\n                </p>\r\n                {{tree children}}\r\n            </li>\r\n            {{#if @nodeEnd}}\r\n        </ul>{{/if}}\r\n        {{/tree}}\r\n        {{^}}\r\n        {{nNoDataPrompt ${i18n.noData}}}\r\n        {{/if}}\r\n    </div>\r\n    <div class=\"p_bg\"></div>\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_categoryD{\n    max-width: 210px;\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n}\n.e_categoryD .p_titleBox {\n    display: block;\n    line-height: 1;\n    padding-left: 30px;\n    background: rgb(49 49 49);\n    transition: all ease .3s;\n    cursor: pointer;\n    position: relative;\n    z-index: 21;\n}\n.e_categoryD .p_title {\n    color: #999999;\n    font-size: 16px;\n    font-weight: 500;\n    vertical-align: middle;\n    line-height: 40px;\n    display: inline-block;\n    font-family: arial;\n    transition: all ease .3s;\n}\n.e_categoryD .p_ico{\n    width: 18px;\n    margin: 0 25px 0 0;\n    height: auto;\n}\n.e_categoryD .p_flName{\n    font-size: 16px;\n}\n.e_categoryD .breakbox-1{\n    padding-bottom: 100px;\n    display: flex;\n    flex-direction: column;\n}\n.e_categoryD .p_c_tree{\n    background: rgba(49,49,49,.8);\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 100%;\n    z-index: 21;\n}\n.e_categoryD .p_c_title1{\n    font-size: 16px;\n    transition: all ease .3s;\n    width: 100%;\n    line-height: 65px;\n    color: #999999;\n    text-align: center;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n    align-content: center;\n    padding: 0;\n}\n.e_categoryD .p_c_t{\n    display: flex;\n    justify-content: space-between;\n    background: rgb(255 255 255 / 0);\n    transition: all ease .3s;\n    padding-left: 16px;\n}\n.e_categoryD .p_more{\n    transition: all ease .3s;\n    line-height: 65px;\n    width: 45px;\n    text-align: center;\n    color: #999999;\n    cursor: pointer;\n}\n.e_categoryD .p_more svg{\n    margin: 0;\n    width: 12px;\n}\n.e_categoryD .p_c_title1 > span:first-child{\n    width: 46px;\n    height: 100%;\n    margin-right: 15px;\n    transition: all ease .3s;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: contain;\n}\n.e_categoryD .p_images-0{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/75a87e6a-c8e4-48d1-8f81-2d1a27d5b8bc.png);\n}\n.e_categoryD .p_images-1{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/87df6cb1-11e2-4334-8ad8-a5ce94ccc1b7.png);\n}\n.e_categoryD .p_images-2{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/04c7bff2-ac98-492b-8465-75e06a047e95.png);\n}\n.e_categoryD .p_images-3{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/daf4fdea-4429-47fe-be9b-226dfd870d8a.png);\n}\n.e_categoryD .p_images-4{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/6f134347-e821-4ef2-a2fc-cc137f3b333a.png);\n}\n.e_categoryD .breakbox-2{\n    position: absolute;\n    left: 100%;\n    top: 0;\n    background: #fff;\n    width: 460px;\n    height: 100%;\n    transition: all ease .3s;\n    padding: 20px;\n    opacity: 0;\n    visibility: hidden;\n    z-index: 0;\n}\n.e_categoryD .breakbox-2 > div{\n    width: 100%;\n    height: 140px;\n    margin-bottom: 20px;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}\n.e_categoryD .p_Bigimages-0{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/d81bd7f8-1e21-422e-a208-00493839e76a.jpg);\n}\n.e_categoryD .p_Bigimages-1{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/8f424c16-c797-49c7-8eb0-a20b7ba7be96.jpg);\n}\n.e_categoryD .p_Bigimages-2{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/1b594b5e-773b-4e41-94c2-56bd8dac9f92.jpg);\n}\n.e_categoryD .p_Bigimages-3{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/cda3cac5-db7c-4ce9-946f-e3607a310ee4.jpg);\n}\n.e_categoryD .p_Bigimages-4{\n    background-image: url(http://2012185063.pool602-site.make.site.cn/repository/image/d81bd7f8-1e21-422e-a208-00493839e76a.jpg);\n}\n.e_categoryD .breakbox-1 > .p_c_item{\n    width: 100%;\n}\n.e_categoryD .p_c_title2{\n    color: #777;\n    float: left;\n    text-align: left;\n    line-height: 1;\n    font-size: 14px;\n    transition: all ease .3s;\n    margin-bottom: 10px;\n}\n.e_categoryD .p_bg{\n    display: none;\n}\n.e_categoryD .breakbox-3{\n    display: none !important;\n}\n.e_categoryD .breakbox-2 .p_more{\n    display: none;\n}\n\n\n/*区分一二级样式*/\n.e_categoryD .breakbox-2 .p_c_t,\n.e_categoryD .breakbox-2 .p_c_t:hover{\n    background: none;\n    padding: 0;\n}\n.e_categoryD .p_c_item{\n    width: 30%;\n    display: inline-block;\n}\n\n/*Hover*/\n.e_categoryD .p_c_t:hover{\n    background: #d2bb87;\n}\n.e_categoryD .p_c_t:hover .p_c_title1,\n.e_categoryD .p_c_t:hover .p_more{\n    color: #fff;\n}\n.e_categoryD .p_more:hover{\n    background: rgb(0 0 0 / .1);\n}\n.e_categoryD .p_titleBox:hover{\n    background: #d2bb87;\n}\n.e_categoryD .p_titleBox:hover .p_title{\n    color: #fff;\n}\n.e_categoryD .p_c_t:hover .p_c_title1 > span:first-child{\n    filter: brightness(0) invert(100%);\n}\n.e_categoryD .p_c_item:hover .breakbox-2{\n    opacity: 1;\n    visibility: visible;\n    z-index: 1;\n}\n.e_categoryD .p_c_title2:hover{\n    color: #000;\n}\n.e_categoryD .isdesignShow{\n    opacity: 1;\n    visibility: visible;\n    display: none;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ""
+      "cssText": ".e_categoryD{\n    max-width: 100%;\n}\n.e_categoryD .breakbox-2{\n    position: static;\n    opacity: 1;\n    visibility: visible;\n    width: 92%;\n    margin: 10px auto 0;\n    display: none;\n    transition: auto;\n    padding: 0;\n}\n.e_categoryD .breakbox-2 > div{\n    height: 120px;\n    margin-bottom: 10px;\n}\n.e_categoryD .p_c_tree{\n    overflow-y: scroll;\n    height: 500px;\n    display: none;\n}\n.e_categoryD .breakbox-1{\n    padding-bottom: 100px;\n}\n.e_categoryD .p_c_tree::-webkit-scrollbar{\n    display:none;\n}\n.e_categoryD .p_bg{\n    position: fixed;\n    background: rgb(0 0 0 / 65%);\n    left: 0;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    z-index: 20;\n}\n.e_categoryD .breakbox-2 > .p_c_item:nth-child(2),\n.e_categoryD .breakbox-2 > .p_c_item:nth-child(5),\n.e_categoryD .breakbox-2 > .p_c_item:nth-child(8),\n.e_categoryD .breakbox-2 > .p_c_item:nth-child(11),\n.e_categoryD .breakbox-2 > .p_c_item:nth-child(14){\n    padding-left: 10px;\n}"
     },
     {
       "media": "screen and (min-width: 769px)",
@@ -21,8 +21,109 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "cate": [
+      {
+        "categoryName": "轻奢卧室",
+        "children": [
+          {
+            "categoryName": "床"
+          },
+          {
+            "categoryName": "床头柜"
+          },
+          {
+            "categoryName": "妆台"
+          },
+          {
+            "categoryName": "妆凳"
+          },
+          {
+            "categoryName": "床尾凳"
+          },
+          {
+            "categoryName": "五斗柜"
+          },
+          {
+            "categoryName": "收纳柜"
+          },
+          {
+            "categoryName": "衣柜"
+          }
+        ]
+      },
+      {
+        "categoryName": "轻奢客厅",
+        "children": [
+          {
+            "categoryName": "沙发"
+          },
+          {
+            "categoryName": "休闲椅"
+          },
+          {
+            "categoryName": "贵妃椅"
+          },
+          {
+            "categoryName": "茶几"
+          },
+          {
+            "categoryName": "电视柜"
+          },
+          {
+            "categoryName": "玄关"
+          },
+          {
+            "categoryName": "鞋柜"
+          },
+          {
+            "categoryName": "装饰柜"
+          }
+        ]
+      },
+      {
+        "categoryName": "轻奢餐厅",
+        "children": [
+          {
+            "categoryName": "餐桌"
+          },
+          {
+            "categoryName": "餐椅"
+          },
+          {
+            "categoryName": "餐边柜"
+          },
+          {
+            "categoryName": "酒柜"
+          }
+        ]
+      },
+      {
+        "categoryName": "轻奢书房",
+        "children": [
+          {
+            "categoryName": "写字台"
+          },
+          {
+            "categoryName": "书椅"
+          },
+          {
+            "categoryName": "书柜"
+          }
+        ]
+      },
+      {
+        "categoryName": "特价产品"
+      }
+    ],
+    "showImg": true
+  },
+  "i18n": {
+    "zh_CN": {
+      "moCategoryTitle": "全部分类",
+      "noData": "暂无数据"
+    }
+  },
   "datasource": "prop",
   "dataManage": {}
 }

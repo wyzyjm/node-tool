@@ -33,7 +33,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    z-index: 0;
+    z-index: 20;
 }
 .e_categoryD .breakbox-2 > .p_c_item:nth-child(2),
 .e_categoryD .breakbox-2 > .p_c_item:nth-child(5),
