@@ -2,7 +2,7 @@
   "cname": "搜索图集",
   "styleId": "e_imageSearch",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${imgList}}}\r\n        <div class=\"swiper-container p_container\">\r\n            <div class=\"swiper-wrapper\">\r\n                {{#each ${imgList}}}\r\n                <div class=\"swiper-slide\" >\r\n                    <div class=\"p_img\">\r\n                        {{{nLazyImage imageUrl ../${title} ${setting}.isLazy}}}\r\n                    </div>\r\n                </div>\r\n                {{/each}}\r\n            </div>\r\n            <div class=\"js_editor_click swiper-button-next  swiper-button-white p_next\"></div>\r\n            <div class=\"js_editor_click swiper-button-prev swiper-button-white p_prev\"></div>\r\n        </div>\r\n    {{^}}\r\n        {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${imgList}}}\r\n        <div class=\"swiper-container p_container\">\r\n            <div class=\"swiper-wrapper\">\r\n                {{#each ${imgList}}}\r\n                <div class=\"swiper-slide\" >\r\n                    <div class=\"p_img\">\r\n                        {{#if href.value}}\r\n                            <a href=\"{{$transferLink href compId}}\" target=\"{{href.target}}\">\r\n                        {{/if}}\r\n                                {{{nLazyImage imageUrl ../title ../setting.isLazy}}}\r\n                        {{#if href.value}}\r\n                            </a>\r\n                        {{/if}}\r\n                    </div>\r\n                </div>\r\n                {{/each}}\r\n            </div>\r\n            <div class=\"js_editor_click swiper-button-next  swiper-button-white p_next\"></div>\r\n            <div class=\"js_editor_click swiper-button-prev swiper-button-white p_prev\"></div>\r\n        </div>\r\n    {{^}}\r\n        {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>",
   "css": [
     {
       "media": "",
@@ -24,31 +24,46 @@
   "prop": {
     "imgList": [
       {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        }
       },
       {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        }
       },
       {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        }
       },
       {
-        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+        "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        }
       }
     ],
     "title": "图片名称",
-    "href": {
-      "type": "",
-      "value": "",
-      "target": ""
-    },
     "setting": {
-      "isLazy": "true",
-      "fit": "contain",
+      "isLazy": true,
+      "fit": "cover",
+      "space": 5,
       "pcSlidesPerView": 4,
       "moSlidesPerView": 2
-    },
-    "space": 5
+    }
   },
   "i18n": {
     "zh_CN": {

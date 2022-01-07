@@ -2,31 +2,46 @@
     "prop": {
         "imgList": [
             {
-                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                }
             },
             {
-                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                }
             },
             {
-                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                }
             },
             {
-                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+                "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                }
             }
         ],
         "title": "图片名称",
-        "href": {
-            "type": "",
-            "value": "",
-            "target": ""
-        },
         "setting": {
-            "isLazy": "true",
-            "fit": "contain",
+            "isLazy": true,
+            "fit": "cover",
+            "space": 5,
             "pcSlidesPerView": 4,
             "moSlidesPerView": 2
-        },
-        "space": 5
+        }
     },
     "i18n": {
         "noData": "暂无数据"
