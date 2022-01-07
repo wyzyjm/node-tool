@@ -1,0 +1,103 @@
+{
+    "prop": {
+        "cate": [
+            {
+                "categoryName": "轻奢卧室",
+                "children": [
+                    {
+                        "categoryName": "床"
+                    },
+                    {
+                        "categoryName": "床头柜"
+                    },
+                    {
+                        "categoryName": "妆台"
+                    },
+                    {
+                        "categoryName": "妆凳"
+                    },
+                    {
+                        "categoryName": "床尾凳"
+                    },
+                    {
+                        "categoryName": "五斗柜"
+                    },
+                    {
+                        "categoryName": "收纳柜"
+                    },
+                    {
+                        "categoryName": "衣柜"
+                    }
+                ]
+            },
+            {
+                "categoryName": "轻奢客厅",
+                "children": [
+                    {
+                        "categoryName": "沙发"
+                    },
+                    {
+                        "categoryName": "休闲椅"
+                    },
+                    {
+                        "categoryName": "贵妃椅"
+                    },
+                    {
+                        "categoryName": "茶几"
+                    },
+                    {
+                        "categoryName": "电视柜"
+                    },
+                    {
+                        "categoryName": "玄关"
+                    },
+                    {
+                        "categoryName": "鞋柜"
+                    },
+                    {
+                        "categoryName": "装饰柜"
+                    }
+                ]
+            },
+            {
+                "categoryName": "轻奢餐厅",
+                "children": [
+                    {
+                        "categoryName": "餐桌"
+                    },
+                    {
+                        "categoryName": "餐椅"
+                    },
+                    {
+                        "categoryName": "餐边柜"
+                    },
+                    {
+                        "categoryName": "酒柜"
+                    }
+                ]
+            },
+            {
+                "categoryName": "轻奢书房",
+                "children": [
+                    {
+                        "categoryName": "写字台"
+                    },
+                    {
+                        "categoryName": "书椅"
+                    },
+                    {
+                        "categoryName": "书柜"
+                    }
+                ]
+            },
+            {
+                "categoryName": "特价产品"
+            }
+        ],
+        "showImg": true
+    },
+    "i18n": {
+        "moCategoryTitle": "全部分类",
+        "noData": "暂无数据"
+    }
+}

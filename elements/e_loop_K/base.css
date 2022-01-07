@@ -1,21 +1,21 @@
 .e_loop_K table {
     border-collapse: collapse;
-    width: 99.99%;
+    width: 100%;
     overflow: auto;
 }
-.e_loop_K table th,
 .e_loop_K table td {
-    border: 1px solid #ccc;
+    border: 1px solid #efefef;
 }
 .e_loop_K table th {
     text-align: center;
+    border: 1px solid #efefef;
 }
 .e_loop_K table tbody td{
     position: relative;
     min-width: 120px;
 }
 .e_loop_K .p_iconsBox{
-    margin: 8px 0;
+    margin: 0px 0 8px;
 }
 .e_loop_K .p_icon,
 .e_loop_K .p_screen {
@@ -25,32 +25,37 @@
 .e_loop_K .p_screen .p_screenData {
     display: none;
     position: absolute;
-    left: 22px;
-    top: 12px;
+    left: 50%;
+    top: calc(100% + 10px);
     border-radius: 4px;
-    box-shadow: 0px 2px 8px 0px rgba(22, 45, 61, 0.3);
+    box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 10%);
     background: #fff;
     z-index: 9999;
     text-align: left;
-    padding: 6px;
+    padding: 10px;
+    transform: translateX(-50%);
+    width: 150px;
 }
 .e_loop_K .p_screen .p_screenData label {
     cursor: pointer;
     float: left;
     width: 100%;
-    margin: 3px 0;
+    margin: 0px 0;
     text-align: left;
     word-break: break-all;
     white-space: nowrap;
     text-overflow: ellipsis;
+    line-height: 1.5;
 }
-.e_loop_K .p_screen .p_optDta ::-webkit-scrollbar {
-    width: 3px;
+.e_loop_K .p_screen .p_optDta::-webkit-scrollbar {
+    width: 6px;
     height: 3px;
     background: #f0f0f0;
+    border-radius: 10px;
 }
-.e_loop_K .p_screen .p_optDta ::-webkit-scrollbar-thumb {
+.e_loop_K .p_screen .p_optDta::-webkit-scrollbar-thumb {
     background: #D2D2D2;
+    border-radius: 10px;
 }
 .e_loop_K .p_screen .p_screenData label input{
     margin-right: 5px;
@@ -64,15 +69,22 @@
     display: inline-block;
     max-width: 120px;
     vertical-align: middle;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 12px;
+    width: calc(100% - 30px);
 }
 .e_loop_K .p_screen .p_optDta{
-    padding: 5px 0;
+    padding: 0px 0;
     overflow: hidden;
     max-height: 200px;
     overflow-y: auto;
+    border: 1px solid #efefef;
+    padding: 5px 8px;
+    border-radius: 5px;
 }
 .e_loop_K .p_screen .p_clear {
-    background: #4d90cb;
+    background: #1f98fc;
     color: #fff;
     text-align: center;
     height: 30px;
@@ -81,14 +93,38 @@
     padding: 0 4px;
     cursor: pointer;
     display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
 }
 .e_loop_K .p_head{
     display: none;
+    background: whitesmoke;
 }
 .e_loop_K .p_head.aaa{
     display: table-header-group;
 }
-.page-static .p_selectPageSize{
+.e_loop_K .p_screenIcon.cur{
+    color:#1f98fc;
+}
+.e_loop_K .p_icon[sort="asc"],
+.e_loop_K .p_icon[sort="desc"]{
+    color:#1f98fc;
+}
+.e_loop_K .p_icon svg,
+.e_loop_K .p_screenIcon svg{
+    width: 18px;
+    margin: 0;
+}
+.e_loop_K .page-static{
+    margin-top: 20px;
+}
+.e_loop_K .p_selectPageSize{
     display: inline-block;
-    width: 150px;
+    width: auto;
+    padding-right: 20px;
+}
+.e_loop_K .p_title{
+    width: 100%;
+    display: block;
+    padding: 10px 15px 0;
 }
