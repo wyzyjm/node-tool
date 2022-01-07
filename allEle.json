@@ -203,6 +203,10 @@
     {
       "name": "循环体11",
       "code": "e_loop_K"
+    },
+    {
+      "name": "搜索图集",
+      "code": "e_imageSearch"
     }
   ],
   "complex": [
