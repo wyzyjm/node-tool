@@ -1,12 +1,12 @@
 {
   "cname": "竖向文字",
   "styleId": "e_textVertical",
-  "styleClass": "",
-  "tmpl": "",
+  "styleClass": "s_title",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#if ${options}}}\r\n        {{#${options}}}\r\n            <p class=\"p_item\">{{this}}</p>\r\n        {{/${options}}}\r\n    {{else}}\r\n        {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_textVertical{\n\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,7 +21,19 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "options": [
+      "多选数据1",
+      "多选数据2",
+      "多选数据3",
+      "多选数据4",
+      "多选数据5"
+    ]
+  },
+  "i18n": {
+    "zh_CN": {
+      "noData": "暂无数据"
+    }
+  },
   "datasource": "prop"
 }
