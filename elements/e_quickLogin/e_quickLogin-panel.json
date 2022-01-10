@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-quickLogin",
+            "title": "快捷登录",
+            "bind-isLogin": "prop.isLogin",
+            "bind-href": "prop.href"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+<div class="e_quickLogin s_title" needjs="true">
+    {{#if prop.isLogin}}
+       {{!-- 登录后 --}}
+        <div class="js_login_after">
+            <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}" class="js_info p_item">{{i18n.placeholder}}</a>
+            <span class="p_afterSplit"> {{i18n.split}} </span>
+            <span class="js_exit p_item">{{i18n.exit}}</span>
+        </div>
+    {{else}}
+         {{!-- 登录前  --}}
+        <div class="js_login_before">
+            <a href="/login.html" class="p_text"> {{i18n.login}} </a>
+            <span class="p_split"> {{i18n.split}} </span>
+            <a href="/register.html" class="p_text"> {{i18n.register}}</span>
+        </div>
+    {{/if}}
+    <input type="hidden" name="i18nJson" value='{{i18nJson}}'>
+</div>

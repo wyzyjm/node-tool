@@ -1,0 +1,17 @@
+{
+    "prop": {
+        "isLogin": false,
+        "href": {
+            "type": "",
+            "value": "",
+            "target": ""
+        }
+    },
+    "i18n": {
+        "login": "登录",
+        "exit": "退出",
+        "split": "|",
+        "register": "注册",
+        "placeholder": "昵称"
+    }
+}

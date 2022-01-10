@@ -1,0 +1,42 @@
+{
+  "cname": "会员快捷登录",
+  "styleId": "e_quickLogin",
+  "styleClass": "s_title",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${isLogin}}}\r\n       {{!-- 登录后 --}}\r\n        <div class=\"js_login_after\">\r\n            <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\" class=\"js_info p_item\">{{${i18n.placeholder}}}</a>\r\n            <span class=\"p_afterSplit\"> {{${i18n.split}}} </span>\r\n            <span class=\"js_exit p_item\">{{${i18n.exit}}}</span>\r\n        </div>\r\n    {{else}}\r\n         {{!-- 登录前  --}}\r\n        <div class=\"js_login_before\">\r\n            <a href=\"/login.html\" class=\"p_text\"> {{${i18n.login}}} </a>\r\n            <span class=\"p_split\"> {{${i18n.split}}} </span>\r\n            <a href=\"/register.html\" class=\"p_text\"> {{${i18n.register}}}</span>\r\n        </div>\r\n    {{/if}}\r\n    <input type=\"hidden\" name=\"i18nJson\" value='{{i18nJson}}'>\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_quickLogin{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "isLogin": false,
+    "href": {
+      "type": "",
+      "value": "",
+      "target": ""
+    }
+  },
+  "i18n": {
+    "zh_CN": {
+      "login": "登录",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册",
+      "placeholder": "昵称"
+    }
+  },
+  "datasource": "prop"
+}
