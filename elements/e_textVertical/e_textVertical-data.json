@@ -1,0 +1,10 @@
+{
+    "apiType": "object",
+    "dataFields": [
+        {
+            "name": "options",
+            "cname": "竖向文字",
+            "type": "array[string]"
+        }
+    ]
+}

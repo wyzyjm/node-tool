@@ -207,6 +207,10 @@
     {
       "name": "搜索图集",
       "code": "e_imageSearch"
+    },
+    {
+      "name": "竖向文字",
+      "code": "e_textVertical"
     }
   ],
   "complex": [
@@ -243,7 +247,7 @@
       "code": "e_categoryC"
     },
     {
-      "name": "分类树-面包", 
+      "name": "分类树-面包",
       "code": "e_categoryD"
     },
     {

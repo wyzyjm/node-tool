@@ -1,0 +1,9 @@
+<div class="e_textVertical s_title">
+    {{#if prop.options}}
+        {{#prop.options}}
+            <p class="p_item">{{this}}</p>
+        {{/prop.options}}
+    {{else}}
+        {{{nNoDataPrompt i18n.noData}}}
+    {{/if}}
+</div>
