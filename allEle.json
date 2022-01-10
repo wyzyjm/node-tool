@@ -211,6 +211,10 @@
     {
       "name": "竖向文字",
       "code": "e_textVertical"
+    },
+    {
+      "name": "会员快捷登录",
+      "code": "e_quickLogin"
     }
   ],
   "complex": [
