@@ -1,3 +1,10 @@
-.e_quickLogin{
-
+.e_quickLogin {
+}
+.e_quickLogin .js_login_before,
+.e_quickLogin .js_login_after {
+    display: none;
+}
+.e_quickLogin .js_login_before.active,
+.e_quickLogin .js_login_after.active {
+    display: block;
 }
