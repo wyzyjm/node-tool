@@ -7,7 +7,11 @@
     </div>
     {{! 登录后 }}
     <div class="js_login_after {{#eq prop.isLogin true}} active {{/eq}}">
-        <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}" class="js_info p_item">{{i18n.placeholder}}</a>
+        {{#eq prop.href.value ""}}
+             <a href="/sys/information" class="js_info p_item">{{i18n.placeholder}}</a>
+        {{else }}
+            <a href="{{$transferLink prop.href compId}}"  {{#if prop.href.target}} target="{{prop.href.target}}" {{/if}} class="js_info p_item">{{i18n.placeholder}}</a>
+        {{/eq}}
         <span class="p_afterSplit"> {{i18n.split}} </span>
         <span class="js_exit p_item">{{i18n.exit}}</span>
     </div>
