@@ -1,0 +1,9 @@
+<div class="e_subImg s_img">
+    {{#if prop.href.value}}
+        <a href="{{$transferLink prop.href compId}}" target="{{prop.href.target}}">
+    {{/if}}
+        {{{nLazyImage prop.imageUrl prop.title prop.setting.isLazy}}}
+    {{#if prop.href.value}}
+        </a>
+    {{/if}}
+</div>

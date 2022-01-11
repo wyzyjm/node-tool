@@ -1,0 +1,41 @@
+{
+  "cname": "循环体图片",
+  "styleId": "e_subImg",
+  "styleClass": "s_img",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#if ${href}.value}}\r\n        <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\r\n    {{/if}}\r\n        {{{nLazyImage ${imageUrl} ${title} ${setting}.isLazy}}}\r\n    {{#if ${href}.value}}\r\n        </a>\r\n    {{/if}}\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_subImg {\n    overflow: hidden;\n}\n.e_subImg img {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+    "title": "图片名称",
+    "href": {
+      "type": "",
+      "value": "",
+      "target": ""
+    },
+    "setting": {
+      "isLazy": "true",
+      "fit": "contain"
+    }
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}
