@@ -19,6 +19,11 @@
     width: 16px;
     margin-right: 5px;
 }
+.e_navigationE .haveThree .p_img{
+    max-width: none;
+    width: auto;
+    margin: 0;
+}
 .e_navigationE .p_menuItem{
     border-left: 0px solid rgb(0 0 0 / 20%);
     padding: 0;
@@ -28,9 +33,6 @@
     width: 25%;
 }
 .e_navigationE .p_img {
-    max-width: none;
-    width: auto;
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;

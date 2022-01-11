@@ -6,7 +6,7 @@
   "css": [
     {
       "media": "",
-      "cssText": ".e_navigationD{ }\n.e_navigationD .p_languageNav{ \n    display: flex;\n    justify-content: flex-end;\n}\n.e_navigationD .p_menuItem_s{\n    display: none; \n}"
+      "cssText": ".e_navigationD .p_languageNav{ \n    display: flex;\n    justify-content: flex-end;\n}\n.e_navigationD .p_menuItem_s{\n    display: none;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -14,7 +14,7 @@
     },
     {
       "media": "screen and (min-width: 769px)",
-      "cssText": ".e_navigationD .p_level1Box{\n    border-radius: 20px;\n    border: 1px solid rgba(0,0,0,.5);\n    background: #fff;\n} \n.e_navigationD .p_menuItem{\n    padding: 7px 20px;\n    font-size: 14px;\n    color: rgb(0 0 0 / 70%);\n    cursor: pointer;\n    padding-right: 15px;\n}\n.e_navigationD .p_menuItem svg{\n    transition: all ease .3s;\n    margin: 0;\n    transform: rotate(0deg);\n}\n.e_navigationD .p_level1Box:hover .p_menuItem svg{\n    transform: rotate(-180deg);\n}\n.e_navigationD .p_level2Item .p_menuItem{\n    padding: 3px 20px;\n    color: rgb(0 0 0 / 40%);\n    transition: all ease .3s;\n}\n.e_navigationD .p_level2Item .p_menuItem:hover{\n    color: rgb(0 0 0 / 100%);\n}\n.e_navigationD .p_level2Box{\n    padding-bottom: 8px;\n    display: none;\n}"
+      "cssText": ".e_navigationD .p_level1Box{\n    position: relative;\n    width: 130px;\n    height: 39px;\n} \n.e_navigationD .p_level1Item{\n    position: absolute;\n    background: #fff;\n    border-radius: 20px;\n    border: 1px solid rgba(0,0,0,.1);\n    z-index: 10;\n}\n.e_navigationD .p_menuItem{\n    padding: 7px 20px;\n    font-size: 14px;\n    color: rgb(0 0 0 / 70%);\n    cursor: pointer;\n    padding-right: 15px;\n    display: flex;\n}\n.e_navigationD .p_menuItem svg{\n    transition: all ease .3s;\n    margin: 2px 0 0 7px;\n    transform: rotate(0deg);\n}\n.e_navigationD .p_level1Box:hover .p_menuItem svg{\n    transform: rotate(-180deg);\n}\n.e_navigationD .p_level2Item .p_menuItem{\n    padding: 3px 20px;\n    color: rgb(0 0 0 / 40%);\n    transition: all ease .3s;\n}\n.e_navigationD .p_level2Item .p_menuItem:hover{\n    color: rgb(0 0 0 / 100%);\n}\n.e_navigationD .p_level2Box{\n    padding-bottom: 8px;\n    display: none;\n}"
     },
     {
       "media": "screen and (max-width: 1024px) and (min-width: 769px)",
@@ -57,6 +57,63 @@
   "i18n": {
     "zh_CN": {
       "noData": "暂无数据"
+    },
+    "en": {
+      "noData": "No data"
+    },
+    "de": {
+      "noData": "Keine Daten"
+    },
+    "fr": {
+      "noData": "Aucune donnée pour l'instant"
+    },
+    "ru": {
+      "noData": "Нет данных"
+    },
+    "pt": {
+      "noData": "Sem dados no momento"
+    },
+    "ko": {
+      "noData": "잠시 데이터가 없음"
+    },
+    "ja": {
+      "noData": "データなし"
+    },
+    "es": {
+      "noData": "No hay datos"
+    },
+    "ar": {
+      "noData": "لا توجد المعلمات موقتا"
+    },
+    "it": {
+      "noData": "Nessun dato"
+    },
+    "bn": {
+      "noData": "কোন তথ্য নেই"
+    },
+    "da": {
+      "noData": "Intet data"
+    },
+    "idn": {
+      "noData": "Tiada data sekarang"
+    },
+    "th": {
+      "noData": "ไม่มีข้อมูล"
+    },
+    "vi": {
+      "noData": "Tạm thời không có dữ liệu"
+    },
+    "tr": {
+      "noData": "Veri Yok"
+    },
+    "nl": {
+      "noData": "Geen gegevens"
+    },
+    "pl": {
+      "noData": "Brak danych"
+    },
+    "zh_HN": {
+      "noData": "暫無數據"
     }
   },
   "datasource": "prop",

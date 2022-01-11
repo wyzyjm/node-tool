@@ -1,0 +1,71 @@
+<div class="e_navigationH" needjs="true">
+    {{#if prop.dataList}}
+    <div class="p_navButton js_editor_click">
+        <p>
+            <span></span>
+            <span></span>
+            <span></span>
+        </p>
+    </div>
+    <div class="p_navContent">
+        <ul class="p_level1Box">
+            {{#each prop.dataList}}
+            <li class="p_level1Item">
+                <p class="p_menu1Item js_editor_click">
+                    <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}{{/if}}">
+                        <span>{{navName}}</span>
+                    </a>
+                </p>
+                {{#if this.children}}
+                <ul class="p_level2Box">
+                    {{#each this.children}}
+                    <li class="p_level2Item">
+                        <p class="p_menu2Item js_editor_click">
+                            <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
+                                <span>{{navName}}</span>
+                            </a>
+                        </p>
+                        {{#if this.children}}
+                        <ul class="p_level3Box">
+                            {{#each this.children}}
+                            <li class="p_level3Item">
+                                <p class="p_menu3Item">
+                                    <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
+                                        <span>{{navName}}</span>
+                                    </a>
+                                </p>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="p_bg"></div>
+    <div class="p_icoBox">
+            {{#each prop.dataList}}
+                <ul class="p_icoBoxl">
+                {{#if this.children}}
+                {{#each this.children}}
+                    <li class="p_ico1List">
+                        <a href="{{#if url}}{{url}}{{^}}javascript:;{{/if}}" class="p_icoA" {{#if url}}target="{{#eq target 'blank'}}_blank{{/eq}}"{{/if}}>
+                            {{#if img}}<span class="p_icoImg">{{{nLazyImage img navName 'true'}}}</span>{{/if}}
+                            <span class="p_icoText">{{navName}}</span>
+                        </a>
+                    </li>
+                {{/each}}
+                {{/if}}
+                </ul>
+            {{/each}}
+    </div>
+    {{^}}
+    {{{nNoDataPrompt i18n.noData}}}
+    {{/if}}
+</div>
+
+

@@ -30,7 +30,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 56px;
+    top: 100%;
     display: flex;
     justify-content: center;
     z-index: 10;
@@ -58,4 +58,8 @@
 }
 .e_navigationF .p_level3Box.p_listthree{
     flex-direction: column;
+}
+
+.p_haveNav{
+    min-height: auto !important;
 }

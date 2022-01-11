@@ -1,0 +1,202 @@
+.e_navigationG{
+    display: flex; 
+}
+.e_navigationG .p_navButton{
+    width: 21px;
+    justify-content: center;
+}
+.e_navigationG .p_navBu1{
+    width: 21px;
+    height: 16px;
+    cursor: pointer;
+}
+.e_navigationG .p_navS1 {
+    width: 100%;
+    background: #333;
+    display: block;
+    height: 2px;
+    margin: 2px 0;
+    float: left;
+}
+.e_navigationG .p_closeButton{
+    width: 15px;
+    justify-content: center;
+    margin-right: 10px;
+}
+.e_navigationG .p_navBu2{
+    width: 15px;
+    height: 12px;
+    cursor: pointer;
+    margin-top: 1px;
+}
+.e_navigationG .p_navS2 {
+    width: 100%;
+    background: #333;
+    display: block;
+    height: 2px;
+    margin: 1px 0;
+    float: left;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+.e_navigationG .p_closeButton > p span:nth-of-type(1) {
+    transform: translateY(4px)rotate(670deg);
+}
+.e_navigationG .p_closeButton > p span:nth-of-type(2) {
+    transform: translateY(0px)rotate(768deg);
+}
+.e_navigationG .p_closeButton > p span:nth-of-type(3) {
+    width: 0;
+    opacity: 0;
+}
+.e_navigationG .p_navContent {
+    position: fixed;
+    left: -400px;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    transition: all ease .6s;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 40px 60px 40px 90px;
+    z-index: 2;
+    overflow-y: scroll;
+}
+.e_navigationG .p_closeT{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+.e_navigationG .p_closeText{
+    font-size: 15px;
+    font-family: arial;
+    color: rgb(0 0 0 / 50%);
+    line-height: 14px;
+}
+.e_navigationG .p_cS{
+    text-transform: uppercase;
+    font-style: inherit;
+    margin-left: 8px;
+    color: rgb(0 0 0 / 80%);
+    opacity: 0;
+    transform: translateX(6px);
+    transition: all ease .3s;
+    display: inline-block;
+}
+.e_navigationG .p_closeText:hover .p_cS{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.e_navigationG .p_blackbg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(8 28 48 / 70%);
+    z-index: 1;
+    opacity: 0;
+    transition: all ease .6s;
+    pointer-events: none;
+}
+.e_navigationG .p_level1Box{
+    padding-bottom: 60px;
+    border-bottom: 1px solid #eee;
+}
+.e_navigationG .p_level2Box{
+    display: none;
+}
+.e_navigationG .p_level3Box{
+    display: none;
+}
+.e_navigationG .p_menu1Item{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    padding: 18px 0;
+    font-size: 16px;
+    color: #333;
+    transition: all ease .15s;
+}
+.e_navigationG .p_menu2Item{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    padding: 8px 0 8px 0;
+    font-size: 16px;
+    color: rgb(0 0 0 / .5);
+    transition: all ease .15s;
+}
+.e_navigationG .p_menu3Item{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1;
+    padding: 5px 0px 5px 15px;
+    font-size: 15px;
+    color: rgb(0 0 0 / .5);
+    margin-bottom:6px;
+    transition: all ease .15s;
+}
+.e_navigationG .p_menu3Item::before{
+    content:'';
+    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+    background: rgb(0 0 0 / 30%);
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.e_navigationG .p_level3Item:last-child .p_menu3Item{
+    margin-bottom:10px;
+}
+.e_navigationG .p_level3Item:first-child{
+    padding-top:15px;
+    margin-top:15px;
+    border-top:1px solid #eee;
+}
+.e_navigationG .p_level3Item:last-child{
+    margin-bottom:15px;
+    padding-bottom:10px;
+    border-bottom:1px solid #eee;
+}
+.e_navigationG a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    width: 100%;
+}
+.e_navigationG svg{
+    margin: 0;
+    height: 18px;
+    cursor: pointer;
+    transition: all ease .3s;
+    transform: rotate(90deg)rotateY(0deg);
+}
+.e_navigationG p:hover{
+    color:#007bff;
+}
+.e_navigationG p:hover .p_jtIcon{
+    transform: rotate(90deg)rotateY(180deg);
+}
+
+.e_navigationG .p_navContent.showmenuBox{
+    left: 0;
+}
+.e_navigationG .p_blackbg.showbg{
+    opacity: 1;
+    pointer-events: auto;
+}
+.e_navigationG .p_navContent::-webkit-scrollbar {
+  display: none;
+}

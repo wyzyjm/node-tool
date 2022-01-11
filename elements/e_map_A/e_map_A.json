@@ -90,6 +90,101 @@
       "address": "地址:",
       "phone": "电话:",
       "email": "邮箱:"
+    },
+    "en": {
+      "address": "address:",
+      "phone": "Telephone:",
+      "email": "E-mail:"
+    },
+    "de": {
+      "address": "die Anschrift:",
+      "phone": "Telefon:",
+      "email": "E-Mail:"
+    },
+    "fr": {
+      "address": "adresse:",
+      "phone": "Tél.:",
+      "email": "Adresse e-mail:"
+    },
+    "ru": {
+      "address": "адрес:",
+      "phone": "Телефон:",
+      "email": "E-mail:"
+    },
+    "pt": {
+      "address": "Morada:",
+      "phone": "Telefone:",
+      "email": "E-mail:"
+    },
+    "ko": {
+      "address": "주소:",
+      "phone": "전화",
+      "email": "이메일"
+    },
+    "ja": {
+      "address": "住所：",
+      "phone": "電話番号",
+      "email": "メールアドレス"
+    },
+    "es": {
+      "address": "Dirección:",
+      "phone": "Teléfono:",
+      "email": "Buzón:"
+    },
+    "ar": {
+      "address": "عنوان:",
+      "phone": "هاتف",
+      "email": "البريد الإلكتروني"
+    },
+    "it": {
+      "address": "indirizzo:",
+      "phone": "Telefono:",
+      "email": "Casella postale:"
+    },
+    "bn": {
+      "address": "ঠিকানা:",
+      "phone": "ফোন",
+      "email": "ইমেল"
+    },
+    "da": {
+      "address": "adresse:",
+      "phone": "Telefon:",
+      "email": "E-mail:"
+    },
+    "idn": {
+      "address": "alamat:",
+      "phone": "Telepon:",
+      "email": "Kotak surat:"
+    },
+    "th": {
+      "address": "ที่อยู่:",
+      "phone": "โทรศัพท์",
+      "email": "อีเมล"
+    },
+    "vi": {
+      "address": "Địa chỉ:",
+      "phone": "Điện thoại:",
+      "email": "Email  :"
+    },
+    "tr": {
+      "address": "adres:",
+      "phone": "Telefon:",
+      "email": "E-posta:"
+    },
+    "nl": {
+      "address": "adres:",
+      "phone": "Telefoon:",
+      "email": "Mailbox:"
+    },
+    "pl": {
+      "address": "adres:",
+      "phone": "Telefon:",
+      "email": "E-mail:"
+    },
+    "zh_HN": {
+      "address": "地址:",
+      "phone": "電話:",
+      "email": "郵箱:"
     }
   },
   "datasource": "prop",

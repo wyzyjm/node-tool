@@ -252,8 +252,23 @@ app.use(async function (ctx,next) {
                 result=JSON.stringify({error:e.toString()});
             }
         }else if(api=='setI18n'){//设置翻译词条
+            let k=ctx.query.k;
             try{
-                setI18nFun.init()
+                setI18nFun.init(k)
+                result=JSON.stringify({success:true});
+            }catch(e){
+                result=JSON.stringify({error:e.toString()});
+            }
+        }else if(api=='asyncI18n'){//同步组件词条
+            try{
+                elementMaker.asyncI18n()
+                result=JSON.stringify({success:true});
+            }catch(e){
+                result=JSON.stringify({error:e.toString()});
+            }
+        }else if(api=='asyncJsI18n'){//同步组件Js词条
+            try{
+                elementMaker.asyncJsI18n()
                 result=JSON.stringify({success:true});
             }catch(e){
                 result=JSON.stringify({error:e.toString()});

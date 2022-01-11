@@ -93,8 +93,7 @@
 .e_navigationF .p_navBox2 > div{
     width: 100%;
 }
-.e_navigationF .p_navItem1:hover .p_navBox2,
-.e_navigationF .p_navBox2.isdesign{
+.e_navigationF .p_navItem1:hover .p_navBox2{
     opacity: 1;
     visibility: visible;
 }
@@ -221,6 +220,8 @@
 }
 .e_navigationF .p_navBox2.isdesign{
     display: none;
+    opacity: 1;
+    visibility: visible;
 }
 .e_navigationF .p_navItem1 > p a{
     padding: 20px 0;

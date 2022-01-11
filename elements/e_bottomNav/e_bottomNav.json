@@ -2,19 +2,19 @@
   "cname": "底部导航",
   "styleId": "e_bottomNav",
   "styleClass": "s_title",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${dataList}}}\n        <!-- 导航内容 开始 -->\n        <ul class=\"p_level1Box\">\n            {{#each ${dataList}}}\n            <li class=\"pt-1  pb-1 p_level1Item\">\n                <!-- 名称 -->\n                <p class=\"p_menu1Item s_templatetitle\">\n                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\n                        <span>{{navName}}</span>\n                    </a>\n                    {{#if children}}{{{../${arrow}}}}{{/if}}\n                </p>\n                <!-- 子集 -->\n                {{#if this.children}}\n                <ul class=\"mt-2 p_level2Box s_templatesum\">\n                    {{#each this.children}}\n                    <li class=\"p_level2Item\">\n                        <!-- 名称 2 -->\n                        <p class=\"p_menu2Item\">\n                            <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\n                                <span>{{navName}}</span>\n                            </a>\n                             {{#if this.children}}{{{../../${arrow}}}}{{/if}}\n                        </p>\n                        <!-- 子集 2 -->\n                        {{#if this.children}}\n                        <ul class=\"p_level3Box\">\n                            {{#each this.children}}\n                            <li class=\"p_level3Item\">\n                                <!-- 名称 3 -->\n                                <p class=\"p_menu2Item\">\n                                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\n                                        <span>{{navName}}</span>\n                                    </a>\n                                </p>\n                            </li>\n                            {{/each}}\n                        </ul>\n                        {{/if}}\n                    </li>\n                    {{/each}}\n                </ul>\n                {{/if}}\n            </li>\n            {{/each}}\n        </ul>\n        <!-- 导航内容 结束 -->\n    {{^}}\n        {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>\n\n",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#if ${dataList}}}\r\n        <!-- 导航内容 开始 -->\r\n        <ul class=\"p_level1Box\">\r\n            {{#each ${dataList}}}\r\n            <li class=\"p_level1Item\">\r\n                <!-- 名称 -->\r\n                <p class=\"p_menu1Item s_templatetitle js_editor_click\">\r\n                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\r\n                        <span>{{navName}}</span>\r\n                    </a>\r\n                    {{#if children}}{{{../${arrow}}}}{{/if}}\r\n                </p>\r\n                <!-- 子集 -->\r\n                {{#if this.children}}\r\n                <ul class=\"p_level2Box s_templatesum\">\r\n                    {{#each this.children}}\r\n                    <li class=\"p_level2Item\">\r\n                        <!-- 名称 2 -->\r\n                        <p class=\"p_menu2Item js_editor_click\">\r\n                            <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\r\n                                <span>{{navName}}</span>\r\n                            </a>\r\n                             {{#if this.children}}{{{../../${arrow}}}}{{/if}}\r\n                        </p>\r\n                        <!-- 子集 2 -->\r\n                        {{#if this.children}}\r\n                        <ul class=\"p_level3Box\">\r\n                            {{#each this.children}}\r\n                            <li class=\"p_level3Item\">\r\n                                <!-- 名称 3 -->\r\n                                <p class=\"p_menu2Item\">\r\n                                    <a href=\"{{#if url}}{{url}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'blank'}}_blank{{/eq}}\">\r\n                                        <span>{{navName}}</span>\r\n                                    </a>\r\n                                </p>\r\n                            </li>\r\n                            {{/each}}\r\n                        </ul>\r\n                        {{/if}}\r\n                    </li>\r\n                    {{/each}}\r\n                </ul>\r\n                {{/if}}\r\n            </li>\r\n            {{/each}}\r\n        </ul>\r\n        <!-- 导航内容 结束 -->\r\n    {{^}}\r\n        {{{nNoDataPrompt ${i18n.noData}}}}\r\n    {{/if}}\r\n</div>\r\n\r\n",
   "css": [
     {
       "media": "",
-      "cssText": "\n.e_bottomNav .p_level2Box, \n.e_bottomNav .p_level3Box{\n    height: auto;\n}\n\n.e_bottomNav .p_openIcon, \n.e_bottomNav .p_closeIcon{\n    width: 36px;\n    height: 36px;\n}\n\n.e_bottomNav span {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-line-clamp: 2;\n    -webkit-box-orient: vertical;\n}"
+      "cssText": ".e_bottomNav span {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-line-clamp: 1;\n    -webkit-box-orient: vertical;\n}\n.e_bottomNav .p_level1Item{\n    width: auto;\n    padding: 0 15px;\n    flex-grow: 1;\n}\n.e_bottomNav .p_level2Box{}\n.e_bottomNav .p_level3Box{\n    display: none;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ".e_bottomNav .p_menu1Item ,.e_bottomNav .p_menu2Item{\n    display: flex;\n    justify-content: space-between;\n}\n.e_bottomNav .p_level1Box ul {\n    display: none;\n}\n.e_bottomNav .p_level2Box,\n.e_bottomNav .p_level3Box {\n    padding-left: 10px;\n}\n.e_bottomNav .p_jtIcon {\n    align-items: stretch;\n    width: auto;\n    height: auto;\n    max-width: 25px;\n    font-size: inherit;\n    transition: 0.5s;\n}\n.e_bottomNav .p_jtIcon.active {\n    transform: rotateZ(90deg);\n}\n"
+      "cssText": ".e_bottomNav .p_menu1Item,\r\n.e_bottomNav .p_menu2Item{\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n.e_bottomNav .p_level1Box ul {\r\n    display: none;\r\n}\r\n.e_bottomNav .p_jtIcon {\r\n    align-items: stretch;\r\n    width: auto;\r\n    height: auto;\r\n    max-width: 20px;\r\n    font-size: inherit;\r\n    transition: 0.5s;\r\n    margin: 0;\r\n}\r\n.e_bottomNav .p_jtIcon.active {\r\n    transform: rotateZ(90deg);\r\n}\r\n.e_bottomNav a{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n}\r\n.e_bottomNav .p_level1Item{\r\n    padding: 0;\r\n}\r\n.e_bottomNav .p_menu2Item svg{\n    opacity: .5;\n}"
     },
     {
       "media": "screen and (min-width: 769px)",
-      "cssText": ".e_bottomNav .p_level1Box{\n    display: flex;\n}\n.e_bottomNav .p_level1Item{\n    min-width: 100px;\n    max-width: 20%;\n    width: auto;\n    padding: 0 10px;\n    flex-grow: 1;\n}\n/* 移动端箭头隐藏 */\n.e_bottomNav .p_jtIcon{\n    display: none;\n}\n"
+      "cssText": ".e_bottomNav .p_level1Box{\r\n    display: flex;\r\n}\r\n/* 移动端箭头隐藏 */\r\n.e_bottomNav .p_jtIcon{\r\n    display: none;\r\n}\r\n"
     },
     {
       "media": "screen and (max-width: 1024px) and (min-width: 769px)",
@@ -439,6 +439,63 @@
   "i18n": {
     "zh_CN": {
       "noData": "暂无数据"
+    },
+    "en": {
+      "noData": "No data"
+    },
+    "de": {
+      "noData": "Keine Daten"
+    },
+    "fr": {
+      "noData": "Aucune donnée pour l'instant"
+    },
+    "ru": {
+      "noData": "Нет данных"
+    },
+    "pt": {
+      "noData": "Sem dados no momento"
+    },
+    "ko": {
+      "noData": "잠시 데이터가 없음"
+    },
+    "ja": {
+      "noData": "データなし"
+    },
+    "es": {
+      "noData": "No hay datos"
+    },
+    "ar": {
+      "noData": "لا توجد المعلمات موقتا"
+    },
+    "it": {
+      "noData": "Nessun dato"
+    },
+    "bn": {
+      "noData": "কোন তথ্য নেই"
+    },
+    "da": {
+      "noData": "Intet data"
+    },
+    "idn": {
+      "noData": "Tiada data sekarang"
+    },
+    "th": {
+      "noData": "ไม่มีข้อมูล"
+    },
+    "vi": {
+      "noData": "Tạm thời không có dữ liệu"
+    },
+    "tr": {
+      "noData": "Veri Yok"
+    },
+    "nl": {
+      "noData": "Geen gegevens"
+    },
+    "pl": {
+      "noData": "Brak danych"
+    },
+    "zh_HN": {
+      "noData": "暫無數據"
     }
   },
   "datasource": "prop",

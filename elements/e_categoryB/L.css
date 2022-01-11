@@ -1,0 +1,5 @@
+.e_categoryB .p_c_mbtn,
+.e_categoryB .p_c_mput,
+.e_categoryB .p_c_item > .p_c_content{
+    display:none;
+}

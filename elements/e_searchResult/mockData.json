@@ -1,36 +1,41 @@
 {
-  "prop": {
-      "previewList":[
-          {
-              "title":"内容标题",
-              "key":"title",
-              "element":"e_text-12"
-          }
-      ],
-      "appList":[
-          {
-              "appId":"11",
-              "nick":"产品",
-              "adaptationList":[
-                  {
-                      "target":"title",
-                      "source":"productTitle",
-                      "sourceName":"产品名称"
-                  }
-              ],
-              "searchRange":[
-                  {
-                      "outCode":"",
-                      "esField":""
-                  }
-              ]
-          }
-      ],
-      "sort":[
-          {
-              "title":"asc"
-          }
-      ]
-  },
-  "i18n": {}
+    "prop": {
+        "previewList":[
+            {
+                "title":"标题",
+                "key": "title",
+                "element1":"",
+                "element2":"",
+                "element3":"",
+                "isDefault":true,
+                "openLink":false
+            },
+            {
+                "title":"图片",
+                "key": "image",
+                "element1":"",
+                "element2":"",
+                "element3":"",
+                "isDefault":true,
+                "openLink":false
+            }
+        ],
+        "appList":[],
+        "sort":{
+            "field":"",
+            "order":"asc"
+        },
+        "searchOption":{
+            "keywords":"keywords",
+            "appIds":"appIds"
+        },
+        "pageConfig": {
+            "showJump": true,
+            "pcRow": 10,
+            "pcColumn": 1,
+            "moColumn": 1,
+            "pageType": "hidden"
+        }
+    },
+    "i18n": {}
 }

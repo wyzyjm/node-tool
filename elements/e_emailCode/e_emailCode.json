@@ -32,6 +32,63 @@
   "i18n": {
     "zh_CN": {
       "send": "发送邮件验证码"
+    },
+    "en": {
+      "send": "Send email verification code"
+    },
+    "de": {
+      "send": "E-Mail-Bestätigungscode senden"
+    },
+    "fr": {
+      "send": "Envoyer le code de vérification par e-mail"
+    },
+    "ru": {
+      "send": "Отправить код подтверждения по электронной почте"
+    },
+    "pt": {
+      "send": "Enviar código de verificação de e-mail"
+    },
+    "ko": {
+      "send": "이메일 인증 코드 보내기"
+    },
+    "ja": {
+      "send": "メール確認コードを送信する"
+    },
+    "es": {
+      "send": "Enviar código de verificación por correo electrónico"
+    },
+    "ar": {
+      "send": "إرسال رمز التحقق عبر البريد الإلكتروني"
+    },
+    "it": {
+      "send": "Invia codice di verifica email"
+    },
+    "bn": {
+      "send": "ইমেল যাচাইকরণ কোড পাঠান"
+    },
+    "da": {
+      "send": "Send e-mailbekræftelseskode"
+    },
+    "idn": {
+      "send": "Kirim kode verifikasi email"
+    },
+    "th": {
+      "send": "ส่งรหัสยืนยันอีเมล"
+    },
+    "vi": {
+      "send": "Gửi mã xác minh qua email"
+    },
+    "tr": {
+      "send": "E-posta doğrulama kodu gönder"
+    },
+    "nl": {
+      "send": "Stuur e-mail verificatiecode"
+    },
+    "pl": {
+      "send": "Wyślij e-mailowy kod weryfikacyjny"
+    },
+    "zh_HN": {
+      "send": "發送郵件驗證碼"
     }
   },
   "datasource": "prop",

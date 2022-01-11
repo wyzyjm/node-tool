@@ -1,0 +1,98 @@
+{
+    "prop": {
+        "bannerLists": [
+            {
+                "target": "blank",
+                "title": "住宅地产业务",
+                "subTitle": "Commercial real estate",
+                "video": {
+                    "title": "1616551727640631.mp4",
+                    "url": "https://omo-oss-video.thefastvideo.com/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
+                    "coverImgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/b25dea76-cf24-4353-8cdd-7f69cd764d70.jpg"
+                },
+                "imgUrl": null,
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                },
+                "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+                "type": 2
+            },
+            {
+                "target": "blank",
+                "title": "住宅地产业务",
+                "subTitle": "Commercial real estate",
+                "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/57bdbe39-4c4b-466a-a34b-46c1e1bc1d27.jpg",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                },
+                "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+                "type": 1
+            },
+            {
+                "target": "blank",
+                "title": "住宅地产业务",
+                "subTitle": "Commercial real estate",
+                "video": null,
+                "code": null,
+                "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/dccf356e-5b90-463b-814c-eaa9e94d94d8.jpg",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                },
+                "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+                "type": 1
+            },
+            {
+                "target": "blank",
+                "title": "住宅地产业务",
+                "subTitle": "Commercial real estate",
+                "video": null,
+                "code": null,
+                "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/9bc65590-1ef9-4c10-837e-8f6f55dc4d09.jpg",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                },
+                "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+                "type": 1
+            },
+            {
+                "target": "blank",
+                "title": "住宅地产业务",
+                "subTitle": "Commercial real estate",
+                "video": null,
+                "code": null,
+                "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/dccf356e-5b90-463b-814c-eaa9e94d94d8.jpg",
+                "href": {
+                    "type": "",
+                    "value": "",
+                    "target": ""
+                },
+                "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+                "type": 1
+            }
+        ],
+        "settings": {
+            "direction": "horizontal",
+            "pagination": false,
+            "navigation": true,
+            "autoplay": false,
+            "deplay": 4,
+            "effect": "slide",
+            "videoAutoplay": false,
+            "videoLoop": false,
+            "videoMouted": true,
+            "videoControlor": false,
+            "showText": true
+        }
+    },
+    "i18n": {
+        "noData": "暂无数据"
+    }
+}

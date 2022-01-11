@@ -1,0 +1,25 @@
+<div class="e_imageSearch s_img" needjs="true">
+    {{#if prop.imgList}}
+        <div class="swiper-container p_container">
+            <div class="swiper-wrapper">
+                {{#each prop.imgList}}
+                <div class="swiper-slide" >
+                    <div class="p_img">
+                        {{#if href.value}}
+                            <a href="{{$transferLink href compId}}" target="{{href.target}}">
+                        {{/if}}
+                                {{{nLazyImage imageUrl ../title ../setting.isLazy}}}
+                        {{#if href.value}}
+                            </a>
+                        {{/if}}
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            <div class="js_editor_click swiper-button-next  swiper-button-white p_next"></div>
+            <div class="js_editor_click swiper-button-prev swiper-button-white p_prev"></div>
+        </div>
+    {{^}}
+        {{{nNoDataPrompt i18n.noData}}}
+    {{/if}}
+</div>

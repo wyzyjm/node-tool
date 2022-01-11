@@ -1,0 +1,181 @@
+{
+  "cname": "轮播图-特效二",
+  "styleId": "e_bannerE",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${bannerLists}}}\n    <div class=\"swiper-container p_big_slide\">\n        <div class=\"swiper-wrapper p_swiperContainer\">\n            {{#each ${bannerLists}}}\n            <div class=\"swiper-slide p_slide\">\n                {{#eq type 1}}\n                <div class=\"p_img\">\n                    <a class=\"P_link_img\" href=\"{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}\"\n                        {{#if href.value}}target=\"{{href.target}}\" {{/if}}>\n                        {{#eq @index 0}}\n                        {{{nLazyImage imgUrl title 'false'}}}\n                        {{^}}\n                        {{{nLazyImage imgUrl title 'true'}}}\n                        {{/eq}}\n                    </a>\n                </div>\n                {{/eq}}\n                {{#eq type 2}}\n                <div class=\"p_video\">\n                    <div class=\"p_videoPoster\">\n                        {{{nLazyImage video.coverImgUrl title 'false'}}}\n                    </div>\n                    <div class=\"videoContent\">\n                        {{{lazyVideo video.url ../${settings}.videoMouted false}}}\n                    </div>\n                </div>\n                <div class=\"p_video_button\"><span class=\"p_videobtm\"><svg t=\"1639621414867\" class=\"icon\"\n                            viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1769\"\n                            width=\"20\" height=\"20\">\n                            <path\n                                d=\"M128 138.666667c0-47.232 33.322667-66.666667 74.176-43.562667l663.146667 374.954667c40.96 23.168 40.853333 60.8 0 83.882666L202.176 928.896C161.216 952.064 128 932.565333 128 885.333333v-746.666666z\"\n                                p-id=\"1770\"></path>\n                        </svg></span></div>\n                {{/eq}}\n                <div class=\"p_info {{#eq type 2}}p_videoInfo{{/eq}}\">\n                    {{#if ${settings}.showText}}\n                    <div class=\"p_info_fivebox\">\n                        {{#if title}}<p class=\"p_btitle\">{{title}}</p>{{/if}}\n                        <span class=\"p_solid\"></span>\n                        {{#if summary}}<p class=\"p_summary\">{{summary}}</p>{{/if}}\n                        <a href=\"{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}\" {{#if\n                            href.value}}target=\"{{href.target}}\" {{/if}} class=\"p_button\">MORE +</a>\n                    </div>\n                    {{/if}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n        {{#if ${settings}.pagination}}\n        <div class=\"swiper-pagination p_pagenation\"></div>\n        {{/if}}\n        {{#if ${settings}.navigation}}\n        <div class=\"p_arr\">\n            <div class=\"p_hb\">\n                <div class=\"js_editor_click swiper-button-next p_btn_next\"></div>\n                <div class=\"js_editor_click swiper-button-prev p_btn_prev\"></div>\n            </div>\n        </div>\n        {{/if}}\n    </div>\n    <div class=\"p_smallBBox\">\n        <div class=\"swiper-container p_small_button\">\n            <div class=\"swiper-wrapper p_swiperSmallContainer\">\n                {{#each ${bannerLists}}}\n                {{#eq type 1}}\n                <div class=\"swiper-slide p_slideSmall\">\n                    <div class=\"p_niu\">\n                        <div class=\"\"></div>\n                        <div class=\"p_smaltext\">\n                            <p class=\"p_smalltitle\">{{title}}</p>\n                            <p class=\"p_smallsubtitle\">{{subTitle}}</p>\n                        </div>\n                    </div>\n                </div>\n                {{/eq}}\n                {{#eq type 2}}\n                <div class=\"swiper-slide p_slideSmall\">\n                    <div class=\"p_niu\">\n                        <div class=\"\"></div>\n                        <div class=\"p_smaltext\">\n                            <p class=\"p_smalltitle\">{{title}}</p>\n                            <p class=\"p_smallsubtitle\">{{subTitle}}</p>\n                        </div>\n                    </div>\n                </div>\n                {{/eq}}\n                {{/each}}\n            </div>\n        </div>\n    </div>\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_bannerE .p_big_slide{\n    width: 100%;\n    height: 100vh;\n    max-height: 1080px;\n    overflow: hidden;\n}\n.e_bannerE .p_slide{\n    overflow: hidden;\n    background: #fff;\n    z-index: 0;\n}\n.e_bannerE .swiper-slide-active{\n    z-index: 1;\n}\n.e_bannerE .p_img{\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n}\n.e_bannerE .p_video{\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n}\n.e_bannerE .P_link_img{\n    display: block;\n    position: relative;\n    overflow: hidden;\n    height: 100%;\n    width: 100%;\n    background-size: cover;\n    transition: all ease 2s;\n    transform: scale(1.1);\n}\n.e_bannerE  .swiper-slide-active .P_link_img{\n    transform: scale(1);\n}\n.e_bannerE .p_videoPoster{\n    display: block;\n    position: relative;\n    overflow: hidden;\n    height: 100%;\n    width: 100%;\n    background-size: cover;\n    transition: transform ease 2s;\n    transform: scale(1.1);\n    cursor: pointer;\n    z-index: 1;\n}\n.e_bannerE  .swiper-slide-active .p_videoPoster{\n    transform: scale(1);\n}\n.e_bannerE .P_link_img img{\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%,-50%)scale(1.18);\n    width: auto;\n    height: 100%;\n}\n.e_bannerE .p_videoPoster img{\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%,-50%)scale(1.18);\n    width: auto;\n    height: 100%;\n}\n.e_bannerE .videoContent{\n    position: absolute;\n    left: 0;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    cursor: pointer;\n    z-index: 0;\n}\n.e_bannerE .videoContent video{\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%,-50%);\n    height: auto;\n    width: 100%;\n}\n.e_bannerE .p_info{\n    max-width: 1400px;\n    padding: 0 15px;\n    position: absolute;\n    top: 34%;\n    transform: translateY(-49%);\n    margin: 0 auto;\n    display: block;\n    left: 0;\n    right: 0;\n    z-index: 1;\n    width: 100%;\n}\n.e_bannerE .p_info_fivebox{\n    width: 45%;\n    position: absolute;\n    top: 50%;\n    transform: translateY(-50%);\n}\n.e_bannerE .p_btitle{\n    font-size: 46px;\n    color: #fff;\n    font-weight: bold;\n    line-height: 1;\n    transition: all ease .8s .3s;\n}\n.e_bannerE .p_solid{\n    margin: 24px 0 20px;\n    height: 2px;\n    background: #fff;\n    width: 70px;\n    display: block;\n    transition: all ease .8s .6s;\n}\n.e_bannerE .p_summary{\n    font-size: 16px;\n    color: rgb(255 255 255 / 80%);\n    line-height: 1.6;\n    min-height: 50px;\n    word-break: break-all;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-box-orient: vertical;\n    -webkit-line-clamp: 2;\n    overflow: hidden;\n    transition: all ease .8s .9s;\n}\n.e_bannerE .p_button{\n    color: #fff;\n    font-size: 14px;\n    border: 1px solid #fff;\n    border-radius: 5px;\n    padding: 9px 15px;\n    display: inline-block;\n    margin-top: 30px;\n    width: 100%;\n    max-width: 130px;\n    text-align: center;\n    transition: all ease .3s,opacity ease .8s 1.2s,transform ease .8s 1.2s;\n    margin-bottom: 5px;\n    display: none;\n}\n.e_bannerE .p_button:hover{\n    background: #000;\n    border: 1px solid #000;\n}\n.e_bannerE .p_swiperBullet{\n    width: 12px;\n    height: 12px;\n    background: #fff;\n    opacity: .8;\n}\n.e_bannerE .swiper-pagination-bullet-active{\n    background: #000;\n    opacity: 1;\n}\n.e_bannerE .p_arr{\n    max-width: 1400px;\n    padding: 0 15px;\n    position: absolute;\n    top: 34%;\n    transform: translateY(-49%);\n    margin: 0 auto;\n    left: 0;\n    right: 0;\n    z-index: 1;\n    display: flex;\n    justify-content: flex-end;\n    text-align: right;\n    height: 0;\n}\n.e_bannerE .p_hb{\n    height: 220px;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-end;\n    position: absolute;\n    top: 50%;\n    transform: translateY(-50%);\n    padding-bottom: 5px;\n}\n.e_bannerE .p_btn_next{\n    position: static;\n    background: #fff;\n    border-radius: 100%;\n    width: 50px;\n    height: 50px;\n    color: #333;\n    margin: 0;\n    transition: all ease .3s;\n}\n.e_bannerE .p_btn_next::after{\n    font-size: 20px;\n}\n.e_bannerE .p_btn_prev{\n    position: static;\n    background: #fff;\n    border-radius: 100%;\n    width: 50px;\n    height: 50px;\n    color: #333;\n    margin: 10px 0 0 0;\n    transition: all ease .3s;\n}\n.e_bannerE .p_btn_prev::after{\n    font-size: 20px;\n}\n.e_bannerE .p_btn_prev:hover{\n    background: #000;\n    color: #fff;\n}\n.e_bannerE .p_btn_next:hover{\n    background: #000;\n    color: #fff;\n}\n.e_bannerE .p_pagenation {}\n.e_bannerE .p_smallBBox{\n    \nposition: absolute;\n    \nmax-width: 1400px;\n    \nbottom: 80px;\n    \nmargin: 0 auto;\n    \ndisplay: block;\n    \nleft: 0;\n    \nright: 0;\n    \nz-index: 2;\n    \nmargin: 0 auto;\n}\n.e_bannerE .p_small_button{\n    margin: 0 15px;\n}\n.e_bannerE .p_slideSmall {\n    background: #fff;\n    padding: 40px 20px;\n    border-right: 1px solid hsl(0deg 0% 0% / 10%);\n    transition: all ease .3s;\n    cursor: pointer;\n    width: 20%;\n}\n.e_bannerE .swiper-slide-thumb-active{\n    background: #000;\n    border-right: 1px solid #000;\n}\n.e_bannerE .p_slideSmall:hover{\n    background: #000;\n}\n.e_bannerE .p_slideSmall:last-child{\n    border-right: 0px solid #eee;\n}\n.e_bannerE .p_niu{\n    display: flex;\n    justify-content: flex-start;\n}\n.e_bannerE .p_smallicobg1{\n    width: 45px;\n    height: 40px;\n    background-image: url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/4341c0b9-fb2a-4462-aed8-52c8891ddb10.png);\n    background-position: center;\n    background-repeat: no-repeat;\n    transition: all ease .3s;\n}\n.e_bannerE .p_smallicobg2{\n    width: 45px;\n    height: 40px;\n    background-image: url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/87a2d4f1-5685-4a4e-bacc-7695e30e5c15.png);\n    background-position: center;\n    background-repeat: no-repeat;\n    transition: all ease .3s;\n    filter: grayscale(1);\n}\n.e_bannerE .p_smallicobg3{\n    width: 45px;\n    height: 40px;\n    background-image: url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/69aaa217-680f-4a36-831e-06a194c68107.png);\n    background-position: center;\n    background-repeat: no-repeat;\n    transition: all ease .3s;\n}\n.e_bannerE .p_smallicobg4{\n    width: 45px;\n    height: 40px;\n    background-image: url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/f07f11d6-6a21-4f63-9b32-4a28ca9090bb.png);\n    background-position: center;\n    background-repeat: no-repeat;\n    transition: all ease .3s;\n}\n.e_bannerE .p_smallicobg5{\n    width: 45px;\n    height: 40px;\n    background-image: url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/0e941764-1f14-4d14-90a9-f0158abd20b2.png);\n    background-position: center;\n    background-repeat: no-repeat;\n    transition: all ease .3s;\n}\n.e_bannerE .p_smallicobg6{\n    width: 45px;\n    height: 40px;\n    background-image: url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/4341c0b9-fb2a-4462-aed8-52c8891ddb10.png);\n    background-position: center;\n    background-repeat: no-repeat;\n    transition: all ease .3s;\n}\n.e_bannerE .p_smallicobg7{\n    width: 45px;\n    height: 40px;\n    background-image: url(https://omo-oss-image1.thefastimg.com//portal-saas/demo_d83bc9af8bb342749ecf5b9c474b30c5/cms/image/4341c0b9-fb2a-4462-aed8-52c8891ddb10.png);\n    background-position: center;\n    background-repeat: no-repeat;\n    transition: all ease .3s;\n}\n.e_bannerE .p_smaltext{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    border-left: 1px solid #eee;\n    padding-left: 15px;\n    margin-left: 15px;\n    transition: all ease .3s;\n}\n.e_bannerE .p_slideSmall:hover .p_smaltext,\n.e_bannerE .swiper-slide-thumb-active .p_smaltext{ \n    border-left: 1px solid rgb(238 238 238 / 20%);\n}\n.e_bannerE .p_slideSmall:hover > div:first-child,\n.e_bannerE .swiper-slide-thumb-active .p_niu > div:first-child{\n    filter: brightness(0) invert(100%);\n}\n.e_bannerE .p_smalltitle{\n    color: #333;\n    font-size: 18px;\n    font-weight: bold;\n    word-break: break-all;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-box-orient: vertical;\n    -webkit-line-clamp: 1;\n    overflow: hidden;\n    width: 100%;\n    line-height: 1;\n    margin-bottom: 7px;\n    transition: all ease .3s;\n}\n.e_bannerE .p_smallsubtitle{\n    font-size: 12px;\n    color: rgb(0 0 0 / 40%);\n    word-break: break-all;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-box-orient: vertical;\n    -webkit-line-clamp: 1;\n    overflow: hidden;\n    line-height: 1;\n    transition: all ease .3s;\n}\n.e_bannerE .p_slideSmall:hover p{\n    color:#fff;\n}\n.e_bannerE .p_slideSmall:hover .p_smallsubtitle{\n    color:rgb(255 255 255 / .4);\n}\n.e_bannerE .swiper-slide-thumb-active p{\n    color:#fff;\n}\n.e_bannerE .swiper-slide-thumb-active .p_smallsubtitle{\n    color:rgb(255 255 255 / .4);\n}\n.e_bannerE .p_video_button{\n    position: absolute;\n    margin: 0 auto;\n    left: 50%;\n    transform: translateX(-50%);\n    bottom: calc(80px + 120px + 50px);\n    z-index: 2;\n}\n.e_bannerE .p_videobtm{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%,-50%);\n    background: #fff;\n    border-radius: 25px;\n    width: 130px;\n    height: 45px;\n    color: #333;\n    transition: all ease .3s;\n    text-align: center;\n    cursor: pointer;\n}\n.e_bannerE .p_videobtm:hover{\n    background: #000;\n    color: #fff;\n}\n.e_bannerE .p_videobtm svg{\n    margin: 0 auto;\n    width: 15px;\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ".e_bannerE .p_btitle{\n    font-size: 26px;\n}\n.e_bannerE .p_smallBBox{\n    bottom: 20px;\n}\n.e_bannerE .p_arr{\n    top: auto;\n    transform: translateY(0);\n    bottom: calc(20px + 120px + 40px);\n}\n.e_bannerE .p_video_button{\n    transform: translateX(0%);\n    left: 15px;\n    bottom: calc(20px + 120px + 40px);\n}\n.e_bannerE .p_videobtm{\n    top: 50%;\n    left: 0;\n    transform: translate(0%,-50%);\n}\n.e_bannerE .p_hb{\n    height: auto;\n    padding: 0;\n    flex-direction: row;\n}\n.e_bannerE .p_btn_prev{\n    margin: 0;\n    order: -1;\n}\n.e_bannerE .p_btn_next{\n    margin: 0 0 0 10px;\n}\n.e_bannerE .p_info_fivebox{\n    width: 100%;\n    position: static;\n    transform: translateY(0%);\n}\n.e_bannerE .p_big_slide{\n    height: 75vh;\n}\n.e_bannerE .p_info{\n    top: 30%;\n}"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "bannerLists": [
+      {
+        "target": "blank",
+        "title": "住宅地产业务",
+        "subTitle": "Commercial real estate",
+        "video": {
+          "title": "1616551727640631.mp4",
+          "url": "https://omo-oss-video.thefastvideo.com/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
+          "coverImgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/b25dea76-cf24-4353-8cdd-7f69cd764d70.jpg"
+        },
+        "imgUrl": null,
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+        "type": 2
+      },
+      {
+        "target": "blank",
+        "title": "住宅地产业务",
+        "subTitle": "Commercial real estate",
+        "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/57bdbe39-4c4b-466a-a34b-46c1e1bc1d27.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+        "type": 1
+      },
+      {
+        "target": "blank",
+        "title": "住宅地产业务",
+        "subTitle": "Commercial real estate",
+        "video": null,
+        "code": null,
+        "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/dccf356e-5b90-463b-814c-eaa9e94d94d8.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+        "type": 1
+      },
+      {
+        "target": "blank",
+        "title": "住宅地产业务",
+        "subTitle": "Commercial real estate",
+        "video": null,
+        "code": null,
+        "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/9bc65590-1ef9-4c10-837e-8f6f55dc4d09.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+        "type": 1
+      },
+      {
+        "target": "blank",
+        "title": "住宅地产业务",
+        "subTitle": "Commercial real estate",
+        "video": null,
+        "code": null,
+        "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/dccf356e-5b90-463b-814c-eaa9e94d94d8.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "同时农场周边拥有完整的配套设施，结合百联购物中心的购物、娱乐、住宿、停车为一体，给游客提供了吃、喝、玩、乐一站式的综合园区。",
+        "type": 1
+      }
+    ],
+    "settings": {
+      "direction": "horizontal",
+      "pagination": false,
+      "navigation": true,
+      "autoplay": false,
+      "deplay": 4,
+      "effect": "slide",
+      "videoAutoplay": false,
+      "videoLoop": false,
+      "videoMouted": true,
+      "videoControlor": false,
+      "showText": true
+    }
+  },
+  "i18n": {
+    "zh_CN": {
+      "noData": "暂无数据"
+    },
+    "en": {
+      "noData": "No data"
+    },
+    "de": {
+      "noData": "Keine Daten"
+    },
+    "fr": {
+      "noData": "Aucune donnée pour l'instant"
+    },
+    "ru": {
+      "noData": "Нет данных"
+    },
+    "pt": {
+      "noData": "Sem dados no momento"
+    },
+    "ko": {
+      "noData": "잠시 데이터가 없음"
+    },
+    "ja": {
+      "noData": "データなし"
+    },
+    "es": {
+      "noData": "No hay datos"
+    },
+    "ar": {
+      "noData": "لا توجد المعلمات موقتا"
+    },
+    "it": {
+      "noData": "Nessun dato"
+    },
+    "bn": {
+      "noData": "কোন তথ্য নেই"
+    },
+    "da": {
+      "noData": "Intet data"
+    },
+    "idn": {
+      "noData": "Tiada data sekarang"
+    },
+    "th": {
+      "noData": "ไม่มีข้อมูล"
+    },
+    "vi": {
+      "noData": "Tạm thời không có dữ liệu"
+    },
+    "tr": {
+      "noData": "Veri Yok"
+    },
+    "nl": {
+      "noData": "Geen gegevens"
+    },
+    "pl": {
+      "noData": "Brak danych"
+    },
+    "zh_HN": {
+      "noData": "暫無數據"
+    }
+  },
+  "datasource": "prop",
+  "dataManage": {}
+}

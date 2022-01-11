@@ -37,6 +37,82 @@
     "zh_CN": {
       "title": "条款协议",
       "aggree": "阅读并同意"
+    },
+    "en": {
+      "title": "Protocol",
+      "aggree": "Read and agree"
+    },
+    "de": {
+      "title": "Vertragsbedingungen",
+      "aggree": "Lese und zustimme"
+    },
+    "fr": {
+      "title": "Accord sur les conditions",
+      "aggree": "Lire et accepter"
+    },
+    "ru": {
+      "title": "Соглашение",
+      "aggree": "Прочитано, принимаю условия"
+    },
+    "pt": {
+      "title": "Acordo de termos",
+      "aggree": "Leia e concorde"
+    },
+    "ko": {
+      "title": "약관 협의",
+      "aggree": "읽고 동의합니다"
+    },
+    "ja": {
+      "title": "契約条件",
+      "aggree": "閲覧したうえで同意します"
+    },
+    "es": {
+      "title": "Protocolo",
+      "aggree": "Leer y aceptar"
+    },
+    "ar": {
+      "title": "المواد للإتفاقية",
+      "aggree": "قد قرأ ووفق"
+    },
+    "it": {
+      "title": "Accordo sui termini",
+      "aggree": "Leggi e accetta"
+    },
+    "bn": {
+      "title": "চুক্তির শর্ত",
+      "aggree": "পড়ে সম্মত হয়েছি"
+    },
+    "da": {
+      "title": "Vilkår og aftale",
+      "aggree": "Læs og enig"
+    },
+    "idn": {
+      "title": "Perjanjian persyaratan",
+      "aggree": "Baca dan setujui"
+    },
+    "th": {
+      "title": "ข้อตกลงและเงื่อนไข",
+      "aggree": "อ่านและยอมรับ"
+    },
+    "vi": {
+      "title": "Điều khoản thỏa thuận",
+      "aggree": "Đọc và đồng ý"
+    },
+    "tr": {
+      "title": "Şartlar sözleşmesi",
+      "aggree": "Oku ve Kabul Et"
+    },
+    "nl": {
+      "title": "De voorwaarden van de overeenkomst",
+      "aggree": "Lees en ga akkoord"
+    },
+    "pl": {
+      "title": "Warunki umowy",
+      "aggree": "Przeczytałem i zgadzam się"
+    },
+    "zh_HN": {
+      "title": "條款協議",
+      "aggree": "閱讀並同意"
     }
   },
   "datasource": "prop",

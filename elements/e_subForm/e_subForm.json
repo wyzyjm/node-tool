@@ -2,7 +2,7 @@
   "cname": "子表单",
   "styleId": "e_subForm",
   "styleClass": "s_layout",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <div class=\"p_title s_label\">{{${label}}}</div>\n    {{/if}}\n    <div class=\"p_thead\">\n        {{#${layout}}}\n            <div class=\"p_th\">{{#eq @last true}}操作{{/eq}}</div>\n        {{/${layout}}}\n    </div>\n    <div class=\"p_tbody\">\n        <div class=\"p_tr\">\n        {{#${layout}}}\n            <div class=\"cbox-${id}-{{@index}} p_td\">{{#eq @last true}}<a class=\"text-primary p_remove\" href=\"javascript:;\">移除</a>{{/eq}}</div>\n        {{/${layout}}}\n        </div>\n    </div>\n    {{#if ${showBtn}}}\n    <div>\n        <a href=\"javascript:;\" class=\"btn btn-primary btn-sm p_addRow\">{{${btnText}}}</a>\n    </div>\n    {{/if}}\n    <input type=\"hidden\" name=\"${elemId}\" >\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${showLabel}}}\n    <div class=\"p_title s_label\">{{${label}}}</div>\n    {{/if}}\n    <div class=\"p_thead\">\n        {{#${layout}}}\n            <div class=\"p_th\">{{#eq @last true}}{{${i18n.operate}}}{{/eq}}</div>\n        {{/${layout}}}\n    </div>\n    <div class=\"p_tbody\">\n        <div class=\"p_tr\">\n        {{#${layout}}}\n            <div class=\"cbox-${id}-{{@index}} p_td\">{{#eq @last true}}<a class=\"text-primary p_remove\" href=\"javascript:;\">{{${i18n.remove}}}</a>{{/eq}}</div>\n        {{/${layout}}}\n        </div>\n    </div>\n    {{#if ${showBtn}}}\n    <div>\n        <a href=\"javascript:;\" class=\"btn btn-primary btn-sm p_addRow\">{{${btnText}}}</a>\n    </div>\n    {{/if}}\n    <input type=\"hidden\" name=\"${elemId}\" >\n</div>",
   "css": [
     {
       "media": "",
@@ -32,7 +32,86 @@
     ]
   },
   "i18n": {
-    "zh_CN": {}
+    "zh_CN": {
+      "operate": "操作",
+      "remove": "移除"
+    },
+    "en": {
+      "operate": "Action",
+      "remove": "Remove"
+    },
+    "de": {
+      "operate": "Betrieb",
+      "remove": "Entfernen"
+    },
+    "fr": {
+      "operate": "Opérer",
+      "remove": "Supprimer"
+    },
+    "ru": {
+      "operate": "Действия",
+      "remove": "Удалять"
+    },
+    "pt": {
+      "operate": "Operar",
+      "remove": "Remover"
+    },
+    "ko": {
+      "operate": "조작",
+      "remove": "제거하다"
+    },
+    "ja": {
+      "operate": "操作",
+      "remove": "削除する"
+    },
+    "es": {
+      "operate": "Manejar",
+      "remove": "Eliminar"
+    },
+    "ar": {
+      "operate": "تشغيل",
+      "remove": "إزالة"
+    },
+    "it": {
+      "operate": "Operazione",
+      "remove": "Rimuovere"
+    },
+    "bn": {
+      "operate": "অপারেশান",
+      "remove": "অপসারণ"
+    },
+    "da": {
+      "operate": "Operer",
+      "remove": "Fjerne"
+    },
+    "idn": {
+      "operate": "Beroperasi",
+      "remove": "Menghapus"
+    },
+    "th": {
+      "operate": "ดำเนินงาน",
+      "remove": "ลบ"
+    },
+    "vi": {
+      "operate": "Thao tác",
+      "remove": "Tẩy"
+    },
+    "tr": {
+      "operate": "İşletim",
+      "remove": "Kaldırmak"
+    },
+    "nl": {
+      "operate": "bedienen",
+      "remove": "Verwijderen"
+    },
+    "pl": {
+      "operate": "Obsługa",
+      "remove": "Usunąć"
+    },
+    "zh_HN": {
+      "operate": "操作",
+      "remove": "移除"
+    }
   },
   "datasource": "prop",
   "container": true,

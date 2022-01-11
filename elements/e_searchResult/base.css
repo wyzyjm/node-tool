@@ -1,3 +1,11 @@
 .e_searchResult .p_preview{
     line-height: 50px;
+    color: #ccc;
+}
+.e_searchResult .p_container{
+    display: none;
+}
+.e_searchResult .p_page{
+    text-align: center;
+    padding-top: 30px;
 }

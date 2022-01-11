@@ -1,0 +1,16 @@
+/* .e_imageSearch {
+    height: 200px;
+} */
+.e_imageSearch .p_container {
+    height: 100%;
+}
+
+.e_imageSearch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.e_imageSearch .swiper-button-next.swiper-button-disabled,
+.e_imageSearch .swiper-button-prev.swiper-button-disabled {
+    display: none;
+}

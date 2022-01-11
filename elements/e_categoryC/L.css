@@ -1,0 +1,14 @@
+.e_categoryC .deep::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background: rgb(0 0 0 / 15%);
+}
+.e_categoryC .p_c_item:last-child .deep::after,
+.e_categoryC .p_c_item > .p_c_content .deep::after{
+    display:none;
+}

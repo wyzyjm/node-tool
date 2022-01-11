@@ -4,7 +4,8 @@
         {
             "name": "dataList",
             "cname": "列表",
-            "type": "array[object]"
+            "type": ["array[object]", "array[img]", "array[video]", "array[file]"],
+            "require": true
         }
     ]
 }

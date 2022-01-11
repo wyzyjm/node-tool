@@ -1,0 +1,14 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-loopK",
+            "title":"循环列数据",
+            "bind-dataList": "prop.dataList",
+            "bind-value": "prop.columnData",
+            "bind-pageConfig": "prop.pageConfig",
+            "bind-columnCount": "prop.columnCount",
+            "bind-needHead": "prop.needHead"
+        }
+    ]
+}
+  

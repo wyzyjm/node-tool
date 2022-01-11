@@ -1,0 +1,162 @@
+{
+  "cname": "轮播图-特效一",
+  "styleId": "e_bannerD",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    {{#if ${bannerLists}}}\n    <div class=\"swiper-container\" >\n        <div class=\"swiper-wrapper p_swiperContainer\">\n            {{#each ${bannerLists}}}\n            <div class=\"swiper-slide p_slide\">\n                {{#eq type 1}}\n                    <div class=\"p_img\">\n                        <a class=\"P_link_img\" href=\"{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}\" {{#if href.value}}target=\"{{href.target}}\"{{/if}}>\n                            {{#eq @index 0}}\n                            {{{nLazyImage imgUrl title 'false'}}}\n                            {{^}}\n                            {{{nLazyImage imgUrl title 'true'}}}\n                            {{/eq}}\n                        </a>\n                    </div>\n                {{/eq}}\n                {{#eq type 2}}\n                    <div class=\"p_video\">\n                        <div class=\"p_videoPoster\">\n                            {{{nLazyImage video.coverImgUrl title 'false'}}}\n                        </div>\n                        <div class=\"videoContent\">\n                        {{{lazyVideo video.url ../${settings}.videoMouted false}}}\n                        </div>\n                    </div>\n                    <div class=\"p_video_button\"><span class=\"p_videobtm\"><svg t=\"1639621414867\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1769\" width=\"20\" height=\"20\"><path d=\"M128 138.666667c0-47.232 33.322667-66.666667 74.176-43.562667l663.146667 374.954667c40.96 23.168 40.853333 60.8 0 83.882666L202.176 928.896C161.216 952.064 128 932.565333 128 885.333333v-746.666666z\" p-id=\"1770\"></path></svg></span></div>\n                {{/eq}}\n                <div class=\"p_info {{#eq type 2}}p_videoInfo{{/eq}}\">\n                {{#if ${settings}.showText}}\n                    <div class=\"p_info_fivebox\">\n                        {{#if summary}}<p class=\"p_summary\">{{summary}}</p>{{/if}}\n                        {{#if title}}<h1 class=\"p_btitle\">{{title}}</h1>{{/if}}\n                        <span class=\"p_cspan\"></span>\n                        <a href=\"{{#if href.value}}{{$transferLink href compId}}{{^}}javascript:;{{/if}}\" {{#if href.value}}target=\"{{href.target}}\"{{/if}} class=\"p_button\">MORE +</a>\n                    </div>\n                {{/if}}\n                </div>\n            </div>\n            {{/each}}\n        </div>\n        <div class=\"p_kongjian\"></div>\n        {{#if ${settings}.pagination}}\n        <div class=\"swiper-pagination p_pagenation\"></div>\n        {{/if}}\n        <div class=\"p_arr\">\n            {{#if ${settings}.navigation}}\n            <div class=\"js_editor_click swiper-button-next p_btn_next\"></div>\n            <div class=\"js_editor_click swiper-button-prev p_btn_prev\"></div>\n            {{/if}}\n        </div>\n        <div class=\"p_scrool\"><span>scroll down</span><i></i></div>\n    </div>\n    {{^}}\n    {{{nNoDataPrompt ${i18n.noData}}}}\n    {{/if}}\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_bannerD .swiper-container{\n    width: 100%;\n    height: 100vh;\n    max-height: 1080px;\n    overflow: hidden;\n}\n.e_bannerD .swiper-slide{\n    overflow: hidden;\n    background: #fff;\n    z-index: 10;\n}\n.e_bannerD .swiper-slide-active{\n    z-index: 11;\n}\n.e_bannerD .p_img{\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n}\n.e_bannerD .p_video{\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n}\n.e_bannerD .P_link_img{\n    display: block;\n    position: relative;\n    overflow: hidden;\n    height: 100%;\n    width: 100%;\n    background-size: cover;\n    transition: all ease 2s;\n    transform: scale(1.1);\n}\n.e_bannerD  .swiper-slide-active .P_link_img{\n    transform: scale(1);\n}\n.e_bannerD .p_videoPoster{\n    display: block;\n    position: relative;\n    overflow: hidden;\n    height: 100%;\n    width: 100%;\n    background-size: cover;\n    transition: transform ease 2s;\n    transform: scale(1.1);\n    cursor: pointer;\n    z-index: 21;\n}\n.e_bannerD  .swiper-slide-active .p_videoPoster{\n    transform: scale(1);\n}\n.e_bannerD .P_link_img img{\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%,-50%)scale(1.18);\n    width: auto;\n    height: 100%;\n}\n.e_bannerD .p_videoPoster img{\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%,-50%)scale(1.18);\n    width: auto;\n    height: 100%;\n}\n.e_bannerD .p_info{\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    z-index: 22;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    padding: 15px 20px;\n}\n.e_bannerD .p_info_fivebox{\n    width: 40%;\n}\n.e_bannerD .p_summary{\n    color: rgb(255 255 255 / 40%);\n    font-family: arial;\n    font-size: 20px;\n    line-height: 1.6;\n    margin-bottom: 30px;\n    transition: all ease .8s .3s;\n    opacity: 0;\n    transform: translateY(40px);\n}\n.e_bannerD .swiper-slide-active .p_summary{\n    opacity: 1;\n    transform: translateY(0px);\n}\n.e_bannerD .p_btitle{\n    color: #fff;\n    font-size: 40px;\n    line-height: 1.3;\n    transition: all ease .8s .6s;\n    opacity: 0;\n    transform: translateY(40px);\n}\n.e_bannerD .swiper-slide-active .p_btitle{\n    opacity: 1;\n    transform: translateY(0px);\n}\n.e_bannerD .p_cspan{\n    position: relative;\n    margin-top: 30px;\n    display: block;\n    transition: all ease .8s .9s;\n    opacity: 0;\n    transform: translateY(40px);\n    display: none;\n}\n.e_bannerD .p_button{\n    display: inline-block;\n    margin-top: 40px;\n    border-radius: 30px;\n    border: 1px solid #fff;\n    width: 100%;\n    max-width: 150px;\n    padding: 10px 15px;\n    color: #fff;\n    text-align: center;\n    font-size: 14px;\n    opacity: 0;\n    transform: translateY(40px);\n    transition: all ease .3s,transform ease .8s .9s,opacity ease .8s .9s;\n    display: none;\n}\n.e_bannerD .p_button:hover{\n    border: 1px solid #fff;\n    background:#fff;\n    color: #333;\n}\n.e_bannerD .swiper-slide-active .p_button{\n    opacity: 1;\n    transform: translateY(0px);\n}\n.e_bannerD .swiper-slide-active .p_cspan{\n    opacity: 1;\n    transform: translateY(0px);\n}\n.e_bannerD .p_cspan::before,\n.e_bannerD .p_cspan::after{\n    content:'';\n    width: 18px;\n    height: 18px;\n    border-radius: 100%;\n    background: rgb(255 255 255 / 70%);\n    display: inline-block;\n}\n.e_bannerD .p_cspan::before{\n    background: rgb(255 255 255 / 70%);\n}\n.e_bannerD .p_cspan::after{\n    margin-left: -6px;\n}\n.e_bannerD .p_scrool{\n    position: absolute;\n    left: 20px;\n    bottom: 40px;\n    color: #fff;\n    z-index: 10;\n}\n.e_bannerD .p_scrool span {\n    text-transform: uppercase;\n    color: #fff;\n    display: block;\n    font-family: arial;\n    writing-mode: tb;\n    line-height: 20px;\n    margin-bottom: 12px;\n    font-size: 12px;\n}\n.e_bannerD .p_scrool i{\n    display: block;\n    width: 20px;\n    height: 30px;\n    border-radius: 12px;\n    border: 2px #fff solid;\n    position: relative;\n}\n.e_bannerD .p_scrool i:before {\n    content: \"\";\n    display: block;\n    width: 4px;\n    height: 10px;\n    background: #fff;\n    border-radius: 2px;\n    position: absolute;\n    left: 50%;\n    transform: translate(-50%,0);\n    top: 3px;\n    animation: scrollmouse 2s linear infinite;\n}\n@keyframes scrollmouse{\n    from {\n        transform: translate(-50%,0);\n        opacity:1;\n    }to {\n        transform: translate(-50%,10px);\n        opacity:0;\n    }\n}\n.e_bannerD .p_kongjian{\n    position: absolute;\n    right: 0;\n    width: 100%;\n    border-left: 1px solid rgb(255 255 255 / 10%);\n    height: 100%;\n    top: 0;\n    bottom: 0;\n    z-index: 1;\n    max-width: 100px;\n    pointer-events: none;\n}\n.e_bannerD .swiper-pagination{\n    position: absolute;\n    display: flex;\n    flex-direction: column;\n    top: 50%;\n    right: 50px;\n    transform: translate(50%,-50%);\n    left: auto;\n    width: auto;\n    height: auto;\n    bottom: auto;\n}\n.e_bannerD .swiper-pagination-bullet{\n    margin: 3px 0 !important;\n    background: hsl(0deg 0% 100% / 40%);\n    opacity: 1;\n    width: 10px;\n    height: 10px;\n    transition: all ease .3s;\n}\n.e_bannerD .swiper-pagination-bullet-active{\n    height: 30px;\n    border-radius: 15px;\n    background: rgb(255 255 255);\n}\n.e_bannerD .swiper-pagination-bullet:hover{\n    height: 15px;\n    border-radius: 15px;\n    background: rgb(255 255 255);\n}\n.e_bannerD .p_btn_next{\n    color: #fff;\n    border-radius: 100%;\n    border: 2px solid #fff;\n    width: 50px;\n    height: 50px;\n    transition: all ease .3s;\n    position: static;\n    margin: 0 auto;\n}\n.e_bannerD .p_btn_next::after{\n    font-size: 16px;\n}\n.e_bannerD .p_btn_next:hover{\n    background: #000;\n    border: 2px solid #000;\n}\n.e_bannerD .p_btn_prev{\n    color: #fff;\n    border-radius: 100%;\n    border: 2px solid #fff;\n    height: 50px;\n    width: 50px;\n    transition: all ease .3s;\n    position: static;\n    margin: 10px auto 0;\n}\n.e_bannerD .p_btn_prev::after{\n    font-size: 16px;\n}\n.e_bannerD .p_btn_prev:hover{\n    background: #000;\n    border: 2px solid #000;\n}\n.e_bannerD .videoContent{\n    position: absolute;\n    left: 0;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 20;\n    cursor: pointer;\n}\n.e_bannerD .videoContent video{\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%,-50%);\n    height: auto;\n    width: 100%;\n}\n.e_bannerD .p_video_button{\n    position: absolute;\n    right: 0;\n    width: 100%;\n    bottom: 160px;\n    z-index: 110;\n    max-width: 100px;\n    height: 50px;\n}\n.e_bannerD .p_videobtm{\n    color: #fff;\n    border-radius: 100%;\n    border: 2px solid #fff;\n    top: auto;\n    bottom: 0;\n    width: 50px;\n    height: 50px;\n    left: 50%;\n    transform: translateX(-50%);\n    transition: all ease .3s;\n    display: block;\n    position: absolute;\n    cursor: pointer;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    text-align: center;\n}\n.e_bannerD .p_video_button svg{\n    margin: 0 auto;\n    width: 15px;\n}\n.e_bannerD .p_arr{\n    max-width: 100px;\n    width: 100%;\n    position: absolute;\n    right: 0;\n    bottom: 40px;\n    height: auto;\n    z-index: 1;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    text-align: center;\n}\n.e_bannerD .p_videobtm:hover{\n    background: #000;\n    border: 2px solid #000;\n}"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ".e_bannerD .p_info_fivebox {\n    width: 75%;\n    padding-bottom: 90px;\n}\n.e_bannerD .p_summary{\n    font-size: 14px;\n    line-height: 1.2;\n    margin-bottom: 20px;\n}\n.e_bannerD .p_btitle{\n    font-size: 22px;\n}\n.e_bannerD .p_cspan::before, .e_bannerD .p_cspan::after{\n    width: 10px;\n    height: 10px;\n}\n.e_bannerD .p_cspan::after{\n    margin-left: -3px;\n}\n.e_bannerD .p_kongjian{\n    max-width: 55px;\n}\n.e_bannerD .p_arr{\n    max-width: 55px;\n}\n.e_bannerD .p_video_button{\n    max-width: 55px;\n    bottom: 106px;\n    height: 28px;\n}\n.e_bannerD .swiper-pagination-bullet{\n    width: 6px;\n    height: 6px;\n}\n.e_bannerD .swiper-pagination-bullet-active{\n    height: 20px;\n}\n.e_bannerD .p_btn_prev{\n    width: 28px;\n    height: 28px;\n    margin: 5px auto 0;\n}\n.e_bannerD .p_video_button span{\n    width: 28px;\n    height: 28px;\n}\n.e_bannerD .p_btn_next{\n    width: 28px;\n    height: 28px;\n}\n.e_bannerD .p_btn_prev::after{\n    font-size: 12px;\n}\n.e_bannerD .p_btn_next::after{\n    font-size: 12px;\n}\n.e_bannerD .swiper-container{\n    height: 70vh;\n}\n.e_bannerD .p_cspan{\n    margin-top: 20px;\n}\n.e_bannerD .p_video_button svg{\n    width: 12px;\n}\n.e_bannerD .swiper-pagination{\n    right: 27px;\n}\n.e_bannerD .videoContent video{\n    height: 100%;\n    width: auto;\n}\n.e_bannerD .p_scrool span{\n    display: none;\n}"
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ".e_bannerD .p_info_fivebox {\n    width: 60%;\n}"
+    }
+  ],
+  "prop": {
+    "bannerLists": [
+      {
+        "target": "blank",
+        "title": "春季，是四季中的第一个季节，指立春至立夏期间",
+        "video": {
+          "title": "1616551727640631.mp4",
+          "url": "https://omo-oss-video.thefastvideo.com/shop/NEW2021031622594531518/cms/vedio/ded39be3-cc90-44c3-bd38-f515aa61de1f.mp4",
+          "coverImgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/6d313b56-72d6-434d-8dd2-29c8182b33f5.jpg"
+        },
+        "imgUrl": null,
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "Spring is the first season of the four seasons, referring to the period from Lichun to Lixia",
+        "type": 2
+      },
+      {
+        "target": "blank",
+        "title": "春季，是四季中的第一个季节，指立春至立夏期间",
+        "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/57bdbe39-4c4b-466a-a34b-46c1e1bc1d27.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "Spring is the first season of the four seasons, referring to the period from Lichun to Lixia",
+        "type": 1
+      },
+      {
+        "target": "blank",
+        "title": "春季，是四季中的第一个季节，指立春至立夏期间",
+        "video": null,
+        "code": null,
+        "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/dccf356e-5b90-463b-814c-eaa9e94d94d8.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "Spring is the first season of the four seasons, referring to the period from Lichun to Lixia",
+        "type": 1
+      },
+      {
+        "target": "blank",
+        "title": "春季，是四季中的第一个季节，指立春至立夏期间",
+        "video": null,
+        "code": null,
+        "imgUrl": "https://pre-omo-oss-image.thefastimg.com//portal-saas/1112_0ff3acba6a6a42d48ee3828d4085baad/cms/image/9bc65590-1ef9-4c10-837e-8f6f55dc4d09.jpg",
+        "href": {
+          "type": "",
+          "value": "",
+          "target": ""
+        },
+        "summary": "Spring is the first season of the four seasons, referring to the period from Lichun to Lixia",
+        "type": 1
+      }
+    ],
+    "settings": {
+      "direction": "horizontal",
+      "pagination": true,
+      "navigation": true,
+      "autoplay": false,
+      "deplay": 4,
+      "effect": "fade",
+      "videoAutoplay": false,
+      "videoLoop": false,
+      "videoMouted": true,
+      "videoControlor": false,
+      "showText": true
+    }
+  },
+  "i18n": {
+    "zh_CN": {
+      "noData": "暂无数据"
+    },
+    "en": {
+      "noData": "No data"
+    },
+    "de": {
+      "noData": "Keine Daten"
+    },
+    "fr": {
+      "noData": "Aucune donnée pour l'instant"
+    },
+    "ru": {
+      "noData": "Нет данных"
+    },
+    "pt": {
+      "noData": "Sem dados no momento"
+    },
+    "ko": {
+      "noData": "잠시 데이터가 없음"
+    },
+    "ja": {
+      "noData": "データなし"
+    },
+    "es": {
+      "noData": "No hay datos"
+    },
+    "ar": {
+      "noData": "لا توجد المعلمات موقتا"
+    },
+    "it": {
+      "noData": "Nessun dato"
+    },
+    "bn": {
+      "noData": "কোন তথ্য নেই"
+    },
+    "da": {
+      "noData": "Intet data"
+    },
+    "idn": {
+      "noData": "Tiada data sekarang"
+    },
+    "th": {
+      "noData": "ไม่มีข้อมูล"
+    },
+    "vi": {
+      "noData": "Tạm thời không có dữ liệu"
+    },
+    "tr": {
+      "noData": "Veri Yok"
+    },
+    "nl": {
+      "noData": "Geen gegevens"
+    },
+    "pl": {
+      "noData": "Brak danych"
+    },
+    "zh_HN": {
+      "noData": "暫無數據"
+    }
+  },
+  "datasource": "prop",
+  "dataManage": {}
+}

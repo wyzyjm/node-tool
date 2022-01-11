@@ -7,7 +7,7 @@ const {promises: {readdir, writeFile,readFile,stat}} = require('fs');
 const gta = require('google-translate-api-cn');
 const COMP_PATH=path.join(__dirname, './elements');//组件基础路径
 const DESIGNlIB_pATH=path.join(__dirname, '../ndesignlib/elem/');//组件基础路径
-
+const NPUBLIC_pATH=path.join(__dirname, '../publics/');//组件基础路径
 const defaultJson={
     "cname": "",
     "styleId": "",
@@ -141,6 +141,48 @@ async function copyFile(compId){
     if(compDataJson){
         let dsignCompDataPath = `${desginLibComp + compId}-data.json`;
         await writeFile(dsignCompDataPath,JSON.stringify(compDataJson,null,2),'utf8');
+    }
+}
+
+//同步文件
+async function asyncJsI18n(compId){
+    const jsI18n_path=path.join(__dirname, './i18n/compJs/');
+    const npublicI18n_path = path.join(NPUBLIC_pATH, './libs/widget/language/');
+    console.log(npublicI18n_path)
+    let files = await readdir(jsI18n_path);
+    await Promise.all(files.map(async (file)=>{
+        let fileStr = await readFile(jsI18n_path + file)
+        await writeFile(npublicI18n_path+file,fileStr,'utf8');
+    }));
+}
+
+//一键同步词条
+async function asyncI18n(){
+    let comps = await readdir(COMP_PATH);
+    await Promise.all(comps.map(async (comp)=>{
+        asyncCompI18n(comp)
+    }));
+}
+
+//同步词条
+async function asyncCompI18n(compId){
+    let compPath=`${COMP_PATH}/${compId}/`;
+    let compJsonFilePath=`${compPath + compId}.json`;
+    let compJson
+    try{
+        compJson=JSON.parse(await readFile(compJsonFilePath));
+    }catch(e){}
+    if(compJson){
+        let desginLibComp = `${DESIGNlIB_pATH + compId}/`;
+        let dsignCompPath = `${desginLibComp + compId}.json`;
+        let desginLibCompJson
+        try{
+            desginLibCompJson=JSON.parse(await readFile(dsignCompPath));
+        }catch(e){}
+        if(desginLibCompJson){
+            desginLibCompJson.i18n = compJson.i18n
+            await writeFile(dsignCompPath,JSON.stringify(desginLibCompJson,null,2),'utf8');
+        }
     }
 }
 
@@ -287,5 +329,7 @@ function createDir(dir){
 module.exports={
   compJsonBuilder,
   addElement,
-  copyFile
+  copyFile,
+  asyncI18n,
+  asyncJsI18n
 }

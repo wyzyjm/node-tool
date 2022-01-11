@@ -1,58 +1,58 @@
 {
-  "prop": {
-    "contrast": {
-      "status": true,
-      "href": {
-        "type": "none",
-        "value": "",
-        "target": ""
-      }
+    "prop": {
+        "contrast": {
+            "status": true,
+            "href": {
+                "type": "none",
+                "value": "",
+                "target": ""
+            }
+        },
+        "online": {
+            "status": false,
+            "href": {
+                "type": "none",
+                "value": "",
+                "target": ""
+            }
+        },
+        "apply": {
+            "status": false,
+            "href": {
+                "type": "none",
+                "value": "",
+                "target": ""
+            }
+        },
+        "sample": {
+            "status": false,
+            "href": {
+                "type": "none",
+                "value": "",
+                "target": ""
+            }
+        },
+        "enquiry": {
+            "status": false,
+            "href": {
+                "type": "none",
+                "value": "",
+                "target": ""
+            }
+        }
     },
-    "online": {
-      "status": true,
-      "href": {
-        "type": "none",
-        "value": "",
-        "target": ""
-      }
-    },
-    "apply": {
-      "status": true,
-      "href": {
-        "type": "none",
-        "value": "",
-        "target": ""
-      }
-    },
-    "sample": {
-      "status": true,
-      "href": {
-        "type": "none",
-        "value": "",
-        "target": ""
-      }
-    },
-    "enquiry": {
-      "status": true,
-      "href": {
-        "type": "none",
-        "value": "",
-        "target": ""
-      }
+    "i18n": {
+        "contrast": "对比",
+        "online": "在线预订",
+        "apply": "预约申请",
+        "sample": "样品申请",
+        "enquiry": "询价",
+        "compareTheBar": "对比栏",
+        "clear": "清空全部内容",
+        "hidden": "隐藏",
+        "delete": "删除",
+        "noncontrastingDescription": "您还可以继续添加",
+        "tip": "栏已满，您可以删除不需要的栏内商品再继续添加哦！",
+        "designtip": "对比浮动窗"
     }
-  },
-  "i18n": {
-    "contrast": "对比",
-    "online": "在线预订",
-    "apply": "预约申请",
-    "sample": "样品申请",
-    "enquiry": "询价",
-    "compareTheBar": "对比栏",
-    "clear": "清空全部内容",
-    "hidden": "隐藏",
-    "delete": "删除",
-    "noncontrastingDescription": "您还可以继续添加",
-    "tip": "栏已满，您可以删除不需要的栏内商品再继续添加哦！",
-    "designtip": "对比浮动窗"
-  }
 }

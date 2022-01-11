@@ -1,22 +1,30 @@
-.e_bottomNav .p_menu1Item ,.e_bottomNav .p_menu2Item{
+.e_bottomNav .p_menu1Item,
+.e_bottomNav .p_menu2Item{
     display: flex;
     justify-content: space-between;
 }
 .e_bottomNav .p_level1Box ul {
     display: none;
 }
-.e_bottomNav .p_level2Box,
-.e_bottomNav .p_level3Box {
-    padding-left: 10px;
-}
 .e_bottomNav .p_jtIcon {
-    align-items: stretch;
     width: auto;
     height: auto;
-    max-width: 25px;
+    max-width: 20px;
     font-size: inherit;
     transition: 0.5s;
+    margin: 0;
 }
 .e_bottomNav .p_jtIcon.active {
     transform: rotateZ(90deg);
+}
+.e_bottomNav a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.e_bottomNav .p_level1Item{
+    padding: 0;
+}
+.e_bottomNav .p_menu2Item svg{
+    opacity: .5;
 }

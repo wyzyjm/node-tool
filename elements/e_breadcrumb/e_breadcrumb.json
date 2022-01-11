@@ -25,6 +25,63 @@
   "i18n": {
     "zh_CN": {
       "homePage": "首页"
+    },
+    "en": {
+      "homePage": "Home page"
+    },
+    "de": {
+      "homePage": "Titelseite"
+    },
+    "fr": {
+      "homePage": "Page d'accueil"
+    },
+    "ru": {
+      "homePage": "Главная страница"
+    },
+    "pt": {
+      "homePage": "Primeira página"
+    },
+    "ko": {
+      "homePage": "홈페이지"
+    },
+    "ja": {
+      "homePage": "ホームページ"
+    },
+    "es": {
+      "homePage": "Inicio"
+    },
+    "ar": {
+      "homePage": "صفحة رئيسية"
+    },
+    "it": {
+      "homePage": "Homepage"
+    },
+    "bn": {
+      "homePage": "হোমপেজ"
+    },
+    "da": {
+      "homePage": "Startside"
+    },
+    "idn": {
+      "homePage": "Halaman Rumah"
+    },
+    "th": {
+      "homePage": "หน้าแรก"
+    },
+    "vi": {
+      "homePage": "Trang đầu"
+    },
+    "tr": {
+      "homePage": "Ana sayfa"
+    },
+    "nl": {
+      "homePage": "Startpagina"
+    },
+    "pl": {
+      "homePage": "Strona główna"
+    },
+    "zh_HN": {
+      "homePage": "首頁"
     }
   },
   "datasource": "prop",

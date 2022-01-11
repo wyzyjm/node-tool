@@ -1,6 +1,7 @@
 .e_navigationE .p_navBox1{
     display: flex;
     justify-content: flex-end;
+    height: auto !important;
 }
 .e_navigationE .p_navItem1 > p{
     display: flex;
@@ -37,7 +38,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 56px;
+    top: 100%;
     display: flex;
     justify-content: flex-end;
     z-index: 10;
@@ -59,11 +60,16 @@
 .e_navigationE .p_navItem1 > p a:hover::after{
     width: 100%;
 }
-.e_navigationE .p_navItem1:hover .p_navBox2,
-.e_navigationE .p_navBox2.isdesign{
+.e_navigationE .p_navItem1:hover .p_navBox2{
     opacity: 1;
     visibility: visible;
 }
 .e_navigationE .p_navBox2.isdesign{
     display: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+.p_haveNav{
+    min-height: auto !important;
 }

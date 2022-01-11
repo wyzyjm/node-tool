@@ -2,19 +2,19 @@
   "cname": "分类树-下拉",
   "styleId": "e_categoryB",
   "styleClass": "",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <button class=\"btn btn-primary p_c_mbtn\">{{${i18n.moCategoryTitle}}}</button>\n    <div class=\"p_c_tree\">\n        <div class=\"p_c_mput\">\n            <svg t=\"1604645690044\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"9896\" width=\"200\" height=\"200\"><path d=\"M725.333333 127.146667a53.333333 53.333333 0 0 0-75.52 0L295.253333 482.133333a42.496 42.496 0 0 0 0 60.16l354.56 354.56c20.906667 20.906667 54.613333 20.906667 75.52 0s20.906667-54.613333 0-75.52L416.426667 512l309.333333-309.333333c20.48-20.906667 20.48-55.04-0.426667-75.52z\" p-id=\"9897\"></path></svg>\n        </div>\n        {{#if ${cate}}}\n            {{#tree ${cate}}}\n                {{#if @nodeBegin}}<ul class=\"p_c_content\">{{/if}}\n                <li class=\"p_c_item\">\n                    <span class=\"p_c_title\">\n                        <a href=\"{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}\" target=\"{{#eq target 'BLANK'}}_blank{{/eq}}\">\n                            {{#if categoryImage}}{{#if ../${showImg}}}\n                            {{#each categoryImage}}{{#eq @index 0}}\n                                <span>{{{nLazyImage this ../categoryName \"true\" unittype cdnTag}}}</span>\n                            {{/eq}}{{/each}}\n                            {{/if}}{{/if}}\n                            <span>{{categoryName}}</span>\n                        </a>\n                    </span>\n                    {{tree children}}\n                </li>\n                {{#if @nodeEnd}}</ul>{{/if}}\n            {{/tree}}\n        {{^}}\n            {{nNoDataPrompt ${i18n.noData}}}\n        {{/if}}\n    </div>\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\n    <button class=\"p_c_mbtn js_editor_click\">{{${i18n.moCategoryTitle}}}</button>\n    <div class=\"p_c_tree\">\n        {{#if ${cate}}}\n        {{#tree ${cate}}}\n        {{#if @nodeBegin}}<ul class=\"p_c_content deep-{{@deep}}\">{{/if}}\n            <li class=\"p_c_item\">\n                <p class=\"p_c_title{{@deep}} js_editor_click deep {{#eq selected true}}active{{/eq}}\">\n                    <a href=\"{{#if categoryUrl}}{{categoryUrl}}{{^}}javascript:;{{/if}}\"\n                        target=\"{{#eq target '_blank'}}_blank{{/eq}}\">\n                        {{#if categoryImage}}{{#if ../${showImg}}}\n                        {{#each categoryImage}}{{#eq @index 0}}\n                        <span class=\"p_c_images\">{{{nLazyImage this ../categoryName \"true\" unittype cdnTag}}}</span>\n                        {{/eq}}{{/each}}\n                        {{/if}}{{/if}}\n                        <span>{{categoryName}}</span>\n                    </a>\n                </p>\n                {{tree children}}\n            </li>\n            {{#if @nodeEnd}}\n        </ul>{{/if}}\n        {{/tree}}\n        {{^}}\n        {{nNoDataPrompt ${i18n.noData}}}\n        {{/if}}\n    </div>\n    <div class=\"p_c_mput js_editor_click\"></div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_categoryB {\n    user-select:none;\n    font-size:14px;\n}\n.e_categoryB  ul{\n    list-style-type:none;\n    padding-left:30px;\n    margin:0;\n}\n.e_categoryB  .p_c_tree>ul{\n    padding:0;\n}\n.e_categoryB  li{\n    position:relative;\n}\n.e_categoryB .p_c_title{\n    display:block;\n    position:relative;\n    line-height:42px;\n    border-bottom:1px solid #e4e7ec;\n    cursor:pointer;\n    padding-left:10px;\n}\n.e_categoryB .p_c_title img{\n    width:20px;\n    height:20px;\n    vertical-align:middle;\n    margin-right:5px;\n}\n.e_categoryB  .p_arrow{\n    position:absolute;\n    right:10px;\n    top: 13px;\n    width:16px;\n    height: 16px;\n    transform:rotate(-90deg);\n    fill: currentColor;\n}\n.e_categoryB  .p_c_mbtn,\n.e_categoryB  .p_c_mput,\n.e_categoryB  .p_c_item>.p_c_content{\n    display:none;\n}\n"
+      "cssText": ".e_categoryB{\n    user-select:none;\n    font-size:14px;\n    width: 100%;\n    max-width: 100%;\n}\n.e_categoryB ul{\n    list-style: none;\n    margin:0;\n}\n.e_categoryB li{\n    position:relative;\n}\n.e_categoryB .deep a{\n    width: calc(100% - 50px);\n    width: 100%;\n    padding-left: 15px;\n    display: flex;\n    justify-content: flex-start;\n}\n.e_categoryB .p_c_title1{\n    display: flex;\n    justify-content: space-between;\n    position:relative;\n    line-height: 50px;\n    border-bottom: 1px solid #ebebeb;\n    font-size: 15px;\n    transition: all ease .3s;\n    width: 100%;\n    color: #333;\n    background: #f5f5f5;\n}\n.e_categoryB .deep-2{\n    width: 100%;\n}\n.e_categoryB .p_arrbtm{\n    width: 50px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    text-align: center;\n    cursor: pointer;\n    border-left: 1px solid rgb(0 0 0 / 5%);\n    transition: border-left ease .3s;\n}\n.e_categoryB .p_arrow{\n    margin: 0;\n    font-size: 12px;\n    transform: rotate(-90deg);\n    line-height: 1;\n    padding: 0;\n    width: auto;\n    height: 14px;\n    right: 15px;\n    pointer-events: none;\n}\n.e_categoryB .p_c_title2{\n    display: flex;\n    justify-content: space-between;\n    position:relative;\n    line-height: 50px;\n    border-bottom: 1px solid #e1e1e1;\n    font-size: 15px;\n    transition: all ease .3s;\n    width: 100%;\n    color: #666;\n    background: #ededed;\n}\n.e_categoryB .deep-3{\n    width: 100%;\n}\n.e_categoryB .p_c_title3{\n    display: flex;\n    justify-content: space-between;\n    position:relative;\n    line-height: 50px;\n    border-bottom: 1px solid #d9d9d9;\n    font-size: 15px;\n    transition: all ease .3s;\n    width: 100%;\n    color: #666;\n    background: #e3e3e3;\n}\n\n.e_categoryB .p_c_images{\n    width: 27px;\n    height: 100%;\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    margin-right: 6px;\n    order: -1;\n    overflow: hidden;\n    transition: all ease .3s;\n}\n.e_categoryB .p_c_images img{\n    width: 100%;\n    height: auto;\n    vertical-align:middle;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%,-50%);\n}\n.e_categoryB p:hover .p_c_images{\n    opacity:0;\n    margin-right: 0px;\n    width: 0px;\n}\n\n.e_categoryB .deep:hover{\n    background: #007bff;\n    color: #fff;\n    border-bottom: 1px solid #007bff;\n}\n.e_categoryB .active > p{\n    background: #007bff;\n    color: #fff;\n    border-bottom: 1px solid #007bff;\n}\n.e_categoryB .deep:hover .p_arrbtm{\n    border-left: 1px solid rgb(255 255 255 / 10%);\n}\n\n.e_categoryB li:last-child > .deep{\n    border-bottom: 0px solid #ebebeb;\n}\n"
     },
     {
       "media": "screen and (max-width:768px)",
-      "cssText": ".e_categoryB .p_c_tree{\n    position:fixed;\n    top:0;\n    right:-100%;\n    height:100%;\n    padding-left:36px;\n    width:100%;\n    transition:right 0.2s;\n    background:#555;\n    z-index: 99;\n}\n.e_categoryB .p_c_tree.show{\n    right:0\n}\n.e_categoryB .p_c_tree>ul{\n    height:100%;\n    overflow-y:auto;\n    overflow-x:hidden;\n}\n.e_categoryB .p_c_mbtn{\n    display:inline-block;\n}\n.e_categoryB .p_c_tree .p_c_mput{\n    display:block;\n    text-align:center;\n    width:36px;\n    height:100%;\n    line-height:100vh;\n    background:#888;\n    position:absolute;\n    left:0px;\n}\n.e_categoryB .p_c_tree .p_c_mput .icon{\n    transform: rotate(180deg);\n    fill: #ccc;\n}\n.e_categoryB .p_c_title{\n    color:#f4f4f5\n}\n"
+      "cssText": ".e_categoryB{\n    background: none;\n    max-width: none;\n    display: flex;\n    justify-content: flex-end;\n}\n.e_categoryB .p_c_tree{\n    position:fixed;\n    top:0;\n    bottom: 0;\n    left: 100%;\n    height: 100vh;\n    width: 70%;\n    transition: all ease .5s;\n    background: #fff;\n    z-index: 999;\n    max-height: 1080px;\n}\n.e_categoryB .deep-1{\n    height:100%;\n    overflow-y:auto;\n    overflow-x:hidden;\n}\n.e_categoryB .p_c_mbtn{\n    display: block;\n    border: 0;\n    background: #007bff;\n    padding: 10px 15px;\n    border-radius: 2px;\n    font-size: 14px;\n    color: rgb(255 255 255 / 80%);\n    outline: none;\n}\n.e_categoryB .p_c_mput{\n    display:block;\n    line-height: 50px;\n    background: rgb(0 0 0 / 70%);\n    position: fixed;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    left: 0;\n    max-height: 1080px;\n    height: 100vh;\n    width: 100%;\n    cursor: pointer;\n    transition: all ease .5s;\n    opacity: 0;\n    visibility: hidden;\n    z-index: 999;\n}\n.e_categoryB .p_c_mput:hover{\n    background: rgb(0 0 0 / 80%);\n}\n.e_categoryB .deep a{\n    padding-right: 15px;\n    width: 100%;\n}\n.e_categoryB .deep{\n    color: #666;\n}\n.e_categoryB .deep-2{\n    display: none;\n    position: static;\n    width: 100%;\n}\n.e_categoryB .deep-3{\n    display: none;\n    position: static;\n    width: 100%;\n    background: #dfdfdf;\n}\n.e_categoryB .p_c_title3{\n    border-bottom: 1px solid #d5d5d5;\n}\n.e_categoryB.design_nomput .p_c_mput{\n    display:none;\n}\n\n.p_chuShi{\n    transition: all ease .5s;\n}\n.p_leftani{\n    transform: translateX(-70%);\n}\n.p_leftani .e_categoryB .p_c_mput{\n    opacity: 1;\n    visibility: visible;\n    display: block;\n}\n.p_leftaniAdmi{\n    transform: translateX(-90%);\n}\n.p_leftaniAdmi .e_categoryB .p_c_tree{\n    width: 90%;\n}\n"
     },
     {
       "media": "screen and (min-width: 769px)",
-      "cssText": ""
+      "cssText": ".e_categoryB .p_c_mbtn,\n.e_categoryB .p_c_mput,\n.e_categoryB .p_c_item > .p_c_content{\n    display:none;\n}"
     },
     {
       "media": "screen and (max-width: 1024px) and (min-width: 769px)",
@@ -103,6 +103,82 @@
     "zh_CN": {
       "moCategoryTitle": "全部分类",
       "noData": "暂无数据"
+    },
+    "en": {
+      "moCategoryTitle": "All categories",
+      "noData": "No data"
+    },
+    "de": {
+      "moCategoryTitle": "Alle Kategorien",
+      "noData": "Keine Daten"
+    },
+    "fr": {
+      "moCategoryTitle": "Toutes catégories",
+      "noData": "Aucune donnée pour l'instant"
+    },
+    "ru": {
+      "moCategoryTitle": "Все категории",
+      "noData": "Нет данных"
+    },
+    "pt": {
+      "moCategoryTitle": "Todas as categorias",
+      "noData": "Sem dados no momento"
+    },
+    "ko": {
+      "moCategoryTitle": "전체 분류",
+      "noData": "잠시 데이터가 없음"
+    },
+    "ja": {
+      "moCategoryTitle": "すべてのカテゴリ",
+      "noData": "データなし"
+    },
+    "es": {
+      "moCategoryTitle": "Todas las categorias",
+      "noData": "No hay datos"
+    },
+    "ar": {
+      "moCategoryTitle": "تقسيم الكل",
+      "noData": "لا توجد المعلمات موقتا"
+    },
+    "it": {
+      "moCategoryTitle": "Tutte le categorie",
+      "noData": "Nessun dato"
+    },
+    "bn": {
+      "moCategoryTitle": "সব শ্রেনিবিভাগ",
+      "noData": "কোন তথ্য নেই"
+    },
+    "da": {
+      "moCategoryTitle": "Alle kategorier",
+      "noData": "Intet data"
+    },
+    "idn": {
+      "moCategoryTitle": "Semua kategori",
+      "noData": "Tiada data sekarang"
+    },
+    "th": {
+      "moCategoryTitle": "การจัดหมวดหมู่ทั้งหมด",
+      "noData": "ไม่มีข้อมูล"
+    },
+    "vi": {
+      "moCategoryTitle": "Phân loại toàn bộ",
+      "noData": "Tạm thời không có dữ liệu"
+    },
+    "tr": {
+      "moCategoryTitle": "Tüm Kategoriler",
+      "noData": "Veri Yok"
+    },
+    "nl": {
+      "moCategoryTitle": "Alle categorieën",
+      "noData": "Geen gegevens"
+    },
+    "pl": {
+      "moCategoryTitle": "Wszystkie kategorie",
+      "noData": "Brak danych"
+    },
+    "zh_HN": {
+      "moCategoryTitle": "全部分類",
+      "noData": "暫無數據"
     }
   },
   "datasource": "prop"
