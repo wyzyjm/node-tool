@@ -28,6 +28,7 @@
             }
         },
         "rule":[],
+        "logic":[],
         "submit":{  
             "type":1,   
             "logic":[],

@@ -7,6 +7,7 @@
             "bind-value":"prop.layout",
             "bind-basic":"prop.basic",
             "bind-rule":"prop.rule",
+            "bind-logic":"prop.logic",
             "bind-submit":"prop.submit",
             "bind-async":"prop.async",
             "bind-notice":"prop.notice",
