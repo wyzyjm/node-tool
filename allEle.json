@@ -215,6 +215,10 @@
     {
       "name": "会员快捷登录",
       "code": "e_quickLogin"
+    },
+    {
+      "name": "循环体图片",
+      "code": "e_subImg"
     }
   ],
   "complex": [
