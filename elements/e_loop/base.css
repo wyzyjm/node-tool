@@ -20,7 +20,7 @@
 .e_loop .p_kv_wrapper{
     display: flex;
 		flex-wrap: nowrap;
-		line-height: 24px;
+		line-height: 40px;
 		margin: 15px 0;
 }
 .e_loop .p_filter_key{
@@ -200,12 +200,14 @@ border-radius: 2px;
 
 .e_loop .p_fbutton{
 	background-color: #007bff;
+	border: 1px solid #409EFF;
 	text-decoration: none;
 	color: white;
 	font-size: 14px;
 	text-align: center;
-	padding: 10px;
-	border-radius: 5px;
+	padding: 10px 25px;
+	position: relative;
+	overflow: hidden;
 	
 }
 .e_loop .input-check,
@@ -227,4 +229,52 @@ border-radius: 2px;
 .e_loop .position-bottom{
 	display: flex;
 	flex-direction: column-reverse;
+}
+
+.e_loop .p_mbutton{
+	border: 1px solid #409EFF;
+	text-decoration: none;
+	color: #409EFF;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px 25px;
+	position: relative;
+	overflow: hidden;
+}
+.e_loop .p_mbutton:after{
+	content: "";
+display: none;
+width: 16px;
+height: 16px;
+background-color: #409eff;
+-webkit-transform: skewY(
+-45deg);
+transform: skewY(
+360deg);
+position: absolute;
+bottom: 0px;
+right: 0;
+z-index: 1;
+}
+.e_loop .p_mbutton::before{
+	content: "";
+display: none;
+width: 6px;
+height: 9px;
+border-right: #ffffff solid 2px;
+border-bottom: #ffffff solid 2px;
+-webkit-transform: rotate(
+35deg);
+transform: rotate(
+35deg);
+position: absolute;
+bottom: 5px;
+right: 4px;
+z-index: 2;
+}
+.e_loop .p_active .p_mbutton::before{
+	display: block;
+}
+.e_loop .p_active .p_mbutton::after{
+	display: block;
 }

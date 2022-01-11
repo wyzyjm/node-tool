@@ -19,24 +19,24 @@
                         <div class="p_v_item js-value-item " data-index="{{@index}}" data-valueType="{{valueType}}"
                             data-value="{{value}}">
                             {{#eq styleMode 'labelRadioButton'}}
-                            <a href="javascript:;" class="p_fbutton">{{name}}</a>
+                            <a href="javascript:;" class="js_editor_click p_fbutton">{{name}}</a>
                             {{/eq}}
                             {{#eq styleMode 'labelCheckboxButton'}}
-                            <a href="javascript:;" class="p_fbutton">{{name}}</a>
+                            <a href="javascript:;" class="js_editor_click p_mbutton">{{name}}</a>
                             {{/eq}}
 
                             {{#eq selectMode 'multiple'}}
                             {{#eq styleMode "labelCheckbox"}}
-                            <label class="p_checkbox">
-                                <input class="input-check p_input_check" type="checkbox" checked="false"/>{{name}}
+                            <label class="js_editor_click p_checkbox">
+                                <input class="js_editor_click input-check p_input_check" type="checkbox" />{{name}}
                             </label>
                             {{/eq}}
                             {{/eq}}
 
                             {{#eq selectMode 'radio'}}
                             {{#eq styleMode "labelRadio"}}
-                            <label class="p_radio">
-                                <input class="input-radio p_input_radio" checked="false" name="inputname{{../field}}" type="radio" />{{name}}
+                            <label class="js_editor_click p_radio">
+                                <input class="js_editor_click input-radio p_input_radio" name="inputname{{../field}}" type="radio" />{{name}}
                             </label>
                             {{/eq}}
                             {{/eq}}
@@ -48,10 +48,10 @@
                         <div class="p_v_item js-value-item" data-index="{{@index}}"
                             data-value="{{range.leftType}}&{{range.left}}&{{range.rightType}}&{{range.right}}">
                             {{#eq styleMode 'labelRadioButton'}}
-                            <a href="javascript:;" class="p_fbutton">{{name}}</a>
+                            <a href="javascript:;" class="js_editor_click p_fbutton">{{name}}</a>
                             {{/eq}}
                             {{#eq styleMode 'labelCheckboxButton'}}
-                            <a href="javascript:;" class="p_fbutton">{{name}}</a>
+                            <a href="javascript:;" class="js_editor_click p_mbutton">{{name}}</a>
                             {{/eq}}
                             {{#eq selectMode 'multiple'}}
                             {{#eq styleMode 'labelCheckbox'}}
@@ -158,16 +158,15 @@
             </div>
             {{/datasource._config._dataFilter.fields}}
 
-            {{#if datasource._config._dataFilter.showCondition}}
             <div class="p_filter_result js-condition-wrapper">
                 <span class="p_result_label">条件：</span>
             </div>
-            {{/if}}
+            
         </div>
         <br>
         {{/if}}
         {{/if}}
-        <div>
+        
             {{#arrControl prop.dataList  prop.pageConfig.status}}
             <div class="p_list">
                 {{#prop.dataList}}
@@ -187,7 +186,7 @@
             {{/prop.dataList_${id}}}
 
             {{/arrControl}}
-        </div>
+        
     </div>
     <input type="hidden" name="_config" value='{{$toJson datasource._config}}'>
     <input type="hidden" name="view" value='{{{view}}}'>
