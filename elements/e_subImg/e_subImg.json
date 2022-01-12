@@ -2,7 +2,7 @@
   "cname": "循环体图片",
   "styleId": "e_subImg",
   "styleClass": "s_img",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#if ${href}.value}}\r\n        <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\r\n    {{/if}}\r\n        {{{nLazyImage ${imageUrl} ${title} ${setting}.isLazy}}}\r\n    {{#if ${href}.value}}\r\n        </a>\r\n    {{/if}}\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\">\r\n    {{#if ${href}.value}}\r\n        <a href=\"{{$transferLink ${href} compId}}\" target=\"{{${href}.target}}\">\r\n    {{/if}}\r\n        {{{nLazyImage ${imgList} ${title} ${setting}.isLazy}}}\r\n    {{#if ${href}.value}}\r\n        </a>\r\n    {{/if}}\r\n</div>",
   "css": [
     {
       "media": "",
@@ -22,7 +22,7 @@
     }
   ],
   "prop": {
-    "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
+    "imgList": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg",
     "title": "图片名称",
     "href": {
       "type": "",

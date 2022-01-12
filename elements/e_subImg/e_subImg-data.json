@@ -1,18 +1,20 @@
-{   
-    "apiType":"object",
-    "dataFields":[
+{
+    "apiType": "object",
+    "dataFields": [
         {
-            "name":"imgList",
-            "cname":"图片集",
-            "type":"array[img]"
-        },{
-            "name":"title",
-            "cname":"标题",
-            "type":"string"
-        },{
-            "name":"href",
-            "cname":"链接",
-            "type":"link"
+            "name": "imgList",
+            "cname": "子图片",
+            "type": "string"
+        },
+        {
+            "name": "title",
+            "cname": "标题",
+            "type": "string"
+        },
+        {
+            "name": "href",
+            "cname": "链接",
+            "type": "link"
         }
     ]
 }
