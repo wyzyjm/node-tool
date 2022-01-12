@@ -1,0 +1,12 @@
+{
+    "prop": {
+        "videoList": "https://blz-videos.nosdn.127.net/1/OverWatch/AnimatedShots/Overwatch_AnimatedShot_Soldier76_Hero.mp4",
+        "config": {
+            "autoPlay": false,
+            "loop": false,
+            "mouted": true,
+            "controlor": true
+        }
+    },
+    "i18n": {}
+}

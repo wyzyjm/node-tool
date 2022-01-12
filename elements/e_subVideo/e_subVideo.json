@@ -1,0 +1,37 @@
+{
+  "cname": "循环体视频",
+  "styleId": "e_subVideo",
+  "styleClass": "s_img",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{{lazyVideo ${videoList} ${config}.mouted ${config}.controlor}}}\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_subVideo {\n    width: 100%;\n}\n.e_subVideo video {\n    width: 100%;\n    display: block;\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "videoList": "https://blz-videos.nosdn.127.net/1/OverWatch/AnimatedShots/Overwatch_AnimatedShot_Soldier76_Hero.mp4",
+    "config": {
+      "autoPlay": false,
+      "loop": false,
+      "mouted": true,
+      "controlor": true
+    }
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}

@@ -219,6 +219,10 @@
     {
       "name": "循环体图片",
       "code": "e_subImg"
+    },
+    {
+      "name": "循环体视频",
+      "code": "e_subVideo"
     }
   ],
   "complex": [
