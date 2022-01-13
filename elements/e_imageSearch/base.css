@@ -1,7 +1,4 @@
-/* .e_imageSearch {
-    height: 200px;
-} */
-.e_imageSearch .p_container {
+.e_imageSearch .p_swiper_container {
     height: 100%;
 }
 
