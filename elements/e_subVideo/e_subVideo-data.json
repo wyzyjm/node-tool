@@ -1,0 +1,10 @@
+{
+    "apiType": "object",
+    "dataFields": [
+        {
+            "name": "videoList",
+            "cname": "子视频",
+            "type": "string"
+        }
+    ]
+}

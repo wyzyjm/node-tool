@@ -1,0 +1,10 @@
+{
+    "panelConfig": [
+        {
+            "compName": "setting-video",
+            "title": "循环体视频",
+            "bind-videoList": "prop.videoList",
+            "bind-config": "prop.config"
+        }
+    ]
+}

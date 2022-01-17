@@ -1,0 +1,7 @@
+.e_subVideo {
+    width: 100%;
+}
+.e_subVideo video {
+    width: 100%;
+    display: block;
+}
