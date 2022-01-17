@@ -1,0 +1,29 @@
+.e_cardLabel .p_card{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+.e_cardLabel .p_img{
+    width: 130px;
+    height: 100px;
+}
+.e_cardLabel .p_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.e_cardLabel .p_labelItem{
+    margin-right: 10px;
+    margin-bottom:5px;
+}
+.e_cardLabel .p_labelItem input{
+    display: none;
+}
+.e_cardLabel .p_labelItem label{
+    padding: 0 10px;
+    border-radius: 4px;
+}
+.e_cardLabel .p_labelItem input:checked+.p_card{
+    border: 1px solid #f60;
+}

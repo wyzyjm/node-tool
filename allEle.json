@@ -463,6 +463,10 @@
     {
       "name": "全局搜索",
       "code": "e_searchResult"
+    },
+    {
+      "name": "图文标签",
+      "code": "e_cardLabel"
     }
   ]
 }
