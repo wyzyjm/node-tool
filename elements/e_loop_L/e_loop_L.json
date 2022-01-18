@@ -1,0 +1,51 @@
+{
+  "cname": "综合循环体",
+  "styleId": "e_loop_L",
+  "styleClass": "s_list",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#arrControl ${dataList} ${pageConfig}.status}}\r\n        <div class=\"swiper-container p_swiper_container {{${pageConfig}.effect}}\">\r\n            <div class=\"swiper-wrapper\">\r\n                {{#${dataList}}}\r\n                    <div class=\"swiper-slide cbox-${id} p_template\"></div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <!-- 导航按钮 -->\r\n            <div class=\"js_editor_click swiper-button-prev\"></div>\r\n            <div class=\"js_editor_click swiper-button-next\"></div>\r\n        </div>\r\n    {{else}}\r\n        无数据\r\n    {{/arrControl}}\r\n</div>",
+  "css": [
+    {
+      "media": "",
+      "cssText": ".e_loop_L{\n\n}\n"
+    },
+    {
+      "media": "screen and (max-width:768px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (min-width: 769px)",
+      "cssText": ""
+    },
+    {
+      "media": "screen and (max-width: 1024px) and (min-width: 769px)",
+      "cssText": ""
+    }
+  ],
+  "prop": {
+    "dataList": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "pageConfig": {
+      "effect": "effect1",
+      "autoplay": false,
+      "switchBtn": true,
+      "speed": 4,
+      "pcCol": 3,
+      "pcRow": 1,
+      "moCol": 1,
+      "status": true,
+      "switchSingle": false,
+      "total": 200,
+      "loopItem": ".p_template"
+    }
+  },
+  "i18n": {
+    "zh_CN": {}
+  },
+  "datasource": "prop"
+}

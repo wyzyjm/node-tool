@@ -223,6 +223,10 @@
     {
       "name": "循环体视频",
       "code": "e_subVideo"
+    },
+    {
+      "name": "综合循环体",
+      "code": "e_loop_L"
     }
   ],
   "complex": [

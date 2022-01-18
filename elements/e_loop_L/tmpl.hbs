@@ -1,0 +1,16 @@
+<div class="e_loop_L s_list" needjs="true">
+    {{#arrControl prop.dataList prop.pageConfig.status}}
+        <div class="swiper-container p_swiper_container {{prop.pageConfig.effect}}">
+            <div class="swiper-wrapper">
+                {{#prop.dataList}}
+                    <div class="swiper-slide cbox-${id} p_template"></div>
+                {{/prop.dataList}}
+            </div>
+            <!-- 导航按钮 -->
+            <div class="js_editor_click swiper-button-prev"></div>
+            <div class="js_editor_click swiper-button-next"></div>
+        </div>
+    {{else}}
+        无数据
+    {{/arrControl}}
+</div>
