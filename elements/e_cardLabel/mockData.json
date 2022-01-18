@@ -1,0 +1,43 @@
+{
+  "prop": {
+    "showLabel":true,
+    "label":"图文标签",
+    "limit":1,
+    "options":[
+        {
+            "label":"选项1",
+            "value":"1",
+            "img":[
+                {
+                    "imageUrl":"https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+                }
+            ],
+            "labelStatus":true,
+            "valueStatus":true,
+            "imgStatus":true,
+            "select":true
+        },{
+            "label":"选项2",
+            "value":"2",
+            "img":[
+                {
+                    "imageUrl":"https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+                }
+            ],
+            "labelStatus":true,
+            "valueStatus":true,
+            "imgStatus":true
+        }
+    ],
+    "datasourceList":[],
+    "ddItemList":[],
+    "validate":{
+        "required":{
+            "state":true,
+            "value":true,
+            "msg":"内容不能为空"
+        }
+    }
+  },
+  "i18n": {}
+}
