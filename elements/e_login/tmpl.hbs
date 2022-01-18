@@ -38,7 +38,7 @@
             <span class="p_loginway" data-box="email_login_box" data-type="email">{{i18n.emailLogin}}</span>
         </label>
         <!-- 手机号登录  -->
-        <div class="phone_login_box p_pe_box" style="display:block;">
+        <div class="phone_login_box p_pe_box">
             <div class="p_input">
                 <p class="p_error">{{i18n.Accountandpasswordnotmatch}}</p>
                 <ul>
@@ -55,8 +55,8 @@
                     <li>
                         <div class="p_input_div">
                             <input type="text" class="form-control-p p_user_code" maxlength="6" placeholder="{{i18n.placeholderCode}}" data-val="0" />
-                            <div class="p_getcode js_time_1" data-code="0">{{i18n.getCode}}</div>
-                            <div class="p_time-2"></div>
+                            <div class="js_time_1 p_getcode" data-code="0">{{i18n.getCode}}</div>
+                            <div class="js_time_2 p_getcode"></div>
                         </div>
                         <p class="p_p_tip">{{i18n.tipphoceCode}}</p>
                     </li>
@@ -88,8 +88,13 @@
                     <li>
                         <div class="p_input_div">
                             <input type="text" class="form-control-p p_user_emailcode" maxlength="6" placeholder="{{i18n.placeholderemailCode}}" data-val="0" />
+<<<<<<< HEAD
                             <div class="p_getcode js_time_1" data-code="1">{{i18n.getCode}}</div>
                             <div class="p_time-2"></div>
+=======
+                            <div class="js_time_1 p_getcode" data-code="1">{{i18n.getCode}}</div>
+                            <div class="js_time_2 p_getcode"></div>
+>>>>>>> origin/wyz_login
                         </div>
                         <p class="p_p_tip">{{i18n.tipemailCode}}</p>
                     </li>
@@ -109,17 +114,17 @@
     </div>
     <!-- 蒙版 -->
     <div class="p_popup_box"></div>
-    <!-- 密码登录 -->
+    <!-- 忘记密码 -->
     <div class="p_popup_password">
-        <p>{{i18n.forgetPassword}}</p>
-        <div>{{i18n.topTip}}<br />{{i18n.topTips}}</div>
+        <p class="p_forgetPassword">{{i18n.forgetPassword}}</p>
+        <div class="p_topTip">{{i18n.topTip}}<br />{{i18n.topTips}}</div>
         <ul>
             <!-- 手机 找回 -->
-            <li class="p_gotophone">
+            <li class="p_back">
                 <a href="/sys/forgotpassword?type=phone">{{i18n.phonecodetoPassword}}</a>
             </li>
             <!-- 邮箱 找回 -->
-            <li class="p_gotoemail">
+            <li class="p_back">
                 <a href="/sys/forgotpassword?type=mail">{{i18n.emailcodetoPassword}}</a>
             </li>
         </ul>
