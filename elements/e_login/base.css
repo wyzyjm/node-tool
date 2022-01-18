@@ -135,3 +135,6 @@
     margin-right: auto;
     margin-top: 12px;
 }
+.e_login .phone_login_box {
+    display: block;
+}
