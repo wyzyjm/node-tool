@@ -2,11 +2,11 @@
   "cname": "综合循环体",
   "styleId": "e_loop_L",
   "styleClass": "s_list",
-  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#arrControl ${dataList} ${pageConfig}.status}}\r\n        <div class=\"swiper-container p_swiper_container {{${pageConfig}.effect}}\">\r\n            <div class=\"swiper-wrapper\">\r\n                {{#${dataList}}}\r\n                    <div class=\"swiper-slide cbox-${id} p_template\"></div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            <!-- 导航按钮 -->\r\n            <div class=\"js_editor_click swiper-button-prev\"></div>\r\n            <div class=\"js_editor_click swiper-button-next\"></div>\r\n        </div>\r\n    {{else}}\r\n        无数据\r\n    {{/arrControl}}\r\n</div>",
+  "tmpl": "<div class=\"${elemId} ${styleClass}\" needjs=\"true\">\r\n    {{#arrControl ${dataList} ${pageConfig}.status}}\r\n        <div class=\"swiper-container p_swiper_container {{${pageConfig}.effect}}\">\r\n            <div class=\"swiper-wrapper\">\r\n                {{#${dataList}}}\r\n                    <div class=\"swiper-slide cbox-${id} p_template\"></div>\r\n                {{/${dataList}}}\r\n            </div>\r\n            {{#if ${pageConfig}.switchBtn}}\r\n                <!-- 导航按钮 -->\r\n                <div class=\"js_editor_click swiper-button-prev p_swiper_prev\"></div>\r\n                <div class=\"js_editor_click swiper-button-next p_swiper_next\"></div>\r\n            {{/if}}\r\n        </div>\r\n    {{else}}\r\n        无数据\r\n    {{/arrControl}}\r\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ".e_loop_L{\n\n}\n"
+      "cssText": ".e_loop_L {\n}\n/* 焦点放大循环体 开始 */\n.e_loop_L .swiper-container.effect1 {\n    width: 100%;\n    height: 100%;\n}\n.e_loop_L .effect1 .swiper-slide {\n    transition: all 0.3s ease;\n    transform: scale(0.8);\n}\n.e_loop_L .effect1 .swiper-slide-active,\n.e_loop_L .effect1 .swiper-slide-duplicate-active {\n    transform: scale(1);\n}\n.e_loop_L .effect1 .swiper-button-prev,\n.e_loop_L .effect1 .swiper-button-next {\n    width: 44px;\n    height: 44px;\n    border-radius: 100%;\n    color: #fff;\n    background: #007bff;\n}\n.e_loop_L .effect1 .swiper-button-next:after,\n.e_loop_L .effect1 .swiper-button-prev:after {\n    font-size: 22px;\n}\n/* 焦点放大循环体 结束 */\n"
     },
     {
       "media": "screen and (max-width:768px)",

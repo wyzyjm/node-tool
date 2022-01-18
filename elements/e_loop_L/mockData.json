@@ -2,11 +2,11 @@
     "prop": {
         "dataList": [{}, {}, {}, {}, {}, {}],
         "pageConfig": {
-            "effect": "effect1",
+            "effect": "effect2",
             "autoplay": false,
             "switchBtn": true,
-            "speed": 4,
-            "pcCol": 3,
+            "speed": 500,
+            "pcCol": 4,
             "pcRow": 1,
             "moCol": 1,
             "status": true,

@@ -1,3 +1,96 @@
-.e_loop_L{
-
+.e_loop_L {
 }
+.e_loop_L .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.e_loop_L .swiper-3d .swiper-cube-shadow,
+.e_loop_L .swiper-3d .swiper-slide,
+.e_loop_L .swiper-3d .swiper-slide-shadow,
+.e_loop_L .swiper-3d .swiper-slide-shadow-bottom,
+.e_loop_L .swiper-3d .swiper-slide-shadow-left,
+.e_loop_L .swiper-3d .swiper-slide-shadow-right,
+.e_loop_L .swiper-3d .swiper-slide-shadow-top,
+.e_loop_L .swiper-3d .swiper-wrapper {
+    transform-style: preserve-3d;
+}
+.e_loop_L .swiper-pagination {
+    display: none;
+}
+/* 焦点放大循环体 开始 */
+.e_loop_L .effect1 .swiper-slide {
+    transition: all 0.3s ease;
+    transform: scale(0.8);
+}
+.e_loop_L .effect1 .swiper-slide-active,
+.e_loop_L .effect1 .swiper-slide-duplicate-active {
+    transform: scale(1);
+}
+.e_loop_L .effect1 .swiper-button-prev,
+.e_loop_L .effect1 .swiper-button-next {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    color: #fff;
+    background: #007bff;
+}
+.e_loop_L .effect1 .swiper-button-next:after,
+.e_loop_L .effect1 .swiper-button-prev:after {
+    font-size: 22px;
+}
+/* 焦点放大循环体 结束 */
+
+/* 效果2 环形旋转循环体 开始 */
+.e_loop_L .effect2 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.e_loop_L .effect2.swiper-container {
+    flex-shrink: 0;
+    transition-property: transform;
+    perspective: 1200px;
+}
+.e_loop_L .effect2 .swiper-slide {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    box-shadow: 0 8px 20px #ddd;
+}
+
+.e_loop_L .effect2 .swiper-pagination {
+    display: block;
+    width: 100%;
+    bottom: 0;
+}
+.e_loop_L .effect2 .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+    background-color: #e8f5ff;
+    width: 20px;
+    height: 10px;
+    opacity: 1;
+    border-radius: 5px;
+}
+.e_loop_L .effect2 .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #3eb2f3;
+    width: 35px;
+}
+/* 效果2 环形旋转循环体 结束 */
+
+/* 效果3 循环体 开始 */
+
+/* 效果3 循环体 结束 */
+
+/* 效果4 循环体 开始 */
+
+/* 效果4 循环体 结束 */
+
+/* 效果5 循环体 开始 */
+
+/* 效果5 循环体 结束 */
+
+/* 效果6 循环体 开始 */
+
+/* 效果6 循环体 结束 */
