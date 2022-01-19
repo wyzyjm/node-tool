@@ -61,6 +61,7 @@ module.exports={
                                 if(ind>-1){
                                     compJson.i18n[e][j]=data[e][ind]
                                 }else{
+                                    compJson.i18n[e][j]=v
                                     if(!i18nList[comp]){
                                         i18nList[comp]={}
                                     }

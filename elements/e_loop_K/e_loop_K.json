@@ -50,6 +50,196 @@
       "loadNow": "加载中",
       "noMore": "没有更多了",
       "noData": "暂无数据"
+    },
+    "en": {
+      "pageWhole": "in total",
+      "pageItem": "picecs",
+      "pageJump": "proceed",
+      "pageUnit": "page",
+      "loadMore": "Click to load more",
+      "loadNow": "Loading",
+      "noMore": "No more",
+      "noData": "No data"
+    },
+    "de": {
+      "pageWhole": "geläufig",
+      "pageItem": "Artikel",
+      "pageJump": "Gehe zu",
+      "pageUnit": "Seite",
+      "loadMore": "Klicken um mehr zu laden",
+      "loadNow": "Laden",
+      "noMore": "Nicht mehr",
+      "noData": "Keine Daten"
+    },
+    "fr": {
+      "pageWhole": "Total",
+      "pageItem": "XX",
+      "pageJump": "Aller à",
+      "pageUnit": "page",
+      "loadMore": "Cliquez pour charger plus",
+      "loadNow": "Chargement",
+      "noMore": "Pas plus",
+      "noData": "Aucune donnée pour l'instant"
+    },
+    "ru": {
+      "pageWhole": "всего",
+      "pageItem": "шт.",
+      "pageJump": "Перейти на",
+      "pageUnit": "стр.",
+      "loadMore": "Нажмите «загрузить еще»",
+      "loadNow": "Загрузка...",
+      "noMore": "Нет больше информации",
+      "noData": "Нет данных"
+    },
+    "pt": {
+      "pageWhole": "Total de",
+      "pageItem": "faixas",
+      "pageJump": "Vá para",
+      "pageUnit": "página",
+      "loadMore": "Clique para carregar mais",
+      "loadNow": "Carregando",
+      "noMore": "Não mais",
+      "noData": "Sem dados no momento"
+    },
+    "ko": {
+      "pageWhole": "총",
+      "pageItem": "조",
+      "pageJump": "페이지로",
+      "pageUnit": "가기",
+      "loadMore": "클릭하면 더욱 많은 것들을 로딩할 수 있습니다",
+      "loadNow": "로딩 중",
+      "noMore": "더 이상 없습니다",
+      "noData": "잠시 데이터가 없음"
+    },
+    "ja": {
+      "pageWhole": "合計",
+      "pageItem": "件",
+      "pageJump": "ジへ",
+      "pageUnit": "ペー",
+      "loadMore": "「詳細を読み込む」をクリックしてください",
+      "loadNow": "読み込み中",
+      "noMore": "これ以上ないです",
+      "noData": "データなし"
+    },
+    "es": {
+      "pageWhole": "Total",
+      "pageItem": "Filas",
+      "pageJump": "Ir a la",
+      "pageUnit": "página",
+      "loadMore": "Haga clic para cargar más",
+      "loadNow": "Cargando",
+      "noMore": "No más",
+      "noData": "No hay datos"
+    },
+    "ar": {
+      "pageWhole": "قطعة",
+      "pageItem": "مادة",
+      "pageJump": "إلى",
+      "pageUnit": "صفحة",
+      "loadMore": "اقبض للتحميل المزيد",
+      "loadNow": "قام بالتحميل",
+      "noMore": "لا يوجد المزيد",
+      "noData": "لا توجد المعلمات موقتا"
+    },
+    "it": {
+      "pageWhole": "Totale",
+      "pageItem": "striscia",
+      "pageJump": "Vai a",
+      "pageUnit": "pagina",
+      "loadMore": "Cliccare per caricare di più",
+      "loadNow": "Caricamento in corso",
+      "noMore": "Nient'altro",
+      "noData": "Nessun dato"
+    },
+    "bn": {
+      "pageWhole": "মোট",
+      "pageItem": "টুকরো",
+      "pageJump": "যান",
+      "pageUnit": "পাতায়",
+      "loadMore": "“আরও লোড করুন” এ টিপুন",
+      "loadNow": "লোড হচ্ছে",
+      "noMore": "আর নয়",
+      "noData": "কোন তথ্য নেই"
+    },
+    "da": {
+      "pageWhole": "I alt",
+      "pageItem": "stk.",
+      "pageJump": "Gå til",
+      "pageUnit": "side",
+      "loadMore": "Klik for at indlæse mere",
+      "loadNow": "Indlæser",
+      "noMore": "Ikke mere",
+      "noData": "Intet data"
+    },
+    "idn": {
+      "pageWhole": "Total",
+      "pageItem": "xx",
+      "pageJump": "ke halaman",
+      "pageUnit": "Pergi",
+      "loadMore": "Klik untuk memuat lebih banyak",
+      "loadNow": "Memuat",
+      "noMore": "Tidak lagi",
+      "noData": "Tiada data sekarang"
+    },
+    "th": {
+      "pageWhole": "ร่วม",
+      "pageItem": "ข้อ",
+      "pageJump": "ไปที่",
+      "pageUnit": "หน้า",
+      "loadMore": "คลิกเพื่อโหลดเพิ่มเติม",
+      "loadNow": "กำลังโหลด",
+      "noMore": "ไม่มีอีกแล้ว",
+      "noData": "ไม่มีข้อมูล"
+    },
+    "vi": {
+      "pageWhole": "Tổng số",
+      "pageItem": "Điều",
+      "pageJump": "Đi đến",
+      "pageUnit": "trang",
+      "loadMore": "Bấm để tải thêm nhiều hơn",
+      "loadNow": "Đang tải",
+      "noMore": "Không còn nữa",
+      "noData": "Tạm thời không có dữ liệu"
+    },
+    "tr": {
+      "pageWhole": "Toplam",
+      "pageItem": "Adet",
+      "pageJump": "git",
+      "pageUnit": "sayfasına",
+      "loadMore": "Daha fazlasını indirmek için tıklayın",
+      "loadNow": "Yükleniyor",
+      "noMore": "Daha fazla yok",
+      "noData": "Veri Yok"
+    },
+    "nl": {
+      "pageWhole": "Totaal",
+      "pageItem": "Artikel",
+      "pageJump": "Ga",
+      "pageUnit": "naar pagina",
+      "loadMore": "Klik om meer te laden",
+      "loadNow": "Bezig met laden",
+      "noMore": "Geen meer",
+      "noData": "Geen gegevens"
+    },
+    "pl": {
+      "pageWhole": "sztuk",
+      "pageItem": "szt.",
+      "pageJump": "Przejdź do",
+      "pageUnit": "strony",
+      "loadMore": "Kliknij przycisk „Załaduj więcej”",
+      "loadNow": "Ładowanie",
+      "noMore": "Koniec",
+      "noData": "Brak danych"
+    },
+    "zh_HN": {
+      "pageWhole": "共",
+      "pageItem": "條",
+      "pageJump": "前往",
+      "pageUnit": "頁",
+      "loadMore": "點擊加載更多",
+      "loadNow": "加載中",
+      "noMore": "沒有更多了",
+      "noData": "暫無數據"
     }
   },
   "datasource": "prop",

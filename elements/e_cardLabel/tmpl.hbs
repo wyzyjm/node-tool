@@ -1,30 +1,30 @@
-<div class="e_cardLabel form-group" {{#if prop.validate.required.value}}required{{/if}}>
+<div class="e_cardLabel form-group" {{#if prop.validate.required.value}}required{{/if}} needjs='true'>
     {{#if prop.showLabel}}
     <legend class="col-form-label p_label">
         <span class="s_label">{{prop.label}}</span>
     </legend>
     {{/if}}
-    <div class="p_input">
+    <div class="clearfix p_input">
         {{#prop.options}}
         <div class="form-check form-check-inline p_labelItem">
             <input class="form-check-input s_form-control" type="checkbox" name="${elemId}" id="${elemId}-{{@index}}" value="{{value}}" {{#if select}}checked{{/if}}>
-            <div class="p_card">
+            <label class="p_card" for="${elemId}-{{@index}}">
+                {{#if ../prop.imgStatus}}
                 <div class="p_img">
                     {{#each img}}
-                        {{#eq @index 0}}
-                            {{{nLazyImage imageUrl '' 'true'}}}
-                        {{/eq}}
+                        {{#eq @index 0}}<span class="p_imgCon" data-src="{{imageUrl}}">{{{nLazyImage imageUrl '' 'true'}}}</span>{{/eq}}
                     {{/each}}
                 </div>
+                {{/if}}
                 <div class="p_info">
-                    <div class="p_title">
-                        {{label}}
-                    </div>
-                    <div class="p_value">
-                        {{value}}
-                    </div>
+                    {{#if ../prop.labelStatus}}
+                    <div class="p_title" title="{{label}}">{{label}}</div>
+                    {{/if}}
+                    {{#if ../prop.valueStatus}}
+                    <div class="p_value" title="{{value}}">{{value}}</div>
+                    {{/if}}
                 </div>
-            </div>
+            </label>
         </div>
         {{/prop.options}}
     </div>

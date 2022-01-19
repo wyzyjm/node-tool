@@ -1,0 +1,20 @@
+{
+    "panelConfig": [
+        {
+            "compName":"setting-cardLabel",
+            "title":"图文标签",
+            "staticBind": true,
+            "showLabel":"prop.showLabel",
+            "label":"prop.label",
+            "limit":"prop.limit",
+            "options":"prop.options",
+            "validate":"prop.validate",
+            "datasourceList":"prop.datasourceList",
+            "ddItemList":"prop.ddItemList",
+            "labelStatus":"prop.labelStatus",
+            "valueStatus":"prop.valueStatus",
+            "imgStatus":"prop.imgStatus"
+        }
+    ]
+}
+  

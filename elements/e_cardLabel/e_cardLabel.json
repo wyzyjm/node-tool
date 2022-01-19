@@ -2,11 +2,11 @@
   "cname": "图文标签",
   "styleId": "e_cardLabel",
   "styleClass": "",
-  "tmpl": "",
+  "tmpl": "<div class=\"${elemId} ${styleClass} form-group\" {{#if ${validate}.required.value}}required{{/if}} needjs='true'>\n    {{#if ${showLabel}}}\n    <legend class=\"col-form-label p_label\">\n        <span class=\"s_label\">{{${label}}}</span>\n    </legend>\n    {{/if}}\n    <div class=\"clearfix p_input\">\n        {{#${options}}}\n        <div class=\"form-check form-check-inline p_labelItem\">\n            <input class=\"form-check-input s_form-control\" type=\"checkbox\" name=\"${elemId}\" id=\"${elemId}-{{@index}}\" value=\"{{value}}\" {{#if select}}checked{{/if}}>\n            <label class=\"p_card\" for=\"${elemId}-{{@index}}\">\n                {{#if ../${imgStatus}}}\n                <div class=\"p_img\">\n                    {{#each img}}\n                        {{#eq @index 0}}<span class=\"p_imgCon\" data-src=\"{{imageUrl}}\">{{{nLazyImage imageUrl '' 'true'}}}</span>{{/eq}}\n                    {{/each}}\n                </div>\n                {{/if}}\n                <div class=\"p_info\">\n                    {{#if ../${labelStatus}}}\n                    <div class=\"p_title\" title=\"{{label}}\">{{label}}</div>\n                    {{/if}}\n                    {{#if ../${valueStatus}}}\n                    <div class=\"p_value\" title=\"{{value}}\">{{value}}</div>\n                    {{/if}}\n                </div>\n            </label>\n        </div>\n        {{/${options}}}\n    </div>\n    <div class=\"invalid-feedback\"></div>\n</div>",
   "css": [
     {
       "media": "",
-      "cssText": ""
+      "cssText": ".e_cardLabel .p_card{\n    border: 1px solid transparent;\n    box-sizing: border-box;\n    width: 150px;\n    padding: 0 10px;\n}\n.e_cardLabel .p_img{\n    padding-top: 10px;\n    width: 130px;\n    height: 100px;\n}\n.e_cardLabel .p_imgCon{\n    display: block;\n    width: 100%;\n    height: 100%;\n}\n.e_cardLabel .p_img img{\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n.e_cardLabel .p_labelItem{\n    margin-right: 10px;\n    margin-bottom:5px;\n    cursor: pointer;\n    float: left;\n}\n.e_cardLabel .p_labelItem input{\n    display: none;\n}\n.e_cardLabel .p_labelItem input:checked+.p_card{\n    border: 1px solid #00cafd;\n    background-color: #eaffff;\n}\n.e_cardLabel .p_info{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    color: #999;\n}\n.p_title,.p_value{\n    flex: 1;\n    line-height: 30px;\n    height: 30px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n.p_value{\n    text-align: right;\n}"
     },
     {
       "media": "screen and (max-width:768px)",
@@ -21,8 +21,66 @@
       "cssText": ""
     }
   ],
-  "prop": {},
-  "i18n": {},
+  "prop": {
+    "showLabel": true,
+    "label": "图文标签",
+    "limit": 1,
+    "labelStatus": true,
+    "valueStatus": true,
+    "imgStatus": true,
+    "options": [
+      {
+        "label": "选项1",
+        "value": "1",
+        "img": [
+          {
+            "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+          }
+        ],
+        "select": true
+      },
+      {
+        "label": "选项2",
+        "value": "2",
+        "img": [
+          {
+            "imageUrl": "https://omo-oss-image.thefastimg.com/portal-saas/zz0000001/cms/image/1ae01267-3f66-4ff1-a803-1ffe5bfcbcac.jpg"
+          }
+        ]
+      }
+    ],
+    "datasourceList": [],
+    "ddItemList": [],
+    "validate": {
+      "required": {
+        "state": true,
+        "value": true,
+        "msg": "内容不能为空"
+      }
+    }
+  },
+  "i18n": {
+    "zh_CN": {},
+    "en": {},
+    "de": {},
+    "fr": {},
+    "ru": {},
+    "pt": {},
+    "ko": {},
+    "ja": {},
+    "es": {},
+    "ar": {},
+    "it": {},
+    "bn": {},
+    "da": {},
+    "idn": {},
+    "th": {},
+    "vi": {},
+    "tr": {},
+    "nl": {},
+    "pl": {},
+    "zh_HN": {}
+  },
   "datasource": "prop",
   "type": "form"
 }

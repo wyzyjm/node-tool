@@ -36,6 +36,139 @@
       "split": "|",
       "register": "注册",
       "placeholder": "昵称"
+    },
+    "en": {
+      "login": "Login",
+      "placeholder": "Nickname",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "de": {
+      "login": "Einloggen",
+      "placeholder": "Spitzname",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "fr": {
+      "login": "Connexion",
+      "placeholder": "Surnom",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "ru": {
+      "login": "Логин",
+      "placeholder": "Никнейм",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "pt": {
+      "login": "Login",
+      "placeholder": "Usuário",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "ko": {
+      "login": "로그인",
+      "placeholder": "닉네임",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "ja": {
+      "login": "ログイン",
+      "placeholder": "ニックネーム",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "es": {
+      "login": "Iniciar sesión",
+      "placeholder": "Apodo",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "ar": {
+      "login": "تسجيل",
+      "placeholder": "لقب",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "it": {
+      "login": "Accesso",
+      "placeholder": "Nickname",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "bn": {
+      "login": "লগইন",
+      "placeholder": "ডাকনাম",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "da": {
+      "login": "Log ind",
+      "placeholder": "Kaldenavn",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "idn": {
+      "login": "Login",
+      "placeholder": "Nama panggilan",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "th": {
+      "login": "เข้าสู่ระบบ",
+      "placeholder": "ชื่อเล่น",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "vi": {
+      "login": "Đăng nhập",
+      "placeholder": "Biệt danh",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "tr": {
+      "login": "Giriş",
+      "placeholder": "Takma ad",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "nl": {
+      "login": "Log in",
+      "placeholder": "Bijnaam",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "pl": {
+      "login": "Zaloguj się",
+      "placeholder": "Pseudonim",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
+    },
+    "zh_HN": {
+      "login": "登錄",
+      "placeholder": "暱稱",
+      "exit": "退出",
+      "split": "|",
+      "register": "注册"
     }
   },
   "datasource": "prop"
